@@ -253,9 +253,11 @@ export const Appendix1View: React.FC<Appendix1ViewProps> = ({ planData, onUpdate
                             </div>
                           ) : (
                             <div>
-                              <span className="font-bold text-amber-700 dark:text-amber-400 text-[11px] block uppercase tracking-wide">
-                                {lesson.topic}
-                              </span>
+                              {lesson.topic && lesson.topic.trim().length > 0 ? (
+                                <span className="font-bold text-amber-700 dark:text-amber-400 text-[11px] block uppercase tracking-wide">
+                                  {lesson.topic}
+                                </span>
+                              ) : null}
                               <span className="font-semibold text-slate-900 dark:text-white leading-tight block text-xs">
                                 {lesson.lessonName}
                               </span>
