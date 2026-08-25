@@ -1424,20 +1424,30 @@ export function buildSecondaryCurriculum(subject: string, grade: string, schoolT
       lessonIndex: idx
     };
 
-    const nls = item.nlsCode
+    const isBlankTest = isEnglish && customYccd === '';
+
+    const nls = item.nlsCode !== undefined
       ? { code: item.nlsCode, requirement: '' }
+      : isBlankTest
+      ? { code: '', requirement: '' }
       : isEnglish
       ? getNlsCodeForEnglishLesson(g, schoolType, lessonCtx)
       : getNlsCodeForSubjectLesson(g, schoolType, lessonCtx);
 
-    const ai = item.aiCode
+    const ai = item.aiCode !== undefined
       ? { code: item.aiCode, requirement: '' }
+      : isBlankTest
+      ? { code: '', requirement: '' }
       : isEnglish
       ? getAiCodeForEnglishLesson(g, lessonCtx)
       : getAiCodeForSubjectLesson(g, lessonCtx);
 
-    const digitalComp = item.digitalCompetency || (isEnglish
-      ? `• [NLS Code: ${nls.code}] ${nls.requirement}\n• [AI Code: ${ai.code}] ${ai.requirement}`
+    const digitalComp = item.digitalCompetency !== undefined
+      ? item.digitalCompetency
+      : isBlankTest
+      ? ''
+      : (isEnglish
+      ? (nls.code || ai.code ? `• [NLS Code: ${nls.code}] ${nls.requirement}\n• [AI Code: ${ai.code}] ${ai.requirement}` : '')
       : `• [Mã NLS: ${nls.code}] ${nls.requirement}\n• [Mã AI: ${ai.code}] ${ai.requirement}`);
 
     return {
@@ -1450,8 +1460,8 @@ export function buildSecondaryCurriculum(subject: string, grade: string, schoolT
       yccd: customYccd,
       equipment: item.equipment,
       location: item.location,
-      nlsCode: item.nlsCode || nls.code,
-      aiCode: item.aiCode || ai.code,
+      nlsCode: item.nlsCode !== undefined ? item.nlsCode : nls.code,
+      aiCode: item.aiCode !== undefined ? item.aiCode : ai.code,
       digitalCompetency: digitalComp,
       notes: item.notes || (item.name.includes('Dự án') || item.name.includes('STEM') ? 'Tích hợp STEM & Năng lực số' : '')
     };

@@ -1711,18 +1711,20 @@ export function getEnglishSecondaryCurriculum(grade: string): RawSecondaryLesson
       def.lesson.toLowerCase().includes('reserve') ||
       def.lesson.toLowerCase().includes('in reserve');
 
-    // For test/exam/feedback/reserve lessons, clear the unit header so NO 'REVIEW 1', etc. is displayed above the test name
+    // For test/exam/feedback/reserve lessons, clear the unit header, equipment, and NLS/AI
     const cleanTopic = isTestOrExam ? '' : def.unit;
+    const comp = isTestOrExam
+      ? { nlsCode: '', aiCode: '', digitalCompetency: '' }
+      : getEnglishLessonNlsAndAi(g, def.lesson, cleanTopic, def.objectives);
 
-    const comp = getEnglishLessonNlsAndAi(g, def.lesson, cleanTopic, def.objectives);
     return {
       week: def.week,
       topic: cleanTopic,
       name: def.lesson,
       periods: 1,
       yccd: def.objectives,
-      equipment: 'Audio CD/MP3 Global Success, Smart TV/Projector, Loudspeaker, Flashcards, LMS',
-      location: 'English Language Lab / Classroom',
+      equipment: isTestOrExam ? '' : 'Audio CD/MP3 Global Success, Smart TV/Projector, Loudspeaker, Flashcards, LMS',
+      location: isTestOrExam ? 'Classroom' : 'English Language Lab / Classroom',
       nlsCode: comp.nlsCode,
       aiCode: comp.aiCode,
       digitalCompetency: comp.digitalCompetency,
