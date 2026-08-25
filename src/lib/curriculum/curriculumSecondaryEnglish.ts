@@ -1700,10 +1700,24 @@ export function getEnglishSecondaryCurriculum(grade: string): RawSecondaryLesson
       : SECONDARY_ENGLISH_GRADE_9_LESSONS;
 
   return lessonDefs.map((def) => {
-    const comp = getEnglishLessonNlsAndAi(g, def.lesson, def.unit, def.objectives);
+    const isTestOrExam =
+      def.isTest ||
+      def.unit.toLowerCase().includes('test') ||
+      def.unit.toLowerCase().includes('exam') ||
+      def.unit.toLowerCase().includes('reserve') ||
+      def.lesson.toLowerCase().includes('test') ||
+      def.lesson.toLowerCase().includes('exam') ||
+      def.lesson.toLowerCase().includes('feedback') ||
+      def.lesson.toLowerCase().includes('reserve') ||
+      def.lesson.toLowerCase().includes('in reserve');
+
+    // For test/exam/feedback/reserve lessons, clear the unit header so NO 'REVIEW 1', etc. is displayed above the test name
+    const cleanTopic = isTestOrExam ? '' : def.unit;
+
+    const comp = getEnglishLessonNlsAndAi(g, def.lesson, cleanTopic, def.objectives);
     return {
       week: def.week,
-      topic: def.unit,
+      topic: cleanTopic,
       name: def.lesson,
       periods: 1,
       yccd: def.objectives,
@@ -1712,7 +1726,7 @@ export function getEnglishSecondaryCurriculum(grade: string): RawSecondaryLesson
       nlsCode: comp.nlsCode,
       aiCode: comp.aiCode,
       digitalCompetency: comp.digitalCompetency,
-      notes: def.isTest ? 'Assessment (Test / Exam)' : ''
+      notes: isTestOrExam ? 'Assessment (Test / Exam)' : ''
     };
   });
 }
