@@ -242,9 +242,13 @@ export async function exportAppendix1Docx(plan: PlanData): Promise<void> {
             new TableCell({ children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: formatDocxWeek(c.week, true), font: FONT_FAMILY, size: 20 })] })] }),
             new TableCell({
               children: [
-                new Paragraph({
-                  children: [new TextRun({ text: c.topic, bold: true, font: FONT_FAMILY, size: 19, color: 'B45309' })]
-                }),
+                ...(c.topic && c.topic.trim().length > 0
+                  ? [
+                      new Paragraph({
+                        children: [new TextRun({ text: c.topic, bold: true, font: FONT_FAMILY, size: 19, color: 'B45309' })]
+                      })
+                    ]
+                  : []),
                 new Paragraph({
                   children: [new TextRun({ text: c.lessonName, font: FONT_FAMILY, size: 20 })]
                 })
