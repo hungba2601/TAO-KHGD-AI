@@ -801,42 +801,42 @@ export const SECONDARY_INFORMATICS_DATA: Record<number, InformaticsLessonDef[]> 
       topic: 'Chủ đề 1: Máy tính và cộng đồng',
       name: 'Bài 1: Thông tin và dữ liệu (Tiết 1)',
       periods: 1,
-      yccd: '- Phân biệt được thông tin và dữ liệu.\n- Nêu được ví dụ minh họa về mối quan hệ giữa thông tin và dữ liệu trong thực tế.'
+      yccd: '- Phân biệt được thông tin và dữ liệu.\n- Nêu được ví dụ minh họa về mối quan hệ giữa thông tin và dữ liệu trong đời sống thực tế.'
     },
     {
       week: 2,
       topic: 'Chủ đề 1: Máy tính và cộng đồng',
       name: 'Bài 1: Thông tin và dữ liệu (Tiết 2)',
       periods: 1,
-      yccd: '- Nêu được tầm quan trọng của thông tin trong việc ra quyết định.\n- Nhận biết được vật mang tin và các dạng thông tin cơ bản.'
+      yccd: '- Nêu được tầm quan trọng của thông tin trong việc ra quyết định.\n- Nhận biết được vật mang tin và các dạng thông tin cơ bản (văn bản, hình ảnh, âm thanh).'
     },
     {
       week: 3,
       topic: 'Chủ đề 1: Máy tính và cộng đồng',
-      name: 'Bài 2: Xử lý thông tin (Tiết 1)',
+      name: 'Bài 2: Xử lí thông tin (Tiết 1)',
       periods: 1,
-      yccd: '- Nêu được các bước trong quá trình xử lý thông tin: thu nhận, lưu trữ, xử lý và truyền thông tin.\n- Nêu được ví dụ minh họa cho từng bước.'
+      yccd: '- Nêu được các bước trong quá trình xử lí thông tin: thu nhận, lưu trữ, xử lí và truyền thông tin.\n- Nêu được ví dụ minh họa cho từng bước trong hoạt động hàng ngày của con người.'
     },
     {
       week: 4,
       topic: 'Chủ đề 1: Máy tính và cộng đồng',
-      name: 'Bài 2: Xử lý thông tin (Tiết 2)',
+      name: 'Bài 2: Xử lí thông tin (Tiết 2)',
       periods: 1,
-      yccd: '- Giải thích được máy tính là công cụ hiệu quả để thu nhận, lưu trữ, xử lý và truyền thông tin.\n- Phân tích vai trò của máy tính trong xã hội hiện đại.'
+      yccd: '- Giải thích được máy tính là công cụ hiệu quả để thu nhận, lưu trữ, xử lí và truyền thông tin.\n- Nhận biết các bộ phận cơ bản của máy tính thực hiện các hoạt động xử lí thông tin.'
     },
     {
       week: 5,
       topic: 'Chủ đề 1: Máy tính và cộng đồng',
       name: 'Bài 3: Thông tin trong máy tính (Tiết 1)',
       periods: 1,
-      yccd: '- Biết được thông tin trong máy tính được biểu diễn bằng dãy bit (gồm các ký hiệu 0 và 1).\n- Giải thích được vì sao bit là đơn vị nhỏ nhất trong lưu trữ thông tin.'
+      yccd: '- Biết được thông tin trong máy tính được biểu diễn thành dãy bit (gồm các ký hiệu 0 và 1).\n- Giải thích được vì sao bit là đơn vị nhỏ nhất trong lưu trữ và xử lí thông tin.'
     },
     {
       week: 6,
       topic: 'Chủ đề 1: Máy tính và cộng đồng',
       name: 'Bài 3: Thông tin trong máy tính (Tiết 2)',
       periods: 1,
-      yccd: '- Nắm vững các đơn vị đo dung lượng thông tin: B, KB, MB, GB, TB và cách quy đổi.\n- Đọc và ước lượng được dung lượng của các tệp văn bản, hình ảnh, video.'
+      yccd: '- Nắm vững các đơn vị đo dung lượng thông tin: B, KB, MB, GB, TB và mối quan hệ quy đổi.\n- Đọc và ước lượng được dung lượng của các tệp văn bản, tệp ảnh, video quen thuộc.'
     },
     // Chủ đề 2: Mạng máy tính và Internet
     {
@@ -844,21 +844,21 @@ export const SECONDARY_INFORMATICS_DATA: Record<number, InformaticsLessonDef[]> 
       topic: 'Chủ đề 2: Mạng máy tính và Internet',
       name: 'Bài 4: Mạng máy tính (Tiết 1)',
       periods: 1,
-      yccd: '- Hiểu được khái niệm mạng máy tính và lợi ích của việc kết nối mạng máy tính.\n- Kể tên các thành phần cơ bản của một mạng máy tính (thiết bị đầu cuối, thiết bị kết nối, phần mềm mạng).'
+      yccd: '- Hiểu được khái niệm mạng máy tính và lợi ích của việc kết nối mạng máy tính (chia sẻ dữ liệu, phần cứng, phần mềm).\n- Kể tên các thành phần cơ bản của mạng máy tính: thiết bị đầu cuối, thiết bị kết nối, phần mềm mạng.'
     },
     {
       week: 8,
       topic: 'Chủ đề 2: Mạng máy tính và Internet',
       name: 'Bài 4: Mạng máy tính (Tiết 2)',
       periods: 1,
-      yccd: '- Phân biệt được mạng có dây (sử dụng cáp mạng) và mạng không dây (sử dụng sóng Wi-Fi).\n- Nêu được đặc điểm và phạm vi ứng dụng của từng loại mạng.'
+      yccd: '- Phân biệt được mạng có dây (dùng cáp mạng, Switch) và mạng không dây (dùng sóng Wi-Fi, Access Point).\n- Nêu được đặc điểm, ưu nhược điểm và phạm vi ứng dụng của từng loại mạng.'
     },
     {
       week: 9,
       topic: 'Đánh giá định kỳ',
       name: 'Kiểm tra, đánh giá giữa Học kỳ 1 môn Tin học Lớp 6',
       periods: 1,
-      yccd: '- Đánh giá mức độ nắm vững chuẩn kiến thức về thông tin, dữ liệu, biểu diễn thông tin và mạng máy tính từ Tuần 1 đến Tuần 8.',
+      yccd: '- Đánh giá mức độ đạt chuẩn kiến thức, kĩ năng về thông tin, dữ liệu, xử lí thông tin, biểu diễn thông tin và mạng máy tính từ Tuần 1 đến Tuần 8.',
       notes: 'Kiểm tra giữa kỳ 1'
     },
     {
@@ -866,14 +866,14 @@ export const SECONDARY_INFORMATICS_DATA: Record<number, InformaticsLessonDef[]> 
       topic: 'Chủ đề 2: Mạng máy tính và Internet',
       name: 'Bài 5: Internet (Tiết 1)',
       periods: 1,
-      yccd: '- Nêu được khái niệm Internet và các đặc điểm chính của mạng Internet toàn cầu.\n- Kể tên các dịch vụ thông dụng trên Internet: tìm kiếm, thư điện tử, mạng xã hội, học trực tuyến.'
+      yccd: '- Nêu được khái niệm Internet và các đặc điểm chính của mạng Internet toàn cầu.\n- Kể tên các dịch vụ thông dụng trên Internet: tìm kiếm, thư điện tử, mạng xã hội, học trực tuyến, giải trí.'
     },
     {
       week: 11,
       topic: 'Chủ đề 2: Mạng máy tính và Internet',
       name: 'Bài 5: Internet (Tiết 2)',
       periods: 1,
-      yccd: '- Phân tích được các lợi ích to lớn cũng như nguy cơ tiềm ẩn khi tham gia sử dụng Internet.\n- Rèn luyện kỹ năng tự bảo vệ khi truy cập Internet.'
+      yccd: '- Phân tích được các lợi ích to lớn của Internet trong học tập, giao tiếp cũng như nguy cơ tiềm ẩn khi sử dụng Internet.\n- Rèn luyện ý thức tự bảo vệ và phòng tránh rủi ro khi truy cập mạng.'
     },
     // Chủ đề 3: Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin
     {
@@ -881,65 +881,65 @@ export const SECONDARY_INFORMATICS_DATA: Record<number, InformaticsLessonDef[]> 
       topic: 'Chủ đề 3: Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin',
       name: 'Bài 6: Mạng thông tin toàn cầu (Tiết 1)',
       periods: 1,
-      yccd: '- Hiểu được khái niệm World Wide Web (WWW), trang web (Webpage), website và địa chỉ website (URL).\n- Nhận biết được siêu văn bản (Hypertext) và siêu liên kết (Hyperlink).'
+      yccd: '- Hiểu được khái niệm World Wide Web (WWW), trang web (Webpage), website và địa chỉ website (URL).\n- Phân biệt được văn bản thông thường và siêu văn bản (Hypertext), siêu liên kết (Hyperlink).'
     },
     {
       week: 13,
       topic: 'Chủ đề 3: Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin',
       name: 'Bài 6: Mạng thông tin toàn cầu (Tiết 2)',
       periods: 1,
-      yccd: '- Sử dụng thành thạo trình duyệt web để truy cập thông tin theo địa chỉ website.\n- Biết cách lưu trang web yêu thích (Bookmark) và lưu tài liệu tải về.'
+      yccd: '- Sử dụng thành thạo trình duyệt web để truy cập thông tin theo địa chỉ website.\n- Biết cách lưu trang web yêu thích (Bookmark) và lưu tệp tài liệu, hình ảnh tải về từ Internet.'
     },
     {
       week: 14,
       topic: 'Chủ đề 3: Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin',
       name: 'Bài 7: Tìm kiếm thông tin trên Internet (Tiết 1)',
       periods: 1,
-      yccd: '- Nhận biết máy tìm kiếm và cách thức hoạt động cơ bản của máy tìm kiếm.\n- Xác định từ khóa (Keywords) chính xác để tìm kiếm thông tin theo chủ đề học tập.'
+      yccd: '- Nhận biết máy tìm kiếm (Google, Bing) và nguyên lí hoạt động cơ bản của máy tìm kiếm.\n- Xác định từ khóa (Keywords) chính xác, phù hợp để tìm kiếm thông tin theo chủ đề học tập.'
     },
     {
       week: 15,
       topic: 'Chủ đề 3: Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin',
       name: 'Bài 7: Tìm kiếm thông tin trên Internet (Tiết 2)',
       periods: 1,
-      yccd: '- Sử dụng các công cụ lọc kết quả tìm kiếm (hình ảnh, video, tin tức, thời gian).\n- Đánh giá và chọn lọc thông tin hữu ích, chính xác từ kết quả tìm kiếm.'
+      yccd: '- Sử dụng các công cụ lọc kết quả tìm kiếm (hình ảnh, video, tin tức, khoảng thời gian).\n- Đánh giá, chọn lọc và kiểm chứng thông tin hữu ích, chính xác từ kết quả tìm kiếm.'
     },
     {
       week: 16,
       topic: 'Chủ đề 3: Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin',
       name: 'Bài 8: Thư điện tử (Tiết 1)',
       periods: 1,
-      yccd: '- Hiểu được ưu điểm của thư điện tử so với thư truyền thống.\n- Biết cấu trúc địa chỉ thư điện tử và quy trình gửi/nhận thư điện tử.'
+      yccd: '- Nêu được ưu điểm của thư điện tử so với thư truyền thống.\n- Biết cấu trúc của một địa chỉ thư điện tử (tên tài khoản @ tên miền nhà cung cấp dịch vụ) và quy trình gửi/nhận thư.'
     },
     {
       week: 17,
       topic: 'Chủ đề 3: Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin',
       name: 'Bài 8: Thư điện tử (Tiết 2)',
       periods: 1,
-      yccd: '- Thực hành đăng nhập, soạn thư, đính kèm tệp văn bản và gửi thư điện tử.\n- Tuân thủ phép lịch sự, tôn trọng người nhận khi viết thư điện tử.'
+      yccd: '- Thực hành đăng nhập, soạn thư, đính kèm tệp và gửi thư điện tử an toàn.\n- Tuân thủ các quy tắc lịch sự, tôn trọng người nhận khi giao tiếp qua thư điện tử.'
     },
     {
       week: 18,
       topic: 'Đánh giá định kỳ',
       name: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Tin học Lớp 6',
       periods: 1,
-      yccd: '- Đánh giá tổng hợp kiến thức và kỹ năng thực hành Tin học Lớp 6 trong toàn bộ Học kỳ 1.',
+      yccd: '- Đánh giá tổng hợp kiến thức lí thuyết và kĩ năng thực hành môn Tin học Lớp 6 trong toàn bộ Học kỳ 1.',
       notes: 'Kiểm tra cuối kỳ 1'
     },
-    // Chủ đề 4: Đạo đức, pháp luật và văn hóa trong môi trường số
+    // Chủ đề 4: Đạo đức, pháp luật và văn hoá trong môi trường số
     {
       week: 19,
-      topic: 'Chủ đề 4: Đạo đức, pháp luật và văn hóa trong môi trường số',
+      topic: 'Chủ đề 4: Đạo đức, pháp luật và văn hoá trong môi trường số',
       name: 'Bài 9: An toàn thông tin trên Internet (Tiết 1)',
       periods: 1,
-      yccd: '- Nhận biết các nguy cơ rò rỉ thông tin cá nhân và bị lừa đảo trên không gian mạng.\n- Nêu được tác hại của virus, mã độc và các phần mềm gián điệp.'
+      yccd: '- Nhận biết các nguy cơ rò rỉ thông tin cá nhân và lừa đảo trên không gian mạng.\n- Nêu được tác hại của virus, mã độc và các phần mềm gián điệp đối với máy tính và dữ liệu.'
     },
     {
       week: 20,
-      topic: 'Chủ đề 4: Đạo đức, pháp luật và văn hóa trong môi trường số',
+      topic: 'Chủ đề 4: Đạo đức, pháp luật và văn hoá trong môi trường số',
       name: 'Bài 9: An toàn thông tin trên Internet (Tiết 2)',
       periods: 1,
-      yccd: '- Nắm vững các quy tắc an toàn khi sử dụng Internet: đặt mật khẩu mạnh, không mở tệp lạ, không chia sẻ thông tin nhạy cảm.\n- Biết cách ứng xử văn minh và phòng tránh bắt nạt qua mạng.'
+      yccd: '- Nắm vững các quy tắc an toàn: đặt mật khẩu mạnh, không mở tệp lạ, không chia sẻ thông tin cá nhân nhạy cảm.\n- Biết cách ứng xử văn minh, tôn trọng người khác và phòng tránh bắt nạt qua mạng.'
     },
     // Chủ đề 5: Ứng dụng tin học
     {
@@ -947,107 +947,107 @@ export const SECONDARY_INFORMATICS_DATA: Record<number, InformaticsLessonDef[]> 
       topic: 'Chủ đề 5: Ứng dụng tin học',
       name: 'Bài 10: Sơ đồ tư duy (Tiết 1)',
       periods: 1,
-      yccd: '- Hiểu được vai trò của sơ đồ tư duy trong việc tổ chức, tóm tắt và trình bày ý tưởng.\n- Nhận biết cấu trúc phân nhánh của sơ đồ tư duy.'
+      yccd: '- Hiểu được vai trò của sơ đồ tư duy trong việc tổ chức, tóm tắt và trình bày ý tưởng một cách trực quan.\n- Nhận biết cấu trúc phân nhánh (chủ đề trung tâm, nhánh chính, nhánh phụ) của sơ đồ tư duy.'
     },
     {
       week: 22,
       topic: 'Chủ đề 5: Ứng dụng tin học',
       name: 'Bài 10: Sơ đồ tư duy (Tiết 2)',
       periods: 1,
-      yccd: '- Sử dụng phần mềm (MindMaple Lite, XMind hoặc Canva) để tạo sơ đồ tư duy cho một chủ đề học tập.\n- Thêm hình ảnh minh họa, màu sắc và xuất sơ đồ tư duy thành tệp hình ảnh.'
+      yccd: '- Sử dụng phần mềm (MindMaple Lite, XMind hoặc GitMind) để tạo sơ đồ tư duy cho một chủ đề học tập.\n- Thêm hình ảnh minh họa, màu sắc và xuất sơ đồ tư duy thành tệp hình ảnh/PDF.'
     },
     {
       week: 23,
       topic: 'Chủ đề 5: Ứng dụng tin học',
       name: 'Bài 11: Định dạng văn bản (Tiết 1)',
       periods: 1,
-      yccd: '- Thực hiện thành thạo định dạng ký tự: phông chữ, cỡ chữ, kiểu chữ (đậm, nghiêng, gạch chân), màu chữ.\n- Định dạng đoạn văn bản: căn lề, khoảng cách dòng, khoảng cách đoạn.'
+      yccd: '- Thực hiện thành thạo định dạng kí tự: phông chữ, cỡ chữ, kiểu chữ (đậm, nghiêng, gạch chân), màu chữ.\n- Định dạng đoạn văn bản: căn lề (trái, phải, giữa, đều), thụt lề đầu dòng, khoảng cách dòng và khoảng cách đoạn.'
     },
     {
       week: 24,
       topic: 'Chủ đề 5: Ứng dụng tin học',
       name: 'Bài 11: Định dạng văn bản (Tiết 2)',
       periods: 1,
-      yccd: '- Thiết lập định dạng trang văn bản: kích thước giấy (A4), hướng trang (dọc/ngang), căn lề trang.\n- Chèn và định dạng hình ảnh minh họa, căn chỉnh vị trí hình ảnh hài hòa trong văn bản.'
+      yccd: '- Thiết lập định dạng trang văn bản: kích thước giấy (A4), hướng trang (dọc/ngang), căn lề trang in.\n- Chèn hình ảnh minh họa, thay đổi kích thước và căn chỉnh vị trí hình ảnh hài hòa trong văn bản.'
     },
     {
       week: 25,
       topic: 'Chủ đề 5: Ứng dụng tin học',
       name: 'Bài 12: Trình bày thông tin ở dạng bảng (Tiết 1)',
       periods: 1,
-      yccd: '- Nêu được lợi ích của việc trình bày thông tin cô đọng, rõ ràng ở dạng bảng biểu.\n- Thực hiện tạo bảng, chèn thêm/xóa hàng, cột và căn chỉnh độ rộng cột.'
+      yccd: '- Nêu được lợi ích của việc trình bày thông tin cô đọng, rõ ràng ở dạng bảng biểu.\n- Thực hiện tạo bảng, chèn thêm hàng/cột, xóa hàng/cột và căn chỉnh kích thước các ô.'
     },
     {
       week: 26,
       topic: 'Chủ đề 5: Ứng dụng tin học',
       name: 'Bài 12: Trình bày thông tin ở dạng bảng (Tiết 2)',
       periods: 1,
-      yccd: '- Thực hiện gộp ô (Merge Cells), tách ô và định dạng đường viền, màu nền bảng biểu.\n- Nhập và căn lề dữ liệu trong bảng một cách thẩm mỹ.'
+      yccd: '- Thực hiện gộp ô (Merge Cells), tách ô, định dạng đường viền (Borders) và màu nền bảng biểu.\n- Nhập và căn chỉnh vị trí dữ liệu trong ô bảng một cách thẩm mĩ.'
     },
     {
       week: 27,
       topic: 'Đánh giá định kỳ',
       name: 'Kiểm tra, đánh giá giữa Học kỳ 2 môn Tin học Lớp 6',
       periods: 1,
-      yccd: '- Đánh giá kỹ năng tạo sơ đồ tư duy, soạn thảo và định dạng văn bản nâng cao, bảng biểu.',
+      yccd: '- Đánh giá kĩ năng tạo sơ đồ tư duy, soạn thảo và định dạng văn bản nâng cao, trình bày bảng biểu.',
       notes: 'Kiểm tra giữa kỳ 2'
     },
-    // Chủ đề 6: Giải quyết vấn đề với sự trợ giúp của máy tính
     {
       week: 28,
-      topic: 'Chủ đề 6: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 13: Thực hành: Hoàn thiện sổ lưu niệm (Tiết 1)',
+      topic: 'Chủ đề 5: Ứng dụng tin học',
+      name: 'Bài 13: Thực hành: Tìm kiếm và thay thế (1 tiết)',
       periods: 1,
-      yccd: '- Làm việc nhóm thực hành thiết kế ấn phẩm "Sổ lưu niệm lớp em" hoặc "Tờ báo tường điện tử".\n- Tổng hợp văn bản, hình ảnh và bảng biểu trong tài liệu.'
+      yccd: '- Sử dụng thành thạo công cụ Tìm kiếm (Find - Ctrl+F) và Thay thế (Replace - Ctrl+H) trong phần mềm soạn thảo văn bản.\n- Ứng dụng sửa lỗi chính tả, thay thế từ đồng nghĩa nhanh chóng và chính xác trong văn bản dài.'
     },
     {
       week: 29,
-      topic: 'Chủ đề 6: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 13: Thực hành: Hoàn thiện sổ lưu niệm (Tiết 2)',
+      topic: 'Chủ đề 5: Ứng dụng tin học',
+      name: 'Bài 14: Thực hành tổng hợp: Hoàn thiện sổ lưu niệm (Tiết 1)',
       periods: 1,
-      yccd: '- Hoàn thiện sản phẩm, đánh số trang tự động và in ấn/xuất tệp PDF.\n- Báo cáo và chia sẻ sản phẩm số trước lớp.'
+      yccd: '- Làm việc nhóm thực hành thiết kế ấn phẩm "Sổ lưu niệm lớp em" hoặc "Tờ báo tường điện tử".\n- Phối hợp văn bản, hình ảnh, sơ đồ tư duy và bảng biểu trong một tài liệu thống nhất.'
     },
     {
       week: 30,
-      topic: 'Chủ đề 6: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 14: Thuật toán và mô tả thuật toán (Tiết 1)',
+      topic: 'Chủ đề 5: Ứng dụng tin học',
+      name: 'Bài 14: Thực hành tổng hợp: Hoàn thiện sổ lưu niệm (Tiết 2)',
       periods: 1,
-      yccd: '- Nêu được khái niệm thuật toán là dãy các chỉ dẫn từng bước rõ ràng để giải quyết một bài toán.\n- Xác định được Đầu vào (Input) và Đầu ra (Output) của thuật toán.'
+      yccd: '- Hoàn thiện sản phẩm, đánh số trang tự động, tạo trang bìa và xuất bản tệp sang định dạng PDF.\n- Báo cáo, thuyết trình và chia sẻ sản phẩm số trước lớp học.'
     },
+    // Chủ đề 6: Giải quyết vấn đề với sự trợ giúp của máy tính
     {
       week: 31,
       topic: 'Chủ đề 6: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 14: Thuật toán và mô tả thuật toán (Tiết 2)',
+      name: 'Bài 15: Thuật toán (Tiết 1)',
       periods: 1,
-      yccd: '- Biết cách mô tả thuật toán bằng hai phương pháp: Liệt kê các bước bằng ngôn ngữ tự nhiên và Sơ đồ khối (Flowchart).\n- Nhận biết các hình khối chuẩn trong sơ đồ khối (hình elip, hình chữ nhật, hình thoi, mũi tên).'
+      yccd: '- Nêu được khái niệm thuật toán là dãy các chỉ dẫn từng bước rõ ràng để giải quyết một nhiệm vụ/bài toán.\n- Xác định được Đầu vào (Input) và Đầu ra (Output) của một thuật toán cụ thể.'
     },
     {
       week: 32,
       topic: 'Chủ đề 6: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 15: Các thuật toán tìm kiếm và sắp xếp cơ bản (Tiết 1)',
+      name: 'Bài 15: Thuật toán (Tiết 2)',
       periods: 1,
-      yccd: '- Hiểu ý tưởng và mô phỏng được thuật toán Tìm kiếm tuần tự (Sequential Search) trên dãy dữ liệu cụ thể.\n- Xác định trường hợp tìm thấy và không tìm thấy.'
+      yccd: '- Biết cách mô tả thuật toán bằng hai phương pháp: Liệt kê các bước bằng ngôn ngữ tự nhiên và Sơ đồ khối (Flowchart).\n- Nhận biết ý nghĩa các hình khối chuẩn trong sơ đồ khối (bắt đầu/kết thúc, xử lí, điều kiện, vào/ra).'
     },
     {
       week: 33,
       topic: 'Chủ đề 6: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 15: Các thuật toán tìm kiếm và sắp xếp cơ bản (Tiết 2)',
+      name: 'Bài 16: Các cấu trúc điều khiển (1 tiết)',
       periods: 1,
-      yccd: '- Hiểu ý tưởng và mô phỏng được thuật toán Sắp xếp chọn (Selection Sort) hoặc Sắp xếp nổi bọt (Bubble Sort).\n- Rèn luyện tư duy logic và thuật toán.'
+      yccd: '- Nhận biết và phân biệt được 3 cấu trúc điều khiển cơ bản trong thuật toán: Cấu trúc tuần tự, Cấu trúc rẽ nhánh (Nếu... thì...), Cấu trúc lặp.\n- Vẽ sơ đồ khối thể hiện các cấu trúc điều khiển trong bài toán thực tế.'
     },
     {
       week: 34,
       topic: 'Chủ đề 6: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Ôn tập tổng hợp cuối năm học môn Tin học 6 (1 tiết)',
+      name: 'Bài 17: Chương trình máy tính (1 tiết)',
       periods: 1,
-      yccd: '- Hệ thống hóa toàn bộ kiến thức 6 chủ đề môn Tin học 6.\n- Rèn luyện kỹ năng thực hành tổng hợp chuẩn bị kiểm tra cuối năm.'
+      yccd: '- Hiểu được chương trình máy tính là bản mô tả thuật toán bằng ngôn ngữ mà máy tính có thể hiểu và thực hiện được.\n- Phân biệt giữa người viết chương trình (lập trình viên), ngôn ngữ lập trình và môi trường chạy chương trình.\n- Ôn tập hệ thống hóa kiến thức môn Tin học 6.'
     },
     {
       week: 35,
       topic: 'Đánh giá định kỳ',
       name: 'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Tin học 6',
       periods: 1,
-      yccd: '- Đánh giá tổng kết kết quả học tập môn Tin học Lớp 6 theo Chuẩn đầu ra CT GDPT 2018.',
+      yccd: '- Đánh giá tổng kết mức độ hoàn thành chuẩn kiến thức kĩ năng môn Tin học Lớp 6 theo Chương trình GDPT 2018.',
       notes: 'Kiểm tra cuối kỳ 2'
     }
   ],
@@ -1056,84 +1056,84 @@ export const SECONDARY_INFORMATICS_DATA: Record<number, InformaticsLessonDef[]> 
     {
       week: 1,
       topic: 'Chủ đề 1: Máy tính và cộng đồng',
-      name: 'Bài 1: Thiết bị vào - ra (Tiết 1)',
+      name: 'Bài 1: Thiết bị vào – ra (Tiết 1)',
       periods: 1,
-      yccd: '- Nhận biết và phân biệt được các thiết bị vào (Input devices) và thiết bị ra (Output devices).\n- Nêu được chức năng của một số thiết bị vào - ra thông dụng: bàn phím, chuột, máy quét, micro, màn hình, máy in, loa, máy chiếu.'
+      yccd: '- Nhận biết và phân biệt được các thiết bị vào (bàn phím, chuột, máy quét, micro, camera) và thiết bị ra (màn hình, máy in, loa, máy chiếu).\n- Nêu được chức năng cơ bản của từng thiết bị vào – ra đối với hoạt động của máy tính.'
     },
     {
       week: 2,
       topic: 'Chủ đề 1: Máy tính và cộng đồng',
-      name: 'Bài 1: Thiết bị vào - ra (Tiết 2)',
+      name: 'Bài 1: Thiết bị vào – ra (Tiết 2)',
       periods: 1,
-      yccd: '- Nhận biết được một số thiết bị vào - ra hiện đại: màn hình cảm ứng, máy bay không người lái (drone), kính thực tế ảo (VR).\n- Biết cách gắn kết nối an toàn các thiết bị vào - ra qua cổng USB, HDMI, Audio.'
+      yccd: '- Nhận biết được một số thiết bị vào – ra hiện đại (màn hình cảm ứng, bảng vẽ điện tử, thiết bị thực tế ảo VR).\n- Biết cách gắn kết nối an toàn các thiết bị vào – ra qua cổng USB, HDMI, Audio, Bluetooth.'
     },
     {
       week: 3,
       topic: 'Chủ đề 1: Máy tính và cộng đồng',
-      name: 'Bài 2: Phần mềm ứng dụng (Tiết 1)',
+      name: 'Bài 2: Phần mềm máy tính (Tiết 1)',
       periods: 1,
-      yccd: '- Phân biệt được phần mềm hệ thống (Hệ điều hành Windows, Linux, Android) và phần mềm ứng dụng.\n- Nêu được vai trò trung gian điều khiển của hệ điều hành đối với phần cứng và phần mềm ứng dụng.'
+      yccd: '- Phân biệt được phần mềm hệ thống (Hệ điều hành Windows, Linux, Android, iOS) và phần mềm ứng dụng.\n- Nêu được vai trò trung gian điều khiển của hệ điều hành đối với phần cứng và phần mềm ứng dụng.'
     },
     {
       week: 4,
       topic: 'Chủ đề 1: Máy tính và cộng đồng',
-      name: 'Bài 2: Phần mềm ứng dụng (Tiết 2)',
+      name: 'Bài 2: Phần mềm máy tính (Tiết 2)',
       periods: 1,
-      yccd: '- Nhận diện các tệp chương trình và tệp dữ liệu thông qua phần mở rộng (.docx, .xlsx, .pptx, .pdf, .mp3, .mp4).\n- Sử dụng phần mềm diệt virus và phần mềm tiện ích cơ bản.'
+      yccd: '- Nhận diện các tệp chương trình và tệp dữ liệu thông qua phần mở rộng (.docx, .xlsx, .pptx, .pdf, .mp3, .mp4).\n- Nêu được lợi ích của việc sử dụng phần mềm diệt virus và phần mềm tiện ích bản quyền.'
     },
-    // Chủ đề 2: Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin
     {
       week: 5,
-      topic: 'Chủ đề 2: Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin',
-      name: 'Bài 3: Quản lý dữ liệu trong máy tính (Tiết 1)',
+      topic: 'Chủ đề 1: Máy tính và cộng đồng',
+      name: 'Bài 3: Quản lí dữ liệu trong máy tính (Tiết 1)',
       periods: 1,
-      yccd: '- Hiểu được vai trò của việc tổ chức lưu trữ dữ liệu khoa học trong cây thư mục.\n- Thực hiện các thao tác quản lý tệp và thư mục nâng cao bằng File Explorer.'
+      yccd: '- Hiểu được vai trò của việc tổ chức lưu trữ dữ liệu khoa học trong cây thư mục.\n- Thực hiện các thao tác quản lí tệp và thư mục nâng cao: tạo, đổi tên, sao chép, di chuyển và xóa dữ liệu an toàn.'
     },
     {
       week: 6,
-      topic: 'Chủ đề 2: Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin',
-      name: 'Bài 3: Quản lý dữ liệu trong máy tính (Tiết 2)',
+      topic: 'Chủ đề 1: Máy tính và cộng đồng',
+      name: 'Bài 3: Quản lí dữ liệu trong máy tính (Tiết 2)',
       periods: 1,
-      yccd: '- Thực hiện nén tệp/thư mục (Zip/Rar) để giảm dung lượng và giải nén dữ liệu an toàn.\n- Đặt thuộc tính bảo vệ tệp (Chỉ đọc - Read-only).'
+      yccd: '- Thực hiện nén tệp/thư mục (Zip) để giảm dung lượng lưu trữ và giải nén dữ liệu.\n- Đặt thuộc tính bảo vệ tệp (Chỉ đọc - Read-only) và tìm kiếm tệp nhanh chóng bằng công cụ tìm kiếm.'
     },
+    // Chủ đề 2: Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin
     {
       week: 7,
       topic: 'Chủ đề 2: Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin',
       name: 'Bài 4: Mạng xã hội và một số kênh trao đổi thông tin trên Internet (Tiết 1)',
       periods: 1,
-      yccd: '- Nêu được khái niệm mạng xã hội (Social Media) và kể tên các mạng xã hội phổ biến (Facebook, Zalo, YouTube).\n- Nhận biết các chức năng chính: kết nối bạn bè, chia sẻ bài viết, nhắn tin, gọi video.'
+      yccd: '- Nêu được khái niệm mạng xã hội (Social Media) và kể tên các mạng xã hội phổ biến.\n- Nhận biết các chức năng chính: tạo hồ sơ cá nhân, kết nối bạn bè, chia sẻ bài viết, nhắn tin, gọi video.'
     },
     {
       week: 8,
       topic: 'Chủ đề 2: Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin',
       name: 'Bài 4: Mạng xã hội và một số kênh trao đổi thông tin trên Internet (Tiết 2)',
       periods: 1,
-      yccd: '- Phân tích các ưu điểm và nguy cơ tiêu cực khi sử dụng mạng xã hội (nghiện mạng xã hội, tin giả, lộ thông tin).\n- Biết cách thiết lập quyền riêng tư (Privacy Settings) cho tài khoản cá nhân.'
+      yccd: '- Phân tích các ưu điểm và nguy cơ tiêu cực khi sử dụng mạng xã hội (nghiện mạng xã hội, tin giả, lộ thông tin cá nhân).\n- Biết cách thiết lập quyền riêng tư (Privacy Settings) và bảo vệ an toàn cho tài khoản cá nhân.'
     },
     {
       week: 9,
       topic: 'Đánh giá định kỳ',
       name: 'Kiểm tra, đánh giá giữa Học kỳ 1 môn Tin học Lớp 7',
       periods: 1,
-      yccd: '- Đánh giá kiến thức thiết bị vào ra, hệ điều hành, quản lý dữ liệu và mạng xã hội.',
+      yccd: '- Đánh giá kiến thức về thiết bị vào ra, hệ điều hành, quản lí dữ liệu trong máy tính và mạng xã hội từ Tuần 1 đến Tuần 8.',
       notes: 'Kiểm tra giữa kỳ 1'
     },
-    // Chủ đề 3: Đạo đức, pháp luật và văn hóa trong môi trường số
+    // Chủ đề 3: Đạo đức, pháp luật và văn hoá trong môi trường số
     {
       week: 10,
-      topic: 'Chủ đề 3: Đạo đức, pháp luật và văn hóa trong môi trường số',
+      topic: 'Chủ đề 3: Đạo đức, pháp luật và văn hoá trong môi trường số',
       name: 'Bài 5: Ứng xử trên mạng (Tiết 1)',
       periods: 1,
       yccd: '- Nắm vững các quy tắc ứng xử có văn hóa, chuẩn mực và lịch sự trong giao tiếp trực tuyến (Netiquette).\n- Không bình luận xúc phạm, không lan truyền tin đồn thất thiệt hoặc hình ảnh phản cảm.'
     },
     {
       week: 11,
-      topic: 'Chủ đề 3: Đạo đức, pháp luật và văn hóa trong môi trường số',
+      topic: 'Chủ đề 3: Đạo đức, pháp luật và văn hoá trong môi trường số',
       name: 'Bài 5: Ứng xử trên mạng (Tiết 2)',
       periods: 1,
-      yccd: '- Hiểu được các quy định pháp luật cơ bản về bảo vệ bí mật đời tư và bản quyền tác phẩm số.\n- Biết cách phòng tránh và xử lý khi bị quấy rối hoặc bắt nạt trên không gian mạng.'
+      yccd: '- Hiểu được các quy định pháp luật cơ bản về bảo vệ bí mật đời tư và bản quyền tác phẩm số.\n- Biết cách phòng tránh và tìm kiếm sự trợ giúp khi bị quấy rối hoặc bắt nạt trên không gian mạng.'
     },
-    // Chủ đề 4: Ứng dụng tin học (Bảng tính điện tử & Trình chiếu)
+    // Chủ đề 4: Ứng dụng tin học (Bảng tính điện tử)
     {
       week: 12,
       topic: 'Chủ đề 4: Ứng dụng tin học',
@@ -1146,164 +1146,164 @@ export const SECONDARY_INFORMATICS_DATA: Record<number, InformaticsLessonDef[]> 
       topic: 'Chủ đề 4: Ứng dụng tin học',
       name: 'Bài 6: Làm quen với phần mềm bảng tính (Tiết 2)',
       periods: 1,
-      yccd: '- Phân biệt các kiểu dữ liệu trong ô tính: kiểu văn bản, kiểu số, kiểu ngày tháng.\n- Nhập và chỉnh sửa dữ liệu trong bảng tính đơn giản.'
+      yccd: '- Phân biệt các kiểu dữ liệu trong ô tính: kiểu văn bản, kiểu số, kiểu ngày tháng.\n- Nhập, chỉnh sửa dữ liệu và chọn các khối ô tính trong bảng tính đơn giản.'
     },
     {
       week: 14,
       topic: 'Chủ đề 4: Ứng dụng tin học',
       name: 'Bài 7: Tính toán tự động trên bảng tính (Tiết 1)',
       periods: 1,
-      yccd: '- Nhập công thức tính toán bắt đầu bằng dấu bằng (=) và sử dụng các phép toán số học (+, -, *, /, ^).\n- Sử dụng địa chỉ ô tính (ví dụ: A1, B2) trong công thức tính toán.'
+      yccd: '- Nhập công thức tính toán bắt đầu bằng dấu bằng (=) và sử dụng các phép toán số học (+, -, *, /, ^).\n- Sử dụng địa chỉ ô tính (ví dụ: A1, B2) trong công thức tính toán tự động.'
     },
     {
       week: 15,
       topic: 'Chủ đề 4: Ứng dụng tin học',
       name: 'Bài 7: Tính toán tự động trên bảng tính (Tiết 2)',
       periods: 1,
-      yccd: '- Sử dụng tính năng tự động điền công thức (AutoFill / Fill Handle) để sao chép công thức nhanh chóng.\n- Hiểu được sự thay đổi địa chỉ tương đối khi sao chép công thức.'
+      yccd: '- Sử dụng tính năng tự động điền công thức (AutoFill) để sao chép công thức nhanh chóng.\n- Hiểu được sự thay đổi địa chỉ tương đối khi sao chép công thức sang các ô khác.'
     },
     {
       week: 16,
       topic: 'Chủ đề 4: Ứng dụng tin học',
-      name: 'Bài 8: Sử dụng các hàm có sẵn (Tiết 1)',
+      name: 'Bài 8: Công cụ hỗ trợ tính toán (Tiết 1)',
       periods: 1,
       yccd: '- Nắm vững cú pháp và sử dụng thành thạo các hàm tính toán cơ bản: SUM (tính tổng), AVERAGE (tính trung bình cộng).'
     },
     {
       week: 17,
       topic: 'Chủ đề 4: Ứng dụng tin học',
-      name: 'Bài 8: Sử dụng các hàm có sẵn (Tiết 2)',
+      name: 'Bài 8: Công cụ hỗ trợ tính toán (Tiết 2)',
       periods: 1,
-      yccd: '- Sử dụng hàm MAX (tìm giá trị lớn nhất), MIN (tìm giá trị nhỏ nhất), COUNT (đếm số ô chứa số).\n- Ứng dụng tính điểm trung bình và xếp loại học tập của học sinh.'
+      yccd: '- Sử dụng thành thạo hàm MAX (tìm giá trị lớn nhất), MIN (tìm giá trị nhỏ nhất), COUNT (đếm số ô chứa số).\n- Ứng dụng tính điểm trung bình môn học và phân tích bảng số liệu học tập.'
     },
     {
       week: 18,
       topic: 'Đánh giá định kỳ',
       name: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Tin học Lớp 7',
       periods: 1,
-      yccd: '- Đánh giá tổng hợp kiến thức bảng tính Excel, công thức tính toán và các hàm cơ bản trong Học kỳ 1.',
+      yccd: '- Đánh giá tổng hợp kiến thức bảng tính Excel, công thức tính toán và các hàm thống kê cơ bản trong Học kỳ 1.',
       notes: 'Kiểm tra cuối kỳ 1'
     },
     {
       week: 19,
       topic: 'Chủ đề 4: Ứng dụng tin học',
-      name: 'Bài 9: Định dạng trang tính, chèn thêm và xóa hàng, cột (Tiết 1)',
+      name: 'Bài 9: Trình bày bảng tính (Tiết 1)',
       periods: 1,
       yccd: '- Thực hiện chèn thêm hàng/cột, xóa hàng/cột và thay đổi độ cao hàng, độ rộng cột.\n- Gộp ô và căn giữa tiêu đề bảng tính (Merge & Center).'
     },
     {
       week: 20,
       topic: 'Chủ đề 4: Ứng dụng tin học',
-      name: 'Bài 9: Định dạng trang tính, chèn thêm và xóa hàng, cột (Tiết 2)',
+      name: 'Bài 9: Trình bày bảng tính (Tiết 2)',
       periods: 1,
-      yccd: '- Định dạng dữ liệu số: hiển thị số thập phân, phần trăm, tiền tệ (VNĐ / $).\n- Kẻ đường viền bảng tính (Borders) và tô màu nền ô tính (Fill Color).'
+      yccd: '- Định dạng dữ liệu số: hiển thị số thập phân, phần trăm, tiền tệ (VNĐ).\n- Kẻ đường viền bảng tính (Borders) và tô màu nền ô tính (Fill Color) tạo sự chuyên nghiệp.'
     },
     {
       week: 21,
       topic: 'Chủ đề 4: Ứng dụng tin học',
-      name: 'Bài 10: Trình bày bảng tính (Tiết 1)',
+      name: 'Bài 10: Hoàn thiện bảng tính (Tiết 1)',
       periods: 1,
-      yccd: '- Thiết lập hướng trang in (dọc/ngang), kích thước khổ giấy và căn lề trang tính.\n- Xem trang tính trước khi in (Print Preview) để kiểm tra bố cục.'
+      yccd: '- Thiết lập hướng trang in (dọc/ngang), kích thước khổ giấy (A4) và căn lề trang tính.\n- Sử dụng tính năng xem trước khi in (Print Preview) để kiểm tra bố cục trang in.'
     },
     {
       week: 22,
       topic: 'Chủ đề 4: Ứng dụng tin học',
-      name: 'Bài 10: Trình bày bảng tính (Tiết 2)',
+      name: 'Bài 10: Hoàn thiện bảng tính (Tiết 2)',
       periods: 1,
-      yccd: '- Thực hành hoàn thiện bảng tính tổng hợp "Kinh phí tổ chức hoạt động trải nghiệm lớp 7".\n- Xuất và chia sẻ bảng tính dưới dạng tệp PDF.'
+      yccd: '- Thực hành hoàn thiện bảng tính tổng hợp dự án thực tế "Kinh phí tổ chức hoạt động trải nghiệm lớp 7".\n- Xuất và chia sẻ bảng tính dưới dạng tệp PDF/Excel hoàn chỉnh.'
     },
     {
       week: 23,
       topic: 'Chủ đề 4: Ứng dụng tin học',
       name: 'Bài 11: Tạo bài trình chiếu (Tiết 1)',
       periods: 1,
-      yccd: '- Ôn tập và nâng cao kỹ năng thiết kế bài trình chiếu bằng PowerPoint.\n- Áp dụng các nguyên tắc thiết kế trực quan: bố cục thoáng đãng, màu sắc tương phản tốt, không lạm dụng chữ.'
+      yccd: '- Ôn tập và nâng cao kĩ năng thiết kế bài trình chiếu bằng phần mềm Microsoft PowerPoint.\n- Áp dụng các nguyên tắc thiết kế trực quan: bố cục thoáng đãng, màu sắc tương phản tốt, không lạm dụng chữ.'
     },
     {
       week: 24,
       topic: 'Chủ đề 4: Ứng dụng tin học',
       name: 'Bài 11: Tạo bài trình chiếu (Tiết 2)',
       periods: 1,
-      yccd: '- Chèn và định dạng các đối tượng đồ họa: SmartArt, biểu đồ, hình dạng mẫu (Shapes).\n- Xây dựng bài trình chiếu theo chủ đề dự án.'
+      yccd: '- Chèn và định dạng các đối tượng trực quan: hình vẽ (Shapes), sơ đồ SmartArt, hình ảnh minh họa.\n- Xây dựng cấu trúc bài trình chiếu theo chủ đề dự án học tập.'
     },
     {
       week: 25,
       topic: 'Chủ đề 4: Ứng dụng tin học',
       name: 'Bài 12: Định dạng đối tượng trên trang chiếu (Tiết 1)',
       periods: 1,
-      yccd: '- Thiết lập hiệu ứng hoạt hình Animation nâng cao (Entrance, Emphasis, Exit, Motion Paths).\n- Điều chỉnh thời gian chạy hiệu ứng (Duration, Delay, Start With/After Previous).'
+      yccd: '- Thiết lập hiệu ứng chuyển trang chiếu (Slide Transitions) mượt mà, phù hợp nội dung.\n- Thiết lập hiệu ứng hoạt hình (Animations) cho đối tượng văn bản và hình ảnh.'
     },
     {
       week: 26,
       topic: 'Chủ đề 4: Ứng dụng tin học',
       name: 'Bài 12: Định dạng đối tượng trên trang chiếu (Tiết 2)',
       periods: 1,
-      yccd: '- Tạo liên kết Hyperlink và nút hành động (Action Buttons) để điều hướng linh hoạt giữa các trang chiếu.\n- Chèn âm thanh và video nền vào trang chiếu.'
+      yccd: '- Điều chỉnh thời gian và thứ tự chạy hiệu ứng (Duration, Delay, Start With/After Previous).\n- Tạo liên kết Hyperlink và nút điều hướng giữa các trang chiếu.'
     },
     {
       week: 27,
       topic: 'Đánh giá định kỳ',
       name: 'Kiểm tra, đánh giá giữa Học kỳ 2 môn Tin học Lớp 7',
       periods: 1,
-      yccd: '- Đánh giá kỹ năng định dạng bảng tính nâng cao và thiết kế bài trình chiếu đa phương tiện.',
+      yccd: '- Đánh giá kĩ năng định dạng bảng tính nâng cao và thiết kế bài trình chiếu đa phương tiện.',
       notes: 'Kiểm tra giữa kỳ 2'
     },
-    // Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính
     {
       week: 28,
-      topic: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 13: Thực hành tổng hợp: Hoàn thiện bài trình chiếu (1 tiết)',
+      topic: 'Chủ đề 4: Ứng dụng tin học',
+      name: 'Bài 13: Thực hành tổng hợp: Hoàn thiện bài trình chiếu (Tiết 1)',
       periods: 1,
-      yccd: '- Báo cáo và trình diễn bài trình chiếu sản phẩm trước lớp học.\n- Nhận xét và đánh giá tính trực quan, tính khoa học của bài thuyết trình.'
+      yccd: '- Làm việc nhóm hoàn thiện bài trình chiếu báo cáo dự án học tập môn học.\n- Chèn video, âm thanh minh họa và phối hợp các thành phần trực quan hài hòa.'
     },
     {
       week: 29,
-      topic: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 14: Thuật toán tìm kiếm tuần tự (Tiết 1)',
+      topic: 'Chủ đề 4: Ứng dụng tin học',
+      name: 'Bài 13: Thực hành tổng hợp: Hoàn thiện bài trình chiếu (Tiết 2)',
       periods: 1,
-      yccd: '- Hiểu nguyên lý hoạt động của thuật toán Tìm kiếm tuần tự (Sequential Search).\n- Mô tả thuật toán bằng ngôn ngữ tự nhiên và sơ đồ khối.'
+      yccd: '- Báo cáo và trình diễn bài trình chiếu sản phẩm trước lớp học.\n- Nhận xét, đánh giá tính trực quan, tính khoa học và kĩ năng thuyết trình của nhóm bạn.'
     },
+    // Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính
     {
       week: 30,
       topic: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 14: Thuật toán tìm kiếm tuần tự (Tiết 2)',
+      name: 'Bài 14: Thuật toán tìm kiếm tuần tự (Tiết 1)',
       periods: 1,
-      yccd: '- Thực hiện từng bước thuật toán tìm kiếm tuần tự trên dãy số cụ thể.\n- Phân tích số lần so sánh trong trường hợp tốt nhất và xấu nhất.'
+      yccd: '- Hiểu nguyên lí hoạt động của thuật toán Tìm kiếm tuần tự (Sequential Search).\n- Mô tả thuật toán bằng ngôn ngữ tự nhiên và sơ đồ khối.'
     },
     {
       week: 31,
       topic: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 15: Thuật toán tìm kiếm nhị phân (Tiết 1)',
+      name: 'Bài 14: Thuật toán tìm kiếm tuần tự (Tiết 2)',
       periods: 1,
-      yccd: '- Hiểu điều kiện áp dụng thuật toán Tìm kiếm nhị phân (Binary Search): Dãy dữ liệu đã được sắp xếp.\n- Nắm vững nguyên lý chia đôi phạm vi tìm kiếm ở mỗi bước.'
+      yccd: '- Thực hiện từng bước thuật toán tìm kiếm tuần tự trên dãy số/dữ liệu cụ thể.\n- Phân tích số lần so sánh trong trường hợp tìm thấy và không tìm thấy.'
     },
     {
       week: 32,
+      topic: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính',
+      name: 'Bài 15: Thuật toán tìm kiếm nhị phân (Tiết 1)',
+      periods: 1,
+      yccd: '- Hiểu điều kiện áp dụng thuật toán Tìm kiếm nhị phân (Binary Search): Dãy dữ liệu đã được sắp xếp.\n- Nắm vững nguyên lí chia đôi phạm vi tìm kiếm ở mỗi bước lặp.'
+    },
+    {
+      week: 33,
       topic: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính',
       name: 'Bài 15: Thuật toán tìm kiếm nhị phân (Tiết 2)',
       periods: 1,
       yccd: '- Mô phỏng từng bước thuật toán tìm kiếm nhị phân trên dãy số đã sắp xếp.\n- So sánh hiệu quả vượt trội về tốc độ của tìm kiếm nhị phân so với tìm kiếm tuần tự.'
     },
     {
-      week: 33,
-      topic: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 16: Thuật toán sắp xếp (Tiết 1)',
-      periods: 1,
-      yccd: '- Hiểu mục đích và ý nghĩa của việc sắp xếp dữ liệu (tăng dần/giảm dần).\n- Nắm ý tưởng và mô phỏng thuật toán Sắp xếp nổi bọt (Bubble Sort).'
-    },
-    {
       week: 34,
       topic: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 16: Thuật toán sắp xếp (Tiết 2)',
+      name: 'Bài 16: Thuật toán sắp xếp (1 tiết)',
       periods: 1,
-      yccd: '- Nắm ý tưởng và mô phỏng thuật toán Sắp xếp chọn (Selection Sort).\n- Ôn tập hệ thống hóa kiến thức toàn bộ môn Tin học Lớp 7.'
+      yccd: '- Hiểu mục đích và ý nghĩa của việc sắp xếp dữ liệu (tăng dần/giảm dần).\n- Nắm ý tưởng và mô phỏng được thuật toán Sắp xếp nổi bọt (Bubble Sort) hoặc Sắp xếp chọn (Selection Sort).\n- Ôn tập hệ thống hóa kiến thức toàn bộ môn Tin học Lớp 7.'
     },
     {
       week: 35,
       topic: 'Đánh giá định kỳ',
       name: 'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Tin học 7',
       periods: 1,
-      yccd: '- Đánh giá tổng kết năng lực Tin học và tư duy thuật toán Lớp 7.',
+      yccd: '- Đánh giá tổng kết mức độ hoàn thành chuẩn kiến thức kĩ năng môn Tin học Lớp 7 theo Chương trình GDPT 2018.',
       notes: 'Kiểm tra cuối kỳ 2'
     }
   ],
@@ -1314,253 +1314,253 @@ export const SECONDARY_INFORMATICS_DATA: Record<number, InformaticsLessonDef[]> 
       topic: 'Chủ đề 1: Máy tính và cộng đồng',
       name: 'Bài 1: Lược sử công cụ tính toán (Tiết 1)',
       periods: 1,
-      yccd: '- Trình bày tóm tắt lịch sử phát triển của các công cụ tính toán: Bàn tính, máy tính cơ học của Pascal, máy tính cơ khí Babbage.\n- Nêu 5 thế hệ máy tính điện tử từ bóng đèn chân không đến vi mạch tích hợp cao (VLSI).'
+      yccd: '- Trình bày tóm tắt lịch sử phát triển của các công cụ tính toán: Bàn tính, máy tính cơ học của Pascal, máy tính cơ khí của Babbage.\n- Nêu được 5 thế hệ máy tính điện tử từ bóng đèn chân không đến vi mạch tích hợp cao (VLSI).'
     },
     {
       week: 2,
       topic: 'Chủ đề 1: Máy tính và cộng đồng',
       name: 'Bài 1: Lược sử công cụ tính toán (Tiết 2)',
       periods: 1,
-      yccd: '- Phân tích xu hướng phát triển của máy tính hiện đại: Nhỏ gọn hơn, tốc độ siêu nhanh, tiết kiệm năng lượng, tích hợp Trí tuệ nhân tạo (AI).\n- Nêu ví dụ về vai trò của siêu máy tính và máy tính lượng tử trong tương lai.'
-    },
-    {
-      week: 3,
-      topic: 'Chủ đề 1: Máy tính và cộng đồng',
-      name: 'Bài 2: Thông tin trong môi trường số (Tiết 1)',
-      periods: 1,
-      yccd: '- Hiểu được đặc điểm của thông tin số: Dễ sao chép, dễ lan truyền, khó xóa bỏ hoàn toàn, có thể bị chỉnh sửa sai lệch.\n- Nhận biết giá trị và tầm quan trọng của dữ liệu số trong kỷ nguyên kinh tế số.'
-    },
-    {
-      week: 4,
-      topic: 'Chủ đề 1: Máy tính và cộng đồng',
-      name: 'Bài 2: Thông tin trong môi trường số (Tiết 2)',
-      periods: 1,
-      yccd: '- Nhận biết độ tin cậy của thông tin số, cách kiểm chứng nguồn gốc thông tin.\n- Rèn luyện kỹ năng tư duy phản biện trước các luồng thông tin trên mạng xã hội.'
-    },
-    {
-      week: 5,
-      topic: 'Chủ đề 1: Máy tính và cộng đồng',
-      name: 'Bài 3: Thực hành: Khai thác thông tin số (1 tiết)',
-      periods: 1,
-      yccd: '- Thực hành tìm kiếm, thẩm định và trích xuất dữ liệu từ các nguồn chính thống (Cổng thông tin chính phủ, tổ chức quốc tế).\n- Lưu trữ và tổ chức dữ liệu số khoa học phục vụ bài học.'
+      yccd: '- Phân tích xu hướng phát triển của máy tính hiện đại: Nhỏ gọn hơn, tốc độ siêu nhanh, tiết kiệm năng lượng, kết nối vạn vật (IoT) và tích hợp Trí tuệ nhân tạo (AI).\n- Nêu ví dụ về vai trò của siêu máy tính trong nghiên cứu khoa học và đời sống.'
     },
     // Chủ đề 2: Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin
     {
-      week: 6,
+      week: 3,
       topic: 'Chủ đề 2: Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin',
-      name: 'Bài 4: Sử dụng bảng tính điện tử nâng cao (Tiết 1)',
+      name: 'Bài 2: Thông tin trong môi trường số (Tiết 1)',
       periods: 1,
-      yccd: '- Nắm vững khái niệm địa chỉ ô tương đối (A1), địa chỉ ô tuyệt đối ($A$1) và địa chỉ hỗn hợp ($A1, A$1).\n- Hiểu ý nghĩa của việc cố định hàng/cột khi sao chép công thức.'
+      yccd: '- Hiểu được đặc điểm của thông tin số: Dễ sao chép, dễ lan truyền, khó xóa bỏ hoàn toàn, có thể bị chỉnh sửa sai lệch.\n- Nhận biết giá trị và tầm quan trọng của thông tin số trong kỷ nguyên kinh tế tri thức.'
+    },
+    {
+      week: 4,
+      topic: 'Chủ đề 2: Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin',
+      name: 'Bài 2: Thông tin trong môi trường số (Tiết 2)',
+      periods: 1,
+      yccd: '- Nhận biết độ tin cậy của thông tin số, cách kiểm chứng nguồn gốc thông tin.\n- Rèn luyện kĩ năng tư duy phản biện trước các luồng thông tin trên mạng xã hội.'
+    },
+    {
+      week: 5,
+      topic: 'Chủ đề 2: Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin',
+      name: 'Bài 3: Thực hành: Khai thác thông tin số (1 tiết)',
+      periods: 1,
+      yccd: '- Thực hành tìm kiếm, thẩm định và trích xuất dữ liệu từ các nguồn chính thống (Cổng thông tin điện tử, báo chí chính thống).\n- Lưu trữ và tổ chức dữ liệu số khoa học phục vụ bài học và dự án nghiên cứu.'
+    },
+    // Chủ đề 3: Đạo đức, pháp luật và văn hoá trong môi trường số
+    {
+      week: 6,
+      topic: 'Chủ đề 3: Đạo đức, pháp luật và văn hoá trong môi trường số',
+      name: 'Bài 4: Đạo đức và văn hoá trong sử dụng công nghệ kĩ thuật số (Tiết 1)',
+      periods: 1,
+      yccd: '- Nắm vững các quy định pháp luật về an ninh mạng, quyền tác giả và sở hữu trí tuệ đối với sản phẩm số.\n- Nhận diện các hành vi vi phạm: Đạo văn, sử dụng phần mềm bẻ khóa, tự ý chia sẻ hình ảnh riêng tư của người khác.'
     },
     {
       week: 7,
-      topic: 'Chủ đề 2: Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin',
-      name: 'Bài 4: Sử dụng bảng tính điện tử nâng cao (Tiết 2)',
+      topic: 'Chủ đề 3: Đạo đức, pháp luật và văn hoá trong môi trường số',
+      name: 'Bài 4: Đạo đức và văn hoá trong sử dụng công nghệ kĩ thuật số (Tiết 2)',
       periods: 1,
-      yccd: '- Thực hành sử dụng địa chỉ tuyệt đối để tính toán bảng tính có tham chiếu hệ số cố định (ví dụ: Tỷ giá ngoại tệ, thuế VAT, tỷ lệ %).\n- Nhận biết các thông báo lỗi thông dụng trong Excel (#VALUE!, #NAME?, #DIV/0!).'
+      yccd: '- Hiểu về giấy phép tài nguyên mở Creative Commons (CC) và phần mềm mã nguồn mở.\n- Thực hành trích dẫn tác giả đúng quy chuẩn khi làm bài thuyết trình, ấn phẩm số.'
     },
+    // Chủ đề 4: Ứng dụng tin học
     {
       week: 8,
-      topic: 'Chủ đề 2: Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin',
-      name: 'Bài 5: Các hàm xử lý dữ liệu và thống kê trong bảng tính (1 tiết)',
+      topic: 'Chủ đề 4: Ứng dụng tin học',
+      name: 'Bài 5: Sử dụng bảng tính giải quyết bài toán thực tế (Tiết 1)',
       periods: 1,
-      yccd: '- Sử dụng hàm điều kiện IF đơn giản và hàm thống kê có điều kiện COUNTIF, SUMIF.\n- Ứng dụng phân loại học lực học sinh và thống kê số lượng.'
+      yccd: '- Nắm vững khái niệm địa chỉ ô tương đối (A1), địa chỉ ô tuyệt đối ($A$1) và địa chỉ hỗn hợp ($A1, A$1).\n- Hiểu ý nghĩa của việc cố định hàng/cột khi sao chép công thức tính toán trong Excel.'
     },
     {
       week: 9,
       topic: 'Đánh giá định kỳ',
       name: 'Kiểm tra, đánh giá giữa Học kỳ 1 môn Tin học Lớp 8',
       periods: 1,
-      yccd: '- Đánh giá kiến thức lịch sử máy tính, thông tin số và kỹ năng sử dụng địa chỉ tuyệt đối, hàm nâng cao trong Excel.',
+      yccd: '- Đánh giá kiến thức lịch sử máy tính, thông tin số, bản quyền và kĩ năng sử dụng địa chỉ ô tính trong Excel từ Tuần 1 đến Tuần 8.',
       notes: 'Kiểm tra giữa kỳ 1'
     },
     {
       week: 10,
-      topic: 'Chủ đề 2: Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin',
-      name: 'Bài 6: Sắp xếp và lọc dữ liệu (Tiết 1)',
+      topic: 'Chủ đề 4: Ứng dụng tin học',
+      name: 'Bài 5: Sử dụng bảng tính giải quyết bài toán thực tế (Tiết 2)',
       periods: 1,
-      yccd: '- Hiểu mục đích của việc sắp xếp dữ liệu (Sort) và lọc dữ liệu (Filter) trong quản lý bảng biểu lớn.\n- Thực hiện sắp xếp dữ liệu theo thứ tự tăng dần/giảm dần theo một hoặc nhiều tiêu chí.'
+      yccd: '- Thực hành sử dụng địa chỉ tuyệt đối để tính toán bảng tính có tham chiếu hệ số cố định (Tỷ giá ngoại tệ, thuế VAT, tỉ lệ giảm giá).\n- Nhận biết và xử lí các thông báo lỗi thông dụng trong Excel (#VALUE!, #NAME?, #DIV/0!).'
     },
     {
       week: 11,
-      topic: 'Chủ đề 2: Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin',
+      topic: 'Chủ đề 4: Ứng dụng tin học',
+      name: 'Bài 6: Sắp xếp và lọc dữ liệu (Tiết 1)',
+      periods: 1,
+      yccd: '- Hiểu mục đích của việc sắp xếp dữ liệu (Sort) và lọc dữ liệu (Filter) trong quản lí bảng tính lớn.\n- Thực hiện sắp xếp dữ liệu theo thứ tự tăng dần/giảm dần theo một hoặc nhiều tiêu chí.'
+    },
+    {
+      week: 12,
+      topic: 'Chủ đề 4: Ứng dụng tin học',
       name: 'Bài 6: Sắp xếp và lọc dữ liệu (Tiết 2)',
       periods: 1,
       yccd: '- Sử dụng tính năng AutoFilter để lọc ra các hàng thỏa mãn điều kiện xác định.\n- Lọc dữ liệu theo giá trị số, văn bản hoặc lọc các giá trị lớn nhất/nhỏ nhất (Top 10).'
     },
-    // Chủ đề 3: Đạo đức, pháp luật và văn hóa trong môi trường số
     {
-      week: 12,
-      topic: 'Chủ đề 3: Đạo đức, pháp luật và văn hóa trong môi trường số',
-      name: 'Bài 7: Trực quan hóa dữ liệu bằng biểu đồ (Tiết 1)',
+      week: 13,
+      topic: 'Chủ đề 4: Ứng dụng tin học',
+      name: 'Bài 7: Trình bày dữ liệu bằng biểu đồ (Tiết 1)',
       periods: 1,
       yccd: '- Hiểu được vai trò của biểu đồ trong việc so sánh số liệu và dự đoán xu hướng trực quan.\n- Nhận biết các dạng biểu đồ phổ biến: Biểu đồ cột (Column/Bar), biểu đồ tròn (Pie), biểu đồ đường (Line).'
     },
     {
-      week: 13,
-      topic: 'Chủ đề 3: Đạo đức, pháp luật và văn hóa trong môi trường số',
-      name: 'Bài 7: Trực quan hóa dữ liệu bằng biểu đồ (Tiết 2)',
+      week: 14,
+      topic: 'Chủ đề 4: Ứng dụng tin học',
+      name: 'Bài 7: Trình bày dữ liệu bằng biểu đồ (Tiết 2)',
       periods: 1,
       yccd: '- Thực hiện tạo biểu đồ thích hợp từ bảng số liệu Excel.\n- Định dạng các thành phần của biểu đồ: Tiêu đề biểu đồ (Chart Title), nhãn dữ liệu (Data Labels), chú giải (Legend).'
     },
     {
-      week: 14,
-      topic: 'Chủ đề 3: Đạo đức, pháp luật và văn hóa trong môi trường số',
-      name: 'Bài 8: Khai thác và bảo vệ bản quyền thông tin trên không gian mạng (Tiết 1)',
-      periods: 1,
-      yccd: '- Nắm vững quy định của Luật An ninh mạng và Luật Sở hữu trí tuệ tại Việt Nam.\n- Nhận diện các hành vi vi phạm bản quyền phần mềm, âm nhạc, phim ảnh, tài liệu số.'
-    },
-    {
       week: 15,
-      topic: 'Chủ đề 3: Đạo đức, pháp luật và văn hóa trong môi trường số',
-      name: 'Bài 8: Khai thác và bảo vệ bản quyền thông tin trên không gian mạng (Tiết 2)',
+      topic: 'Chủ đề 4: Ứng dụng tin học',
+      name: 'Bài 8a: Làm việc với danh sách dạng liệt kê và hình ảnh trong văn bản (Tiết 1)',
       periods: 1,
-      yccd: '- Hiểu về giấy phép tài nguyên mở Creative Commons (CC) và phần mềm mã nguồn mở (FOSS).\n- Thực hành trích dẫn tác giả đúng quy chuẩn khi làm bài thuyết trình, dự án.'
+      yccd: '- Tạo danh sách liệt kê dạng dấu đầu dòng (Bullets) và dạng thứ tự (Numbering) trong văn bản.\n- Tùy biến biểu tượng dấu đầu dòng và định dạng số thứ tự nhiều cấp độ (Multilevel List).'
     },
     {
       week: 16,
-      topic: 'Chủ đề 3: Đạo đức, pháp luật và văn hóa trong môi trường số',
-      name: 'Ôn tập tổng hợp kiến thức Tin học Học kỳ 1 (Tiết 1)',
+      topic: 'Chủ đề 4: Ứng dụng tin học',
+      name: 'Bài 8a: Làm việc với danh sách dạng liệt kê và hình ảnh trong văn bản (Tiết 2)',
       periods: 1,
-      yccd: '- Hệ thống hóa toàn bộ kiến thức Bảng tính Excel nâng cao, Sắp xếp, Lọc, Biểu đồ và Bản quyền số.'
+      yccd: '- Chèn và định dạng hình ảnh nâng cao, vẽ hình khối Shapes, áp dụng hiệu ứng nghệ thuật (Picture Effects).\n- Căn chỉnh vị trí hình ảnh với văn bản (Wrap Text) tạo bố cục trang báo chí chuyên nghiệp.'
     },
     {
       week: 17,
-      topic: 'Chủ đề 3: Đạo đức, pháp luật và văn hóa trong môi trường số',
-      name: 'Ôn tập tổng hợp kiến thức Tin học Học kỳ 1 (Tiết 2)',
+      topic: 'Chủ đề 4: Ứng dụng tin học',
+      name: 'Bài 9a: Tạo đầu trang, chân trang cho văn bản (1 tiết)',
       periods: 1,
-      yccd: '- Rèn luyện kỹ năng thực hành tổng hợp giải quyết bài toán quản lý dữ liệu trên máy tính.'
+      yccd: '- Biết cách chèn tiêu đề đầu trang (Header), tiêu đề chân trang (Footer) và đánh số trang tự động (Page Number).\n- Thiết lập tiêu đề khác nhau giữa trang đầu và các trang sau (Different First Page).'
     },
     {
       week: 18,
       topic: 'Đánh giá định kỳ',
       name: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Tin học Lớp 8',
       periods: 1,
-      yccd: '- Đánh giá toàn diện kiến thức lý thuyết và kỹ năng thực hành Tin học 8 trong Học kỳ 1.',
+      yccd: '- Đánh giá toàn diện kiến thức lí thuyết và kĩ năng thực hành Tin học 8 trong Học kỳ 1 (Bảng tính, sắp xếp, lọc, biểu đồ và soạn thảo nâng cao).',
       notes: 'Kiểm tra cuối kỳ 1'
     },
-    // Chủ đề 4: Ứng dụng tin học (Đồ họa & Đa phương tiện)
     {
       week: 19,
       topic: 'Chủ đề 4: Ứng dụng tin học',
-      name: 'Bài 9: Phần mềm đồ họa và thiết bị số (Tiết 1)',
+      name: 'Bài 10a: Định dạng nâng cao cho trang chiếu (Tiết 1)',
       periods: 1,
-      yccd: '- Phân biệt đồ họa điểm ảnh (Raster Graphics - Photoshop, GIMP) và đồ họa véc-tơ (Vector Graphics - Inkscape, Illustrator).\n- Nêu ưu nhược điểm của từng loại đồ họa.'
+      yccd: '- Khám phá chế độ xem Slide Master trong PowerPoint để thiết lập định dạng chung đồng bộ cho toàn bộ bài trình chiếu.\n- Tùy biến phông chữ, màu sắc và logo thương hiệu trên Slide Master.'
     },
     {
       week: 20,
       topic: 'Chủ đề 4: Ứng dụng tin học',
-      name: 'Bài 9: Phần mềm đồ họa và thiết bị số (Tiết 2)',
+      name: 'Bài 10a: Định dạng nâng cao cho trang chiếu (Tiết 2)',
       periods: 1,
-      yccd: '- Khám phá giao diện phần mềm đồ họa Inkscape / Paint.NET / Canva.\n- Sử dụng các công cụ vẽ hình véc-tơ cơ bản và quản lý các lớp đối tượng (Layers).'
+      yccd: '- Tạo bố cục trang chiếu mới (Custom Layout) trong Slide Master.\n- Áp dụng Slide Master vào việc xây dựng bài trình chiếu chuyên nghiệp, tiết kiệm thời gian.'
     },
     {
       week: 21,
       topic: 'Chủ đề 4: Ứng dụng tin học',
-      name: 'Bài 10: Xử lý hình ảnh và thiết kế sản phẩm đồ họa (Tiết 1)',
+      name: 'Bài 11a: Sử dụng bản mẫu tạo bài trình chiếu (1 tiết)',
       periods: 1,
-      yccd: '- Thực hiện các thao tác xử lý ảnh cơ bản: Cắt xén (Crop), xoay ảnh, chỉnh độ sáng tối, độ tương phản.\n- Xóa phông nền (Remove background) và ghép ảnh nghệ thuật.'
+      yccd: '- Khai thác các mẫu bản dựng có sẵn (Templates/Themes) trực tuyến trong PowerPoint hoặc Canva.\n- Tùy chỉnh nội dung bản mẫu để tạo bài thuyết trình hoàn chỉnh cho một dự án học tập.'
     },
+    // Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính
     {
       week: 22,
-      topic: 'Chủ đề 4: Ứng dụng tin học',
-      name: 'Bài 10: Xử lý hình ảnh và thiết kế sản phẩm đồ họa (Tiết 2)',
+      topic: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính',
+      name: 'Bài 12: Từ thuật toán đến chương trình (Tiết 1)',
       periods: 1,
-      yccd: '- Thiết kế một sản phẩm đồ họa hoàn chỉnh: Poster tuyên truyền hoặc Logo lớp học.\n- Xuất sản phẩm sang định dạng ảnh chuẩn (.PNG, .JPG, .SVG).'
+      yccd: '- Ôn tập môi trường lập trình trực quan (Scratch) và cách chuyển giao từ thuật toán mô tả sang các khối lệnh chương trình.\n- Nhận biết cấu trúc khối lệnh tuần tự và sự tương ứng giữa câu lệnh và hành động của nhân vật.'
     },
     {
       week: 23,
-      topic: 'Chủ đề 4: Ứng dụng tin học',
-      name: 'Bài 11: Tạo video và biên tập âm thanh cơ bản (Tiết 1)',
+      topic: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính',
+      name: 'Bài 12: Từ thuật toán đến chương trình (Tiết 2)',
       periods: 1,
-      yccd: '- Khám phá phần mềm biên tập video (CapCut PC / Clipchamp / OpenShot).\n- Nhập tư liệu video, hình ảnh, âm thanh vào dòng thời gian (Timeline).'
+      yccd: '- Lập trình mô phỏng thuật toán tính toán số học hoặc di chuyển nhân vật vẽ hình học.\n- Chạy thử chương trình và quan sát kết quả thực thi.'
     },
     {
       week: 24,
-      topic: 'Chủ đề 4: Ứng dụng tin học',
-      name: 'Bài 11: Tạo video và biên tập âm thanh cơ bản (Tiết 2)',
+      topic: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính',
+      name: 'Bài 13: Biểu diễn dữ liệu (Tiết 1)',
       periods: 1,
-      yccd: '- Cắt ghép video, chèn nhạc nền, thêm phụ đề (Subtitle) và hiệu ứng chuyển cảnh.\n- Xuất video chuẩn Full HD chia sẻ trên nền tảng học tập.'
+      yccd: '- Khái niệm biến số (Variable) trong lập trình để lưu trữ dữ liệu có thể thay đổi.\n- Tạo biến, đặt tên biến có ý nghĩa và sử dụng lệnh gán giá trị cho biến.'
     },
     {
       week: 25,
-      topic: 'Đánh giá định kỳ',
-      name: 'Kiểm tra, đánh giá giữa Học kỳ 2 môn Tin học Lớp 8',
+      topic: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính',
+      name: 'Bài 13: Biểu diễn dữ liệu (Tiết 2)',
       periods: 1,
-      yccd: '- Đánh giá kỹ năng thiết kế đồ họa vector và biên tập video đa phương tiện.',
-      notes: 'Kiểm tra giữa kỳ 2'
+      yccd: '- Sử dụng các phép toán số học (+, -, *, /) và các biểu thức so sánh, logic trong lập trình.\n- Lập trình bài toán tính tiền điện, tính chu vi diện tích hình học có sử dụng biến số.'
     },
-    // Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính (Lập trình Scratch nâng cao)
     {
       week: 26,
       topic: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 12: Làm quen với ngôn ngữ lập trình trực quan Scratch (Tiết 1)',
+      name: 'Bài 14: Cấu trúc điều khiển (Tiết 1)',
       periods: 1,
-      yccd: '- Ôn tập môi trường Scratch 3.0 và các khối lệnh nâng cao.\n- Tìm hiểu cấu trúc chương trình hướng sự kiện và đa luồng thực thi.'
+      yccd: '- Sử dụng cấu trúc rẽ nhánh dạng thiếu (Nếu... thì...) và dạng đủ (Nếu... thì... Không thì...) trong kịch bản chương trình.\n- Kết hợp biểu thức điều kiện phức hợp bằng toán tử và, hoặc, không.'
     },
     {
       week: 27,
-      topic: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 12: Làm quen với ngôn ngữ lập trình trực quan Scratch (Tiết 2)',
+      topic: 'Đánh giá định kỳ',
+      name: 'Kiểm tra, đánh giá giữa Học kỳ 2 môn Tin học Lớp 8',
       periods: 1,
-      yccd: '- Tạo nhân vật nhân bản (Clones) để tạo hàng loạt đối tượng tự động.\n- Quản lý vòng đời của bản sao bằng khối lệnh When I start as a clone.'
+      yccd: '- Đánh giá kĩ năng định dạng trang chiếu nâng cao, Slide Master, sử dụng biến và cấu trúc rẽ nhánh trong lập trình.',
+      notes: 'Kiểm tra giữa kỳ 2'
     },
     {
       week: 28,
       topic: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 13: Biểu thức, biến và câu lệnh gán (Tiết 1)',
+      name: 'Bài 14: Cấu trúc điều khiển (Tiết 2)',
       periods: 1,
-      yccd: '- Khai báo và sử dụng biến số đơn bản và danh sách (List) trong Scratch.\n- Thực hiện các phép toán gán giá trị và cập nhật biến số theo thời gian.'
+      yccd: '- Sử dụng cấu trúc lặp với số lần biết trước (Lặp lại n lần) và lặp có điều kiện (Lặp cho đến khi).\n- Lập trình bài toán tính tổng dãy số hoặc trò chơi tương tác.'
     },
     {
       week: 29,
       topic: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 13: Biểu thức, biến và câu lệnh gán (Tiết 2)',
+      name: 'Bài 15: Gỡ lỗi (Tiết 1)',
       periods: 1,
-      yccd: '- Sử dụng các hàm toán học nâng cao: Căn bậc hai (sqrt), làm tròn (round), chia lấy dư (mod).\n- Lập trình bài toán tính chu vi, diện tích và tính toán đại số.'
+      yccd: '- Phân biệt các loại lỗi trong chương trình: Lỗi cú pháp, Lỗi thời gian chạy (Runtime) và Lỗi logic.\n- Nhận diện các nguyên nhân phổ biến dẫn đến lỗi logic trong thuật toán.'
     },
     {
       week: 30,
       topic: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 14: Cấu trúc điều khiển rẽ nhánh và lặp (Tiết 1)',
+      name: 'Bài 15: Gỡ lỗi (Tiết 2)',
       periods: 1,
-      yccd: '- Kết hợp lồng ghép nhiều cấu trúc rẽ nhánh If - Else để xử lý các điều kiện phức tạp.\n- Sử dụng toán tử logic And, Or, Not trong biểu thức điều kiện.'
+      yccd: '- Thực hiện các kĩ thuật gỡ lỗi: Chạy từng bước, in giá trị biến số ra màn hình để kiểm tra.\n- Sửa lỗi và tối ưu hóa mã nguồn chương trình.'
     },
     {
       week: 31,
       topic: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 14: Cấu trúc điều khiển rẽ nhánh và lặp (Tiết 2)',
+      name: 'Thực hành tổng hợp: Lập trình thuật toán giải quyết vấn đề (Tiết 1)',
       periods: 1,
-      yccd: '- Sử dụng cấu trúc lặp có điều kiện (Repeat until) và vòng lặp vô hạn (Forever).\n- Tự tạo khối lệnh mới (Custom Blocks / My Blocks) để mô-đun hóa chương trình.'
+      yccd: '- Thiết kế và lập trình dự án trò chơi học tập tương tác hoặc ứng dụng giải toán thực tế.\n- Phân tích yêu cầu, xây dựng thuật toán và viết kịch bản nhân vật.'
     },
     {
       week: 32,
       topic: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 15: Dự án: Lập trình trò chơi học tập (Tiết 1)',
+      name: 'Thực hành tổng hợp: Lập trình thuật toán giải quyết vấn đề (Tiết 2)',
       periods: 1,
-      yccd: '- Thiết kế kịch bản trò chơi tương tác giáo dục: "Đấu trường tri thức" hoặc "Game bắn thiên thạch bảo vệ Trái Đất".\n- Lập trình tương tác bàn phím, tính điểm, âm thanh và chuyển màn chơi.'
+      yccd: '- Hoàn thiện sản phẩm, kiểm thử các trường hợp dữ liệu biên và gỡ lỗi.\n- Giới thiệu, chia sẻ sản phẩm số và đóng gói dự án.'
     },
+    // Chủ đề 6: Hướng nghiệp với Tin học
     {
       week: 33,
-      topic: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 15: Dự án: Lập trình trò chơi học tập (Tiết 2)',
+      topic: 'Chủ đề 6: Hướng nghiệp với Tin học',
+      name: 'Bài 16: Tin học với nghề nghiệp (Tiết 1)',
       periods: 1,
-      yccd: '- Kiểm thử, phát hiện và sửa lỗi logic (Debugging) trong trò chơi.\n- Đóng gói và chia sẻ dự án lên cộng đồng Scratch trực tuyến.'
+      yccd: '- Nhận biết vai trò quan trọng của Tin học trong các ngành nghề thuộc lĩnh vực Công nghệ thông tin và truyền thông.\n- Kể tên và mô tả công việc của một số nghề: Lập trình viên, chuyên viên an ninh mạng, kĩ sư AI, thiết kế đồ họa.'
     },
-    // Chủ đề 6: Hướng nghiệp với tin học
     {
       week: 34,
-      topic: 'Chủ đề 6: Hướng nghiệp với tin học',
-      name: 'Bài 16: Tin học và các ngành nghề trong xã hội hiện đại (1 tiết)',
+      topic: 'Chủ đề 6: Hướng nghiệp với Tin học',
+      name: 'Bài 16: Tin học với nghề nghiệp (Tiết 2)',
       periods: 1,
-      yccd: '- Kể tên các ngành nghề thuộc lĩnh vực Công nghệ thông tin: Lập trình viên, chuyên viên an ninh mạng, chuyên viên phân tích dữ liệu, thiết kế đồ họa.\n- Nhận thức nhu cầu nhân lực số và lập kế hoạch rèn luyện năng lực tin học cá nhân.'
+      yccd: '- Phân tích ứng dụng của Tin học trong các ngành nghề khác trong xã hội (y tế, giáo dục, nông nghiệp thông minh, tài chính ngân hàng).\n- Định hướng phát triển năng lực số và xây dựng kế hoạch học tập cá nhân.'
     },
     {
       week: 35,
       topic: 'Đánh giá định kỳ',
       name: 'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Tin học 8',
       periods: 1,
-      yccd: '- Đánh giá tổng kết kết quả học tập môn Tin học Lớp 8 theo Chuẩn đầu ra CT GDPT 2018.',
+      yccd: '- Đánh giá tổng kết mức độ hoàn thành chuẩn kiến thức kĩ năng môn Tin học Lớp 8 theo Chương trình GDPT 2018.',
       notes: 'Kiểm tra cuối kỳ 2'
     }
   ],
@@ -1569,255 +1569,255 @@ export const SECONDARY_INFORMATICS_DATA: Record<number, InformaticsLessonDef[]> 
     {
       week: 1,
       topic: 'Chủ đề 1: Máy tính và cộng đồng',
-      name: 'Bài 1: Bộ xử lý thông tin và sự phát triển của máy tính (Tiết 1)',
+      name: 'Bài 1: Thế giới kĩ thuật số (Tiết 1)',
       periods: 1,
-      yccd: '- Hiểu được vai trò của bộ vi xử lý (CPU) và kiến trúc máy tính Von Neumann trong việc xử lý thông tin tự động.\n- Phân tích cơ chế hoạt động của chu trình Nạp lệnh - Giải mã - Thực thi (Fetch - Decode - Execute).'
+      yccd: '- Trình bày được sự phát triển của công nghệ kĩ thuật số và tác động sâu rộng của nó đối với đời sống, kinh tế, xã hội.\n- Nhận biết các thiết bị số thông minh và sự hội tụ của máy tính, viễn thông và truyền thông số.'
     },
     {
       week: 2,
       topic: 'Chủ đề 1: Máy tính và cộng đồng',
-      name: 'Bài 1: Bộ xử lý thông tin và sự phát triển của máy tính (Tiết 2)',
+      name: 'Bài 1: Thế giới kĩ thuật số (Tiết 2)',
       periods: 1,
-      yccd: '- Nêu được xu hướng phát triển của phần cứng hiện đại: Chip đa nhân, điện toán di động, điện toán đám mây và vi mạch AI chuyên dụng.\n- Đánh giá tác động sâu sắc của máy tính đến mọi mặt đời sống xã hội.'
+      yccd: '- Phân tích các cơ hội và thách thức của công dân trong kỷ nguyên số (chuyển đổi số, an ninh mạng, quyền riêng tư).\n- Xác định các năng lực cần thiết để thích ứng và phát triển trong thế giới số.'
     },
+    // Chủ đề 2: Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin
     {
       week: 3,
-      topic: 'Chủ đề 1: Máy tính và cộng đồng',
-      name: 'Bài 2: Chất lượng thông tin khi tìm kiếm, tiếp nhận và xử lý (Tiết 1)',
+      topic: 'Chủ đề 2: Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin',
+      name: 'Bài 2: Thông tin trong giải quyết vấn đề (Tiết 1)',
       periods: 1,
-      yccd: '- Nêu được các tiêu chí đánh giá chất lượng thông tin: Tính chính xác, tính mới (tính cập nhật), tính đầy đủ, tính phù hợp và độ tin cậy của tác giả.\n- Phân tích hậu quả nghiêm trọng khi tiếp nhận và sử dụng thông tin sai lệch.'
+      yccd: '- Hiểu được vai trò quyết định của thông tin chính xác, kịp thời trong quá trình ra quyết định và giải quyết vấn đề.\n- Xác định các bước thu thập, xử lí và đánh giá thông tin khi đối mặt với bài toán thực tế.'
     },
     {
       week: 4,
-      topic: 'Chủ đề 1: Máy tính và cộng đồng',
-      name: 'Bài 2: Chất lượng thông tin khi tìm kiếm, tiếp nhận và xử lý (Tiết 2)',
+      topic: 'Chủ đề 2: Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin',
+      name: 'Bài 2: Thông tin trong giải quyết vấn đề (Tiết 2)',
       periods: 1,
-      yccd: '- Thực hành quy trình kiểm chứng thông tin đa nguồn (Fact-checking) trước khi chia sẻ.\n- Rèn luyện trách nhiệm công dân số trên không gian truyền thông.'
+      yccd: '- Nêu được các tiêu chí đánh giá chất lượng thông tin: Tính chính xác, tính mới (cập nhật), tính đầy đủ, tính phù hợp và độ tin cậy của nguồn tin.\n- Phân tích hậu quả của việc sử dụng thông tin sai lệch.'
     },
-    // Chủ đề 2: Mạng máy tính và Internet
     {
       week: 5,
-      topic: 'Chủ đề 2: Mạng máy tính và Internet',
-      name: 'Bài 3: Thực hành: Khai thác dịch vụ mạng và điện toán đám mây (Tiết 1)',
+      topic: 'Chủ đề 2: Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin',
+      name: 'Bài 3: Thực hành: Đánh giá chất lượng thông tin (1 tiết)',
       periods: 1,
-      yccd: '- Hiểu khái niệm điện toán đám mây (Cloud Computing) và lợi ích của việc lưu trữ phân tán.\n- Khám phá các dịch vụ đám mây thông dụng: Google Drive, OneDrive, Dropbox.'
+      yccd: '- Thực hành kiểm chứng thông tin đa nguồn (Fact-checking) đối với các bài báo, tin tức trên Internet và mạng xã hội.\n- Nhận diện tin giả, thông tin sai lệch và rèn luyện trách nhiệm công dân số khi chia sẻ thông tin.'
     },
+    // Chủ đề 3: Đạo đức, pháp luật và văn hoá trong môi trường số
     {
       week: 6,
-      topic: 'Chủ đề 2: Mạng máy tính và Internet',
-      name: 'Bài 3: Thực hành: Khai thác dịch vụ mạng và điện toán đám mây (Tiết 2)',
+      topic: 'Chủ đề 3: Đạo đức, pháp luật và văn hoá trong môi trường số',
+      name: 'Bài 4: Một số vấn đề pháp lí về sử dụng dịch vụ Internet (Tiết 1)',
       periods: 1,
-      yccd: '- Thực hành tải tệp lên đám mây, chia sẻ tệp và thiết lập quyền truy cập (Chỉ xem, Nhận xét, Chỉnh sửa).\n- Làm việc cộng tác thời gian thực trên Google Docs / Google Sheets.'
+      yccd: '- Nắm vững các quy định pháp luật cơ bản về an ninh mạng, bảo vệ bí mật đời tư và dữ liệu cá nhân theo Luật An ninh mạng Việt Nam.\n- Nhận diện các hành vi vi phạm pháp luật trên không gian mạng: Lừa đảo, đánh cắp thông tin, phát tán mã độc.'
     },
     {
       week: 7,
-      topic: 'Chủ đề 2: Mạng máy tính và Internet',
-      name: 'Bài 4: Một số vấn đề pháp lý và đạo đức về sử dụng dịch vụ Internet (Tiết 1)',
+      topic: 'Chủ đề 3: Đạo đức, pháp luật và văn hoá trong môi trường số',
+      name: 'Bài 4: Một số vấn đề pháp lí về sử dụng dịch vụ Internet (Tiết 2)',
       periods: 1,
-      yccd: '- Nắm vững các quy định pháp luật về an ninh mạng, quyền tác giả và bảo vệ dữ liệu cá nhân.\n- Nhận diện các hành vi vi phạm: Lừa đảo qua mạng, xâm nhập trái phép, phát tán virus, đánh cắp danh tính số.'
+      yccd: '- Hiểu được trách nhiệm pháp lí và đạo đức của người sử dụng dịch vụ Internet và mạng xã hội.\n- Xây dựng quy tắc hành vi số văn minh, an toàn và bảo vệ bản thân trên không gian mạng.'
     },
+    // Chủ đề 4: Ứng dụng tin học
     {
       week: 8,
-      topic: 'Chủ đề 2: Mạng máy tính và Internet',
-      name: 'Bài 4: Một số vấn đề pháp lý và đạo đức về sử dụng dịch vụ Internet (Tiết 2)',
+      topic: 'Chủ đề 4: Ứng dụng tin học',
+      name: 'Bài 5: Tìm hiểu phần mềm mô phỏng (Tiết 1)',
       periods: 1,
-      yccd: '- Nhận biết trách nhiệm pháp lý khi sử dụng dịch vụ Internet và mạng xã hội.\n- Xây dựng bản quy ước đạo đức số cho học sinh THCS.'
+      yccd: '- Hiểu được khái niệm phần mềm mô phỏng và lợi ích to lớn của mô phỏng trong nghiên cứu Khoa học tự nhiên, Kỹ thuật và Giáo dục.\n- Khám phá các phần mềm mô phỏng thí nghiệm ảo tương tác (PhET, GeoGebra, Solar System 3D).'
     },
     {
       week: 9,
       topic: 'Đánh giá định kỳ',
       name: 'Kiểm tra, đánh giá giữa Học kỳ 1 môn Tin học Lớp 9',
       periods: 1,
-      yccd: '- Đánh giá kiến thức phần cứng máy tính, chất lượng thông tin số, điện toán đám mây và pháp luật mạng.',
+      yccd: '- Đánh giá kiến thức thế giới số, chất lượng thông tin, pháp lí mạng và hiểu biết ban đầu về phần mềm mô phỏng từ Tuần 1 đến Tuần 8.',
       notes: 'Kiểm tra giữa kỳ 1'
     },
-    // Chủ đề 3: Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin
     {
       week: 10,
-      topic: 'Chủ đề 3: Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin',
-      name: 'Bài 5: Sử dụng bảng tính điện tử để giải quyết bài toán thực tế (Tiết 1)',
+      topic: 'Chủ đề 4: Ứng dụng tin học',
+      name: 'Bài 5: Tìm hiểu phần mềm mô phỏng (Tiết 2)',
       periods: 1,
-      yccd: '- Phân tích bài toán quản lý tài chính cá nhân hoặc quản lý điểm học sinh bằng mô hình bảng tính Excel.\n- Thiết lập cấu trúc bảng tính, nhập dữ liệu và sử dụng các công thức liên kết nhiều sheet.'
+      yccd: '- Nêu được nguyên lí hoạt động của mô phỏng: Thiết lập thông số đầu vào -> Máy tính tính toán mô hình -> Trực quan hóa kết quả đầu ra.\n- Đánh giá ưu điểm (an toàn, tiết kiệm, lặp lại nhiều lần) và hạn chế của mô phỏng.'
     },
     {
       week: 11,
-      topic: 'Chủ đề 3: Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin',
-      name: 'Bài 5: Sử dụng bảng tính điện tử để giải quyết bài toán thực tế (Tiết 2)',
+      topic: 'Chủ đề 4: Ứng dụng tin học',
+      name: 'Bài 6: Thực hành: Khai thác phần mềm mô phỏng (Tiết 1)',
       periods: 1,
-      yccd: '- Sử dụng các hàm tra cứu tìm kiếm VLOOKUP / HLOOKUP và hàm logic nâng cao.\n- Tự động hóa quá trình xuất kết quả và đánh giá dữ liệu.'
+      yccd: '- Thực hành điều khiển các thông số trong mô phỏng mạch điện, chuyển động vật lí hoặc phản ứng hóa học trên phần mềm chuyên dụng.\n- Quan sát hiện tượng, thu thập số liệu và rút ra kết luận khoa học.'
     },
     {
       week: 12,
-      topic: 'Chủ đề 3: Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin',
-      name: 'Bài 6: Trình bày dữ liệu nâng cao bằng biểu đồ (Tiết 1)',
+      topic: 'Chủ đề 4: Ứng dụng tin học',
+      name: 'Bài 6: Thực hành: Khai thác phần mềm mô phỏng (Tiết 2)',
       periods: 1,
-      yccd: '- Lựa chọn dạng biểu đồ tối ưu (Biểu đồ đường kết hợp cột, biểu đồ phân tán Scatter, biểu đồ vùng Area) để thể hiện xu hướng tăng trưởng số liệu.\n- Tạo biểu đồ từ nhiều chuỗi dữ liệu phức tạp.'
+      yccd: '- Lập báo cáo kết quả thí nghiệm mô phỏng, so sánh với kết quả lí thuyết.\n- Vận dụng phần mềm mô phỏng để giải thích các hiện tượng tự nhiên quanh em.'
     },
     {
       week: 13,
-      topic: 'Chủ đề 3: Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin',
-      name: 'Bài 6: Trình bày dữ liệu nâng cao bằng biểu đồ (Tiết 2)',
+      topic: 'Chủ đề 4: Ứng dụng tin học',
+      name: 'Bài 7: Trình bày thông tin trong trao đổi và hợp tác (Tiết 1)',
       periods: 1,
-      yccd: '- Tùy biến đường xu hướng (Trendline), trục phụ (Secondary Axis) và định dạng thẩm mỹ chuyên nghiệp.\n- Phân tích và rút ra kết luận khoa học từ biểu đồ.'
+      yccd: '- Hiểu được vai trò của các công cụ trực quan và phần mềm cộng tác số trong làm việc nhóm và chia sẻ thông tin.\n- Khám phá các công cụ cộng tác trực tuyến: Google Drive, Google Docs/Sheets, Canva Teams, Padlet.'
     },
     {
       week: 14,
-      topic: 'Chủ đề 3: Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin',
-      name: 'Bài 7: Tạo trang web bằng công cụ trực tuyến (Tiết 1)',
+      topic: 'Chủ đề 4: Ứng dụng tin học',
+      name: 'Bài 7: Trình bày thông tin trong trao đổi và hợp tác (Tiết 2)',
       periods: 1,
-      yccd: '- Hiểu cấu trúc của một trang web và website: Trang chủ (Home), trang con, thanh điều hướng (Menu), phần đầu (Header) và chân trang (Footer).\n- Khám phá công cụ thiết kế website miễn phí Google Sites / Wix / WordPress.'
+      yccd: '- Thiết lập quyền chia sẻ dữ liệu (Xem, Nhận xét, Chỉnh sửa) an toàn.\n- Thực hiện thảo luận, phản hồi và theo dõi lịch sử chỉnh sửa tài liệu trong nhóm.'
     },
     {
       week: 15,
-      topic: 'Chủ đề 3: Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin',
-      name: 'Bài 7: Tạo trang web bằng công cụ trực tuyến (Tiết 2)',
+      topic: 'Chủ đề 4: Ứng dụng tin học',
+      name: 'Bài 8: Thực hành: Sử dụng công cụ trực quan trình bày thông tin trong trao đổi và hợp tác (Tiết 1)',
       periods: 1,
-      yccd: '- Chọn giao diện mẫu (Theme), tạo cây cấu trúc các trang và thiết kế thanh điều hướng.\n- Chèn nội dung văn bản, hình ảnh, video và biểu mẫu liên hệ vào trang web.'
+      yccd: '- Làm việc nhóm xây dựng một sản phẩm số trực quan (Infographic / Báo cáo điện tử) về một chủ đề học tập tích hợp.\n- Phân công nhiệm vụ và phối hợp đồng bộ trên nền tảng đám mây.'
     },
     {
       week: 16,
-      topic: 'Chủ đề 3: Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin',
-      name: 'Bài 8: Thiết kế và xuất bản trang web cá nhân/học tập (Tiết 1)',
+      topic: 'Chủ đề 4: Ứng dụng tin học',
+      name: 'Bài 8: Thực hành: Sử dụng công cụ trực quan trình bày thông tin trong trao đổi và hợp tác (Tiết 2)',
       periods: 1,
-      yccd: '- Hoàn thiện nội dung cho website chủ đề: "Hồ sơ học tập số của em" hoặc "Giới thiệu câu lạc bộ trường học".\n- Tối ưu hóa giao diện hiển thị trên máy tính và điện thoại di động (Responsive).'
+      yccd: '- Hoàn thiện sản phẩm số, thuyết trình và chia sẻ báo cáo trực tuyến trước lớp học.\n- Đánh giá hiệu quả làm việc nhóm và chất lượng sản phẩm cộng tác.'
     },
     {
       week: 17,
-      topic: 'Chủ đề 3: Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin',
-      name: 'Bài 8: Thiết kế và xuất bản trang web cá nhân/học tập (Tiết 2)',
+      topic: 'Chủ đề 4: Ứng dụng tin học',
+      name: 'Ôn tập kiến thức và kỹ năng thực hành Học kỳ 1 (1 tiết)',
       periods: 1,
-      yccd: '- Xuất bản (Publish) website lên Internet với tên miền miễn phí.\n- Kiểm tra tính liên kết và chia sẻ địa chỉ trang web cho bạn bè, thầy cô.'
+      yccd: '- Hệ thống hóa toàn bộ kiến thức Học kỳ 1: Thế giới số, chất lượng thông tin, pháp lí mạng, phần mềm mô phỏng và công cụ cộng tác trực quan.'
     },
     {
       week: 18,
       topic: 'Đánh giá định kỳ',
       name: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Tin học Lớp 9',
       periods: 1,
-      yccd: '- Đánh giá tổng hợp kỹ năng giải quyết bài toán bảng tính Excel và thiết kế trang web Google Sites.',
+      yccd: '- Đánh giá tổng hợp toàn diện kiến thức lí thuyết và kĩ năng thực hành Tin học 9 trong Học kỳ 1.',
       notes: 'Kiểm tra cuối kỳ 1'
     },
-    // Chủ đề 4: Ứng dụng tin học (Mô phỏng & Trí tuệ nhân tạo AI)
     {
       week: 19,
       topic: 'Chủ đề 4: Ứng dụng tin học',
-      name: 'Bài 9: Sử dụng phần mềm mô phỏng (Tiết 1)',
+      name: 'Bài 9a: Sử dụng công cụ xác thực dữ liệu (1 tiết)',
       periods: 1,
-      yccd: '- Hiểu được khái niệm phần mềm mô phỏng và lợi ích của mô phỏng trong nghiên cứu Khoa học tự nhiên, Địa lí, Vật lí.\n- Khám phá phần mềm mô phỏng thí nghiệm tương tác PhET / GeoGebra / Solar System 3D.'
+      yccd: '- Hiểu mục đích của việc xác thực dữ liệu (Data Validation) trong bảng tính để ngăn ngừa lỗi nhập liệu.\n- Thiết lập quy tắc kiểm tra dữ liệu: Giới hạn số nguyên, số thập phân, khoảng ngày tháng, hoặc danh sách chọn (List Dropdown).'
     },
     {
       week: 20,
       topic: 'Chủ đề 4: Ứng dụng tin học',
-      name: 'Bài 9: Sử dụng phần mềm mô phỏng (Tiết 2)',
+      name: 'Bài 10a: Sử dụng hàm COUNTIF (1 tiết)',
       periods: 1,
-      yccd: '- Thay đổi các thông số đầu vào trong mô phỏng để quan sát sự thay đổi của hiện tượng khoa học.\n- Thu thập số liệu mô phỏng và rút ra định luật/quy luật tự nhiên.'
+      yccd: '- Nắm vững cú pháp hàm COUNTIF(range, criteria) để đếm số ô thỏa mãn một điều kiện xác định.\n- Vận dụng đếm số học sinh đạt học lực, đếm số ngày công, thống kê số lượng hàng hóa.'
     },
     {
       week: 21,
       topic: 'Chủ đề 4: Ứng dụng tin học',
-      name: 'Bài 10: Thực hành: Khai thác phần mềm mô phỏng (Tiết 1)',
+      name: 'Bài 11a: Sử dụng hàm SUMIF (1 tiết)',
       periods: 1,
-      yccd: '- Thực hành mô phỏng mạch điện, chuyển động cơ học hoặc phản ứng hóa học trên phần mềm chuyên dụng.\n- Ghi lại các thông số và lập báo cáo thí nghiệm ảo.'
+      yccd: '- Nắm vững cú pháp hàm SUMIF(range, criteria, [sum_range]) để tính tổng các ô thỏa mãn điều kiện.\n- Vận dụng tính tổng thu, tổng chi theo từng hạng mục trong bảng quản lí tài chính.'
     },
     {
       week: 22,
       topic: 'Chủ đề 4: Ứng dụng tin học',
-      name: 'Bài 10: Thực hành: Khai thác phần mềm mô phỏng (Tiết 2)',
+      name: 'Bài 12a: Sử dụng hàm IF (Tiết 1)',
       periods: 1,
-      yccd: '- So sánh ưu nhược điểm giữa thí nghiệm thực tế và thí nghiệm ảo mô phỏng.\n- Đánh giá vai trò của mô phỏng trong giáo dục hiện đại.'
+      yccd: '- Nắm vững cú pháp hàm điều kiện IF(logical_test, value_if_true, value_if_false).\n- Ứng dụng hàm IF đơn giản để xét kết quả Đạt / Chưa đạt hoặc tính tiền phụ thu có điều kiện.'
     },
     {
       week: 23,
       topic: 'Chủ đề 4: Ứng dụng tin học',
-      name: 'Bài 11: Khám phá Trí tuệ nhân tạo (AI) và các ứng dụng thông minh (Tiết 1)',
+      name: 'Bài 12a: Sử dụng hàm IF (Tiết 2)',
       periods: 1,
-      yccd: '- Nêu được khái niệm Trí tuệ nhân tạo (AI) và phân biệt giữa trí tuệ con người và trí tuệ nhân tạo.\n- Nhận diện các ứng dụng AI tiêu biểu: Nhận diện giọng nói, thị giác máy tính, dịch thuật tự động, chatbot đàm thoại (ChatGPT, Gemini).'
+      yccd: '- Sử dụng hàm IF lồng nhau để xử lí bài toán phân loại nhiều mức độ (Xếp loại học lực Giỏi / Khá / Đạt / Chưa đạt, tính thuế lũy tiến).\n- Kết hợp hàm IF với các toán tử logic AND, OR.'
     },
     {
       week: 24,
       topic: 'Chủ đề 4: Ứng dụng tin học',
-      name: 'Bài 11: Khám phá Trí tuệ nhân tạo (AI) và các ứng dụng thông minh (Tiết 2)',
+      name: 'Bài 13a: Hoàn thiện bảng tính quản lí tài chính gia đình (Tiết 1)',
       periods: 1,
-      yccd: '- Thảo luận về đạo đức sử dụng AI: Tính trung thực trong học thuật, thiên vị thuật toán, bảo vệ quyền riêng tư.\n- Định hướng sử dụng AI như công cụ hỗ trợ học tập hiệu quả, tránh phụ thuộc mù quáng.'
+      yccd: '- Xây dựng mô hình bảng tính quản lí thu chi tài chính gia đình hoặc quỹ lớp học.\n- Áp dụng phối hợp công cụ Data Validation, hàm SUM, AVERAGE, COUNTIF, SUMIF, IF.'
     },
     {
       week: 25,
-      topic: 'Đánh giá định kỳ',
-      name: 'Kiểm tra, đánh giá giữa Học kỳ 2 môn Tin học Lớp 9',
+      topic: 'Chủ đề 4: Ứng dụng tin học',
+      name: 'Bài 13a: Hoàn thiện bảng tính quản lí tài chính gia đình (Tiết 2)',
       periods: 1,
-      yccd: '- Đánh giá kỹ năng sử dụng phần mềm mô phỏng và hiểu biết về Trí tuệ nhân tạo AI.',
-      notes: 'Kiểm tra giữa kỳ 2'
+      yccd: '- Tạo biểu đồ trực quan hóa cơ cấu thu chi tài chính và đưa ra nhận xét, giải pháp tiết kiệm hợp lí.\n- Hoàn thiện định dạng thẩm mĩ chuyên nghiệp và xuất báo cáo tài chính.'
     },
-    // Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính (Lập trình Python cơ bản)
+    // Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính
     {
       week: 26,
       topic: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 12: Làm quen với ngôn ngữ lập trình bậc cao Python (Tiết 1)',
+      name: 'Bài 14: Giải quyết vấn đề (1 tiết)',
       periods: 1,
-      yccd: '- Nhận biết ngôn ngữ lập trình Python và môi trường lập trình (IDLE / Thonny / Replit / VS Code).\n- Thực hiện các lệnh cơ bản trong chế độ tương tác (Interactive Mode): print(), phép tính số học.'
+      yccd: '- Hiểu quy trình 4 bước giải quyết vấn đề với sự trợ giúp của máy tính: Xác định bài toán -> Thiết kế thuật toán -> Viết chương trình -> Kiểm thử và gỡ lỗi.\n- Phân tích chia nhỏ bài toán phức tạp thành các bài toán con đơn giản hơn (Tư duy phân rã).'
     },
     {
       week: 27,
-      topic: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 12: Làm quen với ngôn ngữ lập trình bậc cao Python (Tiết 2)',
+      topic: 'Đánh giá định kỳ',
+      name: 'Kiểm tra, đánh giá giữa Học kỳ 2 môn Tin học Lớp 9',
       periods: 1,
-      yccd: '- Viết và chạy chương trình trong chế độ tệp (Script Mode).\n- Biết cách lưu tệp chương trình (.py) và sử dụng chú thích (#) trong mã nguồn.'
+      yccd: '- Đánh giá kĩ năng sử dụng công cụ xác thực dữ liệu, các hàm COUNTIF, SUMIF, IF trong bảng tính và tư duy giải quyết vấn đề.',
+      notes: 'Kiểm tra giữa kỳ 2'
     },
     {
       week: 28,
       topic: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 13: Các kiểu dữ liệu cơ bản, biến và phép toán trong Python (Tiết 1)',
+      name: 'Bài 15: Bài toán tin học (Tiết 1)',
       periods: 1,
-      yccd: '- Nhận biết các kiểu dữ liệu cơ bản trong Python: Số nguyên (int), số thực (float), xâu ký tự (str), lôgic (bool).\n- Khai báo biến, quy tắc đặt tên biến và sử dụng câu lệnh gán (=).'
+      yccd: '- Khái niệm bài toán trong tin học: Xác định rõ Input (Dữ liệu vào), Output (Kết quả ra) và mối quan hệ giữa Input và Output.\n- Nhận diện một số bài toán tin học quen thuộc: Tìm kiếm, sắp xếp, tính toán số học, quản lí dữ liệu.'
     },
     {
       week: 29,
       topic: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 13: Các kiểu dữ liệu cơ bản, biến và phép toán trong Python (Tiết 2)',
+      name: 'Bài 15: Bài toán tin học (Tiết 2)',
       periods: 1,
-      yccd: '- Sử dụng câu lệnh nhập dữ liệu từ bàn phím input() và chuyển đổi kiểu dữ liệu int(), float().\n- Thực hiện các phép toán số học (+, -, *, /, //, %, **) và so sánh (==, !=, <, >, <=, >=).'
+      yccd: '- Lựa chọn cấu trúc dữ liệu phù hợp (biến đơn, danh sách mảng) và phương pháp thuật toán tối ưu để giải bài toán tin học.\n- Mô tả thuật toán giải bài toán bằng ngôn ngữ tự nhiên và sơ đồ khối.'
     },
     {
       week: 30,
       topic: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 14: Cấu trúc rẽ nhánh trong Python (Tiết 1)',
+      name: 'Bài 16: Thực hành: Lập trình chương trình máy tính (Tiết 1)',
       periods: 1,
-      yccd: '- Cú pháp câu lệnh rẽ nhánh dạng thiếu (if) và dạng đủ (if - else) trong Python.\n- Hiểu quy tắc thụt đầu dòng (Indentation) bắt buộc để xác định khối lệnh.'
+      yccd: '- Chuyển đổi thuật toán đã thiết kế thành chương trình trên môi trường lập trình (Scratch nâng cao hoặc Python cơ bản).\n- Khai báo biến, nhập dữ liệu đầu vào và viết các cấu trúc rẽ nhánh, vòng lặp xử lí.'
     },
     {
       week: 31,
       topic: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 14: Cấu trúc rẽ nhánh trong Python (Tiết 2)',
+      name: 'Bài 16: Thực hành: Lập trình chương trình máy tính (Tiết 2)',
       periods: 1,
-      yccd: '- Sử dụng cấu trúc rẽ nhánh nhiều nhánh (if - elif - else) và các toán tử logic and, or, not.\n- Lập trình giải bài toán giải phương trình bậc nhất, xếp loại học tập, tính cước taxi.'
-    },
-    {
-      week: 32,
-      topic: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 15: Cấu trúc lặp trong Python (Tiết 1)',
-      periods: 1,
-      yccd: '- Cú pháp câu lệnh lặp for kết hợp với hàm sinh dãy số range(n), range(start, stop, step).\n- Lập trình các bài toán tính tổng, tính giai thừa, in bảng cửu chương.'
-    },
-    {
-      week: 33,
-      topic: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 15: Cấu trúc lặp trong Python (Tiết 2)',
-      periods: 1,
-      yccd: '- Cú pháp câu lệnh lặp while với số lần lặp chưa biết trước.\n- Lập trình bài toán tìm ước chung lớn nhất, kiểm tra số nguyên tố và thoát lặp bằng break.'
+      yccd: '- Kiểm thử chương trình với các bộ dữ liệu thử nghiệm khác nhau (Test cases).\n- Phát hiện và sửa lỗi, hoàn thiện chương trình chạy ổn định, chính xác.'
     },
     // Chủ đề 6: Hướng nghiệp với tin học
     {
+      week: 32,
+      topic: 'Chủ đề 6: Hướng nghiệp với tin học',
+      name: 'Bài 17: Tin học và thế giới nghề nghiệp (Tiết 1)',
+      periods: 1,
+      yccd: '- Khám phá bức tranh tổng thể các ngành nghề thuộc lĩnh vực Công nghệ thông tin trong kỷ nguyên số: Trí tuệ nhân tạo (AI), Khoa học dữ liệu, An ninh mạng, Phát triển phần mềm, Thiết kế vi mạch bán dẫn.\n- Nhận diện nhu cầu nhân lực chất lượng cao trong cuộc Cách mạng công nghiệp 4.0.'
+    },
+    {
+      week: 33,
+      topic: 'Chủ đề 6: Hướng nghiệp với tin học',
+      name: 'Bài 17: Tin học và thế giới nghề nghiệp (Tiết 2)',
+      periods: 1,
+      yccd: '- Phân tích các yêu cầu về kiến thức chuyên môn, kĩ năng mềm và đạo đức nghề nghiệp trong ngành CNTT.\n- Định hướng lựa chọn nhóm môn học chuyên sâu (Tin học, Công nghệ, KHTN) khi bước vào bậc THPT (Lớp 10).'
+    },
+    {
       week: 34,
       topic: 'Chủ đề 6: Hướng nghiệp với tin học',
-      name: 'Bài 16: Các ngành nghề thuộc lĩnh vực tin học và định hướng tương lai (1 tiết)',
+      name: 'Ôn tập tổng hợp cuối năm học môn Tin học 9 (1 tiết)',
       periods: 1,
-      yccd: '- Tìm hiểu bức tranh nghề nghiệp CNTT trong kỷ nguyên số: Kỹ sư AI, Chuyên gia An toàn thông tin, Phát triển phần mềm, Phân tích dữ liệu, Thiết kế vi mạch bán dẫn.\n- Định hướng lựa chọn môn học chuyên sâu khi bước vào bậc THPT (Lớp 10).'
+      yccd: '- Hệ thống hóa toàn bộ kiến thức cốt lõi 6 chủ đề môn Tin học Lớp 9.\n- Tổng kết năng lực Tin học cấp THCS, sẵn sàng hành trang bước vào bậc THPT.'
     },
     {
       week: 35,
       topic: 'Đánh giá định kỳ',
       name: 'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Tin học 9',
       periods: 1,
-      yccd: '- Đánh giá tổng kết năng lực Tin học và lập trình Python cấp THCS, chuẩn bị xét tốt nghiệp THCS.',
+      yccd: '- Đánh giá tổng kết mức độ hoàn thành Chuẩn đầu ra Chương trình môn Tin học cấp THCS (Lớp 6 đến Lớp 9) theo CT GDPT 2018.',
       notes: 'Kiểm tra cuối kỳ 2'
     }
   ]

@@ -339,7 +339,7 @@ export function getNlsCodeForSubjectLesson(
     if (res) return { ...res, level };
   }
 
-  // 2. Bảng tính, Excel, Trang tính, Dữ liệu, Sắp xếp, Lọc, Biểu đồ thống kê, Quản lý tệp
+  // 2. Bảng tính, Excel, Trang tính, Dữ liệu, Sắp xếp, Lọc, Biểu đồ thống kê, Quản lý tệp, Xác thực dữ liệu, Hàm tính toán
   const isSpreadsheet =
     titleText.includes('bảng tính') ||
     titleText.includes('excel') ||
@@ -352,8 +352,19 @@ export function getNlsCodeForSubjectLesson(
     titleText.includes('dãy số') ||
     titleText.includes('cấp số') ||
     titleText.includes('quản lý tệp') ||
+    titleText.includes('quản lí tệp') ||
+    titleText.includes('quản lí dữ liệu') ||
     titleText.includes('thư mục') ||
     titleText.includes('lưu trữ') ||
+    titleText.includes('xác thực dữ liệu') ||
+    titleText.includes('validation') ||
+    titleText.includes('countif') ||
+    titleText.includes('sumif') ||
+    titleText.includes('hàm if') ||
+    titleText.includes('tính toán tự động') ||
+    titleText.includes('hỗ trợ tính toán') ||
+    titleText.includes('hoàn thiện bảng tính') ||
+    titleText.includes('tài chính') ||
     titleText.includes('spreadsheet');
 
   if (isSpreadsheet) {
@@ -361,19 +372,30 @@ export function getNlsCodeForSubjectLesson(
     if (res) return { ...res, level };
   }
 
-  // 3. Soạn thảo, Định dạng văn bản, Trình chiếu, PowerPoint, Canva, Sơ đồ tư duy, Đồ họa, Video
+  // 3. Soạn thảo, Định dạng văn bản, Trình chiếu, PowerPoint, Canva, Sơ đồ tư duy, Đồ họa, Video, Xuất bản
   const isAuthoring =
     titleText.includes('soạn thảo') ||
     titleText.includes('văn bản') ||
+    titleText.includes('định dạng văn bản') ||
+    titleText.includes('tìm kiếm và thay thế') ||
+    titleText.includes('sổ lưu niệm') ||
+    titleText.includes('danh sách dạng liệt kê') ||
+    titleText.includes('đầu trang, chân trang') ||
     titleText.includes('mục lục') ||
     titleText.includes('trình chiếu') ||
+    titleText.includes('trang chiếu') ||
+    titleText.includes('bản mẫu') ||
+    titleText.includes('slide master') ||
     titleText.includes('powerpoint') ||
     titleText.includes('canva') ||
     titleText.includes('poster') ||
     titleText.includes('sơ đồ tư duy') ||
     titleText.includes('mindmap') ||
     titleText.includes('đồ họa') ||
+    titleText.includes('chỉnh sửa ảnh') ||
     titleText.includes('video') ||
+    titleText.includes('làm video') ||
+    titleText.includes('dựng video') ||
     titleText.includes('âm thanh') ||
     titleText.includes('bản vẽ') ||
     titleText.includes('hình chiếu');
@@ -383,7 +405,7 @@ export function getNlsCodeForSubjectLesson(
     if (res) return { ...res, level };
   }
 
-  // 4. An toàn mạng, Bản quyền, Đạo đức số, Quyền riêng tư, Văn hóa ứng xử
+  // 4. An toàn mạng, Bản quyền, Đạo đức số, Quyền riêng tư, Văn hóa ứng xử, Pháp lí
   const isSafetyEthics =
     titleText.includes('bản quyền') ||
     titleText.includes('giấy phép') ||
@@ -397,24 +419,30 @@ export function getNlsCodeForSubjectLesson(
     titleText.includes('mã độc') ||
     titleText.includes('virus') ||
     titleText.includes('văn hóa mạng') ||
+    titleText.includes('văn hoá') ||
     titleText.includes('ứng xử') ||
-    titleText.includes('đạo đức');
+    titleText.includes('đạo đức') ||
+    titleText.includes('pháp lí') ||
+    titleText.includes('pháp luật');
 
   if (isSafetyEthics) {
     const res = findByCodePrefix('4.2.') || findByCodePrefix('4.1.') || findByCodePrefix('3.3.') || findByCodePrefix('2.5.');
     if (res) return { ...res, level };
   }
 
-  // 5. Dự án STEM, Thí nghiệm ảo, Mô phỏng PhET, GeoGebra, Desmos, Chế tạo kỹ thuật
+  // 5. Dự án STEM, Thí nghiệm ảo, Mô phỏng PhET, GeoGebra, Desmos, Chế tạo kỹ thuật, Hướng nghiệp
   const isStemSim =
     titleText.includes('stem') ||
     titleText.includes('dự án') ||
     titleText.includes('thí nghiệm') ||
     titleText.includes('mô phỏng') ||
+    titleText.includes('phần mềm mô phỏng') ||
     titleText.includes('phet') ||
     titleText.includes('geogebra') ||
     titleText.includes('desmos') ||
     titleText.includes('chế tạo') ||
+    titleText.includes('nghề nghiệp') ||
+    titleText.includes('hướng nghiệp') ||
     titleText.includes('tưới tự động') ||
     titleText.includes('vi điều khiển');
 
@@ -423,11 +451,20 @@ export function getNlsCodeForSubjectLesson(
     if (res) return { ...res, level };
   }
 
-  // 6. Lập trình, Thuật toán, Coding, Scratch, Python, C++
+  // 6. Lập trình, Thuật toán, Coding, Scratch, Python, C++, Cấu trúc điều khiển, Gỡ lỗi, Bài toán tin học
   const isProgramming =
     titleText.includes('lập trình') ||
     titleText.includes('thuật toán') ||
+    titleText.includes('tìm kiếm tuần tự') ||
+    titleText.includes('tìm kiếm nhị phân') ||
+    titleText.includes('sắp xếp') ||
     titleText.includes('câu lệnh') ||
+    titleText.includes('cấu trúc điều khiển') ||
+    titleText.includes('chương trình máy tính') ||
+    titleText.includes('biểu diễn dữ liệu') ||
+    titleText.includes('gỡ lỗi') ||
+    titleText.includes('giải quyết vấn đề') ||
+    titleText.includes('bài toán tin học') ||
     titleText.includes('scratch') ||
     titleText.includes('python') ||
     titleText.includes('rẽ nhánh') ||
@@ -441,7 +478,7 @@ export function getNlsCodeForSubjectLesson(
     if (res) return { ...res, level };
   }
 
-  // 7. Làm việc nhóm, Thảo luận, Thuyết trình, Giao tiếp, Báo cáo, Thư điện tử
+  // 7. Làm việc nhóm, Thảo luận, Thuyết trình, Giao tiếp, Báo cáo, Thư điện tử, Trao đổi và hợp tác, Mạng xã hội
   const isCollaboration =
     titleText.includes('thuyết trình') ||
     titleText.includes('thảo luận') ||
@@ -450,6 +487,10 @@ export function getNlsCodeForSubjectLesson(
     titleText.includes('giao tiếp') ||
     titleText.includes('thư điện tử') ||
     titleText.includes('email') ||
+    titleText.includes('trao đổi và hợp tác') ||
+    titleText.includes('hợp tác') ||
+    titleText.includes('cộng tác') ||
+    titleText.includes('mạng xã hội') ||
     titleText.includes('speaking') ||
     titleText.includes('presentation');
 
@@ -471,16 +512,24 @@ export function getNlsCodeForSubjectLesson(
     if (res) return { ...res, level };
   }
 
-  // 9. Mạng máy tính, Internet, Dịch vụ Web, Thiết bị vào ra, Phần cứng, Tìm kiếm & Đọc hiểu
+  // 9. Mạng máy tính, Internet, Dịch vụ Web, Thiết bị vào ra, Phần cứng, Tìm kiếm & Đọc hiểu, Chất lượng thông tin, Thế giới số
   const isNetworkSearch =
     titleText.includes('mạng máy tính') ||
     titleText.includes('internet') ||
     titleText.includes('world wide web') ||
     titleText.includes('thiết bị') ||
+    titleText.includes('thiết bị vào') ||
     titleText.includes('phần cứng') ||
+    titleText.includes('phần mềm máy tính') ||
     titleText.includes('cổng kết nối') ||
     titleText.includes('thông tin trong môi trường số') ||
     titleText.includes('máy tính và cộng đồng') ||
+    titleText.includes('thế giới kĩ thuật số') ||
+    titleText.includes('lược sử công cụ tính toán') ||
+    titleText.includes('chất lượng thông tin') ||
+    titleText.includes('thông tin trong giải quyết vấn đề') ||
+    titleText.includes('xử lí thông tin') ||
+    titleText.includes('thông tin trong máy tính') ||
     titleText.includes('tìm kiếm') ||
     titleText.includes('tra cứu') ||
     titleText.includes('từ điển') ||

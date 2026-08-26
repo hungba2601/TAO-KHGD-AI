@@ -151,11 +151,25 @@ export function generateSecondaryYccd(subject: string, grade: string, lessonName
 
   // 6. TIN HỌC THCS (6 - 9)
   if (s.includes('tin học') || s.includes('tin hoc')) {
-    if (name.includes('Bảng tính') || name.includes('Excel') || name.includes('hàm')) return `- Sử dụng thành thạo các hàm tính toán SUM, AVERAGE, MAX, MIN, COUNTIF, IF; thực hiện định dạng bảng tính, sắp xếp, lọc và vẽ biểu đồ.`;
-    if (name.includes('Mạng máy tính') || name.includes('Internet') || name.includes('An toàn')) return `- Mô tả cấu trúc mạng LAN, WAN, thiết bị mạng (Router, Switch); thực hiện chia sẻ dữ liệu và các biện pháp bảo vệ an toàn thông tin mạng.`;
-    if (name.includes('Thuật toán') || name.includes('Lập trình') || name.includes('Python') || name.includes('Scratch')) return `- Khai báo biến, kiểu dữ liệu, viết câu lệnh rẽ nhánh if-else, vòng lặp for/while; viết hàm và gỡ lỗi chương trình chạy chính xác.`;
-    if (name.includes('Cơ sở dữ liệu') || name.includes('Dữ liệu') || name.includes('AI')) return `- Nắm khái niệm CSDL quan hệ, bảng dữ liệu, khóa chính; bước đầu tìm hiểu ứng dụng Trí tuệ nhân tạo (AI) và đạo đức số.`;
-    return `- Nắm vững lý thuyết và thực hành thành thạo kỹ năng công nghệ thông tin của bài: "${name}".\n- Phát triển năng lực số (NLS), tư duy thuật toán và văn hóa ứng xử chuẩn mực trên không gian mạng.`;
+    if (name.includes('Bảng tính') || name.includes('Excel') || name.includes('hàm') || name.includes('COUNTIF') || name.includes('SUMIF') || name.includes('xác thực')) {
+      return `- Nắm vững thao tác bảng tính, địa chỉ tương đối/tuyệt đối; sử dụng thành thạo các hàm tính toán SUM, AVERAGE, MAX, MIN, COUNTIF, SUMIF, IF; thực hiện định dạng bảng tính, sắp xếp, lọc dữ liệu và vẽ biểu đồ.`;
+    }
+    if (name.includes('Mạng máy tính') || name.includes('Internet') || name.includes('An toàn') || name.includes('Mạng xã hội') || name.includes('pháp lí')) {
+      return `- Mô tả cấu trúc mạng LAN, WAN, dịch vụ Internet, mạng xã hội; thực hiện chia sẻ dữ liệu an toàn, tuân thủ pháp luật, bảo vệ bí mật thông tin và văn hóa ứng xử trực tuyến.`;
+    }
+    if (name.includes('Thuật toán') || name.includes('Lập trình') || name.includes('Python') || name.includes('Scratch') || name.includes('Gỡ lỗi') || name.includes('Bài toán tin học') || name.includes('Cấu trúc điều khiển')) {
+      return `- Xác định Input, Output bài toán; mô tả thuật toán bằng sơ đồ khối; khai báo biến, biểu thức; lập trình cấu trúc rẽ nhánh, vòng lặp và thực hành gỡ lỗi chương trình.`;
+    }
+    if (name.includes('Mô phỏng') || name.includes('phần mềm mô phỏng')) {
+      return `- Hiểu nguyên lí và vai trò của phần mềm mô phỏng trong nghiên cứu, học tập; thao tác tương tác các thông số đầu vào và quan sát, ghi chép kết quả thí nghiệm ảo.`;
+    }
+    if (name.includes('Sơ đồ tư duy') || name.includes('Định dạng văn bản') || name.includes('Trình chiếu') || name.includes('trang chiếu') || name.includes('sổ lưu niệm') || name.includes('video')) {
+      return `- Sử dụng thành thạo phần mềm sơ đồ tư duy, soạn thảo văn bản nâng cao, Slide Master trình chiếu hoặc biên tập video; hoàn thiện sản phẩm số trực quan, chuyên nghiệp.`;
+    }
+    if (name.includes('nghề nghiệp') || name.includes('Hướng nghiệp') || name.includes('thế giới kĩ thuật số') || name.includes('Lược sử')) {
+      return `- Trình bày lược sử phát triển công cụ tính toán, vai trò của thế giới số và các ngành nghề thuộc lĩnh vực CNTT; định hướng rèn luyện năng lực số cá nhân.`;
+    }
+    return `- Nắm vững chuẩn kiến thức và thực hành thành thạo kĩ năng công nghệ thông tin của bài học: "${name}".\n- Phát triển năng lực số (NLS), tư duy thuật toán và văn hóa ứng xử chuẩn mực trên môi trường số.`;
   }
 
   // 7. CÔNG NGHỆ THCS (6 - 9)

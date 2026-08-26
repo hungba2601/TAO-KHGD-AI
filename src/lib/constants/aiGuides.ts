@@ -209,13 +209,17 @@ export function getAiCodeForSubjectLesson(
     titleText.includes('kiểm tra') ||
     titleText.includes('đánh giá') ||
     titleText.includes('ôn tập') ||
-    titleText.includes('ứng xử')
+    titleText.includes('ứng xử') ||
+    titleText.includes('pháp lí') ||
+    titleText.includes('pháp luật') ||
+    titleText.includes('văn hoá') ||
+    titleText.includes('văn hóa')
   ) {
     const res = findByTopic('B') || findByTopic('A');
     if (res) return res;
   }
 
-  // 3. Thực hành, Công cụ AI, Prompt Engineering, Dịch thuật, Nhận diện giọng nói / hình ảnh, Bảng tính, Lập trình (Mạch C)
+  // 3. Thực hành, Công cụ AI, Prompt Engineering, Dịch thuật, Nhận diện giọng nói / hình ảnh, Bảng tính, Lập trình, Thuật toán, Mô phỏng (Mạch C)
   if (
     titleText.includes('thực hành') ||
     titleText.includes('công cụ') ||
@@ -227,18 +231,24 @@ export function getAiCodeForSubjectLesson(
     titleText.includes('nhận diện') ||
     titleText.includes('học máy') ||
     titleText.includes('lập trình') ||
+    titleText.includes('thuật toán') ||
+    titleText.includes('mô phỏng') ||
+    titleText.includes('xác thực dữ liệu') ||
+    titleText.includes('sơ đồ tư duy') ||
+    titleText.includes('gỡ lỗi') ||
     titleText.includes('bảng tính') ||
     titleText.includes('excel') ||
     titleText.includes('văn bản') ||
     titleText.includes('trình chiếu') ||
     titleText.includes('canva') ||
+    titleText.includes('video') ||
     titleText.includes('trợ lý')
   ) {
     const res = findByTopic('C');
     if (res) return res;
   }
 
-  // 4. Khái niệm, Giới thiệu, Vai trò con người, Tư duy phản biện, Nhận thức (Mạch A)
+  // 4. Khái niệm, Giới thiệu, Vai trò con người, Tư duy phản biện, Nhận thức, Thế giới số, Nghề nghiệp (Mạch A)
   if (
     titleText.includes('giới thiệu') ||
     titleText.includes('khái niệm') ||
@@ -246,13 +256,32 @@ export function getAiCodeForSubjectLesson(
     titleText.includes('con người') ||
     titleText.includes('máy tính và cộng đồng') ||
     titleText.includes('thông tin trong môi trường số') ||
+    titleText.includes('thế giới kĩ thuật số') ||
+    titleText.includes('thế giới nghề nghiệp') ||
+    titleText.includes('nghề nghiệp') ||
+    titleText.includes('lược sử công cụ tính toán') ||
+    titleText.includes('chất lượng thông tin') ||
+    titleText.includes('thông tin và dữ liệu') ||
+    titleText.includes('xử lí thông tin') ||
     titleText.includes('mở đầu')
   ) {
     const res = findByTopic('A');
     if (res) return res;
   }
 
-  // 5. Fallback thông minh: Phân bổ luân phiên các mạch C, A, C, B, D để đa dạng hóa
+  // 5. Thiết kế giải pháp, Dự án, Giải quyết vấn đề, Bài toán tin học (Mạch D)
+  if (
+    titleText.includes('dự án') ||
+    titleText.includes('giải quyết vấn đề') ||
+    titleText.includes('bài toán tin học') ||
+    titleText.includes('sổ lưu niệm') ||
+    titleText.includes('hoàn thiện')
+  ) {
+    const res = findByTopic('D') || findByTopic('C');
+    if (res) return res;
+  }
+
+  // 6. Fallback thông minh: Phân bổ luân phiên các mạch C, A, C, B, D để đa dạng hóa
   const topicRotation: Array<'C' | 'A' | 'C' | 'B' | 'D'> = ['C', 'A', 'C', 'B', 'D'];
   const targetTopic = topicRotation[lessonIdx % topicRotation.length];
   const matched = findByTopic(targetTopic) || items[lessonIdx % items.length];
