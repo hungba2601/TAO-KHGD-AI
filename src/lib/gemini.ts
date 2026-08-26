@@ -464,8 +464,9 @@ export async function generateFullPlan(
       (msg) => report(3, 'running', msg, 90)
     );
     const parsedP3 = parseJsonSafely<any>(p3Response, null);
+    let personalPlanData = baseMock.personalPlan;
     if (parsedP3 && (parsedP3.personalPlans || parsedP3.selfTraining)) {
-      p3Data = {
+      personalPlanData = {
         personalPlans: parsedP3.personalPlans ? parsedP3.personalPlans.map((p: any, idx: number) => ({
           id: `pp-${idx + 1}`,
           stt: p.stt || idx + 1,
@@ -474,11 +475,34 @@ export async function generateFullPlan(
           content: p.content || 'Nội dung thực hiện',
           targets: p.targets || 'Chỉ tiêu đạt được',
           measures: p.measures || 'Giải pháp'
-        })) : baseMock.appendix3.personalPlans,
-        selfTraining: parsedP3.selfTraining || baseMock.appendix3.selfTraining
+        })) : baseMock.personalPlan.personalPlans,
+        selfTraining: parsedP3.selfTraining || baseMock.personalPlan.selfTraining
       };
     }
-    report(3, 'completed', 'Đã tạo xong Phụ lục 3 cho cá nhân giáo viên.', 95);
+
+    const teachingPlan = p1Data.curriculum.map((c, idx) => ({
+      id: `tp-${c.id || idx + 1}`,
+      stt: idx + 1,
+      lessonName: c.lessonName,
+      periods: c.periods,
+      timeline: typeof c.week === 'number' ? `Tuần ${c.week}` : c.week,
+      equipment: c.equipment || 'Máy tính, máy chiếu/Tivi, SGK, phần mềm dạy học',
+      location: c.location || (config.schoolType === 'primary' ? 'Phòng học Tiếng Anh/Tin học' : 'Phòng học bộ môn'),
+      notes: c.notes || ''
+    }));
+
+    p3Data = {
+      teachingPlan,
+      selectiveTopics: [],
+      otherDuties: {
+        advancedTraining: p1Data.otherTasks.advancedTraining,
+        remedialTeaching: p1Data.otherTasks.remedialTeaching,
+        scienceResearch: `Hướng dẫn học sinh nghiên cứu khoa học kỹ thuật, sáng tạo sản phẩm STEM và ứng dụng công nghệ số / AI cấp trường.`,
+        extracurricularAndDuties: p1Data.otherTasks.otherActivities
+      }
+    };
+
+    report(3, 'completed', 'Đã tạo xong Phụ lục 3 & Kế hoạch cá nhân giáo viên.', 95);
 
     // Finalize
     report(4, 'running', 'Đang tổng hợp dữ liệu và hoàn thiện hồ sơ...', 98);
@@ -490,6 +514,7 @@ export async function generateFullPlan(
       appendix1: p1Data,
       appendix2: p2Data,
       appendix3: p3Data,
+      personalPlan: personalPlanData,
       generatedAt: new Date().toLocaleString('vi-VN'),
       summary: `Kế hoạch Giáo dục & Dạy học môn ${config.subject} Khối ${config.grade} - Năm học ${config.academicYear} được AI (${modelDisplayName}) xây dựng chi tiết theo CV 5512/2345.`
     };

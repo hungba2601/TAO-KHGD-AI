@@ -132,6 +132,17 @@ export interface TeacherSelfTraining {
   extraDuties: string;
 }
 
+export interface TeacherLessonPlanItem {
+  id: string;
+  stt: number;
+  lessonName: string;
+  periods: number;
+  timeline: string;
+  equipment: string;
+  location: string;
+  notes?: string;
+}
+
 export interface Appendix1Data {
   curriculum: CurriculumItem[];
   equipments: EquipmentItem[];
@@ -146,6 +157,24 @@ export interface Appendix2Data {
 }
 
 export interface Appendix3Data {
+  teachingPlan?: TeacherLessonPlanItem[];
+  selectiveTopics?: {
+    stt: number;
+    topicName: string;
+    periods: number;
+    timeline: string;
+    equipment: string;
+    location: string;
+  }[];
+  otherDuties?: {
+    advancedTraining: string;
+    remedialTeaching: string;
+    scienceResearch: string;
+    extracurricularAndDuties: string;
+  };
+}
+
+export interface PersonalPlanData {
   personalPlans: TeacherPlanItem[];
   selfTraining: TeacherSelfTraining;
 }
@@ -155,6 +184,7 @@ export interface PlanData {
   appendix1: Appendix1Data;
   appendix2: Appendix2Data;
   appendix3: Appendix3Data;
+  personalPlan: PersonalPlanData;
   generatedAt: string;
   summary?: string;
 }

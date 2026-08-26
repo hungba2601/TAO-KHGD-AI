@@ -1,4 +1,15 @@
-import { ConfigFormData, Appendix1Data, Appendix2Data, Appendix3Data, PlanData, SchoolType, CurriculumItem } from '../types';
+import {
+  ConfigFormData,
+  Appendix1Data,
+  Appendix2Data,
+  Appendix3Data,
+  PersonalPlanData,
+  TeacherPlanItem,
+  TeacherSelfTraining,
+  PlanData,
+  SchoolType,
+  CurriculumItem
+} from '../types';
 import { getCurriculumBySubjectAndGrade } from './curriculum';
 import { applyUploadedNlsAiToEnglishCurriculum } from './fileParser';
 
@@ -574,8 +585,20 @@ export function generateMockPlan(config: ConfigFormData): PlanData {
         }
       ];
 
-  // Appendix 3 Personal plans
-  const personalPlans: Appendix3Data['personalPlans'] = [
+  // Appendix 3: Kế hoạch Giáo dục của Giáo viên (Chuẩn CV 5512)
+  const teachingPlan = curriculum.map((c, index) => ({
+    id: `tp-${c.id || index + 1}`,
+    stt: index + 1,
+    lessonName: c.lessonName,
+    periods: c.periods,
+    timeline: typeof c.week === 'number' ? (isEn ? `Week ${c.week}` : `Tuần ${c.week}`) : c.week,
+    equipment: c.equipment || 'Máy tính, máy chiếu/Tivi thông minh, SGK, phần mềm dạy học',
+    location: c.location || (config.schoolType === 'primary' ? 'Phòng học Tiếng Anh/Tin học' : 'Phòng học bộ môn'),
+    notes: c.notes || ''
+  }));
+
+  // Phụ lục: Kế hoạch Cá nhân (Nhiệm vụ sư phạm & AI)
+  const personalPlans: TeacherPlanItem[] = [
     {
       id: 'pp-1',
       stt: 1,
@@ -614,7 +637,7 @@ export function generateMockPlan(config: ConfigFormData): PlanData {
     }
   ];
 
-  const selfTraining: Appendix3Data['selfTraining'] = {
+  const selfTraining: TeacherSelfTraining = {
     professionalStudy: `Tự học và hoàn thành 100% các mô-đun bồi dưỡng thường xuyên môn ${subjectName} trên hệ thống TEMIS đạt kết quả Tốt.`,
     itAndAiUpskilling: 'Tham gia các khóa đào tạo về Trí tuệ nhân tạo tạo sinh (Generative AI) trong giáo dục, thành thạo thiết kế bài giảng tương tác trên Canva, LMS và EduPlan AI.',
     homeroomWork: 'Thực hiện nghiêm túc công tác quản lý nề nếp lớp, tổ chức các buổi sinh hoạt lớp sáng tạo, giáo dục kỹ năng giao tiếp và xây dựng lớp học hạnh phúc.',
@@ -649,6 +672,18 @@ export function generateMockPlan(config: ConfigFormData): PlanData {
       stemProjects
     },
     appendix3: {
+      teachingPlan,
+      selectiveTopics: [],
+      otherDuties: {
+        advancedTraining: otherTasks.advancedTraining,
+        remedialTeaching: otherTasks.remedialTeaching,
+        scienceResearch: isEn
+          ? `Guide students in scientific research projects, STEM creations and digital AI applications.`
+          : `Hướng dẫn học sinh nghiên cứu khoa học kỹ thuật, sáng tạo sản phẩm STEM và ứng dụng công nghệ số / AI cấp trường.`,
+        extracurricularAndDuties: otherTasks.otherActivities
+      }
+    },
+    personalPlan: {
       personalPlans,
       selfTraining
     },

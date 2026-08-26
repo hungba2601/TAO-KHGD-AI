@@ -15,7 +15,7 @@ import { INITIAL_CONFIG, generateMockPlan } from '../lib/defaultData';
 import { generateFullPlan, getStoredModel } from '../lib/gemini';
 
 export default function Home() {
-  const [currentView, setCurrentView] = useState<'config' | 'appendix1' | 'appendix2' | 'appendix3'>('config');
+  const [currentView, setCurrentView] = useState<'config' | 'appendix1' | 'appendix2' | 'appendix3' | 'personalPlan'>('config');
   const [config, setConfig] = useState<ConfigFormData>(INITIAL_CONFIG);
   const [planData, setPlanData] = useState<PlanData | null>(null);
   const [activeModel, setActiveModel] = useState<string>(getStoredModel());
@@ -129,6 +129,15 @@ export default function Home() {
               onUpdatePlan={setPlanData}
               onBackToConfig={() => setCurrentView('config')}
               initialTab="appendix3"
+            />
+          )}
+
+          {currentView === 'personalPlan' && planData && (
+            <PlanViewer
+              planData={planData}
+              onUpdatePlan={setPlanData}
+              onBackToConfig={() => setCurrentView('config')}
+              initialTab="personalPlan"
             />
           )}
         </main>

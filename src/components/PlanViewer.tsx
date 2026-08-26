@@ -18,13 +18,19 @@ import { PlanData } from '../types';
 import { Appendix1View } from './Appendix1View';
 import { Appendix2View } from './Appendix2View';
 import { Appendix3View } from './Appendix3View';
-import { exportAppendix1Docx, exportAppendix2Docx, exportAppendix3Docx } from '../lib/docxExport';
+import { PersonalPlanView } from './PersonalPlanView';
+import {
+  exportAppendix1Docx,
+  exportAppendix2Docx,
+  exportAppendix3Docx,
+  exportPersonalPlanDocx
+} from '../lib/docxExport';
 
 interface PlanViewerProps {
   planData: PlanData;
   onUpdatePlan: (updated: PlanData) => void;
   onBackToConfig: () => void;
-  initialTab?: 'appendix1' | 'appendix2' | 'appendix3';
+  initialTab?: 'appendix1' | 'appendix2' | 'appendix3' | 'personalPlan';
 }
 
 export const PlanViewer: React.FC<PlanViewerProps> = ({
@@ -33,7 +39,7 @@ export const PlanViewer: React.FC<PlanViewerProps> = ({
   onBackToConfig,
   initialTab = 'appendix1'
 }) => {
-  const [activeTab, setActiveTab] = useState<'appendix1' | 'appendix2' | 'appendix3'>(initialTab);
+  const [activeTab, setActiveTab] = useState<'appendix1' | 'appendix2' | 'appendix3' | 'personalPlan'>(initialTab);
 
   const { config } = planData;
   const isPrimary = config.schoolType === 'primary';
@@ -43,6 +49,7 @@ export const PlanViewer: React.FC<PlanViewerProps> = ({
     await exportAppendix1Docx(planData);
     await exportAppendix2Docx(planData);
     await exportAppendix3Docx(planData);
+    await exportPersonalPlanDocx(planData);
   };
 
   return (
@@ -132,8 +139,20 @@ export const PlanViewer: React.FC<PlanViewerProps> = ({
               : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800'
           }`}
         >
+          <BookOpen className="w-4 h-4" />
+          <span>Phụ lục 3: Kế hoạch GD của GV (CV 5512)</span>
+        </button>
+
+        <button
+          onClick={() => setActiveTab('personalPlan')}
+          className={`flex items-center gap-2 px-4 py-2.5 rounded-2xl text-xs font-bold transition shrink-0 ${
+            activeTab === 'personalPlan'
+              ? 'bg-indigo-600 text-white shadow-md shadow-indigo-600/25'
+              : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800'
+          }`}
+        >
           <Users className="w-4 h-4" />
-          <span>Phụ lục 3: Kế hoạch Giáo dục Cá nhân Giáo viên</span>
+          <span>Phụ lục: Kế hoạch Cá nhân (Nhiệm vụ sư phạm &amp; AI)</span>
         </button>
       </div>
 
@@ -147,6 +166,9 @@ export const PlanViewer: React.FC<PlanViewerProps> = ({
         )}
         {activeTab === 'appendix3' && (
           <Appendix3View planData={planData} onUpdatePlan={onUpdatePlan} />
+        )}
+        {activeTab === 'personalPlan' && (
+          <PersonalPlanView planData={planData} onUpdatePlan={onUpdatePlan} />
         )}
       </div>
     </div>

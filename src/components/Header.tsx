@@ -14,7 +14,12 @@ import {
 } from './icons';
 import { ConfigFormData, PlanData } from '../types';
 import { getStoredApiKey, getStoredModel, getModelDisplayName } from '../lib/gemini';
-import { exportAppendix1Docx, exportAppendix2Docx, exportAppendix3Docx } from '../lib/docxExport';
+import {
+  exportAppendix1Docx,
+  exportAppendix2Docx,
+  exportAppendix3Docx,
+  exportPersonalPlanDocx
+} from '../lib/docxExport';
 
 interface HeaderProps {
   config: ConfigFormData;
@@ -45,6 +50,7 @@ export const Header: React.FC<HeaderProps> = ({
       await exportAppendix1Docx(planData);
       await exportAppendix2Docx(planData);
       await exportAppendix3Docx(planData);
+      await exportPersonalPlanDocx(planData);
     } catch (e: any) {
       alert('Có lỗi khi tải tài liệu: ' + e.message);
     }

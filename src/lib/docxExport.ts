@@ -611,7 +611,34 @@ export async function exportAppendix2Docx(plan: PlanData): Promise<void> {
 }
 
 export async function exportAppendix3Docx(plan: PlanData): Promise<void> {
-  const { config, appendix3 } = plan;
+  const { config, appendix1, appendix3 } = plan;
+  const isEn =
+    config.subject.toLowerCase().includes('tiếng anh') ||
+    config.subject.toLowerCase().includes('english') ||
+    config.subject.toLowerCase().includes('tieng anh');
+
+  const teachingItems =
+    appendix3.teachingPlan && appendix3.teachingPlan.length > 0
+      ? appendix3.teachingPlan
+      : appendix1.curriculum.map((c, index) => ({
+          id: `tp-${c.id || index + 1}`,
+          stt: index + 1,
+          lessonName: c.lessonName,
+          periods: c.periods,
+          timeline: typeof c.week === 'number' ? (isEn ? `Week ${c.week}` : `Tuần ${c.week}`) : c.week,
+          equipment: c.equipment || 'Máy tính, máy chiếu/Tivi, SGK, phần mềm dạy học',
+          location: c.location || (config.schoolType === 'primary' ? 'Phòng học Tiếng Anh/Tin học' : 'Phòng học bộ môn'),
+          notes: c.notes || ''
+        }));
+
+  const otherDuties = appendix3.otherDuties || {
+    advancedTraining: appendix1.otherTasks.advancedTraining,
+    remedialTeaching: appendix1.otherTasks.remedialTeaching,
+    scienceResearch: isEn
+      ? `Guide students in scientific research projects, STEM creations and digital AI applications.`
+      : `Hướng dẫn học sinh nghiên cứu khoa học kỹ thuật, sáng tạo sản phẩm STEM và ứng dụng công nghệ số / AI cấp trường.`,
+    extracurricularAndDuties: appendix1.otherTasks.otherActivities
+  };
 
   const doc = new Document({
     sections: [
@@ -619,10 +646,69 @@ export async function exportAppendix3Docx(plan: PlanData): Promise<void> {
         children: [
           createHeaderSection(config),
           createTitle('PHỤ LỤC 3', 26, true),
-          createTitle(`KẾ HOẠCH GIÁO DỤC CỦA CÁ NHÂN GIÁO VIÊN`, 24, true),
-          createTitle(`Giáo viên: ${config.teacherName} - Môn: ${config.subject} - Năm học ${config.academicYear}`, 22, false),
+          createTitle('KẾ HOẠCH GIÁO DỤC CỦA GIÁO VIÊN', 24, true),
+          createTitle(`MÔN HỌC/HOẠT ĐỘNG GIÁO DỤC: ${config.subject.toUpperCase()}, LỚP: ${config.grade}`, 22, true),
+          createTitle(`Họ và tên giáo viên: ${config.teacherName} - Năm học: ${config.academicYear}`, 20, false),
 
-          createHeading('I. NHIỆM VỤ GIẢNG DẠY VÀ GIÁO DỤC'),
+          createHeading('I. KẾ HOẠCH DẠY HỌC'),
+          createHeading('1. Phân phối chương trình'),
+          new Table({
+            width: { size: 100, type: WidthType.PERCENTAGE },
+            rows: [
+              new TableRow({
+                tableHeader: true,
+                children: [
+                  new TableCell({ width: { size: 6, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'STT', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
+                  new TableCell({ width: { size: 34, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'Bài học', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
+                  new TableCell({ width: { size: 8, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'Số tiết', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
+                  new TableCell({ width: { size: 14, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'Thời điểm', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
+                  new TableCell({ width: { size: 20, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'Thiết bị dạy học', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
+                  new TableCell({ width: { size: 18, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'Địa điểm dạy học', bold: true, font: FONT_FAMILY, size: 20 })] })] })
+                ]
+              }),
+              ...teachingItems.map((item) => new TableRow({
+                children: [
+                  new TableCell({ children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: item.stt.toString(), font: FONT_FAMILY, size: 20 })] })] }),
+                  new TableCell({ children: [new Paragraph({ children: [new TextRun({ text: item.lessonName, bold: true, font: FONT_FAMILY, size: 20 })] })] }),
+                  new TableCell({ children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: item.periods.toString(), font: FONT_FAMILY, size: 20 })] })] }),
+                  new TableCell({ children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: item.timeline, font: FONT_FAMILY, size: 20 })] })] }),
+                  new TableCell({ children: [new Paragraph({ children: [new TextRun({ text: item.equipment, font: FONT_FAMILY, size: 18 })] })] }),
+                  new TableCell({ children: [new Paragraph({ children: [new TextRun({ text: item.location, font: FONT_FAMILY, size: 18 })] })] })
+                ]
+              }))
+            ]
+          }),
+
+          createHeading('II. NHIỆM VỤ KHÁC (NẾU CÓ)'),
+          createBodyParagraph(`1. Bồi dưỡng học sinh giỏi: ${otherDuties.advancedTraining}`),
+          createBodyParagraph(`2. Phụ đạo học sinh cần hỗ trợ: ${otherDuties.remedialTeaching}`),
+          createBodyParagraph(`3. Hướng dẫn nghiên cứu KHKT / STEM & AI: ${otherDuties.scienceResearch}`),
+          createBodyParagraph(`4. Hoạt động trải nghiệm & nhiệm vụ kiêm nhiệm: ${otherDuties.extracurricularAndDuties}`),
+
+          new Paragraph({ spacing: { before: 200 } }),
+          createSignatureSection(config)
+        ]
+      }
+    ]
+  });
+
+  const blob = await Packer.toBlob(doc);
+  saveAs(blob, `Phu-luc-3-KHGD-Giao-vien-Lop-${config.grade}-${config.subject}.docx`);
+}
+
+export async function exportPersonalPlanDocx(plan: PlanData): Promise<void> {
+  const { config, personalPlan } = plan;
+
+  const doc = new Document({
+    sections: [
+      {
+        children: [
+          createHeaderSection(config),
+          createTitle('PHỤ LỤC', 26, true),
+          createTitle('KẾ HOẠCH CÁ NHÂN CỦA GIÁO VIÊN', 24, true),
+          createTitle(`Họ và tên giáo viên: ${config.teacherName} - Môn: ${config.subject} - Năm học: ${config.academicYear}`, 22, false),
+
+          createHeading('I. KẾ HOẠCH THỰC HIỆN NHIỆM VỤ GIẢNG DẠY VÀ GIÁO DỤC'),
           new Table({
             width: { size: 100, type: WidthType.PERCENTAGE },
             rows: [
@@ -636,7 +722,7 @@ export async function exportAppendix3Docx(plan: PlanData): Promise<void> {
                   new TableCell({ width: { size: 28, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'Biện pháp thực hiện', bold: true, font: FONT_FAMILY, size: 20 })] })] })
                 ]
               }),
-              ...appendix3.personalPlans.map((p) => new TableRow({
+              ...personalPlan.personalPlans.map((p) => new TableRow({
                 children: [
                   new TableCell({ children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: p.stt.toString(), font: FONT_FAMILY, size: 20 })] })] }),
                   new TableCell({ children: [new Paragraph({ children: [new TextRun({ text: p.taskName, bold: true, font: FONT_FAMILY, size: 20 })] })] }),
@@ -648,51 +734,19 @@ export async function exportAppendix3Docx(plan: PlanData): Promise<void> {
             ]
           }),
 
-          createHeading('II. KẾ HOẠCH TỰ HỌC, BỒI DƯỠNG & ỨNG DỤNG AI'),
-          createBodyParagraph(`1. Tự bồi dưỡng chuyên môn: ${appendix3.selfTraining.professionalStudy}`),
-          createBodyParagraph(`2. Nâng cao năng lực số & AI: ${appendix3.selfTraining.itAndAiUpskilling}`),
-          createBodyParagraph(`3. Công tác chủ nhiệm & phụ huynh: ${appendix3.selfTraining.homeroomWork}`),
-          createBodyParagraph(`4. Các nhiệm vụ khác: ${appendix3.selfTraining.extraDuties}`),
+          createHeading('II. KẾ HOẠCH TỰ HỌC, BỒI DƯỠNG THƯỜNG XUYÊN & NÂNG CAO NĂNG LỰC AI'),
+          createBodyParagraph(`1. Tự bồi dưỡng chuyên môn & nghiệp vụ: ${personalPlan.selfTraining.professionalStudy}`),
+          createBodyParagraph(`2. Nâng cao năng lực số & Trí tuệ nhân tạo (AI): ${personalPlan.selfTraining.itAndAiUpskilling}`),
+          createBodyParagraph(`3. Công tác chủ nhiệm & phụ huynh: ${personalPlan.selfTraining.homeroomWork}`),
+          createBodyParagraph(`4. Các nhiệm vụ kiêm nhiệm khác: ${personalPlan.selfTraining.extraDuties}`),
 
           new Paragraph({ spacing: { before: 200 } }),
-          new Table({
-            width: { size: 100, type: WidthType.PERCENTAGE },
-            borders: {
-              top: { style: BorderStyle.NONE },
-              bottom: { style: BorderStyle.NONE },
-              left: { style: BorderStyle.NONE },
-              right: { style: BorderStyle.NONE },
-              insideHorizontal: { style: BorderStyle.NONE },
-              insideVertical: { style: BorderStyle.NONE }
-            },
-            rows: [
-              new TableRow({
-                children: [
-                  new TableCell({
-                    width: { size: 50, type: WidthType.PERCENTAGE },
-                    children: [
-                      new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'TỔ TRƯỞNG DUYỆT', bold: true, size: 24, font: FONT_FAMILY })] }),
-                      new Paragraph({ spacing: { before: 500 } }),
-                      new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: config.departmentHead, bold: true, size: 24, font: FONT_FAMILY })] })
-                    ]
-                  }),
-                  new TableCell({
-                    width: { size: 50, type: WidthType.PERCENTAGE },
-                    children: [
-                      new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'GIÁO VIÊN THỰC HIỆN', bold: true, size: 24, font: FONT_FAMILY })] }),
-                      new Paragraph({ spacing: { before: 500 } }),
-                      new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: config.teacherName, bold: true, size: 24, font: FONT_FAMILY })] })
-                    ]
-                  })
-                ]
-              })
-            ]
-          })
+          createSignatureSection(config)
         ]
       }
     ]
   });
 
   const blob = await Packer.toBlob(doc);
-  saveAs(blob, `Phu-luc-3-Ca-nhan-${config.teacherName}-${config.subject}.docx`);
+  saveAs(blob, `Phu-luc-Ke-hoach-ca-nhan-GV-${config.teacherName}-${config.subject}.docx`);
 }

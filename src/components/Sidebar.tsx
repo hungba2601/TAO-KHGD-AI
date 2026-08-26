@@ -16,8 +16,8 @@ import {
 import { SchoolType, ConfigFormData } from '../types';
 
 interface SidebarProps {
-  currentView: 'config' | 'appendix1' | 'appendix2' | 'appendix3';
-  onSelectView: (view: 'config' | 'appendix1' | 'appendix2' | 'appendix3') => void;
+  currentView: 'config' | 'appendix1' | 'appendix2' | 'appendix3' | 'personalPlan';
+  onSelectView: (view: 'config' | 'appendix1' | 'appendix2' | 'appendix3' | 'personalPlan') => void;
   config: ConfigFormData;
   onOpenApiKeyModal: () => void;
   hasPlan: boolean;
@@ -144,9 +144,30 @@ export const Sidebar: React.FC<SidebarProps> = ({
           }`}
         >
           <div className="flex items-center gap-2.5">
+            <BookOpen className="w-4 h-4" />
+            <div className="text-left">
+              <p>Phụ lục 3: KHGD của GV</p>
+              <p className="text-[10px] font-normal opacity-80">Phân phối &amp; Nhiệm vụ dạy học</p>
+            </div>
+          </div>
+          {hasPlan && <span className="w-2 h-2 rounded-full bg-emerald-500 ring-2 ring-emerald-200" />}
+        </button>
+
+        <button
+          onClick={() => onSelectView('personalPlan')}
+          disabled={!hasPlan}
+          className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs font-semibold transition-all ${
+            currentView === 'personalPlan'
+              ? 'bg-gradient-to-r from-blue-600 to-sky-600 text-white shadow-md shadow-blue-500/25 ring-1 ring-blue-500'
+              : hasPlan
+              ? 'text-slate-700 hover:bg-white hover:text-blue-700 hover:shadow-sm border border-transparent hover:border-sky-200'
+              : 'text-slate-400 cursor-not-allowed opacity-60'
+          }`}
+        >
+          <div className="flex items-center gap-2.5">
             <Users className="w-4 h-4" />
             <div className="text-left">
-              <p>Phụ lục 3: Kế hoạch Cá nhân</p>
+              <p>Phụ lục: Kế hoạch cá nhân</p>
               <p className="text-[10px] font-normal opacity-80">Nhiệm vụ sư phạm &amp; AI</p>
             </div>
           </div>
