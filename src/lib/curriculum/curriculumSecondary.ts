@@ -47,28 +47,94 @@ export function generateSecondaryYccd(subject: string, grade: string, lessonName
 
   // 1. TOÁN THCS (6 - 9)
   if (s.includes('toán') || s.includes('toan')) {
-    if (name.includes('Tập hợp') || name.includes('số tự nhiên')) return `- Nắm vững khái niệm tập hợp, phần tử; biểu diễn tập hợp bằng cách liệt kê hoặc nêu tính chất đặc trưng; thực hiện 4 phép tính với số tự nhiên.`;
-    if (name.includes('Lũy thừa') || name.includes('lũy thừa')) return `- Hiểu khái niệm lũy thừa với số mũ tự nhiên; thực hiện phép nhân, chia hai lũy thừa cùng cơ số và thứ tự thực hiện phép tính.`;
-    if (name.includes('chia hết') || name.includes('Số nguyên tố')) return `- Nắm vững dấu hiệu chia hết cho 2, 3, 5, 9; phân biệt số nguyên tố và hợp số; tìm ước chung lớn nhất (ƯCLN) và bội chung nhỏ nhất (BCNN).`;
-    if (name.includes('số nguyên') || name.includes('Số nguyên')) return `- Nhận biết tập hợp số nguyên Z, số đối, thứ tự trong Z; thực hiện thành thạo cộng, trừ, nhân, chia hai số nguyên và quy tắc dấu ngoặc.`;
-    if (name.includes('Hình tam giác đều') || name.includes('hình thoi') || name.includes('hình chữ nhật') || name.includes('hình bình hành')) return `- Nhận biết và vẽ được tam giác đều, hình vuông, hình lục giác đều, hình thoi, hình bình hành, hình thang cân; tính chu vi và diện tích.`;
-    if (name.includes('đối xứng') || name.includes('Đối xứng')) return `- Nhận biết hình có trục đối xứng và hình có tâm đối xứng trong hình học, trong tự nhiên và trong kiến trúc thực tế.`;
-    if (name.includes('Phân số') || name.includes('phân số')) return `- Nắm khái niệm phân số, phân số bằng nhau, rút gọn, quy đồng mẫu số; thực hiện 4 phép tính với phân số và giải bài toán thực tế.`;
-    if (name.includes('Số thập phân') || name.includes('số thập phân')) return `- Nắm khái niệm số thập phân, làm tròn số, ước lượng kết quả và giải toán về tỉ số, tỉ số phần trăm.`;
-    if (name.includes('Số hữu tỉ') || name.includes('số hữu tỉ')) return `- Nhận biết tập hợp số hữu tỉ Q, biểu diễn số hữu tỉ trên trục số; thực hiện cộng, trừ, nhân, chia và lũy thừa số hữu tỉ.`;
-    if (name.includes('Số thực') || name.includes('Căn bậc hai') || name.includes('căn bậc hai')) return `- Nắm khái niệm số vô tỉ, số thực R, căn bậc hai số học, giá trị tuyệt đối của một số thực; tính toán và làm tròn số thực.`;
-    if (name.includes('Góc') || name.includes('Hai đường thẳng song song')) return `- Nhận biết góc ở vị trí đặc biệt (kề bù, so le trong, đồng vị); nắm dấu hiệu nhận biết hai đường thẳng song song và định lí toán học.`;
-    if (name.includes('Tam giác bằng nhau') || name.includes('tam giác bằng nhau')) return `- Nắm vững 3 trường hợp bằng nhau của tam giác (c-c-c, c-g-c, g-c-g) và các trường hợp bằng nhau của tam giác vuông; chứng minh hình học.`;
-    if (name.includes('Đơn thức') || name.includes('Đa thức') || name.includes('đa thức')) return `- Nhận biết đơn thức, đa thức nhiều biến; xác định bậc, hệ số; thực hiện cộng, trừ, nhân, chia đơn thức, đa thức thành thạo.`;
-    if (name.includes('Hằng đẳng thức') || name.includes('hằng đẳng thức')) return `- Thuộc và vận dụng thành thạo 7 hằng đẳng thức đáng nhớ vào biến đổi đại số, tính nhanh và phân tích đa thức thành nhân tử.`;
-    if (name.includes('Phân thức') || name.includes('phân thức đại số')) return `- Nắm định nghĩa phân thức đại số, điều kiện xác định, tính chất cơ bản; thực hiện cộng, trừ, nhân, chia các phân thức đại số.`;
-    if (name.includes('Pythagore') || name.includes('Định lí Pythagore')) return `- Nắm vững định lí Pythagore thuận và đảo; tính độ dài cạnh trong tam giác vuông và ứng dụng vào giải toán thực tế.`;
-    if (name.includes('Tam giác đồng dạng') || name.includes('đồng dạng')) return `- Nắm định nghĩa và 3 trường hợp đồng dạng của hai tam giác (c-c-c, c-g-c, g-g); vận dụng chứng minh hệ thức hình học và tính khoảng cách.`;
-    if (name.includes('Phương trình bậc nhất') || name.includes('Hệ phương trình')) return `- Giải thành thạo phương trình bậc nhất một ẩn và hệ hai phương trình bậc nhất hai ẩn; giải bài toán bằng cách lập phương trình/hệ phương trình.`;
-    if (name.includes('Hàm số bậc nhất') || name.includes('y = ax + b')) return `- Hiểu khái niệm hàm số, vẽ đồ thị hàm số y = ax + b; xác định hệ số góc a và xét vị trí tương đối của hai đường thẳng.`;
-    if (name.includes('Phương trình bậc hai') || name.includes('Vi-ét') || name.includes('Vi-et')) return `- Nắm công thức nghiệm phương trình bậc hai ax2 + bx + c = 0 và hệ thức Vi-ét; tính nhẩm nghiệm và giải toán thực tế.`;
-    if (name.includes('Đường tròn') || name.includes('tiếp tuyến') || name.includes('Góc ở tâm') || name.includes('Góc nội tiếp')) return `- Nắm tính chất đường kính và dây cung, tiếp tuyến của đường tròn; tính số đo góc ở tâm, góc nội tiếp và chứng minh tứ giác nội tiếp.`;
-    return `- Nắm vững chuẩn kiến thức, định lí và phương pháp giải toán của bài học: "${name}".\n- Phát triển năng lực tư duy logic, lập luận hình học, mô hình hóa toán học và giải quyết vấn đề.`;
+    if (name.includes('Tập hợp') || name.includes('số tự nhiên') || name.includes('Ghi số')) {
+      return `- Nắm vững khái niệm tập hợp, phần tử thuộc/không thuộc tập hợp, cách mô tả tập hợp.\n- Đọc, viết và biểu diễn thành thạo số tự nhiên trong hệ thập phân và số La Mã; thực hiện 4 phép tính cộng, trừ, nhân, chia số tự nhiên.`;
+    }
+    if (name.includes('Lũy thừa') || name.includes('lũy thừa') || name.includes('Thứ tự thực hiện')) {
+      return `- Hiểu khái niệm lũy thừa với số mũ tự nhiên; thực hiện phép nhân, chia hai lũy thừa cùng cơ số.\n- Thực hiện đúng thứ tự các phép tính có chứa dấu ngoặc và lũy thừa trong tính toán và giải toán tìm x.`;
+    }
+    if (name.includes('chia hết') || name.includes('Số nguyên tố') || name.includes('Ước chung') || name.includes('Bội chung')) {
+      return `- Nắm vững dấu hiệu chia hết cho 2, 3, 5, 9; phân biệt số nguyên tố và hợp số; phân tích một số ra thừa số nguyên tố.\n- Tìm ƯCLN và BCNN của hai hay nhiều số; vận dụng giải các bài toán thực tiễn về chia phần và chu kì lặp.`;
+    }
+    if (name.includes('số nguyên') || name.includes('Số nguyên') || name.includes('dấu ngoặc')) {
+      return `- Nhận biết tập hợp số nguyên Z, biểu diễn số nguyên trên trục số, số đối và so sánh số nguyên.\n- Thực hiện thành thạo phép cộng, trừ, nhân, chia số nguyên và vận dụng linh hoạt quy tắc dấu ngoặc để tính hợp lí.`;
+    }
+    if (name.includes('Hình tam giác đều') || name.includes('hình thoi') || name.includes('hình chữ nhật') || name.includes('hình bình hành') || name.includes('hình thang cân')) {
+      return `- Nhận biết và vẽ được tam giác đều, hình vuông, hình lục giác đều, hình chữ nhật, hình thoi, hình bình hành, hình thang cân.\n- Vận dụng chuẩn xác công thức tính chu vi và diện tích các tứ giác vào bài toán thực tế đời sống.`;
+    }
+    if (name.includes('đối xứng') || name.includes('Đối xứng')) {
+      return `- Nhận biết hình có trục đối xứng và hình có tâm đối xứng trong hình học phẳng, trong tự nhiên và kiến trúc nghệ thuật.\n- Vẽ hình đối xứng qua trục hoặc qua tâm bằng thước và compa.`;
+    }
+    if (name.includes('Phân số') || name.includes('phân số') || name.includes('Hỗn số')) {
+      return `- Nắm vững khái niệm phân số, phân số bằng nhau, so sánh phân số và hỗn số dương.\n- Thực hiện thành thạo cộng, trừ, nhân, chia phân số; giải quyết hai bài toán cơ bản về phân số trong thực tế.`;
+    }
+    if (name.includes('Số thập phân') || name.includes('số thập phân') || name.includes('ước lượng') || name.includes('tỉ số phần trăm')) {
+      return `- Thực hiện thành thạo các phép tính với số thập phân, quy tắc làm tròn và ước lượng kết quả.\n- Giải quyết các bài toán thực tiễn về tỉ số, tỉ số phần trăm, tính lãi suất ngân hàng và chiết khấu thương mại.`;
+    }
+    if (name.includes('Số hữu tỉ') || name.includes('số hữu tỉ') || name.includes('chuyển vế')) {
+      return `- Nhận biết tập hợp số hữu tỉ Q, biểu diễn số hữu tỉ trên trục số; thực hiện 4 phép tính và lũy thừa của số hữu tỉ.\n- Vận dụng thành thạo quy tắc dấu ngoặc và quy tắc chuyển vế trong giải phương trình tìm x.`;
+    }
+    if (name.includes('Số thực') || name.includes('Căn bậc hai') || name.includes('vô tỉ') || name.includes('tuần hoàn')) {
+      return `- Nhận biết số thập phân vô hạn tuần hoàn, số vô tỉ, căn bậc hai số học và tập hợp số thực R.\n- Tính giá trị tuyệt đối của số thực, làm tròn số thực với độ chính xác cho trước và tính căn bậc hai bằng máy tính cầm tay.`;
+    }
+    if (name.includes('Góc') || name.includes('đường thẳng song song') || name.includes('Tiên đề Euclid') || name.includes('Định lí')) {
+      return `- Nhận biết hai góc kề bù, đối đỉnh, so le trong, đồng vị; vẽ tia phân giác của một góc.\n- Vận dụng dấu hiệu nhận biết hai đường thẳng song song, tiên đề Euclid để chứng minh định lí hình học logic.`;
+    }
+    if (name.includes('Tam giác bằng nhau') || name.includes('tam giác cân') || name.includes('tam giác vuông')) {
+      return `- Nắm vững 3 trường hợp bằng nhau của tam giác (c-c-c, c-g-c, g-c-g) và các trường hợp bằng nhau đặc thù của tam giác vuông.\n- Hiểu tính chất tam giác cân, đường trung trực của đoạn thẳng và vận dụng chứng minh hình học.`;
+    }
+    if (name.includes('Tỉ lệ thức') || name.includes('tỉ số bằng nhau') || name.includes('tỉ lệ thuận') || name.includes('tỉ lệ nghịch')) {
+      return `- Nắm vững định nghĩa, tính chất của tỉ lệ thức và dãy tỉ số bằng nhau; giải bài toán chia phần tỉ lệ.\n- Nhận biết và giải các bài toán thực tế về đại lượng tỉ lệ thuận, đại lượng tỉ lệ nghịch.`;
+    }
+    if (name.includes('Đơn thức') || name.includes('Đa thức') || name.includes('đa thức')) {
+      return `- Nhận biết đơn thức, đa thức nhiều biến; xác định bậc, hệ số; thu gọn đa thức.\n- Thực hiện thành thạo phép cộng, trừ, nhân đa thức và chia đa thức cho đơn thức.`;
+    }
+    if (name.includes('Hằng đẳng thức') || name.includes('hằng đẳng thức') || name.includes('nhân tử')) {
+      return `- Thuộc và vận dụng thành thạo 7 hằng đẳng thức đáng nhớ vào biến đổi đại số, tính nhanh.\n- Áp dụng linh hoạt các phương pháp phân tích đa thức thành nhân tử để giải phương trình và rút gọn biểu thức.`;
+    }
+    if (name.includes('Tứ giác') || name.includes('Hình thang cân') || name.includes('Hình bình hành') || name.includes('Hình chữ nhật') || name.includes('Hình thoi') || name.includes('Hình vuông')) {
+      return `- Nắm vững định lí tổng các góc trong tứ giác; định nghĩa, tính chất và dấu hiệu nhận biết các tứ giác đặc biệt.\n- Chứng minh mối liên hệ giữa các hình và vận dụng giải toán hình học tổng hợp.`;
+    }
+    if (name.includes('Thalès') || name.includes('Đường trung bình') || name.includes('phân giác của tam giác')) {
+      return `- Nắm vững định lí Thalès thuận, đảo và hệ quả trong tam giác; định nghĩa và tính chất đường trung bình, đường phân giác.\n- Ứng dụng định lí Thalès đo khoảng cách và chiều cao của vật thể ngoài thực địa.`;
+    }
+    if (name.includes('Phân thức') || name.includes('phân thức đại số')) {
+      return `- Nắm định nghĩa phân thức đại số, điều kiện xác định, tính chất cơ bản để rút gọn và quy đồng mẫu thức.\n- Thực hiện thành thạo 4 phép tính cộng, trừ, nhân, chia phân thức đại số; rút gọn biểu thức tổng hợp.`;
+    }
+    if (name.includes('Phương trình bậc nhất') || name.includes('Giải bài toán bằng cách lập phương trình')) {
+      return `- Giải phương trình bậc nhất một ẩn ax + b = 0 và các phương trình quy về bậc nhất.\n- Giải thành thạo các bài toán thực tế bằng cách lập phương trình (toán chuyển động, năng suất, quan hệ số, phần trăm).`;
+    }
+    if (name.includes('Hàm số') || name.includes('đồ thị') || name.includes('Hệ số góc') || name.includes('y = ax + b')) {
+      return `- Nắm vững khái niệm hàm số, tọa độ điểm trên mặt phẳng Oxy; vẽ đồ thị hàm số bậc nhất y = ax + b.\n- Xác định hệ số góc, góc tạo bởi đường thẳng với trục Ox và vị trí tương đối giữa hai đường thẳng.`;
+    }
+    if (name.includes('đồng dạng') || name.includes('Pythagore')) {
+      return `- Nắm định nghĩa và 3 trường hợp đồng dạng của hai tam giác (c-c-c, c-g-c, g-g), các trường hợp đồng dạng của tam giác vuông.\n- Vận dụng định lí Pythagore và tam giác đồng dạng tính độ dài đoạn thẳng và giải bài toán thực tiễn.`;
+    }
+    if (name.includes('chóp tam giác đều') || name.includes('chóp tứ giác đều') || name.includes('lăng trụ đứng') || name.includes('hình hộp chữ nhật') || name.includes('hình trụ') || name.includes('hình nón') || name.includes('hình cầu')) {
+      return `- Nhận biết các yếu tố đáy, mặt bên, chiều cao của các hình khối không gian thực tiễn.\n- Vận dụng chuẩn xác công thức tính diện tích xung quanh, diện tích toàn phần và thể tích vào các bài toán đo lường thực tế.`;
+    }
+    if (name.includes('hệ phương trình') || name.includes('Hệ phương trình') || name.includes('Bất phương trình')) {
+      return `- Giải hệ hai phương trình bậc nhất hai ẩn bằng phương pháp thế, cộng đại số và máy tính cầm tay.\n- Giải bất phương trình bậc nhất một ẩn và biểu diễn tập nghiệm trên trục số; giải bài toán thực tế bằng cách lập hệ phương trình.`;
+    }
+    if (name.includes('Căn bậc hai') || name.includes('căn thức') || name.includes('Căn bậc ba')) {
+      return `- Nắm vững điều kiện xác định, hằng đẳng thức √(A²) = |A| và quy tắc khai phương một tích, một thương.\n- Thực hiện đưa thừa số vào/ra dấu căn, trục căn thức ở mẫu và rút gọn biểu thức chứa căn bậc hai, căn bậc ba.`;
+    }
+    if (name.includes('Hệ thức lượng') || name.includes('lượng giác') || name.includes('tam giác vuông')) {
+      return `- Nắm vững tỉ số lượng giác sin, cos, tan, cot của góc nhọn và các hệ thức giữa cạnh, góc trong tam giác vuông.\n- Giải tam giác vuông và ứng dụng đo chiều cao, khoảng cách vật thể ngoài thực tế.`;
+    }
+    if (name.includes('Đường tròn') || name.includes('tiếp tuyến') || name.includes('Góc nội tiếp') || name.includes('Tứ giác nội tiếp')) {
+      return `- Nắm vững tính chất đối xứng, liên hệ đường kính - dây cung, tiếp tuyến của đường tròn và góc nội tiếp.\n- Chứng minh tứ giác nội tiếp đường tròn và tính toán độ dài cung tròn, diện tích hình quạt tròn, hình vành khuyên.`;
+    }
+    if (name.includes('Phương trình bậc hai') || name.includes('Parabol') || name.includes('Viète') || name.includes('Vi-ét')) {
+      return `- Vẽ đồ thị Parabol y = ax² (a ≠ 0); giải phương trình bậc hai một ẩn bằng công thức nghiệm.\n- Vận dụng thành thạo định lí Viète nhẩm nghiệm, tìm hai số biết tổng và tích, xét dấu nghiệm và giải toán lập phương trình bậc hai.`;
+    }
+    if (name.includes('tần số') || name.includes('Tần số') || name.includes('ghép nhóm') || name.includes('xác suất') || name.includes('Xác suất') || name.includes('biểu đồ')) {
+      return `- Thu thập, phân loại dữ liệu; lập bảng tần số, tần số tương đối, bảng ghép nhóm và vẽ biểu đồ thích hợp.\n- Tính xác suất của biến cố trong các mô hình xác suất đơn giản bằng phương pháp liệt kê, sơ đồ cây hoặc phần mềm Excel.`;
+    }
+    if (name.includes('GeoGebra') || name.includes('Excel') || name.includes('máy tính cầm tay')) {
+      return `- Sử dụng thành thạo phần mềm GeoGebra vẽ hình học phẳng, đồ thị hàm số và mô phỏng toán học.\n- Khai thác phần mềm Excel và máy tính Casio hỗ trợ tính toán, phân tích số liệu thống kê và xác suất thực nghiệm.`;
+    }
+    return `- Nắm vững chuẩn kiến thức, định lí và phương pháp giải toán của bài học: "${name}" (SGK Toán Kết nối tri thức).\n- Phát triển năng lực tư duy logic, mô hình hóa toán học, giải quyết vấn đề và năng lực ứng dụng công nghệ số trong học toán.`;
   }
 
   // 2. NGỮ VĂN THCS (6 - 9)
@@ -141,12 +207,34 @@ export function generateSecondaryYccd(subject: string, grade: string, lessonName
 
   // 5. LỊCH SỬ VÀ ĐỊA LÍ THCS (6 - 9)
   if (s.includes('lịch sử') || s.includes('địa lí') || s.includes('địa lý') || s.includes('ls&đl') || s.includes('lsdl')) {
-    if (name.includes('Ai Cập') || name.includes('Lưỡng Hà') || name.includes('Hy Lạp') || name.includes('La Mã') || name.includes('Văn minh')) return `- Trình bày vị trí địa lí, điều kiện tự nhiên và những thành tựu văn hóa tiêu biểu của các nền văn minh cổ đại thế giới.`;
-    if (name.includes('Phong kiến') || name.includes('Đại Việt') || name.includes('Lý') || name.includes('Trần') || name.includes('Lê')) return `- Trình bày tiến trình lịch sử dựng nước, giữ nước và những chiến công hiển hách đánh thắng giặc ngoại xâm thời kỳ phong kiến Đại Việt.`;
-    if (name.includes('Cách mạng tư sản') || name.includes('Chiến tranh thế giới') || name.includes('Kháng chiến')) return `- Phân tích nguyên nhân, diễn biến chính, kết quả và ý nghĩa lịch sử sâu sắc của cuộc cách mạng / cuộc kháng chiến trong bài học.`;
-    if (name.includes('Khí hậu') || name.includes('Địa hình') || name.includes('Sông ngòi') || name.includes('Châu lục')) return `- Trình bày đặc điểm tự nhiên, phân bố dân cư, đô thị hóa và sự phát triển kinh tế của các khu vực/châu lục trên thế giới.`;
-    if (name.includes('Biển đảo') || name.includes('Hoàng Sa') || name.includes('Trường Sa') || name.includes('Địa lí Việt Nam')) return `- Xác định vị trí chiến lược của Biển Đông và hai quần đảo Hoàng Sa, Trường Sa; khẳng định chủ quyền lãnh thổ thiêng liêng của Tổ quốc.`;
-    return `- Nắm vững kiến thức lịch sử, địa lý trọng tâm của bài: "${name}".\n- Khai thác bản đồ, tư liệu lịch sử hiệu quả; bồi đắp lòng yêu nước và ý thức trách nhiệm công dân.`;
+    if (name.includes('Ai Cập') || name.includes('Lưỡng Hà') || name.includes('Hy Lạp') || name.includes('La Mã') || name.includes('Văn minh')) {
+      return `- Trình bày vị trí địa lí, điều kiện tự nhiên và những thành tựu văn hóa tiêu biểu của các nền văn minh cổ đại thế giới.\n- Nhận diện những đóng góp to lớn của các nền văn minh nhân loại đối với lịch sử thế giới.`;
+    }
+    if (name.includes('Tây Âu') || name.includes('Phát kiến') || name.includes('Phục hưng')) {
+      return `- Phân tích quá trình hình thành chế độ phong kiến Tây Âu, các cuộc phát kiến địa lí lớn và phong trào Văn hóa Phục hưng rực rỡ.\n- Khái quát sự nảy sinh quan hệ sản xuất tư bản chủ nghĩa tại Tây Âu.`;
+    }
+    if (name.includes('Cách mạng tư sản') || name.includes('Cách mạng công nghiệp') || name.includes('Chiến tranh thế giới') || name.includes('Chiến tranh lạnh')) {
+      return `- Phân tích nguyên nhân, diễn biến chính, kết quả và ý nghĩa lịch sử sâu sắc của cuộc cách mạng / cuộc chiến tranh trong bài học.\n- Rút ra bài học lịch sử về hòa bình, dân chủ và tiến bộ xã hội.`;
+    }
+    if (name.includes('Văn Lang') || name.includes('Âu Lạc') || name.includes('Bắc thuộc') || name.includes('Bạch Đằng') || name.includes('Khởi nghĩa')) {
+      return `- Trình bày tiến trình lịch sử dựng nước thời Hùng Vương - An Dương Vương và phong trào bền bỉ đấu tranh giành độc lập dân tộc trước thế kỉ X.\n- Bồi đắp niềm tự hào dân tộc và lòng biết ơn sâu sắc đối với các vị anh hùng dựng nước và giữ nước.`;
+    }
+    if (name.includes('Đại Việt') || name.includes('Lý') || name.includes('Trần') || name.includes('Lê sơ') || name.includes('Lam Sơn') || name.includes('Tây Sơn')) {
+      return `- Trình bày và phân tích các trang sử hào hùng xây dựng đất nước và những chiến công hiển hách đánh bại quân xâm lược (Tống, Mông - Nguyên, Minh, Xiêm, Thanh).\n- Tự hào về truyền thống yêu nước, nghệ thuật quân sự độc đáo và các giá trị di sản văn hóa Thăng Long - Đại Việt.`;
+    }
+    if (name.includes('Nguyễn Ái Quốc') || name.includes('Đảng Cộng sản') || name.includes('Cách mạng tháng Tám') || name.includes('Điện Biên Phủ') || name.includes('kháng chiến') || name.includes('1975') || name.includes('Đổi mới')) {
+      return `- Nắm vững bước ngoặt lịch sử khi Đảng Cộng sản Việt Nam ra đời, thắng lợi vĩ đại của Cách mạng tháng Tám 1945, hai cuộc kháng chiến chống Pháp - Mỹ và thành tựu Đổi mới đất nước.\n- Bồi dưỡng niềm tin son sắt vào sự lãnh đạo của Đảng và khát vọng cống hiến xây dựng Tổ quốc.`;
+    }
+    if (name.includes('Bản đồ') || name.includes('Kinh, vĩ tuyến') || name.includes('Trái Đất') || name.includes('Khí hậu') || name.includes('Địa hình') || name.includes('Sông') || name.includes('Thuỷ văn')) {
+      return `- Sử dụng thành thạo bản đồ, Atlas Địa lí, biểu đồ số liệu để phân tích đặc điểm tự nhiên, địa hình, khí hậu, sông ngòi của Trái Đất và Việt Nam.\n- Giải thích được các quy luật tự nhiên và hiện tượng địa lí thực tế.`;
+    }
+    if (name.includes('Dân số') || name.includes('Nông nghiệp') || name.includes('Công nghiệp') || name.includes('Dịch vụ') || name.includes('Vùng') || name.includes('kinh tế')) {
+      return `- Phân tích được bức tranh phân bố dân cư, đô thị hóa, các ngành kinh tế trọng điểm và thế mạnh phát triển kinh tế - xã hội của các vùng trên cả nước.\n- Vận dụng kiến thức giải thích các vấn đề kinh tế - xã hội ở địa phương.`;
+    }
+    if (name.includes('Biển đảo') || name.includes('Biển Đông') || name.includes('Hoàng Sa') || name.includes('Trường Sa') || name.includes('chủ quyền')) {
+      return `- Xác định vị trí chiến lược của Biển Đông; khẳng định chủ quyền biển, đảo thiêng liêng và quyền lợi hợp pháp của Việt Nam tại hai quần đảo Hoàng Sa, Trường Sa.\n- Nâng cao ý thức trách nhiệm công dân trong sự nghiệp bảo vệ chủ quyền biển đảo Tổ quốc.`;
+    }
+    return `- Nắm vững chuẩn kiến thức lịch sử, địa lý trọng tâm của bài: "${name}" (SGK Lịch sử và Địa lí Kết nối tri thức).\n- Khai thác thành thạo bản đồ, Atlas Địa lí, tranh ảnh tư liệu; bồi đắp lòng yêu nước và ý thức giữ gìn di sản dân tộc.`;
   }
 
   // 6. TIN HỌC THCS (6 - 9)
@@ -200,11 +288,26 @@ export function generateSecondaryYccd(subject: string, grade: string, lessonName
   }
 
   // 10. HOẠT ĐỘNG TRẢI NGHIỆM, HƯỚNG NGHIỆP THCS (6 - 9)
-  if (s.includes('trải nghiệm') || s.includes('hđtn') || s.includes('hdtn')) {
-    if (name.includes('Khám phá bản thân') || name.includes('Nhà trường')) return `- Nhận diện được nét riêng về tính cách, năng lực và giá trị bản thân; xây dựng các mối quan hệ tích cực với thầy cô và bạn bè.`;
-    if (name.includes('Gia đình') || name.includes('Cộng đồng')) return `- Thể hiện sự quan tâm, chăm sóc người thân trong gia đình; chủ động tham gia các hoạt động thiện nguyện, phục vụ cộng đồng.`;
-    if (name.includes('Nghề nghiệp') || name.includes('Hướng nghiệp')) return `- Khảo sát các nghề phổ biến tại địa phương; đối chiếu yêu cầu của nghề với năng lực, sở thích bản thân để xây dựng kế hoạch học tập hướng nghiệp.`;
-    return `- Chủ động, sáng tạo tham gia các hoạt động trải nghiệm trong bài: "${name}".\n- Phát triển năng lực tự chủ, kỹ năng thích ứng, quản lý cảm xúc và định hướng nghề nghiệp tương lai.`;
+  if (s.includes('trải nghiệm') || s.includes('hđtn') || s.includes('hdtn') || s.includes('hướng nghiệp')) {
+    if (name.includes('nhà trường') || name.includes('tình bạn') || name.includes('bắt nạt')) {
+      return `- Tự hào truyền thống nhà trường, xây dựng nếp sống văn minh và giữ gìn tình bạn trong sáng.\n- Rèn luyện kỹ năng phòng tránh bắt nạt học đường và tạo dựng môi trường học đường an toàn, thân thiện.`;
+    }
+    if (name.includes('bản thân') || name.includes('tính cách') || name.includes('cảm xúc') || name.includes('tranh biện') || name.includes('từ chối') || name.includes('thích nghi') || name.includes('áp lực')) {
+      return `- Nhận diện sâu sắc nét tính cách, cảm xúc, điểm mạnh và điểm cần hoàn thiện của bản thân.\n- Rèn luyện kỹ năng làm chủ cảm xúc, tranh biện tích cực, kĩ năng từ chối cám dỗ và ứng phó linh hoạt với áp lực thi cử.`;
+    }
+    if (name.includes('gia đình') || name.includes('người thân') || name.includes('việc nhà') || name.includes('kinh tế gia đình')) {
+      return `- Thể hiện tình yêu thương, lòng biết ơn cha mẹ và sự tôn trọng người thân trong gia đình.\n- Chủ động chia sẻ công việc gia đình, giải quyết bất đồng hòa nhã và cùng gia đình thực hiện chi tiêu tiết kiệm, hợp lí.`;
+    }
+    if (name.includes('cộng đồng') || name.includes('thiện nguyện') || name.includes('mạng xã hội') || name.includes('truyền thông')) {
+      return `- Thực hiện giao tiếp văn minh nơi công cộng, tích cực tham gia các hoạt động thiện nguyện vì cộng đồng.\n- Khảo sát và ứng xử chuẩn mực trên mạng xã hội, lan tỏa các thông điệp nhân văn trong học đường.`;
+    }
+    if (name.includes('thiên nhiên') || name.includes('môi trường') || name.includes('Tổ quốc') || name.includes('thiên tai')) {
+      return `- Khám phá, tự hào và có hành động thiết thực bảo tồn cảnh quan thiên nhiên quê hương Việt Nam.\n- Thực hiện lối sống xanh, giảm thiểu rác thải nhựa và truyền thông kỹ năng phòng chống rủi ro thiên tai, thích ứng biến đổi khí hậu.`;
+    }
+    if (name.includes('nghề nghiệp') || name.includes('hướng nghiệp') || name.includes('nghề') || name.includes('cơ sở giáo dục') || name.includes('tuyển sinh') || name.includes('Lớp 10')) {
+      return `- Khám phá thế giới nghề nghiệp trong xã hội hiện đại; đánh giá sự phù hợp giữa năng lực, sở thích bản thân với ngành nghề định chọn.\n- Nắm vững thông tin tuyển sinh THPT / GDNN và xây dựng kế hoạch rèn luyện, định hướng học tập sau tốt nghiệp THCS.`;
+    }
+    return `- Chủ động, tích cực tham gia các hoạt động trải nghiệm trong bài: "${name}" (SGK HĐTN&HN Kết nối tri thức).\n- Phát triển toàn diện năng lực tự chủ, kỹ năng thích ứng, quản lý cảm xúc, phục vụ cộng đồng và định hướng nghề nghiệp tương lai.`;
   }
 
   // 11. ÂM NHẠC & MĨ THUẬT THCS
@@ -222,200 +325,8 @@ export function generateSecondaryYccd(subject: string, grade: string, lessonName
 // =========================================================================
 // 1. TOÁN THCS (LỚP 6, 7, 8, 9) - KẾT NỐI TRI THỨC VỚI CUỘC SỐNG
 // =========================================================================
-export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
-  const g = parseInt(grade, 10) || 7;
-  const list: RawSecondaryLesson[] = [];
-
-  const mathDataByGrade: Record<number, { term1: string[]; term2: string[] }> = {
-    6: {
-      term1: [
-        'Bài 1: Tập hợp (2 tiết) & Bài 2: Cách ghi số tự nhiên (2 tiết)',
-        'Bài 3: Phép cộng và phép trừ hai số tự nhiên (2 tiết) & Bài 4: Phép nhân và phép chia (2 tiết)',
-        'Bài 5: Phép nâng lên lũy thừa với số mũ tự nhiên (2 tiết) & Bài 6: Thứ tự thực hiện phép tính (2 tiết)',
-        'Bài 7: Quan hệ chia hết và tính chất chia hết (2 tiết) & Bài 8: Dấu hiệu chia hết cho 2, 3, 5, 9 (2 tiết)',
-        'Bài 9: Số nguyên tố và hợp số (2 tiết) & Bài 10: Ước chung và Bội chung (2 tiết)',
-        'Bài 11: Luyện tập chung & Bài 13: Tập hợp các số nguyên (2 tiết)',
-        'Bài 14: Phép cộng và phép trừ hai số nguyên (4 tiết)',
-        'Bài 15: Phép nhân và phép chia hai số nguyên (2 tiết) & Ôn tập giữa HK1 (2 tiết)',
-        'Kiểm tra, đánh giá giữa Học kỳ 1 môn Toán 6 (4 tiết)',
-        'Bài 18: Hình tam giác đều, hình vuông, hình lục giác đều (4 tiết)',
-        'Bài 19: Hình chữ nhật, hình thoi, hình bình hành, hình thang cân (4 tiết)',
-        'Bài 20: Chu vi và diện tích của một số tứ giác đã học (4 tiết)',
-        'Bài 21: Hình có trục đối xứng và Hình có tâm đối xứng (4 tiết)',
-        'Bài 22: Vai trò của tính đối xứng trong tự nhiên và nghệ thuật (4 tiết)',
-        'Bài 23: Mở rộng phân số. Phân số bằng nhau (4 tiết)',
-        'Bài 24: So sánh phân số. Hỗn số dương (4 tiết)',
-        'Ôn tập tổng hợp kiến thức Toán Học kỳ 1 Lớp 6 (4 tiết)',
-        'Kiểm tra, đánh giá cuối Học kỳ 1 môn Toán 6 (4 tiết)'
-      ],
-      term2: [
-        'Bài 25: Phép cộng và phép trừ phân số (4 tiết)',
-        'Bài 26: Phép nhân và phép chia phân số (4 tiết)',
-        'Bài 27: Hai bài toán cơ bản về phân số (4 tiết)',
-        'Bài 28: Số thập phân và các phép tính với số thập phân (4 tiết)',
-        'Bài 29: Tỉ số và tỉ số phần trăm (4 tiết)',
-        'Bài 30: Làm tròn và ước lượng số (4 tiết)',
-        'Bài 31: Dữ liệu và thu thập dữ liệu (4 tiết)',
-        'Bài 32: Bảng dữ liệu và biểu đồ tranh (4 tiết)',
-        'Kiểm tra, đánh giá giữa Học kỳ 2 môn Toán 6 (4 tiết)',
-        'Bài 33: Biểu đồ cột và biểu đồ cột kép (4 tiết)',
-        'Bài 34: Điểm và đường thẳng (4 tiết)',
-        'Bài 35: Tia và Đoạn thẳng. Độ dài đoạn thẳng (4 tiết)',
-        'Bài 36: Trung điểm của đoạn thẳng (4 tiết)',
-        'Bài 37: Góc. Số đo góc và Các góc đặc biệt (4 tiết)',
-        'Dự án STEM Toán 6: "Mô hình Hình học Không gian & Phân tích Biểu đồ Thống kê Xanh" (4 tiết)',
-        'Bài 38: Ôn tập toàn diện chuẩn bị kiểm tra cuối năm Toán 6 (4 tiết)',
-        'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Toán 6 (4 tiết)'
-      ]
-    },
-    7: {
-      term1: [
-        'Chương I: Số hữu tỉ - Bài 1: Tập hợp các số hữu tỉ (4 tiết)',
-        'Bài 2: Cộng, trừ, nhân, chia số hữu tỉ (4 tiết)',
-        'Bài 3: Lũy thừa với số mũ tự nhiên của một số hữu tỉ (4 tiết)',
-        'Bài 4: Thứ tự thực hiện các phép tính. Quy tắc dấu ngoặc (4 tiết)',
-        'Chương II: Số thực - Bài 5: Làm quen với số thập phân vô hạn tuần hoàn (4 tiết)',
-        'Bài 6: Số vô tỉ. Căn bậc hai số học (4 tiết)',
-        'Bài 7: Tập hợp các số thực (4 tiết)',
-        'Chương III: Góc và đường thẳng song song - Bài 8: Góc ở vị trí đặc biệt. Tia phân giác (4 tiết)',
-        'Kiểm tra, đánh giá giữa Học kỳ 1 môn Toán 7 (4 tiết)',
-        'Bài 9: Hai đường thẳng song song và dấu hiệu nhận biết (4 tiết)',
-        'Bài 10: Tiên đề Euclid về đường thẳng song song (4 tiết)',
-        'Bài 11: Định lí và chứng minh định lí hình học (4 tiết)',
-        'Chương IV: Tam giác bằng nhau - Bài 12: Tổng các góc trong một tam giác (4 tiết)',
-        'Bài 13: Hai tam giác bằng nhau. Trường hợp bằng nhau thứ nhất c-c-c (4 tiết)',
-        'Bài 14: Trường hợp bằng nhau thứ hai c-g-c và thứ ba g-c-g (4 tiết)',
-        'Bài 15: Các trường hợp bằng nhau của tam giác vuông (4 tiết)',
-        'Bài 16: Tam giác cân. Đường trung trực của đoạn thẳng (4 tiết)',
-        'Kiểm tra, đánh giá cuối Học kỳ 1 môn Toán 7 (4 tiết)'
-      ],
-      term2: [
-        'Chương V: Thu thập và biểu diễn dữ liệu - Bài 17: Thu thập và phân loại dữ liệu (4 tiết)',
-        'Bài 18: Biểu đồ hình quạt tròn (4 tiết)',
-        'Bài 19: Biểu đồ đoạn thẳng (4 tiết)',
-        'Chương VI: Tỉ lệ thức và đại lượng tỉ lệ - Bài 20: Tỉ lệ thức (4 tiết)',
-        'Bài 21: Tính chất của dãy tỉ số bằng nhau (4 tiết)',
-        'Bài 22: Đại lượng tỉ lệ thuận và Đại lượng tỉ lệ nghịch (4 tiết)',
-        'Chương VII: Biểu thức đại số - Bài 24: Biểu thức đại số (4 tiết)',
-        'Bài 25: Đa thức một biến (4 tiết)',
-        'Kiểm tra, đánh giá giữa Học kỳ 2 môn Toán 7 (4 tiết)',
-        'Bài 26: Phép cộng và phép trừ đa thức một biến (4 tiết)',
-        'Bài 27: Phép nhân đa thức một biến (4 tiết)',
-        'Bài 28: Phép chia đa thức một biến (4 tiết)',
-        'Chương VIII: Các hình khối trong thực tiễn - Bài 29: Hình lăng trụ đứng tam giác và tứ giác (4 tiết)',
-        'Bài 30: Diện tích xung quanh và thể tích hình lăng trụ đứng (4 tiết)',
-        'Dự án STEM Toán 7: "Thiết kế Nhà Lăng trụ Xanh & Biểu đồ Quản lý Tài chính Học đường" (4 tiết)',
-        'Bài 31: Ôn tập toàn diện chuẩn bị kiểm tra cuối năm Toán 7 (4 tiết)',
-        'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Toán 7 (4 tiết)'
-      ]
-    },
-    8: {
-      term1: [
-        'Chương I: Đa thức - Bài 1: Đơn thức (3 tiết) & Bài 2: Đa thức (1 tiết)',
-        'Bài 3: Phép cộng và phép trừ đa thức (4 tiết)',
-        'Bài 4: Phép nhân đa thức (4 tiết)',
-        'Bài 5: Phép chia đa thức cho đơn thức (4 tiết)',
-        'Chương II: Hằng đẳng thức đáng nhớ - Bài 6: Hiệu hai bình phương. Bình phương của một tổng/hiệu (4 tiết)',
-        'Bài 7: Lập phương của một tổng/hiệu (4 tiết)',
-        'Bài 8: Tổng và hiệu hai lập phương (4 tiết)',
-        'Bài 9: Phân tích đa thức thành nhân tử (4 tiết)',
-        'Kiểm tra, đánh giá giữa Học kỳ 1 môn Toán 8 (4 tiết)',
-        'Chương III: Tứ giác - Bài 10: Tứ giác và tính chất tổng các góc (4 tiết)',
-        'Bài 11: Hình thang cân (4 tiết)',
-        'Bài 12: Hình bình hành (4 tiết)',
-        'Bài 13: Hình chữ nhật (4 tiết)',
-        'Bài 14: Hình thoi và Hình vuông (4 tiết)',
-        'Chương IV: Định lí Thalès - Bài 15: Định lí Thalès trong tam giác (4 tiết)',
-        'Bài 16: Định lí đảo và hệ quả của định lí Thalès (4 tiết)',
-        'Bài 17: Tính chất đường phân giác của tam giác (4 tiết)',
-        'Kiểm tra, đánh giá cuối Học kỳ 1 môn Toán 8 (4 tiết)'
-      ],
-      term2: [
-        'Chương V: Dữ liệu và biểu đồ - Bài 18: Thu thập và xử lý dữ liệu (4 tiết)',
-        'Bài 19: Biểu diễn dữ liệu bằng bảng, biểu đồ (4 tiết)',
-        'Chương VI: Phân thức đại số - Bài 21: Phân thức đại số (4 tiết)',
-        'Bài 22: Tính chất cơ bản của phân thức đại số (4 tiết)',
-        'Bài 23: Phép cộng và phép trừ phân thức đại số (4 tiết)',
-        'Bài 24: Phép nhân và phép chia phân thức đại số (4 tiết)',
-        'Chương VII: Phương trình bậc nhất - Bài 25: Phương trình bậc nhất một biến (4 tiết)',
-        'Bài 26: Giải bài toán bằng cách lập phương trình (4 tiết)',
-        'Kiểm tra, đánh giá giữa Học kỳ 2 môn Toán 8 (4 tiết)',
-        'Chương VIII: Hình đồng dạng - Bài 29: Hai tam giác đồng dạng (4 tiết)',
-        'Bài 30: Các trường hợp đồng dạng của hai tam giác (4 tiết)',
-        'Bài 31: Các trường hợp đồng dạng của hai tam giác vuông (4 tiết)',
-        'Chương IX: Một số hình khối trong thực tiễn - Bài 33: Hình chóp tam giác đều và hình chóp tứ giác đều (4 tiết)',
-        'Bài 34: Diện tích xung quanh và thể tích hình chóp đều (4 tiết)',
-        'Dự án STEM Toán 8: "Chế tạo Mô hình Kim tự tháp Chóp đều & Thước đo Khoảng cách Thalès" (4 tiết)',
-        'Bài 35: Ôn tập toàn diện chuẩn bị kiểm tra cuối năm Toán 8 (4 tiết)',
-        'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Toán 8 (4 tiết)'
-      ]
-    },
-    9: {
-      term1: [
-        'Chương I: Phương trình và hệ phương trình - Bài 1: Khái niệm phương trình và hệ hai phương trình bậc nhất hai ẩn (4 tiết)',
-        'Bài 2: Giải hệ hai phương trình bậc nhất hai ẩn bằng phương pháp thế và cộng đại số (4 tiết)',
-        'Bài 3: Giải bài toán bằng cách lập hệ phương trình (4 tiết)',
-        'Chương II: Phương trình và bất phương trình bậc nhất một biến - Bài 4: Bất đẳng thức và tính chất (4 tiết)',
-        'Bài 5: Bất phương trình bậc nhất một biến (4 tiết)',
-        'Chương III: Căn bậc hai và căn bậc ba - Bài 6: Căn bậc hai và căn thức bậc hai (4 tiết)',
-        'Bài 7: Khai căn bậc hai một tích và một thương (4 tiết)',
-        'Bài 8: Biến đổi đơn giản biểu thức chứa căn thức bậc hai (4 tiết)',
-        'Kiểm tra, đánh giá giữa Học kỳ 1 môn Toán 9 (4 tiết)',
-        'Bài 9: Rút gọn biểu thức chứa căn thức bậc hai và Căn bậc ba (4 tiết)',
-        'Chương IV: Hệ thức lượng trong tam giác vuông - Bài 11: Tỉ số lượng giác của góc nhọn (4 tiết)',
-        'Bài 12: Một số hệ thức về cạnh và góc trong tam giác vuông (4 tiết)',
-        'Bài 13: Ứng dụng thực tế của tỉ số lượng giác (Đo chiều cao cây, tháp) (4 tiết)',
-        'Chương V: Đường tròn - Bài 14: Sự xác định đường tròn. Tính chất đối xứng của đường tròn (4 tiết)',
-        'Bài 15: Vị trí tương đối của đường thẳng và đường tròn (4 tiết)',
-        'Bài 16: Tiếp tuyến của đường tròn và tính chất hai tiếp tuyến cắt nhau (4 tiết)',
-        'Bài 17: Vị trí tương đối của hai đường tròn (4 tiết)',
-        'Kiểm tra, đánh giá cuối Học kỳ 1 môn Toán 9 (4 tiết)'
-      ],
-      term2: [
-        'Chương VI: Hàm số y = ax2 (a ≠ 0). Phương trình bậc hai một biến - Bài 18: Hàm số y = ax2 và đồ thị Parabol (4 tiết)',
-        'Bài 19: Phương trình bậc hai một biến và công thức nghiệm (4 tiết)',
-        'Bài 20: Định lí Viète và ứng dụng (4 tiết)',
-        'Bài 21: Giải bài toán bằng cách lập phương trình bậc hai (4 tiết)',
-        'Chương VII: Tần số và tần số tương đối - Bài 22: Bảng tần số và biểu đồ tần số (4 tiết)',
-        'Bài 23: Tần số tương đối và biểu đồ tần số tương đối (4 tiết)',
-        'Chương VIII: Xác suất của biến cố - Bài 24: Không gian mẫu và biến cố (4 tiết)',
-        'Bài 25: Xác suất của biến cố trong một số trò chơi đơn giản (4 tiết)',
-        'Kiểm tra, đánh giá giữa Học kỳ 2 môn Toán 9 (4 tiết)',
-        'Chương IX: Đường tròn ngoại tiếp và nội tiếp - Bài 27: Góc nội tiếp và góc ở tâm (4 tiết)',
-        'Bài 28: Tứ giác nội tiếp đường tròn và điều kiện nội tiếp (4 tiết)',
-        'Chương X: Các hình khối trong thực tiễn - Bài 29: Hình trụ. Diện tích xung quanh và thể tích hình trụ (4 tiết)',
-        'Bài 30: Hình nón. Diện tích xung quanh và thể tích hình nón (4 tiết)',
-        'Bài 31: Hình cầu. Diện tích mặt cầu và thể tích hình cầu (4 tiết)',
-        'Dự án STEM Toán 9: "Mô hình Parabol Cầu treo Văng & Đo lường Thể tích Hình học Không gian" (4 tiết)',
-        'Luyện giải bộ đề thi tuyển sinh vào Lớp 10 THPT môn Toán (4 tiết)',
-        'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Toán 9 (4 tiết)'
-      ]
-    }
-  };
-
-  const currentGradeData = mathDataByGrade[g] || mathDataByGrade[7];
-  const all35Weeks = [...currentGradeData.term1.slice(0, 18), ...currentGradeData.term2.slice(0, 17)];
-
-  all35Weeks.forEach((name, idx) => {
-    const w = idx + 1;
-    const isGK = w === 9 || w === 26;
-    const isCK = w === 18 || w === 35;
-    const isStem = w === 33 || name.includes('STEM');
-
-    list.push({
-      week: w,
-      topic: name.includes('Chương') ? name.split(' - ')[0] : name.includes('Bài') ? name.split(':')[0] : 'Đánh giá định kỳ',
-      name: name,
-      periods: 4,
-      yccd: `- Nắm vững và vận dụng chuẩn xác kiến thức đại số, hình học, xác suất thống kê của ${name} (SGK Toán ${g} Kết nối tri thức).\n- Phát triển tư duy logic, năng lực mô hình hóa toán học và kỹ năng giải quyết bài toán thực tế phức hợp.\n- Chuẩn bị nền tảng toán học vững vàng cho các kỳ thi học sinh giỏi và thi tuyển sinh lớp 10.`,
-      equipment: isStem ? 'Phần mềm GeoGebra, máy tính cầm tay Casio FX-580VNX, mô hình STEM' : 'Compa, ê ke, thước đo độ, máy chiếu, máy tính Casio',
-      location: 'Phòng học bộ môn Toán / Lớp học',
-      notes: isGK ? 'Kiểm tra giữa kỳ' : isCK ? 'Kiểm tra cuối kỳ' : isStem ? 'Dự án STEM Toán học' : ''
-    });
-  });
-
-  return list;
-}
+import { getMathSecondaryCurriculum } from './curriculumSecondaryMath';
+export { getMathSecondaryCurriculum };
 
 // =========================================================================
 // 2. NGỮ VĂN THCS (LỚP 6, 7, 8, 9) - KẾT NỐI TRI THỨC VỚI CUỘC SỐNG
@@ -620,7 +531,14 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
 // =========================================================================
 import { getEnglishSecondaryCurriculum } from './curriculumSecondaryEnglish';
 import { getTinHocSecondaryCurriculum } from './curriculumInformatics';
-export { getEnglishSecondaryCurriculum, getTinHocSecondaryCurriculum };
+import { getLsdlSecondaryCurriculum } from './curriculumSecondaryLsdl';
+import { getHdtnSecondaryCurriculum } from './curriculumSecondaryHdtn';
+export {
+  getEnglishSecondaryCurriculum,
+  getTinHocSecondaryCurriculum,
+  getLsdlSecondaryCurriculum,
+  getHdtnSecondaryCurriculum
+};
 
 // =========================================================================
 // 4. KHOA HỌC TỰ NHIÊN THCS (LỚP 6, 7, 8, 9) - KHUNG 140 TIẾT (4 TIẾT/TUẦN)
@@ -993,60 +911,7 @@ export function getGeneralSecondaryCurriculum(grade: string, subject: string): R
 
   // 6.1. LỊCH SỬ VÀ ĐỊA LÍ THCS (3 tiết/tuần x 35 tuần = 105 tiết)
   if (s.includes('lịch sử') || s.includes('địa lí') || s.includes('địa lý') || s.includes('lich su')) {
-    const lsdlTopics = [
-      { t: 'Chủ đề: Tây Âu thời kì phong kiến', n: `Bài 1: Lịch sử - Quá trình hình thành xã hội phong kiến ở Tây Âu (Lớp ${g} - 3 tiết)` },
-      { t: 'Chủ đề: Tây Âu thời kì phong kiến', n: `Bài 2: Các cuộc phát kiến địa lí lớn và sự nảy sinh chủ nghĩa tư bản ở Tây Âu (3 tiết)` },
-      { t: 'Chủ đề: Tây Âu thời kì phong kiến', n: `Bài 3: Phong trào Văn hóa Phục hưng và Cải cách tôn giáo ở Tây Âu (3 tiết)` },
-      { t: 'Chủ đề: Tự nhiên và dân cư Châu Âu', n: `Bài 4: Địa lí - Vị trí địa lí, phạm vi và đặc điểm tự nhiên Châu Âu (3 tiết)` },
-      { t: 'Chủ đề: Tự nhiên và dân cư Châu Âu', n: `Bài 5: Đặc điểm dân cư, xã hội và Đô thị hóa ở Châu Âu (3 tiết)` },
-      { t: 'Chủ đề: Liên minh Châu Âu (EU)', n: `Bài 6: Liên minh Châu Âu (EU) - Một thực thể kinh tế, chính trị lớn của thế giới (3 tiết)` },
-      { t: 'Chủ đề: Lịch sử Châu Á thời phong kiến', n: `Bài 7: Lịch sử - Trung Quốc từ thế kỉ VII đến giữa thế kỉ XIX (Thời Đường, Tống, Minh, Thanh) (3 tiết)` },
-      { t: 'Chủ đề: Lịch sử Châu Á thời phong kiến', n: `Bài 8: Ấn Độ từ thế kỉ IV đến giữa thế kỉ XIX (Vương triều Gúp-ta, Hồi giáo Đê-li, Mô-gôn) (3 tiết)` },
-      { t: 'Đánh giá định kỳ', n: `Kiểm tra, đánh giá giữa Học kỳ 1 môn Lịch sử và Địa lí Lớp ${g} (3 tiết)` },
-      { t: 'Chủ đề: Tự nhiên và dân cư Châu Á', n: `Bài 9: Địa lí - Vị trí địa lí, đặc điểm tự nhiên và tài nguyên khoáng sản Châu Á (3 tiết)` },
-      { t: 'Chủ đề: Tự nhiên và dân cư Châu Á', n: `Bài 10: Dân cư, tôn giáo và sự phân bố dân cư Châu Á (3 tiết)` },
-      { t: 'Chủ đề: Đông Nam Á thời kì phong kiến', n: `Bài 11: Lịch sử - Các vương quốc phong kiến Đông Nam Á từ nửa sau thế kỉ X đến nửa đầu thế kỉ XVI (3 tiết)` },
-      { t: 'Chủ đề: Việt Nam từ thế kỉ X đến thế kỉ XV', n: `Bài 12: Đất nước dưới thời Ngô - Đinh - Tiền Lê (Thế kỉ X) (3 tiết)` },
-      { t: 'Chủ đề: Việt Nam từ thế kỉ X đến thế kỉ XV', n: `Bài 13: Đại Việt thời Lý (1009 - 1225): Chính trị, kinh tế, luật pháp và văn hóa (3 tiết)` },
-      { t: 'Chủ đề: Việt Nam từ thế kỉ X đến thế kỉ XV', n: `Bài 14: Cuộc kháng chiến chống quân xâm lược Tống dưới thời Lý (Lý Thường Kiệt) (3 tiết)` },
-      { t: 'Chủ đề: Bản đồ và phương pháp thể hiện', n: `Bài 15: Địa lí - Bản đồ và Phương pháp biểu hiện các đối tượng địa lí (3 tiết)` },
-      { t: 'Chủ đề: Ôn tập Học kỳ 1', n: `Ôn tập tổng hợp Lịch sử thế giới và Địa lí các châu lục Học kỳ 1 (3 tiết)` },
-      { t: 'Đánh giá định kỳ', n: `Kiểm tra, đánh giá cuối Học kỳ 1 môn Lịch sử và Địa lí Lớp ${g} (3 tiết)` },
-      { t: 'Chủ đề: Đại Việt thời Trần', n: `Bài 16: Lịch sử - Đại Việt thời Trần (1226 - 1400): Xây dựng quân đội và củng cố chính quyền (3 tiết)` },
-      { t: 'Chủ đề: Ba lần kháng chiến chống Mông - Nguyên', n: `Bài 17: Ba lần kháng chiến chống quân xâm lược Mông - Nguyên thế kỉ XIII (3 tiết)` },
-      { t: 'Chủ đề: Kinh tế, văn hóa thời Trần', n: `Bài 18: Sự phát triển kinh tế, văn hóa, giáo dục và khoa học thời Trần (3 tiết)` },
-      { t: 'Chủ đề: Tự nhiên và dân cư Châu Phi', n: `Bài 19: Địa lí - Vị trí địa lí, tự nhiên và khí hậu Châu Phi (3 tiết)` },
-      { t: 'Chủ đề: Tự nhiên và dân cư Châu Phi', n: `Bài 20: Dân cư, xã hội và vấn đề khai thác tài nguyên thiên nhiên ở Châu Phi (3 tiết)` },
-      { t: 'Chủ đề: Khởi nghĩa Lam Sơn & Triều Hậu Lê', n: `Bài 21: Lịch sử - Khởi nghĩa Lam Sơn và sự thành lập Triều Hậu Lê (1418 - 1427) (3 tiết)` },
-      { t: 'Chủ đề: Đại Việt thời Lê sơ', n: `Bài 22: Đại Việt thời Lê sơ (1428 - 1527): Thời kỳ hoàng kim phát triển rực rỡ (3 tiết)` },
-      { t: 'Đánh giá định kỳ', n: `Kiểm tra, đánh giá giữa Học kỳ 2 môn Lịch sử và Địa lí Lớp ${g} (3 tiết)` },
-      { t: 'Chủ đề: Tự nhiên Châu Mỹ', n: `Bài 23: Địa lí - Vị trí địa lí, địa hình và mạng lưới sông ngòi Châu Mỹ (3 tiết)` },
-      { t: 'Chủ đề: Rừng Amazon và môi trường', n: `Bài 24: Khám phá Rừng nhiệt đới Amazon và vấn đề bảo vệ môi trường toàn cầu (3 tiết)` },
-      { t: 'Chủ đề: Phong trào Tây Sơn', n: `Bài 25: Lịch sử - Phong trào Tây Sơn và Quang Trung đại phá 29 vạn quân Thanh (3 tiết)` },
-      { t: 'Chủ đề: Châu Nam Cực và Châu Đại Dương', n: `Bài 26: Địa lí - Châu Nam Cực và Châu Đại Dương (3 tiết)` },
-      { t: 'Chủ đề: Chủ quyền biển đảo Việt Nam', n: `Bài 27: Lịch sử - Bảo vệ chủ quyền biển, đảo Việt Nam qua các thời kỳ lịch sử (3 tiết)` },
-      { t: 'Dự án STEM', n: `Dự án STEM Lịch sử Địa lí 7: "Mô hình Sa bàn Chiến thắng Bạch Đằng & Bản đồ Khám phá Thế giới" (3 tiết)` },
-      { t: 'Chủ đề: Ôn tập cuối năm', n: `Bài 28: Hệ thống hóa toàn bộ kiến thức Lịch sử và Địa lí Lớp ${g} (3 tiết)` },
-      { t: 'Chủ đề: Ôn tập cuối năm', n: `Bài 29: Ôn tập toàn diện chuẩn bị kiểm tra cuối năm Lịch sử và Địa lí ${g} (3 tiết)` },
-      { t: 'Đánh giá định kỳ', n: `Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Lịch sử và Địa lí ${g} (3 tiết)` }
-    ];
-
-    lsdlTopics.forEach((item, idx) => {
-      const w = idx + 1;
-      if (w > 35) return;
-      list.push({
-        week: w,
-        topic: item.t,
-        name: item.n,
-        periods: 3,
-        yccd: `- Trình bày và phân tích được các tiến trình lịch sử, sự kiện vẻ vang, nhân vật anh hùng và đặc điểm tự nhiên, dân cư, kinh tế của ${item.n} (SGK Lịch sử và Địa lí ${g} Kết nối tri thức).\n- Khai thác thành thạo bản đồ, Atlas Địa lí, biểu đồ số liệu thống kê và tranh ảnh tư liệu lịch sử.\n- Khơi dậy niềm tự hào dân tộc, tình yêu quê hương, ý thức giữ gìn di sản và chủ quyền biển đảo thiêng liêng.`,
-        equipment: 'Bản đồ lịch sử Việt Nam, Bản đồ các châu lục trên thế giới, Atlas Địa lí, tranh ảnh tư liệu',
-        location: 'Phòng học bộ môn Lịch sử - Địa lí / Lớp học',
-        notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 18 || w === 35 ? 'Kiểm tra cuối kỳ' : w === 32 ? 'Dự án STEM Lịch sử Địa lí' : ''
-      });
-    });
-
-    return list;
+    return getLsdlSecondaryCurriculum(String(g));
   }
 
   // 6.2. MÔN TIN HỌC THCS (1 tiết/tuần x 35 tuần = 35 tiết)
@@ -1287,61 +1152,8 @@ export function getGeneralSecondaryCurriculum(grade: string, subject: string): R
   }
 
   // 6.7. HOẠT ĐỘNG TRẢI NGHIỆM, HƯỚNG NGHIỆP THCS (3 tiết/tuần x 35 tuần = 105 tiết)
-  if (s.includes('trải nghiệm') || s.includes('hđtn') || s.includes('hướng nghiệp')) {
-    const hdtnTopics = [
-      `Chủ đề 1: Em với nhà trường - Bài 1: Phát triển mối quan hệ hòa đồng với thầy cô và các bạn (Lớp ${g} - 3 tiết)`,
-      `Chủ đề 1: Em với nhà trường - Bài 2: Tự hào truyền thống trường em và xây dựng nếp sống văn minh (3 tiết)`,
-      `Chủ đề 2: Khám phá bản thân - Bài 1: Nhận diện điểm mạnh, điểm yếu và sở thích cá nhân (3 tiết)`,
-      `Chủ đề 2: Khám phá bản thân - Bài 2: Kỹ năng kiểm soát cảm xúc và ứng phó với căng thẳng học đường (3 tiết)`,
-      `Chủ đề 3: Trách nhiệm với bản thân - Bài 1: Quản lý thời gian và lập thời gian biểu khoa học (3 tiết)`,
-      `Chủ đề 3: Trách nhiệm với bản thân - Bài 2: Chi tiêu hợp lý và thói quen tiết kiệm tài chính cá nhân (3 tiết)`,
-      `Chủ đề 4: Rèn luyện bản thân - Bài 1: Kiên trì vượt qua khó khăn và tự chủ trong cuộc sống (3 tiết)`,
-      `Chủ đề 4: Rèn luyện bản thân - Bài 2: Ứng xử văn hóa trên không gian mạng và phòng tránh lừa đảo (3 tiết)`,
-      `Kiểm tra, đánh giá giữa Học kỳ 1 môn Hoạt động trải nghiệm, hướng nghiệp Lớp ${g} (3 tiết)`,
-      `Chủ đề 5: Em với gia đình - Bài 1: Thể hiện tình yêu thương, lòng biết ơn và chăm sóc người thân (3 tiết)`,
-      `Chủ đề 5: Em với gia đình - Bài 2: Kỹ năng lắng nghe và giải quyết mâu thuẫn trong gia đình (3 tiết)`,
-      `Chủ đề 5: Em với gia đình - Bài 3: Tham gia lao động và chia sẻ việc nhà với cha mẹ (3 tiết)`,
-      `Chủ đề 6: Em với cộng đồng - Bài 1: Giao tiếp văn minh, lịch sự nơi công cộng (3 tiết)`,
-      `Chủ đề 6: Em với cộng đồng - Bài 2: Tham gia các hoạt động thiện nguyện vì cộng đồng (3 tiết)`,
-      `Chủ đề 6: Em với cộng đồng - Bài 3: Tuyên truyền phòng chống tệ nạn xã hội và bạo lực học đường (3 tiết)`,
-      `Chủ đề 7: Em với thiên nhiên - Bài 1: Khám phá cảnh quan thiên nhiên và danh lam thắng cảnh quê hương (3 tiết)`,
-      `Ôn tập và báo cáo hồ sơ trải nghiệm sáng tạo cá nhân Học kỳ 1 Lớp ${g} (3 tiết)`,
-      `Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Hoạt động trải nghiệm, hướng nghiệp ${g} (3 tiết)`,
-      `Chủ đề 7: Em với thiên nhiên - Bài 2: Thực hiện các hành động bảo vệ môi trường và giảm thiểu rác thải nhựa (3 tiết)`,
-      `Chủ đề 7: Em với thiên nhiên - Bài 3: Phòng chống và ứng phó với thiên tai, biến đổi khí hậu (3 tiết)`,
-      `Chủ đề 8: Khám phá thế giới nghề nghiệp - Bài 1: Tìm hiểu các nghề truyền thống tại địa phương (3 tiết)`,
-      `Chủ đề 8: Khám phá nghề nghiệp - Bài 2: Yêu cầu về năng lực, phẩm chất và an toàn lao động của các ngành nghề (3 tiết)`,
-      `Chủ đề 8: Khám phá nghề nghiệp - Bài 3: Gặp gỡ và giao lưu với các nghệ nhân, chuyên gia nghề nghiệp (3 tiết)`,
-      `Chủ đề 8: Khám phá nghề nghiệp - Bài 4: Trải nghiệm thử làm một công việc nghề nghiệp yêu thích (3 tiết)`,
-      `Chủ đề 9: Định hướng nghề nghiệp tương lai - Bài 1: Đánh giá sự phù hợp của bản thân với nghề định chọn (3 tiết)`,
-      `Kiểm tra, đánh giá giữa Học kỳ 2 môn Hoạt động trải nghiệm, hướng nghiệp Lớp ${g} (3 tiết)`,
-      `Chủ đề 9: Định hướng nghề nghiệp - Bài 2: Xây dựng kế hoạch học tập và rèn luyện hướng nghiệp (3 tiết)`,
-      `Chủ đề 9: Định hướng nghề nghiệp - Bài 3: Tìm hiểu các trường THPT, trường nghề và cơ hội học tập (3 tiết)`,
-      `Dự án Trải nghiệm: "Ngày hội Hướng nghiệp & Gian hàng Khởi nghiệp Học sinh THCS" (Tiết 1 - 3 tiết)`,
-      `Dự án Trải nghiệm: Tổ chức hội chợ trưng bày sản phẩm khởi nghiệp và định hướng nghề nghiệp (Tiết 2 - 3 tiết)`,
-      `Diễn đàn Học đường: "Tuổi trẻ THCS - Sống cống hiến, Khát vọng tương lai" (3 tiết)`,
-      `Báo cáo và đánh giá kết quả tham gia hoạt động phục vụ cộng đồng cả năm (3 tiết)`,
-      `Tổng kết và hoàn thiện Portfolio hồ sơ năng lực trải nghiệm học sinh (3 tiết)`,
-      `Ôn tập toàn diện chuẩn bị đánh giá cuối năm Hoạt động trải nghiệm, hướng nghiệp ${g} (3 tiết)`,
-      `Kiểm tra, đánh giá cuối Học kỳ 2 & Ngày hội Tổng kết Hoạt động trải nghiệm cả năm (3 tiết)`
-    ];
-
-    hdtnTopics.forEach((name, idx) => {
-      const w = idx + 1;
-      if (w > 35) return;
-      list.push({
-        week: w,
-        topic: name.includes('Chủ đề') ? name.split(' - ')[0] : 'Đánh giá định kỳ',
-        name: name,
-        periods: 3,
-        yccd: `- Thực hiện hiệu quả các hoạt động rèn luyện bản thân, gắn kết gia đình, phục vụ cộng đồng và bảo vệ môi trường của ${name} (SGK HĐTN&HN ${g} Kết nối tri thức).\n- Khám phá đặc điểm nghề nghiệp địa phương, tự đánh giá năng lực sở trường và xây dựng kế hoạch hướng nghiệp rõ ràng.\n- Phát triển phẩm chất trách nhiệm, tinh thần tự chủ, năng lực giao tiếp và thích ứng xã hội.`,
-        equipment: 'Máy chiếu, video tư liệu trải nghiệm, phiếu bài tập hướng nghiệp, cẩm nang thị trường lao động',
-        location: 'Lớp học / Hội trường trường / Sân trường',
-        notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 18 || w === 35 ? 'Kiểm tra cuối kỳ' : w === 29 ? 'Ngày hội Hướng nghiệp' : ''
-      });
-    });
-
-    return list;
+  if (s.includes('trải nghiệm') || s.includes('hđtn') || s.includes('hdtn') || s.includes('hướng nghiệp')) {
+    return getHdtnSecondaryCurriculum(String(g));
   }
 
   // 6.8. GIÁO DỤC ĐỊA PHƯƠNG THCS (1 tiết/tuần x 35 tuần = 35 tiết)
@@ -1423,6 +1235,10 @@ export function buildSecondaryCurriculum(subject: string, grade: string, schoolT
     rawList = getNguVanSecondaryCurriculum(g);
   } else if (s.includes('khoa học tự nhiên') || s.includes('khtn')) {
     rawList = getKhtnSecondaryCurriculum(g);
+  } else if (s.includes('lịch sử') || s.includes('địa lí') || s.includes('địa lý') || s.includes('ls&đl') || s.includes('lsdl') || s.includes('lich su')) {
+    rawList = getLsdlSecondaryCurriculum(g);
+  } else if (s.includes('trải nghiệm') || s.includes('hđtn') || s.includes('hdtn') || s.includes('hướng nghiệp')) {
+    rawList = getHdtnSecondaryCurriculum(g);
   } else {
     rawList = getGeneralSecondaryCurriculum(g, subject);
   }

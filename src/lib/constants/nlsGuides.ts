@@ -348,9 +348,12 @@ export function getNlsCodeForSubjectLesson(
     titleText.includes('lọc') ||
     titleText.includes('biểu đồ') ||
     titleText.includes('thống kê') ||
+    titleText.includes('tần số') ||
+    titleText.includes('ghép nhóm') ||
     titleText.includes('mẫu số liệu') ||
     titleText.includes('dãy số') ||
     titleText.includes('cấp số') ||
+    titleText.includes('lãi kép') ||
     titleText.includes('quản lý tệp') ||
     titleText.includes('quản lí tệp') ||
     titleText.includes('quản lí dữ liệu') ||
@@ -440,6 +443,8 @@ export function getNlsCodeForSubjectLesson(
     titleText.includes('phet') ||
     titleText.includes('geogebra') ||
     titleText.includes('desmos') ||
+    titleText.includes('máy tính cầm tay') ||
+    titleText.includes('casio') ||
     titleText.includes('chế tạo') ||
     titleText.includes('nghề nghiệp') ||
     titleText.includes('hướng nghiệp') ||
@@ -535,6 +540,10 @@ export function getNlsCodeForSubjectLesson(
     titleText.includes('từ điển') ||
     titleText.includes('đọc hiểu') ||
     titleText.includes('khám phá') ||
+    titleText.includes('bản đồ') ||
+    titleText.includes('atlas') ||
+    titleText.includes('tư liệu') ||
+    titleText.includes('khảo sát') ||
     titleText.includes('search') ||
     titleText.includes('vocabulary');
 
