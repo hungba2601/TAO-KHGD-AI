@@ -1108,19 +1108,14 @@ export function generateMockPlan(config: ConfigFormData): PlanData {
         extraDuties: 'Chấp hành nghiêm sự phân công của Ban Giám hiệu, tham gia tích cực các phong trào thi đua dạy tốt - học tốt của ngành và địa phương.'
       };
 
-  const otherTasks: Appendix1Data['otherTasks'] = isEn
-    ? {
-        advancedTraining: `Organize advanced English training for talented students in Grade ${gradeNum} with 2 sessions/week (starting from Week 4). Goal: achieving high results in District/City English Competitions.`,
-        remedialTeaching: `Classify slow-progress students after Mid-term tests, providing remedial English tutoring 1 period/week on Thursday afternoons to consolidate core foundation.`,
-        lessonStudyGroup: 'Professional lesson study group meetings every 2 weeks; focusing on communicative language teaching, digital tools & AI integration.',
-        otherActivities: 'Organize English Speaking Club, English Festival, AI & Digital Fair, and school-wide extracurricular activities.'
-      }
-    : {
-        advancedTraining: `Tổ chức bồi dưỡng đội tuyển Học sinh giỏi môn ${subjectName} khối ${gradeNum} với thời lượng 2 buổi/tuần (bắt đầu từ Tuần 4). Mục tiêu đạt giải cao tại kỳ thi chọn HSG cấp cơ sở.`,
-        remedialTeaching: `Phân loại học sinh tiếp thu chậm sau bài kiểm tra GK1 và GK2 môn ${subjectName}, bố trí giáo viên phụ đạo tăng cường 1 tiết/tuần vào chiều thứ 5, giúp các em củng cố kiến thức nền tảng.`,
-        lessonStudyGroup: 'Tổ chức sinh hoạt chuyên môn theo nghiên cứu bài học 02 tuần/lần; chú trọng đổi mới phương pháp giảng dạy, ứng dụng AI soạn giáo án điện tử và chia sẻ học liệu số trong cụm trường.',
-        otherActivities: 'Tổ chức các hoạt động ngoại khóa, câu lạc bộ bộ môn, hội thi sáng tạo khoa học kỹ thuật cấp trường và tham gia đầy đủ các phong trào thi đua của ngành GD&ĐT.'
-      };
+  const otherTasks: Appendix1Data['otherTasks'] = {
+    advancedTraining: `Tổ chức bồi dưỡng đội tuyển Học sinh giỏi môn ${subjectName} khối ${gradeNum} với thời lượng 2 buổi/tuần (bắt đầu từ Tuần 4). Mục tiêu đạt giải cao tại kỳ thi chọn HSG các cấp.`,
+    remedialTeaching: `Phân loại học sinh tiếp thu chậm sau bài kiểm tra GK1 và GK2 môn ${subjectName}, bố trí giáo viên phụ đạo tăng cường 1 tiết/tuần vào chiều thứ 5, giúp các em củng cố kiến thức nền tảng và nâng cao kỹ năng.`,
+    lessonStudyGroup: 'Tổ chức sinh hoạt chuyên môn theo nghiên cứu bài học 02 tuần/lần; chú trọng đổi mới phương pháp giảng dạy, ứng dụng công nghệ số và AI hỗ trợ dạy học, chia sẻ học liệu.',
+    otherActivities: isEn
+      ? 'Tổ chức Câu lạc bộ Tiếng Anh (English Speaking Club), Ngày hội Tiếng Anh (English Festival), các hoạt động ngoại khóa trải nghiệm và tham gia đầy đủ các phong trào thi đua của nhà trường.'
+      : 'Tổ chức các hoạt động ngoại khóa, câu lạc bộ bộ môn, hội thi sáng tạo khoa học kỹ thuật cấp trường và tham gia đầy đủ các phong trào thi đua của ngành GD&ĐT.'
+  };
 
   const selectiveTopics = getSelectiveTopicsBySubjectAndGrade(config.subject, config.grade, config.schoolType, config);
 
@@ -1144,9 +1139,7 @@ export function generateMockPlan(config: ConfigFormData): PlanData {
       otherDuties: {
         advancedTraining: otherTasks.advancedTraining,
         remedialTeaching: otherTasks.remedialTeaching,
-        scienceResearch: isEn
-          ? `Guide students in scientific research projects, STEM creations and digital AI applications.`
-          : `Hướng dẫn học sinh nghiên cứu khoa học kỹ thuật, sáng tạo sản phẩm STEM và ứng dụng công nghệ số / AI cấp trường.`,
+        scienceResearch: 'Hướng dẫn học sinh nghiên cứu khoa học kỹ thuật, sáng tạo sản phẩm STEM và ứng dụng công nghệ số / AI cấp trường.',
         extracurricularAndDuties: otherTasks.otherActivities
       }
     },

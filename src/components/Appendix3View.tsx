@@ -661,26 +661,44 @@ export const Appendix3View: React.FC<Appendix3ViewProps> = ({ planData, onUpdate
         </div>
 
         {/* Section II: Nhiệm vụ khác (nếu có) */}
-        <div className="space-y-3 font-sans">
-          <h3 className="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider bg-slate-100 dark:bg-slate-800/80 px-3.5 py-2 rounded-xl">
-            II. Nhiệm vụ khác (nếu có): <span className="font-normal normal-case text-xs italic text-slate-600 dark:text-slate-400">(Bồi dưỡng học sinh giỏi; Tổ chức hoạt động giáo dục...)</span>
-          </h3>
+        {(() => {
+          const od = otherDuties || {} as any;
+          const adv = od.advancedTraining && !od.advancedTraining.startsWith('Organize advanced')
+            ? od.advancedTraining
+            : `Tổ chức bồi dưỡng đội tuyển Học sinh giỏi môn ${config.subject} khối ${config.grade} với thời lượng 2 buổi/tuần (bắt đầu từ Tuần 4). Mục tiêu đạt giải cao tại kỳ thi chọn HSG các cấp.`;
+          const rem = od.remedialTeaching && !od.remedialTeaching.startsWith('Classify slow-progress')
+            ? od.remedialTeaching
+            : `Phân loại học sinh cần hỗ trợ sau bài kiểm tra GK1 và GK2 môn ${config.subject}, bố trí phụ đạo 1 tiết/tuần giúp củng cố kiến thức nền tảng.`;
+          const sci = od.scienceResearch && !od.scienceResearch.startsWith('Guide students')
+            ? od.scienceResearch
+            : `Hướng dẫn học sinh nghiên cứu khoa học kỹ thuật, sáng tạo sản phẩm STEM và ứng dụng công nghệ số / AI cấp trường.`;
+          const ext = od.extracurricularAndDuties && !od.extracurricularAndDuties.startsWith('Organize English')
+            ? od.extracurricularAndDuties
+            : (isEn ? 'Tổ chức Câu lạc bộ Tiếng Anh (English Speaking Club), Ngày hội Tiếng Anh (English Festival), các hoạt động ngoại khóa trải nghiệm và công tác kiêm nhiệm được phân công.' : 'Tham gia quản lý nề nếp, tổ chức hoạt động trải nghiệm sáng tạo, câu lạc bộ bộ môn và hoàn thành tốt nhiệm vụ kiêm nhiệm.');
 
-          <div className="space-y-2 text-xs text-slate-700 dark:text-slate-300 pl-2 leading-relaxed">
-            <p>
-              • <strong>Bồi dưỡng học sinh giỏi:</strong> {otherDuties.advancedTraining}
-            </p>
-            <p>
-              • <strong>Phụ đạo học sinh cần hỗ trợ:</strong> {otherDuties.remedialTeaching}
-            </p>
-            <p>
-              • <strong>Tổ chức hoạt động giáo dục / Hướng dẫn nghiên cứu KHKT, STEM & AI:</strong> {otherDuties.scienceResearch}
-            </p>
-            <p>
-              • <strong>Hoạt động trải nghiệm & Công tác kiêm nhiệm khác:</strong> {otherDuties.extracurricularAndDuties}
-            </p>
-          </div>
-        </div>
+          return (
+            <div className="space-y-3 font-sans">
+              <h3 className="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider bg-slate-100 dark:bg-slate-800/80 px-3.5 py-2 rounded-xl">
+                II. Nhiệm vụ khác (nếu có): <span className="font-normal normal-case text-xs italic text-slate-600 dark:text-slate-400">(Bồi dưỡng học sinh giỏi; Tổ chức hoạt động giáo dục...)</span>
+              </h3>
+
+              <div className="space-y-2 text-xs text-slate-700 dark:text-slate-300 pl-2 leading-relaxed">
+                <p>
+                  • <strong>Bồi dưỡng học sinh giỏi:</strong> {adv}
+                </p>
+                <p>
+                  • <strong>Phụ đạo học sinh cần hỗ trợ:</strong> {rem}
+                </p>
+                <p>
+                  • <strong>Tổ chức hoạt động giáo dục / Hướng dẫn nghiên cứu KHKT, STEM & AI:</strong> {sci}
+                </p>
+                <p>
+                  • <strong>Hoạt động trải nghiệm & Công tác kiêm nhiệm khác:</strong> {ext}
+                </p>
+              </div>
+            </div>
+          );
+        })()}
 
         {/* Signature Block - Chuẩn CV 5512: Trái là TỔ TRƯỞNG, Phải là GIÁO VIÊN */}
         <div className="grid grid-cols-2 gap-8 pt-10 text-center font-sans">

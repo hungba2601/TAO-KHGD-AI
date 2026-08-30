@@ -785,25 +785,43 @@ export const Appendix1View: React.FC<Appendix1ViewProps> = ({ planData, onUpdate
         </div>
 
         {/* Section III: Các nội dung khác (nếu có) */}
-        <div className="space-y-3 font-sans">
-          <h3 className="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider bg-slate-100 dark:bg-slate-800/80 px-3.5 py-2 rounded-xl">
-            III. Các nội dung khác (nếu có):
-          </h3>
-          <div className="space-y-2 text-xs text-slate-700 dark:text-slate-300 pl-2 leading-relaxed">
-            <p>
-              • <strong>Bồi dưỡng học sinh giỏi:</strong> {appendix1.otherTasks.advancedTraining}
-            </p>
-            <p>
-              • <strong>Phụ đạo học sinh:</strong> {appendix1.otherTasks.remedialTeaching}
-            </p>
-            <p>
-              • <strong>Sinh hoạt chuyên môn theo NCBH:</strong> {appendix1.otherTasks.lessonStudyGroup}
-            </p>
-            <p>
-              • <strong>Hoạt động giáo dục khác:</strong> {appendix1.otherTasks.otherActivities}
-            </p>
-          </div>
-        </div>
+        {(() => {
+          const ot = appendix1.otherTasks || {} as any;
+          const adv = ot.advancedTraining && !ot.advancedTraining.startsWith('Organize advanced')
+            ? ot.advancedTraining
+            : `Tổ chức bồi dưỡng đội tuyển Học sinh giỏi môn ${config.subject} khối ${config.grade} với thời lượng 2 buổi/tuần (bắt đầu từ Tuần 4). Mục tiêu đạt giải cao tại kỳ thi chọn HSG các cấp.`;
+          const rem = ot.remedialTeaching && !ot.remedialTeaching.startsWith('Classify slow-progress')
+            ? ot.remedialTeaching
+            : `Phân loại học sinh tiếp thu chậm sau bài kiểm tra GK1 và GK2 môn ${config.subject}, bố trí giáo viên phụ đạo tăng cường 1 tiết/tuần vào chiều thứ 5, giúp các em củng cố kiến thức nền tảng và nâng cao kỹ năng.`;
+          const les = ot.lessonStudyGroup && !ot.lessonStudyGroup.startsWith('Professional lesson')
+            ? ot.lessonStudyGroup
+            : `Tổ chức sinh hoạt chuyên môn theo nghiên cứu bài học 02 tuần/lần; chú trọng đổi mới phương pháp giảng dạy, ứng dụng công nghệ số và AI hỗ trợ dạy học, chia sẻ học liệu.`;
+          const act = ot.otherActivities && !ot.otherActivities.startsWith('Organize English')
+            ? ot.otherActivities
+            : (isEn ? 'Tổ chức Câu lạc bộ Tiếng Anh (English Speaking Club), Ngày hội Tiếng Anh (English Festival), các hoạt động ngoại khóa trải nghiệm và tham gia đầy đủ các phong trào thi đua của nhà trường.' : 'Tổ chức các hoạt động ngoại khóa, câu lạc bộ bộ môn, hội thi sáng tạo khoa học kỹ thuật cấp trường và tham gia đầy đủ các phong trào thi đua của ngành GD&ĐT.');
+
+          return (
+            <div className="space-y-3 font-sans">
+              <h3 className="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider bg-slate-100 dark:bg-slate-800/80 px-3.5 py-2 rounded-xl">
+                III. Các nội dung khác (nếu có):
+              </h3>
+              <div className="space-y-2 text-xs text-slate-700 dark:text-slate-300 pl-2 leading-relaxed">
+                <p>
+                  • <strong>Bồi dưỡng học sinh giỏi:</strong> {adv}
+                </p>
+                <p>
+                  • <strong>Phụ đạo học sinh:</strong> {rem}
+                </p>
+                <p>
+                  • <strong>Sinh hoạt chuyên môn theo NCBH:</strong> {les}
+                </p>
+                <p>
+                  • <strong>Hoạt động giáo dục khác:</strong> {act}
+                </p>
+              </div>
+            </div>
+          );
+        })()}
 
         {/* Signature Block - Chuẩn CV 5512: Trái là TỔ TRƯỞNG, Phải là HIỆU TRƯỞNG */}
         <div className="grid grid-cols-2 gap-8 pt-10 text-center font-sans">

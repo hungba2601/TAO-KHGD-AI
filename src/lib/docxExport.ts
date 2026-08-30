@@ -996,9 +996,7 @@ export async function exportAppendix3Docx(plan: PlanData): Promise<void> {
   const otherDuties = appendix3.otherDuties || {
     advancedTraining: appendix1.otherTasks.advancedTraining,
     remedialTeaching: appendix1.otherTasks.remedialTeaching,
-    scienceResearch: isEn
-      ? `Guide students in scientific research projects, STEM creations and digital AI applications.`
-      : `Hướng dẫn học sinh nghiên cứu khoa học kỹ thuật, sáng tạo sản phẩm STEM và ứng dụng công nghệ số / AI cấp trường.`,
+    scienceResearch: 'Hướng dẫn học sinh nghiên cứu khoa học kỹ thuật, sáng tạo sản phẩm STEM và ứng dụng công nghệ số / AI cấp trường.',
     extracurricularAndDuties: appendix1.otherTasks.otherActivities
   };
 
