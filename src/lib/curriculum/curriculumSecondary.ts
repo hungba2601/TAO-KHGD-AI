@@ -277,14 +277,42 @@ export function generateSecondaryYccd(subject: string, grade: string, lessonName
     return `- Nắm vững chuẩn mực đạo đức và pháp luật của bài học: "${name}".\n- Bồi dưỡng bản lĩnh công dân, lối sống văn minh, tự chủ và thượng tôn pháp luật.`;
   }
 
-  // 9. GIÁO DỤC THỂ CHẤT THCS (6 - 9)
-  if (s.includes('thể chất') || s.includes('gdtc') || s.includes('thể dục')) {
-    if (name.includes('Đội hình đội ngũ') || name.includes('Bài thể dục')) return `- Thực hiện thành thạo khẩu lệnh ĐHĐN; thuộc và thực hiện chính xác Bài thể dục liên hoàn nhịp nhàng, đúng biên độ.`;
-    if (name.includes('Chạy cự li ngắn') || name.includes('Xuất phát thấp')) return `- Nắm vững 4 giai đoạn kỹ thuật chạy ngắn (Xuất phát thấp, Chạy lao, Chạy giữa quãng, Về đích); nâng cao tốc độ tối đa.`;
-    if (name.includes('Nhảy cao') || name.includes('Nhảy xa')) return `- Thực hiện chuẩn xác 4 giai đoạn kỹ thuật Nhảy cao (kiểu bước qua/lưng qua xà) / Nhảy xa (kiểu ngồi/ưỡn thân); tiếp đất an toàn.`;
-    if (name.includes('Ném bóng') || name.includes('Đẩy tạ')) return `- Thực hiện đúng tư thế chuẩn bị, kỹ thuật ra sức cuối cùng ném bóng / đẩy tạ đúng góc độ bay đạt thành tích tối ưu.`;
-    if (name.includes('Chạy bền') || name.includes('Thể thao tự chọn')) return `- Nắm phương pháp phân phối sức khi chạy bền; thực hiện kỹ thuật tâng bóng, chuyền bóng, ném rổ / đập cầu trong thi đấu thể thao.`;
-    return `- Nắm vững kỹ thuật động tác, tích cực rèn luyện nâng cao thể lực qua bài: "${name}".\n- Bồi dưỡng tinh thần thể thao cao thượng, tính kỷ luật và thói quen rèn luyện thân thể suốt đời.`;
+  // 9. GIÁO DỤC THỂ CHẤT THCS (6 - 9) - SGK KẾT NỐI TRI THỨC VỚI CUỘC SỐNG
+  if (s.includes('thể chất') || s.includes('gdtc') || s.includes('thể dục') || s.includes('the chat')) {
+    if (name.includes('dinh dưỡng') || name.includes('môi trường tự nhiên') || name.includes('Kiến thức chung')) {
+      return `- Hiểu và vận dụng kiến thức về dinh dưỡng, vận động, nghỉ ngơi hợp lí và các yếu tố môi trường tự nhiên để nâng cao sức khỏe, phát triển thể chất bền vững.`;
+    }
+    if (name.includes('Chạy cự li ngắn') || name.includes('Xuất phát thấp') || name.includes('Xuất phát cao') || name.includes('60 m') || name.includes('60m') || name.includes('100 m') || name.includes('100m')) {
+      return `- Nắm vững và thực hiện chuẩn xác các giai đoạn kỹ thuật chạy cự li ngắn (Xuất phát, Chạy lao, Chạy giữa quãng, Về đích); nâng cao tốc độ cực đại và phản xạ nhanh.`;
+    }
+    if (name.includes('Nhảy cao kiểu nằm nghiêng')) {
+      return `- Thực hiện đúng 4 giai đoạn kỹ thuật Nhảy cao kiểu nằm nghiêng (Chạy đà, Giậm nhảy, Bay trên không xoay thân nằm nghiêng qua xà, Tiếp đất an toàn trên đệm).`;
+    }
+    if (name.includes('Nhảy cao kiểu bước qua') || name.includes('Nhảy cao')) {
+      return `- Thực hiện thuần thục 4 giai đoạn kỹ thuật Nhảy cao kiểu bước qua (Chạy đà uốn cong, Giậm nhảy đá lăng, Vượt xà chân lăng trước chân giậm sau, Tiếp đất hoãn xung).`;
+    }
+    if (name.includes('Nhảy xa kiểu ngồi') || name.includes('Nhảy xa')) {
+      return `- Nắm vững và phối hợp liên hoàn 4 giai đoạn kỹ thuật Nhảy xa kiểu ngồi (Chạy đà tăng tốc, Giậm nhảy cắm ván, Bay trên không kiểu ngồi, Rơi xuống cát an toàn).`;
+    }
+    if (name.includes('Ném bóng')) {
+      return `- Nắm vững kỹ thuật cầm bóng, chạy đà 4 bước chéo và ra sức cuối cùng tạo tư thế cánh cung ném bóng xa đạt thành tích tối ưu, giữ thăng bằng an toàn.`;
+    }
+    if (name.includes('Chạy cự li trung bình') || name.includes('chạy bền')) {
+      return `- Nắm vững kỹ thuật chạy cự li trung bình: phối hợp nhịp thở 2 bước hít vào - 2 bước thở ra, kỹ thuật chạy đường thẳng/đường vòng và phân phối sức hợp lí.`;
+    }
+    if (name.includes('Bài thể dục liên hoàn')) {
+      return `- Thuộc thứ tự, thực hiện chính xác phương hướng, biên độ và tính nhịp điệu của Bài thể dục liên hoàn 30 nhịp (lớp 6, 7) khỏe khoắn, dứt khoát.`;
+    }
+    if (name.includes('Bài thể dục nhịp điệu')) {
+      return `- Thực hiện đúng các chuỗi động tác của Bài thể dục nhịp điệu (lớp 8, 9) sôi nổi, đúng nhịp phách âm nhạc, phát triển năng lực thẩm mỹ vận động.`;
+    }
+    if (name.includes('Cầu lông') || name.includes('Bóng đá') || name.includes('Bóng rổ') || name.includes('Thể thao tự chọn')) {
+      return `- Nắm vững kỹ thuật di chuyển, kỹ năng đánh cầu/đá bóng/ném rổ và phối hợp chiến thuật nhóm hiệu quả; chấp hành nghiêm túc luật thi đấu thể thao.`;
+    }
+    if (name.includes('Kiểm tra') || name.includes('đánh giá')) {
+      return `- Đánh giá mức độ đạt chuẩn kỹ thuật động tác và thành tích thể lực theo quy định; rèn luyện tính trung thực, kỷ luật và tinh thần thể thao cao thượng.`;
+    }
+    return `- Nắm vững kỹ thuật động tác, tích cực rèn luyện nâng cao thể lực qua bài học: "${name}".\n- Bồi dưỡng tinh thần thể thao cao thượng, tính kỷ luật và thói quen rèn luyện thân thể suốt đời.`;
   }
 
   // 10. HOẠT ĐỘNG TRẢI NGHIỆM, HƯỚNG NGHIỆP THCS (6 - 9)
@@ -722,184 +750,10 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
 }
 
 // =========================================================================
-// 5. GIÁO DỤC THỂ CHẤT THCS (LỚP 6, 7, 8, 9) - KHUNG 70 TIẾT (2 TIẾT/TUẦN)
+// 5. GIÁO DỤC THỂ CHẤT THCS (LỚP 6, 7, 8, 9) - KẾT NỐI TRI THỨC VỚI CUỘC SỐNG
 // =========================================================================
-export function getGdtcSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
-  const g = parseInt(grade, 10) || 6;
-  const list: RawSecondaryLesson[] = [];
-
-  const gdtcSecondaryData: Record<number, string[]> = {
-    6: [
-      'Tiết 1: Ý nghĩa của tập luyện TDTT đối với sự phát triển thể chất lứa tuổi dậy thì & Tiết 2: Đội hình đội ngũ: Biến đổi đội hình',
-      'Tiết 3: Đội hình đội ngũ: Đi đều, đứng lại, vòng phải, vòng trái & Tiết 4: Đổi chân khi đi đều sai nhịp',
-      'Tiết 5: Bài thể dục liên hoàn 30 động tác: Động tác 1-10 & Tiết 6: Ôn tập động tác 1-10',
-      'Tiết 7: Bài thể dục liên hoàn: Động tác 11-20 & Tiết 8: Hoàn thiện động tác 1-20',
-      'Tiết 9: Bài thể dục liên hoàn: Động tác 21-30 & Tiết 10: Hoàn thiện bài thể dục liên hoàn 30 động tác',
-      'Tiết 11: Điền kinh: Kỹ thuật chạy cự li ngắn 60m xuất phát thấp bằng bàn đạp & Tiết 12: Chạy lao sau xuất phát',
-      'Tiết 13: Kỹ thuật chạy giữa quãng và về đích 60m & Tiết 14: Chạy tiếp sức 4x100m',
-      'Tiết 15: Chạy cự li trung bình rèn luyện sức bền (500m) & Tiết 16: Ôn tập tổng hợp chuẩn bị kiểm tra giữa kỳ 1',
-      'Tiết 17 & Tiết 18: Kiểm tra, đánh giá giữa Học kỳ 1 môn GDTC 6 (Bài thể dục liên hoàn & Chạy ngắn 60m)',
-      'Tiết 19: Nhảy cao kiểu bước qua: Giai đoạn chạy đà và giậm nhảy & Tiết 20: Giai đoạn bay trên không và tiếp đất',
-      'Tiết 21: Hoàn thiện kỹ thuật Nhảy cao kiểu bước qua mức xà 100-115cm & Tiết 22: Nâng cao thành tích nhảy cao',
-      'Tiết 23: Ném bóng xa có đà 4 bước chéo: Kỹ thuật ra sức cuối cùng & Tiết 24: Giữ thăng bằng sau khi ném',
-      'Tiết 25: Thể thao tự chọn: Bóng đá / Cầu lông - Kỹ thuật tâng cầu / Tâng bóng & Tiết 26: Kỹ thuật chuyền bóng / Chuyền cầu',
-      'Tiết 27: Thể thao tự chọn: Đấu tập mini có hướng dẫn luật & Tiết 28: Bài tập phát triển thể lực',
-      'Tiết 29: Kỹ năng phòng ngừa chấn thương khớp gối, cổ chân & Tiết 30: Ôn tập thể thao tự chọn',
-      'Tiết 31: Xây dựng kế hoạch tập luyện thể thao cá nhân & Tiết 32: Ôn tập chạy bền',
-      'Tiết 33: Ôn tập tổng hợp toàn diện kiến thức kỹ năng GDTC Học kỳ 1',
-      'Tiết 35 & Tiết 36: Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn GDTC 6',
-      'Tiết 37: Dinh dưỡng hợp lý trong tập luyện thể thao & Tiết 38: Đội hình đội ngũ nâng cao',
-      'Tiết 39: Bài thể dục Aerobic phát triển thể lực lớp 6 & Tiết 40: Đồng diễn Aerobic theo nhạc',
-      'Tiết 41: Nhảy xa kiểu ngồi: Giai đoạn chạy đà và giậm nhảy & Tiết 42: Giai đoạn bay trên không và tiếp đất',
-      'Tiết 43: Hoàn thiện 4 giai đoạn kỹ thuật Nhảy xa kiểu ngồi vào hố cát & Tiết 44: Nâng cao thành tích nhảy xa',
-      'Tiết 45: Chạy cự li ngắn 100m xuất phát thấp nâng cao tốc độ & Tiết 46: Chạy biến tốc 100m',
-      'Tiết 47: Chạy chậm rèn sức bền quanh sân trường (600m) & Tiết 48: Hít thở sâu hồi tĩnh',
-      'Tiết 49: Ôn tập kỹ thuật nhảy xa và chạy ngắn & Tiết 50: Trò chơi vận động rèn sức mạnh tốc độ',
-      'Tiết 51 & Tiết 52: Kiểm tra, đánh giá giữa Học kỳ 2 môn GDTC 6 (Nhảy xa kiểu ngồi & Chạy ngắn 100m)',
-      'Tiết 53: Thể thao tự chọn: Kỹ thuật đập cầu / Sút bóng cầu môn uy lực & Tiết 54: Di chuyển linh hoạt trên sân',
-      'Tiết 55: Thể thao tự chọn: Trận đấu tập luyện theo luật thi đấu chính thức & Tiết 56: Chiến thuật thi đấu',
-      'Tiết 57: Thể thao tự chọn: Tổ chức giải đấu giao hữu cấp lớp & Tiết 58: Thực hành công tác trọng tài',
-      'Tiết 59: Kiểm tra đánh giá thể lực học sinh lớp 6 theo Quyết định 53/2008/QĐ-BGDĐT (Chạy 30m, Bật xa, Chạy bền)',
-      'Tiết 61: Hội khỏe Phù Đổng cấp trường: Thi đấu môn Điền kinh (Chạy 100m, Nhảy cao, Nhảy xa)',
-      'Tiết 63: Hội khỏe Phù Đổng: Thi đấu các môn Bóng đá, Cầu lông, Bóng rổ, Bóng chuyền',
-      'Tiết 65: Đồng diễn bài thể dục toàn trường & Lễ tổng kết phong trào rèn luyện thân thể',
-      'Tiết 67: Ôn tập toàn diện kỹ năng vận động lớp 6 & Hướng dẫn tự rèn luyện thể thao hè',
-      'Tiết 69 & Tiết 70: Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn GDTC 6'
-    ],
-    7: [
-      'Tiết 1: Phòng tránh chấn thương khi tập luyện TDTT và phương pháp sơ cứu ban đầu & Tiết 2: Đội hình đội ngũ',
-      'Tiết 3: Đội hình đội ngũ: Biến đổi đội hình từ hai hàng thành bốn hàng & Tiết 4: Đi đều đổi chân',
-      'Tiết 5: Bài thể dục liên hoàn 32 động tác: Động tác 1-10 & Tiết 6: Động tác 11-20',
-      'Tiết 7: Bài thể dục liên hoàn: Động tác 21-32 & Tiết 8: Hoàn thiện bài thể dục liên hoàn 32 động tác',
-      'Tiết 9: Chạy cự li ngắn 60m: Kỹ thuật xuất phát thấp bằng bàn đạp & Tiết 10: Giai đoạn chạy lao và chạy giữa quãng',
-      'Tiết 11: Kỹ thuật đánh đích chạy cự li ngắn 60m & Tiết 12: Chạy tiếp sức 4x100m',
-      'Tiết 13: Bật xa tại chỗ và Bật cao có đà phát triển sức bật & Tiết 14: Bài tập bổ trợ cơ chân',
-      'Tiết 15: Chạy cự li trung bình rèn luyện sức bền (600m) & Tiết 16: Ôn tập giữa HK1',
-      'Tiết 17 & Tiết 18: Kiểm tra, đánh giá giữa Học kỳ 1 môn GDTC 7 (Chạy ngắn 60m & Bài thể dục liên hoàn)',
-      'Tiết 19: Nhảy cao kiểu bước qua: Kỹ thuật đo đà và chạy đà 5-7 bước & Tiết 20: Giậm nhảy và vượt qua xà',
-      'Tiết 21: Hoàn thiện 4 giai đoạn Nhảy cao kiểu bước qua mức xà 105-120cm & Tiết 22: Tiếp đất an toàn',
-      'Tiết 23: Ném bóng xa có đà 4 bước chéo: Kỹ thuật tạo tư thế cánh cung & Tiết 24: Kỹ thuật ra sức cuối cùng',
-      'Tiết 25: Thể thao tự chọn: Bóng đá / Cầu lông / Bóng rổ - Kỹ thuật nâng cao & Tiết 26: Kỹ thuật phòng ngự',
-      'Tiết 27: Thể thao tự chọn: Phối hợp chiến thuật nhóm 2-3 người & Tiết 28: Trận đấu tập luyện',
-      'Tiết 29: Kỹ năng thở sâu và phục hồi thể lực sau tập luyện nặng & Tiết 30: Ôn tập thể thao tự chọn',
-      'Tiết 31: Ý thức tự giác rèn luyện thân thể mỗi ngày & Tiết 32: Ôn tập chạy bền',
-      'Tiết 33: Ôn tập tổng hợp toàn diện kiến thức GDTC Học kỳ 1',
-      'Tiết 35 & Tiết 36: Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn GDTC 7',
-      'Tiết 37: Nguyên tắc dinh dưỡng và giấc ngủ đối với VĐV học đường & Tiết 38: Đội hình đội ngũ',
-      'Tiết 39: Bài thể dục nhịp điệu phát triển thể lực lớp 7 & Tiết 40: Luyện tập đồng diễn theo nhạc',
-      'Tiết 41: Nhảy xa kiểu ngồi: Kỹ thuật chạy đà tự do 11-13 bước & Tiết 42: Giậm nhảy chính xác vào ván giậm',
-      'Tiết 43: Hoàn thiện kỹ thuật Nhảy xa kiểu ngồi thành tích 3.5m - 4.2m & Tiết 44: Tiếp đất uốn gối giảm chấn',
-      'Tiết 45: Chạy nhanh cự li ngắn 100m nâng cao tốc độ & Tiết 46: Chạy lặp lại cự li ngắn 30m x 3 lần',
-      'Tiết 47: Chạy chậm rèn sức bền 800m & Tiết 48: Phương pháp phân phối sức khi chạy bền',
-      'Tiết 49: Ôn tập nhảy xa và ném bóng có đà & Tiết 50: Trò chơi vận động phát triển thể lực',
-      'Tiết 51 & Tiết 52: Kiểm tra, đánh giá giữa Học kỳ 2 môn GDTC 7 (Nhảy xa kiểu ngồi & Ném bóng có đà)',
-      'Tiết 53: Thể thao tự chọn: Kỹ thuật phát bóng / Giao cầu tấn công & Tiết 54: Đỡ bóng / Đón cầu chính xác',
-      'Tiết 55: Thể thao tự chọn: Trận đấu thi đấu đơn và đôi theo luật & Tiết 56: Chiến thuật phản công nhanh',
-      'Tiết 57: Thể thao tự chọn: Tổ chức giải đấu thể thao khối 7 & Tiết 58: Thực hành làm trọng tài',
-      'Tiết 59: Kiểm tra tiêu chuẩn rèn luyện thân thể học sinh lớp 7 (Chạy 30m, Bật xa, Gập bụng 30s, Chạy 800m)',
-      'Tiết 61: Hội thao Phù Đổng cấp trường: Thi đấu Điền kinh (Chạy 100m, Nhảy cao, Nhảy xa, Ném bóng)',
-      'Tiết 63: Hội thao: Thi đấu các môn Bóng đá mini, Cầu lông, Bóng rổ, Bóng bàn',
-      'Tiết 65: Biểu diễn bài thể dục đồng diễn & Bế mạc Hội khỏe Phù Đổng',
-      'Tiết 67: Ôn tập toàn diện kỹ năng GDTC 7 & Hướng dẫn kế hoạch tập luyện trong kỳ nghỉ hè',
-      'Tiết 69 & Tiết 70: Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn GDTC 7'
-    ],
-    8: [
-      'Tiết 1: Đánh giá thể lực bản thân và phương pháp phát triển sức mạnh bền bỉ & Tiết 2: Đội hình đội ngũ chuẩn hóa',
-      'Tiết 3: Đội hình đội ngũ: Biến đổi đội hình từ ba hàng thành sáu hàng & Tiết 4: Đi đều và chạy đều đổi hướng',
-      'Tiết 5: Bài thể dục liên hoàn 35 động tác: Động tác 1-15 & Tiết 6: Động tác 16-35',
-      'Tiết 7: Hoàn thiện bài thể dục liên hoàn 35 động tác nam/nữ & Tiết 8: Luyện tập theo tổ nhóm',
-      'Tiết 9: Kỹ thuật chạy cự li ngắn 100m: Kỹ thuật đóng bàn đạp xuất phát thấp & Tiết 10: Chạy lao và chạy giữa quãng',
-      'Tiết 11: Kỹ thuật đánh đích 100m & Tiết 12: Chạy tiếp sức 4x100m trao gậy từ dưới lên',
-      'Tiết 13: Bật xa tại chỗ phát triển sức mạnh bộc phát & Tiết 14: Bài tập nhảy cóc, nhảy bước bộ',
-      'Tiết 15: Chạy cự li trung bình rèn luyện sức bền (800m) & Tiết 16: Ôn tập giữa HK1',
-      'Tiết 17 & Tiết 18: Kiểm tra, đánh giá giữa Học kỳ 1 môn GDTC 8 (Chạy ngắn 100m & Bài thể dục liên hoàn)',
-      'Tiết 19: Nhảy cao kiểu bước qua: Kỹ thuật chạy đà uốn cong & Tiết 20: Giậm nhảy và vượt xà mức 110-125cm',
-      'Tiết 21: Hoàn thiện kỹ thuật Nhảy cao kiểu bước qua nâng cao & Tiết 22: Kỹ thuật tiếp đất an toàn',
-      'Tiết 23: Ném bóng xa có đà 5 bước chéo: Kỹ thuật tạo sức căng thân người & Tiết 24: Ra sức cuối cùng',
-      'Tiết 25: Thể thao tự chọn: Bóng đá / Cầu lông / Bóng rổ - Kỹ chiến thuật chuyên sâu & Tiết 26: Di chuyển không bóng',
-      'Tiết 27: Thể thao tự chọn: Phối hợp tổ đấu 3 người & Tiết 28: Trận đấu tập luyện theo luật',
-      'Tiết 29: Kỹ năng xử lý chấn thương bong gân, căng cơ & Tiết 30: Ôn tập thể thao tự chọn',
-      'Tiết 31: Xây dựng lối sống năng động, lành mạnh & Tiết 32: Ôn tập chạy bền',
-      'Tiết 33: Ôn tập tổng hợp kiến thức toàn diện GDTC Học kỳ 1',
-      'Tiết 35 & Tiết 36: Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn GDTC 8',
-      'Tiết 37: Phương pháp hồi phục thể lực sau vận động cường độ cao & Tiết 38: Đội hình đội ngũ',
-      'Tiết 39: Bài thể dục Aerobic phát triển thể lực khối 8 & Tiết 40: Đồng diễn bài thể dục nhịp điệu',
-      'Tiết 41: Nhảy xa kiểu ngồi: Kỹ thuật chạy đà tốc độ cao 13-15 bước & Tiết 42: Giậm nhảy bay trên không kiểu ngồi',
-      'Tiết 43: Hoàn thiện 4 giai đoạn Nhảy xa kiểu ngồi mức 4.0m - 4.8m & Tiết 44: Rơi xuống hố cát an toàn',
-      'Tiết 45: Chạy nhanh cự li ngắn 100m rèn luyện tốc độ tối đa & Tiết 46: Chạy tiếp sức 4x100m',
-      'Tiết 47: Chạy chậm rèn sức bền 1000m nam / 800m nữ & Tiết 48: Phương pháp hít thở sâu hồi phục',
-      'Tiết 49: Ôn tập nhảy xa và ném bóng có đà & Tiết 50: Trò chơi vận động rèn sức mạnh tốc độ',
-      'Tiết 51 & Tiết 52: Kiểm tra, đánh giá giữa Học kỳ 2 môn GDTC 8 (Nhảy xa kiểu ngồi & Ném bóng có đà)',
-      'Tiết 53: Thể thao tự chọn: Kỹ thuật đập cầu góc hiểm / Sút bóng má ngoài & Tiết 54: Bọc lót phòng ngự',
-      'Tiết 55: Thể thao tự chọn: Trận đấu thi đấu giải chính thức & Tiết 56: Chiến thuật pressing / Tấn công biên',
-      'Tiết 57: Thể thao tự chọn: Tổ chức giải thi đấu thể thao học sinh & Tiết 58: Điều hành trọng tài trận đấu',
-      'Tiết 59: Kiểm tra tiêu chuẩn rèn luyện thân thể học sinh lớp 8 theo chuẩn Bộ GD&ĐT',
-      'Tiết 61: Hội khỏe Phù Đổng cấp trường: Thi đấu môn Điền kinh (Chạy 100m, Nhảy cao, Nhảy xa, Ném bóng)',
-      'Tiết 63: Hội khỏe Phù Đổng: Thi đấu các môn Bóng đá, Cầu lông, Bóng rổ, Bóng chuyền',
-      'Tiết 65: Biểu diễn đồng diễn thể dục toàn trường & Trao huy chương Hội khỏe Phù Đổng',
-      'Tiết 67: Ôn tập toàn diện kỹ năng GDTC 8 & Hướng dẫn rèn luyện thể lực hè',
-      'Tiết 69 & Tiết 70: Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn GDTC 8'
-    ],
-    9: [
-      'Tiết 1: Lập kế hoạch tự rèn luyện thể lực và dinh dưỡng cho kỳ thi vào 10 & Tiết 2: Đội hình đội ngũ chuẩn hóa',
-      'Tiết 3: Đội hình đội ngũ: Biến đổi đội hình phức hợp & Tiết 4: Đi đều, chạy đều chuyển hướng nhịp nhàng',
-      'Tiết 5: Bài thể dục phát triển chung 36 động tác: Động tác 1-18 & Tiết 6: Động tác 19-36',
-      'Tiết 7: Hoàn thiện bài thể dục liên hoàn 36 động tác nam/nữ & Tiết 8: Luyện tập đồng diễn nhóm',
-      'Tiết 9: Kỹ thuật chạy cự li ngắn 100m: Kỹ thuật xuất phát thấp bằng bàn đạp & Tiết 10: Chạy lao và chạy giữa quãng',
-      'Tiết 11: Kỹ thuật về đích và đánh đích 100m & Tiết 12: Chạy tiếp sức 4x100m hoàn chỉnh',
-      'Tiết 13: Bật xa tại chỗ và Bật cao có đà nâng cao thành tích & Tiết 14: Bài tập tăng cường sức bật chân',
-      'Tiết 15: Chạy cự li trung bình rèn luyện sức bền (1000m nam / 800m nữ) & Tiết 16: Ôn tập giữa HK1',
-      'Tiết 17 & Tiết 18: Kiểm tra, đánh giá giữa Học kỳ 1 môn GDTC 9 (Chạy ngắn 100m & Bài thể dục liên hoàn)',
-      'Tiết 19: Nhảy cao kiểu bước qua: Kỹ thuật chạy đà 7-9 bước & Tiết 20: Giậm nhảy và vượt xà mức 115-130cm',
-      'Tiết 21: Hoàn thiện 4 giai đoạn kỹ thuật Nhảy cao kiểu bước qua & Tiết 22: Tiếp đất an toàn trên đệm mút',
-      'Tiết 23: Ném bóng xa có đà 5 bước chéo: Hoàn thiện kỹ thuật ra sức cuối cùng & Tiết 24: Giữ thăng bằng',
-      'Tiết 25: Thể thao tự chọn: Bóng đá / Cầu lông / Bóng rổ - Kỹ chiến thuật nâng cao & Tiết 26: Di chuyển chiến thuật',
-      'Tiết 27: Thể thao tự chọn: Trận đấu tập luyện theo luật thi đấu quốc gia & Tiết 28: Bài tập phát triển thể lực',
-      'Tiết 29: Kỹ năng xử lý chấn thương thể thao nặng và hồi sức & Tiết 30: Ôn tập thể thao tự chọn',
-      'Tiết 31: Xây dựng thói quen thể dục thể thao suốt đời & Tiết 32: Ôn tập chạy bền',
-      'Tiết 33: Ôn tập tổng hợp kiến thức GDTC Học kỳ 1',
-      'Tiết 35 & Tiết 36: Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn GDTC 9',
-      'Tiết 37: Phương pháp giải tỏa căng thẳng học tập thi cử bằng vận động thể thao & Tiết 38: Đội hình đội ngũ',
-      'Tiết 39: Bài thể dục nhịp điệu phát triển thể lực lớp 9 & Tiết 40: Đồng diễn Aerobic khối 9',
-      'Tiết 41: Nhảy xa kiểu ngồi / kiểu ưỡn thân: Kỹ thuật chạy đà 15-17 bước & Tiết 42: Giậm nhảy và bay trên không',
-      'Tiết 43: Hoàn thiện kỹ thuật Nhảy xa thành tích 4.2m - 5.2m & Tiết 44: Rơi xuống hố cát an toàn',
-      'Tiết 45: Chạy cự li ngắn 100m nâng cao tối đa tốc độ cá nhân & Tiết 46: Chạy tiếp sức 4x100m',
-      'Tiết 47: Chạy chậm rèn sức bền 1500m nam / 800m nữ & Tiết 48: Phương pháp phân phối thể lực',
-      'Tiết 49: Ôn tập nhảy cao và nhảy xa & Tiết 50: Trò chơi vận động rèn luyện bản lĩnh thi đấu',
-      'Tiết 51 & Tiết 52: Kiểm tra, đánh giá giữa Học kỳ 2 môn GDTC 9 (Nhảy cao kiểu bước qua & Nhảy xa)',
-      'Tiết 53: Thể thao tự chọn: Kỹ thuật đập cầu smash / Sút bóng xa hiểm hóc & Tiết 54: Phối hợp phòng thủ - phản công',
-      'Tiết 55: Thể thao tự chọn: Trận đấu thi đấu chính thức cấp trường & Tiết 56: Chiến thuật toàn diện',
-      'Tiết 57: Thể thao tự chọn: Tổ chức giải thi đấu thể thao học sinh khối 9 & Tiết 58: Điều hành trọng tài',
-      'Tiết 59: Kiểm tra tiêu chuẩn đánh giá thể lực học sinh lớp 9 theo QĐ 53/2008/QĐ-BGDĐT',
-      'Tiết 61: Hội khỏe Phù Đổng cấp trường: Thi đấu Điền kinh (Chạy 100m, Nhảy cao, Nhảy xa, Ném bóng)',
-      'Tiết 63: Hội khỏe Phù Đổng: Thi đấu các môn Bóng đá, Cầu lông, Bóng rổ, Bóng bàn, Bơi lội',
-      'Tiết 65: Biểu diễn đồng diễn bài thể dục chào mừng Lễ tốt nghiệp THCS & Trao giải VĐV tiêu biểu',
-      'Tiết 67: Ôn tập toàn diện kỹ năng thể chất 4 năm THCS & Hướng dẫn chuẩn bị thể lực vào THPT',
-      'Tiết 69 & Tiết 70: Kiểm tra, đánh giá cuối Học kỳ 2 & Xét hoàn thành chương trình GDTC THCS'
-    ]
-  };
-
-  const topics = gdtcSecondaryData[g] || gdtcSecondaryData[6];
-  topics.forEach((name, idx) => {
-    const w = idx + 1;
-    if (w > 35) return;
-    const isGK = w === 9 || w === 26;
-    const isCK = w === 18 || w === 35;
-
-    list.push({
-      week: w,
-      topic: name.includes('Đội hình') ? 'Đội hình đội ngũ' : name.includes('Bài thể dục') ? 'Bài thể dục liên hoàn' : name.includes('Nhảy cao') ? 'Nhảy cao kiểu bước qua' : name.includes('Nhảy xa') ? 'Nhảy xa kiểu ngồi' : name.includes('Ném bóng') ? 'Ném bóng xa có đà' : name.includes('Chạy') ? 'Chạy cự li ngắn / Chạy bền' : name.includes('Thể thao') ? 'Thể thao tự chọn' : isCK || isGK ? 'Đánh giá định kỳ' : 'Vận động thể lực',
-      name: name,
-      periods: 2,
-      yccd: `- Thực hiện đúng kỹ thuật động tác, nhịp điệu và an toàn của bài học: ${name} (SGK GDTC ${g} Kết nối tri thức).\n- Tự giác, tích cực tập luyện cá nhân và phối hợp hiệu quả trong hoạt động nhóm, thi đấu thể thao.\n- Đạt chuẩn đánh giá thể lực học sinh THCS theo quy định của Bộ GD&ĐT (QĐ 53/2008/QĐ-BGDĐT).`,
-      equipment: 'Còi thể thao, bàn đạp xuất phát, nệm nhảy cao, hố nhảy xa, bóng đá/cầu lông/bóng rổ',
-      location: 'Sân vận động / Sân thể dục trường học',
-      notes: isGK ? 'Kiểm tra giữa kỳ' : isCK ? 'Kiểm tra cuối kỳ' : ''
-    });
-  });
-
-  return list;
-}
+import { getGdtcSecondaryCurriculum } from './curriculumSecondaryGdtc';
+export { getGdtcSecondaryCurriculum };
 
 // =========================================================================
 // 6. CÁC MÔN CÒN LẠI THCS: LỊCH SỬ & ĐỊA LÍ, TIN HỌC, CÔNG NGHỆ, GDCD, ÂM NHẠC, MĨ THUẬT, HĐTN, GDĐP
