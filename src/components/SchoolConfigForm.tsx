@@ -931,7 +931,7 @@ export const SchoolConfigForm: React.FC<SchoolConfigFormProps> = ({
               <div className="p-3.5 rounded-2xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800/60 flex items-start gap-2.5">
                 <AlertCircle className="w-4 h-4 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5" />
                 <div className="text-amber-900 dark:text-amber-200 leading-relaxed text-xs">
-                  <strong>Nội dung học chung bắt buộc:</strong> Phần <strong>ĐỊNH HƯỚNG NGHỀ NGHIỆP</strong> (Bài 1 → Bài 5) là phần chung bắt buộc <strong>toàn bộ học sinh học đầu tiên ở cả 3 Option</strong> (từ Tuần 1 đến Tuần 5). Sau khi học xong 5 bài chung, học sinh sẽ tiếp tục học <strong>01 trong 03 Mô đun trải nghiệm nghề nghiệp</strong> dưới đây:
+                  <strong>Nội dung học chung bắt buộc:</strong> Phần <strong>ĐỊNH HƯỚNG NGHỀ NGHIỆP</strong> (Bài 1 → Bài 5) là phần chung bắt buộc <strong>toàn bộ học sinh học đầu tiên ở cả 3 Option</strong>. Sau khi học xong 5 bài chung, học sinh sẽ tiếp tục học <strong>01 trong 03 Mô đun trải nghiệm nghề nghiệp</strong> dưới đây:
                 </div>
               </div>
 

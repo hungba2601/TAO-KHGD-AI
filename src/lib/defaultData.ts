@@ -680,6 +680,81 @@ export function getDefaultAssessments(
     ];
   }
 
+  // MÔN KHOA HỌC TỰ NHIÊN THCS (Lớp 6, 7, 8, 9)
+  if (s.includes('khoa học tự nhiên') || s.includes('khtn')) {
+    const khtnAssessmentUnits: Record<string, { mid1: string; end1: string; mid2: string; end2: string }> = {
+      '6': {
+        mid1: 'Chương I: Mở đầu về KHTN & Đo lường; Chương II: Chất quanh ta; Chương III: Vật liệu, nhiên liệu, thực phẩm; Chương IV: Hỗn hợp & Tách chất; Chương V: Tế bào (Bài 1 đến Bài 22)',
+        end1: 'Toàn bộ nội dung Học kỳ 1: Chương I đến Chương VII (Đa dạng thế giới sống: Vi khuẩn, Virus, Nguyên sinh vật, Nấm, Thực vật, Động vật và Đa dạng sinh học)',
+        mid2: 'Chương VIII: Lực trong đời sống (Lực, Biểu diễn lực, Lò xo, Trọng lực, Ma sát, Lực cản) & Chương IX: Năng lượng (Các dạng năng lượng, Chuyển hóa năng lượng)',
+        end2: 'Toàn bộ chương trình KHTN 6 cả năm: Trọng tâm Chương VIII, IX, X (Trái Đất và bầu trời: Mặt Trời, Mặt Trăng, Hệ Mặt Trời, Ngân Hà) và kiến thức cốt lõi HK1'
+      },
+      '7': {
+        mid1: 'Chương I: Nguyên tử - Bảng tuần hoàn; Chương II: Phân tử - Liên kết hoá học - Hóa trị; Chương III: Tốc độ; Chương IV: Âm thanh (Bài 1 đến Bài 13)',
+        end1: 'Toàn bộ nội dung Học kỳ 1: Chương I đến Chương VII (Ánh sáng, Từ học và Trao đổi chất & Chuyển hoá năng lượng: Quang hợp, Hô hấp tế bào, Trao đổi khí)',
+        mid2: 'Chương VII (tiếp: Vận chuyển nước, chất dinh dưỡng); Chương VIII: Cảm ứng ở sinh vật; Chương IX: Sinh trưởng và phát triển; Chương X: Sinh sản vô tính & hữu tính',
+        end2: 'Toàn bộ chương trình KHTN 7 cả năm: Trọng tâm Sinh học cơ thể sinh vật, Cơ học tốc độ, Quang học phản xạ, Từ trường và Cấu trúc nguyên tử'
+      },
+      '8': {
+        mid1: 'Chương I: Phản ứng hoá học (Mol, Tỉ khối, Dung dịch, ĐLBTKL, Tính theo PTHH, Tốc độ phản ứng); Chương II: Acid, Base, Oxide, Muối; Chương III: Khối lượng riêng & Áp suất',
+        end1: 'Toàn bộ nội dung Học kỳ 1: Chương I đến Chương VII (Lực đẩy Archimedes, Đòn bẩy, Điện học, Nhiệt học và Khái quát Sinh học cơ thể người - Hệ vận động)',
+        mid2: 'Chương VII: Sinh học cơ thể người (Tiêu hóa, Tuần hoàn, Hô hấp, Bài tiết, Thần kinh, Nội tiết, Da, Sinh sản) & Chương VIII: Sinh vật và môi trường (Quần thể, Quần xã)',
+        end2: 'Toàn bộ chương trình KHTN 8 cả năm: Trọng tâm Sinh thái học, Cân bằng tự nhiên, Hóa học vô cơ, Cơ học áp suất - lực đẩy và Sinh lí học người'
+      },
+      '9': {
+        mid1: 'Chương I: Năng lượng cơ học (Động năng, Thế năng, Cơ năng, Công & Công suất); Chương II: Ánh sáng (Khúc xạ, Phản xạ toàn phần, Thấu kính); Chương III: Điện trở - Định luật Ohm; Chương VI: Kim loại',
+        end1: 'Toàn bộ nội dung Học kỳ 1: Năng lượng cơ học, Quang hình học, Điện từ học, Dãy hoạt động hoá học của kim loại và Hóa học hữu cơ (Hydrocarbon, Alcohol, Acetic acid, Polymer)',
+        mid2: 'Chương XI: Di truyền học Mendel & Cơ sở phân tử (DNA, RNA, Phiên mã, Dịch mã, Đột biến gene); Chương XII: Di truyền NST (Nguyên phân, Giảm phân, Đột biến NST, Phả hệ)',
+        end2: 'Toàn bộ chương trình KHTN 9 cả năm: Trọng tâm Di truyền học, Sinh học tiến hóa, Quang hình học, Điện xoay chiều, Hóa học hữu cơ chuẩn cấu trúc thi tuyển sinh Lớp 10 THPT'
+      }
+    };
+
+    const units = khtnAssessmentUnits[g] || khtnAssessmentUnits['7'];
+
+    return [
+      {
+        id: 'as-1',
+        stt: 1,
+        assessmentName: `Kiểm tra, đánh giá giữa Học kỳ 1 (KHTN ${g})`,
+        time: '45 phút',
+        week: 'Tuần 9',
+        form: 'Trắc nghiệm khách quan (70%) kết hợp tự luận / bài tập định lượng (30%) theo ma trận chuẩn Bộ GD&ĐT',
+        units: units.mid1,
+        requirements: 'Đánh giá mức độ đạt chuẩn kiến thức, kĩ năng KHTN; năng lực tìm hiểu thế giới tự nhiên và vận dụng kiến thức giải bài tập thực nghiệm.'
+      },
+      {
+        id: 'as-2',
+        stt: 2,
+        assessmentName: `Kiểm tra, đánh giá cuối Học kỳ 1 (KHTN ${g})`,
+        time: '60 phút / 90 phút',
+        week: 'Tuần 16',
+        form: 'Đề kiểm tra chuẩn hóa tập trung toàn khối theo ma trận và bảng đặc tả của Bộ GD&ĐT',
+        units: units.end1,
+        requirements: 'Đánh giá tổng kết kết quả học tập KHTN HK1 theo định hướng phát triển phẩm chất, năng lực khoa học tự nhiên của học sinh.'
+      },
+      {
+        id: 'as-3',
+        stt: 3,
+        assessmentName: `Kiểm tra, đánh giá giữa Học kỳ 2 (KHTN ${g})`,
+        time: '45 phút',
+        week: 'Tuần 26',
+        form: 'Trắc nghiệm khách quan kết hợp tự luận / Đánh giá sản phẩm thực hành và dự án khoa học',
+        units: units.mid2,
+        requirements: 'Kiểm tra kĩ năng phân tích hiện tượng tự nhiên, năng lực mô hình hóa khoa học và giải quyết vấn đề thực tiễn.'
+      },
+      {
+        id: 'as-4',
+        stt: 4,
+        assessmentName: `Kiểm tra, đánh giá cuối Học kỳ 2 & Cả năm (KHTN ${g})`,
+        time: '60 phút / 90 phút',
+        week: 'Tuần 31',
+        form: 'Đề kiểm tra chuẩn hóa cấp trường theo ma trận chuẩn của Bộ GD&ĐT (định hướng thi tuyển sinh Lớp 10 đối với Lớp 9)',
+        units: units.end2,
+        requirements: 'Đánh giá toàn diện chuẩn đầu ra môn KHTN cả năm học, làm căn cứ xét hoàn thành chương trình môn học và phân hóa đối tượng.'
+      }
+    ];
+  }
+
   if (s.includes('thể chất') || s.includes('gdtc') || s.includes('thể dục') || s.includes('the chat')) {
     return [
       {

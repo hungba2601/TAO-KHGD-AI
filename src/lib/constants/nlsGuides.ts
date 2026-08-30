@@ -580,7 +580,7 @@ export function lookupNlsRequirement(code: string): string | null {
   const lines = allGuides.split('\n').filter((l) => l.startsWith('- **Mã:'));
 
   for (const line of lines) {
-    const match = line.match(/- \*\*Mã:\s*([^*]+)\*\*\s*-\s*YCCĐ:\s*(.+)$/);
+    const match = line.match(/- \*\*Mã:\s*([^*]+)\*\*\s*-\s*(?:YCCD|YCCĐ|Yêu cầu cần đạt):\s*(.+)$/i);
     if (match) {
       const lineCode = match[1].replace(/[^a-zA-Z0-9\.]/g, '').toLowerCase();
       if (lineCode === cleanCode) {
@@ -591,7 +591,7 @@ export function lookupNlsRequirement(code: string): string | null {
 
   // Prefix fallback
   for (const line of lines) {
-    const match = line.match(/- \*\*Mã:\s*([^*]+)\*\*\s*-\s*YCCĐ:\s*(.+)$/);
+    const match = line.match(/- \*\*Mã:\s*([^*]+)\*\*\s*-\s*(?:YCCD|YCCĐ|Yêu cầu cần đạt):\s*(.+)$/i);
     if (match) {
       const lineCode = match[1].replace(/[^a-zA-Z0-9\.]/g, '').toLowerCase();
       if (lineCode.startsWith(cleanCode) || cleanCode.startsWith(lineCode)) {

@@ -1,9 +1,10 @@
 import { CurriculumItem, SchoolType, ConfigFormData } from '../../types';
-import { getNlsCodeForSubjectLesson } from '../constants/nlsGuides';
-import { getAiCodeForSubjectLesson } from '../constants/aiGuides';
+import { getNlsCodeForSubjectLesson, lookupNlsRequirement } from '../constants/nlsGuides';
+import { getAiCodeForSubjectLesson, lookupAiRequirement } from '../constants/aiGuides';
 import { getNlsCodeForEnglishLesson } from '../constants/nlsGuidesEn';
 import { getAiCodeForEnglishLesson } from '../constants/aiGuidesEn';
 import { getTechnologySecondaryCurriculum } from './curriculumSecondaryTechnology';
+import { getKhtnSecondaryCurriculum } from './curriculumSecondaryScience';
 
 export interface RawSecondaryLesson {
   week: number;
@@ -360,200 +361,9 @@ export { getMathSecondaryCurriculum };
 // =========================================================================
 // 2. NGỮ VĂN THCS (LỚP 6, 7, 8, 9) - KẾT NỐI TRI THỨC VỚI CUỘC SỐNG
 // =========================================================================
-export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
-  const g = parseInt(grade, 10) || 7;
-  const list: RawSecondaryLesson[] = [];
+import { getNguVanSecondaryCurriculum } from './curriculumSecondaryLiterature';
+export { getNguVanSecondaryCurriculum };
 
-  const nguVanDataByGrade: Record<number, { term1: string[]; term2: string[] }> = {
-    6: {
-      term1: [
-        'Bài 1: Tôi và các bạn - Đọc: Bài học đường đời đầu tiên (Tô Hoài) & Thực hành tiếng Việt: Từ đơn và từ phức (4 tiết)',
-        'Đọc: Nếu cậu muốn có một người bạn (Trích Hoàng tử bé) & Viết: Kể lại một trải nghiệm của bản thân (4 tiết)',
-        'Đọc: Bắt nạt (Nguyễn Thế Hoàng Linh) & Nói và nghe: Chia sẻ về một trải nghiệm đáng nhớ (4 tiết)',
-        'Bài 2: Gõ cửa trái tim - Đọc: Chuyện cổ tích về loài người (Xuân Quỳnh) & Thực hành tiếng Việt: Biện pháp tu từ ẩn dụ (4 tiết)',
-        'Đọc: Mây và sóng (Ta-go) & Viết: Đoạn văn ghi lại cảm nghĩ về một bài thơ có yếu tố tự sự và miêu tả (4 tiết)',
-        'Đọc: Bức tranh của em gái tôi (Tạ Duy Anh) & Nói và nghe: Trình bày ý kiến về một vấn đề đời sống (4 tiết)',
-        'Bài 3: Yêu thương và chia sẻ - Đọc: Cô bé bán diêm (An-đéc-xen) & Thực hành tiếng Việt: Cụm danh từ (4 tiết)',
-        'Đọc: Gió lạnh đầu mùa (Thạch Lam) & Viết: Kể lại một trải nghiệm sâu sắc (4 tiết)',
-        'Kiểm tra, đánh giá giữa Học kỳ 1 môn Ngữ văn 6 (4 tiết)',
-        'Đọc: Con chào mào (Mai Văn Phấn) & Nói và nghe: Kể lại một câu chuyện cổ tích (4 tiết)',
-        'Bài 4: Quê hương yêu dấu - Đọc: Chùm ca dao về quê hương đất nước & Thực hành tiếng Việt: Từ láy và từ ghép (4 tiết)',
-        'Đọc: Chuyện cổ nước mình (Lâm Thị Mỹ Dạ) & Viết: Bài văn thuyết minh thuật lại một sự kiện lễ hội (4 tiết)',
-        'Đọc: Cây tre Việt Nam (Thép Mới) & Nói và nghe: Giới thiệu về vẻ đẹp quê hương em (4 tiết)',
-        'Bài 5: Những nẻo đường xứ sở - Đọc: Cô Tô (Nguyễn Tuân) & Thực hành tiếng Việt: Cụm động từ, Cụm tính từ (4 tiết)',
-        'Đọc: Hang Én (Hà My) & Viết: Bài văn tả cảnh sinh hoạt (4 tiết)',
-        'Kiểm tra, đánh giá cuối Học kỳ 1 môn Ngữ văn 6 (4 tiết)',
-        'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức Ngữ văn 6 HK1 (4 tiết)',
-        'Sơ kết Học kỳ 1 & Báo cáo sản phẩm Đọc hiểu văn học Lớp 6 (4 tiết)'
-      ],
-      term2: [
-        'Bài 6: Bài học từ cuộc sống - Đọc: Bài học từ cây cau & Thực hành tiếng Việt: Dấu chấm phẩy, Dấu ngoặc kép (4 tiết)',
-        'Đọc: Thế giới ra sao nếu không có cây xanh? & Viết: Bài văn nghị luận bày tỏ ý kiến về một hiện tượng đời sống (4 tiết)',
-        'Bài 7: Thế giới cổ tích - Đọc: Thạch Sanh & Thực hành tiếng Việt: Thành ngữ (4 tiết)',
-        'Đọc: Cây khế & Viết: Bài văn đóng vai nhân vật kể lại một truyện cổ tích (4 tiết)',
-        'Đọc: Vua chích chòe & Nói và nghe: Kể lại một truyện cổ tích bằng lời một nhân vật (4 tiết)',
-        'Bài 8: Khác biệt và gần gũi - Đọc: Xem người ta kìa! (Lạc Thanh) & Thực hành tiếng Việt: Đại từ (4 tiết)',
-        'Đọc: Hai loại khác biệt (Gia-mơ Cai) & Viết: Bài văn trình bày ý kiến về một vấn đề xã hội (4 tiết)',
-        'Đọc: Gặp lá cơm nếp (Thanh Thảo) & Nói và nghe: Thảo luận nhóm về sự tôn trọng khác biệt (4 tiết)',
-        'Kiểm tra, đánh giá giữa Học kỳ 2 môn Ngữ văn 6 (4 tiết)',
-        'Bài 9: Trái Đất - ngôi nhà chung - Đọc: Trái Đất - cái nôi của sự sống & Thực hành tiếng Việt: Trạng ngữ (4 tiết)',
-        'Đọc: Các loài tuyệt chủng đang tăng nhanh & Viết: Biên bản cuộc họp, thảo luận (4 tiết)',
-        'Đọc: Sinh vật trên Trái Đất được hình thành như thế nào? & Viết: Tóm tắt văn bản thông tin (4 tiết)',
-        'Kiểm tra, đánh giá cuối Học kỳ 2 môn Ngữ văn 6 (4 tiết)',
-        'Chữa bài kiểm tra cuối HK2 & Ôn tập củng cố kiến thức Ngữ văn 6 HK2 (4 tiết)',
-        'Dự án Ngữ văn 6: "Tuyển tập Tác phẩm Văn học Thiếu nhi & Sân khấu hóa Truyện cổ tích" (4 tiết)',
-        'Bài 11: Ôn tập toàn diện chuẩn bị tổng kết năm học môn Ngữ văn 6 (4 tiết)',
-        'Tổng kết năm học & Đánh giá xếp loại môn Ngữ văn 6 cả năm (4 tiết)'
-      ]
-    },
-    7: {
-      term1: [
-        'Bài 1: Bầu trời tuổi thơ - Đọc: Bầy chim chìa vôi (Nguyễn Quang Thiều) & Thực hành tiếng Việt: Mở rộng trạng ngữ (4 tiết)',
-        'Đọc: Đi lấy mật (Trích Đất rừng phương Nam - Đoàn Giỏi) & Viết: Đoạn văn ghi lại cảm nghĩ về một bài thơ bốn chữ hoặc năm chữ (4 tiết)',
-        'Đọc: Ngàn sao làm việc (Võ Quảng) & Nói và nghe: Tóm tắt ý chính do người khác trình bày (4 tiết)',
-        'Bài 2: Khúc nhạc tâm hồn - Đọc: Đồng dao mùa xuân (Nguyễn Khoa Điềm) & Thực hành tiếng Việt: Biện pháp tu từ nói giảm nói tránh (4 tiết)',
-        'Đọc: Gặp lá cơm nếp (Thanh Thảo) & Viết: Tập làm một bài thơ bốn chữ hoặc năm chữ (4 tiết)',
-        'Đọc: Trở gió (Nguyễn Ngọc Tư) & Nói và nghe: Trao đổi về một vấn đề mà em quan tâm (4 tiết)',
-        'Bài 3: Cội nguồn yêu thương - Đọc: Vừa nhắm mắt vừa mở cửa sổ (Nguyễn Ngọc Thuần) & Thực hành tiếng Việt: Thuật ngữ (4 tiết)',
-        'Đọc: Người thầy đầu tiên (Ai-tơ-ma-tốp) & Viết: Phân tích đặc điểm nhân vật trong tác phẩm văn học (4 tiết)',
-        'Kiểm tra, đánh giá giữa Học kỳ 1 môn Ngữ văn 7 (4 tiết)',
-        'Đọc: Quê hương (Tế Hanh) & Nói và nghe: Thảo luận nhóm về một nhân vật văn học (4 tiết)',
-        'Bài 4: Giai điệu đất nước - Đọc: Mùa xuân nho nhỏ (Thanh Hải) & Thực hành tiếng Việt: Phó từ và chức năng (4 tiết)',
-        'Đọc: Gò Me (Hoàng Tố Nguyên) & Viết: Bài văn biểu cảm về con người hoặc sự việc (4 tiết)',
-        'Đọc: Bài ca Côn Sơn (Nguyễn Trãi) & Nói và nghe: Trình bày cảm xúc về một bài thơ (4 tiết)',
-        'Bài 5: Màu sắc trăm miền - Đọc: Tháng Giêng, mơ về trăng non rét ngọt (Vũ Bằng) & Thực hành tiếng Việt: Dấu gạch nối (4 tiết)',
-        'Đọc: Chuyện cơm hến (Hoàng Phủ Ngọc Tường) & Viết: Bài văn thuyết minh về quy tắc một trò chơi dân gian (4 tiết)',
-        'Kiểm tra, đánh giá cuối Học kỳ 1 môn Ngữ văn 7 (4 tiết)',
-        'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức Ngữ văn 7 HK1 (4 tiết)',
-        'Sơ kết Học kỳ 1 & Báo cáo sản phẩm Đọc hiểu văn học Lớp 7 (4 tiết)'
-      ],
-      term2: [
-        'Bài 6: Bài học cuộc sống - Đọc: Đẽo cày giữa đường & Thực hành tiếng Việt: Nói quá và tác dụng (4 tiết)',
-        'Đọc: Ếch ngồi đáy giếng & Thầy bói xem voi & Viết: Bài văn nghị luận về một vấn đề trong đời sống (4 tiết)',
-        'Bài 7: Thế giới viễn tưởng - Đọc: Cuộc chạm trán trên đại dương (Trích Hai vạn dặm dưới đáy biển) & Thực hành tiếng Việt: Mở rộng vị ngữ (4 tiết)',
-        'Đọc: Đường vào trung tâm vũ trụ & Viết: Bài văn kể lại một sự việc có thật liên quan đến nhân vật lịch sử (4 tiết)',
-        'Đọc: Dấu chân sinh thái & Nói và nghe: Thảo luận về một vấn đề khoa học viễn tưởng (4 tiết)',
-        'Bài 8: Trải nghiệm để trưởng thành - Đọc: Bản đồ dẫn đường & Thực hành tiếng Việt: Biến đổi câu (4 tiết)',
-        'Đọc: Hãy cầm lấy và đọc & Viết: Bài văn nghị luận thể hiện sự tán thành về một tư tưởng đạo lý (4 tiết)',
-        'Đọc: Trò chơi trời cho & Nói và nghe: Trình bày suy nghĩ về ý nghĩa của việc đọc sách (4 tiết)',
-        'Kiểm tra, đánh giá giữa Học kỳ 2 môn Ngữ văn 7 (4 tiết)',
-        'Bài 9: Hòa điệu với tự nhiên - Đọc: Thủy hải sản sông Cửu Long & Thực hành tiếng Việt: Phương tiện giao tiếp phi ngôn ngữ (4 tiết)',
-        'Đọc: Thiên nhiên và con người trong truyện "Đất rừng phương Nam" & Viết: Bản tường trình sự việc (4 tiết)',
-        'Đọc: Vẻ đẹp của dòng sông quê & Nói và nghe: Giải thích một quy tắc hoặc hiện tượng tự nhiên (4 tiết)',
-        'Kiểm tra, đánh giá cuối Học kỳ 2 môn Ngữ văn 7 (4 tiết)',
-        'Chữa bài kiểm tra cuối HK2 & Ôn tập củng cố kiến thức Ngữ văn 7 HK2 (4 tiết)',
-        'Dự án Ngữ văn 7: "Tuyển tập Tản văn Quê hương & Sân khấu Diễn xướng Thơ ca" (4 tiết)',
-        'Bài 11: Ôn tập toàn diện chuẩn bị tổng kết năm học môn Ngữ văn 7 (4 tiết)',
-        'Tổng kết năm học & Đánh giá xếp loại môn Ngữ văn 7 cả năm (4 tiết)'
-      ]
-    },
-    8: {
-      term1: [
-        'Bài 1: Câu chuyện của lịch sử - Đọc: Lá cờ thêu sáu chữ vàng (Nguyễn Huy Tưởng) & Thực hành tiếng Việt: Biệt ngữ xã hội (4 tiết)',
-        'Đọc: Quang Trung đại phá quân Thanh (Trích Hoàng Lê nhất thống chí) & Viết: Kể lại một chuyến đi trải nghiệm (4 tiết)',
-        'Đọc: Ta đi tới (Tố Hữu) & Nói và nghe: Trình bày bài giới thiệu ngắn về một di tích lịch sử (4 tiết)',
-        'Bài 2: Vẻ đẹp cổ điển - Đọc: Thu điếu (Nguyễn Khuyến) & Thực hành tiếng Việt: Từ Hán Việt (4 tiết)',
-        'Đọc: Thiên Trường vãn vọng (Trần Nhân Tông) & Viết: Đoạn văn ghi lại cảm nghĩ về một bài thơ thất ngôn bát cú (4 tiết)',
-        'Đọc: Ca Huế trên sông Hương (Hà Ánh Minh) & Nói và nghe: Trình bày cảm nhận về vẻ đẹp di sản văn hóa (4 tiết)',
-        'Bài 3: Lời sông núi - Đọc: Hịch tướng sĩ (Trần Quốc Tuấn) & Thực hành tiếng Việt: Đoạn văn diễn dịch, quy nạp (4 tiết)',
-        'Đọc: Tinh thần yêu nước của nhân dân ta (Hồ Chí Minh) & Viết: Bài văn nghị luận về một vấn đề đời sống (4 tiết)',
-        'Kiểm tra, đánh giá giữa Học kỳ 1 môn Ngữ văn 8 (4 tiết)',
-        'Đọc: Chiếu dời đô (Lý Công Uẩn) & Nói và nghe: Thảo luận về tinh thần trách nhiệm của công dân trẻ (4 tiết)',
-        'Bài 4: Tiếng cười trào phúng trong thơ - Đọc: Lễ xướng danh khoa Đinh Dậu (Trần Tế Xương) & Thực hành tiếng Việt: Nghĩa tường minh và hàm ý (4 tiết)',
-        'Đọc: Lai Tân (Hồ Chí Minh) & Viết: Bài văn phân tích một tác phẩm thơ trào phúng (4 tiết)',
-        'Đọc: Một số giọng điệu của tiếng cười trong ca dao & Nói và nghe: Trình bày ý kiến về tác dụng của tiếng cười (4 tiết)',
-        'Bài 5: Những gương mặt thân yêu - Đọc: Trong lòng mẹ (Trích Những ngày thơ ấu - Nguyên Hồng) & Thực hành tiếng Việt: Trợ từ, Thán từ (4 tiết)',
-        'Đọc: Lão Hạc (Nam Cao) & Viết: Bài văn thuyết minh về một danh lam thắng cảnh (4 tiết)',
-        'Kiểm tra, đánh giá cuối Học kỳ 1 môn Ngữ văn 8 (4 tiết)',
-        'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức Ngữ văn 8 HK1 (4 tiết)',
-        'Sơ kết Học kỳ 1 & Báo cáo sản phẩm Đọc hiểu văn học Lớp 8 (4 tiết)'
-      ],
-      term2: [
-        'Bài 6: Chân dung cuộc sống - Đọc: Mắt biếc (Nguyễn Nhật Ánh) & Thực hành tiếng Việt: Câu đơn và câu ghép (4 tiết)',
-        'Đọc: Lặng lẽ Sa Pa (Nguyễn Thành Long) & Viết: Bài văn phân tích một tác phẩm truyện ngắn (4 tiết)',
-        'Bài 7: Tin yêu và ước vọng - Đọc: Đồng chí (Chính Hữu) & Thực hành tiếng Việt: Thành phần biệt lập (Tình thái, cảm thán) (4 tiết)',
-        'Đọc: Bài thơ về tiểu đội xe không kính (Phạm Tiến Duật) & Viết: Đoạn văn cảm nhận vẻ đẹp người lính (4 tiết)',
-        'Đọc: Bếp lửa (Bằng Việt) & Nói và nghe: Trình bày suy nghĩ về tình cảm gia đình và tình yêu nước (4 tiết)',
-        'Bài 8: Nhà văn và trang viết - Đọc: Chiếc lá cuối cùng (O Henry) & Thực hành tiếng Việt: Khởi ngữ (4 tiết)',
-        'Đọc: Chuyện người con gái Nam Xương (Nguyễn Dữ) & Viết: Bài văn nghị luận về một tư tưởng đạo lý (4 tiết)',
-        'Đọc: Bến quê (Nguyễn Minh Châu) & Nói và nghe: Thảo luận về giá trị nhân đạo của tác phẩm (4 tiết)',
-        'Kiểm tra, đánh giá giữa Học kỳ 2 môn Ngữ văn 8 (4 tiết)',
-        'Bài 9: Hôm nay và ngày mai - Đọc: Cột mốc chủ quyền trên biển Đông & Thực hành tiếng Việt: Lựa chọn câu đơn/ghép (4 tiết)',
-        'Đọc: Thông điệp nhân ngày Môi trường thế giới & Viết: Bản kiến nghị về một vấn đề đời sống (4 tiết)',
-        'Đọc: Rác thải nhựa và hiểm họa môi trường & Viết: Bài văn thuyết minh giải thích một hiện tượng tự nhiên (4 tiết)',
-        'Kiểm tra, đánh giá cuối Học kỳ 2 môn Ngữ văn 8 (4 tiết)',
-        'Chữa bài kiểm tra cuối HK2 & Ôn tập củng cố kiến thức Ngữ văn 8 HK2 (4 tiết)',
-        'Dự án Ngữ văn 8: "Sáng tác Truyện ngắn & Diễn đàn Đọc sách Học đường THCS" (4 tiết)',
-        'Bài 11: Ôn tập toàn diện chuẩn bị tổng kết năm học môn Ngữ văn 8 (4 tiết)',
-        'Tổng kết năm học & Đánh giá xếp loại môn Ngữ văn 8 cả năm (4 tiết)'
-      ]
-    },
-    9: {
-      term1: [
-        'Bài 1: Khát vọng sống - Đọc: Chuyện người con gái Nam Xương (Nguyễn Dữ) & Thực hành tiếng Việt: Điển tích, điển cố (4 tiết)',
-        'Đọc: Kiều ở lầu Ngưng Bích (Trích Truyện Kiều - Nguyễn Du) & Viết: Bài văn nghị luận về một vấn đề cần giải quyết (4 tiết)',
-        'Đọc: Chị em Thúy Kiều & Nói và nghe: Thảo luận về thân phận người phụ nữ trong xã hội phong kiến (4 tiết)',
-        'Bài 2: Vẻ đẹp của tâm hồn - Đọc: Cảnh ngày xuân (Trích Truyện Kiều) & Thực hành tiếng Việt: Biện pháp tu từ chơi chữ, điệp thanh (4 tiết)',
-        'Đọc: Lục Vân Tiên cứu Kiều Nguyệt Nga (Nguyễn Đình Chiểu) & Viết: Bài văn phân tích một đoạn trích truyện thơ Nôm (4 tiết)',
-        'Đọc: Đồng chí (Chính Hữu) & Nói và nghe: Trình bày cảm nhận về tình đồng chí, đồng đội (4 tiết)',
-        'Bài 3: Tiếng nói của tình yêu thương - Đọc: Bếp lửa (Bằng Việt) & Thực hành tiếng Việt: Câu rút gọn và câu đặc biệt (4 tiết)',
-        'Đọc: Khúc hát ru những em bé lớn trên lưng mẹ (Nguyễn Khoa Điềm) & Viết: Bài văn nghị luận xã hội về tình mẫu tử (4 tiết)',
-        'Kiểm tra, đánh giá giữa Học kỳ 1 môn Ngữ văn 9 (4 tiết)',
-        'Đọc: Ánh trăng (Nguyễn Duy) & Nói và nghe: Bàn về lối sống ân nghĩa, thủy chung (4 tiết)',
-        'Bài 4: Sắc hương cuộc sống - Đọc: Làng (Kim Lân) & Thực hành tiếng Việt: Ngôn ngữ đối thoại, độc thoại và độc thoại nội tâm (4 tiết)',
-        'Đọc: Lặng lẽ Sa Pa (Nguyễn Thành Long) & Viết: Bài văn phân tích nhân vật anh thanh niên trong Lặng lẽ Sa Pa (4 tiết)',
-        'Đọc: Chiếc lược ngà (Nguyễn Quang Sáng) & Nói và nghe: Phân tích tình cha con sâu sắc trong chiến tranh (4 tiết)',
-        'Bài 5: Nhịp cầu kết nối - Đọc: Mùa xuân nho nhỏ (Thanh Hải) & Thực hành tiếng Việt: Sự liên kết câu và đoạn văn (4 tiết)',
-        'Đọc: Viếng lăng Bác (Viễn Phương) & Viết: Bài văn thuyết minh về một danh nhân văn hóa (4 tiết)',
-        'Kiểm tra, đánh giá cuối Học kỳ 1 môn Ngữ văn 9 (4 tiết)',
-        'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức Ngữ văn 9 HK1 (4 tiết)',
-        'Sơ kết Học kỳ 1 & Báo cáo chuyên đề Văn học Lớp 9 (4 tiết)'
-      ],
-      term2: [
-        'Bài 6: Vẻ đẹp của sự cống hiến - Đọc: Những ngôi sao xa xôi (Lê Minh Khuê) & Thực hành tiếng Việt: Thành phần gọi đáp, phụ chú (4 tiết)',
-        'Đọc: Bàn về lòng dũng cảm và đức hy sinh & Viết: Bài văn nghị luận về một phẩm chất của tuổi trẻ (4 tiết)',
-        'Bài 7: Tiếng vọng non sông - Đọc: Tuyên ngôn Độc lập (Hồ Chí Minh) & Thực hành tiếng Việt: Tính chuẩn xác trong dùng từ (4 tiết)',
-        'Đọc: Lời kêu gọi toàn quốc kháng chiến & Viết: Bài văn phân tích một tác phẩm văn chính luận (4 tiết)',
-        'Đọc: Tiếng nói của văn nghệ (Nguyễn Đình Thi) & Nói và nghe: Trình bày quan điểm về vai trò của nghệ thuật (4 tiết)',
-        'Bài 8: Khát vọng hòa bình - Đọc: Con cò (Chế Lan Viên) & Thực hành tiếng Việt: Chuyển đổi câu chủ động sang bị động (4 tiết)',
-        'Đọc: Mùa lá rụng trong vườn (Ma Văn Kháng) & Viết: Bài văn nghị luận so sánh đánh giá hai tác phẩm văn học (4 tiết)',
-        'Đọc: Bến quê (Nguyễn Minh Châu) & Nói và nghe: Thảo luận về những triết lý nhân sinh trong cuộc sống (4 tiết)',
-        'Kiểm tra, đánh giá giữa Học kỳ 2 môn Ngữ văn 9 (4 tiết)',
-        'Bài 9: Hướng về tương lai - Đọc: Chuẩn bị hành trang vào thế kỉ mới (Vũ Khoan) & Thực hành tiếng Việt: Lỗi logic (4 tiết)',
-        'Đọc: Bàn về bản lĩnh và khát vọng hội nhập & Viết: Bài văn nghị luận bàn về trách nhiệm của thanh niên thế hệ 2K (4 tiết)',
-        'Đọc: Thư gửi học sinh nhân ngày khai trường đầu tiên của nước Việt Nam Độc lập & Nói và nghe: Hùng biện học đường (4 tiết)',
-        'Kiểm tra, đánh giá cuối Học kỳ 2 môn Ngữ văn 9 (4 tiết)',
-        'Chữa bài kiểm tra cuối HK2 & Ôn tập củng cố kiến thức Ngữ văn 9 HK2 (4 tiết)',
-        'Dự án Ngữ văn 9: "Tuyển tập Tản văn Kỷ yếu Khóa học THCS & Sân khấu Diễn xướng Tác phẩm Lớp 9" (4 tiết)',
-        'Luyện giải các đề thi tuyển sinh vào Lớp 10 THPT môn Ngữ văn chuẩn ma trận Bộ GD&ĐT (4 tiết)',
-        'Tổng kết năm học & Đánh giá xếp loại môn Ngữ văn 9 cả năm (4 tiết)'
-      ]
-    }
-  };
-
-  const currentGradeData = nguVanDataByGrade[g] || nguVanDataByGrade[7];
-  const all35Weeks = [...currentGradeData.term1.slice(0, 18), ...currentGradeData.term2.slice(0, 17)];
-
-  all35Weeks.forEach((name, idx) => {
-    const w = idx + 1;
-    const isGK = w === 9 || w === 26;
-    const isCK = w === 16 || w === 31;
-    const isProject = name.includes('Dự án') || name.includes('Sân khấu');
-
-    list.push({
-      week: w,
-      topic: name.includes('Bài') ? name.split(' - ')[0] : 'Đánh giá định kỳ',
-      name: name,
-      periods: 4,
-      yccd: `- Phân tích sâu sắc giá trị nội dung, tư tưởng nhân đạo và nét đặc sắc nghệ thuật của tác phẩm trong ${name} (SGK Ngữ văn ${g} Kết nối tri thức).\n- Nắm vững kiến thức Tiếng Việt, viết bài văn nghị luận/thuyết minh mạch lạc, dẫn chứng thuyết phục và giàu cảm xúc.\n- Bồi dưỡng tâm hồn nhân ái, lòng yêu nước, niềm tự hào dân tộc và bản lĩnh của người công dân trẻ.`,
-      equipment: 'Chân dung tác giả, văn bản tác phẩm, video ngâm thơ, tư liệu lịch sử, máy chiếu',
-      location: 'Phòng học / Thư viện trường',
-      notes: isGK ? 'Kiểm tra giữa kỳ' : isCK ? 'Kiểm tra cuối kỳ' : isProject ? 'Dự án Văn học' : ''
-    });
-  });
-
-  return list;
-}
 
 // =========================================================================
 // 3. TIẾNG ANH THCS (LỚP 6, 7, 8, 9) - GLOBAL SUCCESS
@@ -570,185 +380,10 @@ export {
 };
 
 // =========================================================================
-// 4. KHOA HỌC TỰ NHIÊN THCS (LỚP 6, 7, 8, 9) - KHUNG 140 TIẾT (4 TIẾT/TUẦN)
+// 4. KHOA HỌC TỰ NHIÊN THCS (LỚP 6, 7, 8, 9) - KẾT NỐI TRI THỨC VỚI CUỘC SỐNG
 // =========================================================================
-export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
-  const g = parseInt(grade, 10) || 7;
-  const list: RawSecondaryLesson[] = [];
+export { getKhtnSecondaryCurriculum };
 
-  const khtnTopicsByGrade: Record<number, string[]> = {
-    6: [
-      'Mở đầu: Giới thiệu về Khoa học tự nhiên, dụng cụ đo và an toàn trong phòng thực hành (4 tiết)',
-      'Bài 1: Phép đo chiều dài, khối lượng và thời gian (4 tiết)',
-      'Bài 2: Thang nhiệt độ Celsius và đo nhiệt độ bằng nhiệt kế (4 tiết)',
-      'Bài 3: Các thể của chất (Rắn, lỏng, khí) và sự chuyển thể của chất (4 tiết)',
-      'Bài 4: Tính chất của chất (Tính chất vật lí và tính chất hóa học) (4 tiết)',
-      'Bài 5: Oxygen và không khí. Vai trò của không khí và bảo vệ môi trường không khí (4 tiết)',
-      'Bài 6: Một số vật liệu, nhiên liệu, nguyên liệu, lương thực - thực phẩm thông dụng (4 tiết)',
-      'Bài 7: Tách chất ra khỏi hỗn hợp (Lọc, cô cạn, chiết) (4 tiết)',
-      'Kiểm tra, đánh giá giữa Học kỳ 1 môn KHTN 6 (4 tiết)',
-      'Bài 8: Tế bào - Đơn vị cơ sở của sự sống (Cấu tạo và chức năng của tế bào) (4 tiết)',
-      'Bài 9: Sự lớn lên và sinh sản của tế bào. Cơ thể đơn bào và cơ thể đa bào (4 tiết)',
-      'Bài 10: Các cấp độ tổ chức trong cơ thể đa bào (Tế bào - Mô - Cơ quan - Hệ cơ quan - Cơ thể) (4 tiết)',
-      'Bài 11: Khóa lưỡng phân và phân loại thế giới sống (5 giới sinh vật) (4 tiết)',
-      'Bài 12: Virus và Vi khuẩn (Cấu tạo, vai trò và một số bệnh do virus, vi khuẩn gây ra) (4 tiết)',
-      'Bài 13: Đa dạng nguyên sinh vật và Đa dạng các loài nấm (4 tiết)',
-      'Kiểm tra, đánh giá cuối Học kỳ 1 môn KHTN 6 (4 tiết)',
-      'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức KHTN 6 HK1 (4 tiết)',
-      'Sơ kết Học kỳ 1 & Báo cáo sản phẩm thực hành KHTN 6 (4 tiết)',
-      'Bài 15: Đa dạng động vật không xương sống (Ruột khoang, Giun, Thân mềm, Chân khớp) (4 tiết)',
-      'Bài 16: Đa dạng động vật có xương sống (Cá, Lưỡng cư, Bò sát, Chim, Thú) (4 tiết)',
-      'Bài 17: Đa dạng sinh học và Bảo vệ đa dạng sinh học ở Việt Nam (4 tiết)',
-      'Bài 18: Lực và tác dụng của lực. Biểu diễn lực (4 tiết)',
-      'Bài 19: Lực tiếp xúc và lực không tiếp xúc (4 tiết)',
-      'Bài 20: Lực ma sát (Ma sát trượt, ma sát nghỉ) và tác dụng của ma sát trong đời sống (4 tiết)',
-      'Bài 21: Lực cản của nước và không khí (4 tiết)',
-      'Kiểm tra, đánh giá giữa Học kỳ 2 môn KHTN 6 (4 tiết)',
-      'Bài 22: Trọng lực và khối lượng. Độ biến dạng của lò xo và lực đàn hồi (4 tiết)',
-      'Bài 23: Năng lượng và các dạng năng lượng (Động năng, thế năng, nhiệt năng, quang năng, điện năng) (4 tiết)',
-      'Bài 24: Sự chuyển hóa năng lượng và Định luật bảo toàn năng lượng (4 tiết)',
-      'Bài 25: Năng lượng tái tạo (Năng lượng mặt trời, gió, nước) và Tiết kiệm năng lượng (4 tiết)',
-      'Kiểm tra, đánh giá cuối Học kỳ 2 môn KHTN 6 (4 tiết)',
-      'Chữa bài kiểm tra cuối HK2 & Thực hành bổ trợ KHTN 6 (4 tiết)',
-      'Dự án STEM KHTN 6: "Mô hình Bình lọc nước thông minh & Xe chạy bằng lực đàn hồi của lò xo" (4 tiết)',
-      'Bài 28: Ôn tập toàn diện chuẩn bị tổng kết năm học môn KHTN 6 (4 tiết)',
-      'Tổng kết năm học & Đánh giá xếp loại môn KHTN 6 cả năm (4 tiết)'
-    ],
-    7: [
-      'Mở đầu: Phương pháp và kĩ năng học tập môn KHTN (2 tiết) & Bài 1: Nguyên tử (2 tiết)',
-      'Bài 2: Nguyên tố hóa học và Bảng tuần hoàn các nguyên tố hóa học (4 tiết)',
-      'Bài 3: Phân tử, đơn chất và hợp chất (4 tiết)',
-      'Bài 4: Giới thiệu liên kết hóa học (Liên kết ion và liên kết cộng hóa trị) (4 tiết)',
-      'Bài 5: Hóa trị và Công thức hóa học (4 tiết)',
-      'Bài 6: Tốc độ chuyển động. Đo tốc độ bằng đồng hồ bấm giây và cổng quang điện (4 tiết)',
-      'Bài 7: Đồ thị quãng đường - thời gian và ý nghĩa thực tế (4 tiết)',
-      'Bài 8: Sóng âm. Nguồn âm và sự truyền âm trong các môi trường (4 tiết)',
-      'Kiểm tra, đánh giá giữa Học kỳ 1 môn KHTN 7 (4 tiết)',
-      'Bài 9: Độ to và độ cao của âm. Phản xạ âm và ô nhiễm tiếng ồn (4 tiết)',
-      'Bài 10: Ánh sáng, tia sáng và chùm sáng. Định luật phản xạ ánh sáng (4 tiết)',
-      'Bài 11: Ảnh của vật tạo bởi gương phẳng (4 tiết)',
-      'Bài 12: Nam châm, từ tính và từ trường. Từ phổ và đường sức từ (4 tiết)',
-      'Bài 13: Từ trường Trái Đất và La bàn định hướng (4 tiết)',
-      'Bài 14: Nam châm điện và ứng dụng trong công nghiệp (4 tiết)',
-      'Kiểm tra, đánh giá cuối Học kỳ 1 môn KHTN 7 (4 tiết)',
-      'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức KHTN 7 HK1 (4 tiết)',
-      'Sơ kết Học kỳ 1 & Báo cáo sản phẩm thực hành KHTN 7 (4 tiết)',
-      'Bài 16: Quang hợp ở thực vật (Bản chất, phương trình và các nhân tố ảnh hưởng) (4 tiết)',
-      'Bài 17: Hô hấp tế bào ở sinh vật (4 tiết)',
-      'Bài 18: Khí khổng và sự trao đổi khí ở thực vật và động vật (4 tiết)',
-      'Bài 19: Vai trò của nước và chất dinh dưỡng đối với sinh vật (4 tiết)',
-      'Bài 20: Vận chuyển các chất trong cây và sự thoát hơi nước ở lá (4 tiết)',
-      'Bài 21: Cảm ứng ở sinh vật và tập tính ở động vật (4 tiết)',
-      'Bài 22: Sinh trưởng và phát triển ở sinh vật (Các giai đoạn vòng đời) (4 tiết)',
-      'Kiểm tra, đánh giá giữa Học kỳ 2 môn KHTN 7 (4 tiết)',
-      'Bài 23: Sinh sản vô tính ở sinh vật (Sinh sản sinh dưỡng, phân đôi, nảy chồi) (4 tiết)',
-      'Bài 24: Sinh sản hữu tính ở sinh vật (Thụ phấn, thụ tinh, hình thành hạt và quả) (4 tiết)',
-      'Bài 25: Các yếu tố ảnh hưởng đến sinh sản và điều khiển sinh sản ở sinh vật (4 tiết)',
-      'Bài 26: Cơ thể sinh vật là một thể thống nhất (4 tiết)',
-      'Kiểm tra, đánh giá cuối Học kỳ 2 môn KHTN 7 (4 tiết)',
-      'Chữa bài kiểm tra cuối HK2 & Thực hành bổ trợ KHTN 7 (4 tiết)',
-      'Dự án STEM KHTN 7: "Mô hình Nam châm điện nâng tải & Hệ thống trồng cây thủy canh thông minh" (4 tiết)',
-      'Bài 28: Ôn tập toàn diện chuẩn bị tổng kết năm học môn KHTN 7 (4 tiết)',
-      'Tổng kết năm học & Đánh giá xếp loại môn KHTN 7 cả năm (4 tiết)'
-    ],
-    8: [
-      'Chương I: Phản ứng hóa học - Bài 1: Biến đổi vật lí và biến đổi hóa học. Phản ứng hóa học (4 tiết)',
-      'Bài 2: Định luật bảo toàn khối lượng và Phương trình hóa học (4 tiết)',
-      'Bài 3: Mol và tỉ khối của chất khí (4 tiết)',
-      'Bài 4: Dung dịch và nồng độ dung dịch (Nồng độ C% và nồng độ mol CM) (4 tiết)',
-      'Bài 5: Tốc độ phản ứng và các yếu tố ảnh hưởng đến tốc độ phản ứng (4 tiết)',
-      'Chương II: Một số hợp chất thông dụng - Bài 6: Acid (HCl, H2SO4) và tính chất hóa học của acid (4 tiết)',
-      'Bài 7: Base (NaOH, Ca(OH)2) và Thang đo pH (4 tiết)',
-      'Bài 8: Oxide (Oxide acid, Oxide base) và Muối (NaCl, CaCO3) (4 tiết)',
-      'Kiểm tra, đánh giá giữa Học kỳ 1 môn KHTN 8 (4 tiết)',
-      'Bài 9: Phân bón hóa học (Phân đạm, lân, kali, phân NPK) (4 tiết)',
-      'Chương III: Khối lượng riêng và Áp suất - Bài 10: Khối lượng riêng và phép đo khối lượng riêng (4 tiết)',
-      'Bài 11: Áp suất tác dụng lên bề mặt chất rắn (4 tiết)',
-      'Bài 12: Áp suất chất lỏng và áp suất khí quyển (4 tiết)',
-      'Bài 13: Lực đẩy Archimedes và điều kiện vật nổi, vật chìm (4 tiết)',
-      'Chương IV: Tác dụng làm quay của lực - Bài 14: Đòn bẩy và ứng dụng của đòn bẩy trong đời sống (4 tiết)',
-      'Kiểm tra, đánh giá cuối Học kỳ 1 môn KHTN 8 (4 tiết)',
-      'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức KHTN 8 HK1 (4 tiết)',
-      'Sơ kết Học kỳ 1 & Báo cáo sản phẩm thực hành KHTN 8 (4 tiết)',
-      'Chương V: Điện - Bài 16: Hiện tượng nhiễm điện do cọ xát. Dòng điện và nguồn điện (4 tiết)',
-      'Bài 17: Mạch điện đơn giản. Cường độ dòng điện và Hiệu điện thế (4 tiết)',
-      'Bài 18: Tác dụng nhiệt, phát sáng, hóa học và từ của dòng điện (4 tiết)',
-      'Chương VI: Nhiệt - Bài 19: Năng lượng nhiệt và Nội năng của vật (4 tiết)',
-      'Bài 20: Sự truyền nhiệt (Dẫn nhiệt, đối lưu, bức xạ nhiệt) (4 tiết)',
-      'Bài 21: Sự nở vì nhiệt của các chất rắn, lỏng, khí (4 tiết)',
-      'Chương VII: Sinh học cơ thể người - Bài 22: Khái quát về cơ thể người và Hệ vận động (Xương, cơ) (4 tiết)',
-      'Kiểm tra, đánh giá giữa Học kỳ 2 môn KHTN 8 (4 tiết)',
-      'Bài 23: Hệ tiêu hóa và Dinh dưỡng vệ sinh an toàn thực phẩm (4 tiết)',
-      'Bài 24: Hệ tuần hoàn và Máu (Nhóm máu, truyền máu, bảo vệ tim mạch) (4 tiết)',
-      'Bài 25: Hệ hô hấp và bảo vệ hệ hô hấp khỏe mạnh (4 tiết)',
-      'Bài 26: Hệ bài tiết và chăm sóc hệ bài tiết nước tiểu (4 tiết)',
-      'Kiểm tra, đánh giá cuối Học kỳ 2 môn KHTN 8 (4 tiết)',
-      'Chữa bài kiểm tra cuối HK2 & Thực hành bổ trợ KHTN 8 (4 tiết)',
-      'Dự án STEM KHTN 8: "Chế tạo Tàu ngầm Mini ứng dụng Lực đẩy Archimedes & Máy đo Nồng độ Dung dịch" (4 tiết)',
-      'Bài 29: Ôn tập toàn diện chuẩn bị tổng kết năm học môn KHTN 8 (4 tiết)',
-      'Tổng kết năm học & Đánh giá xếp loại môn KHTN 8 cả năm (4 tiết)'
-    ],
-    9: [
-      'Chương I: Kim loại và Phi kim - Bài 1: Tính chất vật lí và tính chất hóa học của kim loại (4 tiết)',
-      'Bài 2: Dãy hoạt động hóa học của kim loại và ý nghĩa (4 tiết)',
-      'Bài 3: Nhôm (Al) và Sắt (Fe): Tính chất và ứng dụng (4 tiết)',
-      'Bài 4: Hợp kim: Gang và Thép. Sự ăn mòn kim loại và bảo vệ kim loại (4 tiết)',
-      'Bài 5: Phi kim (Carbon, Silicon) và Bảng tuần hoàn các nguyên tố hóa học nâng cao (4 tiết)',
-      'Chương II: Hợp chất hữu cơ và Hydrocarbon - Bài 6: Khái niệm hợp chất hữu cơ và Hóa học hữu cơ (4 tiết)',
-      'Bài 7: Methane (CH4) và Ethylene (C2H4) (4 tiết)',
-      'Bài 8: Acetylene (C2H2) và Benzene (C6H6) (4 tiết)',
-      'Kiểm tra, đánh giá giữa Học kỳ 1 môn KHTN 9 (4 tiết)',
-      'Bài 9: Dầu mỏ, khí thiên nhiên và Nhiên liệu sạch tương lai (4 tiết)',
-      'Chương III: Dẫn xuất Hydrocarbon - Bài 10: Rượu etylic (C2H5OH) và Axit axetic (CH3COOH) (4 tiết)',
-      'Bài 11: Chất béo, Glucose và Saccharose (4 tiết)',
-      'Bài 12: Tinh bột, Cellulose và Polymer tổng hợp (4 tiết)',
-      'Chương IV: Ánh sáng - Bài 13: Hiện tượng khúc xạ ánh sáng (4 tiết)',
-      'Bài 14: Thấu kính hội tụ và Thấu kính phân kì (4 tiết)',
-      'Kiểm tra, đánh giá cuối Học kỳ 1 môn KHTN 9 (4 tiết)',
-      'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức KHTN 9 HK1 (4 tiết)',
-      'Sơ kết Học kỳ 1 & Báo cáo chuyên đề KHTN 9 (4 tiết)',
-      'Chương V: Điện từ học nâng cao - Bài 17: Hiện tượng cảm ứng điện từ (4 tiết)',
-      'Bài 18: Dòng điện xoay chiều và Máy phát điện xoay chiều (4 tiết)',
-      'Bài 19: Máy biến áp và Sự truyền tải điện năng đi xa (4 tiết)',
-      'Chương VI: Năng lượng và Sự bảo toàn - Bài 20: Năng lượng tái tạo và Năng lượng hạt nhân (4 tiết)',
-      'Chương VII: Di truyền học Mendel và Nhiễm sắc thể - Bài 21: Di truyền học Mendel và lai một cặp tính trạng (4 tiết)',
-      'Bài 22: Lai hai cặp tính trạng và Quy luật phân ly độc lập (4 tiết)',
-      'Bài 23: Nhiễm sắc thể và Quá trình Nguyên phân, Giảm phân (4 tiết)',
-      'Kiểm tra, đánh giá giữa Học kỳ 2 môn KHTN 9 (4 tiết)',
-      'Bài 24: Cấu trúc và chức năng của phân tử ADN, ARN và Protein (4 tiết)',
-      'Bài 25: Mối quan hệ giữa ADN - ARN - Protein - Tính trạng (4 tiết)',
-      'Bài 26: Đột biến gen và Đột biến nhiễm sắc thể (4 tiết)',
-      'Bài 27: Di truyền học người và Ứng dụng công nghệ gen trong y học (4 tiết)',
-      'Kiểm tra, đánh giá cuối Học kỳ 2 môn KHTN 9 (4 tiết)',
-      'Chữa bài kiểm tra cuối HK2 & Ôn tập củng cố kiến thức KHTN 9 HK2 (4 tiết)',
-      'Dự án STEM KHTN 9: "Chế tạo Máy phát điện gió Mini & Mô hình Chuỗi ADN 3D Tương tác" (4 tiết)',
-      'Luyện giải đề thi tuyển sinh vào 10 và Ôn tập tổng hợp KHTN 9 (4 tiết)',
-      'Tổng kết năm học & Đánh giá xếp loại môn KHTN 9 cả năm (4 tiết)'
-    ]
-  };
-
-  const topics = khtnTopicsByGrade[g] || khtnTopicsByGrade[7];
-  topics.forEach((name, idx) => {
-    const w = idx + 1;
-    if (w > 35) return;
-    const isGK = w === 9 || w === 26;
-    const isCK = w === 16 || w === 31;
-    const isStem = w === 33 || name.includes('STEM');
-
-    list.push({
-      week: w,
-      topic: name.includes('Chương') ? name.split(' - ')[0] : name.includes('Bài') ? name.split(':')[0] : 'Đánh giá định kỳ',
-      name: name,
-      periods: 4,
-      yccd: `- Nắm vững các định luật vật lí, phản ứng hóa học, cơ chế di truyền và cấu trúc sinh thái của ${name} (SGK KHTN ${g} Kết nối tri thức).\n- Thành thạo kỹ năng tiến hành thí nghiệm khoa học an toàn, thu thập và phân tích dữ liệu thực nghiệm.\n- Bồi dưỡng tư duy khoa học thực nghiệm, tinh thần khám phá và ý thức bảo vệ môi trường sinh thái.`,
-      equipment: 'Phòng thí nghiệm KHTN, bộ hóa chất, dụng cụ quang học, kính hiển vi điện tử, máy đo điện tử',
-      location: 'Phòng thực hành KHTN / Phòng STEM',
-      notes: isGK ? 'Kiểm tra giữa kỳ' : isCK ? 'Kiểm tra cuối kỳ' : isStem ? 'Dự án STEM Khoa học' : ''
-    });
-  });
-
-  return list;
-}
 
 // =========================================================================
 // 5. GIÁO DỤC THỂ CHẤT THCS (LỚP 6, 7, 8, 9) - KẾT NỐI TRI THỨC VỚI CUỘC SỐNG
@@ -1067,7 +702,7 @@ export function buildSecondaryCurriculum(
     const isBlankTest = isEnglish && customYccd === '';
 
     const nls = item.nlsCode !== undefined
-      ? { code: item.nlsCode, requirement: '' }
+      ? { code: item.nlsCode, requirement: lookupNlsRequirement(item.nlsCode) || '' }
       : isBlankTest
       ? { code: '', requirement: '' }
       : isEnglish
@@ -1075,7 +710,7 @@ export function buildSecondaryCurriculum(
       : getNlsCodeForSubjectLesson(g, schoolType, lessonCtx);
 
     const ai = item.aiCode !== undefined
-      ? { code: item.aiCode, requirement: '' }
+      ? { code: item.aiCode, requirement: lookupAiRequirement(item.aiCode)?.requirement || '' }
       : isBlankTest
       ? { code: '', requirement: '' }
       : isEnglish

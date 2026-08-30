@@ -300,7 +300,7 @@ export function lookupAiRequirement(code: string): { title: string; requirement:
     const lines = guide.split('\n').filter((l) => l.startsWith('• MÃ'));
 
     for (const line of lines) {
-      const match = line.match(/• MÃ\s+([^:]+)\s*:\s*([^Y]+?)\s*YÊU CẦU:\s*(.+)$/);
+      const match = line.match(/• MÃ\s+([^:]+)\s*:\s*(.+?)\s*(?:YCCD|YCCĐ|YÊU CẦU):\s*(.+)$/i);
       if (match) {
         const itemCode = match[1].replace(/[^a-zA-Z0-9\.]/g, '').toLowerCase();
         if (itemCode === cleanCode) {
@@ -319,7 +319,7 @@ export function lookupAiRequirement(code: string): { title: string; requirement:
     const lines = guide.split('\n').filter((l) => l.startsWith('• MÃ'));
 
     for (const line of lines) {
-      const match = line.match(/• MÃ\s+([^:]+)\s*:\s*([^Y]+?)\s*YÊU CẦU:\s*(.+)$/);
+      const match = line.match(/• MÃ\s+([^:]+)\s*:\s*(.+?)\s*(?:YCCD|YCCĐ|YÊU CẦU):\s*(.+)$/i);
       if (match) {
         const itemCode = match[1].replace(/[^a-zA-Z0-9\.]/g, '').toLowerCase();
         if (itemCode.startsWith(cleanCode) || cleanCode.startsWith(itemCode)) {

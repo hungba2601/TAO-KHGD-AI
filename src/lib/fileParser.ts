@@ -1,7 +1,7 @@
 /**
  * Intelligent file parser & PPCT curriculum extractor
  * Client-side parser for Word (.docx), PDF, Text, CSV, Markdown
- * Converts uploaded PPCT tables into structured CurriculumItem[] with NLS & AI enrichment
+ * Converts uploaded PPCT / Phụ lục tables into structured CurriculumItem[] with NLS & AI enrichment
  */
 
 import { CurriculumItem, SchoolType } from '../types';
@@ -9,6 +9,8 @@ import { getNlsCodeForSubjectLesson, lookupNlsRequirement } from './constants/nl
 import { getNlsCodeForEnglishLesson, lookupNlsRequirementEn } from './constants/nlsGuidesEn';
 import { getAiCodeForSubjectLesson, lookupAiRequirement } from './constants/aiGuides';
 import { getAiCodeForEnglishLesson, lookupAiRequirementEn } from './constants/aiGuidesEn';
+import { generateSecondaryYccd } from './curriculum/curriculumSecondary';
+import { generateHighSchoolYccd } from './curriculum/curriculumHighSchool';
 
 export interface FileParseResult {
   rawText: string;
@@ -60,7 +62,64 @@ export function formatBulletObjectives(rawText: string): string {
 }
 
 /**
- * Trích xuất các mã NLS & AI từ ô bảng trong tệp Word của giáo viên,
+ * Tự động tạo Yêu cầu cần đạt (YCCĐ) sư phạm chi tiết và chuẩn xác
+ * cho bài học trích xuất từ file PPCT tải lên (dựa vào tên bài, chủ đề, môn học và khối lớp)
+ */
+export function generateYccdForLesson(
+  lessonName: string,
+  topic: string,
+  subject: string,
+  grade: string,
+  schoolType: SchoolType
+): string {
+  const isEn = subject.toLowerCase().includes('tiếng anh') || subject.toLowerCase().includes('english');
+  if (isEn) {
+    return `- Develop communicative language competencies, vocabulary, and grammar structures related to "${lessonName}".\n- Enhance listening, speaking, reading, and writing skills with digital learning tools and interactive activities.`;
+  }
+
+  const name = lessonName.trim();
+  const g = grade.trim() || '6';
+
+  // 1. Kiểm tra đánh giá định kỳ
+  if (name.includes('Kiểm tra, đánh giá giữa Học kỳ 1') || name.includes('KTGK1') || name.includes('Giữa HK1')) {
+    return `- Đánh giá mức độ đạt chuẩn kiến thức, kĩ năng và năng lực môn ${subject} Lớp ${g} từ Tuần 1 đến Tuần 8 theo ma trận chuẩn Bộ GD&ĐT.\n- Phát hiện các điểm cần củng cố để bồi dưỡng kịp thời; rèn luyện tính trung thực và kỹ năng làm bài kiểm tra.`;
+  }
+  if (name.includes('Kiểm tra, đánh giá cuối Học kỳ 1') || name.includes('KTCK1') || name.includes('Cuối HK1') || name.includes('Sơ kết HK1')) {
+    return `- Đánh giá tổng hợp toàn diện kết quả học tập và rèn luyện môn ${subject} Lớp ${g} trong toàn bộ Học kỳ 1.\n- Phân hóa năng lực học sinh làm căn cứ điều chỉnh kế hoạch giáo dục Học kỳ 2; rèn luyện kỷ luật phòng thi.`;
+  }
+  if (name.includes('Kiểm tra, đánh giá giữa Học kỳ 2') || name.includes('KTGK2') || name.includes('Giữa HK2')) {
+    return `- Đánh giá mức độ tiếp thu các nội dung trọng tâm môn ${subject} Lớp ${g} từ Tuần 19 đến Tuần 25 theo ma trận chuẩn Bộ GD&ĐT.\n- Giúp học sinh tự đánh giá năng lực và chuẩn bị tốt cho kỳ kiểm tra cuối năm; rèn luyện tư duy độc lập.`;
+  }
+  if (name.includes('Kiểm tra, đánh giá cuối Học kỳ 2') || name.includes('KTCK2') || name.includes('Cuối HK2') || name.includes('Tổng kết năm học')) {
+    return `- Đánh giá tổng kết mức độ hoàn thành mục tiêu Chương trình GDPT 2018 môn ${subject} Lớp ${g} cả năm học.\n- Đánh giá sự tiến bộ về phẩm chất, năng lực chuyên biệt và tạo nền tảng vững chắc cho năm học tiếp theo.`;
+  }
+
+  // 2. Ôn tập & Chữa bài
+  if (name.includes('Chữa bài') || name.includes('Ôn tập') || name.includes('Củng cố') || name.includes('Luyện tập')) {
+    return `- Hệ thống hóa toàn bộ kiến thức trọng tâm, giải thích cặn kẽ các dạng bài khó và khắc phục sai sót trong: "${name}".\n- Rèn luyện kỹ năng vận dụng linh hoạt kiến thức vào giải quyết các bài tập và tình huống thực tiễn.`;
+  }
+
+  // 3. Dự án STEM & Trải nghiệm
+  if (name.includes('Dự án') || name.includes('STEM') || name.includes('Trải nghiệm')) {
+    return `- Vận dụng kiến thức liên môn để nghiên cứu, thiết kế, thử nghiệm và hoàn thiện sản phẩm sáng tạo trong: "${name}".\n- Thực hiện đúng quy trình thiết kế kỹ thuật, giải quyết vấn đề sáng tạo và phát triển kỹ năng làm việc nhóm.`;
+  }
+
+  // 4. Dùng bộ generator chuyên sâu theo cấp học nếu có
+  const gNum = parseInt(grade, 10) || 6;
+  if (schoolType === 'high_school' || gNum >= 10) {
+    const y = generateHighSchoolYccd(subject, grade, lessonName);
+    if (y && !y.includes('chuẩn bị tổng kết')) return y;
+  } else {
+    const y = generateSecondaryYccd(subject, grade, lessonName);
+    if (y && !y.includes('chuẩn bị tổng kết')) return y;
+  }
+
+  // 5. Fallback chất lượng cao dựa trên tên bài học
+  return `- Nắm vững kiến thức cốt lõi, khái niệm và nội dung trọng tâm trong bài: "${name}" (Chương trình GDPT 2018).\n- Rèn luyện kỹ năng phân tích, thực hành và vận dụng kiến thức bài học vào giải quyết các tình huống thực tiễn đời sống.\n- Bồi dưỡng tư duy khoa học, năng lực tự chủ và phẩm chất chăm chỉ, trách nhiệm.`;
+}
+
+/**
+ * Trích xuất các mã NLS & AI từ ô bảng trong tệp Word/PDF của giáo viên,
  * tự động tra cứu nội dung/yêu cầu chính thức của từng mã và tạo câu mô tả chuẩn.
  */
 export function enrichUploadedNlsAiCell(
@@ -195,7 +254,6 @@ export function formatDigitalCompetencyAndAi(
 
   // 1. NẾU FILE TẢI LÊN ĐÃ CÓ CỘT NLS / AI CÓ MÃ CODE (HOẶC TOOLS)
   if (clean.length > 3) {
-    // Nếu có từ khóa Code / Mã NLS / AI / Tools hoặc chứa các mã NLS/AI
     if (
       clean.includes('Code') ||
       clean.includes('Mã') ||
@@ -208,7 +266,6 @@ export function formatDigitalCompetencyAndAi(
       return enrichUploadedNlsAiCell(clean, isEn, grade, schoolType, contextObj);
     }
 
-    // Nếu nội dung đã có các dòng dạng bullet (• hoặc -)
     if (clean.includes('•') || clean.includes('- ') || clean.includes('\n')) {
       const cleanLines = clean
         .split('\n')
@@ -221,7 +278,6 @@ export function formatDigitalCompetencyAndAi(
       }
     }
 
-    // Nếu là câu mô tả tự do của giáo viên trong file
     return `• ${clean}`;
   }
 
@@ -240,7 +296,6 @@ export function formatDigitalCompetencyAndAi(
 
   return `• [Mã NLS: ${nls.code}] ${nls.requirement}\n• [Mã AI: ${ai.code}] ${ai.requirement}`;
 }
-
 
 /**
  * Extract School metadata from raw text
@@ -261,7 +316,7 @@ export function extractDocumentMetadata(text: string): FileParseResult['detected
   }
 
   // Subject & Grade
-  const subjMatch = text.match(/(?:ENGLISH|TIẾNG ANH|TIN HỌC|TOÁN|NGỮ VĂN|KHOA HỌC TỰ NHIÊN|LỊCH SỬ VÀ ĐỊA LÍ|CÔNG NGHỆ|GIÁO DỤC CÔNG DÂN|ÂM NHẠC|MĨ THUẬT|GIÁO DỤC THỂ CHẤT)\s*(\d{1,2})?/i);
+  const subjMatch = text.match(/(?:ENGLISH|TIẾNG ANH|TIN HỌC|TOÁN|NGỮ VĂN|KHOA HỌC TỰ NHIÊN|LỊCH SỬ VÀ ĐỊA LÍ|LỊCH SỬ|ĐỊA LÍ|CÔNG NGHỆ|GIÁO DỤC CÔNG DÂN|ÂM NHẠC|MĨ THUẬT|GIÁO DỤC THỂ CHẤT|HOẠT ĐỘNG TRẢI NGHIỆM|VẬT LÍ|HOÁ HỌC|SINH HỌC)\s*(\d{1,2})?/i);
   if (subjMatch) {
     const rawSubj = subjMatch[0].trim();
     if (rawSubj.toUpperCase().includes('ENGLISH') || rawSubj.toUpperCase().includes('TIẾNG ANH')) {
@@ -271,6 +326,14 @@ export function extractDocumentMetadata(text: string): FileParseResult['detected
     }
     if (subjMatch[1]) {
       metadata.grade = subjMatch[1];
+    }
+  }
+
+  // Grade explicit fallback
+  if (!metadata.grade) {
+    const gradeMatch = text.match(/(?:Lớp|Khối|Grade)\s*(\d{1,2})/i);
+    if (gradeMatch) {
+      metadata.grade = gradeMatch[1];
     }
   }
 
@@ -284,11 +347,265 @@ export function extractDocumentMetadata(text: string): FileParseResult['detected
 }
 
 /**
+ * Intelligent Text & PDF PPCT Extractor:
+ * Trích xuất danh mục bài học, số tiết, tuần học từ văn bản thuần (PDF, DOCX text, Markdown, CSV)
+ * Tự động tạo YCCĐ chi tiết & tích hợp đầy đủ NLS + AI
+ */
+export function extractCurriculumFromText(
+  text: string,
+  subject = 'Khoa học tự nhiên',
+  grade = '6',
+  schoolType: SchoolType = 'secondary'
+): CurriculumItem[] {
+  if (!text || !text.trim()) return [];
+
+  const lines = text.split('\n').map((l) => l.trim()).filter(Boolean);
+  const isEn = subject.toLowerCase().includes('tiếng anh') || subject.toLowerCase().includes('english');
+  const curriculum: CurriculumItem[] = [];
+
+  // =========================================================================
+  // CHIẾN LƯỢC 1: XỬ LÝ DẠNG BẢNG MARKDOWN HOẶC BẢNG CÁCH NHAU BẰNG DẤU GẠCH (|)
+  // =========================================================================
+  const pipeLines = lines.filter((l) => l.startsWith('|') && l.endsWith('|') && l.includes('|'));
+  if (pipeLines.length >= 3) {
+    let colWeek = -1;
+    let colTopic = -1;
+    let colLesson = -1;
+    let colPeriod = -1;
+    let colObjectives = -1;
+    let colNlsAi = -1;
+    let colEquipment = -1;
+    let colLocation = -1;
+
+    let headerIndex = -1;
+    for (let r = 0; r < Math.min(4, pipeLines.length); r++) {
+      const cells = pipeLines[r]
+        .split('|')
+        .slice(1, -1)
+        .map((c) => c.trim().toLowerCase());
+
+      for (let c = 0; c < cells.length; c++) {
+        const t = cells[c];
+        if (t.includes('week') || t.includes('tuần') || t.includes('thời điểm')) colWeek = c;
+        else if (t.includes('unit') || t.includes('chủ đề') || t.includes('topic') || t.includes('chương')) colTopic = c;
+        else if (t.includes('lesson') || t.includes('bài') || t.includes('tên bài') || t.includes('nội dung')) {
+          if (colLesson === -1) colLesson = c;
+          else if (colTopic === -1) { colTopic = colLesson; colLesson = c; }
+        } else if (t.includes('period') || t.includes('tiết') || t.includes('số tiết') || t.includes('thời lượng')) colPeriod = c;
+        else if (t.includes('objective') || t.includes('yêu cầu') || t.includes('yccd') || t.includes('mục tiêu')) colObjectives = c;
+        else if (t.includes('digital') || t.includes('năng lực số') || t.includes('ai') || t.includes('nls') || t.includes('công cụ')) colNlsAi = c;
+        else if (t.includes('thiết bị') || t.includes('equipment')) colEquipment = c;
+        else if (t.includes('địa điểm') || t.includes('location') || t.includes('phòng')) colLocation = c;
+      }
+
+      if (colLesson !== -1 || colPeriod !== -1) {
+        headerIndex = r;
+        break;
+      }
+    }
+
+    if (headerIndex !== -1) {
+      let currentWeek = isEn ? 'Week 1' : 'Tuần 1';
+      let currentTopic = isEn ? 'Unit 1' : 'Chủ đề 1';
+      let currentObjectives = '';
+      let currentNlsAi = '';
+      let sttCounter = 1;
+
+      for (let r = headerIndex + 1; r < pipeLines.length; r++) {
+        const rowStr = pipeLines[r];
+        if (rowStr.includes('---') || rowStr.includes('===') || !rowStr.includes('|')) continue;
+
+        const cells = rowStr.split('|').slice(1, -1).map((c) => c.trim());
+        if (cells.length === 0) continue;
+
+        const getCell = (idx: number) => (idx >= 0 && idx < cells.length ? cells[idx] : '');
+
+        const rawWeek = getCell(colWeek);
+        if (rawWeek) {
+          const matchNum = rawWeek.match(/\d+/);
+          currentWeek = matchNum ? (isEn ? `Week ${matchNum[0]}` : `Tuần ${matchNum[0]}`) : rawWeek;
+        }
+
+        const rawTopic = getCell(colTopic);
+        if (rawTopic && rawTopic.length > 1) {
+          currentTopic = rawTopic;
+        }
+
+        const rawObj = getCell(colObjectives);
+        if (rawObj && rawObj.length > 5) {
+          currentObjectives = rawObj;
+        }
+
+        const rawNls = getCell(colNlsAi);
+        if (rawNls && rawNls.length > 3) {
+          currentNlsAi = rawNls;
+        }
+
+        let lessonText = getCell(colLesson);
+        const periodText = getCell(colPeriod);
+        let periodCount = 1;
+
+        if (periodText) {
+          const numMatch = periodText.match(/\d+/);
+          if (numMatch) periodCount = parseInt(numMatch[0], 10) || 1;
+        }
+
+        if (!lessonText && periodText && isNaN(Number(periodText))) {
+          lessonText = periodText;
+        }
+
+        if (!lessonText || lessonText.toLowerCase().includes('tổng cộng') || lessonText.toLowerCase().includes('total')) {
+          continue;
+        }
+
+        const cleanLessonName = lessonText.replace(/^[-•*–—\d\.\)]\s*/, '').replace(/\s+/g, ' ').trim();
+        if (cleanLessonName.length < 3) continue;
+
+        const finalYccd = currentObjectives
+          ? formatBulletObjectives(currentObjectives)
+          : generateYccdForLesson(cleanLessonName, currentTopic, subject, grade, schoolType);
+
+        const formattedNlsAi = formatDigitalCompetencyAndAi(
+          rawNls || currentNlsAi,
+          subject,
+          grade,
+          schoolType,
+          sttCounter - 1,
+          { lessonName: cleanLessonName, topic: currentTopic, yccd: finalYccd }
+        );
+
+        const defaultEquipment = isEn
+          ? 'Audio CD/MP3 Global Success, Smart TV/Projector, Loudspeaker, LMS'
+          : 'Máy tính, máy chiếu/Tivi thông minh, SGK, học liệu số';
+        const defaultLocation = isEn ? 'Phòng Lab Ngoại ngữ / Lớp học' : 'Phòng học bộ môn';
+
+        curriculum.push({
+          id: `curr-up-txt-${sttCounter}`,
+          stt: sttCounter,
+          topic: currentTopic,
+          lessonName: cleanLessonName,
+          periods: periodCount,
+          week: currentWeek,
+          yccd: finalYccd,
+          equipment: getCell(colEquipment) || defaultEquipment,
+          location: getCell(colLocation) || defaultLocation,
+          digitalCompetency: formattedNlsAi,
+          nlsCode: '',
+          aiCode: '',
+          notes: cleanLessonName.includes('Kiểm tra') ? 'Kiểm tra định kỳ' : cleanLessonName.includes('STEM') ? 'Dự án STEM' : ''
+        });
+
+        sttCounter++;
+      }
+
+      if (curriculum.length > 0) {
+        return curriculum;
+      }
+    }
+  }
+
+  // =========================================================================
+  // CHIẾN LƯỢC 2: QUÉT CÁC DÒNG TIÊU ĐỀ BÀI HỌC VÀ SỐ TIẾT (PPCT DẠNG VĂN BẢN/PDF)
+  // =========================================================================
+  let currentWeekNum = 1;
+  let currentTopic = isEn ? 'Unit 1' : 'Chủ đề 1';
+  let sttCounter = 1;
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+
+    // Phát hiện Tuần / Week
+    const weekMatch = line.match(/(?:Tuần|Week)\s*(\d{1,2})/i);
+    if (weekMatch) {
+      currentWeekNum = parseInt(weekMatch[1], 10) || currentWeekNum;
+    }
+
+    // Phát hiện Chương / Chủ đề / Unit
+    const topicMatch = line.match(/(?:Chương|Chủ đề|Mạch nội dung|Unit|Topic)\s*([IVXLCDM\d]+[:\s\.\-][^\n\r]+)/i);
+    if (topicMatch) {
+      currentTopic = topicMatch[0].trim();
+      continue;
+    }
+
+    // Phát hiện dòng bài học (có chứa Bài/Lesson hoặc Kiểm tra hoặc Dự án hoặc chứa số tiết)
+    const isLessonLine =
+      line.match(/^(?:Bài|Lesson|Chương|Chủ đề|\d+[\.\)]|Tiết)\s+/i) ||
+      line.match(/(?:Kiểm tra|Đánh giá|Ôn tập|Dự án|STEM|Sơ kết|Tổng kết)/i) ||
+      line.match(/(\d+)\s*tiết/i);
+
+    if (!isLessonLine || line.length < 5) continue;
+
+    // Trích xuất số tiết
+    let periodCount = 1;
+    const periodMatch = line.match(/(?:[\(:]\s*)?(\d+)\s*tiết(?:\s*[\)])?/i) || line.match(/Số tiết:\s*(\d+)/i);
+    if (periodMatch) {
+      periodCount = Math.min(parseInt(periodMatch[1], 10), 10) || 1;
+    }
+
+    // Làm sạch tên bài học
+    let cleanLessonName = line
+      .replace(/^(?:Tuần|Week)\s*\d+[:\s\.\-]+\s*/i, '')
+      .replace(/^[-•*–—\d\.\)]\s*/, '')
+      .replace(/\s*\([\d\s]+tiết\)/i, '')
+      .replace(/\s*-\s*\d+\s*tiết/i, '')
+      .replace(/\s*:\s*\d+\s*tiết/i, '')
+      .replace(/\s+/g, ' ')
+      .trim();
+
+    if (cleanLessonName.length < 4 || cleanLessonName.toLowerCase().startsWith('tổng số')) {
+      continue;
+    }
+
+    const currentWeekStr = isEn ? `Week ${currentWeekNum}` : `Tuần ${currentWeekNum}`;
+
+    const finalYccd = generateYccdForLesson(cleanLessonName, currentTopic, subject, grade, schoolType);
+
+    const formattedNlsAi = formatDigitalCompetencyAndAi(
+      '',
+      subject,
+      grade,
+      schoolType,
+      sttCounter - 1,
+      { lessonName: cleanLessonName, topic: currentTopic, yccd: finalYccd }
+    );
+
+    const defaultEquipment = isEn
+      ? 'Audio CD/MP3 Global Success, Smart TV/Projector, Loudspeaker, LMS'
+      : 'Máy tính, máy chiếu/Tivi thông minh, SGK, học liệu số';
+    const defaultLocation = isEn ? 'Phòng Lab Ngoại ngữ / Lớp học' : 'Phòng học bộ môn';
+
+    curriculum.push({
+      id: `curr-up-line-${sttCounter}`,
+      stt: sttCounter,
+      topic: currentTopic,
+      lessonName: cleanLessonName,
+      periods: periodCount,
+      week: currentWeekStr,
+      yccd: finalYccd,
+      equipment: defaultEquipment,
+      location: defaultLocation,
+      digitalCompetency: formattedNlsAi,
+      nlsCode: '',
+      aiCode: '',
+      notes: cleanLessonName.includes('Kiểm tra') ? 'Kiểm tra định kỳ' : cleanLessonName.includes('STEM') ? 'Dự án STEM' : ''
+    });
+
+    sttCounter++;
+    // Tự động phân bổ tuần nếu file không ghi tuần tường minh
+    if (!weekMatch && sttCounter % 2 === 0 && currentWeekNum < 35) {
+      currentWeekNum++;
+    }
+  }
+
+  return curriculum;
+}
+
+/**
  * Extract curriculum table from DOM / HTML
  */
 export function extractCurriculumFromHtml(
   html: string,
-  subject = 'Tiếng Anh',
+  subject = 'Khoa học tự nhiên',
   grade = '6',
   schoolType: SchoolType = 'secondary'
 ): CurriculumItem[] {
@@ -339,7 +656,7 @@ export function extractCurriculumFromHtml(
       const text = cells[c];
       if (text.includes('week') || text.includes('tuần') || text.includes('thời điểm') || text === 'w' || text === 't') {
         colWeek = c;
-      } else if (text.includes('unit') || text.includes('chủ đề') || text.includes('topic') || text.includes('mạch')) {
+      } else if (text.includes('unit') || text.includes('chủ đề') || text.includes('topic') || text.includes('chương') || text.includes('mạch')) {
         colTopic = c;
       } else if (text.includes('lesson') || text.includes('bài học') || text.includes('tên bài') || text.includes('nội dung')) {
         if (colLesson === -1) colLesson = c;
@@ -385,7 +702,7 @@ export function extractCurriculumFromHtml(
     colLesson = numCols >= 5 ? 2 : 1;
     colPeriod = numCols >= 5 ? 3 : 2;
   }
-  if (colObjectives === -1) colObjectives = numCols >= 5 ? numCols - 2 : numCols - 1;
+  if (colObjectives === -1 && numCols >= 5) colObjectives = numCols - 2;
   if (colNlsAi === -1 && numCols >= 5) colNlsAi = numCols - 1;
 
   // Running tracking context across rows (for merged cells)
@@ -428,7 +745,7 @@ export function extractCurriculumFromHtml(
 
     // Update NLS & AI
     const rawNls = getCellText(colNlsAi);
-    if (rawNls && rawNls.length > 5) {
+    if (rawNls && rawNls.length > 3) {
       currentNlsAi = rawNls;
     }
 
@@ -468,6 +785,9 @@ export function extractCurriculumFromHtml(
       }
     }
 
+    // Tự động tạo YCCĐ chi tiết nếu file gốc chưa có cột YCCĐ
+    const finalYccd = currentObjectives || generateYccdForLesson(cleanLessonName, currentTopic, subject, grade, schoolType);
+
     // Format Digital Competency & AI for this item
     const formattedNlsAi = formatDigitalCompetencyAndAi(
       rawNls || currentNlsAi,
@@ -478,7 +798,7 @@ export function extractCurriculumFromHtml(
       {
         lessonName: cleanLessonName,
         topic: currentTopic,
-        yccd: currentObjectives
+        yccd: finalYccd
       }
     );
 
@@ -487,22 +807,24 @@ export function extractCurriculumFromHtml(
     const rawLoc = getCellText(colLocation);
 
     const defaultEquipment = isEn
-      ? 'Audio CD/MP3 Global Success, Smartboard, SGK, LMS'
-      : 'Máy chiếu tương tác, học liệu số, SGK Kết nối tri thức';
+      ? 'Audio CD/MP3 Global Success, Smart TV/Projector, Loudspeaker, LMS'
+      : 'Máy tính, máy chiếu/Tivi thông minh, SGK, học liệu số';
     const defaultLocation = isEn ? 'Phòng Lab Ngoại ngữ / Lớp học' : 'Phòng học bộ môn';
 
     curriculum.push({
-      id: `curr-up-${sttCounter}`,
+      id: `curr-up-html-${sttCounter}`,
       stt: sttCounter,
       topic: currentTopic,
       lessonName: cleanLessonName,
       periods: periodCount,
       week: currentWeek,
-      yccd: currentObjectives || formatBulletObjectives(''),
+      yccd: finalYccd,
       equipment: rawEq || defaultEquipment,
       location: rawLoc || defaultLocation,
       digitalCompetency: formattedNlsAi,
-      notes: ''
+      nlsCode: '',
+      aiCode: '',
+      notes: cleanLessonName.includes('Kiểm tra') ? 'Kiểm tra định kỳ' : cleanLessonName.includes('STEM') ? 'Dự án STEM' : ''
     });
 
     sttCounter++;
@@ -666,14 +988,14 @@ export function convertHtmlToMarkdownTable(html: string): string {
 }
 
 /**
- * Main function: Extract text, HTML, metadata, and curriculum from file
+ * Main function: Extract text, HTML, metadata, and curriculum from file (PDF, DOCX, TXT, CSV, MD)
  */
 export async function extractAndParseFile(
   file: File,
   context?: { subject?: string; grade?: string; schoolType?: SchoolType }
 ): Promise<FileParseResult> {
   const fileName = file.name.toLowerCase();
-  const subject = context?.subject || 'Tiếng Anh';
+  const subject = context?.subject || 'Khoa học tự nhiên';
   const grade = context?.grade || '6';
   const schoolType = context?.schoolType || 'secondary';
 
@@ -693,9 +1015,17 @@ export async function extractAndParseFile(
     });
 
     const metadata = extractDocumentMetadata(text);
+    const parsedCurriculum = extractCurriculumFromText(
+      text,
+      metadata?.subject || subject,
+      metadata?.grade || grade,
+      schoolType
+    );
+
     return {
       rawText: text,
       extractedCharCount: text.length,
+      parsedCurriculum: parsedCurriculum.length > 0 ? parsedCurriculum : undefined,
       detectedMetadata: metadata
     };
   }
@@ -717,16 +1047,26 @@ export async function extractAndParseFile(
       // Extract metadata from headers
       const metadata = extractDocumentMetadata(rawText);
 
-      // Extract curriculum items from HTML table
-      const parsedCurriculum = extractCurriculumFromHtml(
+      // Convert HTML table into formatted Markdown
+      const markdownTable = convertHtmlToMarkdownTable(html);
+
+      // Extract curriculum items from HTML table first
+      let parsedCurriculum = extractCurriculumFromHtml(
         html,
         metadata?.subject || subject,
         metadata?.grade || grade,
         schoolType
       );
 
-      // Convert HTML table into formatted Markdown
-      const markdownTable = convertHtmlToMarkdownTable(html);
+      // If HTML table extraction found nothing (e.g. text list in word), parse from markdown/text
+      if (parsedCurriculum.length === 0) {
+        parsedCurriculum = extractCurriculumFromText(
+          markdownTable || rawText,
+          metadata?.subject || subject,
+          metadata?.grade || grade,
+          schoolType
+        );
+      }
 
       return {
         rawText: markdownTable || rawText,
@@ -771,9 +1111,18 @@ export async function extractAndParseFile(
       const cleanText = fullText.trim();
       const metadata = extractDocumentMetadata(cleanText);
 
+      // Intelligent extraction of curriculum items from PDF text
+      const parsedCurriculum = extractCurriculumFromText(
+        cleanText,
+        metadata?.subject || subject,
+        metadata?.grade || grade,
+        schoolType
+      );
+
       return {
         rawText: cleanText,
         extractedCharCount: cleanText.length,
+        parsedCurriculum: parsedCurriculum.length > 0 ? parsedCurriculum : undefined,
         detectedMetadata: metadata
       };
     } catch (err: any) {
@@ -790,9 +1139,19 @@ export async function extractAndParseFile(
     reader.readAsText(file, 'utf-8');
   });
 
+  const metadata = extractDocumentMetadata(text);
+  const parsedCurriculum = extractCurriculumFromText(
+    text,
+    metadata?.subject || subject,
+    metadata?.grade || grade,
+    schoolType
+  );
+
   return {
     rawText: text,
-    extractedCharCount: text.length
+    extractedCharCount: text.length,
+    parsedCurriculum: parsedCurriculum.length > 0 ? parsedCurriculum : undefined,
+    detectedMetadata: metadata
   };
 }
 
