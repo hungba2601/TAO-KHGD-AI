@@ -247,7 +247,49 @@ Hãy tạo JSON có cấu trúc sau:
 }
 
 export function buildPhase2Prompt(config: ConfigFormData): string {
+  const isEn = config.subject.toLowerCase().includes('tiếng anh') || config.subject.toLowerCase().includes('english') || config.subject.toLowerCase().includes('tieng anh');
   const attachedSection = buildAttachedFilesSection(config);
+
+  if (isEn) {
+    return `Hãy xây dựng PHỤ LỤC 2: KẾ HOẠCH TỔ CHỨC CÁC HOẠT ĐỘNG GIÁO DỤC CỦA TỔ CHUYÊN MÔN (English Festivals, Workshops, STEM & AI Projects according to MOET Decision 2422 & Circular 3456) cho môn Tiếng Anh Khối ${config.grade} - Năm học ${config.academicYear} tại ${config.schoolName}.
+QUY TẮC BẮT BUỘC ĐỐI VỚI MÔN TIẾNG ANH:
+- TOÀN BỘ nội dung các trường (title, requirements, timeline, location, host, collaborate, conditions, targetAudience) PHẢI ĐƯỢC VIẾT 100% BẰNG TIẾNG ANH CHUẨN.
+- Timeline ghi dạng "November (Week 11)", "January (Week 19)", "Week 12 - Term 1", "Week 31 - Term 2".
+
+${attachedSection}
+
+Hãy trả về JSON có cấu trúc:
+{
+  "activities": [
+    {
+      "stt": 1,
+      "title": "English Festival & Digital Language Showcase (Grade ${config.grade}) - Academic Year ${config.academicYear}",
+      "requirements": "- Apply communicative skills to design digital presentations and speaking performances.\\n- Integrate digital tools (Circular 3456) and AI language tools (Decision 2422).",
+      "periods": 4,
+      "timeline": "November (Week 11)",
+      "location": "School Hall & English Lab",
+      "host": "Head of Department (${config.departmentHead || config.teacherName})",
+      "collaborate": "Youth Union & Homeroom Teachers",
+      "conditions": "Stage, sound system, smart screens, display booths",
+      "targetAudience": "All Grade ${config.grade} students"
+    }
+  ],
+  "stemProjects": [
+    {
+      "stt": 1,
+      "title": "Interdisciplinary STEM Project: \\"Designing Interactive English Digital Flashcards & Vocabulary Game\\"",
+      "requirements": "- Integrate IT and English knowledge to program language learning games using Scratch/AI tools.\\n- Create interactive study materials and deliver project presentations.",
+      "periods": 3,
+      "timeline": "Week 12 - Term 1",
+      "location": "Computer Lab / STEM Room",
+      "host": "Teacher: ${config.teacherName}",
+      "collaborate": "Grade ${config.grade} Student Groups",
+      "conditions": "Computers, Scratch/Python software, headphones",
+      "targetAudience": "Classes in charge"
+    }
+  ]
+}`;
+  }
 
   return `Hãy xây dựng PHỤ LỤC 2: KẾ HOẠCH TỔ CHỨC CÁC HOẠT ĐỘNG GIÁO DỤC CỦA TỔ CHUYÊN MÔN (Hoạt động trải nghiệm, Chuyên đề STEM, Trải nghiệm số & AI theo QĐ 2422 & CV 3456) bám sát mạch bài học SGK KẾT NỐI TRI THỨC VỚI CUỘC SỐNG cho môn ${config.subject} Khối ${config.grade} - Năm học ${config.academicYear} tại ${config.schoolName}.
 
@@ -287,6 +329,34 @@ Hãy trả về JSON có cấu trúc:
 }
 
 export function buildPhase3Prompt(config: ConfigFormData): string {
+  const isEn = config.subject.toLowerCase().includes('tiếng anh') || config.subject.toLowerCase().includes('english') || config.subject.toLowerCase().includes('tieng anh');
+
+  if (isEn) {
+    return `Hãy xây dựng PHỤ LỤC: KẾ HOẠCH CÁ NHÂN CỦA GIÁO VIÊN (${config.teacherName}) môn Tiếng Anh Khối ${config.grade} trong năm học ${config.academicYear} tại ${config.schoolName} (CT GDPT 2018, Global Success, tích hợp NLS theo CV 3456 và AI theo QĐ 2422).
+QUY TẮC BẮT BUỘC:
+- Toàn bộ nội dung các nhiệm vụ giảng dạy và tự bồi dưỡng viết 100% bằng Tiếng Anh.
+
+Hãy trả về JSON có cấu trúc:
+{
+  "personalPlans": [
+    {
+      "stt": 1,
+      "taskName": "Execute the English Teaching Plan (Grade ${config.grade})",
+      "timeFrame": "Throughout the academic year (35 weeks)",
+      "content": "Deliver Grade ${config.grade} English curriculum compliant with CT GDPT 2018; foster communicative competencies, digital literacy, and AI-driven autonomous learning.",
+      "targets": "100% lesson plans prepared according to CV 5512 standards; over 98% students meeting proficiency standards; over 35% achieving Good/Excellent grades.",
+      "measures": "Implement student-centered communicative language teaching, integrate AI tools for differentiated learning, and use interactive multimedia flashcards."
+    }
+  ],
+  "selfTraining": {
+    "professionalStudy": "Self-study and complete 100% of TEMIS regular professional development modules for English with Good/Excellent ratings.",
+    "itAndAiUpskilling": "Participate in training courses on Generative AI in ELT (English Language Teaching), mastering prompt engineering, Canva for Education, LMS, and EduPlan AI tools.",
+    "homeroomWork": "Execute homeroom teacher responsibilities diligently, organize creative English-infused class activities, foster student communication skills and positive classroom environment.",
+    "extraDuties": "Strictly comply with school board assignments, actively participate in pedagogical competitions, English club activities, and community educational movements."
+  }
+}`;
+  }
+
   return `Hãy xây dựng PHỤ LỤC 3: KẾ HOẠCH GIÁO DỤC CỦA CÁ NHÂN GIÁO VIÊN (${config.teacherName}) môn ${config.subject} Khối ${config.grade} trong năm học ${config.academicYear} tại ${config.schoolName} (giảng dạy theo SGK Kết nối tri thức, nâng cao năng lực NLS theo CV 3456 và AI theo QĐ 2422).
 
 Hãy trả về JSON có cấu trúc:

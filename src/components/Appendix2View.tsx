@@ -12,6 +12,10 @@ interface Appendix2ViewProps {
 
 export const Appendix2View: React.FC<Appendix2ViewProps> = ({ planData, onUpdatePlan }) => {
   const { config, appendix2 } = planData;
+  const isEn =
+    config.subject.toLowerCase().includes('tiếng anh') ||
+    config.subject.toLowerCase().includes('english') ||
+    config.subject.toLowerCase().includes('tieng anh');
 
   return (
     <div className="space-y-6 animate-in fade-in duration-300">
@@ -62,7 +66,7 @@ export const Appendix2View: React.FC<Appendix2ViewProps> = ({ planData, onUpdate
         {/* Section 1: Hoạt động trải nghiệm số & AI */}
         <div className="space-y-3 font-sans">
           <h3 className="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider bg-slate-100 dark:bg-slate-800/80 px-3.5 py-2 rounded-xl">
-            I. Các Hoạt động Giáo dục, Ngày hội Trải nghiệm số &amp; Ứng dụng AI
+            I. {isEn ? 'Educational Activities, Digital Experience & AI Applications (Các Hoạt động GD, Trải nghiệm số & AI)' : 'Các Hoạt động Giáo dục, Ngày hội Trải nghiệm số & Ứng dụng AI'}
           </h3>
 
           <div className="overflow-x-auto rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
@@ -70,11 +74,11 @@ export const Appendix2View: React.FC<Appendix2ViewProps> = ({ planData, onUpdate
               <thead>
                 <tr className="bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 border-b border-slate-200 dark:border-slate-700 font-bold">
                   <th className="p-3 w-12 text-center border-r border-slate-200 dark:border-slate-700">STT</th>
-                  <th className="p-3 w-64 border-r border-slate-200 dark:border-slate-700">Chủ đề / Hoạt động</th>
-                  <th className="p-3 w-16 text-center border-r border-slate-200 dark:border-slate-700">Số tiết</th>
-                  <th className="p-3 w-28 text-center border-r border-slate-200 dark:border-slate-700">Thời điểm</th>
-                  <th className="p-3 w-48 border-r border-slate-200 dark:border-slate-700">Địa điểm &amp; Chủ trì</th>
-                  <th className="p-3">Yêu cầu cần đạt &amp; Điều kiện CSVC</th>
+                  <th className="p-3 w-64 border-r border-slate-200 dark:border-slate-700">{isEn ? 'Theme / Activity (Chủ đề / Hoạt động)' : 'Chủ đề / Hoạt động'}</th>
+                  <th className="p-3 w-20 text-center border-r border-slate-200 dark:border-slate-700">{isEn ? 'Periods' : 'Số tiết'}</th>
+                  <th className="p-3 w-32 text-center border-r border-slate-200 dark:border-slate-700">{isEn ? 'Timeline' : 'Thời điểm'}</th>
+                  <th className="p-3 w-52 border-r border-slate-200 dark:border-slate-700">{isEn ? 'Location & Host (Địa điểm & Chủ trì)' : 'Địa điểm & Chủ trì'}</th>
+                  <th className="p-3">{isEn ? 'Objectives & Facilities (YCCĐ & CSVC)' : 'Yêu cầu cần đạt & Điều kiện CSVC'}</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100 dark:divide-slate-800 text-slate-700 dark:text-slate-300">
@@ -87,18 +91,18 @@ export const Appendix2View: React.FC<Appendix2ViewProps> = ({ planData, onUpdate
                       {act.title}
                     </td>
                     <td className="p-3 text-center font-semibold border-r border-slate-100 dark:border-slate-800">
-                      {act.periods} tiết
+                      {act.periods} {isEn ? (act.periods > 1 ? 'periods' : 'period') : 'tiết'}
                     </td>
                     <td className="p-3 text-center border-r border-slate-100 dark:border-slate-800 text-slate-600 dark:text-slate-400">
                       {act.timeline}
                     </td>
                     <td className="p-3 border-r border-slate-100 dark:border-slate-800">
                       <p className="font-medium text-slate-900 dark:text-white">{act.location}</p>
-                      <p className="text-[10px] text-amber-600 dark:text-amber-400 font-medium">Chủ trì: {act.host}</p>
+                      <p className="text-[10px] text-amber-600 dark:text-amber-400 font-medium">{isEn ? 'Host: ' : 'Chủ trì: '}{act.host}</p>
                     </td>
                     <td className="p-3 text-[11px]">
                       <p className="font-medium text-slate-800 dark:text-slate-200">{act.requirements}</p>
-                      <p className="text-[10px] text-slate-500 mt-0.5">CSVC: {act.conditions}</p>
+                      <p className="text-[10px] text-slate-500 mt-0.5">{isEn ? 'Facilities: ' : 'CSVC: '}{act.conditions}</p>
                     </td>
                   </tr>
                 ))}
@@ -110,7 +114,7 @@ export const Appendix2View: React.FC<Appendix2ViewProps> = ({ planData, onUpdate
         {/* Section 2: Chuyên đề STEM liên môn */}
         <div className="space-y-3 font-sans">
           <h3 className="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider bg-slate-100 dark:bg-slate-800/80 px-3.5 py-2 rounded-xl">
-            II. Chuyên đề Dự án STEM Liên môn
+            II. {isEn ? 'Interdisciplinary STEM Projects (Chuyên đề Dự án STEM Liên môn)' : 'Chuyên đề Dự án STEM Liên môn'}
           </h3>
 
           <div className="overflow-x-auto rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
@@ -118,10 +122,10 @@ export const Appendix2View: React.FC<Appendix2ViewProps> = ({ planData, onUpdate
               <thead>
                 <tr className="bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 border-b border-slate-200 dark:border-slate-700 font-bold">
                   <th className="p-3 w-12 text-center border-r border-slate-200 dark:border-slate-700">STT</th>
-                  <th className="p-3 w-64 border-r border-slate-200 dark:border-slate-700">Tên Dự án STEM</th>
-                  <th className="p-3 w-20 text-center border-r border-slate-200 dark:border-slate-700">Thời lượng</th>
-                  <th className="p-3 w-36 text-center border-r border-slate-200 dark:border-slate-700">Thời điểm &amp; Địa điểm</th>
-                  <th className="p-3">Mục tiêu &amp; Vật liệu chế tạo</th>
+                  <th className="p-3 w-64 border-r border-slate-200 dark:border-slate-700">{isEn ? 'STEM Project (Tên Dự án STEM)' : 'Tên Dự án STEM'}</th>
+                  <th className="p-3 w-24 text-center border-r border-slate-200 dark:border-slate-700">{isEn ? 'Duration' : 'Thời lượng'}</th>
+                  <th className="p-3 w-40 text-center border-r border-slate-200 dark:border-slate-700">{isEn ? 'Timeline & Location' : 'Thời điểm & Địa điểm'}</th>
+                  <th className="p-3">{isEn ? 'Objectives & Materials (Mục tiêu & Vật liệu)' : 'Mục tiêu & Vật liệu chế tạo'}</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100 dark:divide-slate-800 text-slate-700 dark:text-slate-300">
@@ -134,7 +138,7 @@ export const Appendix2View: React.FC<Appendix2ViewProps> = ({ planData, onUpdate
                       {stem.title}
                     </td>
                     <td className="p-3 text-center font-semibold border-r border-slate-100 dark:border-slate-800">
-                      {stem.periods} tiết
+                      {stem.periods} {isEn ? (stem.periods > 1 ? 'periods' : 'period') : 'tiết'}
                     </td>
                     <td className="p-3 text-center border-r border-slate-100 dark:border-slate-800">
                       <p className="font-medium text-slate-900 dark:text-white">{stem.timeline}</p>
@@ -142,7 +146,7 @@ export const Appendix2View: React.FC<Appendix2ViewProps> = ({ planData, onUpdate
                     </td>
                     <td className="p-3 text-[11px]">
                       <p className="font-medium text-slate-800 dark:text-slate-200">{stem.requirements}</p>
-                      <p className="text-[10px] text-amber-600 dark:text-amber-400 mt-0.5">Vật liệu: {stem.conditions}</p>
+                      <p className="text-[10px] text-amber-600 dark:text-amber-400 mt-0.5">{isEn ? 'Materials: ' : 'Vật liệu: '}{stem.conditions}</p>
                     </td>
                   </tr>
                 ))}

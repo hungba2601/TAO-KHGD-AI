@@ -477,7 +477,7 @@ export function generateMockPlan(config: ConfigFormData): PlanData {
           title: `English Festival & Digital Language Showcase (Grade ${gradeNum}) - Academic Year ${config.academicYear}`,
           requirements: `Apply Global Success Grade ${gradeNum} communicative skills to design digital presentations and speaking performances.`,
           periods: 4,
-          timeline: 'Tháng 11 (Tuần 11)',
+          timeline: 'November (Week 11)',
           location: 'School Hall & English Lab',
           host: `Head of Department (${config.departmentHead || config.teacherName})`,
           collaborate: 'Youth Union & Homeroom Teachers',
@@ -490,7 +490,7 @@ export function generateMockPlan(config: ConfigFormData): PlanData {
           title: 'Interactive Workshop: "AI-Powered English Learning & Smart Digital Tools for Students"',
           requirements: 'Equip students with digital language skills, AI chatbot practice, and safe online communication ethics.',
           periods: 3,
-          timeline: 'Tháng 01 (Tuần 19)',
+          timeline: 'January (Week 19)',
           location: 'Digital Language Lab / LMS Online',
           host: `English Teacher (${config.teacherName})`,
           collaborate: 'IT Department',
@@ -535,7 +535,7 @@ export function generateMockPlan(config: ConfigFormData): PlanData {
           title: `Interdisciplinary STEM Project: "Designing Interactive English Digital Flashcards & Vocabulary Game"`,
           requirements: `Integrate IT and English knowledge to program language learning games using Scratch/AI tools.`,
           periods: 3,
-          timeline: 'Tuần 12 - Học kỳ 1',
+          timeline: 'Week 12 - Term 1',
           location: 'Computer Lab / STEM Room',
           host: `Teacher: ${config.teacherName}`,
           collaborate: 'Grade ' + gradeNum + ' Student Groups',
@@ -548,7 +548,7 @@ export function generateMockPlan(config: ConfigFormData): PlanData {
           title: `STEM & AI Project: "AI English Chatbot & Pronunciation Practice Assistant"`,
           requirements: `Build and train a basic AI chatbot with prompts and voice recognition for daily dialogue practice.`,
           periods: 4,
-          timeline: 'Tuần 31 - Học kỳ 2',
+          timeline: 'Week 31 - Term 2',
           location: 'STEM & AI Lab',
           host: `Teacher: ${config.teacherName}`,
           collaborate: 'Informatics - English Department',
@@ -591,58 +591,104 @@ export function generateMockPlan(config: ConfigFormData): PlanData {
     stt: index + 1,
     lessonName: c.lessonName,
     periods: c.periods,
-    timeline: typeof c.week === 'number' ? (isEn ? `Week ${c.week}` : `Tuần ${c.week}`) : c.week,
-    equipment: c.equipment || 'Máy tính, máy chiếu/Tivi thông minh, SGK, phần mềm dạy học',
-    location: c.location || (config.schoolType === 'primary' ? 'Phòng học Tiếng Anh/Tin học' : 'Phòng học bộ môn'),
+    timeline: typeof c.week === 'number' ? (isEn ? `Week ${c.week}` : `Tuần ${c.week}`) : (isEn ? String(c.week).replace(/tuần\s*/i, 'Week ') : c.week),
+    equipment: c.equipment || (isEn ? 'Audio CD/MP3 Global Success, Smart TV/Projector, Loudspeaker, Flashcards, LMS' : 'Máy tính, máy chiếu/Tivi thông minh, SGK, phần mềm dạy học'),
+    location: c.location || (isEn ? 'English Language Lab / Classroom' : (config.schoolType === 'primary' ? 'Phòng học Tiếng Anh/Tin học' : 'Phòng học bộ môn')),
     notes: c.notes || ''
   }));
 
   // Phụ lục: Kế hoạch Cá nhân (Nhiệm vụ sư phạm & AI)
-  const personalPlans: TeacherPlanItem[] = [
-    {
-      id: 'pp-1',
-      stt: 1,
-      taskName: 'Thực hiện kế hoạch giảng dạy môn ' + subjectName,
-      timeFrame: isEn ? 'Throughout the academic year (35 weeks)' : 'Suốt năm học (35 tuần thực học)',
-      content: `Giảng dạy đảm bảo chuẩn kiến thức kỹ năng môn ${subjectName} lớp ${gradeNum} theo SGK; tích hợp giáo dục đạo đức, kỹ năng sống và năng lực số cho học sinh.`,
-      targets: '100% tiết dạy có giáo án chất lượng theo CV 5512/2345; 98% học sinh đạt chuẩn yêu cầu trở lên; trên 35% học sinh xếp loại Tốt/Xuất sắc.',
-      measures: 'Đổi mới phương pháp dạy học lấy học sinh làm trung tâm, ứng dụng công cụ AI hỗ trợ phân hóa đối tượng.'
-    },
-    {
-      id: 'pp-2',
-      stt: 2,
-      taskName: 'Công tác Kiểm tra, đánh giá thường xuyên & định kỳ',
-      timeFrame: 'Theo biên chế năm học của nhà trường',
-      content: 'Xây dựng ma trận, bảng đặc tả và đề kiểm tra chuẩn hóa; chấm chữa bài kịp thời, nhận xét chi tiết sự tiến bộ của từng học sinh.',
-      targets: '100% bài kiểm tra đúng tiến độ, lưu trữ hồ sơ sổ điểm điện tử minh bạch, khách quan.',
-      measures: 'Ứng dụng ngân hàng câu hỏi trắc nghiệm số hóa, đa dạng hóa hình thức đánh giá qua sản phẩm dự án và thuyết trình.'
-    },
-    {
-      id: 'pp-3',
-      stt: 3,
-      taskName: 'Bồi dưỡng học sinh giỏi & Phụ đạo học sinh cần hỗ trợ',
-      timeFrame: 'Từ tháng 10/2025 đến tháng 04/2026',
-      content: 'Phát hiện nhân tố có năng khiếu để bồi dưỡng thi HSG các cấp; tổ chức kèm cặp phụ đạo nhóm học sinh còn hạn chế kiến thức.',
-      targets: 'Đạt tối thiểu 02 giải HSG cấp Quận/Huyện; 100% học sinh diện phụ đạo cải thiện điểm số và hoàn thành môn học.',
-      measures: 'Xây dựng chuyên đề nâng cao riêng biệt; phân công học tập đôi bạn cùng tiến và liên hệ chặt chẽ với phụ huynh.'
-    },
-    {
-      id: 'pp-4',
-      stt: 4,
-      taskName: 'Sinh hoạt tổ chuyên môn & Nghiên cứu bài học (SHCM theo NCBH)',
-      timeFrame: isEn ? 'Every 2 weeks' : 'Định kỳ 2 tuần/lần',
-      content: 'Tham gia đầy đủ các buổi sinh hoạt chuyên môn, thao giảng cụm trường, đóng góp ý kiến xây dựng bài học minh họa.',
-      targets: 'Thực hiện ít nhất 02 tiết thao giảng chuyên đề cấp trường/cụm; viết 01 sáng kiến kinh nghiệm được hội đồng công nhận.',
-      measures: 'Chủ động nghiên cứu tài liệu hướng dẫn của Bộ GD&ĐT, chia sẻ kinh nghiệm giảng dạy số và ứng dụng CNTT.'
-    }
-  ];
+  const personalPlans: TeacherPlanItem[] = isEn
+    ? [
+        {
+          id: 'pp-1',
+          stt: 1,
+          taskName: `Execute the English Teaching Plan (Grade ${gradeNum})`,
+          timeFrame: 'Throughout the academic year (35 weeks)',
+          content: `Deliver Grade ${gradeNum} English curriculum compliant with CT GDPT 2018 (Global Success); foster communicative competencies, digital literacy, and AI-driven autonomous learning.`,
+          targets: '100% lesson plans prepared according to CV 5512/2345 standards; over 98% students meeting proficiency standards; over 35% achieving Good/Excellent grades.',
+          measures: 'Implement student-centered communicative language teaching, integrate AI tools for differentiated learning, and use interactive multimedia flashcards.'
+        },
+        {
+          id: 'pp-2',
+          stt: 2,
+          taskName: 'Regular & Periodic English Assessment',
+          timeFrame: 'According to the school academic schedule (Weeks 9, 18, 26, 35)',
+          content: 'Design standardized test matrices, specification grids, and 4-skill evaluation papers; provide timely feedback and diagnostic error analysis.',
+          targets: '100% assessments conducted on schedule; objective, transparent grading and continuous digital portfolio tracking.',
+          measures: 'Utilize digital question banks, speaking interaction rubrics, and project presentation assessments.'
+        },
+        {
+          id: 'pp-3',
+          stt: 3,
+          taskName: 'Advanced English Training & Remedial Student Tutoring',
+          timeFrame: 'From October 2025 to April 2026',
+          content: 'Nurture high-performing students for English Competitions; conduct remedial tutoring sessions for students requiring language foundation reinforcement.',
+          targets: 'Win at least 02 District/City awards in English competitions; 100% remedial students improve grades and achieve completion.',
+          measures: 'Develop specialized advanced topic modules; establish peer tutoring pairs and maintain close communication with parents.'
+        },
+        {
+          id: 'pp-4',
+          stt: 4,
+          taskName: 'Professional Lesson Study & Department Meetings',
+          timeFrame: 'Every 2 weeks',
+          content: 'Actively participate in English department meetings, inter-school workshops, open lesson observations, and pedagogical discussions.',
+          targets: 'Deliver at least 02 open showcase lessons; submit 01 innovative pedagogical initiative recognized by the school evaluation council.',
+          measures: 'Research MOET communicative guidance, share digital teaching materials, and adopt generative AI workflows for lesson preparation.'
+        }
+      ]
+    : [
+        {
+          id: 'pp-1',
+          stt: 1,
+          taskName: 'Thực hiện kế hoạch giảng dạy môn ' + subjectName,
+          timeFrame: 'Suốt năm học (35 tuần thực học)',
+          content: `Giảng dạy đảm bảo chuẩn kiến thức kỹ năng môn ${subjectName} lớp ${gradeNum} theo SGK; tích hợp giáo dục đạo đức, kỹ năng sống và năng lực số cho học sinh.`,
+          targets: '100% tiết dạy có giáo án chất lượng theo CV 5512/2345; 98% học sinh đạt chuẩn yêu cầu trở lên; trên 35% học sinh xếp loại Tốt/Xuất sắc.',
+          measures: 'Đổi mới phương pháp dạy học lấy học sinh làm trung tâm, ứng dụng công cụ AI hỗ trợ phân hóa đối tượng.'
+        },
+        {
+          id: 'pp-2',
+          stt: 2,
+          taskName: 'Công tác Kiểm tra, đánh giá thường xuyên & định kỳ',
+          timeFrame: 'Theo biên chế năm học của nhà trường',
+          content: 'Xây dựng ma trận, bảng đặc tả và đề kiểm tra chuẩn hóa; chấm chữa bài kịp thời, nhận xét chi tiết sự tiến bộ của từng học sinh.',
+          targets: '100% bài kiểm tra đúng tiến độ, lưu trữ hồ sơ sổ điểm điện tử minh bạch, khách quan.',
+          measures: 'Ứng dụng ngân hàng câu hỏi trắc nghiệm số hóa, đa dạng hóa hình thức đánh giá qua sản phẩm dự án và thuyết trình.'
+        },
+        {
+          id: 'pp-3',
+          stt: 3,
+          taskName: 'Bồi dưỡng học sinh giỏi & Phụ đạo học sinh cần hỗ trợ',
+          timeFrame: 'Từ tháng 10/2025 đến tháng 04/2026',
+          content: 'Phát hiện nhân tố có năng khiếu để bồi dưỡng thi HSG các cấp; tổ chức kèm cặp phụ đạo nhóm học sinh còn hạn chế kiến thức.',
+          targets: 'Đạt tối thiểu 02 giải HSG cấp Quận/Huyện; 100% học sinh diện phụ đạo cải thiện điểm số và hoàn thành môn học.',
+          measures: 'Xây dựng chuyên đề nâng cao riêng biệt; phân công học tập đôi bạn cùng tiến và liên hệ chặt chẽ với phụ huynh.'
+        },
+        {
+          id: 'pp-4',
+          stt: 4,
+          taskName: 'Sinh hoạt tổ chuyên môn & Nghiên cứu bài học (SHCM theo NCBH)',
+          timeFrame: 'Định kỳ 2 tuần/lần',
+          content: 'Tham gia đầy đủ các buổi sinh hoạt chuyên môn, thao giảng cụm trường, đóng góp ý kiến xây dựng bài học minh họa.',
+          targets: 'Thực hiện ít nhất 02 tiết thao giảng chuyên đề cấp trường/cụm; viết 01 sáng kiến kinh nghiệm được hội đồng công nhận.',
+          measures: 'Chủ động nghiên cứu tài liệu hướng dẫn của Bộ GD&ĐT, chia sẻ kinh nghiệm giảng dạy số và ứng dụng CNTT.'
+        }
+      ];
 
-  const selfTraining: TeacherSelfTraining = {
-    professionalStudy: `Tự học và hoàn thành 100% các mô-đun bồi dưỡng thường xuyên môn ${subjectName} trên hệ thống TEMIS đạt kết quả Tốt.`,
-    itAndAiUpskilling: 'Tham gia các khóa đào tạo về Trí tuệ nhân tạo tạo sinh (Generative AI) trong giáo dục, thành thạo thiết kế bài giảng tương tác trên Canva, LMS và EduPlan AI.',
-    homeroomWork: 'Thực hiện nghiêm túc công tác quản lý nề nếp lớp, tổ chức các buổi sinh hoạt lớp sáng tạo, giáo dục kỹ năng giao tiếp và xây dựng lớp học hạnh phúc.',
-    extraDuties: 'Chấp hành nghiêm sự phân công của Ban Giám hiệu, tham gia tích cực các phong trào thi đua dạy tốt - học tốt của ngành và địa phương.'
-  };
+  const selfTraining: TeacherSelfTraining = isEn
+    ? {
+        professionalStudy: `Self-study and complete 100% of TEMIS regular professional development modules for English with Good/Excellent ratings.`,
+        itAndAiUpskilling: 'Participate in training courses on Generative AI in ELT (English Language Teaching), mastering prompt engineering, Canva for Education, LMS, and EduPlan AI tools.',
+        homeroomWork: 'Execute homeroom teacher responsibilities diligently, organize creative English-infused class activities, foster student communication skills and positive classroom environment.',
+        extraDuties: 'Strictly comply with school board assignments, actively participate in pedagogical competitions, English club activities, and community educational movements.'
+      }
+    : {
+        professionalStudy: `Tự học và hoàn thành 100% các mô-đun bồi dưỡng thường xuyên môn ${subjectName} trên hệ thống TEMIS đạt kết quả Tốt.`,
+        itAndAiUpskilling: 'Tham gia các khóa đào tạo về Trí tuệ nhân tạo tạo sinh (Generative AI) trong giáo dục, thành thạo thiết kế bài giảng tương tác trên Canva, LMS và EduPlan AI.',
+        homeroomWork: 'Thực hiện nghiêm túc công tác quản lý nề nếp lớp, tổ chức các buổi sinh hoạt lớp sáng tạo, giáo dục kỹ năng giao tiếp và xây dựng lớp học hạnh phúc.',
+        extraDuties: 'Chấp hành nghiêm sự phân công của Ban Giám hiệu, tham gia tích cực các phong trào thi đua dạy tốt - học tốt của ngành và địa phương.'
+      };
 
   const otherTasks: Appendix1Data['otherTasks'] = isEn
     ? {

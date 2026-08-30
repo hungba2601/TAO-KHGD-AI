@@ -29,9 +29,9 @@ export const Appendix3View: React.FC<Appendix3ViewProps> = ({ planData, onUpdate
           stt: index + 1,
           lessonName: c.lessonName,
           periods: c.periods,
-          timeline: typeof c.week === 'number' ? (isEn ? `Week ${c.week}` : `Tuần ${c.week}`) : c.week,
-          equipment: c.equipment || 'Máy tính, máy chiếu/Tivi, SGK, phần mềm dạy học',
-          location: c.location || (config.schoolType === 'primary' ? 'Phòng học Tiếng Anh/Tin học' : 'Phòng học bộ môn'),
+          timeline: typeof c.week === 'number' ? (isEn ? `Week ${c.week}` : `Tuần ${c.week}`) : (isEn ? String(c.week).replace(/tuần\s*/i, 'Week ') : c.week),
+          equipment: c.equipment || (isEn ? 'Audio CD/MP3 Global Success, Smart TV/Projector, Loudspeaker, Flashcards, LMS' : 'Máy tính, máy chiếu/Tivi, SGK, phần mềm dạy học'),
+          location: c.location || (isEn ? 'English Language Lab / Classroom' : (config.schoolType === 'primary' ? 'Phòng học Tiếng Anh/Tin học' : 'Phòng học bộ môn')),
           notes: c.notes || ''
         }));
 
@@ -125,9 +125,9 @@ export const Appendix3View: React.FC<Appendix3ViewProps> = ({ planData, onUpdate
         <div className="space-y-3 font-sans">
           <div className="flex items-center justify-between">
             <h3 className="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider bg-slate-100 dark:bg-slate-800/80 px-3.5 py-2 rounded-xl">
-              I. Kế hoạch Dạy học
+              I. {isEn ? 'Teaching Syllabus & Schedule (Kế hoạch Dạy học)' : 'Kế hoạch Dạy học'}
             </h3>
-            <span className="text-xs text-slate-500">1. Phân phối chương trình ({filteredItems.length} bài/tiết)</span>
+            <span className="text-xs text-slate-500">1. {isEn ? `Teaching Syllabus (${filteredItems.length} ${filteredItems.length > 1 ? 'lessons/periods' : 'lesson/period'})` : `Phân phối chương trình (${filteredItems.length} bài/tiết)`}</span>
           </div>
 
           <div className="overflow-x-auto rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
@@ -135,12 +135,12 @@ export const Appendix3View: React.FC<Appendix3ViewProps> = ({ planData, onUpdate
               <thead>
                 <tr className="bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 border-b border-slate-200 dark:border-slate-700 font-bold text-center">
                   <th className="p-3 w-12 border-r border-slate-200 dark:border-slate-700">STT</th>
-                  <th className="p-3 text-left border-r border-slate-200 dark:border-slate-700">Bài học</th>
-                  <th className="p-3 w-20 border-r border-slate-200 dark:border-slate-700">Số tiết</th>
-                  <th className="p-3 w-24 border-r border-slate-200 dark:border-slate-700">Thời điểm</th>
-                  <th className="p-3 w-60 text-left border-r border-slate-200 dark:border-slate-700">Thiết bị dạy học</th>
-                  <th className="p-3 w-48 text-left border-r border-slate-200 dark:border-slate-700">Địa điểm dạy học</th>
-                  <th className="p-3 w-12">Sửa</th>
+                  <th className="p-3 text-left border-r border-slate-200 dark:border-slate-700">{isEn ? 'Lesson (Bài học)' : 'Bài học'}</th>
+                  <th className="p-3 w-20 border-r border-slate-200 dark:border-slate-700">{isEn ? 'Periods' : 'Số tiết'}</th>
+                  <th className="p-3 w-24 border-r border-slate-200 dark:border-slate-700">{isEn ? 'Timeline' : 'Thời điểm'}</th>
+                  <th className="p-3 w-60 text-left border-r border-slate-200 dark:border-slate-700">{isEn ? 'Teaching Equipment (Thiết bị dạy học)' : 'Thiết bị dạy học'}</th>
+                  <th className="p-3 w-48 text-left border-r border-slate-200 dark:border-slate-700">{isEn ? 'Teaching Location (Địa điểm dạy học)' : 'Địa điểm dạy học'}</th>
+                  <th className="p-3 w-12">{isEn ? 'Edit' : 'Sửa'}</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100 dark:divide-slate-800 text-slate-700 dark:text-slate-300">
@@ -234,14 +234,14 @@ export const Appendix3View: React.FC<Appendix3ViewProps> = ({ planData, onUpdate
         {/* Section 2: Nhiệm vụ khác */}
         <div className="space-y-3 font-sans">
           <h3 className="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider bg-slate-100 dark:bg-slate-800/80 px-3.5 py-2 rounded-xl">
-            II. Nhiệm vụ Khác (nếu có)
+            II. {isEn ? 'Other Pedagogical Duties (Nhiệm vụ Khác)' : 'Nhiệm vụ Khác (nếu có)'}
           </h3>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
             <div className="p-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-800/30 space-y-1.5">
               <span className="font-bold text-slate-900 dark:text-white block flex items-center gap-1.5">
                 <BookOpen className="w-3.5 h-3.5 text-amber-500" />
-                1. Bồi dưỡng Học sinh giỏi:
+                1. {isEn ? 'Advanced Student Training (Bồi dưỡng Học sinh giỏi):' : 'Bồi dưỡng Học sinh giỏi:'}
               </span>
               <p className="text-slate-600 dark:text-slate-300 leading-relaxed">{otherDuties.advancedTraining}</p>
             </div>
@@ -249,7 +249,7 @@ export const Appendix3View: React.FC<Appendix3ViewProps> = ({ planData, onUpdate
             <div className="p-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-800/30 space-y-1.5">
               <span className="font-bold text-slate-900 dark:text-white block flex items-center gap-1.5">
                 <FileText className="w-3.5 h-3.5 text-blue-500" />
-                2. Phụ đạo Học sinh cần Hỗ trợ:
+                2. {isEn ? 'Remedial Student Tutoring (Phụ đạo Học sinh cần Hỗ trợ):' : 'Phụ đạo Học sinh cần Hỗ trợ:'}
               </span>
               <p className="text-slate-600 dark:text-slate-300 leading-relaxed">{otherDuties.remedialTeaching}</p>
             </div>
@@ -257,7 +257,7 @@ export const Appendix3View: React.FC<Appendix3ViewProps> = ({ planData, onUpdate
             <div className="p-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-800/30 space-y-1.5">
               <span className="font-bold text-slate-900 dark:text-white block flex items-center gap-1.5">
                 <Sparkles className="w-3.5 h-3.5 text-indigo-500" />
-                3. Hướng dẫn Nghiên cứu KHKT / STEM &amp; AI:
+                3. {isEn ? 'Scientific Research / STEM & AI Guidance (Nghiên cứu KHKT / STEM & AI):' : 'Hướng dẫn Nghiên cứu KHKT / STEM & AI:'}
               </span>
               <p className="text-slate-600 dark:text-slate-300 leading-relaxed">{otherDuties.scienceResearch}</p>
             </div>
@@ -265,7 +265,7 @@ export const Appendix3View: React.FC<Appendix3ViewProps> = ({ planData, onUpdate
             <div className="p-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-800/30 space-y-1.5">
               <span className="font-bold text-slate-900 dark:text-white block flex items-center gap-1.5">
                 <Layers className="w-3.5 h-3.5 text-emerald-500" />
-                4. Hoạt động Trải nghiệm &amp; Công tác Kiêm nhiệm:
+                4. {isEn ? 'Extracurricular & Other Duties (Hoạt động Trải nghiệm & Công tác Kiêm nhiệm):' : 'Hoạt động Trải nghiệm & Công tác Kiêm nhiệm:'}
               </span>
               <p className="text-slate-600 dark:text-slate-300 leading-relaxed">{otherDuties.extracurricularAndDuties}</p>
             </div>
