@@ -252,36 +252,36 @@ Hãy tạo JSON có cấu trúc sau:
   "selectiveTopics": [
     {
       "stt": 1,
-      "topicName": "Chuyên đề 1: Tên chuyên đề học tập lựa chọn / STEM sáng tạo",
-      "periods": 15,
-      "timeline": "Tuần 10 - Tuần 24",
-      "yccd": "- Biết, nhận biết được...\\n- Trình bày được, hiểu được...\\n- Vận dụng được...",
-      "equipment": "Máy tính, thiết bị thực hành, học liệu số",
-      "location": "Phòng học bộ môn / Phòng STEM",
-      "digitalCompetency": "• [Mã NLS: 5.3.TC2a] Vận dụng công nghệ số tạo ra sản phẩm\\n• [Mã AI: 8.C1.2] Khai thác trợ lý AI hỗ trợ sáng tạo",
-      "notes": "Chuyên đề lựa chọn"
+      "topicName": "${isEn ? 'Topic 1: English for Global Citizenship, Media Literacy and Intercultural Communication' : 'Chuyên đề 1: Tên chuyên đề học tập lựa chọn / STEM sáng tạo'}",
+      "periods": 12,
+      "timeline": "${isEn ? 'Week 8 - Week 19' : 'Tuần 10 - Tuần 24'}",
+      "yccd": "${isEn ? '- Know and recognize key concepts of global citizenship and media literacy.\\n- Explain and present cultural perspectives in fluent English.\\n- Apply communication strategies to participate in discussions and debates.' : '- Biết, nhận biết được...\\n- Trình bày được, hiểu được...\\n- Vận dụng được...'}",
+      "equipment": "${isEn ? 'Smartboard/Projector, Headphones, English LMS, Digital Articles' : 'Máy tính, thiết bị thực hành, học liệu số'}",
+      "location": "${isEn ? 'English Language Lab / Smart Classroom' : 'Phòng học bộ môn / Phòng STEM'}",
+      "digitalCompetency": "${isEn ? '• [NLS Code: 2.1.TC2a] Intercultural digital communication\\n• [AI Code: 8.A1.1] Critical evaluation of AI-generated language responses' : '• [Mã NLS: 5.3.TC2a] Vận dụng công nghệ số tạo ra sản phẩm\\n• [Mã AI: 8.C1.2] Khai thác trợ lý AI hỗ trợ sáng tạo'}",
+      "notes": "${isEn ? 'Global Citizenship & Communication' : 'Chuyên đề lựa chọn'}"
     },
     {
       "stt": 2,
-      "topicName": "Chuyên đề 2: Tên chuyên đề học tập lựa chọn / STEM sáng tạo",
-      "periods": 10,
-      "timeline": "Tuần 22 - Tuần 31",
-      "yccd": "- Biết, nhận biết được...\\n- Trình bày được, hiểu được...\\n- Vận dụng được...",
-      "equipment": "Máy tính, thiết bị thực hành, học liệu số",
-      "location": "Phòng học bộ môn / Phòng STEM",
-      "digitalCompetency": "• [Mã NLS: 3.1.TC2b] Tạo và chỉnh sửa nội dung số\\n• [Mã AI: 8.C2.1] Ứng dụng công cụ AI",
-      "notes": "Chuyên đề lựa chọn"
+      "topicName": "${isEn ? 'Topic 2: Digital Storytelling, Podcast Creation and Media Presentation in English' : 'Chuyên đề 2: Tên chuyên đề học tập lựa chọn / STEM sáng tạo'}",
+      "periods": 11,
+      "timeline": "${isEn ? 'Week 20 - Week 30' : 'Tuần 22 - Tuần 31'}",
+      "yccd": "${isEn ? '- Know and recognize script structures for Podcasts and recording tools.\\n- Deliver fluent English presentations with natural intonation.\\n- Apply target language skills to author and publish English podcasts.' : '- Biết, nhận biết được...\\n- Trình bày được, hiểu được...\\n- Vận dụng được...'}",
+      "equipment": "${isEn ? 'Studio Microphones, Canva/Audacity software, Laptops' : 'Máy tính, thiết bị thực hành, học liệu số'}",
+      "location": "${isEn ? 'Multimedia Language Lab / Smart Classroom' : 'Phòng học bộ môn / Phòng STEM'}",
+      "digitalCompetency": "${isEn ? '• [NLS Code: 3.1.TC2b] Creative multimedia digital content authoring\\n• [AI Code: 8.C1.2] English AI pronunciation feedback tools' : '• [Mã NLS: 3.1.TC2b] Tạo và chỉnh sửa nội dung số\\n• [Mã AI: 8.C2.1] Ứng dụng công cụ AI'}",
+      "notes": "${isEn ? 'Digital Storytelling & Podcasts' : 'Chuyên đề lựa chọn'}"
     },
     {
       "stt": 3,
-      "topicName": "Chuyên đề 3: Tên chuyên đề học tập lựa chọn / STEM sáng tạo",
-      "periods": 10,
-      "timeline": "Tuần 1 - Tuần 10",
-      "yccd": "- Biết, nhận biết được...\\n- Trình bày được, hiểu được...\\n- Vận dụng được...",
-      "equipment": "Máy tính, thiết bị thực hành, học liệu số",
-      "location": "Phòng học bộ môn / Phòng STEM",
-      "digitalCompetency": "• [Mã NLS: 1.3.TC2a] Phân tích và trực quan hóa dữ liệu\\n• [Mã AI: 8.D1.1] Giải pháp số giải quyết vấn đề",
-      "notes": "Chuyên đề lựa chọn"
+      "topicName": "${isEn ? 'Topic 3: English for STEM Exploration, Sustainable Development and Global Scientific Research' : 'Chuyên đề 3: Tên chuyên đề học tập lựa chọn / STEM sáng tạo'}",
+      "periods": 12,
+      "timeline": "${isEn ? 'Week 1 - Week 12' : 'Tuần 1 - Tuần 10'}",
+      "yccd": "${isEn ? '- Know and recognize specialized terminology for science and SDGs.\\n- Explain and present STEM project descriptions in English.\\n- Apply scientific writing skills to design green solutions and posters.' : '- Biết, nhận biết được...\\n- Trình bày được, hiểu được...\\n- Vận dụng được...'}",
+      "equipment": "${isEn ? 'Scientific posters, Projector, Online STEM databases, Laptops' : 'Máy tính, thiết bị thực hành, học liệu số'}",
+      "location": "${isEn ? 'STEM Lab / English Language Room' : 'Phòng học bộ môn / Phòng STEM'}",
+      "digitalCompetency": "${isEn ? '• [NLS Code: 5.3.TC2a] Collaborative STEM digital projects\\n• [AI Code: 8.D1.1] AI prompts for bilingual scientific research' : '• [Mã NLS: 1.3.TC2a] Phân tích và trực quan hóa dữ liệu\\n• [Mã AI: 8.D1.1] Giải pháp số giải quyết vấn đề'}",
+      "notes": "${isEn ? 'English for STEM & Sustainability' : 'Chuyên đề lựa chọn'}"
     }
   ],
   "otherTasks": {

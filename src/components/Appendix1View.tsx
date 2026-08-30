@@ -139,14 +139,20 @@ export const Appendix1View: React.FC<Appendix1ViewProps> = ({ planData, onUpdate
     const newTopic: SelectiveTopicItem = {
       id: `st-custom-${Date.now()}`,
       stt: newStt,
-      topicName: `Chuyên đề ${newStt}: Ứng dụng Công nghệ số và AI mở rộng trong môn ${config.subject}`,
+      topicName: isEn
+        ? `Topic ${newStt}: English for Digital Communication & Media Authoring`
+        : `Chuyên đề ${newStt}: Ứng dụng Công nghệ số và AI mở rộng trong môn ${config.subject}`,
       periods: 10,
-      timeline: `Tuần ${20 + newStt * 2} - Tuần ${28 + newStt * 2}`,
-      yccd: `- Biết, nhận biết được các khái niệm và nguyên lý ứng dụng thực tiễn của chuyên đề.\n- Trình bày được và hiểu rõ quy trình thực hiện, kỹ năng nghiên cứu và giải quyết vấn đề.\n- Vận dụng được kiến thức vào sáng tạo sản phẩm học tập và thực hành thực tế.`,
-      equipment: 'Máy tính, máy chiếu, tài liệu học liệu số, phần mềm chuyên dụng',
-      location: 'Phòng học bộ môn / Phòng Tin học',
-      digitalCompetency: `• [Mã NLS: 5.3.TC2a] Vận dụng công nghệ số tạo ra sản phẩm sáng tạo\n• [Mã AI: 8.C1.2] Khai thác trợ lý AI hỗ trợ học tập và nghiên cứu`,
-      notes: 'Chuyên đề tự chọn bổ sung'
+      timeline: isEn ? `Week ${20 + newStt * 2} - Week ${28 + newStt * 2}` : `Tuần ${20 + newStt * 2} - Tuần ${28 + newStt * 2}`,
+      yccd: isEn
+        ? `- Know and recognize key concepts and practical applications of the topic.\n- Explain and present implementation procedures and research findings in English.\n- Apply language and digital knowledge to create interactive learning products.`
+        : `- Biết, nhận biết được các khái niệm và nguyên lý ứng dụng thực tiễn của chuyên đề.\n- Trình bày được và hiểu rõ quy trình thực hiện, kỹ năng nghiên cứu và giải quyết vấn đề.\n- Vận dụng được kiến thức vào sáng tạo sản phẩm học tập và thực hành thực tế.`,
+      equipment: isEn ? 'Smartboard, Laptops, Headphones, English Digital Resources' : 'Máy tính, máy chiếu, tài liệu học liệu số, phần mềm chuyên dụng',
+      location: isEn ? 'English Language Lab / Smart Classroom' : 'Phòng học bộ môn / Phòng Tin học',
+      digitalCompetency: isEn
+        ? `• [NLS Code: 5.3.TC2a] Digital content creation and collaboration\n• [AI Code: 8.C1.2] Autonomous AI-powered English learning tools`
+        : `• [Mã NLS: 5.3.TC2a] Vận dụng công nghệ số tạo ra sản phẩm sáng tạo\n• [Mã AI: 8.C1.2] Khai thác trợ lý AI hỗ trợ học tập và nghiên cứu`,
+      notes: isEn ? 'Elective English Topic' : 'Chuyên đề tự chọn bổ sung'
     };
     const updated = [...selectiveTopicsList, newTopic];
     onUpdatePlan({

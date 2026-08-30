@@ -153,9 +153,9 @@ export function getSelectiveTopicsBySubjectAndGrade(
         topicName: `Topic 1: English for Global Citizenship, Media Literacy and Intercultural Communication`,
         periods: 12,
         timeline: 'Week 8 - Week 19',
-        yccd: `- Biết và nhận diện được các khái niệm về công dân toàn cầu, bản sắc văn hóa và nghi thức giao tiếp đa quốc gia.\n- Trình bày được và hiểu rõ các quan điểm văn hóa đa dạng, tin tức truyền thông quốc tế bằng Tiếng Anh.\n- Vận dụng được vốn từ vựng và cấu trúc giao tiếp quốc tế vào các buổi tọa đàm, tranh biện tiếng Anh.`,
-        equipment: 'Projector, Headphones, English LMS Platform, Digital Articles',
-        location: 'English Language Lab / Classroom',
+        yccd: `- Know and recognize key concepts of global citizenship, cultural diversity, media literacy and intercultural communication etiquette.\n- Explain and present diverse cultural perspectives, international media news and multimedia reports in fluent English.\n- Apply international communication strategies, vocabulary and discussion structures to deliver presentations, seminars and structured debates.`,
+        equipment: 'Smartboard/Projector, Headphones, English LMS Platform, Digital Articles',
+        location: 'English Language Lab / Smart Classroom',
         digitalCompetency: `• [NLS Code: 2.1.TC2a] Intercultural digital communication\n• [AI Code: 8.A1.1] Critical evaluation of AI-generated language responses`,
         notes: 'Global Citizenship & Communication'
       },
@@ -165,9 +165,9 @@ export function getSelectiveTopicsBySubjectAndGrade(
         topicName: `Topic 2: Digital Storytelling, Podcast Creation and Media Presentation in English`,
         periods: 11,
         timeline: 'Week 20 - Week 30',
-        yccd: `- Biết và nhận diện được cấu trúc kịch bản Podcast, video phóng sự và các công cụ ghi âm, tạo phụ đề số.\n- Trình bày được bài thuyết trình tiếng Anh lưu loát, ngữ điệu chuẩn xác và biểu cảm tự nhiên.\n- Vận dụng được kỹ năng ngôn ngữ và công nghệ số để xuất bản tập Podcast tiếng Anh chủ đề học đường.`,
-        equipment: 'Studio Microphones, Canva/Audacity software, Laptops',
-        location: 'Smart Classroom / Multimedia Lab',
+        yccd: `- Know and recognize script structures for Podcasts, video interviews and digital multimedia recording/editing tools.\n- Deliver fluent English presentations with natural intonation, accurate pronunciation and confident expression.\n- Apply target language skills and digital software (Canva, Audacity, CapCut) to author, record and publish school-themed English podcasts.`,
+        equipment: 'Studio Microphones, Canva/Audacity software, Laptops, Smartboard',
+        location: 'Multimedia Language Lab / Smart Classroom',
         digitalCompetency: `• [NLS Code: 3.1.TC2b] Creative multimedia digital content authoring\n• [AI Code: 8.C1.2] English AI pronunciation and grammar feedback tools`,
         notes: 'Digital Storytelling & Podcasts'
       },
@@ -177,9 +177,9 @@ export function getSelectiveTopicsBySubjectAndGrade(
         topicName: `Topic 3: English for STEM Exploration, Sustainable Development and Global Scientific Research`,
         periods: 12,
         timeline: 'Week 1 - Week 12',
-        yccd: `- Biết và nhận diện được thuật ngữ khoa học, công nghệ, môi trường và mục tiêu phát triển bền vững (SDGs).\n- Trình bày được và hiểu nội dung các bài báo khoa học, thuyết minh dự án STEM bằng Tiếng Anh.\n- Vận dụng được kỹ năng viết báo cáo khoa học tiếng Anh và thuyết trình dự án bảo vệ môi trường trước tập thể.`,
-        equipment: 'Scientific posters, Projector, Online STEM databases',
-        location: 'STEM Lab / Language Room',
+        yccd: `- Know and recognize specialized English terminology for science, technology, environment and Sustainable Development Goals (SDGs).\n- Explain and present scientific articles, STEM project descriptions and bilingual findings in English.\n- Apply scientific writing, research methodology and oral presentation skills to design green solutions and present STEM project posters.`,
+        equipment: 'Scientific posters, Projector, Online STEM databases, Laptops',
+        location: 'STEM Lab / English Language Room',
         digitalCompetency: `• [NLS Code: 5.3.TC2a] Collaborative STEM digital projects\n• [AI Code: 8.D1.1] AI prompts for bilingual scientific research`,
         notes: 'English for STEM & Sustainability'
       }
