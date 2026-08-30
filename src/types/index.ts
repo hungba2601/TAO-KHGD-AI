@@ -140,6 +140,9 @@ export interface TeacherLessonPlanItem {
   timeline: string;
   equipment: string;
   location: string;
+  digitalCompetency?: string;
+  nlsCode?: string;
+  aiCode?: string;
   notes?: string;
 }
 

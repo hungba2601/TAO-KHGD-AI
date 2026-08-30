@@ -626,6 +626,9 @@ export async function exportAppendix3Docx(plan: PlanData): Promise<void> {
           timeline: typeof c.week === 'number' ? (isEn ? `Week ${c.week}` : `Tuần ${c.week}`) : (isEn ? String(c.week).replace(/tuần\s*/i, 'Week ') : c.week),
           equipment: c.equipment || (isEn ? 'Audio CD/MP3 Global Success, Smart TV/Projector, Loudspeaker, Flashcards, LMS' : 'Máy tính, máy chiếu/Tivi, SGK, phần mềm dạy học'),
           location: c.location || (isEn ? 'English Language Lab / Classroom' : (config.schoolType === 'primary' ? 'Phòng học Tiếng Anh/Tin học' : 'Phòng học bộ môn')),
+          digitalCompetency: c.digitalCompetency || '',
+          nlsCode: c.nlsCode || '',
+          aiCode: c.aiCode || '',
           notes: c.notes || ''
         }));
 
@@ -656,12 +659,12 @@ export async function exportAppendix3Docx(plan: PlanData): Promise<void> {
               new TableRow({
                 tableHeader: true,
                 children: [
-                  new TableCell({ width: { size: 6, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'STT', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
-                  new TableCell({ width: { size: 34, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: isEn ? 'Bài học (Lesson)' : 'Bài học', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
-                  new TableCell({ width: { size: 8, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: isEn ? 'Số tiết (Periods)' : 'Số tiết', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
-                  new TableCell({ width: { size: 14, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: isEn ? 'Thời điểm (Week)' : 'Thời điểm', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
-                  new TableCell({ width: { size: 20, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: isEn ? 'Thiết bị dạy học (Equipment)' : 'Thiết bị dạy học', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
-                  new TableCell({ width: { size: 18, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: isEn ? 'Địa điểm dạy học (Location)' : 'Địa điểm dạy học', bold: true, font: FONT_FAMILY, size: 20 })] })] })
+                  new TableCell({ width: { size: 5, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'STT', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
+                  new TableCell({ width: { size: 30, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: isEn ? 'Bài học (Lesson)' : 'Bài học', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
+                  new TableCell({ width: { size: 7, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: isEn ? 'Số tiết (Periods)' : 'Số tiết', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
+                  new TableCell({ width: { size: 12, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: isEn ? 'Thời điểm (Week)' : 'Thời điểm', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
+                  new TableCell({ width: { size: 22, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: isEn ? 'Thiết bị dạy học (Equipment)' : 'Thiết bị dạy học', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
+                  new TableCell({ width: { size: 24, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: isEn ? 'Địa điểm & Năng lực số / AI' : 'Địa điểm & Năng lực số / AI', bold: true, font: FONT_FAMILY, size: 20 })] })] })
                 ]
               }),
               ...teachingItems.map((item) => new TableRow({
@@ -671,7 +674,30 @@ export async function exportAppendix3Docx(plan: PlanData): Promise<void> {
                   new TableCell({ children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: item.periods.toString(), font: FONT_FAMILY, size: 20 })] })] }),
                   new TableCell({ children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: isEn ? (typeof item.timeline === 'number' ? `Week ${item.timeline}` : String(item.timeline).replace(/tuần\s*/i, 'Week ')) : item.timeline, font: FONT_FAMILY, size: 20 })] })] }),
                   new TableCell({ children: [new Paragraph({ children: [new TextRun({ text: item.equipment, font: FONT_FAMILY, size: 18 })] })] }),
-                  new TableCell({ children: [new Paragraph({ children: [new TextRun({ text: item.location, font: FONT_FAMILY, size: 18 })] })] })
+                  new TableCell({
+                    children: [
+                      new Paragraph({
+                        spacing: { before: 20, after: 20 },
+                        children: [new TextRun({ text: item.location || (isEn ? 'English Language Lab / Classroom' : 'Phòng học bộ môn'), bold: true, font: FONT_FAMILY, size: 19 })]
+                      }),
+                      ...(item.digitalCompetency
+                        ? item.digitalCompetency
+                            .split('\n')
+                            .filter((l) => l.trim().length > 0)
+                            .map((line) => new Paragraph({
+                              spacing: { before: 20, after: 20 },
+                              children: [
+                                new TextRun({
+                                  text: line.startsWith('•') || line.startsWith('-') ? line : `• ${line}`,
+                                  font: FONT_FAMILY,
+                                  size: 18,
+                                  color: '047857'
+                                })
+                              ]
+                            }))
+                        : [])
+                    ]
+                  })
                 ]
               }))
             ]

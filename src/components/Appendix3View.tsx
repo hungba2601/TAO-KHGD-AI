@@ -32,6 +32,9 @@ export const Appendix3View: React.FC<Appendix3ViewProps> = ({ planData, onUpdate
           timeline: typeof c.week === 'number' ? (isEn ? `Week ${c.week}` : `Tuần ${c.week}`) : (isEn ? String(c.week).replace(/tuần\s*/i, 'Week ') : c.week),
           equipment: c.equipment || (isEn ? 'Audio CD/MP3 Global Success, Smart TV/Projector, Loudspeaker, Flashcards, LMS' : 'Máy tính, máy chiếu/Tivi, SGK, phần mềm dạy học'),
           location: c.location || (isEn ? 'English Language Lab / Classroom' : (config.schoolType === 'primary' ? 'Phòng học Tiếng Anh/Tin học' : 'Phòng học bộ môn')),
+          digitalCompetency: c.digitalCompetency || '',
+          nlsCode: c.nlsCode || '',
+          aiCode: c.aiCode || '',
           notes: c.notes || ''
         }));
 
@@ -40,7 +43,8 @@ export const Appendix3View: React.FC<Appendix3ViewProps> = ({ planData, onUpdate
       item.lessonName.toLowerCase().includes(searchTerm.toLowerCase()) ||
       item.timeline.toLowerCase().includes(searchTerm.toLowerCase()) ||
       item.equipment.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      item.location.toLowerCase().includes(searchTerm.toLowerCase())
+      item.location.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      (item.digitalCompetency && item.digitalCompetency.toLowerCase().includes(searchTerm.toLowerCase()))
   );
 
   const handleUpdateItem = (id: string, field: keyof TeacherLessonPlanItem, value: any) => {
@@ -73,7 +77,7 @@ export const Appendix3View: React.FC<Appendix3ViewProps> = ({ planData, onUpdate
           <Search className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
           <input
             type="text"
-            placeholder={isEn ? "Search lesson, week, equipment..." : "Tìm kiếm bài học, tuần, thiết bị, phòng học..."}
+            placeholder={isEn ? "Search lesson, week, equipment, digital AI..." : "Tìm kiếm bài học, tuần, thiết bị, phòng học, NLS/AI..."}
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             className="w-full pl-9 pr-4 py-2 text-xs rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white outline-none focus:ring-2 focus:ring-amber-500/30"
@@ -136,10 +140,10 @@ export const Appendix3View: React.FC<Appendix3ViewProps> = ({ planData, onUpdate
                 <tr className="bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 border-b border-slate-200 dark:border-slate-700 font-bold text-center">
                   <th className="p-3 w-12 border-r border-slate-200 dark:border-slate-700">STT</th>
                   <th className="p-3 text-left border-r border-slate-200 dark:border-slate-700">{isEn ? 'Lesson (Bài học)' : 'Bài học'}</th>
-                  <th className="p-3 w-20 border-r border-slate-200 dark:border-slate-700">{isEn ? 'Periods' : 'Số tiết'}</th>
-                  <th className="p-3 w-24 border-r border-slate-200 dark:border-slate-700">{isEn ? 'Timeline' : 'Thời điểm'}</th>
-                  <th className="p-3 w-60 text-left border-r border-slate-200 dark:border-slate-700">{isEn ? 'Teaching Equipment (Thiết bị dạy học)' : 'Thiết bị dạy học'}</th>
-                  <th className="p-3 w-48 text-left border-r border-slate-200 dark:border-slate-700">{isEn ? 'Teaching Location (Địa điểm dạy học)' : 'Địa điểm dạy học'}</th>
+                  <th className="p-3 w-16 border-r border-slate-200 dark:border-slate-700">{isEn ? 'Periods' : 'Số tiết'}</th>
+                  <th className="p-3 w-20 border-r border-slate-200 dark:border-slate-700">{isEn ? 'Timeline' : 'Thời điểm'}</th>
+                  <th className="p-3 w-52 text-left border-r border-slate-200 dark:border-slate-700">{isEn ? 'Teaching Equipment (Thiết bị dạy học)' : 'Thiết bị dạy học'}</th>
+                  <th className="p-3 w-64 text-left border-r border-slate-200 dark:border-slate-700">{isEn ? 'Location & Digital Competency / AI' : 'Địa điểm & Năng lực số / AI'}</th>
                   <th className="p-3 w-12">{isEn ? 'Edit' : 'Sửa'}</th>
                 </tr>
               </thead>
@@ -202,16 +206,40 @@ export const Appendix3View: React.FC<Appendix3ViewProps> = ({ planData, onUpdate
                       )}
                     </td>
 
-                    <td className="p-3 text-[11px] text-slate-600 dark:text-slate-400 border-r border-slate-100 dark:border-slate-800">
+                    <td className="p-3 text-[11px] border-r border-slate-100 dark:border-slate-800 leading-relaxed">
                       {editingId === item.id ? (
-                        <input
-                          type="text"
-                          value={item.location}
-                          onChange={(e) => handleUpdateItem(item.id, 'location', e.target.value)}
-                          className="w-full p-1 text-xs rounded border border-amber-400 bg-white dark:bg-slate-800"
-                        />
+                        <div className="space-y-1.5">
+                          <input
+                            type="text"
+                            value={item.location}
+                            onChange={(e) => handleUpdateItem(item.id, 'location', e.target.value)}
+                            placeholder={isEn ? "Teaching location..." : "Địa điểm dạy học..."}
+                            className="w-full p-1.5 text-xs rounded border border-amber-400 bg-white dark:bg-slate-800 font-semibold"
+                          />
+                          <textarea
+                            rows={3}
+                            value={item.digitalCompetency || ''}
+                            onChange={(e) => handleUpdateItem(item.id, 'digitalCompetency', e.target.value)}
+                            placeholder="• [Mã NLS: ...] ...&#10;• [Mã AI: ...] ..."
+                            className="w-full p-1.5 text-xs rounded border border-amber-400 bg-white dark:bg-slate-800 font-mono leading-relaxed"
+                          />
+                        </div>
                       ) : (
-                        item.location
+                        <div className="space-y-1">
+                          <span className="font-bold text-slate-800 dark:text-slate-200 block text-xs">
+                            {item.location || (isEn ? 'English Language Lab / Classroom' : 'Phòng học bộ môn')}
+                          </span>
+                          {item.digitalCompetency && (
+                            <div className="space-y-1 text-emerald-700 dark:text-emerald-300 text-[11px] leading-snug">
+                              {item.digitalCompetency.split('\n').filter((l) => l.trim().length > 0).map((line, dIdx) => (
+                                <div key={dIdx} className="flex items-start gap-1">
+                                  <span className="text-emerald-500 font-bold shrink-0">•</span>
+                                  <span>{line.replace(/^[-•*]\s*/, '')}</span>
+                                </div>
+                              ))}
+                            </div>
+                          )}
+                        </div>
                       )}
                     </td>
 

@@ -594,6 +594,9 @@ export function generateMockPlan(config: ConfigFormData): PlanData {
     timeline: typeof c.week === 'number' ? (isEn ? `Week ${c.week}` : `Tuần ${c.week}`) : (isEn ? String(c.week).replace(/tuần\s*/i, 'Week ') : c.week),
     equipment: c.equipment || (isEn ? 'Audio CD/MP3 Global Success, Smart TV/Projector, Loudspeaker, Flashcards, LMS' : 'Máy tính, máy chiếu/Tivi thông minh, SGK, phần mềm dạy học'),
     location: c.location || (isEn ? 'English Language Lab / Classroom' : (config.schoolType === 'primary' ? 'Phòng học Tiếng Anh/Tin học' : 'Phòng học bộ môn')),
+    digitalCompetency: c.digitalCompetency || '',
+    nlsCode: c.nlsCode || '',
+    aiCode: c.aiCode || '',
     notes: c.notes || ''
   }));
 
