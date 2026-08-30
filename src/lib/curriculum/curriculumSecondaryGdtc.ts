@@ -4,11 +4,12 @@ import { RawSecondaryLesson } from './curriculumSecondary';
  * Phân phối chương trình chi tiết môn Giáo dục thể chất (GDTC) THCS (Lớp 6, 7, 8, 9)
  * Khung chuẩn: 70 tiết/năm = 2 tiết/tuần x 35 tuần
  * 100% chuẩn SGK Kết nối tri thức với cuộc sống & tài liệu gdtc-thcs.md
- * Giữ nguyên các tuần kiểm tra, đánh giá định kỳ:
+ * Các tuần kiểm tra, đánh giá định kỳ chuẩn hóa:
  * - Tuần 9: Kiểm tra, đánh giá giữa Học kỳ 1 (2 tiết)
- * - Tuần 18: Kiểm tra, đánh giá cuối Học kỳ 1 (2 tiết)
+ * - Tuần 16: Kiểm tra, đánh giá cuối Học kỳ 1 (2 tiết)
  * - Tuần 26: Kiểm tra, đánh giá giữa Học kỳ 2 (2 tiết)
- * - Tuần 35: Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học (2 tiết)
+ * - Tuần 31: Kiểm tra, đánh giá cuối Học kỳ 2 (2 tiết)
+ * - Tuần 35: Tổng kết năm học (2 tiết)
  */
 export function getGdtcSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
   const g = parseInt(grade, 10) || 6;
@@ -173,33 +174,33 @@ export function getGdtcSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
       },
       {
         w: 16,
-        t: 'Phần ba: Thể thao tự chọn',
-        n: 'Phần ba: Thể thao tự chọn (Cầu lông / Bóng đá / Bóng rổ) - Bài 1: Bài tập bổ trợ và kĩ thuật di chuyển cơ bản (2 tiết)',
-        y: '- Cầu lông: Thực hiện đúng tư thế chuẩn bị, bài tập bổ trợ cổ tay và di chuyển đơn bước (tiến, lùi, sang ngang).\n- Bóng đá: Thực hiện các bài tập bổ trợ cảm giác bóng và di chuyển không bóng.\n- Bóng rổ: Thực hiện các bài tập bổ trợ chuyền bóng và tư thế phòng thủ cơ bản.',
+        t: 'Đánh giá định kỳ',
+        n: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Giáo dục thể chất 6 (Ném bóng xa có đà & Chạy cự li trung bình) (2 tiết)',
+        y: '- Đánh giá mức độ hoàn thiện kỹ thuật Ném bóng xa có đà và thành tích Chạy cự li trung bình theo chuẩn chương trình.\n- Rèn luyện tinh thần thi đấu trung thực, tự tin, nâng cao ý thức rèn luyện thể thao tự giác.',
+        eq: 'Đề kiểm tra ma trận chuẩn, bóng ném, còi, đồng hồ bấm giây, sổ theo dõi',
+        nls: '1.2.TC1a',
+        ai: '6.A1.3',
+        dc: '• [Mã NLS: 1.2.TC1a] Tra cứu chuẩn đánh giá xếp loại thể lực cuối học kỳ 1 theo quy định Bộ GD&ĐT.\n• [Mã AI: 6.A1.3] Hệ thống số tự động xuất bảng điểm học tập và xếp loại thể lực học sinh HK1.'
+      },
+      {
+        w: 17,
+        t: 'Chữa bài & Thể thao tự chọn',
+        n: 'Chữa bài kiểm tra cuối HK1 & Thể thao tự chọn (Cầu lông / Bóng đá / Bóng rổ) - Bài 1: Bài tập bổ trợ và kĩ thuật di chuyển cơ bản (2 tiết)',
+        y: '- Chữa bài kiểm tra cuối HK1; Cầu lông: Thực hiện đúng tư thế chuẩn bị, di chuyển đơn bước.\n- Bóng đá: Bài tập cảm giác bóng; Bóng rổ: Bài tập chuyền bóng cơ bản.',
         eq: 'Vợt cầu lông, quả cầu lông, bóng đá số 4, bóng rổ số 5, cột lưới',
         nls: '2.1.TC1a',
         ai: '6.C2.2',
         dc: '• [Mã NLS: 2.1.TC1a] Xem video 3D hướng dẫn kỹ thuật di chuyển chân bước đơn/bước kép trong thể thao.\n• [Mã AI: 6.C2.2] Ứng dụng AI phân tích bộ chân di chuyển và độ cân bằng cơ thể (Footwork AI tracker).'
       },
       {
-        w: 17,
-        t: 'Ôn tập tổng hợp Học kỳ 1',
-        n: 'Ôn tập tổng hợp kiến thức và kỹ năng Vận động cơ bản (Ném bóng, Chạy cự li trung bình, Chạy ngắn 60m) Học kỳ 1 (2 tiết)',
-        y: '- Củng cố toàn diện kỹ thuật ném bóng xa có đà và kỹ năng chạy cự li trung bình.\n- Tự đánh giá năng lực thể chất cá nhân và sẵn sàng cho bài kiểm tra cuối học kỳ 1.',
-        eq: 'Bóng ném, còi, đồng hồ bấm giây, thước đo',
-        nls: '1.3.TC1a',
-        ai: '6.A1.3',
-        dc: '• [Mã NLS: 1.3.TC1a] Tổng hợp bảng thống kê thành tích các nội dung thể chất HK1 trên ứng dụng Google Sheets/LMS.\n• [Mã AI: 6.A1.3] AI tổng hợp bảng báo cáo tiến bộ thể lực học sinh HK1 gửi giáo viên và phụ huynh.'
-      },
-      {
         w: 18,
-        t: 'Đánh giá định kỳ',
-        n: 'Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Giáo dục thể chất 6 (Ném bóng xa có đà & Chạy cự li trung bình) (2 tiết)',
-        y: '- Đánh giá mức độ hoàn thiện kỹ thuật Ném bóng xa có đà và thành tích Chạy cự li trung bình theo chuẩn chương trình.\n- Rèn luyện tinh thần thi đấu trung thực, tự tin, nâng cao ý thức rèn luyện thể thao tự giác.',
-        eq: 'Đề kiểm tra ma trận chuẩn, bóng ném, còi, đồng hồ bấm giây, sổ theo dõi',
-        nls: '1.2.TC1a',
-        ai: '6.D1.1',
-        dc: '• [Mã NLS: 1.2.TC1a] Tra cứu chuẩn đánh giá xếp loại thể lực cuối học kỳ 1 theo quy định Bộ GD&ĐT.\n• [Mã AI: 6.D1.1] Hệ thống số tự động xuất bảng điểm học tập và xếp loại thể chất học sinh HK1.'
+        t: 'Sơ kết Học kỳ 1',
+        n: 'Sơ kết Học kỳ 1 & Giao lưu trò chơi vận động, thể thao học đường Lớp 6 (2 tiết)',
+        y: '- Sơ kết, đánh giá quá trình học tập và rèn luyện thể chất trong Học kỳ 1; tổ chức giao lưu trò chơi vận động phát triển thể lực.',
+        eq: 'Còi, bóng, cờ, loa truyền thông',
+        nls: '2.4.TC1a',
+        ai: '6.B1.1',
+        dc: '• [Mã NLS: 2.4.TC1a] Hợp tác tổ chức hoạt động thi đua trò chơi thể thao tập thể.\n• [Mã AI: 6.B1.1] AI hỗ trợ chia đội ngẫu nhiên cân bằng thể lực cho các trò chơi vận động.'
       },
 
       // HỌC KỲ 2 (Tuần 19 - 35)
@@ -278,35 +279,35 @@ export function getGdtcSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         t: 'Đánh giá định kỳ',
         n: 'Kiểm tra, đánh giá giữa Học kỳ 2 môn Giáo dục thể chất 6 (Thể thao tự chọn: Cầu lông / Bóng đá / Bóng rổ & Chạy cự li ngắn 60m) (2 tiết)',
         y: '- Đánh giá mức độ nắm vững kỹ thuật Thể thao tự chọn và thành tích Chạy cự li ngắn 60m.\n- Đảm bảo tính khách quan, an toàn và tinh thần thể thao cao thượng.',
-        eq: 'Phiếu đánh giá kỹ thuật thể thao, đồng hồ bấm giây, dụng cụ môn học',
+        eq: 'Đề kiểm tra chuẩn, sân bãi, đồng hồ bấm giây, dụng cụ môn tự chọn',
         nls: '1.2.TC1a',
-        ai: '6.A1.1',
-        dc: '• [Mã NLS: 1.2.TC1a] Tra cứu thang điểm đánh giá kỹ thuật thể thao tự chọn theo hướng dẫn chuyên môn.\n• [Mã AI: 6.A1.1] Nhận diện và ghi nhận thành tích thi đấu tự động qua hệ thống camera thể thao số.'
+        ai: '6.D1.1',
+        dc: '• [Mã NLS: 1.2.TC1a] Nhập kết quả kiểm tra vào biểu mẫu chấm điểm số trực tiếp trên sân tập.\n• [Mã AI: 6.D1.1] Hệ thống AI hỗ trợ tính điểm trung bình và phân loại kết quả học sinh tức thì.'
       },
       {
         w: 27,
-        t: 'Chủ đề 3. Chạy cự li trung bình',
-        n: 'Chủ đề 3. Chạy cự li trung bình - Luyện tập chạy bền trên địa hình tự nhiên, rèn phương pháp thở và hồi tĩnh (2 tiết)',
-        y: '- Thực hiện chạy bền cự li 500m (nam) / 400m (nữ) trên đường chạy quanh khuôn viên trường học.\n- Thực hiện đúng các bài tập căng cơ, thả lỏng, hít thở sâu hồi tĩnh sau khi kết thúc cự li chạy.',
-        eq: 'Khuôn viên sân trường râm mát, còi, bình nước uống cá nhân',
-        nls: '4.3.TC1a',
-        ai: '6.C1.1',
-        dc: '• [Mã NLS: 4.3.TC1a] Sử dụng ứng dụng đo nhịp tim điện tử để theo dõi quá trình phục hồi thể lực sau chạy.\n• [Mã AI: 6.C1.1] AI đưa ra lời khuyên thời gian nghỉ ngơi và bù nước tương ứng với nhịp tim đạt được.'
+        t: 'Phần ba: Thể thao tự chọn',
+        n: 'Phần ba: Thể thao tự chọn - Nâng cao kỹ thuật đánh cầu cao sâu / Đá bóng bằng mu trong / Ném rổ một tay trên vai (2 tiết)',
+        y: '- Cầu lông: Kỹ thuật đánh cầu cao sâu cuối sân tạo quỹ đạo cầu bổng an toàn.\n- Bóng đá: Kỹ thuật đá bóng bằng mu trong bàn chân tạo đường bóng xoáy bổng.\n- Bóng rổ: Hoàn thiện kỹ thuật ném rổ một tay trên vai chuẩn xác.',
+        eq: 'Sân bãi, trụ rổ, cầu lông, bóng đá',
+        nls: '2.1.TC1a',
+        ai: '6.C2.2',
+        dc: '• [Mã NLS: 2.1.TC1a] Xem hình ảnh mô phỏng kỹ thuật quay cổ tay và duỗi gối tăng lực ném/sút.\n• [Mã AI: 6.C2.2] AI phân tích quỹ đạo bóng/cầu để tư vấn điểm ngắm tối ưu.'
       },
       {
         w: 28,
-        t: 'Trò chơi vận động & Rèn thể lực',
-        n: 'Chủ đề 2. Ném bóng & Chủ đề 1. Chạy cự li ngắn - Trò chơi vận động phát triển sức nhanh và sức mạnh bộc phát (2 tiết)',
-        y: '- Tích cực tham gia các trò chơi vận động: "Chạy tiếp sức con thoi", "Ném bóng trúng đích tiếp sức".\n- Phát triển tố chất nhanh nhẹn, khéo léo, phản xạ linh hoạt và tinh thần đoàn kết đồng đội.',
-        eq: 'Bóng ném, cờ đuôi nheo, gậy tiếp sức, vạch đích',
-        nls: '2.1.TC1a',
-        ai: '6.D1.1',
-        dc: '• [Mã NLS: 2.1.TC1a] Xem luật chơi và sơ đồ bố trí trò chơi vận động qua máy tính bảng trực quan.\n• [Mã AI: 6.D1.1] AI gợi ý biến thể luật chơi trò chơi thể thao tăng tính hấp dẫn và tương tác nhóm.'
+        t: 'Phần ba: Thể thao tự chọn',
+        n: 'Phần ba: Thể thao tự chọn - Kỹ thuật phòng thủ và di chuyển chiến thuật (2 tiết)',
+        y: '- Cầu lông: Kỹ thuật đỡ đập cầu và di chuyển đổi hướng linh hoạt.\n- Bóng đá: Kỹ thuật tranh cướp bóng bằng cách tì đè hợp lệ và kèm người.\n- Bóng rổ: Kỹ thuật di chuyển trượt phòng thủ một kèm một (1 vs 1).',
+        eq: 'Cọc tiêu phân làn di chuyển, còi, dụng cụ chuyên môn',
+        nls: '5.2.TC1a',
+        ai: '6.C1.1',
+        dc: '• [Mã NLS: 5.2.TC1a] Sử dụng đồng hồ thông minh đo nhịp tim và quãng đường di chuyển phòng thủ.\n• [Mã AI: 6.C1.1] Trợ lý AI đưa ra gợi ý điều chỉnh tư thế trọng tâm thấp khi trượt phòng thủ.'
       },
       {
         w: 29,
         t: 'Phần ba: Thể thao tự chọn',
-        n: 'Phần ba: Thể thao tự chọn - Luyện tập kỹ chiến thuật thi đấu đơn, đôi (Cầu lông/Bóng đá) (2 tiết)',
+        n: 'Phần ba: Thể thao tự chọn - Phối hợp chiến thuật nhóm và đấu tập theo luật hiện hành (2 tiết)',
         y: '- Nắm vững vị trí đứng, cách di chuyển phối hợp bọc lót trong thi đấu đôi (Cầu lông) hoặc phối hợp nhóm 3 người (Bóng đá).\n- Nâng cao tư duy chiến thuật và khả năng quan sát tình huống trên sân.',
         eq: 'Sân bãi tiêu chuẩn, dụng cụ thi đấu đầy đủ, còi',
         nls: '2.4.TC1a',
@@ -325,9 +326,19 @@ export function getGdtcSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
       },
       {
         w: 31,
-        t: 'Đánh giá thể lực học sinh',
-        n: 'Kiểm tra đánh giá và phân loại thể lực học sinh lớp 6 theo tiêu chuẩn rèn luyện thân thể (QĐ 53/2008/QĐ-BGDĐT) (2 tiết)',
-        y: '- Thực hiện nghiêm túc các nội dung tiêu chuẩn rèn luyện thân thể: Chạy 30m xuất phát cao, Bật xa tại chỗ, Chạy bền 500m/400m, Nằm ngửa gập bụng.\n- Đạt chuẩn thể lực theo lứa tuổi quy định của Bộ GD&ĐT.',
+        t: 'Đánh giá định kỳ',
+        n: 'Kiểm tra, đánh giá cuối Học kỳ 2 môn Giáo dục thể chất 6 (2 tiết)',
+        y: '- Đánh giá tổng hợp kết quả học tập và rèn luyện thể chất của học sinh trong cả năm học lớp 6 theo chuẩn GDPT 2018.\n- Đảm bảo tính công bằng, khách quan, chính xác.',
+        eq: 'Đề kiểm tra ma trận chuẩn, còi, đồng hồ bấm giây, bóng ném, sân bãi',
+        nls: '1.2.TC1a',
+        ai: '6.D1.1',
+        dc: '• [Mã NLS: 1.2.TC1a] Tra cứu barem đánh giá xếp loại thể chất cuối năm học theo Thông tư 22/2021/TT-BGDĐT.\n• [Mã AI: 6.D1.1] Hệ thống tự động xuất bảng điểm học tập và xếp loại môn GDTC 6.'
+      },
+      {
+        w: 32,
+        t: 'Chữa bài & Đánh giá thể lực',
+        n: 'Chữa bài kiểm tra cuối HK2 & Kiểm tra đánh giá thể lực học sinh lớp 6 theo tiêu chuẩn rèn luyện thân thể (QĐ 53/2008/QĐ-BGDĐT) (2 tiết)',
+        y: '- Chữa bài kiểm tra cuối HK2; thực hiện nghiêm túc các nội dung tiêu chuẩn rèn luyện thân thể: Chạy 30m xuất phát cao, Bật xa tại chỗ, Chạy bền 500m/400m, Nằm ngửa gập bụng.',
         eq: 'Thảm đo bật xa, đồng hồ bấm giây, thước đo chiều cao - cân nặng BMI',
         nls: '1.3.TC1a',
         ai: '6.C1.1',
@@ -365,8 +376,8 @@ export function getGdtcSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
       },
       {
         w: 35,
-        t: 'Đánh giá định kỳ & Tổng kết năm học',
-        n: 'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Giáo dục thể chất 6 (2 tiết)',
+        t: 'Tổng kết năm học',
+        n: 'Tổng kết năm học & Đánh giá xếp loại môn Giáo dục thể chất 6 cả năm (2 tiết)',
         y: '- Đánh giá tổng hợp kết quả học tập và rèn luyện thể chất của học sinh trong cả năm học lớp 6.\n- Tuyên dương các cá nhân, tập thể có thành tích thể thao xuất sắc; bế mạc chương trình GDTC 6.',
         eq: 'Bảng điểm tổng hợp năm học, sổ theo dõi giáo viên, giấy khen thể thao',
         nls: '1.3.TC1a',
@@ -377,7 +388,7 @@ export function getGdtcSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
 
     grade6Weeks.forEach((item) => {
       const isGK = item.w === 9 || item.w === 26;
-      const isCK = item.w === 18 || item.w === 35;
+      const isCK = item.w === 16 || item.w === 31;
 
       list.push({
         week: item.w,
@@ -390,7 +401,7 @@ export function getGdtcSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         nlsCode: item.nls,
         aiCode: item.ai,
         digitalCompetency: item.dc,
-        notes: isGK ? 'Kiểm tra giữa kỳ' : isCK ? 'Kiểm tra cuối kỳ' : item.w === 31 ? 'Đánh giá thể lực QĐ 53' : ''
+        notes: isGK ? 'Kiểm tra giữa kỳ' : isCK ? 'Kiểm tra cuối kỳ' : item.w === 32 ? 'Đánh giá thể lực QĐ 53' : ''
       });
     });
 
@@ -556,33 +567,33 @@ export function getGdtcSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
       },
       {
         w: 16,
-        t: 'Phần ba: Thể thao tự chọn',
-        n: 'Phần ba: Thể thao tự chọn (Cầu lông / Bóng đá / Bóng rổ) - Kỹ thuật chuyên môn lớp 7 (2 tiết)',
-        y: '- Cầu lông: Kỹ thuật phát cầu thuận tay và đánh cầu cao tay bên phải.\n- Bóng đá: Kỹ thuật đá bóng bằng mu trong bàn chân và dừng bóng lăn bằng mu giữa bàn chân.\n- Bóng rổ: Kỹ thuật chuyền bắt bóng hai tay trước ngực bật đất và hai bước ném rổ một tay trên vai.',
+        t: 'Đánh giá định kỳ',
+        n: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Giáo dục thể chất 7 (Nhảy xa kiểu ngồi & Chạy cự li trung bình) (2 tiết)',
+        y: '- Đánh giá mức độ hoàn thiện 4 giai đoạn kỹ thuật Nhảy xa kiểu ngồi và thành tích Chạy cự li trung bình.\n- Rèn luyện tính trung thực, tác phong kỷ luật và ý chí phấn đấu trong thể thao.',
+        eq: 'Đề kiểm tra chuẩn ma trận, hố cát, đồng hồ bấm giây, thước dây, sổ điểm',
+        nls: '1.2.TC1a',
+        ai: '7.D1.1',
+        dc: '• [Mã NLS: 1.2.TC1a] Số hóa và tra cứu bảng phân loại thể lực cuối học kỳ 1 lớp 7.\n• [Mã AI: 7.D1.1] Hệ thống số tự động phân tích phổ điểm và xếp loại thể chất học sinh HK1.'
+      },
+      {
+        w: 17,
+        t: 'Chữa bài & Thể thao tự chọn',
+        n: 'Chữa bài kiểm tra cuối HK1 & Thể thao tự chọn (Cầu lông / Bóng đá / Bóng rổ) - Kỹ thuật chuyên môn lớp 7 (2 tiết)',
+        y: '- Chữa bài kiểm tra cuối HK1; Cầu lông: Kỹ thuật phát cầu thuận tay và đánh cầu cao tay bên phải.\n- Bóng đá: Đá bóng bằng mu trong; Bóng rổ: Chuyền bóng hai tay trước ngực.',
         eq: 'Vợt cầu lông, quả cầu lông, bóng đá số 4, bóng rổ số 6, bảng rổ, cột lưới',
         nls: '2.1.TC1a',
         ai: '7.C5.1',
         dc: '• [Mã NLS: 2.1.TC1a] Xem video 3D mô phỏng góc nghiêng tiếp xúc bóng/cầu của vận động viên chuyên nghiệp.\n• [Mã AI: 7.C5.1] AI phân tích quỹ đạo bóng rổ/cầu lông bay vào rổ/sân đối phương.'
       },
       {
-        w: 17,
-        t: 'Ôn tập tổng hợp Học kỳ 1',
-        n: 'Ôn tập tổng hợp kiến thức và kỹ năng Vận động cơ bản (Nhảy xa kiểu ngồi, Chạy cự li trung bình) Học kỳ 1 (2 tiết)',
-        y: '- Hoàn thiện kỹ thuật Nhảy xa kiểu ngồi và nâng cao sức bền trong chạy cự li trung bình.\n- Nâng cao tinh thần tự giác rèn luyện và chuẩn bị tốt cho kỳ kiểm tra cuối học kỳ 1.',
-        eq: 'Hố nhảy xa, còi, đồng hồ bấm giây, thước đo',
-        nls: '1.3.TC1a',
-        ai: '7.A1.MR1',
-        dc: '• [Mã NLS: 1.3.TC1a] Tổng hợp bảng điểm và thành tích rèn luyện thể chất HK1 trên Google Sheets.\n• [Mã AI: 7.A1.MR1] AI đối chiếu kết quả rèn luyện cá nhân với chuẩn tiêu chí của Bộ GD&ĐT.'
-      },
-      {
         w: 18,
-        t: 'Đánh giá định kỳ',
-        n: 'Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Giáo dục thể chất 7 (Nhảy xa kiểu ngồi & Chạy cự li trung bình) (2 tiết)',
-        y: '- Đánh giá mức độ hoàn thiện 4 giai đoạn kỹ thuật Nhảy xa kiểu ngồi và thành tích Chạy cự li trung bình.\n- Rèn luyện tính trung thực, tác phong kỷ luật và ý chí phấn đấu trong thể thao.',
-        eq: 'Đề kiểm tra chuẩn ma trận, hố cát, đồng hồ bấm giây, thước dây, sổ điểm',
-        nls: '1.2.TC1a',
-        ai: '7.D1.1',
-        dc: '• [Mã NLS: 1.2.TC1a] Số hóa và tra cứu bảng phân loại thể lực cuối học kỳ 1 lớp 7.\n• [Mã AI: 7.D1.1] Hệ thống số tự động phân tích phổ điểm và xếp loại thể chất học sinh HK1.'
+        t: 'Sơ kết Học kỳ 1',
+        n: 'Sơ kết Học kỳ 1 & Giao lưu trò chơi vận động, thể thao học đường Lớp 7 (2 tiết)',
+        y: '- Sơ kết, đánh giá quá trình học tập và rèn luyện thể chất trong Học kỳ 1; tổ chức giao lưu thể thao và trò chơi vận động.',
+        eq: 'Còi, bóng, cờ, loa truyền thông',
+        nls: '2.4.TC1a',
+        ai: '7.A1.MR1',
+        dc: '• [Mã NLS: 2.4.TC1a] Hợp tác tổ chức hoạt động thi đua trò chơi thể thao tập thể lớp 7.\n• [Mã AI: 7.A1.MR1] AI hỗ trợ lập bảng tổng kết thành tích và xếp hạng thi đua rèn luyện thể chất HK1.'
       },
 
       // HỌC KỲ 2 (Tuần 19 - 35)
@@ -708,16 +719,26 @@ export function getGdtcSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
       },
       {
         w: 31,
-        t: 'Đánh giá thể lực học sinh',
-        n: 'Kiểm tra đánh giá thể lực học sinh lớp 7 theo tiêu chuẩn rèn luyện thân thể (QĐ 53/2008/QĐ-BGDĐT) (2 tiết)',
-        y: '- Thực hiện đầy đủ 4 nội dung kiểm tra thể lực chuẩn: Chạy 30m xuất phát cao, Bật xa tại chỗ, Chạy bền 600m/500m, Nằm ngửa gập bụng 30 giây.\n- Nỗ lực đạt chuẩn xếp loại thể lực Tốt/Đạt theo tiêu chuẩn Bộ GD&ĐT.',
+        t: 'Đánh giá định kỳ',
+        n: 'Kiểm tra, đánh giá cuối Học kỳ 2 môn Giáo dục thể chất 7 (2 tiết)',
+        y: '- Đánh giá tổng hợp kết quả học tập môn GDTC lớp 7 theo chuẩn chương trình GDPT 2018.\n- Đảm bảo tính công bằng, khách quan, chính xác.',
+        eq: 'Đề kiểm tra ma trận chuẩn, hố cát, đồng hồ bấm giây, dụng cụ chuyên môn, sổ điểm',
+        nls: '1.2.TC1a',
+        ai: '7.D1.1',
+        dc: '• [Mã NLS: 1.2.TC1a] Tra cứu barem đánh giá xếp loại thể chất cuối năm học theo Thông tư 22/2021/TT-BGDĐT.\n• [Mã AI: 7.D1.1] Hệ thống tự động xuất bảng điểm học tập và xếp loại môn GDTC 7.'
+      },
+      {
+        w: 32,
+        t: 'Chữa bài & Đánh giá thể lực',
+        n: 'Chữa bài kiểm tra cuối HK2 & Kiểm tra đánh giá thể lực học sinh lớp 7 theo tiêu chuẩn rèn luyện thân thể (QĐ 53/2008/QĐ-BGDĐT) (2 tiết)',
+        y: '- Chữa bài kiểm tra cuối HK2; thực hiện đầy đủ 4 nội dung kiểm tra thể lực chuẩn: Chạy 30m xuất phát cao, Bật xa tại chỗ, Chạy bền 600m/500m, Nằm ngửa gập bụng 30 giây.',
         eq: 'Thảm đo bật xa, đồng hồ bấm giây, đồng hồ đo thời gian gập bụng',
         nls: '1.3.TC1a',
         ai: '7.C4.1',
         dc: '• [Mã NLS: 1.3.TC1a] Nhập dữ liệu thành tích 4 nội dung thể lực vào cổng thông tin quản trị thể lực học sinh.\n• [Mã AI: 7.C4.1] AI tự động so sánh dữ liệu thể lực lớp 7 với năm học trước để đánh giá mức độ phát triển.'
       },
       {
-        w: 32,
+        w: 33,
         t: 'Hoạt động trải nghiệm thể thao',
         n: 'Hoạt động trải nghiệm thể thao / Ngày hội Hội khỏe Phù Đổng cấp trường môn Điền kinh và Thể thao tự chọn (2 tiết)',
         y: '- Tham gia tranh tài hoặc cổ vũ các môn thi đấu: Chạy 60m, Nhảy xa, Cầu lông, Bóng đá mini.\n- Xây dựng tinh thần đoàn kết, tự hào tập thể và lan tỏa nếp sống rèn luyện thể thao học đường.',
@@ -725,16 +746,6 @@ export function getGdtcSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         nls: '3.1.TC1a',
         ai: '7.D1.1',
         dc: '• [Mã NLS: 3.1.TC1a] Thiết kế bảng tin truyền thông và tường thuật hình ảnh ngày hội thể thao trường học.\n• [Mã AI: 7.D1.1] AI tự động tạo video tổng hợp các pha bóng đẹp và kỷ lục thể thao mới của khối 7.'
-      },
-      {
-        w: 33,
-        t: 'Ôn tập tổng hợp cuối năm',
-        n: 'Ôn tập tổng hợp toàn diện Vận động cơ bản (Chạy ngắn 60m, Nhảy xa kiểu ngồi, Bài thể dục liên hoàn) (2 tiết)',
-        y: '- Củng cố toàn bộ kỹ năng động tác và nâng cao thành tích các môn vận động cơ bản.\n- Chuẩn bị thể lực và tâm thế tốt nhất cho bài kiểm tra cuối năm.',
-        eq: 'Hố cát nhảy xa, còi, đồng hồ bấm giây, thước đo, loa nhạc',
-        nls: '5.4.TC1a',
-        ai: '7.A1.MR1',
-        dc: '• [Mã NLS: 5.4.TC1a] Tự kiểm tra lại các mục tiêu rèn luyện thể chất đã đặt ra từ đầu năm học.\n• [Mã AI: 7.A1.MR1] AI đối chiếu dữ liệu thành tích toàn diện gửi báo cáo tổng kết cho học sinh.'
       },
       {
         w: 34,
@@ -748,8 +759,8 @@ export function getGdtcSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
       },
       {
         w: 35,
-        t: 'Đánh giá định kỳ & Tổng kết năm học',
-        n: 'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Giáo dục thể chất 7 (2 tiết)',
+        t: 'Tổng kết năm học',
+        n: 'Tổng kết năm học & Đánh giá xếp loại môn Giáo dục thể chất 7 cả năm (2 tiết)',
         y: '- Đánh giá tổng hợp kết quả học tập môn GDTC lớp 7 theo chuẩn chương trình GDPT 2018.\n- Biểu dương tinh thần rèn luyện và trao giải thưởng phong trào thể thao khối 7.',
         eq: 'Bảng tổng hợp điểm số năm học, sổ theo dõi giáo viên, giấy khen',
         nls: '1.3.TC1a',
@@ -760,7 +771,7 @@ export function getGdtcSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
 
     grade7Weeks.forEach((item) => {
       const isGK = item.w === 9 || item.w === 26;
-      const isCK = item.w === 18 || item.w === 35;
+      const isCK = item.w === 16 || item.w === 31;
 
       list.push({
         week: item.w,
@@ -773,7 +784,7 @@ export function getGdtcSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         nlsCode: item.nls,
         aiCode: item.ai,
         digitalCompetency: item.dc,
-        notes: isGK ? 'Kiểm tra giữa kỳ' : isCK ? 'Kiểm tra cuối kỳ' : item.w === 31 ? 'Đánh giá thể lực QĐ 53' : ''
+        notes: isGK ? 'Kiểm tra giữa kỳ' : isCK ? 'Kiểm tra cuối kỳ' : item.w === 32 ? 'Đánh giá thể lực QĐ 53' : ''
       });
     });
 
@@ -939,33 +950,33 @@ export function getGdtcSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
       },
       {
         w: 16,
-        t: 'Phần ba: Thể thao tự chọn',
-        n: 'Phần ba: Thể thao tự chọn (Cầu lông / Bóng đá / Bóng rổ) - Kỹ thuật chuyên sâu lớp 8 (2 tiết)',
-        y: '- Cầu lông: Kỹ thuật di chuyển lùi đánh cầu cao tay bên phải và kỹ thuật đập cầu thuận tay (Smash).\n- Bóng đá: Kỹ thuật đá bóng bằng mu ngoài bàn chân và đánh đầu bằng trán giữa.\n- Bóng rổ: Kỹ thuật chuyền và bắt bóng hai tay trên đầu và kỹ thuật hai bước ném rổ một tay dưới thấp.',
+        t: 'Đánh giá định kỳ',
+        n: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Giáo dục thể chất 8 (Nhảy cao kiểu bước qua & Chạy cự li trung bình) (2 tiết)',
+        y: '- Đánh giá mức độ hoàn thiện 4 giai đoạn kỹ thuật Nhảy cao kiểu bước qua và thành tích Chạy cự li trung bình.\n- Nâng cao tinh thần thi đấu trung thực, kỷ luật và ý thức tự giác rèn luyện thân thể.',
+        eq: 'Đề kiểm tra chuẩn ma trận, trụ xà nhảy cao, đệm mút, đồng hồ bấm giây, sổ điểm',
+        nls: '1.2.TC2a',
+        ai: '8.D1.1',
+        dc: '• [Mã NLS: 1.2.TC2a] Tra cứu chuẩn đánh giá xếp loại thể chất cuối học kỳ 1 lớp 8 theo quy định Bộ GD&ĐT.\n• [Mã AI: 8.D1.1] Hệ thống số tự động phân tích dữ liệu và xếp loại thể chất học sinh HK1.'
+      },
+      {
+        w: 17,
+        t: 'Chữa bài & Thể thao tự chọn',
+        n: 'Chữa bài kiểm tra cuối HK1 & Thể thao tự chọn (Cầu lông / Bóng đá / Bóng rổ) - Kỹ thuật chuyên sâu lớp 8 (2 tiết)',
+        y: '- Chữa bài kiểm tra cuối HK1; Cầu lông: Kỹ thuật di chuyển lùi đánh cầu cao tay bên phải và đập cầu thuận tay.\n- Bóng đá: Đá bóng bằng mu ngoài; Bóng rổ: Chuyền bóng hai tay trên đầu.',
         eq: 'Vợt cầu lông, quả cầu lông, bóng đá số 5, bóng rổ số 7, trụ rổ, cột lưới',
         nls: '2.1.TC2a',
         ai: '8.C2.1',
         dc: '• [Mã NLS: 2.1.TC2a] Xem video 3D slow-motion phân tích điểm tiếp xúc bóng/cầu và góc gập cổ tay khi đập cầu/sút mu ngoài.\n• [Mã AI: 8.C2.1] AI phân tích lực va chạm và vận tốc xuất phát của quả cầu lông khi đập cầu.'
       },
       {
-        w: 17,
-        t: 'Ôn tập tổng hợp Học kỳ 1',
-        n: 'Ôn tập tổng hợp kiến thức và kỹ năng Vận động cơ bản (Nhảy cao kiểu bước qua, Chạy cự li trung bình) Học kỳ 1 (2 tiết)',
-        y: '- Hoàn thiện kỹ thuật Nhảy cao kiểu bước qua và nâng cao sức bền trong chạy cự li trung bình.\n- Tự tin, sẵn sàng cho bài kiểm tra cuối học kỳ 1.',
-        eq: 'Trụ xà nhảy cao, đệm mút, còi, đồng hồ bấm giây',
-        nls: '1.3.TC2a',
-        ai: '8.A1.1',
-        dc: '• [Mã NLS: 1.3.TC2a] Tổng hợp kết quả rèn luyện thể chất HK1 trên ứng dụng Google Sheets/LMS.\n• [Mã AI: 8.A1.1] AI tổng hợp báo cáo tiến độ thể lực cá nhân gửi giáo viên bộ môn.'
-      },
-      {
         w: 18,
-        t: 'Đánh giá định kỳ',
-        n: 'Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Giáo dục thể chất 8 (Nhảy cao kiểu bước qua & Chạy cự li trung bình) (2 tiết)',
-        y: '- Đánh giá mức độ hoàn thiện 4 giai đoạn kỹ thuật Nhảy cao kiểu bước qua và thành tích Chạy cự li trung bình.\n- Nâng cao tinh thần thi đấu trung thực, kỷ luật và ý thức tự giác rèn luyện thân thể.',
-        eq: 'Đề kiểm tra chuẩn ma trận, trụ xà nhảy cao, đệm mút, đồng hồ bấm giây, sổ điểm',
-        nls: '1.2.TC2a',
-        ai: '8.D1.1',
-        dc: '• [Mã NLS: 1.2.TC2a] Tra cứu chuẩn đánh giá xếp loại thể chất cuối học kỳ 1 lớp 8 theo quy định Bộ GD&ĐT.\n• [Mã AI: 8.D1.1] Hệ thống số tự động phân tích dữ liệu và xếp loại thể chất học sinh HK1.'
+        t: 'Sơ kết Học kỳ 1',
+        n: 'Sơ kết Học kỳ 1 & Giao lưu trò chơi vận động, thể thao học đường Lớp 8 (2 tiết)',
+        y: '- Sơ kết, đánh giá quá trình học tập và rèn luyện thể chất trong Học kỳ 1; tổ chức giao lưu thể thao và trò chơi vận động.',
+        eq: 'Còi, bóng, cờ, loa truyền thông',
+        nls: '2.4.TC2a',
+        ai: '8.A1.1',
+        dc: '• [Mã NLS: 2.4.TC2a] Hợp tác tổ chức hoạt động thi đua trò chơi thể thao tập thể lớp 8.\n• [Mã AI: 8.A1.1] AI hỗ trợ lập bảng tổng kết thành tích và xếp hạng thi đua rèn luyện thể chất HK1.'
       },
 
       // HỌC KỲ 2 (Tuần 19 - 35)
@@ -1091,16 +1102,26 @@ export function getGdtcSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
       },
       {
         w: 31,
-        t: 'Đánh giá thể lực học sinh',
-        n: 'Kiểm tra đánh giá thể lực học sinh lớp 8 theo tiêu chuẩn rèn luyện thân thể (QĐ 53/2008/QĐ-BGDĐT) (2 tiết)',
-        y: '- Thực hiện nghiêm túc 4 nội dung kiểm tra thể lực chuẩn: Chạy 30m xuất phát cao, Bật xa tại chỗ, Chạy bền 800m/600m, Nằm ngửa gập bụng 30 giây.\n- Đạt chuẩn thể lực theo quy định của Bộ GD&ĐT đối với học sinh lớp 8.',
+        t: 'Đánh giá định kỳ',
+        n: 'Kiểm tra, đánh giá cuối Học kỳ 2 môn Giáo dục thể chất 8 (2 tiết)',
+        y: '- Đánh giá tổng hợp kết quả học tập môn GDTC lớp 8 theo chuẩn chương trình GDPT 2018.\n- Đảm bảo tính công bằng, khách quan, chính xác.',
+        eq: 'Đề kiểm tra ma trận chuẩn, trụ xà nhảy cao, đệm mút, còi, đồng hồ bấm giây, sổ điểm',
+        nls: '1.2.TC2a',
+        ai: '8.D1.1',
+        dc: '• [Mã NLS: 1.2.TC2a] Tra cứu barem đánh giá xếp loại thể chất cuối năm học theo Thông tư 22/2021/TT-BGDĐT.\n• [Mã AI: 8.D1.1] Hệ thống tự động xuất bảng điểm học tập và xếp loại môn GDTC 8.'
+      },
+      {
+        w: 32,
+        t: 'Chữa bài & Đánh giá thể lực',
+        n: 'Chữa bài kiểm tra cuối HK2 & Kiểm tra đánh giá thể lực học sinh lớp 8 theo tiêu chuẩn rèn luyện thân thể (QĐ 53/2008/QĐ-BGDĐT) (2 tiết)',
+        y: '- Chữa bài kiểm tra cuối HK2; thực hiện nghiêm túc 4 nội dung kiểm tra thể lực chuẩn: Chạy 30m xuất phát cao, Bật xa tại chỗ, Chạy bền 800m/600m, Nằm ngửa gập bụng 30 giây.',
         eq: 'Thảm đo bật xa, đồng hồ bấm giây, đồng hồ đo thời gian gập bụng',
         nls: '1.3.TC2a',
         ai: '8.C4.1',
         dc: '• [Mã NLS: 1.3.TC2a] Nhập kết quả kiểm tra thể lực vào hệ thống cơ sở dữ liệu quốc gia về thể chất học sinh.\n• [Mã AI: 8.C4.1] AI tự động phân tích biểu đồ tăng trưởng thể lực và thể lực tim mạch học sinh lớp 8.'
       },
       {
-        w: 32,
+        w: 33,
         t: 'Hoạt động trải nghiệm thể thao',
         n: 'Hoạt động trải nghiệm thể thao / Hội thao học đường cấp trường môn Điền kinh và Thể thao tự chọn (2 tiết)',
         y: '- Tham gia tranh tài hoặc cổ vũ các môn thi đấu: Chạy 100m, Nhảy cao, Cầu lông, Bóng đá mini.\n- Xây dựng tinh thần đoàn kết, tự hào tập thể và lan tỏa nếp sống rèn luyện thể thao học đường.',
@@ -1108,16 +1129,6 @@ export function getGdtcSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         nls: '3.1.TC2a',
         ai: '8.D1.1',
         dc: '• [Mã NLS: 3.1.TC2a] Thiết kế bảng tin truyền thông và tường thuật hình ảnh ngày hội thể thao trường học.\n• [Mã AI: 8.D1.1] AI tự động tạo video tổng hợp các pha bóng đẹp và kỷ lục thể thao mới của khối 8.'
-      },
-      {
-        w: 33,
-        t: 'Ôn tập tổng hợp cuối năm',
-        n: 'Ôn tập tổng hợp toàn diện Vận động cơ bản (Chạy ngắn 100m, Nhảy cao kiểu bước qua, Bài thể dục nhịp điệu) (2 tiết)',
-        y: '- Củng cố toàn bộ kỹ năng động tác và nâng cao thành tích các môn vận động cơ bản.\n- Chuẩn bị thể lực và tâm thế tốt nhất cho bài kiểm tra cuối năm.',
-        eq: 'Trụ xà nhảy cao, đệm mút, còi, đồng hồ bấm giây, bàn đạp xuất phát',
-        nls: '5.4.TC2a',
-        ai: '8.A1.1',
-        dc: '• [Mã NLS: 5.4.TC2a] Tự kiểm tra lại các mục tiêu rèn luyện thể chất đã đặt ra từ đầu năm học.\n• [Mã AI: 8.A1.1] AI đối chiếu dữ liệu thành tích toàn diện gửi báo cáo tổng kết cho học sinh.'
       },
       {
         w: 34,
@@ -1131,8 +1142,8 @@ export function getGdtcSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
       },
       {
         w: 35,
-        t: 'Đánh giá định kỳ & Tổng kết năm học',
-        n: 'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Giáo dục thể chất 8 (2 tiết)',
+        t: 'Tổng kết năm học',
+        n: 'Tổng kết năm học & Đánh giá xếp loại môn Giáo dục thể chất 8 cả năm (2 tiết)',
         y: '- Đánh giá tổng hợp kết quả học tập môn GDTC lớp 8 theo chuẩn chương trình GDPT 2018.\n- Biểu dương tinh thần rèn luyện và trao giải thưởng phong trào thể thao khối 8.',
         eq: 'Bảng tổng hợp điểm số năm học, sổ theo dõi giáo viên, giấy khen',
         nls: '1.3.TC2a',
@@ -1143,7 +1154,7 @@ export function getGdtcSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
 
     grade8Weeks.forEach((item) => {
       const isGK = item.w === 9 || item.w === 26;
-      const isCK = item.w === 18 || item.w === 35;
+      const isCK = item.w === 16 || item.w === 31;
 
       list.push({
         week: item.w,
@@ -1156,7 +1167,7 @@ export function getGdtcSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         nlsCode: item.nls,
         aiCode: item.ai,
         digitalCompetency: item.dc,
-        notes: isGK ? 'Kiểm tra giữa kỳ' : isCK ? 'Kiểm tra cuối kỳ' : item.w === 31 ? 'Đánh giá thể lực QĐ 53' : ''
+        notes: isGK ? 'Kiểm tra giữa kỳ' : isCK ? 'Kiểm tra cuối kỳ' : item.w === 32 ? 'Đánh giá thể lực QĐ 53' : ''
       });
     });
 
@@ -1321,33 +1332,33 @@ export function getGdtcSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
     },
     {
       w: 16,
-      t: 'Phần ba: Thể thao tự chọn',
-      n: 'Phần ba: Thể thao tự chọn (Cầu lông / Bóng đá / Bóng rổ) - Kỹ thuật đỉnh cao lớp 9 (2 tiết)',
-      y: '- Cầu lông: Kỹ thuật bật nhảy đánh cầu cao tay bên phải và kỹ thuật bật nhảy đập cầu thuận tay (Jump Smash).\n- Bóng đá: Kỹ thuật đá bóng bằng mu giữa bàn chân và tại chỗ ném biên.\n- Bóng rổ: Kỹ thuật đột phá bước thuận và đột phá bước chéo qua người đối phương.',
+      t: 'Đánh giá định kỳ',
+      n: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Giáo dục thể chất 9 (Nhảy cao kiểu nằm nghiêng & Chạy cự li trung bình) (2 tiết)',
+      y: '- Đánh giá mức độ hoàn thiện 4 giai đoạn kỹ thuật Nhảy cao kiểu nằm nghiêng và thành tích Chạy cự li trung bình.\n- Nâng cao tinh thần thi đấu trung thực, kỷ luật và ý thức tự giác rèn luyện thân thể.',
+      eq: 'Đề kiểm tra chuẩn ma trận, trụ xà nhảy cao, đệm mút, đồng hồ bấm giây, sổ điểm',
+      nls: '1.2.TC2a',
+      ai: '9.D1.1',
+      dc: '• [Mã NLS: 1.2.TC2a] Tra cứu chuẩn đánh giá xếp loại thể chất cuối học kỳ 1 lớp 9 theo quy định Bộ GD&ĐT.\n• [Mã AI: 9.D1.1] Hệ thống số tự động phân tích dữ liệu và xếp loại thể chất học sinh HK1.'
+    },
+    {
+      w: 17,
+      t: 'Chữa bài & Thể thao tự chọn',
+      n: 'Chữa bài kiểm tra cuối HK1 & Thể thao tự chọn (Cầu lông / Bóng đá / Bóng rổ) - Kỹ thuật đỉnh cao lớp 9 (2 tiết)',
+      y: '- Chữa bài kiểm tra cuối HK1; Cầu lông: Bật nhảy đập cầu (Jump Smash); Bóng đá: Đá bóng bằng mu giữa; Bóng rổ: Đột phá qua người.',
       eq: 'Vợt cầu lông, quả cầu lông, bóng đá số 5, bóng rổ số 7, trụ rổ, cột lưới',
       nls: '2.1.TC2a',
       ai: '9.C2.1',
       dc: '• [Mã NLS: 2.1.TC2a] Xem video 3D slow-motion phân tích điểm tiếp xúc bóng/cầu và động tác bật nhảy đập cầu/đột phá.\n• [Mã AI: 9.C2.1] AI phân tích lực bật nhảy và vận tốc xuất phát của quả cầu lông khi Jump Smash.'
     },
     {
-      w: 17,
-      t: 'Ôn tập tổng hợp Học kỳ 1',
-      n: 'Ôn tập tổng hợp kiến thức và kỹ năng Vận động cơ bản (Nhảy cao kiểu nằm nghiêng, Chạy cự li trung bình) Học kỳ 1 (2 tiết)',
-      y: '- Hoàn thiện kỹ thuật Nhảy cao kiểu nằm nghiêng và nâng cao sức bền trong chạy cự li trung bình.\n- Tự tin, sẵn sàng cho bài kiểm tra cuối học kỳ 1.',
-      eq: 'Trụ xà nhảy cao, đệm mút, còi, đồng hồ bấm giây',
-      nls: '1.3.TC2a',
-      ai: '9.A3.1',
-      dc: '• [Mã NLS: 1.3.TC2a] Tổng hợp kết quả rèn luyện thể chất HK1 trên ứng dụng Google Sheets/LMS.\n• [Mã AI: 9.A3.1] AI tổng hợp báo cáo tiến độ thể lực cá nhân gửi giáo viên bộ môn.'
-    },
-    {
       w: 18,
-      t: 'Đánh giá định kỳ',
-      n: 'Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Giáo dục thể chất 9 (Nhảy cao kiểu nằm nghiêng & Chạy cự li trung bình) (2 tiết)',
-      y: '- Đánh giá mức độ hoàn thiện 4 giai đoạn kỹ thuật Nhảy cao kiểu nằm nghiêng và thành tích Chạy cự li trung bình.\n- Nâng cao tinh thần thi đấu trung thực, kỷ luật và ý thức tự giác rèn luyện thân thể.',
-      eq: 'Đề kiểm tra chuẩn ma trận, trụ xà nhảy cao, đệm mút, đồng hồ bấm giây, sổ điểm',
-      nls: '1.2.TC2a',
-      ai: '9.D1.1',
-      dc: '• [Mã NLS: 1.2.TC2a] Tra cứu chuẩn đánh giá xếp loại thể chất cuối học kỳ 1 lớp 9 theo quy định Bộ GD&ĐT.\n• [Mã AI: 9.D1.1] Hệ thống số tự động phân tích dữ liệu và xếp loại thể chất học sinh HK1.'
+      t: 'Sơ kết Học kỳ 1',
+      n: 'Sơ kết Học kỳ 1 & Giao lưu trò chơi vận động, thể thao học đường Lớp 9 (2 tiết)',
+      y: '- Sơ kết, đánh giá quá trình học tập và rèn luyện thể chất trong Học kỳ 1; tổ chức giao lưu thể thao và trò chơi vận động.',
+      eq: 'Còi, bóng, cờ, loa truyền thông',
+      nls: '2.4.TC2a',
+      ai: '9.A3.1',
+      dc: '• [Mã NLS: 2.4.TC2a] Hợp tác tổ chức hoạt động thi đua trò chơi thể thao tập thể lớp 9.\n• [Mã AI: 9.A3.1] AI hỗ trợ lập bảng tổng kết thành tích và xếp hạng thi đua rèn luyện thể chất HK1.'
     },
 
     // HỌC KỲ 2 (Tuần 19 - 35)
@@ -1473,16 +1484,26 @@ export function getGdtcSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
     },
     {
       w: 31,
-      t: 'Đánh giá thể lực học sinh',
-      n: 'Kiểm tra đánh giá thể lực học sinh lớp 9 theo tiêu chuẩn rèn luyện thân thể (QĐ 53/2008/QĐ-BGDĐT) (2 tiết)',
-      y: '- Thực hiện nghiêm túc 4 nội dung kiểm tra thể lực chuẩn: Chạy 30m xuất phát cao, Bật xa tại chỗ, Chạy bền 1500m/800m, Nằm ngửa gập bụng 30 giây.\n- Đạt chuẩn thể lực theo quy định của Bộ GD&ĐT đối với học sinh tốt nghiệp THCS.',
+      t: 'Đánh giá định kỳ',
+      n: 'Kiểm tra, đánh giá cuối Học kỳ 2 môn Giáo dục thể chất 9 (2 tiết)',
+      y: '- Đánh giá tổng hợp kết quả học tập môn GDTC lớp 9 và xét hoàn thành chương trình GDTC cấp THCS theo chuẩn GDPT 2018.\n- Đảm bảo tính công bằng, khách quan, chính xác.',
+      eq: 'Đề kiểm tra chuẩn ma trận, trụ xà nhảy cao, đệm mút, đồng hồ bấm giây, sổ điểm',
+      nls: '1.2.TC2a',
+      ai: '9.D1.1',
+      dc: '• [Mã NLS: 1.2.TC2a] Tra cứu barem đánh giá xếp loại thể chất cuối năm học theo Thông tư 22/2021/TT-BGDĐT.\n• [Mã AI: 9.D1.1] Hệ thống tự động xuất bảng điểm học tập và xếp loại môn GDTC 9.'
+    },
+    {
+      w: 32,
+      t: 'Chữa bài & Đánh giá thể lực',
+      n: 'Chữa bài kiểm tra cuối HK2 & Kiểm tra đánh giá thể lực học sinh lớp 9 theo tiêu chuẩn rèn luyện thân thể (QĐ 53/2008/QĐ-BGDĐT) (2 tiết)',
+      y: '- Chữa bài kiểm tra cuối HK2; thực hiện nghiêm túc 4 nội dung kiểm tra thể lực chuẩn: Chạy 30m xuất phát cao, Bật xa tại chỗ, Chạy bền 1500m/800m, Nằm ngửa gập bụng 30 giây.',
       eq: 'Thảm đo bật xa, đồng hồ bấm giây, đồng hồ đo thời gian gập bụng',
       nls: '1.3.TC2a',
       ai: '9.C4.1',
       dc: '• [Mã NLS: 1.3.TC2a] Nhập kết quả kiểm tra thể lực vào hệ thống cơ sở dữ liệu quốc gia về thể chất học sinh.\n• [Mã AI: 9.C4.1] AI tự động phân tích biểu đồ tăng trưởng thể lực 4 năm THCS của học sinh.'
     },
     {
-      w: 32,
+      w: 33,
       t: 'Hoạt động trải nghiệm thể thao',
       n: 'Hoạt động trải nghiệm thể thao / Ngày hội Thể dục thể thao học sinh THCS chào mừng Lễ ra trường (2 tiết)',
       y: '- Tham gia tranh tài hoặc cổ vũ các môn thi đấu: Chạy 100m, Nhảy cao, Cầu lông, Bóng đá mini.\n- Xây dựng tinh thần đoàn kết, tự hào tập thể và lan tỏa nếp sống rèn luyện thể thao học đường.',
@@ -1490,16 +1511,6 @@ export function getGdtcSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
       nls: '3.1.TC2a',
       ai: '9.D1.1',
       dc: '• [Mã NLS: 3.1.TC2a] Thiết kế bảng tin truyền thông và tường thuật hình ảnh ngày hội thể thao trường học.\n• [Mã AI: 9.D1.1] AI tự động tạo video tổng hợp các pha bóng đẹp và kỷ lục thể thao của khối 9.'
-    },
-    {
-      w: 33,
-      t: 'Ôn tập toàn diện chuẩn bị vào THPT',
-      n: 'Ôn tập toàn diện Vận động cơ bản (Chạy ngắn 100m, Nhảy cao kiểu nằm nghiêng, Bài TD nhịp điệu) (2 tiết)',
-      y: '- Củng cố toàn bộ kỹ năng động tác và nâng cao thành tích các môn vận động cơ bản.\n- Chuẩn bị nền tảng thể lực vững chắc cho cấp học THPT.',
-      eq: 'Trụ xà nhảy cao, đệm mút, còi, đồng hồ bấm giây, bàn đạp xuất phát',
-      nls: '5.4.TC2a',
-      ai: '9.A3.1',
-      dc: '• [Mã NLS: 5.4.TC2a] Tự kiểm tra lại các mục tiêu rèn luyện thể chất 4 năm THCS.\n• [Mã AI: 9.A3.1] AI đối chiếu dữ liệu thành tích toàn diện gửi báo cáo tổng kết cho học sinh.'
     },
     {
       w: 34,
@@ -1513,8 +1524,8 @@ export function getGdtcSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
     },
     {
       w: 35,
-      t: 'Đánh giá định kỳ & Xét hoàn thành chương trình',
-      n: 'Kiểm tra, đánh giá cuối Học kỳ 2 & Xét hoàn thành chương trình GDTC cấp THCS (2 tiết)',
+      t: 'Tổng kết năm học & Xét hoàn thành chương trình',
+      n: 'Tổng kết năm học & Xét hoàn thành chương trình GDTC cấp THCS (2 tiết)',
       y: '- Đánh giá tổng hợp kết quả học tập môn GDTC lớp 9 và xét hoàn thành chương trình GDTC cấp THCS theo chuẩn GDPT 2018.\n- Biểu dương tinh thần rèn luyện và trao giải thưởng Vận động viên học sinh tiêu biểu.',
       eq: 'Bảng tổng hợp điểm số năm học, sổ theo dõi giáo viên, giấy chứng nhận',
       nls: '1.3.TC2a',
@@ -1525,7 +1536,7 @@ export function getGdtcSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
 
   grade9Weeks.forEach((item) => {
     const isGK = item.w === 9 || item.w === 26;
-    const isCK = item.w === 18 || item.w === 35;
+    const isCK = item.w === 16 || item.w === 31;
 
     list.push({
       week: item.w,
@@ -1538,7 +1549,7 @@ export function getGdtcSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
       nlsCode: item.nls,
       aiCode: item.ai,
       digitalCompetency: item.dc,
-      notes: isGK ? 'Kiểm tra giữa kỳ' : isCK ? 'Kiểm tra cuối kỳ' : item.w === 31 ? 'Đánh giá thể lực QĐ 53' : ''
+      notes: isGK ? 'Kiểm tra giữa kỳ' : isCK ? 'Kiểm tra cuối kỳ' : item.w === 32 ? 'Đánh giá thể lực QĐ 53' : ''
     });
   });
 

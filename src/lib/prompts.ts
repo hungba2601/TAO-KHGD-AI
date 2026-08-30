@@ -152,14 +152,19 @@ YÊU CẦU ĐẶC BIỆT QUAN TRỌNG VỀ KHUNG THỜI GIAN 35 TUẦN THỰC H�
 4. HỌC KỲ I (Tuần 1 đến Tuần 18):
    - Tuần 1 đến Tuần 8: Các bài học/chủ đề mở đầu và trọng tâm theo đúng SGK Kết nối tri thức.
    - Tuần 9: Ôn tập & Kiểm tra, đánh giá giữa Học kỳ 1 (GK1).
-   - Tuần 10 đến Tuần 17: Các bài học/chủ đề tiếp theo của HK1.
-   - Tuần 18: Ôn tập & Kiểm tra, đánh giá cuối Học kỳ 1 (CK1) & Sơ kết HK1.
+   - Tuần 10 đến Tuần 15: Các bài học/chủ đề tiếp theo của HK1.
+   - Tuần 16: Kiểm tra, đánh giá cuối Học kỳ 1 (CK1) (Đối với môn Tiếng Anh cấp THCS giữ nguyên là Tuần 18).
+   - Tuần 17: Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức HK1.
+   - Tuần 18: Sơ kết Học kỳ 1 & Báo cáo sản phẩm / Hoạt động giáo dục cuối HK1 (Đối với môn Tiếng Anh THCS là Kiểm tra cuối HK1 & Sơ kết).
 5. HỌC KỲ II (Tuần 19 đến Tuần 35):
    - Tuần 19 đến Tuần 25: Các bài học/chủ đề Học kỳ 2.
    - Tuần 26: Ôn tập & Kiểm tra, đánh giá giữa Học kỳ 2 (GK2).
-   - Tuần 27 đến Tuần 33: Các bài học/chủ đề tiếp theo & Chuyên đề / Dự án STEM.
-   - Tuần 34: Hoạt động thực hành trải nghiệm & Ôn tập cuối năm.
-   - Tuần 35: Kiểm tra, đánh giá cuối Học kỳ 2 (CK2) & Tổng kết năm học.
+   - Tuần 27 đến Tuần 30: Các bài học/chủ đề tiếp theo & Chuyên đề / Dự án thực hành.
+   - Tuần 31: Kiểm tra, đánh giá cuối Học kỳ 2 (CK2) / Cuối năm (Đối với môn Tiếng Anh cấp THCS giữ nguyên là Tuần 35).
+   - Tuần 32: Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành / Đánh giá thể lực.
+   - Tuần 33: Dự án STEM / Hoạt động trải nghiệm sáng tạo / Ôn tập chuyên sâu.
+   - Tuần 34: Ôn tập toàn diện chuẩn bị tổng kết năm học / Luyện thi tốt nghiệp hoặc chuyển cấp / Hướng dẫn rèn luyện hè.
+   - Tuần 35: Tổng kết năm học & Đánh giá xếp loại cả năm (Đối với môn Tiếng Anh THCS là Kiểm tra cuối HK2 & Tổng kết).
 ${isEn ? '6. Cột "week" BẮT BUỘC ghi rõ ràng bằng Tiếng Anh từ "Week 1", "Week 2", ..., đến "Week 35".' : '6. Cột "week" phải ghi rõ ràng từ "Tuần 1", "Tuần 2", ..., đến "Tuần 35".'}
 
 Hãy tạo JSON có cấu trúc sau:
@@ -213,7 +218,7 @@ Hãy tạo JSON có cấu trúc sau:
       "stt": 2,
       "assessmentName": "${isEn ? 'End-of-Term 1 Test (English ' + config.grade + ')' : 'Kiểm tra, đánh giá cuối Học kỳ 1'}",
       "time": "${isEn ? '45 minutes / 60 minutes' : '45 phút / 90 phút'}",
-      "week": "${isEn ? 'Week 18' : 'Tuần 18'}",
+      "week": "${isEn && ['6','7','8','9'].includes(config.grade) ? 'Week 18' : isEn ? 'Week 16' : 'Tuần 16'}",
       "form": "${isEn ? 'Standardized Semester Exam (4 Skills)' : 'Đề kiểm tra chuẩn hóa tập trung theo ma trận Bộ GD&ĐT'}",
       "units": "${isEn ? 'Comprehensive Term 1 Curriculum' : 'Toàn bộ kiến thức Học kỳ 1 theo SGK Kết nối tri thức'}",
       "requirements": "${isEn ? '- Comprehensive assessment of Term 1 learning outcomes.' : '- Đánh giá tổng kết kết quả học tập và rèn luyện Học kỳ 1.'}"
@@ -231,7 +236,7 @@ Hãy tạo JSON có cấu trúc sau:
       "stt": 4,
       "assessmentName": "${isEn ? 'End-of-Year Test / Final Examination (English ' + config.grade + ')' : 'Kiểm tra, đánh giá cuối Học kỳ 2 & Cả năm'}",
       "time": "${isEn ? '45 minutes / 60 minutes' : '45 phút / 90 phút'}",
-      "week": "${isEn ? 'Week 35' : 'Tuần 35'}",
+      "week": "${isEn && ['6','7','8','9'].includes(config.grade) ? 'Week 35' : isEn ? 'Week 31' : 'Tuần 31'}",
       "form": "${isEn ? 'School-wide Standardized Final Exam' : 'Đề kiểm tra chuẩn hóa cấp trường theo ma trận Bộ GD&ĐT'}",
       "units": "${isEn ? 'Core language competencies of the school year' : 'Kiến thức trọng tâm Học kỳ 2 và cả năm học'}",
       "requirements": "${isEn ? '- Evaluate overall English competency for grade completion.' : '- Đánh giá toàn diện kết quả học tập cả năm học, xét hoàn thành chương trình.'}"

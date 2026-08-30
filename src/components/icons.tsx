@@ -36,5 +36,10 @@ export {
   Share2,
   Filter,
   Check,
-  X
+  X,
+  Zap,
+  Utensils,
+  Sprout,
+  Wrench,
+  Sliders
 } from 'lucide-react';

@@ -1,4 +1,4 @@
-import { SchoolType } from '../../types';
+import { SchoolType, ConfigFormData } from '../../types';
 
 /**
  * Định mức thời lượng dạy học các môn học theo Chương trình GDPT 2018
@@ -15,7 +15,8 @@ export interface SubjectPeriodInfo {
 export function getOfficialPeriods(
   subject: string,
   grade: string,
-  schoolType: SchoolType
+  schoolType: SchoolType,
+  config?: Partial<ConfigFormData>
 ): SubjectPeriodInfo {
   const s = (subject || '').toLowerCase().trim();
   const g = parseInt(grade.trim(), 10) || 7;
@@ -31,7 +32,7 @@ export function getOfficialPeriods(
     }
 
     if (s.includes('toán') || s.includes('toan')) {
-      if (g === 1) return { totalAnnualPeriods: 105, periodsPerWeek: 3, description: '3 tiết/tuần x 35 tuần = 105 tiết (TT 32/2018/TT-BGDĐT)' };
+      if (g <= 2) return { totalAnnualPeriods: 140, periodsPerWeek: 4, description: '4 tiết/tuần x 35 tuần = 140 tiết (TT 32/2018/TT-BGDĐT)' };
       return { totalAnnualPeriods: 175, periodsPerWeek: 5, description: '5 tiết/tuần x 35 tuần = 175 tiết (TT 32/2018/TT-BGDĐT)' };
     }
 
@@ -114,6 +115,17 @@ export function getOfficialPeriods(
     }
 
     if (s.includes('công nghệ') || s.includes('cong nghe')) {
+      if ((g === 8 || g === 9) && config && (config.periodsPerWeekTerm1 !== undefined || config.periodsPerWeekTerm2 !== undefined)) {
+        const p1 = config.periodsPerWeekTerm1 ?? 1;
+        const p2 = config.periodsPerWeekTerm2 ?? (g === 8 ? 2 : 1);
+        const total = p1 * 18 + p2 * 17;
+        const avg = Math.round(total / 35) || 1;
+        return {
+          totalAnnualPeriods: total,
+          periodsPerWeek: avg,
+          description: `HK1: ${p1} tiết/tuần (18 tuần = ${p1 * 18}t), HK2: ${p2} tiết/tuần (17 tuần = ${p2 * 17}t) => Tổng ${total} tiết (CT GDPT 2018)`
+        };
+      }
       return { totalAnnualPeriods: 35, periodsPerWeek: 1, description: '1 tiết/tuần x 35 tuần = 35 tiết (TT 32/2018/TT-BGDĐT)' };
     }
 

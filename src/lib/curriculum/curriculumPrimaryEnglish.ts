@@ -147,49 +147,92 @@ export function getEnglishPrimaryCurriculum(grade: string): RawPrimaryLesson[] {
     const units = primary12Units[g] || primary12Units[1];
     const items: { topic: string; name: string; isGK?: boolean; isCK?: boolean; isProject?: boolean }[] = [];
 
-    // Term 1: 35 lessons
+    // Term 1: 36 lessons (Weeks 1 - 18)
     for (let uIdx = 0; uIdx < 4; uIdx++) {
       const u = units[uIdx];
       items.push({ topic: u.title, name: `Lesson 1: ${u.l1}` });
       items.push({ topic: u.title, name: `Lesson 2: ${u.l2}` });
       items.push({ topic: u.title, name: `Lesson 3: ${u.l3}`, isProject: true });
     }
+    // 12 lessons (Weeks 1 - 6)
     items.push({ topic: 'Review 1', name: 'Review 1: Letters, Vocabulary & Phonics (Units 1-4)' });
+    items.push({ topic: 'Review 1', name: 'Review 1: Fun English Games & Song Presentation' });
+    // Week 8 (lessons 15-16)
+    const u5 = units[4];
+    items.push({ topic: u5.title, name: `Lesson 1: ${u5.l1}` });
+    items.push({ topic: u5.title, name: `Lesson 2: ${u5.l2}` });
+    // Week 9 (lessons 17-18): Mid-term Test 1
     items.push({ topic: 'Assessment', name: `Mid-term Test 1 (Grade ${g})`, isGK: true });
     items.push({ topic: 'Assessment', name: `Mid-term Test 1 Feedback & Oral Practice` });
 
-    for (let uIdx = 4; uIdx < 8; uIdx++) {
+    // Weeks 10 - 15 (lessons 19-30)
+    items.push({ topic: u5.title, name: `Lesson 3: ${u5.l3}`, isProject: true });
+    for (let uIdx = 5; uIdx < 8; uIdx++) {
       const u = units[uIdx];
       items.push({ topic: u.title, name: `Lesson 1: ${u.l1}` });
       items.push({ topic: u.title, name: `Lesson 2: ${u.l2}` });
       items.push({ topic: u.title, name: `Lesson 3: ${u.l3}`, isProject: true });
     }
     items.push({ topic: 'Review 2', name: 'Review 2: Language Synthesis (Units 5-8)' });
+    items.push({ topic: 'Review 2', name: 'Review 2: Interactive Language Practice' });
+
+    // Week 16 (lessons 31-32): End-of-Term 1 Test
     items.push({ topic: 'Assessment', name: `End-of-Term 1 Test (Grade ${g})`, isCK: true });
+    items.push({ topic: 'Assessment', name: `End-of-Term 1 Test: Speaking & Interaction` });
+
+    // Week 17 (lessons 33-34)
     items.push({ topic: 'Assessment', name: `End-of-Term 1 Test Feedback & Story Telling` });
     items.push({ topic: 'Language Activity', name: `Term 1 English Fun Club & Speaking Showcase`, isProject: true });
 
-    // Term 2: 35 lessons
+    // Week 18 (lessons 35-36)
+    items.push({ topic: 'Language Activity', name: `Term 1 Primary English Exhibition & Awarding`, isProject: true });
+    items.push({ topic: 'Consolidation', name: `Term 1 Language Consolidation & Winter Break Prep` });
+
+    // Term 2: 34 lessons (Weeks 19 - 35)
     for (let uIdx = 8; uIdx < 12; uIdx++) {
       const u = units[uIdx];
       items.push({ topic: u.title, name: `Lesson 1: ${u.l1}` });
       items.push({ topic: u.title, name: `Lesson 2: ${u.l2}` });
       items.push({ topic: u.title, name: `Lesson 3: ${u.l3}`, isProject: true });
     }
+    // 12 lessons (Weeks 19 - 24)
     items.push({ topic: 'Review 3', name: 'Review 3: Letters, Vocabulary & Phonics (Units 9-12)' });
-    items.push({ topic: 'Assessment', name: `Mid-term Test 2 (Grade ${g})`, isGK: true });
-    items.push({ topic: 'Assessment', name: `Mid-term Test 2 Feedback & Song Presentation` });
+    items.push({ topic: 'Review 3', name: 'Review 3: Song Presentation & Fun Quiz' });
 
-    for (let uIdx = 12; uIdx < 16; uIdx++) {
+    // Week 26 (lessons 51-52): Mid-term Test 2
+    items.push({ topic: 'Assessment', name: `Mid-term Test 2 (Grade ${g})`, isGK: true });
+    items.push({ topic: 'Assessment', name: `Mid-term Test 2 Feedback & Diagnostic Practice` });
+
+    // Weeks 27 - 30 (lessons 53-60)
+    for (let uIdx = 12; uIdx < 15; uIdx++) {
       const u = units[uIdx];
       items.push({ topic: u.title, name: `Lesson 1: ${u.l1}` });
       items.push({ topic: u.title, name: `Lesson 2: ${u.l2}` });
       items.push({ topic: u.title, name: `Lesson 3: ${u.l3}`, isProject: true });
     }
-    items.push({ topic: 'Review 4', name: 'Review 4: Comprehensive Language Revision (Units 13-16)' });
+    items.push({ topic: 'Review 4', name: 'Review 4: Comprehensive Language Revision (Units 13-15)' });
+    items.push({ topic: 'Review 4', name: 'Review 4: Integrated 4 Skills Practice' });
+
+    // Week 31 (lessons 61-62): End-of-Year Test
     items.push({ topic: 'Assessment', name: `End-of-Year Test (Grade ${g})`, isCK: true });
-    items.push({ topic: 'Assessment', name: `End-of-Year Test Feedback & Summary Assessment` });
+    items.push({ topic: 'Assessment', name: `End-of-Year Test: Speaking & Interaction` });
+
+    // Week 32 (lessons 63-64)
+    items.push({ topic: 'Assessment', name: `End-of-Year Test Feedback & Remedial Practice` });
+    const u16 = units[15];
+    items.push({ topic: u16.title, name: `Lesson 1: ${u16.l1}` });
+
+    // Week 33 (lessons 65-66)
+    items.push({ topic: u16.title, name: `Lesson 2: ${u16.l2}` });
+    items.push({ topic: u16.title, name: `Lesson 3: ${u16.l3}`, isProject: true });
+
+    // Week 34 (lessons 67-68)
+    items.push({ topic: 'Language Activity', name: `English Song Festival & Summer Vacation Guide`, isProject: true });
+    items.push({ topic: 'Consolidation', name: `Comprehensive Revision & Story Telling Showcase` });
+
+    // Week 35 (lessons 69-70)
     items.push({ topic: 'English Festival', name: `School Year English Festival Exhibition & Certificate Awarding`, isProject: true });
+    items.push({ topic: 'English Festival', name: `Academic Year Summary & Farewell Celebration`, isProject: true });
 
     items.slice(0, 70).forEach((item, idx) => {
       const weekNum = Math.min(35, Math.floor(idx / 2) + 1);
@@ -212,7 +255,7 @@ export function getEnglishPrimaryCurriculum(grade: string): RawPrimaryLesson[] {
   const currentUnits = primary345Units[g] || primary345Units[3];
   const items: { topic: string; name: string; isGK?: boolean; isCK?: boolean; isProject?: boolean }[] = [];
 
-  // Term 1: 70 lessons (Units 1 - 10 + Reviews + Tests = 60 + 10 = 70)
+  // Term 1: 72 lessons (Weeks 1 - 18)
   for (let uIdx = 0; uIdx < 5; uIdx++) {
     const u = currentUnits.term1[uIdx];
     items.push({ topic: u.title, name: `Lesson 1 (Period 1): ${u.l1_part1}` });
@@ -222,14 +265,18 @@ export function getEnglishPrimaryCurriculum(grade: string): RawPrimaryLesson[] {
     items.push({ topic: u.title, name: `Lesson 3 (Period 5): ${u.l3_part1}` });
     items.push({ topic: u.title, name: `Lesson 3 (Period 6): ${u.l3_part2}`, isProject: true });
   }
-  // Mid-Term 1 Block (5 periods)
+  // 30 lessons (Weeks 1 - 7.5) -> indices 0..29
+
+  // Week 8 (indices 30-31) + Week 9 (indices 32-35): Mid-Term 1 Block
   items.push({ topic: 'Review 1', name: 'Review 1: Language Synthesis (Units 1-5)' });
   items.push({ topic: 'Review 1', name: 'Review 1: 4 Skills Practice (Listening & Speaking)' });
   items.push({ topic: 'Assessment', name: `Mid-term Test 1 (Grade ${g})`, isGK: true });
   items.push({ topic: 'Assessment', name: `Mid-term Test 1: Speaking & Communication Test (Grade ${g})`, isGK: true });
   items.push({ topic: 'Assessment', name: `Mid-term Test 1 Feedback & Diagnostic Correction` });
+  items.push({ topic: 'Review 1', name: 'Review 1: Language Extension & Diagnostic Practice' });
 
-  for (let uIdx = 5; uIdx < 10; uIdx++) {
+  // Weeks 10 - 15 (indices 36-59): Units 6, 7, 8, 9 (4 units x 6 periods = 24 periods)
+  for (let uIdx = 5; uIdx < 9; uIdx++) {
     const u = currentUnits.term1[uIdx];
     items.push({ topic: u.title, name: `Lesson 1 (Period 1): ${u.l1_part1}` });
     items.push({ topic: u.title, name: `Lesson 1 (Period 2): ${u.l1_part2}` });
@@ -238,14 +285,28 @@ export function getEnglishPrimaryCurriculum(grade: string): RawPrimaryLesson[] {
     items.push({ topic: u.title, name: `Lesson 3 (Period 5): ${u.l3_part1}` });
     items.push({ topic: u.title, name: `Lesson 3 (Period 6): ${u.l3_part2}`, isProject: true });
   }
-  // End-of-Term 1 Block (5 periods)
-  items.push({ topic: 'Review 2', name: 'Review 2: Language Synthesis (Units 6-10)' });
+
+  // Week 16 (indices 60-63): End-of-Term 1 Assessment Block
+  items.push({ topic: 'Review 2', name: 'Review 2: Language Synthesis (Units 6-9)' });
   items.push({ topic: 'Review 2', name: 'Review 2: 4 Skills Practice (Reading & Writing)' });
   items.push({ topic: 'Assessment', name: `End-of-Term 1 Test (Grade ${g})`, isCK: true });
   items.push({ topic: 'Assessment', name: `End-of-Term 1 Test: Speaking & Interaction (Grade ${g})`, isCK: true });
+
+  // Week 17 (indices 64-67): Feedback & Unit 10 Intro
+  const u10 = currentUnits.term1[9];
+  items.push({ topic: 'Assessment', name: `End-of-Term 1 Test Feedback & Diagnostic Correction` });
+  items.push({ topic: 'Assessment', name: `Term 1 Remedial & Extension Language Practice` });
+  items.push({ topic: u10.title, name: `Lesson 1 (Period 1): ${u10.l1_part1}` });
+  items.push({ topic: u10.title, name: `Lesson 1 (Period 2): ${u10.l1_part2}` });
+
+  // Week 18 (indices 68-71): Unit 10 Completion & Term 1 Showcase
+  items.push({ topic: u10.title, name: `Lesson 2 (Period 3): ${u10.l2_part1}` });
+  items.push({ topic: u10.title, name: `Lesson 2 (Period 4): ${u10.l2_part2}` });
+  items.push({ topic: u10.title, name: `Lesson 3 (Period 5): ${u10.l3_part1}` });
   items.push({ topic: 'Language Activity', name: `Term 1 Primary English Fun Fair & Digital Portfolio Show`, isProject: true });
 
-  // Term 2: 70 lessons (Units 11 - 20 + Reviews + Tests = 60 + 10 = 70)
+  // Term 2: 68 lessons (Weeks 19 - 35)
+  // Weeks 19 - 25: Units 11, 12, 13, 14, 15 (5 units x 6 periods = 30 periods: indices 72-101)
   for (let uIdx = 0; uIdx < 5; uIdx++) {
     const u = currentUnits.term2[uIdx];
     items.push({ topic: u.title, name: `Lesson 1 (Period 1): ${u.l1_part1}` });
@@ -255,14 +316,18 @@ export function getEnglishPrimaryCurriculum(grade: string): RawPrimaryLesson[] {
     items.push({ topic: u.title, name: `Lesson 3 (Period 5): ${u.l3_part1}` });
     items.push({ topic: u.title, name: `Lesson 3 (Period 6): ${u.l3_part2}`, isProject: true });
   }
-  // Mid-Term 2 Block (5 periods)
+
+  // Week 26 (indices 102-105): Mid-Term 2 Assessment Block
   items.push({ topic: 'Review 3', name: 'Review 3: Language Synthesis (Units 11-15)' });
   items.push({ topic: 'Review 3', name: 'Review 3: 4 Skills Practice (Listening & Speaking)' });
   items.push({ topic: 'Assessment', name: `Mid-term Test 2 (Grade ${g})`, isGK: true });
   items.push({ topic: 'Assessment', name: `Mid-term Test 2: Speaking & Oral Interaction (Grade ${g})`, isGK: true });
-  items.push({ topic: 'Assessment', name: `Mid-term Test 2 Feedback & Diagnostic Correction` });
 
-  for (let uIdx = 5; uIdx < 10; uIdx++) {
+  // Weeks 27 - 30 (indices 106-119): Units 16, 17, 18 (3 units x 6 = 18 periods: indices 106-123, let's distribute evenly)
+  items.push({ topic: 'Assessment', name: `Mid-term Test 2 Feedback & Diagnostic Correction` });
+  items.push({ topic: 'Review 3', name: 'Mid-term 2 Language Consolidation & Extension' });
+
+  for (let uIdx = 5; uIdx < 8; uIdx++) {
     const u = currentUnits.term2[uIdx];
     items.push({ topic: u.title, name: `Lesson 1 (Period 1): ${u.l1_part1}` });
     items.push({ topic: u.title, name: `Lesson 1 (Period 2): ${u.l1_part2}` });
@@ -271,12 +336,42 @@ export function getEnglishPrimaryCurriculum(grade: string): RawPrimaryLesson[] {
     items.push({ topic: u.title, name: `Lesson 3 (Period 5): ${u.l3_part1}` });
     items.push({ topic: u.title, name: `Lesson 3 (Period 6): ${u.l3_part2}`, isProject: true });
   }
-  // End-of-Year Block (5 periods)
-  items.push({ topic: 'Review 4', name: 'Review 4: Comprehensive Language Revision (Units 16-20)' });
+  // Units 19 (indices 126-129)
+  const u19 = currentUnits.term2[8];
+  items.push({ topic: u19.title, name: `Lesson 1 (Period 1): ${u19.l1_part1}` });
+  items.push({ topic: u19.title, name: `Lesson 1 (Period 2): ${u19.l1_part2}` });
+
+  // Week 31 (indices 120-123): End-of-Year Assessment Block
+  // Let's adjust index to align Week 31 perfectly
+  items.push({ topic: 'Review 4', name: 'Review 4: Comprehensive Language Revision (Units 16-19)' });
   items.push({ topic: 'Review 4', name: 'Review 4: Integrated 4 Skills Practice & Exam Format' });
   items.push({ topic: 'Assessment', name: `End-of-Year Test (Grade ${g})`, isCK: true });
   items.push({ topic: 'Assessment', name: `End-of-Year Test: Speaking & Competency Assessment (Grade ${g})`, isCK: true });
-  items.push({ topic: 'English Festival', name: `School Year English Festival Exhibition & Primary Graduation Showcase`, isProject: true });
+
+  // Week 32 (indices 124-127): Feedback & Unit 20 Intro
+  const u20 = currentUnits.term2[9];
+  items.push({ topic: 'Assessment', name: `End-of-Year Test Feedback & Diagnostic Correction` });
+  items.push({ topic: 'Assessment', name: `Language Remediation & Skills Enhancement` });
+  items.push({ topic: u20.title, name: `Lesson 1 (Period 1): ${u20.l1_part1}` });
+  items.push({ topic: u20.title, name: `Lesson 1 (Period 2): ${u20.l1_part2}` });
+
+  // Week 33 (indices 128-131): Unit 20 completion & STEM English Project
+  items.push({ topic: u20.title, name: `Lesson 2 (Period 3): ${u20.l2_part1}` });
+  items.push({ topic: u20.title, name: `Lesson 2 (Period 4): ${u20.l2_part2}` });
+  items.push({ topic: u20.title, name: `Lesson 3 (Period 5): ${u20.l3_part1}` });
+  items.push({ topic: 'Project', name: `English Drama & Creative Storytelling Showcase`, isProject: true });
+
+  // Week 34 (indices 132-135): Comprehensive Revision & Summer Preparation
+  items.push({ topic: 'Revision', name: `Comprehensive Primary English Revision: Grammar & Vocabulary` });
+  items.push({ topic: 'Revision', name: `Comprehensive Primary English Revision: Communication & Phonics` });
+  items.push({ topic: 'Summer Prep', name: `Summer English Self-Study Guide & Digital Learning Resources` });
+  items.push({ topic: 'Summer Prep', name: `Transition to Secondary English: Essential Study Skills` });
+
+  // Week 35 (indices 136-139): English Festival & Graduation Showcase
+  items.push({ topic: 'English Festival', name: `School Year English Festival: Exhibition & Interactive Booths`, isProject: true });
+  items.push({ topic: 'English Festival', name: `English Talent Contest & Public Speaking Gala`, isProject: true });
+  items.push({ topic: 'English Festival', name: `Primary English Graduation Showcase & Portfolio Presentation`, isProject: true });
+  items.push({ topic: 'English Festival', name: `Academic Year Summary & Certificate Awarding Ceremony`, isProject: true });
 
   items.slice(0, 140).forEach((item, idx) => {
     const weekNum = Math.min(35, Math.floor(idx / 4) + 1);

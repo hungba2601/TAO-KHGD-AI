@@ -238,9 +238,9 @@ export function getMathHighSchoolCurriculum(grade: string): RawHighSchoolLesson[
         'Chương V: Các số đặc trưng đo xu thế trung tâm - Bài 12: Số gần đúng và sai số (3 tiết)',
         'Bài 13: Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu không ghép nhóm (3 tiết)',
         'Bài 14: Các số đặc trưng đo mức độ phân tán (Khoảng biến thiên, Khoảng tứ phân vị, Phương sai, Độ lệch chuẩn) (3 tiết)',
-        'Hoạt động thực hành trải nghiệm: Thu thập và phân tích dữ liệu thực tế bằng Excel (3 tiết)',
-        'Ôn tập tổng hợp kiến thức Toán Học kỳ 1 Lớp 10 (3 tiết)',
-        'Kiểm tra, đánh giá cuối Học kỳ 1 môn Toán 10 (3 tiết)'
+        'Kiểm tra, đánh giá cuối Học kỳ 1 môn Toán 10 (3 tiết)',
+        'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức Toán Học kỳ 1 Lớp 10 (3 tiết)',
+        'Sơ kết Học kỳ 1 & Báo cáo sản phẩm mô hình Toán học Lớp 10 (3 tiết)'
       ],
       term2: [
         'Chương VI: Hàm số, đồ thị và ứng dụng - Bài 15: Hàm số và đồ thị (3 tiết)',
@@ -256,10 +256,11 @@ export function getMathHighSchoolCurriculum(grade: string): RawHighSchoolLesson[
         'Bài 24: Hoán vị, Chỉnh hợp và Tổ hợp (3 tiết)',
         'Bài 25: Nhị thức Newton (Khai triển lũy thừa bậc 4, bậc 5) (3 tiết)',
         'Chương IX: Tính xác suất theo định nghĩa cổ điển - Bài 26: Biến cố và định nghĩa cổ điển của xác suất (3 tiết)',
-        'Bài 27: Thực hành tính xác suất trong các trò chơi và bài toán thực tiễn (3 tiết)',
+        'Kiểm tra, đánh giá cuối Học kỳ 2 môn Toán 10 (3 tiết)',
+        'Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành giải toán thực tiễn (3 tiết)',
         'Dự án STEM Toán 10: "Mô hình Parabol Ăng-ten Vệ tinh & Phân tích Rủi ro Tài chính Bằng Xác suất" (3 tiết)',
         'Bài 28: Ôn tập toàn diện chuẩn bị kiểm tra cuối năm Toán 10 (3 tiết)',
-        'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Toán 10 (3 tiết)'
+        'Tổng kết năm học & Đánh giá xếp loại cả năm môn Toán 10 (3 tiết)'
       ]
     },
     11: {
@@ -279,9 +280,9 @@ export function getMathHighSchoolCurriculum(grade: string): RawHighSchoolLesson[
         'Bài 12: Đường thẳng song song với mặt phẳng (3 tiết)',
         'Bài 13: Hai mặt phẳng song song (3 tiết)',
         'Bài 14: Phép chiếu song song và hình biểu diễn của một hình không gian (3 tiết)',
-        'Hoạt động thực hành trải nghiệm: Thiết kế mô hình kiến trúc bằng hình học không gian (3 tiết)',
-        'Ôn tập tổng hợp kiến thức Toán Học kỳ 1 Lớp 11 (3 tiết)',
-        'Kiểm tra, đánh giá cuối Học kỳ 1 môn Toán 11 (3 tiết)'
+        'Kiểm tra, đánh giá cuối Học kỳ 1 môn Toán 11 (3 tiết)',
+        'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức Toán Học kỳ 1 Lớp 11 (3 tiết)',
+        'Sơ kết Học kỳ 1 & Báo cáo sản phẩm mô hình Hình học không gian Lớp 11 (3 tiết)'
       ],
       term2: [
         'Chương V: Giới hạn. Hàm số liên tục - Bài 15: Giới hạn của dãy số (3 tiết)',
@@ -298,9 +299,11 @@ export function getMathHighSchoolCurriculum(grade: string): RawHighSchoolLesson[
         'Chương VIII: Quan hệ vuông góc trong không gian - Bài 25: Hai đường thẳng vuông góc (3 tiết)',
         'Bài 26: Đường thẳng vuông góc với mặt phẳng và Định lí ba đường vuông góc (3 tiết)',
         'Bài 27: Hai mặt phẳng vuông góc và Góc giữa hai mặt phẳng (3 tiết)',
-        'Bài 28: Khoảng cách trong không gian và Thể tích các khối đa diện (3 tiết)',
+        'Kiểm tra, đánh giá cuối Học kỳ 2 môn Toán 11 (3 tiết)',
+        'Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành giải toán hình học không gian (3 tiết)',
         'Dự án STEM Toán 11: "Mô hình Khối Đa diện Xoay 3D & Ứng dụng Hàm số Mũ trong Dự báo Dân số" (3 tiết)',
-        'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Toán 11 (3 tiết)'
+        'Ôn tập toàn diện kiến thức Toán 11 chuẩn bị lên Lớp 12 (3 tiết)',
+        'Tổng kết năm học & Đánh giá xếp loại cả năm môn Toán 11 (3 tiết)'
       ]
     },
     12: {
@@ -320,9 +323,9 @@ export function getMathHighSchoolCurriculum(grade: string): RawHighSchoolLesson[
         'Bài 12: Phương sai và Độ lệch chuẩn của mẫu số liệu ghép nhóm (3 tiết)',
         'Chương IV: Nguyên hàm và Tích phân - Bài 13: Nguyên hàm và bảng nguyên hàm cơ bản (3 tiết)',
         'Bài 14: Phương pháp đổi biến số và Phương pháp từng phần trong tính nguyên hàm (3 tiết)',
-        'Bài 15: Khái niệm tích phân và các tính chất cơ bản của tích phân (3 tiết)',
-        'Ôn tập tổng hợp kiến thức Toán Học kỳ 1 Lớp 12 (3 tiết)',
-        'Kiểm tra, đánh giá cuối Học kỳ 1 môn Toán 12 (3 tiết)'
+        'Kiểm tra, đánh giá cuối Học kỳ 1 môn Toán 12 (3 tiết)',
+        'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức Giải tích và Tọa độ Oxyz HK1 Lớp 12 (3 tiết)',
+        'Sơ kết Học kỳ 1 & Báo cáo sản phẩm mô hình Toán học ứng dụng Lớp 12 (3 tiết)'
       ],
       term2: [
         'Bài 16: Phương pháp tính tích phân (Đổi biến và Từng phần) (3 tiết)',
@@ -334,14 +337,14 @@ export function getMathHighSchoolCurriculum(grade: string): RawHighSchoolLesson[
         'Chương VI: Xác suất có điều kiện - Bài 22: Xác suất có điều kiện và Công thức nhân xác suất (3 tiết)',
         'Bài 23: Công thức xác suất toàn phần và Công thức Bayes (3 tiết)',
         'Kiểm tra, đánh giá giữa Học kỳ 2 môn Toán 12 (3 tiết)',
-        'Bài 24: Thực hành tính xác suất trong xét nghiệm y khoa, trí tuệ nhân tạo và kinh tế (3 tiết)',
+        'Kiểm tra, đánh giá cuối Học kỳ 2 môn Toán 12 (3 tiết)',
+        'Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành giải toán thực tiễn (3 tiết)',
         'Dự án STEM Toán 12: "Mô hình Không gian 3D GeoGebra Oxyz & Ứng dụng Tích phân Thiết kế Thùng chứa" (3 tiết)',
-        'Hệ thống hóa toàn bộ kiến thức Giải tích và Hình học THPT (3 tiết)',
         'Luyện giải bộ đề thi Tốt nghiệp THPT môn Toán theo cấu trúc đề minh họa mới nhất của Bộ GD&ĐT (3 tiết)',
         'Luyện giải các chuyên đề vận dụng cao (Hàm số, Oxyz, Tích phân, Xác suất) (3 tiết)',
         'Thi thử Tốt nghiệp THPT chuẩn format Bộ GD&ĐT (3 tiết)',
         'Ôn tập tổng kết và rèn luyện kỹ năng làm bài thi trắc nghiệm (3 tiết)',
-        'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Toán 12 (3 tiết)'
+        'Tổng kết năm học & Xét hoàn thành chương trình môn Toán cấp THPT (3 tiết)'
       ]
     }
   };
@@ -352,7 +355,7 @@ export function getMathHighSchoolCurriculum(grade: string): RawHighSchoolLesson[
   all35Weeks.forEach((name, idx) => {
     const w = idx + 1;
     const isGK = w === 9 || w === 26;
-    const isCK = w === 18 || w === 35;
+    const isCK = w === 16 || w === 31;
     const isExamPrep = w >= 32;
 
     list.push({
@@ -395,9 +398,9 @@ export function getNguVanHighSchoolCurriculum(grade: string): RawHighSchoolLesso
         'Bài 4: Sức sống của sử thi - Đọc: Héc-to từ biệt Ăng-đrô-mác (Trích I-li-át - Hô-me-rơ) (3 tiết)',
         'Đọc: Đăm Săn đi bắt Nữ Thần Mặt Trời (Sử thi Ê-đê) & Thực hành tiếng Việt: Trích dẫn tài liệu (3 tiết)',
         'Viết: Bài văn nghị luận phân tích nhân vật anh hùng sử thi (3 tiết)',
-        'Bài 5: Tích trò sân khấu dân gian - Đọc: Xúy Vân giả dại (Trích Chèo Kim Nham) & Đọc: Huyện đường (Trích Tuồng Nghêu, Sò, Ốc, Hến) (3 tiết)',
-        'Ôn tập tổng hợp kiến thức Đọc hiểu Thơ, Văn xuôi và Văn nghị luận Học kỳ 1 (3 tiết)',
-        'Kiểm tra, đánh giá cuối Học kỳ 1 môn Ngữ văn 10 (3 tiết)'
+        'Kiểm tra, đánh giá cuối Học kỳ 1 môn Ngữ văn 10 (3 tiết)',
+        'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức Ngữ văn Học kỳ 1 Lớp 10 (3 tiết)',
+        'Sơ kết Học kỳ 1 & Báo cáo tập san Văn học Học kỳ 1 Lớp 10 (3 tiết)'
       ],
       term2: [
         'Bài 6: Nguyễn Trãi - "Dành còn để trợ dân này" - Đọc: Bình Ngô đại cáo (Nguyễn Trãi) (3 tiết)',
@@ -413,10 +416,11 @@ export function getNguVanHighSchoolCurriculum(grade: string): RawHighSchoolLesso
         'Thực hành tiếng Việt: Sử dụng dữ liệu, số liệu và phương tiện phi ngôn ngữ (3 tiết)',
         'Viết: Báo cáo kết quả nghiên cứu về một vấn đề văn hóa truyền thống (3 tiết)',
         'Bài 9: Hành trang cuộc sống - Đọc: Về chính chúng ta (C.Rô-ve-li) & Thực hành tiếng Việt: Sử dụng phương tiện liên kết (3 tiết)',
-        'Viết: Bài luận về bản thân (Tự giới thiệu nét độc đáo của cá nhân) (3 tiết)',
+        'Kiểm tra, đánh giá cuối Học kỳ 2 môn Ngữ văn 10 (3 tiết)',
+        'Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành viết văn nghị luận chuyên sâu (3 tiết)',
         'Dự án Ngữ văn 10: "Sân khấu hóa Trích đoạn Sân khấu Dân gian & Tập san Văn học Tuổi trẻ" (3 tiết)',
         'Bài 10: Ôn tập toàn diện chuẩn bị kiểm tra cuối năm Ngữ văn 10 (3 tiết)',
-        'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Ngữ văn 10 (3 tiết)'
+        'Tổng kết năm học & Đánh giá xếp loại cả năm môn Ngữ văn 10 (3 tiết)'
       ]
     },
     11: {
@@ -436,9 +440,9 @@ export function getNguVanHighSchoolCurriculum(grade: string): RawHighSchoolLesso
         'Thực hành tiếng Việt: Ngôn ngữ kịch & Viết: Bài văn phân tích xung đột kịch (3 tiết)',
         'Bài 5: Chứng nhân của thời đại - Đọc: Một thời đại trong thi ca (Hoài Thanh) & Thực hành tiếng Việt: Thuật ngữ phê bình (3 tiết)',
         'Đọc: Tiếp xúc với nghệ thuật & Viết: Báo cáo nghiên cứu về một trào lưu văn học (3 tiết)',
-        'Nói và nghe: Trình bày kết quả nghiên cứu một vấn đề văn học trước hội đồng (3 tiết)',
-        'Ôn tập tổng hợp kiến thức Đọc hiểu, Tiếng Việt và Kỹ năng viết Học kỳ 1 (3 tiết)',
-        'Kiểm tra, đánh giá cuối Học kỳ 1 môn Ngữ văn 11 (3 tiết)'
+        'Kiểm tra, đánh giá cuối Học kỳ 1 môn Ngữ văn 11 (3 tiết)',
+        'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức Ngữ văn Học kỳ 1 Lớp 11 (3 tiết)',
+        'Sơ kết Học kỳ 1 & Báo cáo tập san Diễn đàn Văn học Trẻ Lớp 11 (3 tiết)'
       ],
       term2: [
         'Bài 6: Nguyễn Du - "Những điều trông thấy mà đau đớn lòng" - Đọc: Trao duyên (Trích Truyện Kiều - Nguyễn Du) (3 tiết)',
@@ -453,11 +457,11 @@ export function getNguVanHighSchoolCurriculum(grade: string): RawHighSchoolLesso
         'Bài 9: Hành trang tri thức - Đọc: Pa-xtơ và cuộc chiến chống bệnh dại & Viết: Văn bản thuyết minh quy trình (3 tiết)',
         'Thực hành tiếng Việt: Biện pháp tu từ chêm xen và liên kết văn bản nâng cao (3 tiết)',
         'Bài 10: Sách và người đọc - Đọc: Đọc sách và sự phát triển trí tuệ & Viết: Thư trao đổi công việc (3 tiết)',
-        'Nói và nghe: Thảo luận về xu hướng văn hóa đọc của giới trẻ trong kỷ nguyên số (3 tiết)',
+        'Kiểm tra, đánh giá cuối Học kỳ 2 môn Ngữ văn 11 (3 tiết)',
+        'Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành viết văn nghị luận chuyên sâu (3 tiết)',
         'Dự án Ngữ văn 11: "Diễn đàn Văn học Trẻ & Tuyển tập Bài viết Nghị luận Đương đại" (3 tiết)',
-        'Bài 11: Ôn tập toàn diện chuẩn bị kiểm tra cuối năm Ngữ văn 11 (3 tiết)',
         'Luyện giải đề thi Ngữ văn 11 chuẩn cấu trúc Đánh giá năng lực của Bộ GD&ĐT (3 tiết)',
-        'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Ngữ văn 11 (3 tiết)'
+        'Tổng kết năm học & Đánh giá xếp loại cả năm môn Ngữ văn 11 (3 tiết)'
       ]
     },
     12: {
@@ -477,9 +481,9 @@ export function getNguVanHighSchoolCurriculum(grade: string): RawHighSchoolLesso
         'Đọc: Chiếc thuyền ngoài xa (Nguyễn Minh Châu) (3 tiết)',
         'Viết: Bài văn nghị luận phân tích một nhân vật trong truyện ngắn hiện đại (3 tiết)',
         'Bài 4: Sức mạnh của kịch bản văn học - Đọc: Hồn Trương Ba, da hàng thịt (Lưu Quang Vũ) (3 tiết)',
-        'Thực hành tiếng Việt: Lời thoại kịch và độc thoại nội tâm nhân vật kịch (3 tiết)',
-        'Ôn tập tổng hợp kiến thức Đọc hiểu Thơ ca và Văn xuôi 1945 - nay Học kỳ 1 (3 tiết)',
-        'Kiểm tra, đánh giá cuối Học kỳ 1 môn Ngữ văn 12 (3 tiết)'
+        'Kiểm tra, đánh giá cuối Học kỳ 1 môn Ngữ văn 12 (3 tiết)',
+        'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức Đọc hiểu Thơ ca và Văn xuôi HK1 Lớp 12 (3 tiết)',
+        'Sơ kết Học kỳ 1 & Báo cáo sản phẩm Tập san Văn học Lớp 12 (3 tiết)'
       ],
       term2: [
         'Bài 5: Tiếng nói của văn hóa và dân tộc - Đọc: Nhìn về vốn văn hóa dân tộc (Trần Đình Hượu) (3 tiết)',
@@ -493,12 +497,12 @@ export function getNguVanHighSchoolCurriculum(grade: string): RawHighSchoolLesso
         'Kiểm tra, đánh giá giữa Học kỳ 2 môn Ngữ văn 12 (3 tiết)',
         'Hệ thống hóa toàn bộ các tác phẩm văn học trọng tâm lớp 12 phục vụ thi Tốt nghiệp THPT (3 tiết)',
         'Chuyên đề 1: Kỹ năng đọc hiểu văn bản văn học và văn bản nghị luận/thông tin ngoài SGK (3 tiết)',
-        'Chuyên đề 2: Kỹ năng viết đoạn văn nghị luận xã hội 200 chữ đạt điểm tối đa (3 tiết)',
+        'Kiểm tra, đánh giá cuối Học kỳ 2 môn Ngữ văn 12 (3 tiết)',
+        'Chữa bài kiểm tra cuối HK2 & Kỹ năng viết đoạn văn nghị luận xã hội 200 chữ đạt điểm tối đa (3 tiết)',
         'Chuyên đề 3: Kỹ năng viết bài văn nghị luận văn học 600 chữ so sánh, đánh giá tác phẩm (3 tiết)',
         'Luyện giải bộ đề thi Tốt nghiệp THPT môn Ngữ văn chuẩn ma trận mới nhất của Bộ GD&ĐT (3 tiết)',
         'Thi thử Tốt nghiệp THPT Quốc gia môn Ngữ văn và chữa bài chi tiết (3 tiết)',
-        'Ôn tập toàn diện, căn dặn kỹ năng làm bài và chuẩn bị tâm lý thi cử vững vàng (3 tiết)',
-        'Kiểm tra, đánh giá cuối Học kỳ 2 & Xét hoàn thành chương trình THPT môn Ngữ văn 12 (3 tiết)'
+        'Tổng kết năm học & Xét hoàn thành chương trình môn Ngữ văn cấp THPT (3 tiết)'
       ]
     }
   };
@@ -509,8 +513,8 @@ export function getNguVanHighSchoolCurriculum(grade: string): RawHighSchoolLesso
   all35Weeks.forEach((name, idx) => {
     const w = idx + 1;
     const isGK = w === 9 || w === 26;
-    const isCK = w === 18 || w === 35;
-    const isExam = w >= 31;
+    const isCK = w === 16 || w === 31;
+    const isExam = w >= 32;
 
     list.push({
       week: w,
@@ -967,7 +971,7 @@ export function getEnglishHighSchoolCurriculum(grade: string): RawHighSchoolLess
   const term1Units = currentGradeData.term1;
   const term1Items: { topic: string; name: string; isGK?: boolean; isCK?: boolean; isProject?: boolean }[] = [];
 
-  // Units 1 - 3 (3 x 8 = 24 periods)
+  // Units 1 - 3 (3 x 8 = 24 periods: Weeks 1 - 8)
   for (let uIdx = 0; uIdx < 3; uIdx++) {
     const u = term1Units[uIdx];
     term1Items.push({ topic: u.title, name: `Getting Started: ${u.gettingStarted}` });
@@ -980,13 +984,13 @@ export function getEnglishHighSchoolCurriculum(grade: string): RawHighSchoolLess
     term1Items.push({ topic: u.title, name: `Looking Back & Project: ${u.lookingBack}`, isProject: true });
   }
 
-  // Review 1 & Mid-Term 1 (4 periods: 25, 26, 27, 28)
+  // Review 1 & Mid-Term 1 (Week 9: periods 25, 26, 27)
   term1Items.push({ topic: 'Review 1 (Units 1-3)', name: 'Review 1: Language (Phonetics, Vocabulary, Grammar Synthesis)' });
   term1Items.push({ topic: 'Review 1 (Units 1-3)', name: 'Review 1: Skills (Academic Reading, Listening, Writing, Speaking)' });
   term1Items.push({ topic: 'Assessment', name: `Mid-term Test 1 (Grade ${g})`, isGK: true });
-  term1Items.push({ topic: 'Assessment', name: `Mid-term Test 1 Feedback & Diagnostic Error Correction (Grade ${g})` });
 
-  // Units 4 - 5 (2 x 8 = 16 periods: 29 to 44)
+  // Units 4 - 5 (Weeks 10 - 15, periods 28 to 45: 18 periods)
+  term1Items.push({ topic: 'Assessment', name: `Mid-term Test 1 Feedback & Diagnostic Error Correction (Grade ${g})` });
   for (let uIdx = 3; uIdx < 5; uIdx++) {
     const u = term1Units[uIdx];
     term1Items.push({ topic: u.title, name: `Getting Started: ${u.gettingStarted}` });
@@ -998,15 +1002,19 @@ export function getEnglishHighSchoolCurriculum(grade: string): RawHighSchoolLess
     term1Items.push({ topic: u.title, name: `Communication and Culture / CLIL: ${u.communication}` });
     term1Items.push({ topic: u.title, name: `Looking Back & Project: ${u.lookingBack}`, isProject: true });
   }
+  term1Items.push({ topic: 'Semester Revision', name: `Intensive Semester 1 Language Consolidation & Exam Preparation` });
 
-  // Review 2, End-of-Term 1 & Advanced Language Portfolio (10 periods: 45 to 54)
-  term1Items.push({ topic: 'Review 2 (Units 4-5)', name: 'Review 2: Language (Academic Grammar & Collocations Revision)' });
-  term1Items.push({ topic: 'Review 2 (Units 4-5)', name: 'Review 2: Skills (Integrated Exam-Oriented Practice)' });
+  // Review 2 & End-of-Term 1 in Week 16 (periods 46, 47, 48)
+  term1Items.push({ topic: 'Review 2 (Units 4-5)', name: 'Review 2: Language & Integrated Skills Revision' });
   term1Items.push({ topic: 'Assessment', name: `End-of-Term 1 Test (Grade ${g})`, isCK: true });
-  term1Items.push({ topic: 'Assessment', name: `End-of-Term 1 Test Feedback & Semester 1 Language Consolidation` });
+  term1Items.push({ topic: 'Assessment', name: `End-of-Term 1 Speaking Assessment & Project Evaluation` });
+
+  // Week 17 (periods 49, 50, 51): Feedback & Exam Practice
+  term1Items.push({ topic: 'Assessment', name: `End-of-Term 1 Test Feedback & Semester 1 Diagnostic Review` });
   term1Items.push({ topic: 'Academic Debate', name: `High School English Debate Workshop: Global Citizenship & AI Trends` });
-  term1Items.push({ topic: 'Exam Preparation', name: `National High School Exam Intensive Practice: Reading Comprehension & Cloze Test (Part 1)` });
-  term1Items.push({ topic: 'Exam Preparation', name: `National High School Exam Intensive Practice: Sentence Transformation & Error Analysis (Part 2)` });
+  term1Items.push({ topic: 'Exam Preparation', name: `National High School Exam Intensive Practice: Reading & Cloze Test` });
+
+  // Week 18 (periods 52, 53, 54): STEM & Showcase
   term1Items.push({ topic: 'STEM Project', name: `STEM Project 1: "AI-Powered English Learning Assistant & Speech Synthesis" (Part 1)`, isProject: true });
   term1Items.push({ topic: 'STEM Project', name: `STEM Project 1: "AI-Powered English Learning Assistant & Speech Synthesis" (Part 2)`, isProject: true });
   term1Items.push({ topic: 'Language Portfolio', name: `Term 1 High School English Digital Portfolio Exhibition & Evaluation`, isProject: true });
@@ -1015,7 +1023,7 @@ export function getEnglishHighSchoolCurriculum(grade: string): RawHighSchoolLess
   const term2Units = currentGradeData.term2;
   const term2Items: { topic: string; name: string; isGK?: boolean; isCK?: boolean; isProject?: boolean }[] = [];
 
-  // Units 6 - 8 (3 x 8 = 24 periods: 55 to 78)
+  // Units 6 - 8 (3 x 7 = 21 periods: Weeks 19 - 25, periods 55 to 75)
   for (let uIdx = 0; uIdx < 3; uIdx++) {
     const u = term2Units[uIdx];
     term2Items.push({ topic: u.title, name: `Getting Started: ${u.gettingStarted}` });
@@ -1025,16 +1033,15 @@ export function getEnglishHighSchoolCurriculum(grade: string): RawHighSchoolLess
     term2Items.push({ topic: u.title, name: `Listening: ${u.listening}` });
     term2Items.push({ topic: u.title, name: `Writing: ${u.writing}` });
     term2Items.push({ topic: u.title, name: `Communication and Culture / CLIL: ${u.communication}` });
-    term2Items.push({ topic: u.title, name: `Looking Back & Project: ${u.lookingBack}`, isProject: true });
   }
 
-  // Review 3 & Mid-Term 2 (4 periods: 79 to 82)
-  term2Items.push({ topic: 'Review 3 (Units 6-8)', name: 'Review 3: Language (Phonetics, Advanced Lexis, Complex Syntax)' });
-  term2Items.push({ topic: 'Review 3 (Units 6-8)', name: 'Review 3: Skills (IELTS / National Exam Format Practice)' });
+  // Review 3 & Mid-Term 2 in Week 26 (periods 76, 77, 78)
+  term2Items.push({ topic: 'Review 3 (Units 6-8)', name: 'Review 3: Language & Integrated Skills Revision' });
+  term2Items.push({ topic: 'Review 3 (Units 6-8)', name: 'Looking Back & Project Presentation (Units 6-8)', isProject: true });
   term2Items.push({ topic: 'Assessment', name: `Mid-term Test 2 (Grade ${g})`, isGK: true });
-  term2Items.push({ topic: 'Assessment', name: `Mid-term Test 2 Feedback & Error Correction (Grade ${g})` });
 
-  // Units 9 - 10 (2 x 8 = 16 periods: 83 to 98)
+  // Units 9 - 10 (Weeks 27 - 30, periods 79 to 90: 12 periods)
+  term2Items.push({ topic: 'Assessment', name: `Mid-term Test 2 Feedback & Diagnostic Error Correction (Grade ${g})` });
   for (let uIdx = 3; uIdx < 5; uIdx++) {
     const u = term2Units[uIdx];
     term2Items.push({ topic: u.title, name: `Getting Started: ${u.gettingStarted}` });
@@ -1042,19 +1049,33 @@ export function getEnglishHighSchoolCurriculum(grade: string): RawHighSchoolLess
     term2Items.push({ topic: u.title, name: `Reading: ${u.reading}` });
     term2Items.push({ topic: u.title, name: `Speaking: ${u.speaking}` });
     term2Items.push({ topic: u.title, name: `Listening: ${u.listening}` });
-    term2Items.push({ topic: u.title, name: `Writing: ${u.writing}` });
-    term2Items.push({ topic: u.title, name: `Communication and Culture / CLIL: ${u.communication}` });
-    term2Items.push({ topic: u.title, name: `Looking Back & Project: ${u.lookingBack}`, isProject: true });
   }
+  term2Items.push({ topic: term2Units[4].title, name: `Writing: ${term2Units[4].writing}` });
 
-  // Review 4, End-of-Year Test & Graduation Sprint (7 periods: 99 to 105)
-  term2Items.push({ topic: 'Review 4 (Units 9-10)', name: 'Review 4: Language (Comprehensive Grammar & Vocabulary Revision)' });
-  term2Items.push({ topic: 'Review 4 (Units 9-10)', name: 'Review 4: Skills (National High School Exam Strategy Practice)' });
+  // Review 4 & End-of-Year Test in Week 31 (periods 91, 92, 93)
+  term2Items.push({ topic: term2Units[4].title, name: `Communication and Culture / CLIL: ${term2Units[4].communication}` });
+  term2Items.push({ topic: 'Review 4 (Units 9-10)', name: 'Review 4: Language & Comprehensive Exam Strategy' });
   term2Items.push({ topic: 'Assessment', name: `End-of-Year Test (Grade ${g})`, isCK: true });
+
+  // Week 32 (periods 94, 95, 96): Feedback & Sprint
   term2Items.push({ topic: 'Assessment', name: `End-of-Year Test Feedback & Overall Revision for High School Graduation` });
   term2Items.push({ topic: 'Exam Sprint', name: `National High School Exam Final Sprint: 50 Questions Mock Test (Part 1)` });
   term2Items.push({ topic: 'Exam Sprint', name: `National High School Exam Final Sprint: Advanced Reading & Paraphrasing Techniques (Part 2)` });
-  term2Items.push({ topic: 'Graduation Exhibition', name: `High School Graduation English Portfolio Exhibition & Farewell Presentation`, isProject: true });
+
+  // Week 33 (periods 97, 98, 99): STEM & Academic Workshop
+  term2Items.push({ topic: 'STEM Project', name: `STEM Project 2: "AI-Powered Multilingual Digital Assistant" (Part 1)`, isProject: true });
+  term2Items.push({ topic: 'STEM Project', name: `STEM Project 2: "AI-Powered Multilingual Digital Assistant" (Part 2)`, isProject: true });
+  term2Items.push({ topic: 'Academic Workshop', name: `High School English Academic Presentation & Critical Thinking Seminar` });
+
+  // Week 34 (periods 100, 101, 102): Intensive Exam Simulation
+  term2Items.push({ topic: 'Exam Simulation', name: `National High School Graduation Exam Simulation Test (50 Questions)` });
+  term2Items.push({ topic: 'Exam Simulation', name: `Test Analysis, Time Management Strategies & Common Pitfalls Correction` });
+  term2Items.push({ topic: 'Consolidation', name: `Final Comprehensive Grammar, Lexis & Reading Strategies Mastery` });
+
+  // Week 35 (periods 103, 104, 105): Summary & Graduation Exhibition
+  term2Items.push({ topic: 'Graduation Exhibition', name: `High School Graduation English Digital Portfolio Exhibition`, isProject: true });
+  term2Items.push({ topic: 'Farewell Presentation', name: `Farewell English Presentation: "My Journey and Future Aspirations"` });
+  term2Items.push({ topic: 'School Year Summary', name: `School Year Summary & Outstanding English Achievement Awards Ceremony` });
 
   // Combine all 105 lessons
   const all105Lessons = [...term1Items, ...term2Items];
@@ -1103,8 +1124,9 @@ export function getGdtcHighSchoolCurriculum(grade: string): RawHighSchoolLesson[
       'Tiết 27: Thể thao tự chọn: Trận đấu tập luyện theo luật thi đấu quốc gia & Tiết 28: Bài tập phát triển thể lực',
       'Tiết 29: Kỹ năng phòng ngừa và xử lý chấn thương thể thao nghiêm trọng & Tiết 30: Ôn tập thể thao tự chọn',
       'Tiết 31: Xây dựng thói quen rèn luyện thể lực suốt đời & Tiết 32: Ôn tập chạy bền',
-      'Tiết 33: Ôn tập tổng hợp toàn diện kiến thức GDTC Học kỳ 1',
-      'Tiết 35 & Tiết 36: Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn GDTC 10',
+      'Tiết 31 & Tiết 32: Kiểm tra, đánh giá cuối Học kỳ 1 môn GDTC 10 (Chạy ngắn 100m & Nhảy cao)',
+      'Tiết 33 & Tiết 34: Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kỹ năng GDTC HK1',
+      'Tiết 35 & Tiết 36: Sơ kết Học kỳ 1 & Giao lưu thể thao học sinh khối 10',
       'Tiết 37: Phương pháp kiểm soát căng thẳng và phục hồi năng lượng sau vận động & Tiết 38: Đội hình đội ngũ',
       'Tiết 39: Bài thể dục Aerobic phát triển thể lực lớp 10 & Tiết 40: Đồng diễn bài thể dục theo nhạc',
       'Tiết 41: Nhảy xa kiểu ưỡn thân: Kỹ thuật chạy đà 15-19 bước & Tiết 42: Giậm nhảy và bay trên không',
@@ -1116,12 +1138,12 @@ export function getGdtcHighSchoolCurriculum(grade: string): RawHighSchoolLesson[
       'Tiết 53: Thể thao tự chọn: Kỹ thuật đập cầu góc hiểm / Đập bóng chuyền trên lưới & Tiết 54: Phòng thủ bọc lót',
       'Tiết 55: Thể thao tự chọn: Trận đấu thi đấu giải chính thức & Tiết 56: Chiến thuật tấn công ghi điểm',
       'Tiết 57: Thể thao tự chọn: Tổ chức giải thi đấu thể thao học sinh khối 10 & Tiết 58: Thực hành làm trọng tài',
-      'Tiết 59: Kiểm tra tiêu chuẩn đánh giá thể lực học sinh lớp 10 theo QĐ 53/2008/QĐ-BGDĐT',
-      'Tiết 61: Hội khỏe Phù Đổng cấp trường: Thi đấu Điền kinh (Chạy 100m, Nhảy cao, Nhảy xa, Đẩy tạ)',
-      'Tiết 63: Hội khỏe Phù Đổng: Thi đấu các môn Bóng đá, Cầu lông, Bóng rổ, Bóng chuyền',
-      'Tiết 65: Biểu diễn đồng diễn bài thể dục toàn trường & Lễ tổng kết phong trào rèn luyện thân thể',
-      'Tiết 67: Ôn tập toàn diện kỹ năng GDTC 10 & Hướng dẫn tự rèn luyện thể thao hè',
-      'Tiết 69 & Tiết 70: Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn GDTC 10'
+      'Tiết 59: Ôn tập toàn diện kỹ năng GDTC 10 chuẩn bị kiểm tra cuối năm',
+      'Tiết 61 & Tiết 62: Kiểm tra, đánh giá cuối Học kỳ 2 môn GDTC 10 (Nhảy xa & Thể thao tự chọn)',
+      'Tiết 63 & Tiết 64: Chữa bài kiểm tra cuối HK2 & Kiểm tra tiêu chuẩn đánh giá thể lực học sinh lớp 10 theo QĐ 53/2008/QĐ-BGDĐT',
+      'Tiết 65 & Tiết 66: Hội khỏe Phù Đổng cấp trường: Thi đấu các môn Điền kinh và Bóng đá/Cầu lông/Bóng rổ',
+      'Tiết 67 & Tiết 68: Biểu diễn đồng diễn bài thể dục toàn trường & Hướng dẫn tự rèn luyện thể thao hè',
+      'Tiết 69 & Tiết 70: Tổng kết năm học & Đánh giá xếp loại cả năm môn GDTC 10'
     ],
     11: [
       'Tiết 1: Nguyên tắc lựa chọn môn thể thao phù hợp với tố chất cá nhân & Tiết 2: Đội hình đội ngũ chuẩn hóa',
@@ -1140,8 +1162,9 @@ export function getGdtcHighSchoolCurriculum(grade: string): RawHighSchoolLesson[
       'Tiết 27: Thể thao tự chọn: Trận đấu tập luyện theo luật thi đấu quốc gia & Tiết 28: Bài tập phát triển thể lực',
       'Tiết 29: Kỹ năng xử lý chấn thương khớp vai, dây chằng & Tiết 30: Ôn tập thể thao tự chọn',
       'Tiết 31: Xây dựng kế hoạch phát triển thể lực 5 năm & Tiết 32: Ôn tập chạy bền',
-      'Tiết 33: Ôn tập tổng hợp kiến thức toàn diện GDTC Học kỳ 1',
-      'Tiết 35 & Tiết 36: Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn GDTC 11',
+      'Tiết 31 & Tiết 32: Kiểm tra, đánh giá cuối Học kỳ 1 môn GDTC 11 (Chạy ngắn 100m & Nhảy cao)',
+      'Tiết 33 & Tiết 34: Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kỹ năng GDTC HK1',
+      'Tiết 35 & Tiết 36: Sơ kết Học kỳ 1 & Giao lưu thể thao học sinh khối 11',
       'Tiết 37: Phương pháp xây dựng chế độ dinh dưỡng thi đấu thể thao & Tiết 38: Đội hình đội ngũ',
       'Tiết 39: Bài thể dục nhịp điệu Aerobic lớp 11 & Tiết 40: Đồng diễn bài thể dục Aerobic theo nhạc',
       'Tiết 41: Nhảy xa kiểu ưỡn thân: Kỹ thuật chạy đà tốc độ cao 17-21 bước & Tiết 42: Giậm nhảy và ưỡn thân trên không',
@@ -1153,12 +1176,12 @@ export function getGdtcHighSchoolCurriculum(grade: string): RawHighSchoolLesson[
       'Tiết 53: Thể thao tự chọn: Kỹ thuật đập cầu smash / Chuyền hai bóng chuyền & Tiết 54: Chắn bóng trên lưới',
       'Tiết 55: Thể thao tự chọn: Trận đấu thi đấu giải chính thức & Tiết 56: Chiến thuật toàn diện',
       'Tiết 57: Thể thao tự chọn: Tổ chức giải thi đấu thể thao học sinh khối 11 & Tiết 58: Điều hành trọng tài',
-      'Tiết 59: Kiểm tra tiêu chuẩn đánh giá thể lực học sinh lớp 11 theo QĐ 53/2008/QĐ-BGDĐT',
-      'Tiết 61: Hội khỏe Phù Đổng cấp trường: Thi đấu Điền kinh (Chạy 100m, Nhảy cao, Nhảy xa, Đẩy tạ)',
-      'Tiết 63: Hội khỏe Phù Đổng: Thi đấu các môn Bóng đá, Cầu lông, Bóng rổ, Bóng chuyền',
-      'Tiết 65: Biểu diễn đồng diễn thể dục toàn trường & Lễ trao giải Hội khỏe Phù Đổng',
-      'Tiết 67: Ôn tập toàn diện kỹ năng GDTC 11 & Hướng dẫn tự rèn luyện hè',
-      'Tiết 69 & Tiết 70: Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn GDTC 11'
+      'Tiết 59: Ôn tập toàn diện kỹ năng GDTC 11 chuẩn bị kiểm tra cuối năm',
+      'Tiết 61 & Tiết 62: Kiểm tra, đánh giá cuối Học kỳ 2 môn GDTC 11 (Nhảy xa & Thể thao tự chọn)',
+      'Tiết 63 & Tiết 64: Chữa bài kiểm tra cuối HK2 & Kiểm tra tiêu chuẩn đánh giá thể lực học sinh lớp 11 theo QĐ 53/2008/QĐ-BGDĐT',
+      'Tiết 65 & Tiết 66: Hội khỏe Phù Đổng cấp trường: Thi đấu các môn Điền kinh và Thể thao tự chọn',
+      'Tiết 67 & Tiết 68: Biểu diễn đồng diễn thể dục toàn trường & Hướng dẫn tự rèn luyện hè',
+      'Tiết 69 & Tiết 70: Tổng kết năm học & Đánh giá xếp loại cả năm môn GDTC 11'
     ],
     12: [
       'Tiết 1: Xây dựng kế hoạch tự tập luyện thể dục thể thao suốt đời & Tiết 2: Đội hình đội ngũ chuẩn hóa',
@@ -1177,8 +1200,9 @@ export function getGdtcHighSchoolCurriculum(grade: string): RawHighSchoolLesson[
       'Tiết 27: Thể thao tự chọn: Trận đấu tập luyện theo luật thi đấu quốc gia & Tiết 28: Bài tập phát triển thể lực',
       'Tiết 29: Kỹ năng sơ cấp cứu và phòng ngừa chấn thương thể thao nặng & Tiết 30: Ôn tập thể thao tự chọn',
       'Tiết 31: Xây dựng thói quen rèn luyện thể chất chuẩn bị vào Đại học & Tiết 32: Ôn tập chạy bền',
-      'Tiết 33: Ôn tập tổng hợp kiến thức toàn diện GDTC Học kỳ 1',
-      'Tiết 35 & Tiết 36: Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn GDTC 12',
+      'Tiết 31 & Tiết 32: Kiểm tra, đánh giá cuối Học kỳ 1 môn GDTC 12 (Chạy ngắn 100m & Nhảy cao)',
+      'Tiết 33 & Tiết 34: Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kỹ năng GDTC HK1',
+      'Tiết 35 & Tiết 36: Sơ kết Học kỳ 1 & Giao lưu thể thao học sinh khối 12',
       'Tiết 37: Phương pháp giải tỏa căng thẳng kỳ thi Tốt nghiệp THPT bằng vận động thể thao & Tiết 38: Đội hình đội ngũ',
       'Tiết 39: Bài thể dục Aerobic phát triển thể lực lớp 12 & Tiết 40: Đồng diễn bài thể dục tốt nghiệp',
       'Tiết 41: Nhảy xa kiểu ưỡn thân: Kỹ thuật chạy đà 19-23 bước & Tiết 42: Giậm nhảy và bay trên không',
@@ -1190,12 +1214,12 @@ export function getGdtcHighSchoolCurriculum(grade: string): RawHighSchoolLesson[
       'Tiết 53: Thể thao tự chọn: Kỹ thuật đập cầu smash hiểm hóc / Sút bóng xa uy lực & Tiết 54: Phối hợp chiến thuật toàn đội',
       'Tiết 55: Thể thao tự chọn: Trận đấu thi đấu chính thức cấp trường & Tiết 56: Chiến thuật tấn công ghi điểm',
       'Tiết 57: Thể thao tự chọn: Tổ chức giải thi đấu thể thao học sinh khối 12 & Tiết 58: Điều hành trọng tài',
-      'Tiết 59: Kiểm tra tiêu chuẩn đánh giá thể lực học sinh lớp 12 theo QĐ 53/2008/QĐ-BGDĐT',
-      'Tiết 61: Hội khỏe Phù Đổng cấp trường: Thi đấu Điền kinh (Chạy 100m, Nhảy cao, Nhảy xa, Đẩy tạ)',
-      'Tiết 63: Hội khỏe Phù Đổng: Thi đấu các môn Bóng đá, Cầu lông, Bóng rổ, Bóng chuyền, Bơi lội',
-      'Tiết 65: Biểu diễn đồng diễn bài thể dục chào mừng Lễ tốt nghiệp THPT & Trao thưởng VĐV tiêu biểu',
-      'Tiết 67: Ôn tập toàn diện kỹ năng thể chất 3 năm THPT & Hướng dẫn rèn luyện thể lực vào Đại học',
-      'Tiết 69 & Tiết 70: Kiểm tra, đánh giá cuối Học kỳ 2 & Xét hoàn thành chương trình GDTC THPT'
+      'Tiết 59: Ôn tập toàn diện kỹ năng thể chất 12 chuẩn bị kiểm tra cuối năm',
+      'Tiết 61 & Tiết 62: Kiểm tra, đánh giá cuối Học kỳ 2 môn GDTC 12 (Nhảy xa & Thể thao tự chọn)',
+      'Tiết 63 & Tiết 64: Chữa bài kiểm tra cuối HK2 & Kiểm tra tiêu chuẩn đánh giá thể lực học sinh lớp 12 theo QĐ 53/2008/QĐ-BGDĐT',
+      'Tiết 65 & Tiết 66: Hội khỏe Phù Đổng cấp trường: Thi đấu Điền kinh và Thể thao tự chọn',
+      'Tiết 67 & Tiết 68: Biểu diễn đồng diễn bài thể dục chào mừng Lễ tốt nghiệp THPT & Hướng dẫn rèn luyện thể lực vào Đại học',
+      'Tiết 69 & Tiết 70: Tổng kết năm học & Xét hoàn thành chương trình GDTC THPT'
     ]
   };
 
@@ -1204,7 +1228,7 @@ export function getGdtcHighSchoolCurriculum(grade: string): RawHighSchoolLesson[
     const w = idx + 1;
     if (w > 35) return;
     const isGK = w === 9 || w === 26;
-    const isCK = w === 18 || w === 35;
+    const isCK = w === 16 || w === 31;
 
     list.push({
       week: w,
@@ -1280,7 +1304,7 @@ export function getGeneralHighSchoolCurriculum(grade: string, subject: string): 
         yccd: `- Nắm vững các định luật cơ học, nhiệt học, điện từ học, sóng và quang học của ${name} (SGK Vật lí ${g} Kết nối tri thức).\n- Thành thạo kỹ năng tiến hành thí nghiệm vật lí, đo lường sai số và mô hình hóa toán học các hiện tượng vật lí.\n- Bồi dưỡng tư duy khoa học thực nghiệm, năng lực sáng tạo kỹ thuật và định hướng nghề nghiệp kỹ sư, công nghệ.`,
         equipment: 'Bộ thí nghiệm chuyển động thẳng, cổng quang điện, đồng hồ đo thời gian hiện số, cảm biến lực kế, máy chiếu',
         location: 'Phòng học bộ môn Vật lí / Phòng thực hành STEM',
-        notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 18 || w === 35 ? 'Kiểm tra cuối kỳ' : w === 30 ? 'Dự án STEM Vật lí' : ''
+        notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 16 || w === 31 ? 'Kiểm tra cuối kỳ' : w === 30 ? 'Dự án STEM Vật lí' : ''
       });
     });
 
@@ -1338,7 +1362,7 @@ export function getGeneralHighSchoolCurriculum(grade: string, subject: string): 
         yccd: `- Nắm vững cấu trúc nguyên tử, liên kết hóa học, nhiệt động học, tốc độ phản ứng và hóa học các nguyên tố của ${name} (SGK Hóa học ${g} Kết nối tri thức).\n- Thành thạo kỹ năng thao tác hóa chất an toàn, giải bài toán hóa học bằng phương pháp bảo toàn e, bảo toàn khối lượng.\n- Bồi dưỡng tư duy khoa học thực nghiệm và định hướng nghề nghiệp trong ngành hóa dược, vật liệu mới.`,
         equipment: 'Phòng thí nghiệm Hóa học, bộ hóa chất Halogen, ống nghiệm, nhiệt lượng kế, cân điện tử',
         location: 'Phòng thực hành Hóa học / Lớp học',
-        notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 18 || w === 35 ? 'Kiểm tra cuối kỳ' : w === 30 ? 'Dự án STEM Hóa học' : ''
+        notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 16 || w === 31 ? 'Kiểm tra cuối kỳ' : w === 30 ? 'Dự án STEM Hóa học' : ''
       });
     });
 
@@ -1363,9 +1387,9 @@ export function getGeneralHighSchoolCurriculum(grade: string, subject: string): 
       `Chương III: Trao đổi chất và chuyển hóa năng lượng ở tế bào - Bài 12: Vận chuyển các chất qua màng sinh chất (2 tiết)`,
       `Bài 13: Chuyển hóa vật chất và năng lượng. Enzyme và vai trò của enzyme (2 tiết)`,
       `Bài 14: Hô hấp tế bào (Đường phân, Chu trình Krebs, Chuỗi chuyền electron hô hấp) (2 tiết)`,
-      `Bài 15: Quang hợp ở thực vật (Pha sáng và Pha tối chu trình Calvin) (2 tiết)`,
-      `Ôn tập tổng hợp kiến thức Sinh học tế bào Học kỳ 1 Lớp ${g} (2 tiết)`,
       `Kiểm tra, đánh giá cuối Học kỳ 1 môn Sinh học Lớp ${g} (2 tiết)`,
+      `Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức Sinh học tế bào HK1 Lớp ${g} (2 tiết)`,
+      `Sơ kết Học kỳ 1 & Báo cáo sản phẩm thực hành Sinh học HK1 Lớp ${g} (2 tiết)`,
       `Chương IV: Thông tin giữa các tế bào và Chu kì tế bào - Bài 16: Thông tin giữa các tế bào (2 tiết)`,
       `Bài 17: Chu kì tế bào và Quá trình Nguyên phân (2 tiết)`,
       `Bài 18: Quá trình Giảm phân và Thụ tinh tạo biến dị tổ hợp (2 tiết)`,
@@ -1378,11 +1402,11 @@ export function getGeneralHighSchoolCurriculum(grade: string, subject: string): 
       `Bài 24: Cấu tạo và các giai đoạn nhân lên của Virus trong tế bào chủ (2 tiết)`,
       `Bài 25: Một số bệnh do virus gây ra ở người, động vật, thực vật và Miễn dịch (2 tiết)`,
       `Bài 26: Ứng dụng của virus trong y học và nông nghiệp (Vaccine, thể truyền gen) (2 tiết)`,
+      `Kiểm tra, đánh giá cuối Học kỳ 2 môn Sinh học Lớp ${g} (2 tiết)`,
+      `Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành bổ trợ Sinh học ${g} (2 tiết)`,
       `Dự án STEM Sinh học: "Mô hình Lên men Thực phẩm Probiotic & Nuôi cấy Nấm Men Tự nhiên" (2 tiết)`,
-      `Bài 27: Báo cáo kết quả dự án nuôi cấy vi sinh vật học sinh (2 tiết)`,
-      `Bài 28: Hệ thống hóa toàn bộ kiến thức Sinh học Lớp ${g} (2 tiết)`,
-      `Bài 29: Ôn tập toàn diện chuẩn bị kiểm tra cuối năm Sinh học ${g} (2 tiết)`,
-      `Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Sinh học ${g} (2 tiết)`
+      `Bài 27: Ôn tập toàn diện chuẩn bị tổng kết năm học và Luyện thi Tốt nghiệp THPT môn Sinh học (2 tiết)`,
+      `Tổng kết năm học & Đánh giá xếp loại cả năm môn Sinh học Lớp ${g} (2 tiết)`
     ];
 
     sinhHocTopics.forEach((name, idx) => {
@@ -1396,7 +1420,7 @@ export function getGeneralHighSchoolCurriculum(grade: string, subject: string): 
         yccd: `- Nắm vững cơ chế sinh học phân tử, cấu trúc tế bào, trao đổi chất, chu kì tế bào, di truyền và vi sinh vật của ${name} (SGK Sinh học ${g} Kết nối tri thức).\n- Rèn luyện kỹ năng làm tiêu bản hiển vi, nuôi cấy vi sinh vật và giải thích các hiện tượng y học, nông nghiệp thực tế.\n- Bồi dưỡng tình yêu thiên nhiên, ý thức bảo vệ đa dạng sinh học và định hướng nghề nghiệp trong ngành y dược, công nghệ sinh học.`,
         equipment: 'Kính hiển vi quang học độ phóng đại lớn, lam kính, lamen, bộ hóa chất nhuộm màu tế bào, máy chiếu',
         location: 'Phòng thực hành Sinh học / Lớp học',
-        notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 18 || w === 35 ? 'Kiểm tra cuối kỳ' : w === 30 ? 'Dự án STEM Sinh học' : ''
+        notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 16 || w === 31 ? 'Kiểm tra cuối kỳ' : w === 30 ? 'Dự án STEM Sinh học' : ''
       });
     });
 
@@ -1421,9 +1445,9 @@ export function getGeneralHighSchoolCurriculum(grade: string, subject: string): 
       `Chủ đề 5: Một số nền văn minh trên đất nước Việt Nam - Bài 12: Văn minh Văn Lang - Âu Lạc (2 tiết)`,
       `Bài 13: Văn minh Chăm-pa và Văn minh Phù Nam (2 tiết)`,
       `Bài 14: Văn minh Đại Việt: Kinh tế, chính trị và xã hội (2 tiết)`,
-      `Bài 15: Văn minh Đại Việt: Thành tựu tư tưởng, văn hóa, giáo dục và nghệ thuật (2 tiết)`,
-      `Ôn tập tổng hợp kiến thức Lịch sử thế giới và Lịch sử Việt Nam Học kỳ 1 (2 tiết)`,
       `Kiểm tra, đánh giá cuối Học kỳ 1 môn Lịch sử Lớp ${g} (2 tiết)`,
+      `Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức Lịch sử thế giới và Lịch sử Việt Nam HK1 Lớp ${g} (2 tiết)`,
+      `Sơ kết Học kỳ 1 & Báo cáo sản phẩm Di sản Văn hóa Lịch sử Lớp ${g} (2 tiết)`,
       `Chủ đề 6: Chiến tranh bảo vệ Tổ quốc trong lịch sử Việt Nam - Bài 16: Một số cuộc kháng chiến tiêu biểu trước 1945 (2 tiết)`,
       `Bài 17: Cuộc khởi nghĩa Lam Sơn và phong trào Tây Sơn (2 tiết)`,
       `Bài 18: Bài học lịch sử từ các cuộc kháng chiến và khởi nghĩa bảo vệ Tổ quốc (2 tiết)`,
@@ -1436,11 +1460,11 @@ export function getGeneralHighSchoolCurriculum(grade: string, subject: string): 
       `Chủ đề 9: Khối đại đoàn kết dân tộc - Bài 24: Quá trình hình thành và phát triển khối đại đoàn kết dân tộc Việt Nam (2 tiết)`,
       `Bài 25: Chính sách dân tộc của Đảng và Nhà nước Việt Nam trong thời kỳ Đổi mới (2 tiết)`,
       `Chủ đề 10: Hồ Chí Minh trong tiến trình lịch sử dân tộc - Bài 26: Di sản tư tưởng Hồ Chí Minh về độc lập dân tộc và CNXH (2 tiết)`,
+      `Kiểm tra, đánh giá cuối Học kỳ 2 môn Lịch sử Lớp ${g} (2 tiết)`,
+      `Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành bổ trợ Lịch sử ${g} (2 tiết)`,
       `Dự án Lịch sử: "Sa bàn Số 3D Chiến dịch Điện Biên Phủ & Triển lãm Hành trình Di sản Lịch sử Việt Nam" (2 tiết)`,
-      `Bài 27: Báo cáo kết quả nghiên cứu chuyên đề lịch sử của học sinh (2 tiết)`,
-      `Bài 28: Ôn tập toàn diện chuẩn bị kiểm tra cuối năm Lịch sử ${g} (2 tiết)`,
-      `Luyện giải bộ đề thi Lịch sử chuẩn hóa ma trận Bộ GD&ĐT (2 tiết)`,
-      `Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Lịch sử ${g} (2 tiết)`
+      `Bài 27: Ôn tập toàn diện chuẩn bị tổng kết năm học và Luyện thi Tốt nghiệp THPT môn Lịch sử (2 tiết)`,
+      `Tổng kết năm học & Đánh giá xếp loại cả năm môn Lịch sử Lớp ${g} (2 tiết)`
     ];
 
     lichSuTopics.forEach((name, idx) => {
@@ -1454,7 +1478,7 @@ export function getGeneralHighSchoolCurriculum(grade: string, subject: string): 
         yccd: `- Trình bày và phân tích sâu sắc các sự kiện, tiến trình lịch sử, bài học kinh nghiệm và thành tựu văn minh của ${name} (SGK Lịch sử ${g} Kết nối tri thức).\n- Phát triển năng lực tư duy lịch sử, khả năng phản biện tư liệu và đánh giá khách quan các nhân vật lịch sử.\n- Khơi dậy lòng yêu nước nồng nàn, niềm tự hào dân tộc và ý thức trách nhiệm bảo vệ chủ quyền Tổ quốc.`,
         equipment: 'Bản đồ lịch sử Việt Nam và thế giới, tranh ảnh tư liệu, video tài liệu lịch sử, máy chiếu',
         location: 'Phòng học bộ môn Lịch sử / Lớp học',
-        notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 18 || w === 35 ? 'Kiểm tra cuối kỳ' : w === 31 ? 'Dự án Lịch sử Số 3D' : ''
+        notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 16 || w === 31 ? 'Kiểm tra cuối kỳ' : w === 31 ? 'Dự án Lịch sử Số 3D' : ''
       });
     });
 
@@ -1479,9 +1503,9 @@ export function getGeneralHighSchoolCurriculum(grade: string, subject: string): 
       `Chương VI: Sinh quyển và Thổ nhưỡng - Bài 12: Đất và các nhân tố hình thành đất (2 tiết)`,
       `Bài 13: Sinh quyển và các nhân tố ảnh hưởng đến sự phát triển, phân bố sinh vật (2 tiết)`,
       `Chương VII: Một số quy luật của vỏ địa lí - Bài 14: Quy luật thống nhất và hoàn chỉnh, quy luật địa đới (2 tiết)`,
-      `Chương VIII: Địa lí dân cư - Bài 15: Quy mô dân số, gia tăng dân số và cơ cấu dân số thế giới (2 tiết)`,
-      `Ôn tập tổng hợp kiến thức Địa lí tự nhiên và Địa lí dân cư Học kỳ 1 (2 tiết)`,
       `Kiểm tra, đánh giá cuối Học kỳ 1 môn Địa lí Lớp ${g} (2 tiết)`,
+      `Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức Địa lí tự nhiên và Địa lí dân cư HK1 Lớp ${g} (2 tiết)`,
+      `Sơ kết Học kỳ 1 & Báo cáo sản phẩm Bản đồ Địa lí Lớp ${g} (2 tiết)`,
       `Bài 16: Đô thị hóa và các vấn đề xã hội của đô thị hóa toàn cầu (2 tiết)`,
       `Chương IX: Nguồn lực phát triển kinh tế - Bài 17: Các nguồn lực phát triển kinh tế và Cơ cấu kinh tế (2 tiết)`,
       `Chương X: Địa lí nông nghiệp - Bài 18: Vai trò, đặc điểm và các nhân tố ảnh hưởng đến nông nghiệp (2 tiết)`,
@@ -1494,11 +1518,11 @@ export function getGeneralHighSchoolCurriculum(grade: string, subject: string): 
       `Bài 24: Địa lí ngành giao thông vận tải và bưu chính viễn thông (2 tiết)`,
       `Bài 25: Địa lí ngành thương mại và du lịch thế giới (2 tiết)`,
       `Chương XIII: Môi trường và Phát triển bền vững - Bài 26: Môi trường và tài nguyên thiên nhiên (2 tiết)`,
-      `Bài 27: Phát triển bền vững và tăng trưởng xanh toàn cầu (2 tiết)`,
+      `Kiểm tra, đánh giá cuối Học kỳ 2 môn Địa lí Lớp ${g} (2 tiết)`,
+      `Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành bổ trợ Địa lí ${g} (2 tiết)`,
       `Dự án Địa lí: "Xây dựng Bản đồ Web GIS Phân tích Biến đổi Khí hậu & Kế hoạch Phát triển Du lịch Xanh" (2 tiết)`,
-      `Bài 28: Ôn tập toàn diện chuẩn bị kiểm tra cuối năm Địa lí ${g} (2 tiết)`,
-      `Luyện giải bộ đề thi Địa lí chuẩn hóa ma trận Bộ GD&ĐT (2 tiết)`,
-      `Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Địa lí ${g} (2 tiết)`
+      `Bài 27: Ôn tập toàn diện chuẩn bị tổng kết năm học và Luyện thi Tốt nghiệp THPT môn Địa lí (2 tiết)`,
+      `Tổng kết năm học & Đánh giá xếp loại cả năm môn Địa lí Lớp ${g} (2 tiết)`
     ];
 
     diaLiTopics.forEach((name, idx) => {
@@ -1512,7 +1536,7 @@ export function getGeneralHighSchoolCurriculum(grade: string, subject: string): 
         yccd: `- Nắm vững các quy luật tự nhiên của vỏ địa lí, đặc điểm kinh tế - xã hội, dân cư và ngành nghề của ${name} (SGK Địa lí ${g} Kết nối tri thức).\n- Khai thác thành thạo bản đồ, Atlas Địa lí, số liệu thống kê, biểu đồ và ứng dụng công nghệ GIS.\n- Bồi dưỡng ý thức bảo vệ tài nguyên môi trường, thích ứng biến đổi khí hậu và phát triển bền vững.`,
         equipment: 'Quả địa cầu, Atlas Địa lí Việt Nam và thế giới, phần mềm GIS, bản đồ chuyên đề, máy chiếu',
         location: 'Phòng học bộ môn Địa lí / Lớp học',
-        notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 18 || w === 35 ? 'Kiểm tra cuối kỳ' : w === 32 ? 'Dự án Bản đồ Web GIS' : ''
+        notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 16 || w === 31 ? 'Kiểm tra cuối kỳ' : w === 32 ? 'Dự án Bản đồ Web GIS' : ''
       });
     });
 
@@ -1537,9 +1561,9 @@ export function getGeneralHighSchoolCurriculum(grade: string, subject: string): 
       `Bài 12: Câu lệnh lặp for và while trong Python (2 tiết)`,
       `Bài 13: Xử lý danh sách (List) và các thao tác trên danh sách (2 tiết)`,
       `Bài 14: Xử lý xâu ký tự (String) và các phương thức xử lý văn bản (2 tiết)`,
-      `Bài 15: Xây dựng hàm (Function) và tái sử dụng mã nguồn trong Python (2 tiết)`,
-      `Ôn tập tổng hợp kiến thức Tin học ứng dụng và Lập trình Python Học kỳ 1 (2 tiết)`,
       `Kiểm tra, đánh giá cuối Học kỳ 1 môn Tin học Lớp ${g} (2 tiết)`,
+      `Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức Tin học ứng dụng và Lập trình Python HK1 Lớp ${g} (2 tiết)`,
+      `Sơ kết Học kỳ 1 & Báo cáo sản phẩm phần mềm Lớp ${g} (2 tiết)`,
       `Bài 16: Thao tác đọc ghi tệp dữ liệu (File I/O) trong Python (2 tiết)`,
       `Bài 17: Kỹ thuật kiểm thử và gỡ lỗi chương trình (Debugging) (2 tiết)`,
       `Bài 18: Thuật toán tìm kiếm (Tìm kiếm tuần tự và tìm kiếm nhị phân) (2 tiết)`,
@@ -1552,11 +1576,11 @@ export function getGeneralHighSchoolCurriculum(grade: string, subject: string): 
       `Bài 24: Định dạng giao diện web responsive hiện đại với CSS3 (2 tiết)`,
       `Bài 25: Lập trình kịch bản tương tác web với JavaScript (2 tiết)`,
       `Chủ đề 7: Trí tuệ nhân tạo (AI) và Hướng nghiệp - Bài 26: Khám phá Trí tuệ nhân tạo (AI) và Khoa học dữ liệu (2 tiết)`,
-      `Bài 27: Hướng nghiệp với Tin học: Thị trường lao động CNTT và AI trong tương lai (2 tiết)`,
+      `Kiểm tra, đánh giá cuối Học kỳ 2 môn Tin học Lớp ${g} (2 tiết)`,
+      `Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành tối ưu hóa mã nguồn Python (2 tiết)`,
       `Dự án Tin học & AI: "Phát triển Ứng dụng Web / Chatbot AI Hỗ trợ Học tập Thông minh" (2 tiết)`,
-      `Bài 28: Báo cáo và trình diễn sản phẩm phần mềm trước hội đồng lớp (2 tiết)`,
-      `Bài 29: Ôn tập toàn diện chuẩn bị kiểm tra cuối năm Tin học ${g} (2 tiết)`,
-      `Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Tin học ${g} (2 tiết)`
+      `Bài 27: Ôn tập toàn diện chuẩn bị tổng kết năm học môn Tin học ${g} (2 tiết)`,
+      `Tổng kết năm học & Đánh giá xếp loại cả năm môn Tin học Lớp ${g} (2 tiết)`
     ];
 
     tinHocTopics.forEach((name, idx) => {
@@ -1570,7 +1594,7 @@ export function getGeneralHighSchoolCurriculum(grade: string, subject: string): 
         yccd: `- Thực hành thành thạo lập trình Python, cơ sở dữ liệu SQL, thiết kế web HTML/CSS và ứng dụng đồ họa số của ${name} (SGK Tin học ${g} Kết nối tri thức).\n- Phát triển tư duy thuật toán, kỹ năng giải quyết vấn đề bằng máy tính và năng lực ứng dụng AI an toàn.\n- Bồi dưỡng niềm đam mê công nghệ và định hướng nghề nghiệp trong ngành CNTT.`,
         equipment: 'Phòng máy tính kết nối Internet tốc độ cao, Python IDLE / VS Code, MS Access / MySQL, LMS',
         location: 'Phòng học bộ môn Tin học',
-        notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 18 || w === 35 ? 'Kiểm tra cuối kỳ' : w === 32 ? 'Dự án Web & AI' : ''
+        notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 16 || w === 31 ? 'Kiểm tra cuối kỳ' : w === 32 ? 'Dự án Web & AI' : ''
       });
     });
 
@@ -1595,9 +1619,9 @@ export function getGeneralHighSchoolCurriculum(grade: string, subject: string): 
       `Bài 12: Đánh giá và tối ưu hóa giải pháp thiết kế sản phẩm (2 tiết)`,
       `Chương IV: Công nghệ Trồng trọt / Chăn nuôi công nghệ cao - Bài 13: Thổ nhưỡng và Dinh dưỡng cây trồng (2 tiết)`,
       `Bài 14: Nhà màng, nhà kính thông minh và hệ thống tưới tự động IoT (2 tiết)`,
-      `Bài 15: Công nghệ thủy canh, khí canh và kiểm soát sâu bệnh sinh học VietGAP (2 tiết)`,
-      `Ôn tập tổng hợp kiến thức Vẽ kỹ thuật và Thiết kế công nghệ Học kỳ 1 (2 tiết)`,
       `Kiểm tra, đánh giá cuối Học kỳ 1 môn Công nghệ Lớp ${g} (2 tiết)`,
+      `Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức Vẽ kỹ thuật và Thiết kế công nghệ HK1 Lớp ${g} (2 tiết)`,
+      `Sơ kết Học kỳ 1 & Báo cáo sản phẩm mô hình Kỹ thuật Lớp ${g} (2 tiết)`,
       `Chương V: Công nghệ Cơ khí và Động lực - Bài 16: Vật liệu cơ khí mới và vật liệu nano (2 tiết)`,
       `Bài 17: Các phương pháp gia công cơ khí hiện đại (Gia công CNC, in 3D) (2 tiết)`,
       `Bài 18: Động cơ đốt trong và Xu hướng phát triển Ô tô điện / Xe lai Hybrid (2 tiết)`,
@@ -1610,11 +1634,11 @@ export function getGeneralHighSchoolCurriculum(grade: string, subject: string): 
       `Bài 24: Tiết kiệm năng lượng và Năng lượng tái tạo (Điện mặt trời, điện gió) (2 tiết)`,
       `Bài 25: An toàn điện và các biện pháp bảo vệ môi trường công nghiệp (2 tiết)`,
       `Bài 26: Định hướng lựa chọn nghề nghiệp thuộc khối ngành Kỹ thuật - Công nghệ (2 tiết)`,
+      `Kiểm tra, đánh giá cuối Học kỳ 2 môn Công nghệ Lớp ${g} (2 tiết)`,
+      `Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành lắp ráp mạch bổ trợ (2 tiết)`,
       `Dự án STEM Công nghệ: "Thiết kế Hệ thống Tưới Tự động IoT & Mạch Báo Cháy Thông minh Smart Home" (2 tiết)`,
-      `Bài 27: Báo cáo và trưng bày sản phẩm mô hình kỹ thuật trước hội đồng lớp (2 tiết)`,
-      `Bài 28: Ôn tập toàn diện chuẩn bị kiểm tra cuối năm Công nghệ ${g} (2 tiết)`,
-      `Luyện giải bộ đề thi Công nghệ chuẩn hóa ma trận Bộ GD&ĐT (2 tiết)`,
-      `Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Công nghệ ${g} (2 tiết)`
+      `Bài 27: Ôn tập toàn diện chuẩn bị tổng kết năm học môn Công nghệ ${g} (2 tiết)`,
+      `Tổng kết năm học & Đánh giá xếp loại cả năm môn Công nghệ Lớp ${g} (2 tiết)`
     ];
 
     congNgheTopics.forEach((name, idx) => {
@@ -1628,7 +1652,7 @@ export function getGeneralHighSchoolCurriculum(grade: string, subject: string): 
         yccd: `- Nắm vững các nguyên lý kỹ thuật, bản vẽ CAD, công nghệ chế tạo, điện tử và tự động hóa của ${name} (SGK Công nghệ ${g} Kết nối tri thức).\n- Vận dụng quy trình thiết kế kỹ thuật, chế tạo mô hình thử nghiệm và tuân thủ an toàn lao động tuyệt đối.\n- Bồi dưỡng tư duy sáng tạo kỹ thuật và định hướng nghề nghiệp tương lai.`,
         equipment: 'Bộ dụng cụ cơ khí, phần mềm AutoCAD, mô hình mạch điện Smart Home, Kit Arduino/ESP32, cảm biến',
         location: 'Phòng học bộ môn Công nghệ / Xưởng thực hành STEM',
-        notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 18 || w === 35 ? 'Kiểm tra cuối kỳ' : w === 31 ? 'Dự án STEM IoT' : ''
+        notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 16 || w === 31 ? 'Kiểm tra cuối kỳ' : w === 31 ? 'Dự án STEM IoT' : ''
       });
     });
 
@@ -1653,9 +1677,9 @@ export function getGeneralHighSchoolCurriculum(grade: string, subject: string): 
       `Bài 12: Quốc hội, Chủ tịch nước, Chính phủ và Tòa án, Viện kiểm sát (2 tiết)`,
       `Chủ đề 6: Hiến pháp nước CHXHCN Việt Nam - Bài 13: Vị trí, vai trò của Hiến pháp (2 tiết)`,
       `Bài 14: Quyền con người, quyền và nghĩa vụ cơ bản của công dân trong Hiến pháp (2 tiết)`,
-      `Bài 15: Trách nhiệm của công dân trong việc thực hiện và bảo vệ Hiến pháp (2 tiết)`,
-      `Ôn tập tổng hợp kiến thức Kinh tế học và Hiến pháp nước CHXHCN Việt Nam Học kỳ 1 (2 tiết)`,
       `Kiểm tra, đánh giá cuối Học kỳ 1 môn GDKT&PL Lớp ${g} (2 tiết)`,
+      `Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức Kinh tế học và Hiến pháp HK1 Lớp ${g} (2 tiết)`,
+      `Sơ kết Học kỳ 1 & Báo cáo sản phẩm Tìm hiểu Pháp luật Lớp ${g} (2 tiết)`,
       `Chủ đề 7: Cạnh tranh, cung cầu trong kinh tế thị trường - Bài 16: Cạnh tranh trong kinh tế thị trường (2 tiết)`,
       `Bài 17: Cung - cầu trong nền kinh tế thị trường và sự hình thành giá cả (2 tiết)`,
       `Chủ đề 8: Lạm phát và Thất nghiệp - Bài 18: Lạm phát: Khái niệm, nguyên nhân và biện pháp kiểm soát (2 tiết)`,
@@ -1668,11 +1692,11 @@ export function getGeneralHighSchoolCurriculum(grade: string, subject: string): 
       `Chủ đề 11: Một số quyền tự do, dân chủ cơ bản của công dân - Bài 24: Quyền bầu cử, ứng cử và tham gia quản lý nhà nước (2 tiết)`,
       `Bài 25: Quyền khiếu nại, tố cáo và phòng chống tham nhũng (2 tiết)`,
       `Bài 26: Quyền bất khả xâm phạm về thân thể, danh dự, nhân phẩm và chỗ ở của công dân (2 tiết)`,
-      `Chủ đề 12: Pháp luật trong đời sống - Bài 27: Pháp luật về Hôn nhân và gia đình, Hợp đồng lao động, Kinh doanh (2 tiết)`,
+      `Kiểm tra, đánh giá cuối Học kỳ 2 môn GDKT&PL Lớp ${g} (2 tiết)`,
+      `Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành phân tích tình huống pháp lý (2 tiết)`,
       `Dự án GDKT&PL: "Phiên tòa Giả định Học đường THPT & Kế hoạch Khởi nghiệp Kinh doanh Xanh" (2 tiết)`,
-      `Bài 28: Báo cáo kết quả nghiên cứu tình huống pháp lý và dự án kinh tế (2 tiết)`,
-      `Bài 29: Ôn tập toàn diện chuẩn bị kiểm tra cuối năm GDKT&PL ${g} (2 tiết)`,
-      `Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn GDKT&PL ${g} (2 tiết)`
+      `Bài 27: Ôn tập toàn diện chuẩn bị tổng kết năm học môn GDKT&PL ${g} (2 tiết)`,
+      `Tổng kết năm học & Đánh giá xếp loại cả năm môn GDKT&PL Lớp ${g} (2 tiết)`
     ];
 
     gdktplTopics.forEach((name, idx) => {
@@ -1686,7 +1710,7 @@ export function getGeneralHighSchoolCurriculum(grade: string, subject: string): 
         yccd: `- Nắm vững các quy luật kinh tế thị trường, tài chính cá nhân, khởi nghiệp và hệ thống pháp luật của ${name} (SGK GDKT&PL ${g} Kết nối tri thức).\n- Phân tích và giải quyết các tình huống pháp lý, kinh doanh thực tế một cách chuẩn mực và văn minh.\n- Nâng cao ý thức thượng tôn pháp luật, tinh thần trách nhiệm công dân và đạo đức kinh doanh.`,
         equipment: 'Hiến pháp năm 2013, Bộ luật Dân sự, Bộ luật Lao động, Luật Doanh nghiệp, máy chiếu',
         location: 'Phòng học / Lớp học',
-        notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 18 || w === 35 ? 'Kiểm tra cuối kỳ' : w === 32 ? 'Phiên tòa Giả định' : ''
+        notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 16 || w === 31 ? 'Kiểm tra cuối kỳ' : w === 32 ? 'Phiên tòa Giả định' : ''
       });
     });
 
@@ -1711,9 +1735,9 @@ export function getGeneralHighSchoolCurriculum(grade: string, subject: string): 
       `Bài 6: Cấp cứu ban đầu các tai nạn thông thường: Cứu đuối nước, say nắng, bỏng, điện giật`,
       `Bài 6: Kỹ thuật băng bó vết thương: Băng cuộn, băng tam giác các vị trí trên cơ thể`,
       `Bài 6: Kỹ thuật cố định gãy xương tạm thời bằng nẹp gỗ và chuyển thương an toàn`,
-      `Bài 7: Bản đồ địa hình quân sự: Khái niệm, cách đọc tọa độ và định hướng bản đồ bằng la bàn`,
-      `Ôn tập tổng hợp kiến thức Lý thuyết và Điều lệnh đội ngũ Học kỳ 1 Lớp ${g}`,
-      `Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn GDQP&AN ${g}`,
+      `Kiểm tra, đánh giá cuối Học kỳ 1 môn GDQP&AN Lớp ${g}`,
+      `Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức Điều lệnh đội ngũ HK1 Lớp ${g}`,
+      `Sơ kết Học kỳ 1 & Giao lưu nếp sống quân sự học sinh khối ${g}`,
       `Bài 8: Bảo vệ chủ quyền lãnh thổ và biên giới quốc gia nước CHXHCN Việt Nam`,
       `Bài 8: Trách nhiệm của công dân trong bảo vệ chủ quyền biển đảo Tổ quốc`,
       `Bài 9: Luật Nghĩa vụ quân sự và trách nhiệm của thanh niên học sinh`,
@@ -1726,11 +1750,11 @@ export function getGeneralHighSchoolCurriculum(grade: string, subject: string): 
       `Bài 11: Kỹ thuật ném lựu đạn trúng đích và đảm bảo an toàn tuyệt đối`,
       `Bài 12: Kỹ thuật chiến đấu bộ binh: Từng người trong chiến đấu tiến công và phòng ngự`,
       `Bài 12: Các tư thế vận động trên chiến trường: Bò, trườn, lê, lăn, chạy khom vượt địa hình`,
-      `Bài 13: Phòng thủ dân sự: Phòng chống vũ khí hủy diệt lớn và ứng phó thảm họa thiên tai`,
+      `Kiểm tra, đánh giá cuối Học kỳ 2 môn GDQP&AN Lớp ${g}`,
+      `Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành kỹ năng phòng thủ dân sự ${g}`,
       `Hội thao Giáo dục Quốc phòng & An ninh cấp trường Lớp ${g}: Bắn súng Laser, Ném lựu đạn, Băng bó cứu thương`,
-      `Bài 14: Tổng kết và đánh giá phong trào học tập rèn luyện nếp sống quân sự học sinh`,
-      `Ôn tập toàn diện chuẩn bị kiểm tra cuối năm GDQP&AN ${g}`,
-      `Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn GDQP&AN ${g}`
+      `Bài 14: Ôn tập toàn diện chuẩn bị tổng kết năm học môn GDQP&AN ${g}`,
+      `Tổng kết năm học & Đánh giá xếp loại cả năm môn GDQP&AN Lớp ${g}`
     ];
 
     gdqpTopics.forEach((name, idx) => {
@@ -1744,7 +1768,7 @@ export function getGeneralHighSchoolCurriculum(grade: string, subject: string): 
         yccd: `- Nắm vững truyền thống QĐND, điều lệnh đội ngũ, kỹ thuật quân sự (tháo lắp súng AK, bắn súng, ném lựu đạn, băng bó) của ${name} (SGK GDQP&AN ${g} Kết nối tri thức).\n- Rèn luyện tác phong quân sự nghiêm túc, tính kỷ luật cao, tinh thần sẵn sàng bảo vệ Tổ quốc.\n- Nâng cao phẩm chất yêu nước, ý thức tự giác và trách nhiệm công dân.`,
         equipment: 'Mô hình súng tiểu liên AK tập luyện, mô hình lựu đạn tập, la bàn quân sự, bộ nẹp cố định gãy xương, băng gạc cứu thương',
         location: 'Sân tập quân sự / Phòng học bộ môn GDQP&AN',
-        notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 18 || w === 35 ? 'Kiểm tra cuối kỳ' : w === 32 ? 'Hội thao GDQP&AN' : ''
+        notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 16 || w === 31 ? 'Kiểm tra cuối kỳ' : w === 32 ? 'Hội thao GDQP&AN' : ''
       });
     });
 
@@ -1769,9 +1793,9 @@ export function getGeneralHighSchoolCurriculum(grade: string, subject: string): 
       `Chủ đề 6: Bảo vệ môi trường và cảnh quan thiên nhiên - Bài 1: Bảo tồn danh lam thắng cảnh và di sản văn hóa địa phương (3 tiết)`,
       `Chủ đề 6: Bảo vệ môi trường - Bài 2: Kế hoạch hành động giảm rác thải nhựa và tiêu dùng xanh (3 tiết)`,
       `Chủ đề 6: Bảo vệ môi trường - Bài 3: Ứng phó với biến đổi khí hậu và phòng chống thiên tai (3 tiết)`,
-      `Chủ đề 7: Tìm hiểu xu hướng thị trường lao động - Bài 1: Khám phá thế giới nghề nghiệp trong kỷ nguyên chuyển đổi số (3 tiết)`,
-      `Ôn tập và báo cáo hồ sơ trải nghiệm sáng tạo Học kỳ 1 Lớp ${g} (3 tiết)`,
-      `Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn HĐTN&HN ${g} (3 tiết)`,
+      `Kiểm tra, đánh giá cuối Học kỳ 1 môn HĐTN&HN Lớp ${g} (3 tiết)`,
+      `Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức HĐTN&HN HK1 Lớp ${g} (3 tiết)`,
+      `Sơ kết Học kỳ 1 & Báo cáo sản phẩm dự án Trải nghiệm HK1 Lớp ${g} (3 tiết)`,
       `Chủ đề 7: Xu hướng thị trường lao động - Bài 2: Yêu cầu về phẩm chất, năng lực và kỹ năng mềm của các nhóm nghề tương lai (3 tiết)`,
       `Chủ đề 7: Xu hướng thị trường lao động - Bài 3: Giao lưu với các nhà tuyển dụng và doanh nhân thành đạt (3 tiết)`,
       `Chủ đề 8: Định hướng nghề nghiệp bản thân - Bài 1: Đánh giá sự phù hợp của năng lực cá nhân với nhóm nghề yêu thích (3 tiết)`,
@@ -1784,11 +1808,11 @@ export function getGeneralHighSchoolCurriculum(grade: string, subject: string): 
       `Chủ đề 10: Dự án Khởi nghiệp Thanh niên - Bài 1: Lên ý tưởng và xây dựng đề án khởi nghiệp đổi mới sáng tạo (3 tiết)`,
       `Dự án Khởi nghiệp: Tổ chức "Ngày hội Hướng nghiệp & Diễn đàn Khởi nghiệp Sáng tạo Học sinh THPT" (Tiết 1 - 3 tiết)`,
       `Dự án Khởi nghiệp: Thuyết trình gọi vốn dự án trước ban giám khảo và phụ huynh (Tiết 2 - 3 tiết)`,
+      `Kiểm tra, đánh giá cuối Học kỳ 2 môn HĐTN&HN Lớp ${g} (3 tiết)`,
+      `Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành lập kế hoạch phát triển cá nhân (3 tiết)`,
       `Diễn đàn Học đường: "Tuổi trẻ THPT - Khát vọng cống hiến, Hội nhập toàn cầu" (3 tiết)`,
-      `Báo cáo và đánh giá kết quả các hoạt động phục vụ cộng đồng và thiện nguyện cả năm (3 tiết)`,
       `Hoàn thiện Portfolio Hồ sơ Năng lực Trải nghiệm & Định hướng Nghề nghiệp cá nhân (3 tiết)`,
-      `Ôn tập toàn diện chuẩn bị đánh giá cuối năm Hoạt động trải nghiệm, hướng nghiệp ${g} (3 tiết)`,
-      `Kiểm tra, đánh giá cuối Học kỳ 2 & Ngày hội Tổng kết Hoạt động trải nghiệm cả năm (3 tiết)`
+      `Tổng kết năm học & Ngày hội Tổng kết Hoạt động trải nghiệm cả năm (3 tiết)`
     ];
 
     hdtnTopics.forEach((name, idx) => {
@@ -1802,7 +1826,7 @@ export function getGeneralHighSchoolCurriculum(grade: string, subject: string): 
         yccd: `- Thực hiện hiệu quả các hoạt động phát triển phong cách bản thân, tư duy phản biện, quản lý tài chính, phục vụ cộng đồng và định hướng nghề nghiệp đại học của ${name} (SGK HĐTN&HN ${g} Kết nối tri thức).\n- Nắm bắt xu hướng thị trường lao động, tự đánh giá năng lực sở trường và xây dựng kế hoạch tương lai rõ ràng.\n- Phát triển phẩm chất trách nhiệm, tinh thần tự chủ, năng lực lãnh đạo và thích ứng xã hội.`,
         equipment: 'Máy chiếu, cẩm nang tuyển sinh Đại học, phiếu trắc nghiệm tính cách nghề nghiệp Holland/MBTI, hồ sơ Portfolio',
         location: 'Lớp học / Hội trường / Sân trường',
-        notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 18 || w === 35 ? 'Kiểm tra cuối kỳ' : w === 29 ? 'Ngày hội Hướng nghiệp' : ''
+        notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 16 || w === 31 ? 'Kiểm tra cuối kỳ' : w === 29 ? 'Ngày hội Hướng nghiệp' : ''
       });
     });
 
@@ -1828,25 +1852,25 @@ export function getGeneralHighSchoolCurriculum(grade: string, subject: string): 
         `Chủ đề 4: Âm nhạc cổ điển thế giới - Đọc nhạc và cảm thụ tác phẩm cổ điển`,
         `Chủ đề 4: Âm nhạc cổ điển thế giới - Biểu diễn tốp ca tác phẩm nước ngoài dịch lời Việt`,
         `Chủ đề 4: Âm nhạc cổ điển thế giới - Góc sáng tạo âm nhạc: Phối khí cho ca khúc`,
-        `Ôn tập tổng hợp kiến thức Âm nhạc Học kỳ 1 Lớp ${g}`,
-        `Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Âm nhạc ${g}`,
+        `Kiểm tra, đánh giá cuối Học kỳ 1 môn Âm nhạc Lớp ${g}`,
+        `Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức Âm nhạc HK1 Lớp ${g}`,
+        `Sơ kết Học kỳ 1 & Báo cáo sản phẩm hòa tấu Âm nhạc HK1 Lớp ${g}`,
         `Chủ đề 5: Mùa xuân hy vọng - Hát: Mùa xuân nho nhỏ / Cung đàn mùa xuân`,
         `Chủ đề 5: Mùa xuân hy vọng - Nhạc cụ: Hòa tấu Guitar và Melodica`,
         `Chủ đề 5: Mùa xuân hy vọng - Đọc nhạc: Bài đọc nhạc số 4`,
         `Chủ đề 5: Mùa xuân hy vọng - Thường thức âm nhạc: Nghệ thuật Nhã nhạc cung đình Huế`,
         `Chủ đề 6: Âm vang thời đại - Hát: Bài ca thanh niên / Hát vang lý tưởng`,
         `Chủ đề 6: Âm vang thời đại - Nhạc cụ gõ đệm tiết tấu hiện đại`,
-        `Chủ đề 6: Âm vang thời đại - Đọc nhạc: Bài đọc nhạc số 5`,
         `Kiểm tra, đánh giá giữa Học kỳ 2 môn Âm nhạc Lớp ${g}`,
         `Chủ đề 7: Nhạc kịch thế giới - Thường thức âm nhạc: Nghệ thuật Opera và Nhạc kịch Broadway`,
         `Chủ đề 7: Nhạc kịch thế giới - Hát: Trích đoạn ca khúc trong vở nhạc kịch nổi tiếng`,
         `Chủ đề 7: Nhạc kịch thế giới - Đọc nhạc: Bài đọc nhạc số 6`,
         `Chủ đề 8: Giai điệu mùa hạ - Hát: Nỗi buồn hoa phượng / Tạm biệt mái trường`,
-        `Chủ đề 8: Giai điệu mùa hạ - Dàn dựng chương trình biểu diễn âm nhạc tốt nghiệp`,
-        `Dự án Âm nhạc: Sáng tác ca khúc học đường & Hòa tấu ban nhạc THPT (Tiết 1)`,
+        `Dự án Âm nhạc: Sáng tác ca khúc học đường & Hòa tấu ban nhạc THPT`,
+        `Kiểm tra, đánh giá cuối Học kỳ 2 môn Âm nhạc Lớp ${g}`,
+        `Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành hòa tấu âm nhạc`,
         `Dự án Âm nhạc: Biểu diễn báo cáo Gala Âm nhạc THPT Lớp ${g}`,
-        `Ôn tập toàn diện các bài hát, nhạc lý, nhạc cụ cả năm học`,
-        `Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Âm nhạc ${g}`
+        `Tổng kết năm học & Đánh giá xếp loại cả năm môn Âm nhạc Lớp ${g}`
       ]
     : s.includes('mĩ thuật') || s.includes('mỹ thuật')
     ? [
@@ -1866,25 +1890,25 @@ export function getGeneralHighSchoolCurriculum(grade: string, subject: string): 
         `Chủ đề 5: Điêu khắc đương đại - Trưng bày không gian nghệ thuật sắp đặt`,
         `Chủ đề 6: Thiết kế Kiến trúc xanh - Bài 7: Nguyên tắc thiết kế công trình kiến trúc tiết kiệm năng lượng`,
         `Chủ đề 6: Thiết kế Kiến trúc xanh - Bài 7: Vẽ phác thảo mô hình biệt thự vườn thông minh`,
-        `Ôn tập tổng hợp kiến thức Hội họa, Đồ họa và Điêu khắc Học kỳ 1 Lớp ${g}`,
-        `Kiểm tra, đánh giá cuối Học kỳ 1 & Triển lãm Mĩ thuật HK1 môn Mĩ thuật ${g}`,
+        `Kiểm tra, đánh giá cuối Học kỳ 1 môn Mĩ thuật Lớp ${g}`,
+        `Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức Hội họa, Đồ họa HK1 Lớp ${g}`,
+        `Sơ kết Học kỳ 1 & Triển lãm Mĩ thuật HK1 môn Mĩ thuật ${g}`,
         `Chủ đề 7: Nghệ thuật Nhiếp ảnh & Đồ họa đa phương tiện - Bài 8: Kỹ thuật xử lý ảnh số chuyên nghiệp`,
         `Chủ đề 7: Nhiếp ảnh & Đồ họa số - Bài 8: Thực hành chụp bộ ảnh phóng sự trường học`,
         `Chủ đề 8: Tranh Sơn mài và Lụa Việt Nam - Bài 9: Khám phá chất liệu sơn mài truyền thống`,
         `Chủ đề 8: Tranh Sơn mài và Lụa - Bài 9: Thực hành vẽ tranh mô phỏng kỹ thuật sơn mài trên gỗ`,
         `Chủ đề 9: Thiết kế Mỹ thuật Công nghiệp - Bài 10: Thiết kế kiểu dáng công nghiệp đồ gia dụng`,
         `Chủ đề 9: Thiết kế Công nghiệp - Bài 10: Thực hành tạo dáng sản phẩm 3D`,
-        `Chủ đề 9: Thiết kế Công nghiệp - Trưng bày và đánh giá sản phẩm thiết kế`,
         `Kiểm tra, đánh giá giữa Học kỳ 2 môn Mĩ thuật Lớp ${g}`,
         `Chủ đề 10: Nghệ thuật Công cộng (Public Art) - Bài 11: Tranh tường (Mural) và điêu khắc công viên`,
         `Chủ đề 10: Nghệ thuật Công cộng - Bài 11: Dự án vẽ tranh tường bích họa làm đẹp cảnh quan trường học`,
         `Chủ đề 11: Phê bình Mĩ thuật - Bài 12: Phương pháp thưởng thức và viết bài phê bình tác phẩm mĩ thuật`,
-        `Chủ đề 11: Phê bình Mĩ thuật - Bài 12: Thảo luận học thuật về vai trò của nghệ thuật trong đời sống`,
-        `Dự án Mĩ thuật: "Triển lãm Không gian Nghệ thuật Đương đại & Hội chợ Mỹ thuật Học sinh THPT" (Tiết 1)`,
-        `Dự án Mĩ thuật: Hoàn thiện không gian trưng bày tranh tượng và tác phẩm thiết kế (Tiết 2)`,
+        `Dự án Mĩ thuật: "Triển lãm Không gian Nghệ thuật Đương đại & Hội chợ Mỹ thuật Học sinh THPT"`,
+        `Kiểm tra, đánh giá cuối Học kỳ 2 môn Mĩ thuật Lớp ${g}`,
+        `Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành hoàn thiện không gian trưng bày tranh`,
         `Báo cáo và thuyết trình dự án Mĩ thuật trước hội đồng nghệ thuật trường`,
-        `Ôn tập toàn diện chuẩn bị kiểm tra cuối năm môn Mĩ thuật ${g}`,
-        `Kiểm tra, đánh giá cuối Học kỳ 2 & Triển lãm Tổng kết Mĩ thuật ${g} toàn trường`
+        `Hệ thống hóa toàn bộ kiến thức Mĩ thuật THPT Lớp ${g}`,
+        `Tổng kết năm học & Triển lãm Tổng kết Mĩ thuật ${g} toàn trường`
       ]
     : [
         `Chủ đề 1: Địa lí kinh tế địa phương - Đánh giá vị thế chiến lược và tiềm năng phát triển của tỉnh/thành phố (Lớp ${g})`,
@@ -1903,25 +1927,25 @@ export function getGeneralHighSchoolCurriculum(grade: string, subject: string): 
         `Chủ đề 4: Sản phẩm OCOP - Xây dựng thương hiệu và xúc tiến thương mại sản phẩm đặc sản quê hương`,
         `Chủ đề 4: Làng nghề truyền thống - Tham quan thực tế và trải nghiệm tại một làng nghề tiêu biểu`,
         `Chủ đề 4: Làng nghề truyền thống - Đề xuất giải pháp quảng bá sản phẩm làng nghề trên nền tảng số`,
-        `Ôn tập tổng hợp kiến thức Kinh tế, Lịch sử, Văn hóa địa phương Học kỳ 1 Lớp ${g}`,
-        `Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Giáo dục địa phương ${g}`,
+        `Kiểm tra, đánh giá cuối Học kỳ 1 môn Giáo dục địa phương Lớp ${g}`,
+        `Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức Kinh tế, Lịch sử, Văn hóa địa phương HK1 Lớp ${g}`,
+        `Sơ kết Học kỳ 1 & Báo cáo sản phẩm Giới thiệu Di sản Văn hóa Địa phương ${g}`,
         `Chủ đề 5: Môi trường và Biến đổi khí hậu tại địa phương - Đánh giá hiện trạng ô nhiễm nguồn nước, không khí`,
         `Chủ đề 5: Môi trường địa phương - Các giải pháp bảo vệ hệ sinh thái rừng phòng hộ, rừng ngập mặn và đa dạng sinh học`,
         `Chủ đề 5: Môi trường địa phương - Kế hoạch hành động của thanh niên ứng phó với hạn mặn, sạt lở bờ sông biển`,
         `Chủ đề 6: Thị trường lao động và Định hướng nghề nghiệp - Nhu cầu nhân lực các ngành trọng điểm của tỉnh đến 2030`,
         `Chủ đề 6: Hướng nghiệp địa phương - Cơ hội việc làm tại các tập đoàn FDI, doanh nghiệp lớn trên địa bàn`,
         `Chủ đề 6: Hướng nghiệp địa phương - Chính sách thu hút nhân tài và hỗ trợ thanh niên khởi nghiệp của địa phương`,
-        `Chủ đề 7: Hội nhập quốc tế của địa phương - Các chương trình hợp tác quốc tế, giao lưu văn hóa và xúc tiến đầu tư`,
         `Kiểm tra, đánh giá giữa Học kỳ 2 môn Giáo dục địa phương Lớp ${g}`,
+        `Chủ đề 7: Hội nhập quốc tế của địa phương - Các chương trình hợp tác quốc tế, giao lưu văn hóa và xúc tiến đầu tư`,
         `Chủ đề 7: Hội nhập quốc tế - Vị thế của địa phương trong vùng kinh tế trọng điểm và chuỗi cung ứng toàn cầu`,
         `Chủ đề 8: Tương lai và Khát vọng quê hương - Tầm nhìn phát triển kinh tế - xã hội địa phương đến năm 2045`,
-        `Chủ đề 8: Khát vọng quê hương - Trách nhiệm và đóng góp của thế hệ trẻ vào sự phát triển phồn vinh của quê hương`,
-        `Dự án GDĐP: "Bản đồ Số 3D Du lịch Sinh thái & Cẩm nang Hướng nghiệp Tương lai tại Quê hương em" (Tiết 1)`,
-        `Dự án GDĐP: Hoàn thiện sản phẩm truyền thông đa phương tiện quảng bá địa phương (Tiết 2)`,
+        `Dự án GDĐP: "Bản đồ Số 3D Du lịch Sinh thái & Cẩm nang Hướng nghiệp Tương lai tại Quê hương em"`,
+        `Kiểm tra, đánh giá cuối Học kỳ 2 môn Giáo dục địa phương Lớp ${g}`,
+        `Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành sản phẩm truyền thông đa phương tiện quảng bá địa phương`,
         `Báo cáo và thuyết trình dự án Giáo dục địa phương trước hội đồng lớp`,
         `Hệ thống hóa toàn bộ kiến thức Giáo dục địa phương THPT Lớp ${g}`,
-        `Ôn tập toàn diện chuẩn bị kiểm tra cuối năm môn Giáo dục địa phương ${g}`,
-        `Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Giáo dục địa phương ${g}`
+        `Tổng kết năm học & Đánh giá xếp loại cả năm môn Giáo dục địa phương Lớp ${g}`
       ];
 
   defaultHighSchoolNames.forEach((name, idx) => {
@@ -1937,7 +1961,7 @@ export function getGeneralHighSchoolCurriculum(grade: string, subject: string): 
       yccd: `- Nắm vững chuẩn kiến thức, kỹ năng và giá trị thẩm mỹ/văn hóa của ${name} theo chuẩn CT GDPT 2018 và SGK Kết nối tri thức Lớp ${g}.\n- Phát triển năng lực cảm thụ nghệ thuật, tư duy sáng tạo hoặc năng lực nghiên cứu thực tế địa phương.\n- Bồi dưỡng tình yêu quê hương đất nước, lòng tự hào văn hóa và định hướng tương lai.`,
       equipment: `Thiết bị dạy học chuẩn môn ${subject}, máy chiếu, học liệu số chuyên ngành, LMS`,
       location: 'Phòng học bộ môn / Lớp học',
-      notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 18 || w === 35 ? 'Kiểm tra cuối kỳ' : w === 31 ? 'Dự án Sáng tạo' : ''
+      notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 16 || w === 31 ? 'Kiểm tra cuối kỳ' : w === 31 ? 'Dự án Sáng tạo' : ''
     });
   });
 

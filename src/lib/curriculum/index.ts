@@ -1,4 +1,4 @@
-import { CurriculumItem, SchoolType } from '../../types';
+import { CurriculumItem, SchoolType, ConfigFormData } from '../../types';
 import { buildPrimaryCurriculum } from './curriculumPrimary';
 import { buildSecondaryCurriculum } from './curriculumSecondary';
 import { buildHighSchoolCurriculum } from './curriculumHighSchool';
@@ -20,7 +20,8 @@ import { buildHighSchoolCurriculum } from './curriculumHighSchool';
 export function getCurriculumBySubjectAndGrade(
   subject: string,
   grade: string,
-  schoolType: SchoolType
+  schoolType: SchoolType,
+  config?: Partial<ConfigFormData>
 ): CurriculumItem[] {
   const g = (grade || '7').trim();
   const gNum = parseInt(g, 10) || 7;
@@ -36,7 +37,7 @@ export function getCurriculumBySubjectAndGrade(
   }
 
   // 3. CẤP THCS (Lớp 6 - 9) hoặc mặc định
-  return buildSecondaryCurriculum(subject, g, schoolType);
+  return buildSecondaryCurriculum(subject, g, schoolType, config);
 }
 
 export { buildPrimaryCurriculum } from './curriculumPrimary';

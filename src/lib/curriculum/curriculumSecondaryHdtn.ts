@@ -3,11 +3,12 @@ import { RawSecondaryLesson } from './curriculumSecondary';
 /**
  * Phân phối chương trình chi tiết môn Hoạt động trải nghiệm, hướng nghiệp Lớp 6, 7, 8, 9 (105 tiết/năm = 3 tiết/tuần x 35 tuần)
  * 100% chuẩn SGK Kết nối tri thức với cuộc sống & file tổng hợp tong-hop-chuong-trinh-lop-6-7-8-9.md
- * Giữ nguyên các tiết kiểm tra định kỳ:
+ * Các tuần kiểm tra định kỳ chuẩn hóa:
  * - Tuần 9: Kiểm tra, đánh giá giữa Học kỳ 1 (3 tiết)
- * - Tuần 18: Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 (3 tiết)
+ * - Tuần 16: Kiểm tra, đánh giá cuối Học kỳ 1 (3 tiết)
  * - Tuần 26: Kiểm tra, đánh giá giữa Học kỳ 2 (3 tiết)
- * - Tuần 35: Kiểm tra, đánh giá cuối Học kỳ 2 & Ngày hội Tổng kết Hoạt động trải nghiệm cả năm (3 tiết)
+ * - Tuần 31: Kiểm tra, đánh giá cuối Học kỳ 2 (3 tiết)
+ * - Tuần 35: Ngày hội Tổng kết Hoạt động trải nghiệm cả năm (3 tiết)
  */
 export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
   const g = parseInt(grade, 10) || 6;
@@ -58,74 +59,74 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
       {
         w: 7,
         t: 'Chủ đề 2: Khám phá bản thân',
-        n: 'Chủ đề 2: Khám phá bản thân - Tự tin khẳng định giá trị bản thân và tôn trọng sự khác biệt (3 tiết)',
-        y: '- Biết cách thể hiện bản thân một cách tự tin, hòa đồng và văn minh.\n- Tôn trọng phong cách, ngoại hình và quan điểm của bạn bè xung quanh, không phân biệt đối xử.'
+        n: 'Chủ đề 2: Khám phá bản thân - Rèn luyện tính tự lập, tự giác trong học tập và sinh hoạt hàng ngày (3 tiết)',
+        y: '- Xây dựng thời gian biểu cá nhân hợp lý, tự giác chuẩn bị sách vở, đồ dùng học tập trước khi đến lớp.\n- Tự giác làm việc nhà và chăm sóc bản thân không đợi nhắc nhở.'
       },
       {
         w: 8,
         t: 'Chủ đề 2: Khám phá bản thân',
-        n: 'Chủ đề 2: Khám phá bản thân - Rèn luyện tư duy tích cực và niềm tin vào bản thân (3 tiết)',
-        y: '- Biết nhìn nhận mặt tích cực khi đối diện với thử thách hoặc kết quả chưa như ý.\n- Xây dựng mục tiêu học tập cá nhân rõ ràng và nỗ lực kiên trì thực hiện.'
+        n: 'Chủ đề 2: Khám phá bản thân - Kĩ năng ứng phó với căng thẳng và điều chỉnh cảm xúc tích cực (3 tiết)',
+        y: '- Nhận diện các nguyên nhân gây căng thẳng (áp lực thi cử, bất đồng bạn bè); thực hành các kỹ thuật thư giãn (thở sâu, nghe nhạc, chia sẻ).\n- Hình thành thói quen tư duy lạc quan.'
       },
       {
         w: 9,
         t: 'Đánh giá định kỳ',
         n: 'Kiểm tra, đánh giá giữa Học kỳ 1 môn Hoạt động trải nghiệm, hướng nghiệp Lớp 6 (3 tiết)',
-        y: '- Đánh giá mức độ hoàn thành nhiệm vụ rèn luyện chủ đề Em với nhà trường và Khám phá bản thân.\n- Rèn luyện kỹ năng tự đánh giá, đánh giá đồng đẳng và tính trung thực.'
+        y: '- Đánh giá mức độ tham gia các hoạt động chủ đề 1 và 2; khả năng tự quản, tinh thần hợp tác nhóm và ý thức kỷ luật.'
       },
       {
         w: 10,
         t: 'Chủ đề 3: Trách nhiệm với bản thân',
-        n: 'Chủ đề 3: Trách nhiệm với bản thân - Nhận diện cảm xúc và học cách kiểm soát cảm xúc tiêu cực (3 tiết)',
-        y: '- Gọi tên được các trạng thái cảm xúc (vui, buồn, tức giận, lo lắng, sợ hãi).\n- Thực hành các kỹ thuật thở sâu, thả lỏng cơ thể và chuyển hướng suy nghĩ để làm dịu cảm xúc giận dữ.'
+        n: 'Chủ đề 3: Trách nhiệm với bản thân - Kĩ năng chăm sóc sức khoẻ thể chất và an toàn cho bản thân (3 tiết)',
+        y: '- Nhận thức tầm quan trọng của rèn luyện thể dục thể thao, dinh dưỡng hợp lý và ngủ đủ giấc.\n- Nhận biết các nguy cơ mất an toàn tại trường học, gia đình và ngoài đường.'
       },
       {
         w: 11,
         t: 'Chủ đề 3: Trách nhiệm với bản thân',
-        n: 'Chủ đề 3: Trách nhiệm với bản thân - Ứng phó với áp lực học tập và tạo động lực học tập (3 tiết)',
-        y: '- Nhận diện nguyên nhân gây căng thẳng trong kiểm tra thi cử và áp lực điểm số.\n- Biết cách tìm kiếm sự trợ giúp từ thầy cô, cha mẹ và thiết lập phương pháp học tập phù hợp.'
+        n: 'Chủ đề 3: Trách nhiệm với bản thân - Phòng tránh tai nạn thương tích, đuối nước và nguy cơ xâm hại (3 tiết)',
+        y: '- Thực hành quy tắc "5 ngón tay" phòng chống xâm hại tình dục; kỹ năng sơ cứu vết thương nhẹ và xử lý khi gặp đuối nước, hỏa hoạn.'
       },
       {
         w: 12,
         t: 'Chủ đề 3: Trách nhiệm với bản thân',
-        n: 'Chủ đề 3: Trách nhiệm với bản thân - Rèn luyện tính kiên trì, tự giác và vượt qua cám dỗ (3 tiết)',
-        y: '- Tự giác hoàn thành bài tập, không trì hoãn và hạn chế thời gian chơi game, lướt mạng xã hội quá mức.'
+        n: 'Chủ đề 3: Trách nhiệm với bản thân - Kĩ năng chi tiêu hợp lý và quản lý tiền tiêu vặt cá nhân (3 tiết)',
+        y: '- Phân biệt nhu cầu thiết yếu ("cần") và mong muốn tức thời ("muốn"); lập kế hoạch tiết kiệm tiền tiêu vặt để phục vụ học tập.'
       },
       {
         w: 13,
         t: 'Chủ đề 4: Rèn luyện bản thân',
-        n: 'Chủ đề 4: Rèn luyện bản thân - Quản lý thời gian biểu và sắp xếp góc học tập khoa học (3 tiết)',
-        y: '- Lập được thời gian biểu hàng ngày/hàng tuần hợp lí giữa học tập, vui chơi, phụ giúp gia đình và nghỉ ngơi.\n- Sắp xếp sách vở, bàn học ngăn nắp, gọn gàng, tạo hứng thú học tập.'
+        n: 'Chủ đề 4: Rèn luyện bản thân - Rèn luyện sự tự tin khi nói trước đám đông và thể hiện năng khiếu (3 tiết)',
+        y: '- Vượt qua sự e ngại, rụt rè để tự tin giới thiệu bản thân, thuyết trình ý tưởng trước tập thể lớp.'
       },
       {
         w: 14,
         t: 'Chủ đề 4: Rèn luyện bản thân',
-        n: 'Chủ đề 4: Rèn luyện bản thân - Lập kế hoạch tài chính cá nhân và sử dụng tiền hợp lí (3 tiết)',
-        y: '- Phân biệt được nhu cầu thiết yếu (cần) và mong muốn cá nhân (muốn).\n- Thực hành tiết kiệm tiền tiêu vặt, nuôi heo đất và sử dụng đồ dùng học tập tiết kiệm.'
+        n: 'Chủ đề 4: Rèn luyện bản thân - Kĩ năng giải quyết bất đồng và mâu thuẫn trong tình bạn văn minh (3 tiết)',
+        y: '- Biết lắng nghe quan điểm của bạn, không dùng bạo lực lời nói hay hành động; tìm kiếm tiếng nói chung để giữ gìn tình bạn đẹp.'
       },
       {
         w: 15,
         t: 'Chủ đề 4: Rèn luyện bản thân',
-        n: 'Chủ đề 4: Rèn luyện bản thân - Phòng tránh tai nạn thương tích và an toàn trên không gian mạng (3 tiết)',
-        y: '- Nhận biết nguy cơ đuối nước, điện giật, cháy nổ và quy tắc an toàn giao thông.\n- Tuân thủ quy tắc bảo mật mật khẩu, không chia sẻ thông tin cá nhân cho người lạ trên Internet.'
+        n: 'Chủ đề 4: Rèn luyện bản thân - Thiết lập mục tiêu học tập và rèn luyện kỹ năng tư duy phản biện (3 tiết)',
+        y: '- Xác định mục tiêu điểm số các môn học cuối kỳ, lập kế hoạch hành động cụ thể và kiên trì theo đuổi mục tiêu.'
       },
       {
         w: 16,
-        t: 'Chủ đề 4: Rèn luyện bản thân',
-        n: 'Chủ đề 4: Rèn luyện bản thân - Rèn luyện thói quen sinh hoạt khoa học và nâng cao thể chất (3 tiết)',
-        y: '- Xây dựng thói quen ngủ đủ giấc, ăn uống cân đối dinh dưỡng và tập thể dục thể thao mỗi ngày.'
+        t: 'Đánh giá định kỳ',
+        n: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Hoạt động trải nghiệm, hướng nghiệp 6 (3 tiết)',
+        y: '- Đánh giá tổng hợp mức độ tham gia và năng lực tự chủ, thích ứng của học sinh trong toàn bộ HK1.'
       },
       {
         w: 17,
-        t: 'Chủ đề: Ôn tập Học kỳ 1',
-        n: 'Ôn tập và báo cáo hồ sơ trải nghiệm cá nhân Học kỳ 1 Lớp 6 (3 tiết)',
-        y: '- Tổng kết các sản phẩm hoạt động trải nghiệm, sổ tay rèn luyện cá nhân trong Học kỳ 1.\n- Chia sẻ những tiến bộ nổi bật về tính tự lập, kỹ năng sống và sự tự tin.'
+        t: 'Chữa bài & Ôn tập Học kỳ 1',
+        n: 'Chữa bài kiểm tra cuối HK1 & Ôn tập, báo cáo hồ sơ trải nghiệm cá nhân Học kỳ 1 Lớp 6 (3 tiết)',
+        y: '- Chữa bài kiểm tra cuối HK1; tổng kết các sản phẩm hoạt động trải nghiệm, sổ tay rèn luyện cá nhân trong Học kỳ 1.\n- Chia sẻ những tiến bộ nổi bật về tính tự lập, kỹ năng sống và sự tự tin.'
       },
       {
         w: 18,
-        t: 'Đánh giá định kỳ',
-        n: 'Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Hoạt động trải nghiệm, hướng nghiệp 6 (3 tiết)',
-        y: '- Đánh giá tổng hợp mức độ tham gia và năng lực tự chủ, thích ứng của học sinh trong toàn bộ HK1.'
+        t: 'Sơ kết Học kỳ 1',
+        n: 'Sơ kết Học kỳ 1 Hoạt động trải nghiệm, hướng nghiệp Lớp 6 (3 tiết)',
+        y: '- Đánh giá tổng kết các hoạt động trải nghiệm trong Học kỳ 1; tuyên dương học sinh tích cực và định hướng HK2.'
       },
 
       // HỌC KỲ 2 (Tuần 19 - 35)
@@ -203,32 +204,32 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
       },
       {
         w: 31,
-        t: 'Chủ đề 8: Khám phá thế giới nghề nghiệp',
-        n: 'Chủ đề 8: Khám phá thế giới nghề nghiệp - Yêu cầu về năng lực, phẩm chất và an toàn lao động trong nghề (3 tiết)',
-        y: '- Nêu được các đức tính cần có của người lao động: cẩn thận, chăm chỉ, trung thực và tuân thủ an toàn lao động.'
+        t: 'Đánh giá định kỳ',
+        n: 'Kiểm tra, đánh giá cuối Học kỳ 2 môn Hoạt động trải nghiệm, hướng nghiệp Lớp 6 (3 tiết)',
+        y: '- Đánh giá tổng hợp sự trưởng thành về phẩm chất, năng lực và kỹ năng sống của học sinh trong cả năm học Lớp 6.'
       },
       {
         w: 32,
         t: 'Chủ đề 9: Hiểu bản thân - Chọn đúng nghề',
-        n: 'Chủ đề 9: Hiểu bản thân - Chọn đúng nghề - Nhận diện hứng thú nghề nghiệp và đối chiếu với năng lực cá nhân (3 tiết)',
-        y: '- Bày tỏ được ước mơ nghề nghiệp tương lai và nhận ra những môn học thế mạnh hỗ trợ cho ước mơ đó.'
+        n: 'Chữa bài kiểm tra cuối HK2 & Nhận diện hứng thú nghề nghiệp, đối chiếu năng lực cá nhân (3 tiết)',
+        y: '- Chữa bài kiểm tra cuối HK2; bày tỏ ước mơ nghề nghiệp tương lai và nhận ra những môn học thế mạnh hỗ trợ cho ước mơ đó.'
       },
       {
         w: 33,
-        t: 'Chủ đề 9: Hiểu bản thân - Chọn đúng nghề',
-        n: 'Chủ đề 9: Hiểu bản thân - Chọn đúng nghề - Xây dựng kế hoạch học tập, rèn luyện theo định hướng nghề nghiệp (3 tiết)',
-        y: '- Lập kế hoạch rèn luyện sức khỏe, kỹ năng giao tiếp và bồi dưỡng kiến thức để chuẩn bị cho hành trình nghề nghiệp.'
+        t: 'Dự án / Ngày hội Trải nghiệm',
+        n: 'Ngày hội Trải nghiệm & Hướng nghiệp sáng tạo Lớp 6: Báo cáo sản phẩm và kế hoạch tương lai (3 tiết)',
+        y: '- Trưng bày các sản phẩm sáng tạo, sổ tay trải nghiệm và chia sẻ kế hoạch phát triển bản thân.'
       },
       {
         w: 34,
         t: 'Chủ đề: Ôn tập cuối năm',
-        n: 'Ôn tập toàn diện chuẩn bị đánh giá cuối năm Hoạt động trải nghiệm, hướng nghiệp 6 (3 tiết)',
+        n: 'Tổng kết hồ sơ trải nghiệm cả năm học môn Hoạt động trải nghiệm, hướng nghiệp 6 (3 tiết)',
         y: '- Hoàn thiện hồ sơ minh chứng trải nghiệm cả năm học; tự đánh giá sự tiến bộ của bản thân qua 9 chủ đề.'
       },
       {
         w: 35,
-        t: 'Đánh giá định kỳ',
-        n: 'Kiểm tra, đánh giá cuối Học kỳ 2 & Ngày hội Tổng kết Hoạt động trải nghiệm cả năm Lớp 6 (3 tiết)',
+        t: 'Tổng kết năm học',
+        n: 'Ngày hội Tổng kết Hoạt động trải nghiệm cả năm & Tuyên dương học sinh Lớp 6 (3 tiết)',
         y: '- Tổ chức Ngày hội báo cáo sản phẩm trải nghiệm, trưng bày triển lãm và tuyên dương học sinh tiêu biểu.'
       }
     ];
@@ -242,7 +243,7 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: item.y,
         equipment: 'Máy chiếu, video tình huống trải nghiệm, phiếu khảo sát bản thân, bảng phụ nhóm, cẩm nang hướng nghiệp',
         location: 'Lớp học / Hội trường / Sân trường',
-        notes: item.w === 9 || item.w === 26 ? 'Kiểm tra giữa kỳ' : item.w === 18 || item.w === 35 ? 'Kiểm tra cuối kỳ' : ''
+        notes: item.w === 9 || item.w === 26 ? 'Kiểm tra giữa kỳ' : item.w === 16 || item.w === 31 ? 'Kiểm tra cuối kỳ' : ''
       });
     });
 
@@ -347,21 +348,21 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
       },
       {
         w: 16,
-        t: 'Chủ đề 4: Rèn luyện bản thân',
-        n: 'Chủ đề 4: Rèn luyện bản thân - Kĩ năng làm việc nhóm và hợp tác giải quyết nhiệm vụ chung (3 tiết)',
-        y: '- Lắng nghe ý kiến của thành viên, phân công công việc công bằng và phối hợp nhịp nhàng để đạt kết quả cao.'
+        t: 'Đánh giá định kỳ',
+        n: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Hoạt động trải nghiệm, hướng nghiệp 7 (3 tiết)',
+        y: '- Đánh giá tổng hợp sự trưởng thành về phẩm chất, năng lực của học sinh trong Học kỳ 1.'
       },
       {
         w: 17,
-        t: 'Chủ đề: Ôn tập Học kỳ 1',
-        n: 'Ôn tập và báo cáo hồ sơ năng lực trải nghiệm học sinh Học kỳ 1 Lớp 7 (3 tiết)',
-        y: '- Tổng kết hồ sơ trải nghiệm, trình bày các dự án học tập nhỏ đã thực hiện trong Học kỳ 1.'
+        t: 'Chữa bài & Ôn tập Học kỳ 1',
+        n: 'Chữa bài kiểm tra cuối HK1 & Ôn tập, báo cáo hồ sơ năng lực trải nghiệm học sinh Học kỳ 1 Lớp 7 (3 tiết)',
+        y: '- Chữa bài kiểm tra cuối HK1; tổng kết hồ sơ trải nghiệm, trình bày các dự án học tập nhỏ đã thực hiện trong Học kỳ 1.'
       },
       {
         w: 18,
-        t: 'Đánh giá định kỳ',
-        n: 'Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Hoạt động trải nghiệm, hướng nghiệp 7 (3 tiết)',
-        y: '- Đánh giá tổng hợp sự trưởng thành về phẩm chất, năng lực của học sinh trong Học kỳ 1.'
+        t: 'Sơ kết Học kỳ 1',
+        n: 'Sơ kết Học kỳ 1 Hoạt động trải nghiệm, hướng nghiệp Lớp 7 (3 tiết)',
+        y: '- Đánh giá tổng kết các hoạt động trải nghiệm trong Học kỳ 1; tuyên dương học sinh tích cực và định hướng HK2.'
       },
 
       // HỌC KỲ 2 (Tuần 19 - 35)
@@ -439,32 +440,32 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
       },
       {
         w: 31,
-        t: 'Chủ đề 8: Khám phá thế giới nghề nghiệp',
-        n: 'Chủ đề 8: Khám phá thế giới nghề nghiệp - Trải nghiệm thực tế một nghề em yêu thích (3 tiết)',
-        y: '- Đóng vai trải nghiệm một công việc (hướng dẫn viên du lịch, nhân viên bán hàng, lập trình viên, đầu bếp).'
+        t: 'Đánh giá định kỳ',
+        n: 'Kiểm tra, đánh giá cuối Học kỳ 2 môn Hoạt động trải nghiệm, hướng nghiệp 7 (3 tiết)',
+        y: '- Đánh giá kết quả học tập và rèn luyện trải nghiệm cả năm học môn Hoạt động trải nghiệm, hướng nghiệp Lớp 7.'
       },
       {
         w: 32,
         t: 'Chủ đề 9: Hiểu bản thân – Chọn đúng nghề',
-        n: 'Chủ đề 9: Hiểu bản thân – Chọn đúng nghề - Xác định xu hướng nghề nghiệp phù hợp với phẩm chất bản thân (3 tiết)',
-        y: '- Sử dụng các công cụ trắc nghiệm tính cách (MBTI/Holland cơ bản) để khám phá thiên hướng nghề nghiệp.'
+        n: 'Chữa bài kiểm tra cuối HK2 & Xác định xu hướng nghề nghiệp phù hợp với phẩm chất bản thân (3 tiết)',
+        y: '- Chữa bài kiểm tra cuối HK2; sử dụng các công cụ trắc nghiệm tính cách (MBTI/Holland cơ bản) để khám phá thiên hướng nghề nghiệp.'
       },
       {
         w: 33,
-        t: 'Chủ đề 9: Hiểu bản thân – Chọn đúng nghề',
-        n: 'Chủ đề 9: Hiểu bản thân – Chọn đúng nghề - Lập kế hoạch học tập và rèn luyện theo định hướng nghề nghiệp tương lai (3 tiết)',
-        y: '- Xây dựng mục tiêu phát triển các môn học nền tảng và kỹ năng mềm cần thiết cho ngành nghề định chọn.'
+        t: 'Dự án / Ngày hội Trải nghiệm',
+        n: 'Ngày hội Trải nghiệm & Hướng nghiệp sáng tạo Lớp 7: Báo cáo sản phẩm và định hướng tương lai (3 tiết)',
+        y: '- Trưng bày các sản phẩm sáng tạo, dự án cộng đồng và chia sẻ kế hoạch học tập, rèn luyện theo định hướng nghề nghiệp.'
       },
       {
         w: 34,
         t: 'Chủ đề: Ôn tập cuối năm',
-        n: 'Ôn tập toàn diện chuẩn bị đánh giá cuối năm Hoạt động trải nghiệm, hướng nghiệp 7 (3 tiết)',
+        n: 'Tổng kết hồ sơ trải nghiệm cả năm học môn Hoạt động trải nghiệm, hướng nghiệp 7 (3 tiết)',
         y: '- Tổng kết hồ sơ học tập và rèn luyện trải nghiệm cả năm học Lớp 7; tự đánh giá và phản hồi đa chiều.'
       },
       {
         w: 35,
-        t: 'Đánh giá định kỳ',
-        n: 'Kiểm tra, đánh giá cuối Học kỳ 2 & Ngày hội Tổng kết Hoạt động trải nghiệm cả năm Lớp 7 (3 tiết)',
+        t: 'Tổng kết năm học',
+        n: 'Ngày hội Tổng kết Hoạt động trải nghiệm cả năm & Tuyên dương học sinh Lớp 7 (3 tiết)',
         y: '- Tổ chức Ngày hội Tổng kết, tuyên dương cá nhân và tập thể tiêu biểu trong hoạt động trải nghiệm.'
       }
     ];
@@ -478,7 +479,7 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: item.y,
         equipment: 'Máy chiếu, video tư liệu trải nghiệm, bảng khảo sát nghề nghiệp, giấy A0, bút dạ, loa kéo',
         location: 'Lớp học / Hội trường / Sân trường',
-        notes: item.w === 9 || item.w === 26 ? 'Kiểm tra giữa kỳ' : item.w === 18 || item.w === 35 ? 'Kiểm tra cuối kỳ' : ''
+        notes: item.w === 9 || item.w === 26 ? 'Kiểm tra giữa kỳ' : item.w === 16 || item.w === 31 ? 'Kiểm tra cuối kỳ' : ''
       });
     });
 
@@ -584,21 +585,21 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
       },
       {
         w: 16,
-        t: 'Chủ đề 4: Rèn luyện bản thân',
-        n: 'Chủ đề 4: Rèn luyện bản thân - Ứng xử văn minh trên không gian mạng và phòng ngừa rủi ro số (3 tiết)',
-        y: '- Nhận diện các nguy cơ lừa đảo trực tuyến, bảo mật tài khoản cá nhân và thể hiện văn hóa giao tiếp chuẩn mực trên mạng.'
+        t: 'Đánh giá định kỳ',
+        n: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Hoạt động trải nghiệm, hướng nghiệp 8 (3 tiết)',
+        y: '- Đánh giá toàn diện kết quả học tập và rèn luyện của học sinh trong Học kỳ 1 môn HĐTN, HN Lớp 8.'
       },
       {
         w: 17,
-        t: 'Chủ đề: Ôn tập Học kỳ 1',
-        n: 'Ôn tập và báo cáo hồ sơ trải nghiệm cá nhân Học kỳ 1 Lớp 8 (3 tiết)',
-        y: '- Tổng kết đánh giá kết quả thực hiện các chủ đề HK1, hoàn thiện hồ sơ học tập và chia sẻ trải nghiệm.'
+        t: 'Chữa bài & Ôn tập Học kỳ 1',
+        n: 'Chữa bài kiểm tra cuối HK1 & Ôn tập, báo cáo hồ sơ trải nghiệm cá nhân Học kỳ 1 Lớp 8 (3 tiết)',
+        y: '- Chữa bài kiểm tra cuối HK1; tổng kết đánh giá kết quả thực hiện các chủ đề HK1, hoàn thiện hồ sơ học tập và chia sẻ trải nghiệm.'
       },
       {
         w: 18,
-        t: 'Đánh giá định kỳ',
-        n: 'Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Hoạt động trải nghiệm, hướng nghiệp 8 (3 tiết)',
-        y: '- Đánh giá toàn diện kết quả học tập và rèn luyện của học sinh trong Học kỳ 1 môn HĐTN, HN Lớp 8.'
+        t: 'Sơ kết Học kỳ 1',
+        n: 'Sơ kết Học kỳ 1 Hoạt động trải nghiệm, hướng nghiệp Lớp 8 (3 tiết)',
+        y: '- Đánh giá tổng kết các hoạt động trải nghiệm trong Học kỳ 1; tuyên dương học sinh tích cực và định hướng HK2.'
       },
 
       // HỌC KỲ 2 (Tuần 19 - 35)
@@ -676,15 +677,15 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
       },
       {
         w: 31,
-        t: 'Chủ đề 9: Hiểu bản thân - Chọn đúng nghề',
-        n: 'Chủ đề 9: Hiểu bản thân - Chọn đúng nghề - Xây dựng kế hoạch rèn luyện bản thân theo nghề định chọn (3 tiết)',
-        y: '- Hoàn thiện kế hoạch hành động: mục tiêu học tập các môn chuyên sâu, lịch rèn luyện thể lực và kỹ năng mềm.'
+        t: 'Đánh giá định kỳ',
+        n: 'Kiểm tra, đánh giá cuối Học kỳ 2 môn Hoạt động trải nghiệm, hướng nghiệp 8 (3 tiết)',
+        y: '- Đánh giá kết quả học tập và rèn luyện trải nghiệm cả năm học môn Hoạt động trải nghiệm, hướng nghiệp Lớp 8 theo chuẩn Thông tư 32/2018/TT-BGDĐT.'
       },
       {
         w: 32,
         t: 'Diễn đàn học đường',
-        n: 'Diễn đàn học đường: "Tuổi trẻ THCS & Ngày hội Trải nghiệm Sáng tạo Hướng nghiệp 8" (3 tiết)',
-        y: '- Tổ chức diễn đàn giao lưu, trao đổi về khát vọng tuổi trẻ, định hướng học tập và trải nghiệm thực hành sáng tạo.'
+        n: 'Chữa bài kiểm tra cuối HK2 & Diễn đàn: "Tuổi trẻ THCS & Ngày hội Trải nghiệm Sáng tạo Hướng nghiệp 8" (3 tiết)',
+        y: '- Chữa bài kiểm tra cuối HK2; tổ chức diễn đàn giao lưu, trao đổi về khát vọng tuổi trẻ, định hướng học tập và trải nghiệm sáng tạo.'
       },
       {
         w: 33,
@@ -695,13 +696,13 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
       {
         w: 34,
         t: 'Chủ đề: Ôn tập cuối năm',
-        n: 'Ôn tập toàn diện chuẩn bị đánh giá cuối năm Hoạt động trải nghiệm, hướng nghiệp 8 (3 tiết)',
+        n: 'Tổng kết hồ sơ trải nghiệm cả năm học môn Hoạt động trải nghiệm, hướng nghiệp 8 (3 tiết)',
         y: '- Hệ thống hóa các bài học kỹ năng sống, dự án cộng đồng và định hướng nghề nghiệp Lớp 8.'
       },
       {
         w: 35,
-        t: 'Đánh giá định kỳ',
-        n: 'Kiểm tra, đánh giá cuối Học kỳ 2 & Ngày hội Tổng kết Hoạt động trải nghiệm cả năm Lớp 8 (3 tiết)',
+        t: 'Tổng kết năm học',
+        n: 'Ngày hội Tổng kết Hoạt động trải nghiệm cả năm & Trao chứng nhận hoàn thành Lớp 8 (3 tiết)',
         y: '- Tổng kết và trao chứng nhận hoàn thành chương trình HĐTN, HN Lớp 8.'
       }
     ];
@@ -715,7 +716,7 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: item.y,
         equipment: 'Máy chiếu, video tư liệu tranh biện, bảng kế hoạch kinh doanh nhỏ, cẩm nang thị trường lao động số, loa',
         location: 'Lớp học / Hội trường / Sân trường',
-        notes: item.w === 9 || item.w === 26 ? 'Kiểm tra giữa kỳ' : item.w === 18 || item.w === 35 ? 'Kiểm tra cuối kỳ' : ''
+        notes: item.w === 9 || item.w === 26 ? 'Kiểm tra giữa kỳ' : item.w === 16 || item.w === 31 ? 'Kiểm tra cuối kỳ' : ''
       });
     });
 
@@ -820,21 +821,21 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
     },
     {
       w: 16,
-      t: 'Chủ đề 6: Em với cộng đồng',
-      n: 'Chủ đề 6: Em với cộng đồng - Bài 3: Truyền thông trong cộng đồng về những vấn đề học đường (3 tiết)',
-      y: '- Thực hiện chiến dịch truyền thông về phòng chống áp lực học tập, xây dựng văn hóa ứng xử lành mạnh trên không gian số.'
+      t: 'Đánh giá định kỳ',
+      n: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Hoạt động trải nghiệm, hướng nghiệp 9 (3 tiết)',
+      y: '- Đánh giá tổng hợp toàn diện kết quả học tập và rèn luyện môn HĐTN, HN Lớp 9 trong Học kỳ 1.'
     },
     {
       w: 17,
-      t: 'Chủ đề: Ôn tập Học kỳ 1',
-      n: 'Ôn tập và báo cáo hồ sơ trải nghiệm học sinh Lớp 9 Học kỳ 1 (3 tiết)',
-      y: '- Hệ thống hóa các kết quả rèn luyện, bài báo cáo khảo sát và hồ sơ năng lực học sinh trong Học kỳ 1.'
+      t: 'Chữa bài & Ôn tập Học kỳ 1',
+      n: 'Chữa bài kiểm tra cuối HK1 & Ôn tập, báo cáo hồ sơ trải nghiệm học sinh Lớp 9 Học kỳ 1 (3 tiết)',
+      y: '- Chữa bài kiểm tra cuối HK1; hệ thống hóa các kết quả rèn luyện, bài báo cáo khảo sát và hồ sơ năng lực học sinh trong Học kỳ 1.'
     },
     {
       w: 18,
-      t: 'Đánh giá định kỳ',
-      n: 'Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Hoạt động trải nghiệm, hướng nghiệp 9 (3 tiết)',
-      y: '- Đánh giá tổng hợp toàn diện kết quả học tập và rèn luyện môn HĐTN, HN Lớp 9 trong Học kỳ 1.'
+      t: 'Sơ kết Học kỳ 1',
+      n: 'Sơ kết Học kỳ 1 Hoạt động trải nghiệm, hướng nghiệp Lớp 9 (3 tiết)',
+      y: '- Đánh giá tổng kết các hoạt động trải nghiệm trong Học kỳ 1; tuyên dương học sinh tích cực và định hướng HK2.'
     },
 
     // HỌC KỲ 2 (Tuần 19 - 35)
@@ -912,32 +913,32 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
     },
     {
       w: 31,
+      t: 'Đánh giá định kỳ',
+      n: 'Kiểm tra, đánh giá cuối Học kỳ 2 môn Hoạt động trải nghiệm, hướng nghiệp Lớp 9 (3 tiết)',
+      y: '- Đánh giá tổng hợp sự trưởng thành về phẩm chất, năng lực và kế hoạch hướng nghiệp của học sinh sau 4 năm THCS.'
+    },
+    {
+      w: 32,
+      t: 'Báo cáo tổng kết Portfolio',
+      n: 'Chữa bài kiểm tra cuối HK2 & Báo cáo hoàn thiện Portfolio hồ sơ năng lực học sinh tốt nghiệp THCS (3 tiết)',
+      y: '- Chữa bài kiểm tra cuối HK2; hoàn thiện hồ sơ năng lực học sinh (Portfolio) gồm các chứng nhận, sản phẩm học tập chuẩn bị vào cấp 3.'
+    },
+    {
+      w: 33,
       t: 'Dự án Trải nghiệm',
       n: 'Dự án Trải nghiệm: "Tri ân thầy cô, mái trường THCS & Kỷ yếu Tuổi học trò" (3 tiết)',
       y: '- Thực hiện kỷ yếu số lớp học, thiết kế thiệp tri ân, video phóng sự ghi lại những kỷ niệm đẹp 4 năm học dưới mái trường THCS.'
     },
     {
-      w: 32,
-      t: 'Báo cáo tổng kết Portfolio',
-      n: 'Báo cáo tổng kết và hoàn thiện Portfolio hồ sơ năng lực học sinh tốt nghiệp THCS (3 tiết)',
-      y: '- Hoàn thiện hồ sơ năng lực học sinh (Portfolio) gồm các chứng nhận, sản phẩm học tập, dự án xã hội chuẩn bị vào cấp 3.'
-    },
-    {
-      w: 33,
+      w: 34,
       t: 'Chủ đề: Hệ thống hóa',
-      n: 'Hệ thống hóa toàn bộ nội dung Hoạt động trải nghiệm, hướng nghiệp Lớp 9 (3 tiết)',
+      n: 'Hệ thống hóa toàn bộ nội dung và hoàn tất hồ sơ hướng nghiệp chuẩn bị thi vào 10 (3 tiết)',
       y: '- Tổng kết các bài học lớn về làm chủ bản thân, thích ứng xã hội, tinh thần trách nhiệm và kỹ năng định hướng nghề nghiệp.'
     },
     {
-      w: 34,
-      t: 'Chủ đề: Ôn tập cuối năm',
-      n: 'Ôn tập toàn diện chuẩn bị đánh giá cuối năm Hoạt động trải nghiệm, hướng nghiệp 9 (3 tiết)',
-      y: '- Hoàn thiện toàn bộ phiếu tự đánh giá, đánh giá đồng đẳng và xếp loại thi đua hoạt động trải nghiệm cả năm.'
-    },
-    {
       w: 35,
-      t: 'Đánh giá định kỳ',
-      n: 'Kiểm tra, đánh giá cuối Học kỳ 2 & Ngày hội Tổng kết Hoạt động trải nghiệm, Lễ trưởng thành học sinh Lớp 9 (3 tiết)',
+      t: 'Tổng kết năm học',
+      n: 'Ngày hội Tổng kết Hoạt động trải nghiệm & Lễ trưởng thành học sinh Lớp 9 (3 tiết)',
       y: '- Tổ chức Ngày hội Tổng kết, Lễ trưởng thành và tri ân thầy cô, cha mẹ cho toàn thể học sinh Lớp 9 trước kỳ thi vào 10.'
     }
   ];
@@ -951,7 +952,7 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
       yccd: item.y,
       equipment: 'Máy chiếu, cẩm nang tuyển sinh Lớp 10, biểu mẫu khảo sát số Google Forms, portfolio điện tử, loa',
       location: 'Lớp học / Hội trường / Sân trường',
-      notes: item.w === 9 || item.w === 26 ? 'Kiểm tra giữa kỳ' : item.w === 18 || item.w === 35 ? 'Kiểm tra cuối kỳ' : ''
+      notes: item.w === 9 || item.w === 26 ? 'Kiểm tra giữa kỳ' : item.w === 16 || item.w === 31 ? 'Kiểm tra cuối kỳ' : ''
     });
   });
 

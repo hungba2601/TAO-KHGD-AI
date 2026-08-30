@@ -276,28 +276,28 @@ export function getMathPrimaryCurriculum(grade: string): RawPrimaryLesson[] {
         'Bài 12: Phép trừ trong phạm vi 10 (Khái niệm trừ, bớt đi)',
         'Bài 13: Bảng trừ và làm quen với phép trừ có số 0',
         'Bài 14: Luyện tập phép cộng, phép trừ trong phạm vi 10',
-        'Bài 15: Khối lập phương, khối hộp chữ nhật',
-        'Bài 16: Ôn tập tổng hợp kiến thức Toán Học kỳ 1 Lớp 1',
-        'Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Toán 1'
+        'Kiểm tra, đánh giá cuối Học kỳ 1 môn Toán 1',
+        'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức HK1 Lớp 1',
+        'Sơ kết Học kỳ 1 & Báo cáo sản phẩm học tập môn Toán 1'
       ],
       term2: [
-        'Bài 17: Các số từ 11 đến 20 (Đọc, viết, cấu tạo số)',
-        'Bài 18: Phép cộng dạng 14 + 3 và phép trừ dạng 17 - 3',
-        'Bài 19: Phép cộng, phép trừ dạng 10 + 4, 14 - 4',
-        'Bài 20: Các số tròn chục (10, 20, 30,..., 90)',
-        'Bài 21: Phép cộng, phép trừ các số tròn chục',
-        'Bài 22: Các số có hai chữ số từ 21 đến 99',
-        'Bài 23: So sánh các số có hai chữ số trong phạm vi 100',
-        'Bài 24: Bảng các số từ 1 đến 100',
+        'Bài 15: Khối lập phương, khối hộp chữ nhật',
+        'Bài 16: Các số từ 11 đến 20 (Đọc, viết, cấu tạo số)',
+        'Bài 17: Phép cộng dạng 14 + 3 và phép trừ dạng 17 - 3',
+        'Bài 18: Phép cộng, phép trừ dạng 10 + 4, 14 - 4',
+        'Bài 19: Các số tròn chục (10, 20, 30,..., 90)',
+        'Bài 20: Phép cộng, phép trừ các số tròn chục',
+        'Bài 21: Các số có hai chữ số từ 21 đến 99',
+        'Bài 22: So sánh các số có hai chữ số trong phạm vi 100',
         'Kiểm tra, đánh giá giữa Học kỳ 2 môn Toán 1',
-        'Bài 25: Đo độ dài. Đơn vị đo xăng-ti-mét (cm)',
-        'Bài 26: Thực hành đo và ước lượng độ dài bằng thước thẳng',
-        'Bài 27: Phép cộng dạng 25 + 14 (không nhớ trong phạm vi 100)',
-        'Bài 28: Phép trừ dạng 39 - 15 (không nhớ trong phạm vi 100)',
-        'Bài 29: Xem đồng hồ, xem lịch và các ngày trong tuần',
+        'Bài 23: Bảng các số từ 1 đến 100',
+        'Bài 24: Đo độ dài. Đơn vị đo xăng-ti-mét (cm)',
+        'Bài 25: Thực hành đo và ước lượng độ dài bằng thước thẳng',
+        'Kiểm tra, đánh giá cuối Học kỳ 2 môn Toán 1',
+        'Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành trải nghiệm Toán 1',
         'Dự án STEM Toán 1: "Đồng hồ thông minh & Mô hình hình học sắc màu"',
-        'Bài 30: Ôn tập các số và phép tính trong phạm vi 100',
-        'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Toán 1'
+        'Bài 26: Ôn tập toàn diện các số và phép tính trong phạm vi 100',
+        'Tổng kết năm học & Đánh giá xếp loại môn Toán 1'
       ]
     },
     2: {
@@ -317,28 +317,28 @@ export function getMathPrimaryCurriculum(grade: string): RawPrimaryLesson[] {
         'Bài 12: Phép cộng có nhớ dạng 38 + 25 trong phạm vi 100',
         'Bài 13: Phép trừ có nhớ dạng 52 - 28 trong phạm vi 100',
         'Bài 14: Luyện tập phép cộng, phép trừ có nhớ trong phạm vi 100',
-        'Bài 15: Đường thẳng, đường cong, ba điểm thẳng hàng, đoạn thẳng',
-        'Bài 16: Ôn tập tổng hợp kiến thức Toán Học kỳ 1 Lớp 2',
-        'Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Toán 2'
+        'Kiểm tra, đánh giá cuối Học kỳ 1 môn Toán 2',
+        'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức HK1 Lớp 2',
+        'Sơ kết Học kỳ 1 & Báo cáo sản phẩm học tập môn Toán 2'
       ],
       term2: [
-        'Bài 17: Làm quen với phép nhân (Tổng các số hạng bằng nhau)',
-        'Bài 18: Thừa số, Tích và Bảng nhân 2, Bảng nhân 5',
-        'Bài 19: Làm quen với phép chia (Chia thành các phần bằng nhau)',
-        'Bài 20: Số bị chia, Số chia, Thương và Bảng chia 2, Bảng chia 5',
-        'Bài 21: Khối trụ, khối cầu và nhận diện hình học không gian quanh em',
-        'Bài 22: Đơn vị đo khối lượng Ki-lô-gam (kg) và Lít (l)',
-        'Bài 23: Các số tròn trăm, tròn chục từ 100 đến 1000',
-        'Bài 24: Đọc, viết và cấu tạo các số có ba chữ số',
+        'Bài 15: Đường thẳng, đường cong, ba điểm thẳng hàng, đoạn thẳng',
+        'Bài 16: Làm quen với phép nhân (Tổng các số hạng bằng nhau)',
+        'Bài 17: Thừa số, Tích và Bảng nhân 2, Bảng nhân 5',
+        'Bài 18: Làm quen với phép chia (Chia thành các phần bằng nhau)',
+        'Bài 19: Số bị chia, Số chia, Thương và Bảng chia 2, Bảng chia 5',
+        'Bài 20: Khối trụ, khối cầu và nhận diện hình học không gian quanh em',
+        'Bài 21: Đơn vị đo khối lượng Ki-lô-gam (kg) và Lít (l)',
+        'Bài 22: Các số tròn trăm, tròn chục từ 100 đến 1000',
         'Kiểm tra, đánh giá giữa Học kỳ 2 môn Toán 2',
-        'Bài 25: So sánh các số có ba chữ số trong phạm vi 1000',
-        'Bài 26: Đơn vị đo độ dài Mét (m) và Ki-lô-mét (km)',
-        'Bài 27: Phép cộng, phép trừ không nhớ trong phạm vi 1000',
-        'Bài 28: Xem đồng hồ (giờ, phút) và ngày, tháng trong năm',
-        'Bài 29: Thu thập, phân loại, kiểm đếm số liệu thống kê đơn giản',
+        'Bài 23: Đọc, viết và cấu tạo các số có ba chữ số',
+        'Bài 24: So sánh các số có ba chữ số trong phạm vi 1000',
+        'Bài 25: Phép cộng, phép trừ không nhớ trong phạm vi 1000',
+        'Kiểm tra, đánh giá cuối Học kỳ 2 môn Toán 2',
+        'Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành trải nghiệm Toán 2',
         'Dự án STEM Toán 2: "Cân đĩa thông minh & Mô hình Thước đo chiều cao"',
-        'Bài 30: Ôn tập toàn diện các số và phép tính trong phạm vi 1000',
-        'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Toán 2'
+        'Bài 26: Ôn tập toàn diện các số và phép tính trong phạm vi 1000',
+        'Tổng kết năm học & Đánh giá xếp loại môn Toán 2'
       ]
     },
     3: {
@@ -358,28 +358,28 @@ export function getMathPrimaryCurriculum(grade: string): RawPrimaryLesson[] {
         'Bài 12: Chia số có hai chữ số cho số có một chữ số (Chia hết và chia có dư)',
         'Bài 13: Khái niệm phân số dạng 1/2, 1/3, 1/4, 1/5, 1/6, 1/7, 1/8, 1/9',
         'Bài 14: Hình tròn, tâm, đường kính, bán kính của hình tròn',
-        'Bài 15: Thực hành đo độ dài, vẽ đoạn thẳng và góc',
-        'Bài 16: Ôn tập tổng hợp kiến thức Toán Học kỳ 1 Lớp 3',
-        'Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Toán 3'
+        'Kiểm tra, đánh giá cuối Học kỳ 1 môn Toán 3',
+        'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức HK1 Lớp 3',
+        'Sơ kết Học kỳ 1 & Báo cáo sản phẩm học tập môn Toán 3'
       ],
       term2: [
-        'Bài 17: Các số trong phạm vi 10 000 (Đọc, viết, so sánh)',
-        'Bài 18: Phép cộng và phép trừ các số trong phạm vi 10 000',
-        'Bài 19: Tháng, năm và xem lịch năm hiện hành',
-        'Bài 20: Hình chữ nhật, hình vuông. Chu vi hình chữ nhật, hình vuông',
-        'Bài 21: Diện tích một hình. Xăng-ti-mét vuông (cm2)',
-        'Bài 22: Diện tích hình chữ nhật, diện tích hình vuông',
-        'Bài 23: Phép nhân và phép chia số có bốn chữ số cho số có một chữ số',
-        'Bài 24: Tiền Việt Nam (Nhận biết mệnh giá tiền và thực hành tính tiền)',
+        'Bài 15: Các số trong phạm vi 10 000 (Đọc, viết, so sánh)',
+        'Bài 16: Phép cộng và phép trừ các số trong phạm vi 10 000',
+        'Bài 17: Tháng, năm và xem lịch năm hiện hành',
+        'Bài 18: Hình chữ nhật, hình vuông. Chu vi hình chữ nhật, hình vuông',
+        'Bài 19: Diện tích một hình. Xăng-ti-mét vuông (cm2)',
+        'Bài 20: Diện tích hình chữ nhật, diện tích hình vuông',
+        'Bài 21: Phép nhân và phép chia số có bốn chữ số cho số có một chữ số',
+        'Bài 22: Tiền Việt Nam (Nhận biết mệnh giá tiền và thực hành tính tiền)',
         'Kiểm tra, đánh giá giữa Học kỳ 2 môn Toán 3',
-        'Bài 25: Các số trong phạm vi 100 000 (Hàng chục nghìn, hàng trăm nghìn)',
-        'Bài 26: So sánh các số trong phạm vi 100 000. Làm tròn số',
-        'Bài 27: Phép cộng, phép trừ trong phạm vi 100 000',
-        'Bài 28: Phép nhân, phép chia trong phạm vi 100 000',
-        'Bài 29: Thu thập, phân loại, ghi chép số liệu và bảng số liệu',
+        'Bài 23: Các số trong phạm vi 100 000 (Hàng chục nghìn, hàng trăm nghìn)',
+        'Bài 24: So sánh các số trong phạm vi 100 000. Làm tròn số',
+        'Bài 25: Phép cộng, phép trừ trong phạm vi 100 000',
+        'Kiểm tra, đánh giá cuối Học kỳ 2 môn Toán 3',
+        'Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành trải nghiệm Toán 3',
         'Dự án STEM Toán 3: "Mô hình Siêu thị Mini & Quản lý Chi tiêu Tiền Việt Nam"',
-        'Bài 30: Ôn tập toàn diện chuẩn bị kiểm tra cuối năm Toán 3',
-        'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Toán 3'
+        'Bài 26: Ôn tập toàn diện chuẩn bị kiểm tra cuối năm Toán 3',
+        'Tổng kết năm học & Đánh giá xếp loại môn Toán 3'
       ]
     },
     4: {
@@ -399,28 +399,28 @@ export function getMathPrimaryCurriculum(grade: string): RawPrimaryLesson[] {
         'Bài 12: Chia cho số có một chữ số và Chia cho số có hai chữ số',
         'Bài 13: Đề-xi-mét vuông (dm2), Mét vuông (m2), Mi-li-mét vuông (mm2)',
         'Bài 14: Hình bình hành, hình thoi và diện tích hình bình hành, hình thoi',
-        'Bài 15: Số trung bình cộng và bài toán tìm số trung bình cộng',
-        'Bài 16: Ôn tập tổng hợp kiến thức Toán Học kỳ 1 Lớp 4',
-        'Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Toán 4'
+        'Kiểm tra, đánh giá cuối Học kỳ 1 môn Toán 4',
+        'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức HK1 Lớp 4',
+        'Sơ kết Học kỳ 1 & Báo cáo sản phẩm học tập môn Toán 4'
       ],
       term2: [
-        'Bài 17: Khái niệm phân số và tính chất cơ bản của phân số',
-        'Bài 18: Rút gọn phân số và Quy đồng mẫu số các phân số',
-        'Bài 19: So sánh hai phân số cùng mẫu số, khác mẫu số',
-        'Bài 20: Phép cộng phân số (Cùng mẫu số và khác mẫu số)',
-        'Bài 21: Phép trừ phân số và bài toán giải bằng phép tính phân số',
-        'Bài 22: Phép nhân phân số và tìm phân số của một số',
-        'Bài 23: Phép chia phân số và tìm phân số đảo ngược',
-        'Bài 24: Dãy số liệu thống kê và biểu đồ cột',
+        'Bài 15: Số trung bình cộng và bài toán tìm số trung bình cộng',
+        'Bài 16: Khái niệm phân số và tính chất cơ bản của phân số',
+        'Bài 17: Rút gọn phân số và Quy đồng mẫu số các phân số',
+        'Bài 18: So sánh hai phân số cùng mẫu số, khác mẫu số',
+        'Bài 19: Phép cộng phân số (Cùng mẫu số và khác mẫu số)',
+        'Bài 20: Phép trừ phân số và bài toán giải bằng phép tính phân số',
+        'Bài 21: Phép nhân phân số và tìm phân số của một số',
+        'Bài 22: Phép chia phân số và tìm phân số đảo ngược',
         'Kiểm tra, đánh giá giữa Học kỳ 2 môn Toán 4',
-        'Bài 25: Tìm hai số khi biết tổng và tỉ số của hai số đó',
-        'Bài 26: Tìm hai số khi biết hiệu và tỉ số của hai số đó',
-        'Bài 27: Tỉ lệ bản đồ và ứng dụng thực tế của tỉ lệ bản đồ',
-        'Bài 28: Ôn tập phân số và các phép tính với phân số',
-        'Bài 29: Ôn tập hình học và đo lường (Góc, đường song song, diện tích)',
+        'Bài 23: Dãy số liệu thống kê và biểu đồ cột',
+        'Bài 24: Tìm hai số khi biết tổng và tỉ số của hai số đó',
+        'Bài 25: Tìm hai số khi biết hiệu và tỉ số của hai số đó',
+        'Kiểm tra, đánh giá cuối Học kỳ 2 môn Toán 4',
+        'Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành trải nghiệm Toán 4',
         'Dự án STEM Toán 4: "Bản đồ Trường học em theo tỉ lệ & Mô hình Kiến trúc Phân số"',
-        'Bài 30: Ôn tập toàn diện chuẩn bị kiểm tra cuối năm Toán 4',
-        'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Toán 4'
+        'Bài 26: Ôn tập toàn diện chuẩn bị kiểm tra cuối năm Toán 4',
+        'Tổng kết năm học & Đánh giá xếp loại môn Toán 4'
       ]
     },
     5: {
@@ -440,28 +440,28 @@ export function getMathPrimaryCurriculum(grade: string): RawPrimaryLesson[] {
         'Bài 12: Chia một số thập phân cho một số thập phân',
         'Bài 13: Khái niệm tỉ số phần trăm và Giải toán về tỉ số phần trăm (Dạng 1, 2, 3)',
         'Bài 14: Hình tam giác, diện tích hình tam giác',
-        'Bài 15: Hình thang, diện tích hình thang',
-        'Bài 16: Hình tròn, chu vi hình tròn và diện tích hình tròn',
-        'Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Toán 5'
+        'Kiểm tra, đánh giá cuối Học kỳ 1 môn Toán 5',
+        'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức HK1 Lớp 5',
+        'Sơ kết Học kỳ 1 & Báo cáo sản phẩm học tập môn Toán 5'
       ],
       term2: [
+        'Bài 15: Hình thang, diện tích hình thang',
+        'Bài 16: Hình tròn, chu vi hình tròn và diện tích hình tròn',
         'Bài 17: Hình hộp chữ nhật, hình lập phương. Diện tích xung quanh và toàn phần',
         'Bài 18: Thể tích một hình. Xăng-ti-mét khối (cm3), Đề-xi-mét khối (dm3), Mét khối (m3)',
         'Bài 19: Thể tích hình hộp chữ nhật và thể tích hình lập phương',
         'Bài 20: Bảng đơn vị đo thời gian. Cộng và trừ số đo thời gian',
         'Bài 21: Nhân và chia số đo thời gian với một số',
         'Bài 22: Vận tốc (Đơn vị km/h, m/phút, m/s)',
+        'Kiểm tra, đánh giá giữa Học kỳ 2 môn Toán 5',
         'Bài 23: Quãng đường và Thời gian trong chuyển động đều',
         'Bài 24: Bài toán về chuyển động cùng chiều, ngược chiều',
-        'Kiểm tra, đánh giá giữa Học kỳ 2 môn Toán 5',
         'Bài 25: Ôn tập về số tự nhiên, phân số, số thập phân và số đo đại lượng',
-        'Bài 26: Ôn tập về các phép tính với số tự nhiên, phân số, số thập phân',
-        'Bài 27: Ôn tập về hình học (Chu vi, diện tích, thể tích các hình đã học)',
-        'Bài 28: Ôn tập về giải toán (Toán chuyển động đều, tỉ số phần trăm)',
-        'Bài 29: Thu thập số liệu, biểu đồ hình quạt tròn và xác suất thống kê cơ bản',
+        'Kiểm tra, đánh giá cuối Học kỳ 2 môn Toán 5',
+        'Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành trải nghiệm Toán 5',
         'Dự án STEM Toán 5: "Mô hình Đô thị Thông minh 3D & Bài toán Vận tốc Xe điện"',
-        'Bài 30: Ôn tập toàn diện chuẩn bị chuyển cấp vào Lớp 6 THCS',
-        'Kiểm tra, đánh giá cuối Học kỳ 2 & Xét hoàn thành chương trình Tiểu học'
+        'Bài 26: Ôn tập toàn diện chuẩn bị chuyển cấp vào Lớp 6 THCS',
+        'Tổng kết năm học & Xét hoàn thành chương trình Tiểu học môn Toán 5'
       ]
     }
   };
@@ -472,7 +472,7 @@ export function getMathPrimaryCurriculum(grade: string): RawPrimaryLesson[] {
   all35Weeks.forEach((name, idx) => {
     const w = idx + 1;
     const isGK = w === 9 || w === 26;
-    const isCK = w === 18 || w === 35;
+    const isCK = w === 16 || w === 31;
     const isStem = w === 33 || name.includes('STEM');
 
     list.push({
@@ -515,28 +515,28 @@ export function getVietnamesePrimaryCurriculum(grade: string): RawPrimaryLesson[
         'Bài 12: Vần: an, at, am, ap, an, at, ang, ac',
         'Bài 13: Vần: en, et, em, ep, eng, ec, in, it',
         'Bài 14: Vần: on, ot, om, op, ong, oc, ôn, ôt, ôm, ôp',
-        'Bài 15: Vần: un, ut, um, up, ung, uc, ưn, ưt, ưm, ưp',
-        'Bài 16: Vần: ia, ua, ưa, iê, yê, uô, ươ',
-        'Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Tiếng Việt 1'
+        'Kiểm tra, đánh giá cuối Học kỳ 1 môn Tiếng Việt 1',
+        'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức HK1 Tiếng Việt 1',
+        'Sơ kết Học kỳ 1 & Báo cáo sản phẩm học tập môn Tiếng Việt 1'
       ],
       term2: [
+        'Bài 15: Vần: un, ut, um, up, ung, uc, ưn, ưt, ưm, ưp',
+        'Bài 16: Vần: ia, ua, ưa, iê, yê, uô, ươ',
         'Chủ điểm 1: Tôi là học sinh - Đọc: Cậu bé thông minh & Viết đoạn văn',
         'Đọc: Đi học & Kể chuyện: Bạn mới của em',
         'Chủ điểm 2: Mái ấm gia đình - Đọc: Bàn tay mẹ & Nghe - viết chính tả',
         'Đọc: Cả nhà đi chơi & Luyện nói: Kể về người thân',
         'Chủ điểm 3: Trường học thân yêu - Đọc: Lớp học vùng cao',
         'Đọc: Giờ ra chơi & Tập viết: Đoạn văn ngắn về trường lớp',
+        'Kiểm tra, đánh giá giữa Học kỳ 2 môn Tiếng Việt 1',
         'Chủ điểm 4: Thiên nhiên kì thú - Đọc: Hoa đào, hoa mai ngày Tết',
         'Đọc: Mưa rơi & Kể chuyện: Giọt nước tí xíu',
-        'Kiểm tra, đánh giá giữa Học kỳ 2 môn Tiếng Việt 1',
         'Chủ điểm 5: Thế giới loài vật - Đọc: Chú gà trống thông minh',
-        'Đọc: Chim sơn ca và bông cúc trắng & Nghe - viết chính tả',
-        'Chủ điểm 6: Quê hương đất nước - Đọc: Cố đô Huế / Vịnh Hạ Long',
-        'Đọc: Lăng Bác Hồ & Luyện nói: Giới thiệu quê hương em',
-        'Chủ điểm 7: Bạn bè bốn phương - Đọc: Nụ cười tuổi thơ',
+        'Kiểm tra, đánh giá cuối Học kỳ 2 môn Tiếng Việt 1',
+        'Chữa bài kiểm tra cuối HK2 & Hoạt động đọc sách sáng tạo Tiếng Việt 1',
         'Dự án Tiếng Việt 1: "Sách tranh Kể chuyện Em yêu Tiếng Việt"',
         'Bài 21: Ôn tập toàn diện Đọc thành tiếng, Đọc hiểu và Viết',
-        'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Tiếng Việt 1'
+        'Tổng kết năm học & Đánh giá xếp loại môn Tiếng Việt 1'
       ]
     },
     2: {
@@ -556,11 +556,12 @@ export function getVietnamesePrimaryCurriculum(grade: string): RawPrimaryLesson[
         'Chủ điểm 4: Cánh cửa mở ra - Đọc: Nhím nâu kết bạn & Từ chỉ đặc điểm',
         'Đọc: Cậu bé thông minh & Viết đoạn văn kể lại một sự việc',
         'Đọc: Tết đến rồi & Luyện viết câu mời, câu chúc',
-        'Đọc: Gọi bạn & Luyện từ chỉ tình bạn và câu nêu đặc điểm',
-        'Ôn tập tổng hợp kiến thức Đọc hiểu và Viết đoạn văn Học kỳ 1',
-        'Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Tiếng Việt 2'
+        'Kiểm tra, đánh giá cuối Học kỳ 1 môn Tiếng Việt 2',
+        'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức HK1 Tiếng Việt 2',
+        'Sơ kết Học kỳ 1 & Báo cáo sản phẩm học tập môn Tiếng Việt 2'
       ],
       term2: [
+        'Đọc: Gọi bạn & Luyện từ chỉ tình bạn và câu nêu đặc điểm',
         'Chủ điểm 5: Vẻ đẹp quanh em - Đọc: Mùa nước nổi & Luyện câu nêu đặc điểm',
         'Đọc: Họa mi hót & Viết đoạn văn tả một loài chim',
         'Đọc: Cây rơm & Từ ngữ chỉ đồ vật, loài vật',
@@ -568,16 +569,15 @@ export function getVietnamesePrimaryCurriculum(grade: string): RawPrimaryLesson[
         'Đọc: Lũy tre & Luyện nói: Ý thức bảo vệ môi trường',
         'Đọc: Chuyện quả bầu & Kể chuyện cổ tích Việt Nam',
         'Chủ điểm 7: Giao tiếp và kết nối - Đọc: Thư viện biết đi & Mở rộng vốn từ',
-        'Đọc: Chú gấu may mắn & Viết tin nhắn, bưu thiếp',
         'Kiểm tra, đánh giá giữa Học kỳ 2 môn Tiếng Việt 2',
+        'Đọc: Chú gấu may mắn & Viết tin nhắn, bưu thiếp',
         'Chủ điểm 8: Con người Việt Nam - Đọc: Chiếc rễ cây tròn & Bác Hồ kính yêu',
         'Đọc: Đất nước tươi đẹp & Viết đoạn văn tả cảnh đẹp quê hương',
-        'Đọc: Bác sĩ Y-éc-xanh & Luyện câu nêu hoạt động',
-        'Chủ điểm 9: Ước mơ tuổi thơ - Đọc: Mai sau lớn lên em làm gì?',
-        'Đọc: Người làm đồ chơi & Viết đoạn văn về nghề nghiệp tương lai',
+        'Kiểm tra, đánh giá cuối Học kỳ 2 môn Tiếng Việt 2',
+        'Chữa bài kiểm tra cuối HK2 & Hoạt động đọc sách sáng tạo Tiếng Việt 2',
         'Dự án Tiếng Việt 2: "Cuốn sách Kỷ niệm Lớp 2 & Ngày hội Thi Đọc hay"',
         'Ôn tập toàn diện Đọc, Viết, Luyện từ và câu, Kể chuyện lớp 2',
-        'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Tiếng Việt 2'
+        'Tổng kết năm học & Đánh giá xếp loại môn Tiếng Việt 2'
       ]
     },
     3: {
@@ -597,11 +597,12 @@ export function getVietnamesePrimaryCurriculum(grade: string): RawPrimaryLesson[
         'Chủ điểm 4: Mái ấm quê hương - Đọc: Quê hương & Mở rộng vốn từ: Quê hương',
         'Đọc: Chợ hoa ngày Tết & Viết đoạn văn tả cảnh đẹp quê hương',
         'Đọc: Tiếng hò trên sông & Nghe - viết chính tả',
-        'Đọc: Cùng vui chơi & Luyện câu kể và từ ngữ chỉ thể thao',
-        'Ôn tập tổng hợp kiến thức Tiếng Việt Học kỳ 1 Lớp 3',
-        'Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Tiếng Việt 3'
+        'Kiểm tra, đánh giá cuối Học kỳ 1 môn Tiếng Việt 3',
+        'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức HK1 Tiếng Việt 3',
+        'Sơ kết Học kỳ 1 & Báo cáo sản phẩm học tập môn Tiếng Việt 3'
       ],
       term2: [
+        'Đọc: Cùng vui chơi & Luyện câu kể và từ ngữ chỉ thể thao',
         'Chủ điểm 5: Vẻ đẹp cuộc sống - Đọc: Giọt sương & Dấu gạch ngang, dấu ngoặc kép',
         'Đọc: Sắc màu mùa xuân & Viết đoạn văn miêu tả hoa trái mùa xuân',
         'Đọc: Rừng ngập mặn Cần Giờ & Mở rộng vốn từ: Thiên nhiên',
@@ -609,16 +610,15 @@ export function getVietnamesePrimaryCurriculum(grade: string): RawPrimaryLesson[
         'Đọc: Sự tích Chùa Một Cột & Viết đoạn văn giới thiệu di tích lịch sử',
         'Đọc: Hai Bà Trưng & Kể chuyện lịch sử dựng nước',
         'Chủ điểm 7: Ngôi nhà chung - Đọc: Mặt trời xanh của tôi & Mở rộng vốn từ: Trái Đất',
-        'Đọc: Cùng vui chơi & Viết đoạn văn về một môn thể thao em yêu thích',
         'Kiểm tra, đánh giá giữa Học kỳ 2 môn Tiếng Việt 3',
+        'Đọc: Cùng vui chơi & Viết đoạn văn về một môn thể thao em yêu thích',
         'Chủ điểm 8: Vòng tay bè bạn - Đọc: Bác sĩ thông thái & Câu kể Ai là gì?',
         'Đọc: Bài ca Trái Đất & Viết bức thư thăm hỏi bạn bè',
-        'Đọc: Những ngọn đuốc trên biển & Luyện từ và câu: Nhân hóa',
-        'Chủ điểm 9: Bầu trời ước mơ - Đọc: Nhà phát minh tí hon',
-        'Đọc: Đất nước ngàn năm & Viết đoạn văn nêu ước mơ của em',
+        'Kiểm tra, đánh giá cuối Học kỳ 2 môn Tiếng Việt 3',
+        'Chữa bài kiểm tra cuối HK2 & Hoạt động đọc sách sáng tạo Tiếng Việt 3',
         'Dự án Tiếng Việt 3: "Báo tường Thiếu nhi & Tập san Văn học Tuổi thơ"',
         'Ôn tập toàn diện Đọc hiểu, Luyện từ và câu, Tập làm văn lớp 3',
-        'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Tiếng Việt 3'
+        'Tổng kết năm học & Đánh giá xếp loại môn Tiếng Việt 3'
       ]
     },
     4: {
@@ -638,11 +638,12 @@ export function getVietnamesePrimaryCurriculum(grade: string): RawPrimaryLesson[
         'Chủ điểm 4: Vì hạnh phúc con người - Đọc: Người ăn xin & Mở rộng vốn từ: Nhân hậu',
         'Viết: Đoạn văn nêu ý kiến tán thành & Đọc: Bốn anh tài',
         'Đọc: Ở Vương quốc Tương lai & Dấu gạch ngang, dấu ngoặc kép',
-        'Đọc: Khúc hát ru những em bé lớn trên lưng mẹ & Luyện từ ngữ chỉ tình cảm gia đình',
-        'Ôn tập tổng hợp kiến thức Đọc hiểu và Kỹ năng viết Học kỳ 1',
-        'Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Tiếng Việt 4'
+        'Kiểm tra, đánh giá cuối Học kỳ 1 môn Tiếng Việt 4',
+        'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức HK1 Tiếng Việt 4',
+        'Sơ kết Học kỳ 1 & Báo cáo sản phẩm học tập môn Tiếng Việt 4'
       ],
       term2: [
+        'Đọc: Khúc hát ru những em bé lớn trên lưng mẹ & Luyện từ ngữ chỉ tình cảm gia đình',
         'Chủ điểm 5: Vẻ đẹp muôn màu - Đọc: Sầu riêng & Câu kể: Trạng ngữ chỉ thời gian, nơi chốn',
         'Viết: Bài văn miêu tả cây cối & Đọc: Chợ Tết',
         'Đọc: Hoa phượng & Trạng ngữ chỉ mục đích, nguyên nhân',
@@ -650,16 +651,15 @@ export function getVietnamesePrimaryCurriculum(grade: string): RawPrimaryLesson[
         'Viết: Bài văn miêu tả con vật & Đọc: Đường đi Sa Pa',
         'Đọc: Trăng trên biển & Trạng ngữ chỉ phương tiện, cách thức',
         'Chủ điểm 7: Khúc ca hòa bình - Đọc: Bè xuôi sông La & Mở rộng vốn từ: Hòa bình',
-        'Viết: Bài văn miêu tả đồ vật & Đọc: Tiếng đàn Ba-la-lai-ca trên sông Đà',
         'Kiểm tra, đánh giá giữa Học kỳ 2 môn Tiếng Việt 4',
+        'Viết: Bài văn miêu tả đồ vật & Đọc: Tiếng đàn Ba-la-lai-ca trên sông Đà',
         'Chủ điểm 8: Tình yêu quê hương - Đọc: Dòng sông mặc áo & Mở rộng vốn từ: Quê hương',
         'Viết: Thuyết minh giới thiệu một di tích lịch sử & Đọc: Ăn mầm đá',
-        'Đọc: Cây tre Việt Nam & Dấu hai chấm, dấu chấm lửng',
-        'Chủ điểm 9: Bầu trời tuổi thơ - Đọc: Nếu chúng mình có phép lạ',
-        'Viết: Bài văn tưởng tượng cuộc sống tương lai năm 2050',
+        'Kiểm tra, đánh giá cuối Học kỳ 2 môn Tiếng Việt 4',
+        'Chữa bài kiểm tra cuối HK2 & Hoạt động đọc sách sáng tạo Tiếng Việt 4',
         'Dự án Tiếng Việt 4: "Sáng tác Truyện tranh & Tuyển tập Thơ Văn Thiếu nhi"',
         'Ôn tập toàn diện Đọc hiểu, Luyện từ và câu, Viết văn miêu tả Lớp 4',
-        'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Tiếng Việt 4'
+        'Tổng kết năm học & Đánh giá xếp loại môn Tiếng Việt 4'
       ]
     },
     5: {
@@ -679,11 +679,12 @@ export function getVietnamesePrimaryCurriculum(grade: string): RawPrimaryLesson[
         'Chủ điểm 4: Vì hạnh phúc con người - Đọc: Chuỗi ngọc lam & Mở rộng vốn từ: Hạnh phúc',
         'Viết: Bài văn tả người (Tả một bạn học sinh đang say sưa học tập)',
         'Đọc: Người gác rừng tí hon & Câu ghép và các cách nối các vế câu ghép',
-        'Đọc: Buổi sáng ở Thành phố Hồ Chí Minh & Luyện viết đoạn văn liên kết câu',
-        'Ôn tập tổng hợp kiến thức Đọc hiểu và Kỹ năng viết Học kỳ 1 Lớp 5',
-        'Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Tiếng Việt 5'
+        'Kiểm tra, đánh giá cuối Học kỳ 1 môn Tiếng Việt 5',
+        'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức HK1 Tiếng Việt 5',
+        'Sơ kết Học kỳ 1 & Báo cáo sản phẩm học tập môn Tiếng Việt 5'
       ],
       term2: [
+        'Đọc: Buổi sáng ở Thành phố Hồ Chí Minh & Luyện viết đoạn văn liên kết câu',
         'Chủ điểm 5: Giữ lấy màu xanh - Đọc: Người công dân số Một & Nối các vế câu ghép bằng quan hệ từ',
         'Viết: Bài văn thuyết minh giới thiệu một trò chơi dân gian & Đọc: Hạt gạo làng ta',
         'Đọc: Nhà tài trợ đặc biệt của Cách mạng & Mở rộng vốn từ: Công dân',
@@ -691,16 +692,15 @@ export function getVietnamesePrimaryCurriculum(grade: string): RawPrimaryLesson[
         'Viết: Bài văn kể lại một kỷ niệm sâu sắc tuổi học trò & Đọc: Cửa Tùng',
         'Đọc: Hộp thư mật & Mở rộng vốn từ: An ninh - Trật tự',
         'Chủ điểm 7: Cánh chim hòa bình - Đọc: Tiếng rao đêm & Mở rộng vốn từ: Hòa bình',
-        'Viết: Bài văn nêu ý kiến phản đối một hiện tượng tiêu cực trong đời sống',
         'Kiểm tra, đánh giá giữa Học kỳ 2 môn Tiếng Việt 5',
+        'Viết: Bài văn nêu ý kiến phản đối một hiện tượng tiêu cực trong đời sống',
         'Chủ điểm 8: Vì một thế giới tương lai - Đọc: Nghĩa thầy trò & Mở rộng vốn từ: Truyền thống',
         'Viết: Thư thăm hỏi, bày tỏ tình cảm với thầy cô trước ngày ra trường',
-        'Đọc: Út Vịnh & Liên kết câu bằng cách lặp từ ngữ, thay thế từ ngữ',
-        'Chủ điểm 9: Ước mơ bay xa - Đọc: Hành trình của bầy ong',
-        'Viết: Bài văn tả cảnh trường em trước giờ chia tay mùa hè',
+        'Kiểm tra, đánh giá cuối Học kỳ 2 môn Tiếng Việt 5',
+        'Chữa bài kiểm tra cuối HK2 & Hoạt động đọc sách sáng tạo Tiếng Việt 5',
         'Dự án Tiếng Việt 5: "Kỷ yếu Khóa học Tiểu học & Tuyển tập Tác phẩm Văn học 5 năm"',
         'Ôn tập toàn diện chuẩn bị chuyển cấp vào Lớp 6 THCS',
-        'Kiểm tra, đánh giá cuối Học kỳ 2 & Xét hoàn thành chương trình Tiểu học'
+        'Tổng kết năm học & Xét hoàn thành chương trình Tiểu học môn Tiếng Việt 5'
       ]
     }
   };
@@ -711,7 +711,7 @@ export function getVietnamesePrimaryCurriculum(grade: string): RawPrimaryLesson[
   all35Weeks.forEach((name, idx) => {
     const w = idx + 1;
     const isGK = w === 9 || w === 26;
-    const isCK = w === 18 || w === 35;
+    const isCK = w === 16 || w === 31;
     const isStem = w === 33 || name.includes('Dự án');
 
     list.push({
@@ -758,26 +758,26 @@ export function getSciencePrimaryCurriculum(grade: string, subject: string): Raw
       'Bài 12: Chăm sóc và yêu thương vật nuôi',
       'Chủ đề 5: Con người và sức khỏe - Bài 13: Các bộ phận cơ thể em',
       'Bài 14: Giữ gìn vệ sinh thân thể và bảo vệ giác quan',
+      'Kiểm tra, đánh giá cuối Học kỳ 1 môn TNXH 1',
+      'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức HK1 Lớp 1',
+      'Sơ kết Học kỳ 1 & Báo cáo sản phẩm học tập Lớp 1',
       'Bài 15: Ăn uống đủ chất và rèn luyện thân thể',
-      'Bài 16: Ôn tập tổng hợp kiến thức TNXH Học kỳ 1 Lớp 1',
-      'Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn TNXH 1',
       'Chủ đề 6: Trái Đất và bầu trời - Bài 17: Bầu trời ban ngày và ban đêm',
       'Bài 18: Thời tiết nắng, mưa, gió, bão',
       'Bài 19: Trang phục phù hợp với thời tiết bốn mùa',
       'Bài 20: Tìm hiểu nguồn nước và không khí xung quanh em',
       'Bài 21: Tiết kiệm nước và giữ sạch nguồn nước',
       'Bài 22: Phân loại rác thải tại gia đình và trường học',
-      'Bài 23: Trồng và chăm sóc cây xanh trong chậu',
       'Kiểm tra, đánh giá giữa Học kỳ 2 môn TNXH 1',
+      'Bài 23: Trồng và chăm sóc cây xanh trong chậu',
       'Bài 24: Thực hành quan sát cây và hoa trong vườn trường',
       'Bài 25: Tìm hiểu các loài động vật sống dưới nước',
       'Bài 26: Tìm hiểu các loài chim bay lượn trên bầu trời',
-      'Bài 27: Dự án STEM TNXH 1: "Mô hình Vườn cây Mini & Bảng Theo dõi Thời tiết"',
-      'Bài 28: Phòng tránh bỏng, điện giật và tai nạn tại nhà',
-      'Bài 29: Kỹ năng xử lý khi bị lạc và tìm kiếm sự trợ giúp',
-      'Bài 30: Thực hành rửa tay bằng xà phòng và vệ sinh răng miệng đúng cách',
-      'Bài 31: Ôn tập toàn diện kiến thức TNXH Lớp 1',
-      'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn TNXH 1'
+      'Kiểm tra, đánh giá cuối Học kỳ 2 môn TNXH 1',
+      'Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành trải nghiệm Lớp 1',
+      'Dự án STEM TNXH 1: "Mô hình Vườn cây Mini & Bảng Theo dõi Thời tiết"',
+      'Bài 27: Ôn tập toàn diện kiến thức TNXH Lớp 1',
+      'Tổng kết năm học & Đánh giá xếp loại môn TNXH 1'
     ],
     2: [
       'Chủ đề 1: Gia đình - Bài 1: Các thế hệ trong gia đình và nghề nghiệp của người lớn',
@@ -795,26 +795,26 @@ export function getSciencePrimaryCurriculum(grade: string, subject: string): Raw
       'Bài 12: Động vật sống ở đâu? (Trên cạn, dưới nước, trên không)',
       'Bài 13: Bảo vệ môi trường sống của thực vật và động vật',
       'Chủ đề 5: Con người và sức khỏe - Bài 14: Cơ quan vận động (Xương và cơ)',
+      'Kiểm tra, đánh giá cuối Học kỳ 1 môn TNXH 2',
+      'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức HK1 Lớp 2',
+      'Sơ kết Học kỳ 1 & Báo cáo sản phẩm học tập Lớp 2',
       'Bài 15: Tư thế ngồi học đúng và phòng tránh cong vẹo cột sống',
-      'Bài 16: Ôn tập tổng hợp kiến thức TNXH Học kỳ 1 Lớp 2',
-      'Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn TNXH 2',
       'Bài 17: Cơ quan hô hấp (Mũi, khí quản, phế quản, phổi)',
       'Bài 18: Hoạt động thở và bảo vệ cơ quan hô hấp sạch khỏe',
       'Bài 19: Cơ quan bài tiết nước tiểu (Thận, ống dẫn tiểu, bàng quang)',
       'Bài 20: Giữ vệ sinh và bảo vệ cơ quan bài tiết nước tiểu',
       'Chủ đề 6: Trái Đất và bầu trời - Bài 21: Các mùa trong năm (Xuân, Hạ, Thu, Đông)',
       'Bài 22: Hiện tượng thiên tai (Bão, lũ lụt, hạn hán) và cách phòng tránh',
-      'Bài 23: Vị trí của Mặt Trời và các phương hướng chính (Đông, Tây, Nam, Bắc)',
       'Kiểm tra, đánh giá giữa Học kỳ 2 môn TNXH 2',
+      'Bài 23: Vị trí của Mặt Trời và các phương hướng chính (Đông, Tây, Nam, Bắc)',
       'Bài 24: Mặt Trăng và các hình dạng của Mặt Trăng',
       'Bài 25: Tìm hiểu ô nhiễm không khí và nguồn nước tại địa phương',
-      'Bài 26: Dự án STEM TNXH 2: "Mô hình Cơ quan Hô hấp Phổi nhân tạo & La bàn Định hướng"',
       'Bài 27: Thực hành thu gom và tái chế rác thải nhựa',
-      'Bài 28: Kỹ năng thoát hiểm khi có hỏa hoạn cháy nổ',
-      'Bài 29: Kỹ năng sơ cứu vết thương nhẹ và phòng tránh tai nạn thương tích',
-      'Bài 30: Hệ thống hóa toàn bộ kiến thức tự nhiên và xã hội Lớp 2',
-      'Bài 31: Ôn tập toàn diện chuẩn bị kiểm tra cuối năm',
-      'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn TNXH 2'
+      'Kiểm tra, đánh giá cuối Học kỳ 2 môn TNXH 2',
+      'Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành trải nghiệm Lớp 2',
+      'Dự án STEM TNXH 2: "Mô hình Cơ quan Hô hấp Phổi nhân tạo & La bàn Định hướng"',
+      'Bài 30: Ôn tập toàn diện chuẩn bị kiểm tra cuối năm Lớp 2',
+      'Tổng kết năm học & Đánh giá xếp loại môn TNXH 2'
     ],
     3: [
       'Chủ đề 1: Gia đình - Bài 1: Họ hàng nội, ngoại và truyền thống gia đình',
@@ -832,9 +832,10 @@ export function getSciencePrimaryCurriculum(grade: string, subject: string): Raw
       'Bài 12: Động vật có xương sống (Cá, ếch, bò sát, chim, thú)',
       'Bài 13: Động vật không xương sống (Côn trùng, tôm, cua, ốc)',
       'Chủ đề 5: Con người và sức khỏe - Bài 14: Cơ quan tuần hoàn (Tim và mạch máu)',
+      'Kiểm tra, đánh giá cuối Học kỳ 1 môn TNXH 3',
+      'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức HK1 Lớp 3',
+      'Sơ kết Học kỳ 1 & Báo cáo sản phẩm học tập Lớp 3',
       'Bài 15: Hoạt động của tim và chăm sóc, bảo vệ tim mạch',
-      'Bài 16: Ôn tập tổng hợp kiến thức TNXH Học kỳ 1 Lớp 3',
-      'Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn TNXH 3',
       'Bài 17: Cơ quan thần kinh (Não, tủy sống và các dây thần kinh)',
       'Bài 18: Hoạt động phản xạ và chăm sóc hệ thần kinh (Ngủ đủ giấc, tránh căng thẳng)',
       'Chủ đề 6: Trái Đất và bầu trời - Bài 19: Các đới khí hậu trên Trái Đất (Nhiệt đới, Ôn đới, Hàn đới)',
@@ -843,15 +844,14 @@ export function getSciencePrimaryCurriculum(grade: string, subject: string): Raw
       'Bài 22: Mặt Trời, Trái Đất và Mặt Trăng trong hệ Mặt Trời',
       'Kiểm tra, đánh giá giữa Học kỳ 2 môn TNXH 3',
       'Bài 23: Đại dương và các châu lục trên bề mặt Trái Đất',
-      'Bài 24: Dự án STEM TNXH 3: "Mô hình Hệ Mặt Trời 3D & Máy Đo Nhịp Tim Thủ Công"',
       'Bài 25: Thực hành quan sát và làm tiêu bản ép lá cây khô',
       'Bài 26: Tìm hiểu đa dạng sinh học các loài sinh vật quanh em',
       'Bài 27: Ôn tập toàn diện kiến thức Sinh học cơ thể người và Trái Đất',
-      'Bài 28: Rèn luyện kỹ năng sống và phòng chống đuối nước',
-      'Bài 29: Kỹ năng xử lý tình huống khẩn cấp và bảo vệ bản thân',
-      'Bài 30: Tổng kết hệ thống kiến thức TNXH cấp Tiểu học (Lớp 1-3)',
+      'Kiểm tra, đánh giá cuối Học kỳ 2 môn TNXH 3',
+      'Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành trải nghiệm Lớp 3',
+      'Dự án STEM TNXH 3: "Mô hình Hệ Mặt Trời 3D & Máy Đo Nhịp Tim Thủ Công"',
       'Bài 31: Ôn tập chuẩn bị chuyển tiếp môn Khoa học và Lịch sử - Địa lý Lớp 4',
-      'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn TNXH 3'
+      'Tổng kết năm học & Đánh giá xếp loại môn TNXH 3'
     ],
     4: [
       'Chủ đề 1: Chất - Bài 1: Một số tính chất và vai trò của nước (Không màu, không mùi, hòa tan)',
@@ -869,26 +869,26 @@ export function getSciencePrimaryCurriculum(grade: string, subject: string): Raw
       'Bài 12: Sự truyền nhiệt. Vật dẫn nhiệt tốt và vật cách nhiệt',
       'Chủ đề 3: Thực vật và động vật - Bài 13: Nhu cầu sống của thực vật (Nước, ánh sáng, chất khoáng, không khí)',
       'Bài 14: Sự trao đổi chất ở thực vật và quá trình quang hợp, hô hấp',
+      'Kiểm tra, đánh giá cuối Học kỳ 1 môn Khoa học 4',
+      'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức HK1 Lớp 4',
+      'Sơ kết Học kỳ 1 & Báo cáo sản phẩm học tập Lớp 4',
       'Bài 15: Nhu cầu sống của động vật và sự trao đổi chất ở động vật',
-      'Bài 16: Ôn tập tổng hợp kiến thức Chất và Năng lượng Học kỳ 1',
-      'Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Khoa học 4',
       'Chủ đề 4: Nấm - Bài 17: Nấm men, nấm mốc và nấm ăn. Vai trò của nấm trong tự nhiên',
       'Bài 18: Nấm độc và phòng tránh ngộ độc nấm',
-      'Chủ đề 5: Con người và sức khỏe - Bài 19: Các nhóm chất dinh dưỡng có trong thức ăn (Chất bột đường, đạm, béo, vitamin, khoáng chất)',
+      'Chủ đề 5: Con người và sức khỏe - Bài 19: Các nhóm chất dinh dưỡng có trong thức ăn',
       'Bài 20: Vai trò của các nhóm chất dinh dưỡng đối với cơ thể',
       'Bài 21: Xây dựng thực đơn ăn uống cân bằng, khoa học (Tháp dinh dưỡng)',
-      'Bài 22: Phòng tránh một số bệnh liên quan đến dinh dưỡng (Béo phì, suy dinh dưỡng, thiếu máu)',
-      'Bài 23: An toàn vệ sinh thực phẩm và bảo quản thức ăn đúng cách',
+      'Bài 22: Phòng tránh một số bệnh liên quan đến dinh dưỡng',
       'Kiểm tra, đánh giá giữa Học kỳ 2 môn Khoa học 4',
-      'Chủ đề 6: Sinh vật và môi trường - Bài 24: Chuỗi thức ăn trong tự nhiên (Sinh vật sản xuất, tiêu thụ, phân giải)',
+      'Bài 23: An toàn vệ sinh thực phẩm và bảo quản thức ăn đúng cách',
+      'Chủ đề 6: Sinh vật và môi trường - Bài 24: Chuỗi thức ăn trong tự nhiên',
       'Bài 25: Vai trò của thực vật trong chuỗi thức ăn tự nhiên',
       'Bài 26: Tác động của con người đến chuỗi thức ăn và cân bằng sinh thái',
+      'Kiểm tra, đánh giá cuối Học kỳ 2 môn Khoa học 4',
+      'Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành trải nghiệm Lớp 4',
       'Dự án STEM Khoa học 4: "Chế tạo Bình Lọc Nước Sinh Hoạt Đơn Giản & Mô hình Chuỗi Thức Ăn 3D"',
-      'Bài 27: Thực hành trồng rau mầm thủy canh không dùng đất',
-      'Bài 28: Kỹ năng phòng tránh các bệnh truyền nhiễm qua đường tiêu hóa',
-      'Bài 29: Hệ thống hóa toàn bộ kiến thức Khoa học Lớp 4',
-      'Bài 30: Ôn tập toàn diện chuẩn bị kiểm tra cuối năm',
-      'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Khoa học 4'
+      'Bài 29: Ôn tập toàn diện chuẩn bị kiểm tra cuối năm Khoa học 4',
+      'Tổng kết năm học & Đánh giá xếp loại môn Khoa học 4'
     ],
     5: [
       'Chủ đề 1: Chất - Bài 1: Thành phần và sự biến đổi của chất (Biến đổi vật lí và biến đổi hóa học)',
@@ -906,9 +906,10 @@ export function getSciencePrimaryCurriculum(grade: string, subject: string): Raw
       'Bài 12: Vòng đời và sự phát triển của côn trùng (Bướm, muỗi)',
       'Bài 13: Vòng đời của ếch và chim',
       'Bài 14: Sự sinh sản và nuôi con của thú (Động vật có vú)',
-      'Bài 15: Ôn tập tổng hợp kiến thức Năng lượng và Sinh sản Học kỳ 1',
-      'Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Khoa học 5',
-      'Chủ đề 4: Vi khuẩn - Bài 16: Vi khuẩn quanh ta. Vai trò của vi khuẩn có ích trong sản xuất sữa chua, phô mai',
+      'Kiểm tra, đánh giá cuối Học kỳ 1 môn Khoa học 5',
+      'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức HK1 Lớp 5',
+      'Sơ kết Học kỳ 1 & Báo cáo sản phẩm học tập Lớp 5',
+      'Chủ đề 4: Vi khuẩn - Bài 16: Vi khuẩn quanh ta. Vai trò của vi khuẩn có ích trong sản xuất sữa chua',
       'Bài 17: Vi khuẩn gây bệnh và các biện pháp phòng tránh nhiễm khuẩn',
       'Chủ đề 5: Con người và sức khỏe - Bài 18: Sự sinh sản ở người và quá trình thụ tinh tạo phôi thai',
       'Bài 19: Các giai đoạn phát triển của con người từ sơ sinh đến tuổi già',
@@ -920,11 +921,11 @@ export function getSciencePrimaryCurriculum(grade: string, subject: string): Raw
       'Bài 24: Tác động của con người đến môi trường đất, nước, không khí và rừng',
       'Bài 25: Ô nhiễm môi trường và Biến đổi khí hậu toàn cầu',
       'Bài 26: Các biện pháp bảo vệ môi trường và phát triển năng lượng xanh',
+      'Kiểm tra, đánh giá cuối Học kỳ 2 môn Khoa học 5',
+      'Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành trải nghiệm Lớp 5',
       'Dự án STEM Khoa học 5: "Mô hình Xe chạy bằng Năng lượng Gió/Mặt Trời & Máy Báo Động Thông minh"',
-      'Bài 27: Kỹ năng ứng phó với sự cố rò rỉ điện và hỏa hoạn',
-      'Bài 28: Hệ thống hóa toàn bộ kiến thức Khoa học 5 năm Tiểu học',
       'Bài 29: Ôn tập toàn diện chuẩn bị chuyển cấp vào Lớp 6 THCS',
-      'Kiểm tra, đánh giá cuối Học kỳ 2 & Xét hoàn thành chương trình Tiểu học'
+      'Tổng kết năm học & Xét hoàn thành chương trình Khoa học Tiểu học'
     ]
   };
 
@@ -933,8 +934,8 @@ export function getSciencePrimaryCurriculum(grade: string, subject: string): Raw
     const w = idx + 1;
     if (w > 35) return;
     const isGK = w === 9 || w === 26;
-    const isCK = w === 18 || w === 35;
-    const isStem = name.includes('STEM') || w === 30;
+    const isCK = w === 16 || w === 31;
+    const isStem = name.includes('STEM') || w === 33;
 
     list.push({
       week: w,
@@ -975,26 +976,26 @@ export function getHistoryGeoPrimaryCurriculum(grade: string): RawPrimaryLesson[
       'Bài 12: Thiên nhiên vùng Duyên hải miền Trung (Khí hậu nhiệt đới gió mùa, bão lũ, cát trắng)',
       'Bài 13: Dân cư và hoạt động kinh tế biển ở vùng Duyên hải miền Trung',
       'Bài 14: Cố đô Huế và Di sản văn hóa cung đình Huế',
+      'Kiểm tra, đánh giá cuối Học kỳ 1 môn Lịch sử và Địa lý 4',
+      'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức HK1 Lớp 4',
+      'Sơ kết Học kỳ 1 & Báo cáo sản phẩm học tập môn Lịch sử và Địa lý 4',
       'Bài 15: Phố cổ Hội An và Di sản đô thị cổ thế giới',
-      'Bài 16: Ôn tập các vùng miền địa lí và lịch sử văn hóa Học kỳ 1',
-      'Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Lịch sử và Địa lý 4',
       'Bài 17: Thiên nhiên vùng Tây Nguyên (Địa hình cao nguyên xếp tầng, đất đỏ bazan)',
       'Bài 18: Dân cư và hoạt động trồng cây công nghiệp (Cà phê, cao su, hồ tiêu) ở Tây Nguyên',
       'Bài 19: Không gian văn hóa Cồng chiêng Tây Nguyên di sản phi vật thể nhân loại',
       'Bài 20: Lễ hội hoa Đà Lạt và Du lịch sinh thái nghỉ dưỡng Tây Nguyên',
       'Bài 21: Thiên nhiên vùng Nam Bộ (Đồng bằng châu thổ sông Cửu Long, mạng lưới sông ngòi)',
       'Bài 22: Dân cư và hoạt động sản xuất nông nghiệp, nuôi trồng thủy sản vùng Nam Bộ',
-      'Bài 23: Thành phố Hồ Chí Minh trung tâm kinh tế, văn hóa, giáo dục lớn của cả nước',
       'Kiểm tra, đánh giá giữa Học kỳ 2 môn Lịch sử và Địa lý 4',
+      'Bài 23: Thành phố Hồ Chí Minh trung tâm kinh tế, văn hóa, giáo dục lớn của cả nước',
       'Bài 24: Địa đạo Củ Chi di tích lịch sử kháng chiến oanh liệt',
       'Bài 25: Biển, đảo Việt Nam (Quần đảo Hoàng Sa và Trường Sa thiêng liêng của Tổ quốc)',
       'Bài 26: Khai thác tài nguyên biển đảo và Bảo vệ chủ quyền biển đảo quê hương',
-      'Bài 27: Tìm hiểu một số nhân vật lịch sử tiêu biểu dựng nước và giữ nước',
-      'Bài 28: Trò chơi lịch sử: Theo dòng lịch sử hào hùng dân tộc',
+      'Kiểm tra, đánh giá cuối Học kỳ 2 môn Lịch sử và Địa lý 4',
+      'Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành đọc bản đồ Lớp 4',
       'Dự án STEM Lịch sử Địa lý 4: "Mô hình Sa bàn Hoàng thành Thăng Long & Bản đồ Du lịch Việt Nam"',
-      'Bài 29: Kỹ năng đọc và vẽ lược đồ địa hình các vùng miền Việt Nam',
       'Bài 30: Ôn tập toàn diện chuẩn bị kiểm tra cuối năm môn Lịch sử và Địa lý 4',
-      'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Lịch sử và Địa lý 4'
+      'Tổng kết năm học & Đánh giá xếp loại môn Lịch sử và Địa lý 4'
     ],
     5: [
       'Bài 1: Vị trí địa lí, lãnh thổ, biển đảo và vùng trời Việt Nam',
@@ -1012,26 +1013,26 @@ export function getHistoryGeoPrimaryCurriculum(grade: string): RawPrimaryLesson[
       'Bài 12: Nước ta thời Nguyễn và Cuộc kháng chiến chống thực dân Pháp',
       'Bài 13: Bác Hồ ra đi tìm đường cứu nước (1911) và Đảng Cộng sản Việt Nam ra đời (1930)',
       'Bài 14: Cách mạng Tháng Tám năm 1945 và Nước Việt Nam Dân chủ Cộng hòa ra đời',
+      'Kiểm tra, đánh giá cuối Học kỳ 1 môn Lịch sử và Địa lý 5',
+      'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức HK1 Lớp 5',
+      'Sơ kết Học kỳ 1 & Báo cáo sản phẩm học tập môn Lịch sử và Địa lý 5',
       'Bài 15: Chiến thắng Điện Biên Phủ "Lừng lẫy năm châu, chấn động địa cầu" (1954)',
-      'Bài 16: Ôn tập tổng hợp Lịch sử và Địa lý Việt Nam giai đoạn cận - hiện đại HK1',
-      'Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Lịch sử và Địa lý 5',
       'Bài 17: Cuộc kháng chiến chống Mỹ cứu nước và Chiến dịch Hồ Chí Minh lịch sử (1975)',
       'Bài 18: Đất nước trọn niềm vui thống nhất và Thời kỳ Đổi mới hội nhập quốc tế (1986 - nay)',
       'Bài 19: Các nước láng giềng của Việt Nam (Lào, Cam-pu-chia, Trung Quốc)',
       'Bài 20: Hiệp hội các quốc gia Đông Nam Á (ASEAN) và Vị thế của Việt Nam',
       'Bài 21: Châu Á (Vị trí, tự nhiên, dân cư và kinh tế các quốc gia châu Á)',
       'Bài 22: Châu Âu (Thiên nhiên tươi đẹp và các nước phát triển châu Âu)',
-      'Bài 23: Châu Phi (Lục địa nóng, hoang mạc Xa-ha-ra, kim tự tháp Ai Cập cổ đại)',
       'Kiểm tra, đánh giá giữa Học kỳ 2 môn Lịch sử và Địa lý 5',
+      'Bài 23: Châu Phi (Lục địa nóng, hoang mạc Xa-ha-ra, kim tự tháp Ai Cập cổ đại)',
       'Bài 24: Châu Mỹ (Bắc Mỹ phát triển, Rừng rậm Amazon Nam Mỹ nhiệt đới)',
       'Bài 25: Châu Đại Dương và Châu Nam Cực (Lục địa băng giá quanh năm)',
       'Bài 26: Các đại dương trên thế giới (Thái Bình Dương, Đại Tây Dương, Ấn Độ Dương, Bắc Băng Dương)',
-      'Bài 27: Liên Hợp Quốc và Nỗ lực giữ gìn hòa bình, an ninh toàn cầu',
-      'Bài 28: Trách nhiệm của học sinh với chủ quyền biên giới, biển đảo Tổ quốc',
+      'Kiểm tra, đánh giá cuối Học kỳ 2 môn Lịch sử và Địa lý 5',
+      'Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành đọc bản đồ Lớp 5',
       'Dự án STEM Lịch sử Địa lý 5: "Bản đồ 3D Quần đảo Hoàng Sa - Trường Sa & Con đường Di sản Thế giới"',
-      'Bài 29: Hệ thống hóa toàn bộ mạch kiến thức Địa lí thế giới và Lịch sử Việt Nam',
       'Bài 30: Ôn tập toàn diện chuẩn bị chuyển cấp vào lớp 6 THCS',
-      'Kiểm tra, đánh giá cuối Học kỳ 2 & Xét hoàn thành chương trình Tiểu học'
+      'Tổng kết năm học & Xét hoàn thành chương trình Lịch sử và Địa lý 5'
     ]
   };
 
@@ -1040,7 +1041,7 @@ export function getHistoryGeoPrimaryCurriculum(grade: string): RawPrimaryLesson[
     const w = idx + 1;
     if (w > 35) return;
     const isGK = w === 9 || w === 26;
-    const isCK = w === 18 || w === 35;
+    const isCK = w === 16 || w === 31;
     const isStem = w === 33 || name.includes('STEM');
 
     list.push({
@@ -1082,9 +1083,9 @@ export function getItPrimaryCurriculum(grade: string): RawPrimaryLesson[] {
       'Bài 12: Sao chép, di chuyển và tô màu bức tranh trong Paint',
       'Bài 13: Lưu tệp hình vẽ vào thư mục máy tính và mở tệp đã lưu',
       'Bài 14: Thực hành vẽ tranh đề tài "Ngôi trường thân yêu của em" trên Paint',
-      'Bài 15: Sắp xếp để tìm kiếm thông tin dễ dàng hơn (Phân loại tệp tin)',
-      'Bài 16: Ôn tập tổng hợp kiến thức Tin học Học kỳ 1 Lớp 3',
-      'Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Tin học 3',
+      'Kiểm tra, đánh giá cuối Học kỳ 1 môn Tin học Lớp 3',
+      'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức HK1 môn Tin học 3',
+      'Sơ kết Học kỳ 1 & Báo cáo sản phẩm số HK1 môn Tin học 3',
       'Bài 17: Thư mục trên máy tính (Tạo thư mục, đặt tên thư mục theo môn học)',
       'Bài 18: Lưu tệp vào thư mục, đổi tên và xóa thư mục an toàn',
       'Bài 19: Làm quen với phần mềm soạn thảo văn bản Microsoft Word',
@@ -1097,11 +1098,11 @@ export function getItPrimaryCurriculum(grade: string): RawPrimaryLesson[] {
       'Bài 25: Sắp xếp các bước tuần tự để giải quyết một bài toán học tập',
       'Bài 26: Khám phá phần mềm rèn luyện tư duy lập trình trực quan Code.org',
       'Bài 27: Điều khiển nhân vật di chuyển vượt mê cung trên Code.org',
-      'Bài 28: Tạo hiệu ứng âm thanh và sự kiện cho nhân vật trong Code.org',
+      'Kiểm tra, đánh giá cuối Học kỳ 2 môn Tin học Lớp 3',
+      'Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành bổ trợ Tin học 3',
       'Dự án STEM Tin học 3: "Thiết kế Thiệp chúc mừng sinh nhật trên Paint & Word"',
-      'Bài 29: Trình bày và chia sẻ sản phẩm số trước lớp',
       'Bài 30: Ôn tập toàn diện chuẩn bị kiểm tra cuối năm Tin học 3',
-      'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Tin học 3'
+      'Tổng kết năm học & Đánh giá xếp loại môn Tin học 3'
     ],
     4: [
       'Bài 1: Phần cứng và phần mềm máy tính (Thiết bị vào, thiết bị ra)',
@@ -1119,9 +1120,9 @@ export function getItPrimaryCurriculum(grade: string): RawPrimaryLesson[] {
       'Bài 12: Định dạng văn bản và chèn hình ảnh minh họa vào trang chiếu',
       'Bài 13: Tạo hiệu ứng chuyển động cho văn bản và hình ảnh trong PowerPoint',
       'Bài 14: Thực hành thiết kế bài thuyết trình "Giới thiệu loài động vật em yêu"',
-      'Bài 15: Trình chiếu và thuyết minh bài trình chiếu trước nhóm',
-      'Bài 16: Ôn tập tổng hợp Soạn thảo văn bản và Trình chiếu Học kỳ 1',
-      'Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Tin học 4',
+      'Kiểm tra, đánh giá cuối Học kỳ 1 môn Tin học Lớp 4',
+      'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức HK1 môn Tin học 4',
+      'Sơ kết Học kỳ 1 & Báo cáo sản phẩm số HK1 môn Tin học 4',
       'Bài 17: Làm quen với môi trường lập trình trực quan Scratch 3.0',
       'Bài 18: Khám phá sân khấu, nhân vật và khối lệnh di chuyển trong Scratch',
       'Bài 19: Lập trình nhân vật di chuyển và phát âm thanh vui nhộn',
@@ -1134,11 +1135,11 @@ export function getItPrimaryCurriculum(grade: string): RawPrimaryLesson[] {
       'Bài 25: Xây dựng trò chơi "Mèo bắt chuột" đơn giản trên Scratch',
       'Bài 26: Tạo biến số Điểm số (Score) và đếm điểm trong trò chơi',
       'Bài 27: Thêm phông nền chiến thắng và kết thúc trò chơi',
-      'Bài 28: Khám phá ứng dụng của Trí tuệ nhân tạo (AI) trong đời sống',
+      'Kiểm tra, đánh giá cuối Học kỳ 2 môn Tin học Lớp 4',
+      'Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành bổ trợ Tin học 4',
       'Dự án STEM Tin học 4: "Lập trình Game Thu gom rác thải bảo vệ đại dương"',
-      'Bài 29: Báo cáo và chạy thử nghiệm trò chơi trước hội đồng lớp',
       'Bài 30: Ôn tập toàn diện chuẩn bị kiểm tra cuối năm Tin học 4',
-      'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Tin học 4'
+      'Tổng kết năm học & Đánh giá xếp loại môn Tin học 4'
     ],
     5: [
       'Bài 1: Thu thập và xử lý thông tin trong kỷ nguyên chuyển đổi số',
@@ -1156,9 +1157,9 @@ export function getItPrimaryCurriculum(grade: string): RawPrimaryLesson[] {
       'Bài 12: Nhập dữ liệu, định dạng bảng tính và tạo biểu đồ cột đơn giản',
       'Bài 13: Sử dụng các hàm tính toán cơ bản: SUM, AVERAGE trong Excel',
       'Bài 14: Ứng dụng bảng tính quản lý điểm số và chi tiêu cá nhân',
-      'Bài 15: An toàn không gian mạng: Phòng chống lừa đảo và virus máy tính',
-      'Bài 16: Ôn tập tổng hợp kiến thức Tin học ứng dụng Học kỳ 1 Lớp 5',
-      'Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Tin học 5',
+      'Kiểm tra, đánh giá cuối Học kỳ 1 môn Tin học Lớp 5',
+      'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức HK1 môn Tin học 5',
+      'Sơ kết Học kỳ 1 & Báo cáo sản phẩm số HK1 môn Tin học 5',
       'Bài 17: Lập trình Scratch nâng cao: Sử dụng biến số và biểu thức toán học',
       'Bài 18: Lập trình câu lệnh lặp vô hạn (Forever) và lặp có điều kiện (Repeat until)',
       'Bài 19: Lập trình cảm biến (Sensing): Nhận biết va chạm cạnh sân khấu và vật cản',
@@ -1171,11 +1172,11 @@ export function getItPrimaryCurriculum(grade: string): RawPrimaryLesson[] {
       'Bài 25: Tinh chỉnh âm thanh, hiệu ứng đồ họa và độ khó của trò chơi',
       'Bài 26: Khám phá Trí tuệ nhân tạo (AI) và Học máy (Machine Learning) cơ bản',
       'Bài 27: Trải nghiệm công cụ nhận diện giọng nói và hình ảnh bằng AI',
-      'Bài 28: Hướng nghiệp: Khám phá các ngành nghề trong lĩnh vực công nghệ số',
+      'Kiểm tra, đánh giá cuối Học kỳ 2 môn Tin học Lớp 5',
+      'Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành bổ trợ Tin học 5',
       'Dự án STEM Tin học 5: "Lập trình Trợ lý ảo AI Hỗ trợ học từ vựng Tiếng Anh"',
-      'Bài 29: Triển lãm và trình diễn các sản phẩm lập trình xuất sắc Lớp 5',
       'Bài 30: Ôn tập toàn diện kiến thức Tin học chuẩn bị vào Lớp 6 THCS',
-      'Kiểm tra, đánh giá cuối Học kỳ 2 & Xét hoàn thành chương trình Tin học Tiểu học'
+      'Tổng kết năm học & Xét hoàn thành chương trình Tin học Tiểu học'
     ]
   };
 
@@ -1184,8 +1185,8 @@ export function getItPrimaryCurriculum(grade: string): RawPrimaryLesson[] {
     const w = idx + 1;
     if (w > 35) return;
     const isGK = w === 9 || w === 26;
-    const isCK = w === 18 || w === 35;
-    const isStem = w === 32 || name.includes('STEM');
+    const isCK = w === 16 || w === 31;
+    const isStem = w === 33 || name.includes('STEM');
 
     list.push({
       week: w,
@@ -1226,9 +1227,9 @@ export function getTechnologyPrimaryCurriculum(grade: string): RawPrimaryLesson[
       'Bài 7: Quy tắc sử dụng dụng cụ thủ công an toàn, cẩn thận',
       'Bài 8: Làm đồ dùng học tập: Làm thước kẻ gấp hình học bằng bìa cứng',
       'Bài 8: Làm ống đựng bút để bàn từ vật liệu tái chế (vỏ chai, lõi giấy)',
-      'Bài 9: Ôn tập công nghệ gia đình và sản phẩm thủ công Học kỳ 1',
-      'Bài 9: Trưng bày và đánh giá sản phẩm đồ dùng học tập tự làm',
-      'Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Công nghệ 3',
+      'Kiểm tra, đánh giá cuối Học kỳ 1 môn Công nghệ Lớp 3',
+      'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức HK1 môn Công nghệ 3',
+      'Sơ kết Học kỳ 1 & Báo cáo sản phẩm thủ công HK1 môn Công nghệ 3',
       'Bài 10: Đồ chơi và an toàn đồ chơi (Lựa chọn đồ chơi phù hợp lứa tuổi)',
       'Bài 10: Giữ gìn, bảo quản đồ chơi và văn hóa chia sẻ đồ chơi cùng bạn',
       'Bài 11: Làm đồ chơi dân gian: Làm chong chóng quay bằng giấy màu',
@@ -1241,11 +1242,11 @@ export function getTechnologyPrimaryCurriculum(grade: string): RawPrimaryLesson[
       'Bài 15: Trang trí và hoàn thiện mô hình ngôi nhà mơ ước',
       'Bài 16: Tìm hiểu nghề thủ công truyền thống: Nghề đan lát mây tre và gốm sứ',
       'Bài 16: Tìm hiểu nghề thợ may, thợ cơ khí và đóng góp của người lao động',
+      'Kiểm tra, đánh giá cuối Học kỳ 2 môn Công nghệ Lớp 3',
+      'Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành mô hình công nghệ 3',
       'Dự án STEM Công nghệ 3: "Chế tạo Xe ô tô đồ chơi chạy bằng bóng bay phản lực"',
-      'Dự án STEM: Thử nghiệm đua xe phản lực và tối ưu hóa thân xe',
-      'Bài 17: Hội chợ Triển lãm Sản phẩm Công nghệ & Đồ chơi sáng tạo Lớp 3',
       'Bài 18: Ôn tập toàn diện chuẩn bị kiểm tra cuối năm Công nghệ 3',
-      'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Công nghệ 3'
+      'Tổng kết năm học & Đánh giá xếp loại môn Công nghệ 3'
     ],
     4: [
       'Bài 1: Hoa và cây cảnh quanh em (Lợi ích và vẻ đẹp của hoa, cây cảnh)',
@@ -1263,9 +1264,9 @@ export function getTechnologyPrimaryCurriculum(grade: string): RawPrimaryLesson[
       'Bài 12: Kỹ thuật lắp ghép mối nối cố định và mối nối chuyển động',
       'Bài 13: Lắp ghép mô hình cái đu quay kỹ thuật',
       'Bài 14: Lắp ghép mô hình xe nôi em bé',
-      'Bài 15: Lắp ghép mô hình cầu vượt bộ hành qua đường an toàn',
-      'Bài 16: Ôn tập tổng hợp Trồng hoa cây cảnh và Lắp ghép mô hình HK1',
-      'Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Công nghệ 4',
+      'Kiểm tra, đánh giá cuối Học kỳ 1 môn Công nghệ Lớp 4',
+      'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức HK1 môn Công nghệ 4',
+      'Sơ kết Học kỳ 1 & Báo cáo sản phẩm thủ công HK1 môn Công nghệ 4',
       'Bài 17: Lắp ghép mô hình xe tải có thùng chở hàng',
       'Bài 18: Lắp ghép mô hình cần cẩu trục xoay mini',
       'Bài 19: Tự thiết kế mô hình kỹ thuật sáng tạo theo nhóm',
@@ -1278,11 +1279,11 @@ export function getTechnologyPrimaryCurriculum(grade: string): RawPrimaryLesson[
       'Bài 25: Tìm hiểu nghề xây dựng, kiến trúc sư và đóng góp xã hội',
       'Bài 26: Thực hành an toàn lao động và giữ gìn vệ sinh nơi thực hành',
       'Bài 27: Tiết kiệm tài nguyên và tái sử dụng vật liệu trong sinh hoạt',
+      'Kiểm tra, đánh giá cuối Học kỳ 2 môn Công nghệ Lớp 4',
+      'Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành mô hình công nghệ 4',
       'Dự án STEM Công nghệ 4: "Mô hình Hệ thống Tưới cây Nhỏ giọt Tự động"',
-      'Dự án STEM: Thử nghiệm hiệu quả tưới nhỏ giọt trên chậu cây thực tế',
-      'Bài 28: Triển lãm Sản phẩm Công nghệ & Mô hình Kỹ thuật Lớp 4',
       'Bài 29: Ôn tập toàn diện chuẩn bị kiểm tra cuối năm Công nghệ 4',
-      'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Công nghệ 4'
+      'Tổng kết năm học & Đánh giá xếp loại môn Công nghệ 4'
     ],
     5: [
       'Bài 1: Công nghệ trong gia đình: Khám phá vai trò của thiết bị gia dụng hiện đại',
@@ -1300,9 +1301,9 @@ export function getTechnologyPrimaryCurriculum(grade: string): RawPrimaryLesson[
       'Bài 12: Đánh giá và điều chỉnh giải pháp thiết kế sản phẩm',
       'Bài 13: Lắp ghép mô hình kỹ thuật: Lắp ghép mô hình xe ô tô chạy bằng động cơ điện pin',
       'Bài 14: Lắp ghép mô hình máy bay cánh quạt quay bằng động cơ',
-      'Bài 15: Lắp ghép mô hình cẩu tháp công trình xây dựng',
-      'Bài 16: Ôn tập tổng hợp Thiết bị gia đình và Thiết kế kỹ thuật Học kỳ 1',
-      'Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Công nghệ 5',
+      'Kiểm tra, đánh giá cuối Học kỳ 1 môn Công nghệ Lớp 5',
+      'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức HK1 môn Công nghệ 5',
+      'Sơ kết Học kỳ 1 & Báo cáo sản phẩm thủ công HK1 môn Công nghệ 5',
       'Bài 17: Nuôi cá cảnh trong bể thủy sinh: Lợi ích và các loài cá cảnh phổ biến',
       'Bài 18: Chuẩn bị bể nuôi, nguồn nước, máy sục khí oxy và hệ thống lọc nước',
       'Bài 19: Kỹ thuật thả cá, cho cá ăn đúng lượng và vệ sinh bể thủy sinh',
@@ -1315,11 +1316,11 @@ export function getTechnologyPrimaryCurriculum(grade: string): RawPrimaryLesson[
       'Bài 25: Năng lượng tái tạo trong tương lai: Điện mặt trời và điện gió',
       'Bài 26: Tìm hiểu nghề kỹ sư điện, kỹ sư nông nghiệp và chuyên gia công nghệ',
       'Bài 27: Định hướng sở thích cá nhân với các ngành nghề kỹ thuật công nghệ',
+      'Kiểm tra, đánh giá cuối Học kỳ 2 môn Công nghệ Lớp 5',
+      'Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành mô hình công nghệ 5',
       'Dự án STEM Công nghệ 5: "Chế tạo Xe Robot dò đường / Xe chạy bằng Pin Năng lượng Mặt Trời"',
-      'Dự án STEM: Thử nghiệm vận hành xe năng lượng xanh và đánh giá hiệu năng',
-      'Bài 28: Báo cáo và trưng bày sản phẩm sáng tạo công nghệ khối 5',
       'Bài 29: Ôn tập toàn diện chuẩn bị chuyển cấp vào Lớp 6 THCS',
-      'Kiểm tra, đánh giá cuối Học kỳ 2 & Xét hoàn thành chương trình Công nghệ Tiểu học'
+      'Tổng kết năm học & Xét hoàn thành chương trình Công nghệ Tiểu học'
     ]
   };
 
@@ -1328,8 +1329,8 @@ export function getTechnologyPrimaryCurriculum(grade: string): RawPrimaryLesson[
     const w = idx + 1;
     if (w > 35) return;
     const isGK = w === 9 || w === 26;
-    const isCK = w === 18 || w === 35;
-    const isStem = w === 31 || name.includes('STEM');
+    const isCK = w === 16 || w === 31;
+    const isStem = w === 33 || name.includes('STEM');
 
     list.push({
       week: w,
@@ -1369,9 +1370,9 @@ export function getEthicsPrimaryCurriculum(grade: string): RawPrimaryLesson[] {
     `Bài 12: Bảo vệ môi trường xanh - sạch - đẹp quanh em`,
     `Bài 13: Tiết kiệm điện, nước và bảo vệ tài nguyên`,
     `Bài 14: Phòng tránh tai nạn thương tích và xâm hại trẻ em`,
-    `Bài 15: Yêu quý động vật và chăm sóc bảo vệ cây xanh`,
-    `Bài 16: Ôn tập và thực hành các chuẩn mực đạo đức Học kỳ 1`,
-    `Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Đạo đức ${g}`,
+    `Kiểm tra, đánh giá cuối Học kỳ 1 môn Đạo đức ${g}`,
+    `Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố chuẩn mực đạo đức HK1`,
+    `Sơ kết Học kỳ 1 & Báo cáo việc tốt / Nhật ký rèn luyện HK1`,
     `Bài 17: Tự hào về quê hương đất nước Việt Nam tươi đẹp`,
     `Bài 18: Tôn trọng bản sắc văn hóa các dân tộc anh em`,
     `Bài 19: Đoàn kết, thân ái với bạn bè quốc tế`,
@@ -1384,11 +1385,11 @@ export function getEthicsPrimaryCurriculum(grade: string): RawPrimaryLesson[] {
     `Bài 25: Tự hào về truyền thống hiếu học của dân tộc`,
     `Bài 26: Phòng chống bạo lực học đường và xây dựng tình bạn đẹp`,
     `Bài 27: Bảo vệ di sản văn hóa và danh lam thắng cảnh quê hương`,
-    `Bài 28: Tự tin thể hiện bản thân và ước mơ tương lai`,
+    `Kiểm tra, đánh giá cuối Học kỳ 2 môn Đạo đức ${g}`,
+    `Chữa bài kiểm tra cuối HK2 & Thực hành kỹ năng sống`,
     `Dự án Đạo đức & Kỹ năng sống: "Vườn hoa Việc tốt & Cây điều ước Hạnh phúc"`,
-    `Bài 29: Ôn tập tổng hợp kiến thức Đạo đức lớp ${g}`,
-    `Bài 30: Thực hành tuyên truyền nếp sống văn minh học đường`,
-    `Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Đạo đức ${g}`
+    `Bài 29: Ôn tập toàn diện chuẩn bị tổng kết năm học môn Đạo đức ${g}`,
+    `Tổng kết năm học & Đánh giá xếp loại môn Đạo đức ${g}`
   ];
 
   daoDucNames.forEach((name, idx) => {
@@ -1402,7 +1403,7 @@ export function getEthicsPrimaryCurriculum(grade: string): RawPrimaryLesson[] {
       yccd: getPrimaryLessonYccd('Đạo đức', String(g), name, w),
       equipment: 'Tranh ảnh tình huống đạo đức, video câu chuyện gương người tốt việc tốt, phiếu thảo luận',
       location: 'Lớp học',
-      notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 18 || w === 35 ? 'Kiểm tra cuối kỳ' : ''
+      notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 16 || w === 31 ? 'Kiểm tra cuối kỳ' : ''
     });
   });
 
@@ -1435,9 +1436,9 @@ export function getMusicArtPrimaryCurriculum(grade: string, subject: string): Ra
         `Chủ đề 4: Giai điệu quê hương - Học hát làn điệu Dân ca Việt Nam`,
         `Chủ đề 4: Giai điệu quê hương - Tìm hiểu Đàn Bầu, Đàn Nhị Việt Nam`,
         `Chủ đề 4: Giai điệu quê hương - Luyện tập biểu diễn tốp ca, đơn ca`,
-        `Chủ đề 4: Giai điệu quê hương - Góc âm nhạc sáng tạo học sinh`,
-        `Ôn tập và biểu diễn báo cáo âm nhạc Học kỳ 1 Lớp ${g}`,
-        `Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Âm nhạc ${g}`,
+        `Kiểm tra, đánh giá cuối Học kỳ 1 môn Âm nhạc Lớp ${g}`,
+        `Chữa bài kiểm tra cuối HK1 & Biểu diễn báo cáo âm nhạc HK1 Lớp ${g}`,
+        `Sơ kết Học kỳ 1 & Giao lưu âm nhạc học đường Lớp ${g}`,
         `Chủ đề 5: Mùa xuân tươi đẹp - Học hát: Mùa xuân ơi / Nắng sớm`,
         `Chủ đề 5: Mùa xuân tươi đẹp - Đọc nhạc và gõ đệm tiết tấu vui tươi`,
         `Chủ đề 5: Mùa xuân tươi đẹp - Thường thức âm nhạc: Nhạc sĩ Văn Cao`,
@@ -1450,11 +1451,11 @@ export function getMusicArtPrimaryCurriculum(grade: string, subject: string): Ra
         `Chủ đề 7: Gia đình yêu thương - Đọc nhạc theo thang âm chuẩn`,
         `Chủ đề 7: Gia đình yêu thương - Nghe nhạc cổ điển Mozart / Beethoven`,
         `Chủ đề 8: Chào mùa hè - Học hát: Dàn đồng ca mùa hạ`,
-        `Chủ đề 8: Chào mùa hè - Hòa tấu nhạc cụ gõ và bộ gõ cơ thể`,
+        `Kiểm tra, đánh giá cuối Học kỳ 2 môn Âm nhạc Lớp ${g}`,
+        `Chữa bài kiểm tra cuối HK2 & Hòa tấu nhạc cụ gõ Lớp ${g}`,
         `Dự án Âm nhạc: "Ngày hội Âm vang Tiếng hát Măng non & Biểu diễn nhạc cụ"`,
-        `Ôn tập tổng hợp các bài hát và bài đọc nhạc cả năm Lớp ${g}`,
-        `Báo cáo sản phẩm âm nhạc sáng tạo của các nhóm học sinh`,
-        `Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Âm nhạc ${g}`
+        `Ôn tập toàn diện các bài hát và bài đọc nhạc cả năm Lớp ${g}`,
+        `Tổng kết năm học & Gala Âm nhạc Thiếu nhi Lớp ${g}`
       ]
     : [
         `Chủ đề 1: Sắc màu em yêu - Khám phá màu cơ bản và pha màu (Lớp ${g})`,
@@ -1472,9 +1473,9 @@ export function getMusicArtPrimaryCurriculum(grade: string, subject: string): Ra
         `Chủ đề 4: Thế giới động vật - Vẽ và in tranh con vật từ lá cây`,
         `Chủ đề 4: Thế giới động vật - Tạo hình các loài cá đại dương 3D`,
         `Chủ đề 4: Thế giới động vật - Làm con rối ngón tay diễn kịch`,
-        `Chủ đề 4: Thế giới động vật - Triển lãm khu rừng bí mật`,
-        `Ôn tập và hoàn thiện hồ sơ sản phẩm Mĩ thuật Học kỳ 1 Lớp ${g}`,
-        `Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Mĩ thuật ${g}`,
+        `Kiểm tra, đánh giá cuối Học kỳ 1 môn Mĩ thuật Lớp ${g}`,
+        `Chữa bài kiểm tra cuối HK1 & Hoàn thiện hồ sơ sản phẩm Mĩ thuật HK1 Lớp ${g}`,
+        `Sơ kết Học kỳ 1 & Triển lãm Mĩ thuật HK1 Lớp ${g}`,
         `Chủ đề 5: Lễ hội và Văn hóa - Vẽ tranh ngày Tết và lễ hội quê em`,
         `Chủ đề 5: Lễ hội và Văn hóa - Làm thiệp chúc Tết và bao lì xì sáng tạo`,
         `Chủ đề 5: Lễ hội và Văn hóa - Tạo hình trang phục truyền thống các dân tộc`,
@@ -1487,11 +1488,11 @@ export function getMusicArtPrimaryCurriculum(grade: string, subject: string): Ra
         `Chủ đề 7: Phương tiện giao thông - Lắp ghép mô hình máy bay và khinh khí cầu`,
         `Chủ đề 7: Phương tiện giao thông - Vẽ tranh chấp hành an toàn giao thông`,
         `Chủ đề 8: Em là nhà thiết kế nhí - Thiết kế thời trang từ túi giấy`,
-        `Chủ đề 8: Em là nhà thiết kế nhí - Làm đồ lưu niệm tặng người thân`,
+        `Kiểm tra, đánh giá cuối Học kỳ 2 môn Mĩ thuật Lớp ${g}`,
+        `Chữa bài kiểm tra cuối HK2 & Thực hành sáng tạo nghệ thuật Lớp ${g}`,
         `Dự án Mĩ thuật: "Triển lãm Tranh Thiếu nhi Sáng tạo & Hội chợ Thủ công STEM"`,
         `Trưng bày toàn diện bộ sưu tập tác phẩm Mĩ thuật cả năm Lớp ${g}`,
-        `Đánh giá quá trình rèn luyện cảm xúc thẩm mỹ và tư duy tạo hình`,
-        `Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Mĩ thuật ${g}`
+        `Tổng kết năm học & Đánh giá quá trình rèn luyện cảm xúc thẩm mỹ`
       ];
 
   names.forEach((name, idx) => {
@@ -1505,7 +1506,7 @@ export function getMusicArtPrimaryCurriculum(grade: string, subject: string): Ra
       yccd: getPrimaryLessonYccd(isMusic ? 'Âm nhạc' : 'Mĩ thuật', String(g), name, w),
       equipment: isMusic ? 'Đàn Organ, bộ gõ thanh phách, trống Tambourine, loa phát nhạc' : 'Giấy vẽ A4/A3, màu sáp, màu nước, đất nặn, kéo thủ công, bìa tái chế',
       location: isMusic ? 'Phòng học Âm nhạc' : 'Phòng học Mĩ thuật / Lớp học',
-      notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 18 || w === 35 ? 'Kiểm tra cuối kỳ' : w === 33 ? 'Dự án Nghệ thuật sáng tạo' : ''
+      notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 16 || w === 31 ? 'Kiểm tra cuối kỳ' : w === 33 ? 'Dự án Nghệ thuật sáng tạo' : ''
     });
   });
 
@@ -1535,9 +1536,9 @@ export function getGdtcPrimaryCurriculum(grade: string): RawPrimaryLesson[] {
     `Trò chơi vận động rèn luyện độ nhanh nhẹn và khéo léo (2 tiết)`,
     `Môn Thể thao tự chọn (Bóng đá mini / Cầu lông): Làm quen với bóng và chuyền bóng (2 tiết)`,
     `Thể thao tự chọn: Thực hành dẫn bóng và sút bóng vào cầu môn mini (2 tiết)`,
-    `Thể thao tự chọn: Đấu tập mini có trọng tài và phối hợp đồng đội (2 tiết)`,
-    `Ôn tập tổng hợp Đội hình đội ngũ, Bài thể dục và Kỹ năng vận động HK1 (2 tiết)`,
-    `Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Giáo dục thể chất ${g} (2 tiết)`,
+    `Kiểm tra, đánh giá cuối Học kỳ 1 môn Giáo dục thể chất Lớp ${g} (2 tiết)`,
+    `Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kỹ năng vận động HK1 (2 tiết)`,
+    `Sơ kết Học kỳ 1 & Giao lưu trò chơi vận động thể thao (2 tiết)`,
     `Bài tập rèn luyện thể lực: Bật xa tại chỗ bằng hai chân (2 tiết)`,
     `Bài tập rèn luyện thể lực: Nhảy dây kiểu chụm hai chân / Chân trước chân sau (2 tiết)`,
     `Vận động cơ bản: Ném bóng trúng đích nằm ngang / Đích thẳng đứng (2 tiết)`,
@@ -1547,14 +1548,14 @@ export function getGdtcPrimaryCurriculum(grade: string): RawPrimaryLesson[] {
     `Thể thao tự chọn: Kỹ thuật di chuyển đón bóng và tâng bóng (2 tiết)`,
     `Kiểm tra, đánh giá giữa Học kỳ 2 môn Giáo dục thể chất Lớp ${g} (2 tiết)`,
     `Thể thao tự chọn: Chiến thuật tấn công, phòng thủ cơ bản trong thi đấu (2 tiết)`,
-    `Kiểm tra, đánh giá thể lực học sinh theo Quyết định số 53/2008/QĐ-BGDĐT: Chạy 30m xuất phát cao (2 tiết)`,
-    `Kiểm tra thể lực: Bật xa tại chỗ và Nằm ngửa gập bụng theo chuẩn Bộ GD&ĐT (2 tiết)`,
-    `Kiểm tra thể lực: Chạy con thoi 4 x 10m và Chạy bền 300m / 500m (2 tiết)`,
+    `Thể thao tự chọn: Đấu tập mini có trọng tài và phối hợp đồng đội (2 tiết)`,
+    `Bài tập bổ trợ phát triển thể lực và khả năng phối hợp vận động (2 tiết)`,
+    `Rèn luyện kỹ năng chạy biến tốc và bật nhảy vượt chướng ngại vật (2 tiết)`,
+    `Kiểm tra, đánh giá cuối Học kỳ 2 môn Giáo dục thể chất Lớp ${g} (2 tiết)`,
+    `Chữa bài kiểm tra cuối HK2 & Kiểm tra đánh giá thể lực học sinh theo QĐ 53/2008/QĐ-BGDĐT: Chạy 30m, Bật xa, Gập bụng (2 tiết)`,
     `Ngày hội Thể thao Phù Đổng cấp trường: Giao lưu thi đấu kéo co và điền kinh (2 tiết)`,
-    `Kỹ năng phòng chống đuối nước và an toàn trong môi trường nước (2 tiết)`,
-    `Kỹ năng xử lý chấn thương thể thao nhẹ (Bong gân, chuột rút) và hồi phục thể lực (2 tiết)`,
-    `Ôn tập toàn diện chuẩn bị kiểm tra đánh giá cuối năm môn Thể chất ${g} (2 tiết)`,
-    `Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết đánh giá thể lực cả năm môn GDTC ${g} (2 tiết)`
+    `Kỹ năng phòng chống đuối nước và Hướng dẫn tự rèn luyện thể thao hè (2 tiết)`,
+    `Tổng kết năm học & Đánh giá xếp loại thể lực học sinh cả năm môn GDTC Lớp ${g} (2 tiết)`
   ];
 
   gdtcTopics.forEach((name, idx) => {
@@ -1568,7 +1569,7 @@ export function getGdtcPrimaryCurriculum(grade: string): RawPrimaryLesson[] {
       yccd: getPrimaryLessonYccd('Giáo dục thể chất', String(g), name, w),
       equipment: 'Sân tập sạch sẽ, còi, đồng hồ bấm giây, bóng, dây nhảy, nệm nhảy, vạch kẻ đường chạy',
       location: 'Sân trường / Nhà đa năng',
-      notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 18 || w === 35 ? 'Kiểm tra cuối kỳ' : w >= 28 && w <= 30 ? 'Đánh giá thể lực QĐ 53' : ''
+      notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 16 || w === 31 ? 'Kiểm tra cuối kỳ' : w === 32 ? 'Đánh giá thể lực QĐ 53' : ''
     });
   });
 
@@ -1598,26 +1599,26 @@ export function getHdtnPrimaryCurriculum(grade: string): RawPrimaryLesson[] {
     `Chủ đề 6: Em với cộng đồng - Bài 2: Tham gia quyên góp giúp đỡ bạn nghèo vượt khó (3 tiết)`,
     `Chủ đề 7: Em với thiên nhiên - Bài 1: Chăm sóc và bảo vệ cây xanh vườn trường (3 tiết)`,
     `Chủ đề 7: Em với thiên nhiên - Bài 2: Giảm thiểu rác thải nhựa và tiết kiệm điện nước (3 tiết)`,
+    `Kiểm tra, đánh giá cuối Học kỳ 1 môn Hoạt động trải nghiệm Lớp ${g} (3 tiết)`,
+    `Chữa bài kiểm tra cuối HK1 & Báo cáo sản phẩm trải nghiệm sáng tạo HK1 (3 tiết)`,
+    `Sơ kết Học kỳ 1 & Ngày hội Việc tốt lan tỏa yêu thương (3 tiết)`,
     `Chủ đề 8: Khám phá nghề nghiệp - Bài 1: Tìm hiểu các nghề nghiệp quen thuộc quanh em (3 tiết)`,
-    `Ôn tập và báo cáo sản phẩm trải nghiệm sáng tạo Học kỳ 1 Lớp ${g} (3 tiết)`,
-    `Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Hoạt động trải nghiệm ${g} (3 tiết)`,
     `Chủ đề 9: Tết yêu thương - Bài 1: Tìm hiểu phong tục Tết cổ truyền dân tộc (3 tiết)`,
     `Chủ đề 9: Tết yêu thương - Bài 2: Làm thiệp chúc Tết và trang trí cành đào, cành mai (3 tiết)`,
     `Chủ đề 10: An toàn giao thông - Bài 1: Chấp hành luật an toàn giao thông đường bộ (3 tiết)`,
     `Chủ đề 10: An toàn giao thông - Bài 2: Đội mũ bảo hiểm đúng cách khi đi xe máy, xe đạp điện (3 tiết)`,
     `Chủ đề 11: Em yêu quê hương - Bài 1: Tìm hiểu danh lam thắng cảnh và di tích quê em (3 tiết)`,
     `Chủ đề 11: Em yêu quê hương - Bài 2: Giữ gìn nét đẹp văn hóa và lễ hội truyền thống (3 tiết)`,
-    `Chủ đề 12: Khám phá nghề truyền thống - Bài 1: Tìm hiểu làng nghề thủ công tại địa phương (3 tiết)`,
     `Kiểm tra, đánh giá giữa Học kỳ 2 môn Hoạt động trải nghiệm Lớp ${g} (3 tiết)`,
+    `Chủ đề 12: Khám phá nghề truyền thống - Bài 1: Tìm hiểu làng nghề thủ công tại địa phương (3 tiết)`,
     `Chủ đề 12: Khám phá nghề truyền thống - Bài 2: Trải nghiệm làm sản phẩm thủ công đơn giản (3 tiết)`,
     `Chủ đề 13: Bảo vệ môi trường - Bài 1: Phân loại rác thải tái chế tại nguồn (3 tiết)`,
-    `Dự án Trải nghiệm: "Hội chợ Kế hoạch nhỏ & Gian hàng Trao đổi Sách cũ" (Tiết 1 - 3 tiết)`,
-    `Dự án Trải nghiệm: Ngày hội việc tốt và lan tỏa tình yêu thương (Tiết 2 - 3 tiết)`,
     `Chủ đề 14: Ước mơ của em - Bài 1: Nuôi dưỡng ước mơ tương lai và rèn luyện chăm chỉ (3 tiết)`,
-    `Chủ đề 14: Ước mơ của em - Bài 2: Xây dựng kế hoạch rèn luyện trong kỳ nghỉ hè (3 tiết)`,
-    `Báo cáo và trưng bày Portfolio hồ sơ trải nghiệm học sinh cả năm (3 tiết)`,
-    `Ôn tập toàn diện chuẩn bị tổng kết năm học Hoạt động trải nghiệm ${g} (3 tiết)`,
-    `Kiểm tra, đánh giá cuối Học kỳ 2 & Ngày hội Tổng kết Hoạt động trải nghiệm cả năm (3 tiết)`
+    `Kiểm tra, đánh giá cuối Học kỳ 2 môn Hoạt động trải nghiệm Lớp ${g} (3 tiết)`,
+    `Chữa bài kiểm tra cuối HK2 & Hoàn thiện Portfolio hồ sơ trải nghiệm (3 tiết)`,
+    `Dự án Trải nghiệm: "Hội chợ Kế hoạch nhỏ & Gian hàng Trao đổi Sách cũ" (3 tiết)`,
+    `Chủ đề 14: Ước mơ của em - Xây dựng kế hoạch rèn luyện trong kỳ nghỉ hè (3 tiết)`,
+    `Tổng kết năm học & Ngày hội Tổng kết Hoạt động trải nghiệm cả năm (3 tiết)`
   ];
 
   hdtnTopics.forEach((name, idx) => {
@@ -1631,7 +1632,7 @@ export function getHdtnPrimaryCurriculum(grade: string): RawPrimaryLesson[] {
       yccd: getPrimaryLessonYccd('Hoạt động trải nghiệm', String(g), name, w),
       equipment: 'Máy chiếu, video tình huống, phiếu học tập, đạo cụ trò chơi trải nghiệm',
       location: 'Lớp học / Sân trường / Hội trường',
-      notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 18 || w === 35 ? 'Kiểm tra cuối kỳ' : w === 29 ? 'Hội chợ Kế hoạch nhỏ' : ''
+      notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 16 || w === 31 ? 'Kiểm tra cuối kỳ' : w === 33 ? 'Hội chợ Kế hoạch nhỏ' : ''
     });
   });
 

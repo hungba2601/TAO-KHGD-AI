@@ -17,11 +17,12 @@ export interface LsdlSecondaryGradeConfig {
 /**
  * Phân phối chương trình chi tiết môn Lịch sử và Địa lí Lớp 6, 7, 8, 9 (105 tiết/năm = 3 tiết/tuần x 35 tuần)
  * 100% chuẩn SGK Kết nối tri thức với cuộc sống & file tổng hợp tong-hop-chuong-trinh-lop-6-7-8-9.md
- * Giữ nguyên các tiết kiểm tra định kỳ:
+ * Các tuần kiểm tra định kỳ chuẩn hóa:
  * - Tuần 9: Kiểm tra, đánh giá giữa Học kỳ 1 (3 tiết)
- * - Tuần 18: Kiểm tra, đánh giá cuối Học kỳ 1 (3 tiết)
+ * - Tuần 16: Kiểm tra, đánh giá cuối Học kỳ 1 (3 tiết)
  * - Tuần 26: Kiểm tra, đánh giá giữa Học kỳ 2 (3 tiết)
- * - Tuần 35: Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học (3 tiết)
+ * - Tuần 31: Kiểm tra, đánh giá cuối Học kỳ 2 (3 tiết)
+ * - Tuần 35: Tổng kết năm học & Đánh giá xếp loại cả năm (3 tiết)
  */
 export function getLsdlSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
   const g = parseInt(grade, 10) || 6;
@@ -59,87 +60,87 @@ export function getLsdlSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
       },
       {
         w: 5,
-        t: 'Lịch sử: Xã hội nguyên thủy & Địa lí: Kí hiệu bản đồ',
-        n: 'Lịch sử - Bài 5: Xã hội nguyên thủy & Địa lí - Bài 4: Kí hiệu và bảng chú giải bản đồ. Tìm đường đi trên bản đồ (3 tiết)',
-        y: '- Mô tả được đời sống vật chất, tinh thần và tổ chức xã hội thời nguyên thủy (thị tộc, bộ lạc).\n- Đọc được bảng chú giải bản đồ và biết tìm đường đi trên bản đồ địa hình/bản đồ giao thông số.'
+        t: 'Lịch sử: Xã hội nguyên thuỷ & Địa lí: Kí hiệu bản đồ',
+        n: 'Lịch sử - Bài 5: Xã hội nguyên thuỷ & Địa lí - Bài 4: Kí hiệu và bảng chú giải bản đồ. Tìm đường đi trên bản đồ (3 tiết)',
+        y: '- Nêu được các giai đoạn phát triển của xã hội nguyên thủy: bầy người nguyên thủy, công xã thị tộc và bộ lạc.\n- Đọc và phân biệt các loại kí hiệu bản đồ (điểm, đường, diện tích); tìm đường đi trên bản đồ.'
       },
       {
         w: 6,
-        t: 'Lịch sử: Chuyển biến xã hội & Địa lí: Lược đồ trí nhớ',
-        n: 'Lịch sử - Bài 6: Sự chuyển biến và phân hoá của xã hội nguyên thủy & Địa lí - Bài 5: Lược đồ trí nhớ (3 tiết)',
-        y: '- Giải thích được sự xuất hiện của công cụ kim khí dẫn đến sự tan rã của xã hội nguyên thủy và hình thành giai cấp.\n- Vẽ và sử dụng được lược đồ trí nhớ để mô tả không gian xung quanh.'
+        t: 'Lịch sử: Kim loại & Địa lí: Lược đồ trí nhớ',
+        n: 'Lịch sử - Bài 6: Sự chuyển biến và phân hoá của xã hội nguyên thuỷ & Địa lí - Bài 5: Lược đồ trí nhớ (3 tiết)',
+        y: '- Giải thích sự xuất hiện của công cụ kim loại dẫn đến của cải dư thừa, gia đình phụ hệ và phân hóa giàu nghèo.\n- Vẽ và sử dụng lược đồ trí nhớ định hướng không gian xung quanh trường học/nơi ở.'
       },
       {
         w: 7,
-        t: 'Lịch sử: Ai Cập, Lưỡng Hà & Địa lí: Trái Đất trong hệ Mặt Trời',
+        t: 'Lịch sử: Ai Cập và Lưỡng Hà & Địa lí: Trái Đất trong hệ Mặt Trời',
         n: 'Lịch sử - Bài 7: Ai Cập và Lưỡng Hà cổ đại & Địa lí - Bài 6: Trái Đất trong hệ Mặt Trời (3 tiết)',
-        y: '- Nêu được điều kiện tự nhiên và thành tựu văn hóa tiêu biểu của nền văn minh Ai Cập và Lưỡng Hà cổ đại.\n- Xác định vị trí Trái Đất trong hệ Mặt Trời, hình dạng và kích thước của Trái Đất.'
+        y: '- Trình bày điều kiện tự nhiên, quá trình thành lập nhà nước và thành tựu văn hóa Ai Cập, Lưỡng Hà (Kim tự tháp, chữ tượng hình, số học).\n- Nêu vị trí Trái Đất trong hệ Mặt Trời, hình dạng và kích thước của Trái Đất.'
       },
       {
         w: 8,
-        t: 'Lịch sử: Ấn Độ cổ đại & Địa lí: Chuyển động tự quay quanh trục',
+        t: 'Lịch sử: Ấn Độ cổ đại & Địa lí: Chuyển động tự quay của Trái Đất',
         n: 'Lịch sử - Bài 8: Ấn Độ cổ đại & Địa lí - Bài 7: Chuyển động tự quay quanh trục của Trái Đất và hệ quả (3 tiết)',
-        y: '- Trình bày được sơ lược điều kiện tự nhiên, chế độ đẳng cấp Varna và thành tựu văn hóa Ấn Độ cổ đại.\n- Giải thích được hiện tượng ngày đêm luân phiên và giờ trên Trái Đất do chuyển động tự quay.'
+        y: '- Nêu điều kiện tự nhiên sông Ấn, sông Hằng, chế độ đẳng cấp Vác-na và tôn giáo (Bà La Môn, Phật giáo).\n- Giải thích hiện tượng ngày đêm luân phiên, giờ trên Trái Đất và sự lệch hướng chuyển động của các vật thể.'
       },
       {
         w: 9,
         t: 'Đánh giá định kỳ',
         n: 'Kiểm tra, đánh giá giữa Học kỳ 1 môn Lịch sử và Địa lí Lớp 6 (3 tiết)',
-        y: '- Đánh giá chuẩn kiến thức và kỹ năng Lịch sử & Địa lí lớp 6 từ Tuần 1 đến Tuần 8.\n- Rèn luyện tính trung thực, cẩn thận và tư duy độc lập khi làm bài kiểm tra.'
+        y: '- Đánh giá mức độ đạt chuẩn kiến thức kỹ năng Lịch sử nguyên thủy, Lịch sử cổ đại phương Đông và Địa lí bản đồ, Trái Đất.\n- Rèn luyện kỹ năng phân tích lược đồ và trả lời câu hỏi trắc nghiệm/tự luận.'
       },
       {
         w: 10,
-        t: 'Lịch sử: Trung Quốc cổ đại & Địa lí: Chuyển động quanh Mặt Trời',
-        n: 'Lịch sử - Bài 9: Trung Quốc cổ đại & Địa lí - Bài 8: Chuyển động của Trái Đất quanh Mặt Trời và hệ quả (3 tiết)',
-        y: '- Trình bày được quá trình thống nhất đất nước của Tần Thủy Hoàng và các thành tựu văn hóa rực rỡ của Trung Quốc cổ đại.\n- Giải thích được hiện tượng các mùa trong năm và ngày đêm dài ngắn theo mùa.'
+        t: 'Lịch sử: Trung Quốc cổ đại & Địa lí: Trái Đất quay quanh Mặt Trời',
+        n: 'Lịch sử - Bài 9: Trung Quốc từ thời cổ đại đến thế kỉ VII & Địa lí - Bài 8: Chuyển động của Trái Đất quanh Mặt Trời và hệ quả (3 tiết)',
+        y: '- Trình bày quá trình Tần Thủy Hoàng thống nhất Trung Quốc, con đường tơ lụa và các thành tựu văn hóa Nho giáo, chữ viết, Vạn Lý Trường Thành.\n- Giải thích hiện tượng mùa và hiện tượng ngày đêm dài ngắn theo mùa trên Trái Đất.'
       },
       {
         w: 11,
-        t: 'Lịch sử: Hy Lạp và La Mã & Địa lí: Xác định phương hướng',
-        n: 'Lịch sử - Bài 10: Hy Lạp và La Mã cổ đại & Địa lí - Bài 9: Xác định phương hướng ngoài thực tế (3 tiết)',
-        y: '- Nêu được tác động của điều kiện tự nhiên đến sự hình thành nền dân chủ Aten và đế chế La Mã cùng các di sản văn hóa.\n- Biết cách sử dụng la bàn hoặc quan sát thiên nhiên (Mặt Trời, sao Bắc Đẩu) để xác định phương hướng ngoài thực tế.'
+        t: 'Lịch sử: Hy Lạp và La Mã cổ đại & Địa lí: Cấu tạo Trái Đất',
+        n: 'Lịch sử - Bài 10: Hy Lạp và La Mã cổ đại & Địa lí - Bài 9: Cấu tạo của Trái Đất. Động đất và núi lửa (3 tiết)',
+        y: '- Nêu tổ chức nhà nước thành bang dân chủ Hy Lạp, đế chế La Mã và thành tựu văn hóa (Đấu trường La Mã, Thế vận hội Ô-lim-pích, luật La Mã).\n- Mô tả cấu tạo 3 lớp của Trái Đất, nguyên nhân và tác hại của động đất, núi lửa.'
       },
       {
         w: 12,
-        t: 'Lịch sử: Đông Nam Á sơ kì & Địa lí: Cấu tạo Trái Đất',
-        n: 'Lịch sử - Bài 11: Các quốc gia sơ kì ở Đông Nam Á & Địa lí - Bài 10: Cấu tạo của Trái Đất. Các mảng kiến tạo (3 tiết)',
-        y: '- Mô tả được sự xuất hiện của các quốc gia sơ kì ở khu vực Đông Nam Á.\n- Trình bày được cấu tạo 3 lớp của Trái Đất và sự chuyển dịch của các mảng kiến tạo vỏ Trái Đất.'
+        t: 'Lịch sử: Đông Nam Á cổ đại & Địa lí: Ngoại lực và nội lực',
+        n: 'Lịch sử - Bài 11: Các quốc gia sơ kì ở Đông Nam Á & Địa lí - Bài 10: Quá trình nội lực và ngoại lực. Hiện tượng tạo núi (3 tiết)',
+        y: '- Nêu sự xuất hiện của các quốc gia sơ kì ở ĐNA từ thế kỉ VII TCN đến thế kỉ VII; phân biệt tác động của nội lực (nâng cao, hạ thấp) và ngoại lực (bào mòn, bồi tụ).'
       },
       {
         w: 13,
-        t: 'Lịch sử: Vương quốc phong kiến ĐNA & Địa lí: Nội sinh và ngoại sinh',
-        n: 'Lịch sử - Bài 12: Sự hình thành và bước đầu phát triển của các vương quốc phong kiến ở Đông Nam Á (từ thế kỉ VII đến thế kỉ X) & Địa lí - Bài 11: Quá trình nội sinh và quá trình ngoại sinh. Hiện tượng tạo núi (3 tiết)',
-        y: '- Trình bày được sự hình thành và phát triển của các vương quốc phong kiến Đông Nam Á.\n- Phân biệt tác động của quá trình nội sinh và ngoại sinh trong việc hình thành địa hình bề mặt Trái Đất.'
+        t: 'Lịch sử: ĐNA từ thế kỉ VII - X & Địa lí: Địa hình Trái Đất',
+        n: 'Lịch sử - Bài 12: Sự hình thành và phát triển của các vương quốc phong kiến Đông Nam Á & Địa lí - Bài 11: Các dạng địa hình chính trên Trái Đất. Khoáng sản (3 tiết)',
+        y: '- Trình bày sự phát triển hưng thịnh của các vương quốc ĐNA (Phù Nam, Chân Lạp, Sri Vi-giay-a); phân biệt núi, đồi, cao nguyên, đồng bằng và khoáng sản.'
       },
       {
         w: 14,
-        t: 'Lịch sử: Giao lưu văn hoá ĐNA & Địa lí: Núi lửa và động đất',
-        n: 'Lịch sử - Bài 13: Giao lưu văn hoá ở Đông Nam Á từ đầu Công nguyên đến thế kỉ X & Địa lí - Bài 12: Núi lửa và động đất (3 tiết)',
-        y: '- Phân tích được ảnh hưởng của văn hóa Ấn Độ, Trung Quốc đến văn hóa các quốc gia Đông Nam Á.\n- Giải thích được nguyên nhân sinh ra núi lửa, động đất và các biện pháp ứng phó an toàn.'
+        t: 'Lịch sử: Nhà nước Văn Lang, Âu Lạc & Địa lí: Núi lửa, động đất',
+        n: 'Lịch sử - Bài 13: Giao lưu thương mại và văn hoá ở Đông Nam Á từ đầu Công nguyên đến thế kỉ X & Bài 14: Nhà nước Văn Lang, Âu Lạc (Tiết 1) & Địa lí - Bài 12: Thực hành: Đọc lược đồ địa hình tỉ lệ lớn và lát cắt địa hình đơn giản (3 tiết)',
+        y: '- Nêu tác động của giao lưu thương mại Ấn Độ, Trung Quốc đến ĐNA; phân tích sự ra đời của nhà nước Văn Lang thời Hùng Vương; đọc lược đồ địa hình lát cắt.'
       },
       {
         w: 15,
-        t: 'Lịch sử: Nhà nước Văn Lang, Âu Lạc & Địa lí: Địa hình và khoáng sản',
-        n: 'Lịch sử - Bài 14: Nhà nước Văn Lang, Âu Lạc & Địa lí - Bài 13: Các dạng địa hình chính trên Trái Đất. Khoáng sản (3 tiết)',
-        y: '- Trình bày được sự ra đời, tổ chức nhà nước và đời sống vật chất, tinh thần của cư dân Văn Lang, Âu Lạc.\n- Phân biệt được các dạng địa hình: núi, đồi, cao nguyên, đồng bằng và phân loại khoáng sản.'
+        t: 'Lịch sử: Nước Âu Lạc & Địa lí: Khí quyển và nhiệt độ',
+        n: 'Lịch sử - Bài 14: Nhà nước Văn Lang, Âu Lạc (Tiết 2) & Địa lí - Bài 13: Các dạng địa hình chính (tiếp) & Bài 14: Lớp vỏ khí. Khối khí. Khí áp và gió trên Trái Đất (3 tiết)',
+        y: '- Trình bày sự thành lập nước Âu Lạc thời Thục Phán An Dương Vương, thành Cổ Loa, truyền thuyết nỏ thần; mô tả các tầng của lớp vỏ khí và các đai khí áp, gió chính.'
       },
       {
         w: 16,
-        t: 'Địa lí: Đọc lát cắt địa hình & Khí áp, gió',
-        n: 'Địa lí - Bài 14: Thực hành: Đọc lược đồ địa hình tỉ lệ lớn và lát cắt địa hình đơn giản & Bài 15: Lớp vỏ khí của Trái Đất. Khí áp và gió (3 tiết)',
-        y: '- Đọc được đường đồng mức, nhận biết độ dốc địa hình trên lược đồ; mô tả các tầng của lớp vỏ khí và các đai khí áp, gió chính.'
-      },
-      {
-        w: 17,
-        t: 'Chủ đề: Ôn tập Học kỳ 1',
-        n: 'Ôn tập tổng hợp kiến thức Lịch sử và Địa lí Học kỳ 1 Lớp 6 (3 tiết)',
-        y: '- Hệ thống hóa các kiến thức Lịch sử thế giới cổ đại, Lịch sử Việt Nam thời dựng nước và Địa lí tự nhiên đại cương HK1.\n- Rèn luyện kỹ năng phân tích lược đồ, vẽ sơ đồ tư duy và giải bài tập địa lí.'
-      },
-      {
-        w: 18,
         t: 'Đánh giá định kỳ',
         n: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Lịch sử và Địa lí Lớp 6 (3 tiết)',
         y: '- Đánh giá tổng hợp toàn diện kết quả học tập phân môn Lịch sử và Địa lí trong Học kỳ 1.\n- Phân loại học lực học sinh làm căn cứ triển khai kế hoạch giáo dục Học kỳ 2.'
+      },
+      {
+        w: 17,
+        t: 'Chữa bài & Ôn tập Học kỳ 1',
+        n: 'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức HK1 môn Lịch sử và Địa lí Lớp 6 (3 tiết)',
+        y: '- Chữa bài kiểm tra cuối HK1, phân tích lỗi sai; hệ thống hóa các kiến thức Lịch sử thế giới cổ đại, Lịch sử Việt Nam thời dựng nước và Địa lí tự nhiên đại cương HK1.',
+      },
+      {
+        w: 18,
+        t: 'Sơ kết Học kỳ 1',
+        n: 'Sơ kết Học kỳ 1 môn Lịch sử và Địa lí Lớp 6 (3 tiết)',
+        y: '- Đánh giá tổng kết quá trình học tập và rèn luyện môn Lịch sử và Địa lí trong Học kỳ 1; định hướng học tập HK2.'
       },
 
       // HỌC KỲ 2 (Tuần 19 - 35)
@@ -217,33 +218,33 @@ export function getLsdlSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
       },
       {
         w: 31,
-        t: 'Địa lí: Thực hành môi trường địa phương',
-        n: 'Địa lí - Bài 30: Thực hành: Tìm hiểu mối quan hệ giữa con người và thiên nhiên ở địa phương (3 tiết)',
-        y: '- Điều tra, viết báo cáo ngắn về việc sử dụng tài nguyên và bảo vệ môi trường tại nơi học sinh sinh sống.'
+        t: 'Đánh giá định kỳ',
+        n: 'Kiểm tra, đánh giá cuối Học kỳ 2 môn Lịch sử và Địa lí Lớp 6 (3 tiết)',
+        y: '- Đánh giá kết quả học tập cả năm môn Lịch sử và Địa lí 6 theo chuẩn CT GDPT 2018; tổng kết, xếp loại học sinh.'
       },
       {
         w: 32,
+        t: 'Địa lí: Thực hành môi trường địa phương & Chữa bài kiểm tra',
+        n: 'Chữa bài kiểm tra cuối HK2 & Địa lí - Bài 30: Thực hành: Tìm hiểu mối quan hệ giữa con người và thiên nhiên ở địa phương (3 tiết)',
+        y: '- Chữa bài kiểm tra cuối HK2; điều tra, viết báo cáo ngắn về việc sử dụng tài nguyên và bảo vệ môi trường tại nơi học sinh sinh sống.'
+      },
+      {
+        w: 33,
         t: 'Dự án STEM',
         n: 'Dự án STEM Lịch sử Địa lí 6: "Mô hình Khám phá Trái Đất & Sa bàn Văn hóa Thời kỳ Văn Lang - Âu Lạc" (3 tiết)',
         y: '- Ứng dụng công nghệ số và vật liệu tái chế để chế tạo mô hình địa cầu/sa bàn lịch sử.\n- Phát triển năng lực sáng tạo, tư duy liên môn và kỹ năng thuyết trình nhóm.'
       },
       {
-        w: 33,
+        w: 34,
         t: 'Chủ đề: Ôn tập cuối năm',
-        n: 'Hệ thống hóa toàn bộ kiến thức Lịch sử và Địa lí Lớp 6 (3 tiết)',
+        n: 'Hệ thống hóa toàn bộ kiến thức và ôn tập cuối năm Lịch sử và Địa lí Lớp 6 (3 tiết)',
         y: '- Khái quát toàn bộ mạch kiến thức Lịch sử từ thời nguyên thủy đến đầu thế kỉ X và Địa lí tự nhiên, con người Trái Đất.'
       },
       {
-        w: 34,
-        t: 'Chủ đề: Ôn tập cuối năm',
-        n: 'Ôn tập toàn diện chuẩn bị kiểm tra cuối năm Lịch sử và Địa lí 6 (3 tiết)',
-        y: '- Luyện tập các dạng bài tập thực hành bản đồ, biểu đồ và câu hỏi phân tích sự kiện lịch sử trọng tâm.'
-      },
-      {
         w: 35,
-        t: 'Đánh giá định kỳ',
-        n: 'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Lịch sử và Địa lí 6 (3 tiết)',
-        y: '- Đánh giá kết quả học tập cả năm môn Lịch sử và Địa lí 6 theo chuẩn CT GDPT 2018; tổng kết, xếp loại học sinh.'
+        t: 'Tổng kết năm học',
+        n: 'Tổng kết năm học & Đánh giá xếp loại môn Lịch sử và Địa lí Lớp 6 cả năm (3 tiết)',
+        y: '- Tổng kết, đánh giá toàn diện quá trình học tập và xếp loại học lực môn Lịch sử và Địa lí Lớp 6 của học sinh.'
       }
     ];
 
@@ -256,7 +257,7 @@ export function getLsdlSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: item.y,
         equipment: 'Bản đồ thế giới, Bản đồ lịch sử Việt Nam, Atlas Địa lí 6, tranh ảnh hiện vật khảo cổ, máy chiếu',
         location: 'Phòng học bộ môn Lịch sử - Địa lí / Lớp học',
-        notes: item.w === 9 || item.w === 26 ? 'Kiểm tra giữa kỳ' : item.w === 18 || item.w === 35 ? 'Kiểm tra cuối kỳ' : item.w === 32 ? 'Dự án STEM' : ''
+        notes: item.w === 9 || item.w === 26 ? 'Kiểm tra giữa kỳ' : item.w === 16 || item.w === 31 ? 'Kiểm tra cuối kỳ' : item.w === 33 ? 'Dự án STEM' : ''
       });
     });
 
@@ -361,21 +362,21 @@ export function getLsdlSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
       },
       {
         w: 16,
-        t: 'Lịch sử: Chăm-pa và Nam Bộ (TK X - XVI)',
-        n: 'Lịch sử - Bài 18: Vương quốc Chăm-pa và vùng đất Nam Bộ từ đầu thế kỉ X đến đầu thế kỉ XVI (3 tiết)',
-        y: '- Mô tả tình hình chính trị, kinh tế, văn hóa của Chăm-pa và quá trình khai phá vùng đất Nam Bộ thời kỳ này.'
-      },
-      {
-        w: 17,
-        t: 'Chủ đề: Ôn tập Học kỳ 1',
-        n: 'Ôn tập tổng hợp kiến thức Lịch sử và Địa lí Học kỳ 1 Lớp 7 (3 tiết)',
-        y: '- Hệ thống hóa toàn bộ kiến thức Lịch sử thế giới trung đại, lịch sử Đại Việt TK X-XI và Địa lí Châu Âu, Châu Á, Châu Phi.'
-      },
-      {
-        w: 18,
         t: 'Đánh giá định kỳ',
         n: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Lịch sử và Địa lí Lớp 7 (3 tiết)',
         y: '- Đánh giá tổng hợp kết quả học tập phân môn Lịch sử và Địa lí trong toàn bộ Học kỳ 1 Lớp 7.'
+      },
+      {
+        w: 17,
+        t: 'Chữa bài & Ôn tập Học kỳ 1',
+        n: 'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức HK1 môn Lịch sử và Địa lí Lớp 7 (3 tiết)',
+        y: '- Chữa bài kiểm tra cuối HK1; hệ thống hóa toàn bộ kiến thức Lịch sử thế giới trung đại, lịch sử Đại Việt TK X-XI và Địa lí Châu Âu, Châu Á, Châu Phi.'
+      },
+      {
+        w: 18,
+        t: 'Sơ kết Học kỳ 1',
+        n: 'Sơ kết Học kỳ 1 môn Lịch sử và Địa lí Lớp 7 (3 tiết)',
+        y: '- Đánh giá tổng kết quá trình học tập và rèn luyện môn Lịch sử và Địa lí trong Học kỳ 1; định hướng học tập HK2.'
       },
 
       // HỌC KỲ 2 (Tuần 19 - 35)
@@ -453,33 +454,33 @@ export function getLsdlSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
       },
       {
         w: 31,
+        t: 'Đánh giá định kỳ',
+        n: 'Kiểm tra, đánh giá cuối Học kỳ 2 môn Lịch sử và Địa lí 7 (3 tiết)',
+        y: '- Đánh giá kết quả học tập cả năm học môn Lịch sử và Địa lí Lớp 7.'
+      },
+      {
+        w: 32,
+        t: 'Chữa bài kiểm tra & Ôn tập HK2',
+        n: 'Chữa bài kiểm tra cuối HK2 & Ôn tập củng cố kiến thức trọng tâm Lớp 7 (3 tiết)',
+        y: '- Chữa bài kiểm tra cuối HK2; chỉ ra lỗi sai phổ biến và củng cố kiến thức Lịch sử Đại Việt, Địa lí Châu Mỹ, Châu Đại Dương.'
+      },
+      {
+        w: 33,
         t: 'Dự án STEM',
         n: 'Dự án STEM Lịch sử Địa lí 7: "Mô hình Sa bàn Chiến thắng Bạch Đằng & Bản đồ Khám phá Thế giới" (3 tiết)',
         y: '- Vận dụng công nghệ số làm sa bàn trận đánh Bạch Đằng hoặc bản đồ số tương tác khám phá các châu lục.'
       },
       {
-        w: 32,
-        t: 'Dự án: Báo cáo và trưng bày sản phẩm',
-        n: 'Báo cáo và trưng bày sản phẩm dự án học tập Lịch sử - Địa lí 7 (3 tiết)',
-        y: '- Báo cáo thuyết trình sản phẩm STEM, phản biện nhóm và đánh giá chéo giữa các tổ học tập.'
-      },
-      {
-        w: 33,
-        t: 'Chủ đề: Ôn tập cuối năm',
-        n: 'Hệ thống hóa toàn bộ kiến thức Lịch sử và Địa lí Lớp 7 (3 tiết)',
-        y: '- Tổng kết toàn diện kiến thức Lịch sử và Địa lí lớp 7 theo chuẩn chương trình GDPT 2018.'
-      },
-      {
         w: 34,
         t: 'Chủ đề: Ôn tập cuối năm',
-        n: 'Ôn tập toàn diện chuẩn bị kiểm tra cuối năm Lịch sử và Địa lí 7 (3 tiết)',
-        y: '- Luyện giải đề cương ôn tập cuối năm, rèn kỹ năng phân tích tư liệu lịch sử và biểu đồ địa lí.'
+        n: 'Hệ thống hóa toàn bộ kiến thức và ôn tập cuối năm Lịch sử và Địa lí Lớp 7 (3 tiết)',
+        y: '- Tổng kết toàn diện kiến thức Lịch sử và Địa lí lớp 7 theo chuẩn chương trình GDPT 2018; luyện giải đề cương ôn tập.'
       },
       {
         w: 35,
-        t: 'Đánh giá định kỳ',
-        n: 'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Lịch sử và Địa lí 7 (3 tiết)',
-        y: '- Đánh giá kết quả học tập cả năm học môn Lịch sử và Địa lí Lớp 7.'
+        t: 'Tổng kết năm học',
+        n: 'Tổng kết năm học & Đánh giá xếp loại môn Lịch sử và Địa lí 7 cả năm (3 tiết)',
+        y: '- Tổng kết, đánh giá toàn diện quá trình học tập và xếp loại học lực môn Lịch sử và Địa lí Lớp 7 của học sinh.'
       }
     ];
 
@@ -492,7 +493,7 @@ export function getLsdlSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: item.y,
         equipment: 'Bản đồ các châu lục thế giới, Bản đồ lịch sử thời Lý - Trần - Lê, Atlas Địa lí thế giới, sa bàn chiến dịch',
         location: 'Phòng học bộ môn Lịch sử - Địa lí / Lớp học',
-        notes: item.w === 9 || item.w === 26 ? 'Kiểm tra giữa kỳ' : item.w === 18 || item.w === 35 ? 'Kiểm tra cuối kỳ' : item.w === 31 ? 'Dự án STEM' : ''
+        notes: item.w === 9 || item.w === 26 ? 'Kiểm tra giữa kỳ' : item.w === 16 || item.w === 31 ? 'Kiểm tra cuối kỳ' : item.w === 33 ? 'Dự án STEM' : ''
       });
     });
 
@@ -597,21 +598,21 @@ export function getLsdlSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
       },
       {
         w: 16,
-        t: 'Địa lí: Biển Đông & Biển đảo Việt Nam',
-        n: 'Địa lí - Bài 11: Phạm vi Biển Đông. Vùng biển đảo và đặc điểm tự nhiên vùng biển đảo Việt Nam (3 tiết)',
-        y: '- Xác định phạm vi Biển Đông, vùng biển Việt Nam theo Luật Biển Việt Nam 2012 và UNCLOS 1982; đặc điểm tự nhiên các đảo và quần đảo Hoàng Sa, Trường Sa.'
-      },
-      {
-        w: 17,
-        t: 'Chủ đề: Ôn tập Học kỳ 1',
-        n: 'Ôn tập tổng hợp kiến thức Lịch sử và Địa lí Học kỳ 1 Lớp 8 (3 tiết)',
-        y: '- Hệ thống hóa toàn diện kiến thức Lịch sử thế giới cận đại, Lịch sử VN TK XVI-XVIII và Địa lí tự nhiên đại cương Việt Nam.'
-      },
-      {
-        w: 18,
         t: 'Đánh giá định kỳ',
         n: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Lịch sử và Địa lí Lớp 8 (3 tiết)',
         y: '- Đánh giá tổng hợp toàn diện kết quả học tập phân môn Lịch sử và Địa lí trong Học kỳ 1 Lớp 8.'
+      },
+      {
+        w: 17,
+        t: 'Chữa bài & Ôn tập Học kỳ 1',
+        n: 'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức HK1 môn Lịch sử và Địa lí Lớp 8 (3 tiết)',
+        y: '- Chữa bài kiểm tra cuối HK1; hệ thống hóa toàn diện kiến thức Lịch sử thế giới cận đại, Lịch sử VN TK XVI-XVIII và Địa lí tự nhiên đại cương Việt Nam.'
+      },
+      {
+        w: 18,
+        t: 'Sơ kết Học kỳ 1',
+        n: 'Sơ kết Học kỳ 1 môn Lịch sử và Địa lí Lớp 8 (3 tiết)',
+        y: '- Đánh giá tổng kết quá trình học tập và rèn luyện môn Lịch sử và Địa lí trong Học kỳ 1; định hướng học tập HK2.'
       },
 
       // HỌC KỲ 2 (Tuần 19 - 35)
@@ -689,33 +690,33 @@ export function getLsdlSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
       },
       {
         w: 31,
+        t: 'Đánh giá định kỳ',
+        n: 'Kiểm tra, đánh giá cuối Học kỳ 2 môn Lịch sử và Địa lí 8 (3 tiết)',
+        y: '- Đánh giá tổng kết năm học môn Lịch sử và Địa lí Lớp 8 theo chuẩn Thông tư 32/2018/TT-BGDĐT.'
+      },
+      {
+        w: 32,
+        t: 'Chữa bài kiểm tra & Ôn tập HK2',
+        n: 'Chữa bài kiểm tra cuối HK2 & Ôn tập củng cố kiến thức trọng tâm Lớp 8 (3 tiết)',
+        y: '- Chữa bài kiểm tra cuối HK2; chỉ ra lỗi sai phổ biến và củng cố kiến thức Lịch sử cận đại và Địa lí biển đảo VN.'
+      },
+      {
+        w: 33,
         t: 'Dự án STEM',
         n: 'Dự án STEM Lịch sử Địa lí 8: "Bản đồ Số Chủ quyền Biển Đảo Hoàng Sa - Trường Sa & Sa bàn Chiến dịch Tây Sơn" (3 tiết)',
         y: '- Thiết kế bản đồ số GIS tương tác về chủ quyền biển đảo VN hoặc sa bàn trận đánh Rạch Gầm - Xoài Mút, Ngọc Hồi - Đống Đa.'
       },
       {
-        w: 32,
-        t: 'Dự án: Báo cáo và thuyết minh',
-        n: 'Báo cáo và thuyết minh dự án Lịch sử - Địa lí 8 (3 tiết)',
-        y: '- Thuyết trình dự án trước hội đồng lớp, ứng dụng slide kỹ thuật số và trả lời câu hỏi chất vấn.'
-      },
-      {
-        w: 33,
-        t: 'Chủ đề: Ôn tập cuối năm',
-        n: 'Hệ thống hóa toàn bộ kiến thức Lịch sử và Địa lí Lớp 8 (3 tiết)',
-        y: '- Khái quát toàn bộ mạch kiến thức Lịch sử thế giới, Lịch sử VN và Địa lí tự nhiên Việt Nam lớp 8.'
-      },
-      {
         w: 34,
         t: 'Chủ đề: Ôn tập cuối năm',
-        n: 'Ôn tập toàn diện chuẩn bị kiểm tra cuối năm Lịch sử và Địa lí 8 (3 tiết)',
-        y: '- Luyện giải đề cương ma trận chuẩn Bộ GD&ĐT, rèn kỹ năng tự luận lịch sử và giải thích địa lí.'
+        n: 'Hệ thống hóa toàn bộ kiến thức và ôn tập cuối năm Lịch sử và Địa lí 8 (3 tiết)',
+        y: '- Khái quát toàn bộ mạch kiến thức Lịch sử thế giới, Lịch sử VN và Địa lí tự nhiên Việt Nam lớp 8; luyện giải đề cương ôn tập.'
       },
       {
         w: 35,
-        t: 'Đánh giá định kỳ',
-        n: 'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Lịch sử và Địa lí 8 (3 tiết)',
-        y: '- Đánh giá tổng kết năm học môn Lịch sử và Địa lí Lớp 8 theo chuẩn Thông tư 32/2018/TT-BGDĐT.'
+        t: 'Tổng kết năm học',
+        n: 'Tổng kết năm học & Đánh giá xếp loại môn Lịch sử và Địa lí 8 cả năm (3 tiết)',
+        y: '- Tổng kết, đánh giá toàn diện quá trình học tập và xếp loại học lực môn Lịch sử và Địa lí Lớp 8 của học sinh.'
       }
     ];
 
@@ -728,7 +729,7 @@ export function getLsdlSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: item.y,
         equipment: 'Bản đồ tự nhiên Việt Nam, Bản đồ hành chính VN, Atlas Địa lí VN, tư liệu hình ảnh lịch sử chống Pháp, máy chiếu',
         location: 'Phòng học bộ môn Lịch sử - Địa lí / Lớp học',
-        notes: item.w === 9 || item.w === 26 ? 'Kiểm tra giữa kỳ' : item.w === 18 || item.w === 35 ? 'Kiểm tra cuối kỳ' : item.w === 31 ? 'Dự án STEM' : ''
+        notes: item.w === 9 || item.w === 26 ? 'Kiểm tra giữa kỳ' : item.w === 16 || item.w === 31 ? 'Kiểm tra cuối kỳ' : item.w === 33 ? 'Dự án STEM' : ''
       });
     });
 
@@ -837,16 +838,22 @@ export function getLsdlSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
       y: '- Phân tích vị trí chiến lược, điều kiện phát triển nông nghiệp, công nghiệp ĐBSH và Bắc Trung Bộ; giải pháp phòng chống bão lũ, hạn hán.'
     },
     {
-      w: 17,
-      t: 'Chủ đề: Ôn tập Học kỳ 1',
-      n: 'Ôn tập tổng hợp kiến thức Lịch sử và Địa lí Học kỳ 1 Lớp 9 (3 tiết)',
-      y: '- Hệ thống hóa toàn bộ Lịch sử thế giới hiện đại, Lịch sử cách mạng Việt Nam 1918-1954 và Địa lí các ngành kinh tế, các vùng kinh tế Bắc Bộ HK1.'
-    },
-    {
-      w: 18,
+      w: 16,
       t: 'Đánh giá định kỳ',
       n: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Lịch sử và Địa lí Lớp 9 (3 tiết)',
       y: '- Đánh giá tổng hợp toàn diện kết quả học tập phân môn Lịch sử và Địa lí trong Học kỳ 1 Lớp 9.'
+    },
+    {
+      w: 17,
+      t: 'Chữa bài & Ôn tập Học kỳ 1',
+      n: 'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức HK1 môn Lịch sử và Địa lí Lớp 9 (3 tiết)',
+      y: '- Chữa bài kiểm tra cuối HK1; hệ thống hóa toàn bộ Lịch sử thế giới hiện đại, Lịch sử cách mạng Việt Nam 1918-1954 và Địa lí các ngành kinh tế, các vùng kinh tế Bắc Bộ HK1.'
+    },
+    {
+      w: 18,
+      t: 'Sơ kết Học kỳ 1',
+      n: 'Sơ kết Học kỳ 1 môn Lịch sử và Địa lí Lớp 9 (3 tiết)',
+      y: '- Đánh giá tổng kết quá trình học tập và rèn luyện môn Lịch sử và Địa lí trong Học kỳ 1; định hướng học tập HK2.'
     },
 
     // HỌC KỲ 2 (Tuần 19 - 35)
@@ -924,33 +931,33 @@ export function getLsdlSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
     },
     {
       w: 31,
+      t: 'Đánh giá định kỳ',
+      n: 'Kiểm tra, đánh giá cuối Học kỳ 2 môn Lịch sử và Địa lí 9 (3 tiết)',
+      y: '- Đánh giá tổng kết năm học môn Lịch sử và Địa lí 9; xét hoàn thành chương trình THCS.'
+    },
+    {
+      w: 32,
+      t: 'Chữa bài kiểm tra & Ôn tập HK2',
+      n: 'Chữa bài kiểm tra cuối HK2 & Ôn tập củng cố kiến thức trọng tâm Lớp 9 (3 tiết)',
+      y: '- Chữa bài kiểm tra cuối HK2; củng cố phương pháp giải câu hỏi tư duy và kỹ năng làm bài thi trắc nghiệm - tự luận.'
+    },
+    {
+      w: 33,
       t: 'Dự án STEM',
       n: 'Dự án STEM Lịch sử Địa lí 9: "Infographic Số Di sản Lịch sử Việt Nam Hiện đại & Bản đồ Phát triển Kinh tế Biển Đảo" (3 tiết)',
       y: '- Thiết kế infographic số hoặc bản đồ số tương tác tổng kết di sản lịch sử kháng chiến và tiềm năng phát triển kinh tế biển đảo VN.'
     },
     {
-      w: 32,
-      t: 'Dự án: Báo cáo & Rèn kỹ năng ôn thi vào 10',
-      n: 'Báo cáo dự án học tập Lịch sử - Địa lí 9 & Rèn luyện kĩ năng phân tích số liệu địa lí, tư liệu lịch sử (3 tiết)',
-      y: '- Báo cáo sản phẩm dự án; rèn luyện phương pháp giải câu hỏi tư duy và kỹ năng làm bài thi trắc nghiệm - tự luận.'
-    },
-    {
-      w: 33,
-      t: 'Chủ đề: Ôn tập ôn thi vào 10',
-      n: 'Hệ thống hóa toàn bộ kiến thức Lịch sử và Địa lí Lớp 9 chuẩn bị thi tuyển sinh vào Lớp 10 (3 tiết)',
-      y: '- Hệ thống hóa toàn bộ kiến thức trọng tâm Lịch sử và Địa lí 9 chuẩn cấu trúc ma trận đề thi tuyển sinh vào Lớp 10 THPT.'
-    },
-    {
       w: 34,
-      t: 'Chủ đề: Ôn tập cuối năm',
-      n: 'Ôn tập toàn diện chuẩn bị kiểm tra cuối năm Lịch sử và Địa lí 9 (3 tiết)',
-      y: '- Luyện giải các bộ đề thi thử cuối năm và đề thi tuyển sinh mẫu của Bộ GD&ĐT.'
+      t: 'Chủ đề: Ôn tập ôn thi vào 10',
+      n: 'Hệ thống hóa toàn bộ kiến thức và luyện giải bộ đề ôn thi tuyển sinh vào Lớp 10 THPT môn Lịch sử - Địa lí (3 tiết)',
+      y: '- Hệ thống hóa toàn bộ kiến thức trọng tâm Lịch sử và Địa lí 9 chuẩn cấu trúc ma trận đề thi tuyển sinh vào Lớp 10 THPT; luyện đề thi thử.'
     },
     {
       w: 35,
-      t: 'Đánh giá định kỳ',
-      n: 'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Lịch sử và Địa lí 9 (3 tiết)',
-      y: '- Đánh giá tổng kết năm học môn Lịch sử và Địa lí 9; xét hoàn thành chương trình THCS.'
+      t: 'Tổng kết năm học',
+      n: 'Tổng kết năm học & Hoàn tất chương trình Lịch sử và Địa lí THCS Lớp 9 (3 tiết)',
+      y: '- Tổng kết, đánh giá toàn diện quá trình học tập và xếp loại học lực môn Lịch sử và Địa lí Lớp 9 của học sinh.'
     }
   ];
 
@@ -963,7 +970,7 @@ export function getLsdlSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
       yccd: item.y,
       equipment: 'Bản đồ kinh tế các vùng Việt Nam, Atlas Địa lí VN, tư liệu ảnh hai cuộc kháng chiến chống Pháp - Mỹ, máy chiếu',
       location: 'Phòng học bộ môn Lịch sử - Địa lí / Lớp học',
-      notes: item.w === 9 || item.w === 26 ? 'Kiểm tra giữa kỳ' : item.w === 18 || item.w === 35 ? 'Kiểm tra cuối kỳ' : item.w === 31 ? 'Dự án STEM' : ''
+      notes: item.w === 9 || item.w === 26 ? 'Kiểm tra giữa kỳ' : item.w === 16 || item.w === 31 ? 'Kiểm tra cuối kỳ' : item.w === 33 ? 'Dự án STEM' : ''
     });
   });
 

@@ -128,25 +128,25 @@ export const PRIMARY_INFORMATICS_DATA: Record<number, InformaticsLessonDef[]> = 
     },
     {
       week: 16,
-      topic: 'Chủ đề B: Mạng máy tính và Internet',
-      name: 'Bài 8: Khám phá thông tin trên Internet (Tiết 1)',
+      topic: 'Đánh giá định kỳ',
+      name: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Tin học Lớp 3',
       periods: 1,
-      yccd: '- Xem các thông tin bổ ích (tin tức, video học tập, bài hát thiếu nhi) trên một số trang web an toàn.\n- Phân biệt được thông tin phù hợp và không phù hợp với lứa tuổi.'
+      yccd: '- Đánh giá tổng hợp kiến thức và kỹ năng thực hành Tin học Lớp 3 trong toàn bộ Học kỳ 1.',
+      notes: 'Kiểm tra cuối kỳ 1'
     },
     {
       week: 17,
       topic: 'Chủ đề B: Mạng máy tính và Internet',
-      name: 'Bài 8: Khám phá thông tin trên Internet (Tiết 2)',
+      name: 'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức HK1 môn Tin học 3',
       periods: 1,
-      yccd: '- Biết nhờ người lớn trợ giúp khi gặp thông tin lạ, không lành mạnh trên mạng.\n- Ôn tập kiến thức và kỹ năng Tin học Học kỳ 1 chuẩn bị kiểm tra.'
+      yccd: '- Chữa bài kiểm tra cuối Học kỳ 1, sửa lỗi thao tác thực hành và hệ thống hóa kiến thức HK1.'
     },
     {
       week: 18,
-      topic: 'Đánh giá định kỳ',
-      name: 'Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Tin học 3',
+      topic: 'Chủ đề B: Mạng máy tính và Internet',
+      name: 'Sơ kết Học kỳ 1 & Báo cáo sản phẩm số HK1 môn Tin học 3',
       periods: 1,
-      yccd: '- Đánh giá tổng hợp kiến thức và kỹ năng thực hành Tin học Lớp 3 trong toàn bộ Học kỳ 1.',
-      notes: 'Kiểm tra cuối kỳ 1'
+      yccd: '- Trưng bày các sản phẩm số xuất sắc của học sinh và sơ kết đánh giá kết quả học tập Tin học HK1.'
     },
     // Chủ đề C: Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin
     {
@@ -238,40 +238,40 @@ export const PRIMARY_INFORMATICS_DATA: Record<number, InformaticsLessonDef[]> = 
     },
     {
       week: 31,
-      topic: 'Chủ đề E: Ứng dụng tin học',
-      name: 'Bài 14: Soạn thảo văn bản đơn giản (Tiết 2)',
+      topic: 'Đánh giá định kỳ',
+      name: 'Kiểm tra, đánh giá cuối Học kỳ 2 môn Tin học Lớp 3',
       periods: 1,
-      yccd: '- Gõ được một bài thơ ngắn hoặc lời chúc mừng sinh nhật bằng tiếng Việt có dấu.\n- Chọn phông chữ, cỡ chữ, màu chữ và lưu tệp văn bản.'
+      yccd: '- Đánh giá tổng kết năng lực Tin học Lớp 3 theo Chuẩn đầu ra Chương trình GDPT 2018.',
+      notes: 'Kiểm tra cuối kỳ 2'
     },
-    // Chủ đề F: Giải quyết vấn đề với sự trợ giúp của máy tính
     {
       week: 32,
-      topic: 'Chủ đề F: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 15: Thực hiện công việc theo các bước (Tiết 1)',
+      topic: 'Chủ đề E: Ứng dụng tin học',
+      name: 'Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành bổ trợ Tin học 3',
       periods: 1,
-      yccd: '- Hiểu được công việc hàng ngày có thể chia thành các bước tuần tự rõ ràng.\n- Mô tả các bước thực hiện một công việc quen thuộc (rửa tay, gấp áo, chuẩn bị sách vở).'
+      yccd: '- Chữa bài kiểm tra học kỳ 2, củng cố kỹ năng gõ 10 ngón và soạn thảo văn bản tiếng Việt.'
     },
     {
       week: 33,
       topic: 'Chủ đề F: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 15: Thực hiện công việc theo các bước (Tiết 2)',
+      name: 'Dự án STEM Tin học 3: "Thiết kế Thiệp chúc mừng sinh nhật trên Paint & Word"',
       periods: 1,
-      yccd: '- Sắp xếp lại thứ tự các bước để hoàn thành một nhiệm vụ đúng logic.\n- Phát hiện lỗi khi các bước bị đảo lộn thứ tự.'
+      yccd: '- Tích hợp kỹ năng vẽ Paint và gõ chữ Word để tạo thiệp chúc mừng sinh nhật sáng tạo.',
+      notes: 'Dự án STEM Tin học'
     },
     {
       week: 34,
       topic: 'Chủ đề F: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 16: Em làm quen với lập trình trực quan (1 tiết)',
+      name: 'Bài 16: Ôn tập toàn diện chuẩn bị kiểm tra cuối năm Tin học 3',
       periods: 1,
-      yccd: '- Trải nghiệm điều khiển nhân vật di chuyển theo từng bước trên nền tảng Code.org / ScratchJr.\n- Ôn tập toàn diện kiến thức Tin học Lớp 3 chuẩn bị kiểm tra cuối năm.'
+      yccd: '- Trải nghiệm điều khiển nhân vật trên Code.org và hệ thống hóa toàn bộ kiến thức Tin học Lớp 3.'
     },
     {
       week: 35,
       topic: 'Đánh giá định kỳ',
-      name: 'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Tin học 3',
+      name: 'Tổng kết năm học & Đánh giá xếp loại môn Tin học 3',
       periods: 1,
-      yccd: '- Đánh giá tổng kết năng lực Tin học Lớp 3 theo Chuẩn đầu ra Chương trình GDPT 2018.',
-      notes: 'Kiểm tra cuối kỳ 2'
+      yccd: '- Tổng kết đánh giá kết quả học tập và khen thưởng các sản phẩm số tiêu biểu Lớp 3.'
     }
   ],
   4: [
@@ -388,25 +388,25 @@ export const PRIMARY_INFORMATICS_DATA: Record<number, InformaticsLessonDef[]> = 
     },
     {
       week: 16,
-      topic: 'Chủ đề E: Ứng dụng tin học',
-      name: 'Bài 8: Trình bày bảng trong văn bản (Tiết 1)',
+      topic: 'Đánh giá định kỳ',
+      name: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Tin học Lớp 4',
       periods: 1,
-      yccd: '- Biết cách chèn bảng biểu (Table) với số hàng và số cột theo yêu cầu.\n- Nhập văn bản và số liệu vào các ô trong bảng.'
+      yccd: '- Đánh giá kỹ năng quản lý tệp, định dạng văn bản nâng cao và chèn hình ảnh, bảng biểu.',
+      notes: 'Kiểm tra cuối kỳ 1'
     },
     {
       week: 17,
       topic: 'Chủ đề E: Ứng dụng tin học',
-      name: 'Bài 8: Trình bày bảng trong văn bản (Tiết 2)',
+      name: 'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức HK1 môn Tin học 4',
       periods: 1,
-      yccd: '- Thực hiện chèn thêm hàng, thêm cột, xóa hàng, xóa cột và căn lề dữ liệu trong bảng.\n- Tạo thời khóa biểu hoặc bảng phân công trực nhật lớp.'
+      yccd: '- Chữa bài kiểm tra cuối HK1, sửa lỗi định dạng bảng biểu và trình bày văn bản khoa học.'
     },
     {
       week: 18,
-      topic: 'Đánh giá định kỳ',
-      name: 'Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Tin học 4',
+      topic: 'Chủ đề E: Ứng dụng tin học',
+      name: 'Sơ kết Học kỳ 1 & Báo cáo sản phẩm số HK1 môn Tin học 4',
       periods: 1,
-      yccd: '- Đánh giá kỹ năng quản lý tệp, định dạng văn bản nâng cao và chèn hình ảnh, bảng biểu.',
-      notes: 'Kiểm tra cuối kỳ 1'
+      yccd: '- Báo cáo sản phẩm văn bản/trình chiếu của học sinh và sơ kết kết quả học tập Tin học HK1.'
     },
     {
       week: 19,
@@ -496,39 +496,40 @@ export const PRIMARY_INFORMATICS_DATA: Record<number, InformaticsLessonDef[]> = 
     },
     {
       week: 31,
-      topic: 'Chủ đề F: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 14: Lập trình với cấu trúc lặp lại (Repeat) (Tiết 2)',
+      topic: 'Đánh giá định kỳ',
+      name: 'Kiểm tra, đánh giá cuối Học kỳ 2 môn Tin học Lớp 4',
       periods: 1,
-      yccd: '- Kết hợp khối lệnh lặp với phần mở rộng Bút vẽ (Pen) để lập trình vẽ hình vuông, hình tam giác đều.\n- Tối ưu hóa số dòng lệnh nhờ cấu trúc lặp.'
+      yccd: '- Đánh giá tổng kết kỹ năng Tin học và tư duy thuật toán Lớp 4.',
+      notes: 'Kiểm tra cuối kỳ 2'
     },
     {
       week: 32,
       topic: 'Chủ đề F: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 15: Tạo trò chơi đơn giản trên Scratch (Tiết 1)',
+      name: 'Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành bổ trợ Tin học 4',
       periods: 1,
-      yccd: '- Lập trình điều khiển nhân vật bằng các phím mũi tên trên bàn phím (When key pressed).\n- Sử dụng khối lệnh liên tục (Forever) để duy trì hoạt động của nhân vật.'
+      yccd: '- Chữa bài kiểm tra cuối năm, hoàn thiện kỹ năng lập trình trực quan trên Scratch 3.0.'
     },
     {
       week: 33,
       topic: 'Chủ đề F: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 15: Tạo trò chơi đơn giản trên Scratch (Tiết 2)',
+      name: 'Dự án STEM Tin học 4: "Lập trình Game Thu gom rác thải bảo vệ đại dương"',
       periods: 1,
-      yccd: '- Sử dụng khối lệnh Nếu - Thì (If - Then) và cảm biến va chạm (Touching) để phát hiện nhân vật chạm vào vật cản.\n- Thêm hiệu ứng kết thúc trò chơi.'
+      yccd: '- Hoàn thiện dự án trò chơi Scratch "Thu gom rác bảo vệ đại dương" và chạy thử nghiệm.',
+      notes: 'Dự án STEM'
     },
     {
       week: 34,
       topic: 'Chủ đề F: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 16: Dự án: Trò chơi học tập của em (1 tiết)',
+      name: 'Bài 16: Ôn tập toàn diện chuẩn bị kiểm tra cuối năm Tin học 4',
       periods: 1,
-      yccd: '- Hoàn thiện dự án trò chơi "Mèo vượt mê cung" hoặc "Thu gom rác bảo vệ môi trường".\n- Báo cáo sản phẩm và ôn tập chuẩn bị kiểm tra cuối năm.'
+      yccd: '- Hệ thống hóa toàn bộ kiến thức Tin học 4 về soạn thảo văn bản, trình chiếu và lập trình Scratch.'
     },
     {
       week: 35,
       topic: 'Đánh giá định kỳ',
-      name: 'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Tin học 4',
+      name: 'Tổng kết năm học & Đánh giá xếp loại môn Tin học 4',
       periods: 1,
-      yccd: '- Đánh giá tổng kết kỹ năng Tin học và tư duy thuật toán Lớp 4.',
-      notes: 'Kiểm tra cuối kỳ 2'
+      yccd: '- Tổng kết đánh giá năng lực tin học Lớp 4 và triển lãm các sản phẩm trò chơi Scratch tiêu biểu.'
     }
   ],
   5: [
@@ -645,25 +646,25 @@ export const PRIMARY_INFORMATICS_DATA: Record<number, InformaticsLessonDef[]> = 
     },
     {
       week: 16,
-      topic: 'Chủ đề E: Ứng dụng tin học',
-      name: 'Bài 8: Thiết kế bài trình chiếu đa phương tiện (Tiết 1)',
+      topic: 'Đánh giá định kỳ',
+      name: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Tin học Lớp 5',
       periods: 1,
-      yccd: '- Chèn tệp âm thanh (Audio) và video ngắn vào bài trình chiếu PowerPoint.\n- Cắt chỉnh thời lượng phát âm thanh và video phù hợp.'
+      yccd: '- Đánh giá kỹ năng tạo sơ đồ tư duy, gửi email và thiết kế bài trình chiếu đa phương tiện.',
+      notes: 'Kiểm tra cuối kỳ 1'
     },
     {
       week: 17,
       topic: 'Chủ đề E: Ứng dụng tin học',
-      name: 'Bài 8: Thiết kế bài trình chiếu đa phương tiện (Tiết 2)',
+      name: 'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức HK1 môn Tin học 5',
       periods: 1,
-      yccd: '- Thiết lập hiệu ứng chuyển động và tự động phát cho các đối tượng đa phương tiện.\n- Hoàn thiện bài thuyết trình về một danh lam thắng cảnh Việt Nam.'
+      yccd: '- Chữa bài kiểm tra cuối HK1, củng cố kỹ năng thiết kế bài trình chiếu đa phương tiện và gửi nhận email.'
     },
     {
       week: 18,
-      topic: 'Đánh giá định kỳ',
-      name: 'Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Tin học 5',
+      topic: 'Chủ đề E: Ứng dụng tin học',
+      name: 'Sơ kết Học kỳ 1 & Báo cáo sản phẩm số HK1 môn Tin học 5',
       periods: 1,
-      yccd: '- Đánh giá kỹ năng tạo sơ đồ tư duy, gửi email và thiết kế bài trình chiếu đa phương tiện.',
-      notes: 'Kiểm tra cuối kỳ 1'
+      yccd: '- Báo cáo sản phẩm số đa phương tiện của học sinh và sơ kết đánh giá kết quả học tập Tin học HK1.'
     },
     {
       week: 19,
@@ -753,39 +754,40 @@ export const PRIMARY_INFORMATICS_DATA: Record<number, InformaticsLessonDef[]> = 
     },
     {
       week: 31,
-      topic: 'Chủ đề F: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 14: Lập trình phát hiện va chạm và sự kiện (Tiết 2)',
+      topic: 'Đánh giá định kỳ',
+      name: 'Kiểm tra, đánh giá cuối Học kỳ 2 môn Tin học Lớp 5',
       periods: 1,
-      yccd: '- Tạo hiệu ứng chúc mừng chiến thắng (Victory Screen) khi đạt số điểm tối đa.\n- Tối ưu hóa trải nghiệm người chơi.'
+      yccd: '- Đánh giá tổng kết hoàn thành Chương trình môn Tin học cấp Tiểu học.',
+      notes: 'Kiểm tra cuối kỳ 2'
     },
     {
       week: 32,
       topic: 'Chủ đề F: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 15: Khám phá ứng dụng Trí tuệ nhân tạo (AI) (Tiết 1)',
+      name: 'Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành bổ trợ Tin học 5',
       periods: 1,
-      yccd: '- Nhận biết sự hiện diện của AI trong đời sống: nhận diện khuôn mặt, tìm kiếm bằng giọng nói, xe tự hành.\n- Trải nghiệm nhận diện hình ảnh/vẽ hình thông minh với công cụ AI giáo dục (Quick, Draw!).'
+      yccd: '- Chữa bài kiểm tra cuối năm, hoàn thiện kỹ năng lập trình Scratch nâng cao.'
     },
     {
       week: 33,
       topic: 'Chủ đề F: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 15: Khám phá ứng dụng Trí tuệ nhân tạo (AI) (Tiết 2)',
+      name: 'Dự án STEM Tin học 5: "Lập trình Trợ lý ảo AI Hỗ trợ học từ vựng Tiếng Anh"',
       periods: 1,
-      yccd: '- Nhận thức lợi ích và lưu ý đạo đức khi sử dụng công nghệ Trí tuệ nhân tạo.\n- Hình thành tư duy sẵn sàng đón nhận chuyển đổi số.'
+      yccd: '- Tích hợp công nghệ nhận diện giọng nói AI và lập trình Scratch tạo trợ lý ảo thông minh.',
+      notes: 'Dự án STEM & AI'
     },
     {
       week: 34,
       topic: 'Chủ đề F: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 16: Dự án STEM Tin học: Sản phẩm sáng tạo của em (1 tiết)',
+      name: 'Bài 16: Ôn tập toàn diện kiến thức Tin học chuẩn bị vào Lớp 6 THCS',
       periods: 1,
-      yccd: '- Trưng bày và báo cáo sản phẩm phần mềm Scratch hoặc dự án AI học tập.\n- Hệ thống hóa toàn bộ kiến thức Tin học Tiểu học chuẩn bị vào Lớp 6 THCS.'
+      yccd: '- Hệ thống hóa toàn bộ mạch kiến thức Tin học 5 năm Tiểu học chuẩn bị chuyển cấp vào THCS.'
     },
     {
       week: 35,
       topic: 'Đánh giá định kỳ',
-      name: 'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Tin học 5',
+      name: 'Tổng kết năm học & Xét hoàn thành chương trình Tin học Tiểu học',
       periods: 1,
-      yccd: '- Đánh giá tổng kết hoàn thành Chương trình môn Tin học cấp Tiểu học.',
-      notes: 'Kiểm tra cuối kỳ 2'
+      yccd: '- Tổng kết đánh giá kết quả học tập và xét hoàn thành chương trình môn Tin học cấp Tiểu học.'
     }
   ]
 };
@@ -906,25 +908,25 @@ export const SECONDARY_INFORMATICS_DATA: Record<number, InformaticsLessonDef[]> 
     },
     {
       week: 16,
-      topic: 'Chủ đề 3: Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin',
-      name: 'Bài 8: Thư điện tử (Tiết 1)',
-      periods: 1,
-      yccd: '- Nêu được ưu điểm của thư điện tử so với thư truyền thống.\n- Biết cấu trúc của một địa chỉ thư điện tử (tên tài khoản @ tên miền nhà cung cấp dịch vụ) và quy trình gửi/nhận thư.'
-    },
-    {
-      week: 17,
-      topic: 'Chủ đề 3: Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin',
-      name: 'Bài 8: Thư điện tử (Tiết 2)',
-      periods: 1,
-      yccd: '- Thực hành đăng nhập, soạn thư, đính kèm tệp và gửi thư điện tử an toàn.\n- Tuân thủ các quy tắc lịch sự, tôn trọng người nhận khi giao tiếp qua thư điện tử.'
-    },
-    {
-      week: 18,
       topic: 'Đánh giá định kỳ',
       name: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Tin học Lớp 6',
       periods: 1,
       yccd: '- Đánh giá tổng hợp kiến thức lí thuyết và kĩ năng thực hành môn Tin học Lớp 6 trong toàn bộ Học kỳ 1.',
       notes: 'Kiểm tra cuối kỳ 1'
+    },
+    {
+      week: 17,
+      topic: 'Chủ đề 3: Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin',
+      name: 'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức HK1 Lớp 6',
+      periods: 1,
+      yccd: '- Chữa bài kiểm tra cuối HK1, sửa lỗi kĩ năng thực hành máy tính và hệ thống hóa kiến thức HK1.'
+    },
+    {
+      week: 18,
+      topic: 'Chủ đề 3: Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin',
+      name: 'Sơ kết Học kỳ 1 & Báo cáo sản phẩm số HK1 Lớp 6',
+      periods: 1,
+      yccd: '- Báo cáo sản phẩm sơ đồ tư duy và tài liệu số học sinh đã thực hiện trong HK1.'
     },
     // Chủ đề 4: Đạo đức, pháp luật và văn hoá trong môi trường số
     {
@@ -1016,39 +1018,40 @@ export const SECONDARY_INFORMATICS_DATA: Record<number, InformaticsLessonDef[]> 
     // Chủ đề 6: Giải quyết vấn đề với sự trợ giúp của máy tính
     {
       week: 31,
-      topic: 'Chủ đề 6: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 15: Thuật toán (Tiết 1)',
+      topic: 'Đánh giá định kỳ',
+      name: 'Kiểm tra, đánh giá cuối Học kỳ 2 môn Tin học Lớp 6',
       periods: 1,
-      yccd: '- Nêu được khái niệm thuật toán là dãy các chỉ dẫn từng bước rõ ràng để giải quyết một nhiệm vụ/bài toán.\n- Xác định được Đầu vào (Input) và Đầu ra (Output) của một thuật toán cụ thể.'
+      yccd: '- Đánh giá tổng kết mức độ hoàn thành chuẩn kiến thức kĩ năng môn Tin học Lớp 6 theo Chương trình GDPT 2018.',
+      notes: 'Kiểm tra cuối kỳ 2'
     },
     {
       week: 32,
       topic: 'Chủ đề 6: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 15: Thuật toán (Tiết 2)',
+      name: 'Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành bổ trợ Tin học 6',
       periods: 1,
-      yccd: '- Biết cách mô tả thuật toán bằng hai phương pháp: Liệt kê các bước bằng ngôn ngữ tự nhiên và Sơ đồ khối (Flowchart).\n- Nhận biết ý nghĩa các hình khối chuẩn trong sơ đồ khối (bắt đầu/kết thúc, xử lí, điều kiện, vào/ra).'
+      yccd: '- Chữa bài kiểm tra cuối năm, củng cố kỹ năng vẽ sơ đồ khối mô tả thuật toán.'
     },
     {
       week: 33,
       topic: 'Chủ đề 6: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 16: Các cấu trúc điều khiển (1 tiết)',
+      name: 'Dự án STEM Tin học 6: "Thiết kế Sơ đồ tư duy & Bản tin điện tử trường học"',
       periods: 1,
-      yccd: '- Nhận biết và phân biệt được 3 cấu trúc điều khiển cơ bản trong thuật toán: Cấu trúc tuần tự, Cấu trúc rẽ nhánh (Nếu... thì...), Cấu trúc lặp.\n- Vẽ sơ đồ khối thể hiện các cấu trúc điều khiển trong bài toán thực tế.'
+      yccd: '- Tích hợp kỹ năng biên tập văn bản, đồ họa và sơ đồ khối tạo bản tin điện tử trường học.',
+      notes: 'Dự án STEM'
     },
     {
       week: 34,
       topic: 'Chủ đề 6: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 17: Chương trình máy tính (1 tiết)',
+      name: 'Bài 17: Ôn tập toàn diện chuẩn bị kiểm tra cuối năm Tin học 6',
       periods: 1,
-      yccd: '- Hiểu được chương trình máy tính là bản mô tả thuật toán bằng ngôn ngữ mà máy tính có thể hiểu và thực hiện được.\n- Phân biệt giữa người viết chương trình (lập trình viên), ngôn ngữ lập trình và môi trường chạy chương trình.\n- Ôn tập hệ thống hóa kiến thức môn Tin học 6.'
+      yccd: '- Hệ thống hóa toàn bộ mạch kiến thức Tin học Lớp 6 theo 6 chủ đề của chương trình.'
     },
     {
       week: 35,
       topic: 'Đánh giá định kỳ',
-      name: 'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Tin học 6',
+      name: 'Tổng kết năm học & Đánh giá xếp loại môn Tin học 6',
       periods: 1,
-      yccd: '- Đánh giá tổng kết mức độ hoàn thành chuẩn kiến thức kĩ năng môn Tin học Lớp 6 theo Chương trình GDPT 2018.',
-      notes: 'Kiểm tra cuối kỳ 2'
+      yccd: '- Tổng kết đánh giá năng lực tin học Lớp 6 và bình chọn các sản phẩm số xuất sắc.'
     }
   ],
   7: [
@@ -1164,25 +1167,25 @@ export const SECONDARY_INFORMATICS_DATA: Record<number, InformaticsLessonDef[]> 
     },
     {
       week: 16,
-      topic: 'Chủ đề 4: Ứng dụng tin học',
-      name: 'Bài 8: Công cụ hỗ trợ tính toán (Tiết 1)',
-      periods: 1,
-      yccd: '- Nắm vững cú pháp và sử dụng thành thạo các hàm tính toán cơ bản: SUM (tính tổng), AVERAGE (tính trung bình cộng).'
-    },
-    {
-      week: 17,
-      topic: 'Chủ đề 4: Ứng dụng tin học',
-      name: 'Bài 8: Công cụ hỗ trợ tính toán (Tiết 2)',
-      periods: 1,
-      yccd: '- Sử dụng thành thạo hàm MAX (tìm giá trị lớn nhất), MIN (tìm giá trị nhỏ nhất), COUNT (đếm số ô chứa số).\n- Ứng dụng tính điểm trung bình môn học và phân tích bảng số liệu học tập.'
-    },
-    {
-      week: 18,
       topic: 'Đánh giá định kỳ',
       name: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Tin học Lớp 7',
       periods: 1,
       yccd: '- Đánh giá tổng hợp kiến thức bảng tính Excel, công thức tính toán và các hàm thống kê cơ bản trong Học kỳ 1.',
       notes: 'Kiểm tra cuối kỳ 1'
+    },
+    {
+      week: 17,
+      topic: 'Chủ đề 4: Ứng dụng tin học',
+      name: 'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức Bảng tính HK1 Lớp 7',
+      periods: 1,
+      yccd: '- Chữa bài kiểm tra cuối HK1, sửa lỗi sử dụng hàm và công thức tính toán trên bảng tính điện tử.'
+    },
+    {
+      week: 18,
+      topic: 'Chủ đề 4: Ứng dụng tin học',
+      name: 'Sơ kết Học kỳ 1 & Báo cáo dự án Bảng tính điện tử Lớp 7',
+      periods: 1,
+      yccd: '- Báo cáo bảng tính số liệu học tập/chi tiêu cá nhân của học sinh và sơ kết kết quả học tập HK1.'
     },
     {
       week: 19,
@@ -1272,39 +1275,40 @@ export const SECONDARY_INFORMATICS_DATA: Record<number, InformaticsLessonDef[]> 
     },
     {
       week: 31,
-      topic: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 14: Thuật toán tìm kiếm tuần tự (Tiết 2)',
+      topic: 'Đánh giá định kỳ',
+      name: 'Kiểm tra, đánh giá cuối Học kỳ 2 môn Tin học Lớp 7',
       periods: 1,
-      yccd: '- Thực hiện từng bước thuật toán tìm kiếm tuần tự trên dãy số/dữ liệu cụ thể.\n- Phân tích số lần so sánh trong trường hợp tìm thấy và không tìm thấy.'
+      yccd: '- Đánh giá tổng kết mức độ hoàn thành chuẩn kiến thức kĩ năng môn Tin học Lớp 7 theo Chương trình GDPT 2018.',
+      notes: 'Kiểm tra cuối kỳ 2'
     },
     {
       week: 32,
       topic: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 15: Thuật toán tìm kiếm nhị phân (Tiết 1)',
+      name: 'Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành thuật toán Scratch 7',
       periods: 1,
-      yccd: '- Hiểu điều kiện áp dụng thuật toán Tìm kiếm nhị phân (Binary Search): Dãy dữ liệu đã được sắp xếp.\n- Nắm vững nguyên lí chia đôi phạm vi tìm kiếm ở mỗi bước lặp.'
+      yccd: '- Chữa bài kiểm tra cuối năm, củng cố mô phỏng các thuật toán tìm kiếm và sắp xếp trên máy tính.'
     },
     {
       week: 33,
       topic: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 15: Thuật toán tìm kiếm nhị phân (Tiết 2)',
+      name: 'Dự án STEM Tin học 7: "Lập trình Trò chơi Trắc nghiệm kiến thức đa phương tiện"',
       periods: 1,
-      yccd: '- Mô phỏng từng bước thuật toán tìm kiếm nhị phân trên dãy số đã sắp xếp.\n- So sánh hiệu quả vượt trội về tốc độ của tìm kiếm nhị phân so với tìm kiếm tuần tự.'
+      yccd: '- Thiết kế và lập trình trò chơi đố vui kiến thức có tính điểm tự động và âm thanh sinh động.',
+      notes: 'Dự án STEM'
     },
     {
       week: 34,
       topic: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 16: Thuật toán sắp xếp (1 tiết)',
+      name: 'Bài 16: Ôn tập toàn diện chuẩn bị kiểm tra cuối năm Tin học 7',
       periods: 1,
-      yccd: '- Hiểu mục đích và ý nghĩa của việc sắp xếp dữ liệu (tăng dần/giảm dần).\n- Nắm ý tưởng và mô phỏng được thuật toán Sắp xếp nổi bọt (Bubble Sort) hoặc Sắp xếp chọn (Selection Sort).\n- Ôn tập hệ thống hóa kiến thức toàn bộ môn Tin học Lớp 7.'
+      yccd: '- Hệ thống hóa toàn bộ kiến thức Tin học Lớp 7 về bảng tính, mạng xã hội và thuật toán cơ bản.'
     },
     {
       week: 35,
       topic: 'Đánh giá định kỳ',
-      name: 'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Tin học 7',
+      name: 'Tổng kết năm học & Đánh giá xếp loại môn Tin học 7',
       periods: 1,
-      yccd: '- Đánh giá tổng kết mức độ hoàn thành chuẩn kiến thức kĩ năng môn Tin học Lớp 7 theo Chương trình GDPT 2018.',
-      notes: 'Kiểm tra cuối kỳ 2'
+      yccd: '- Tổng kết đánh giá năng lực tin học Lớp 7 và xếp loại kết quả học tập cả năm.'
     }
   ],
   8: [
@@ -1420,25 +1424,25 @@ export const SECONDARY_INFORMATICS_DATA: Record<number, InformaticsLessonDef[]> 
     },
     {
       week: 16,
-      topic: 'Chủ đề 4: Ứng dụng tin học',
-      name: 'Bài 8a: Làm việc với danh sách dạng liệt kê và hình ảnh trong văn bản (Tiết 2)',
-      periods: 1,
-      yccd: '- Chèn và định dạng hình ảnh nâng cao, vẽ hình khối Shapes, áp dụng hiệu ứng nghệ thuật (Picture Effects).\n- Căn chỉnh vị trí hình ảnh với văn bản (Wrap Text) tạo bố cục trang báo chí chuyên nghiệp.'
-    },
-    {
-      week: 17,
-      topic: 'Chủ đề 4: Ứng dụng tin học',
-      name: 'Bài 9a: Tạo đầu trang, chân trang cho văn bản (1 tiết)',
-      periods: 1,
-      yccd: '- Biết cách chèn tiêu đề đầu trang (Header), tiêu đề chân trang (Footer) và đánh số trang tự động (Page Number).\n- Thiết lập tiêu đề khác nhau giữa trang đầu và các trang sau (Different First Page).'
-    },
-    {
-      week: 18,
       topic: 'Đánh giá định kỳ',
       name: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Tin học Lớp 8',
       periods: 1,
       yccd: '- Đánh giá toàn diện kiến thức lí thuyết và kĩ năng thực hành Tin học 8 trong Học kỳ 1 (Bảng tính, sắp xếp, lọc, biểu đồ và soạn thảo nâng cao).',
       notes: 'Kiểm tra cuối kỳ 1'
+    },
+    {
+      week: 17,
+      topic: 'Chủ đề 4: Ứng dụng tin học',
+      name: 'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức HK1 Lớp 8',
+      periods: 1,
+      yccd: '- Chữa bài kiểm tra cuối HK1, sửa lỗi kĩ năng bảng tính và định dạng văn bản nâng cao.'
+    },
+    {
+      week: 18,
+      topic: 'Chủ đề 4: Ứng dụng tin học',
+      name: 'Sơ kết Học kỳ 1 & Báo cáo sản phẩm đồ họa vector / Video số Lớp 8',
+      periods: 1,
+      yccd: '- Triển lãm và đánh giá các sản phẩm đồ họa Inkscape/Canva và video số do học sinh thực hiện.'
     },
     {
       week: 19,
@@ -1528,40 +1532,40 @@ export const SECONDARY_INFORMATICS_DATA: Record<number, InformaticsLessonDef[]> 
     },
     {
       week: 31,
-      topic: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Thực hành tổng hợp: Lập trình thuật toán giải quyết vấn đề (Tiết 1)',
+      topic: 'Đánh giá định kỳ',
+      name: 'Kiểm tra, đánh giá cuối Học kỳ 2 môn Tin học Lớp 8',
       periods: 1,
-      yccd: '- Thiết kế và lập trình dự án trò chơi học tập tương tác hoặc ứng dụng giải toán thực tế.\n- Phân tích yêu cầu, xây dựng thuật toán và viết kịch bản nhân vật.'
+      yccd: '- Đánh giá tổng kết mức độ hoàn thành chuẩn kiến thức kĩ năng môn Tin học Lớp 8 theo Chương trình GDPT 2018.',
+      notes: 'Kiểm tra cuối kỳ 2'
     },
     {
       week: 32,
       topic: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Thực hành tổng hợp: Lập trình thuật toán giải quyết vấn đề (Tiết 2)',
+      name: 'Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành thuật toán lặp và rẽ nhánh',
       periods: 1,
-      yccd: '- Hoàn thiện sản phẩm, kiểm thử các trường hợp dữ liệu biên và gỡ lỗi.\n- Giới thiệu, chia sẻ sản phẩm số và đóng gói dự án.'
+      yccd: '- Chữa bài kiểm tra cuối năm, gỡ lỗi và tối ưu hóa các chương trình thuật toán.'
     },
-    // Chủ đề 6: Hướng nghiệp với Tin học
     {
       week: 33,
-      topic: 'Chủ đề 6: Hướng nghiệp với Tin học',
-      name: 'Bài 16: Tin học với nghề nghiệp (Tiết 1)',
+      topic: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính',
+      name: 'Dự án STEM Tin học 8: "Lập trình Mô phỏng chuyển động vật lý trên Scratch / Python"',
       periods: 1,
-      yccd: '- Nhận biết vai trò quan trọng của Tin học trong các ngành nghề thuộc lĩnh vực Công nghệ thông tin và truyền thông.\n- Kể tên và mô tả công việc của một số nghề: Lập trình viên, chuyên viên an ninh mạng, kĩ sư AI, thiết kế đồ họa.'
+      yccd: '- Lập trình mô phỏng hiện tượng rơi tự do / va chạm đàn hồi ứng dụng kiến thức liên môn Toán - Lý.',
+      notes: 'Dự án STEM'
     },
     {
       week: 34,
       topic: 'Chủ đề 6: Hướng nghiệp với Tin học',
-      name: 'Bài 16: Tin học với nghề nghiệp (Tiết 2)',
+      name: 'Bài 17: Ôn tập toàn diện chuẩn bị kiểm tra cuối năm Tin học 8',
       periods: 1,
-      yccd: '- Phân tích ứng dụng của Tin học trong các ngành nghề khác trong xã hội (y tế, giáo dục, nông nghiệp thông minh, tài chính ngân hàng).\n- Định hướng phát triển năng lực số và xây dựng kế hoạch học tập cá nhân.'
+      yccd: '- Hệ thống hóa toàn bộ kiến thức Tin học Lớp 8 và tìm hiểu hướng nghiệp trong kỷ nguyên AI.'
     },
     {
       week: 35,
       topic: 'Đánh giá định kỳ',
-      name: 'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Tin học 8',
+      name: 'Tổng kết năm học & Đánh giá xếp loại môn Tin học 8',
       periods: 1,
-      yccd: '- Đánh giá tổng kết mức độ hoàn thành chuẩn kiến thức kĩ năng môn Tin học Lớp 8 theo Chương trình GDPT 2018.',
-      notes: 'Kiểm tra cuối kỳ 2'
+      yccd: '- Tổng kết đánh giá năng lực tin học Lớp 8 và định hướng học tập Tin học Lớp 9 chuyển cấp.'
     }
   ],
   9: [
@@ -1677,25 +1681,25 @@ export const SECONDARY_INFORMATICS_DATA: Record<number, InformaticsLessonDef[]> 
     },
     {
       week: 16,
-      topic: 'Chủ đề 4: Ứng dụng tin học',
-      name: 'Bài 8: Thực hành: Sử dụng công cụ trực quan trình bày thông tin trong trao đổi và hợp tác (Tiết 2)',
-      periods: 1,
-      yccd: '- Hoàn thiện sản phẩm số, thuyết trình và chia sẻ báo cáo trực tuyến trước lớp học.\n- Đánh giá hiệu quả làm việc nhóm và chất lượng sản phẩm cộng tác.'
-    },
-    {
-      week: 17,
-      topic: 'Chủ đề 4: Ứng dụng tin học',
-      name: 'Ôn tập kiến thức và kỹ năng thực hành Học kỳ 1 (1 tiết)',
-      periods: 1,
-      yccd: '- Hệ thống hóa toàn bộ kiến thức Học kỳ 1: Thế giới số, chất lượng thông tin, pháp lí mạng, phần mềm mô phỏng và công cụ cộng tác trực quan.'
-    },
-    {
-      week: 18,
       topic: 'Đánh giá định kỳ',
       name: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Tin học Lớp 9',
       periods: 1,
       yccd: '- Đánh giá tổng hợp toàn diện kiến thức lí thuyết và kĩ năng thực hành Tin học 9 trong Học kỳ 1.',
       notes: 'Kiểm tra cuối kỳ 1'
+    },
+    {
+      week: 17,
+      topic: 'Chủ đề 4: Ứng dụng tin học',
+      name: 'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố dịch vụ mạng & An toàn thông tin HK1',
+      periods: 1,
+      yccd: '- Chữa bài kiểm tra cuối HK1, sửa lỗi kĩ năng thực hành mạng và phần mềm cộng tác trực tuyến.'
+    },
+    {
+      week: 18,
+      topic: 'Chủ đề 4: Ứng dụng tin học',
+      name: 'Sơ kết Học kỳ 1 & Báo cáo sản phẩm số đa phương tiện Lớp 9',
+      periods: 1,
+      yccd: '- Báo cáo sản phẩm số trực quan, infographic và sơ kết đánh giá kết quả học tập Tin học HK1.'
     },
     {
       week: 19,
@@ -1785,40 +1789,40 @@ export const SECONDARY_INFORMATICS_DATA: Record<number, InformaticsLessonDef[]> 
     },
     {
       week: 31,
-      topic: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính',
-      name: 'Bài 16: Thực hành: Lập trình chương trình máy tính (Tiết 2)',
+      topic: 'Đánh giá định kỳ',
+      name: 'Kiểm tra, đánh giá cuối Học kỳ 2 môn Tin học Lớp 9',
       periods: 1,
-      yccd: '- Kiểm thử chương trình với các bộ dữ liệu thử nghiệm khác nhau (Test cases).\n- Phát hiện và sửa lỗi, hoàn thiện chương trình chạy ổn định, chính xác.'
+      yccd: '- Đánh giá tổng kết mức độ hoàn thành Chuẩn đầu ra Chương trình môn Tin học cấp THCS (Lớp 6 đến Lớp 9) theo CT GDPT 2018.',
+      notes: 'Kiểm tra cuối kỳ 2'
     },
-    // Chủ đề 6: Hướng nghiệp với tin học
     {
       week: 32,
       topic: 'Chủ đề 6: Hướng nghiệp với tin học',
-      name: 'Bài 17: Tin học và thế giới nghề nghiệp (Tiết 1)',
+      name: 'Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành phân tích dữ liệu & Hướng nghiệp số',
       periods: 1,
-      yccd: '- Khám phá bức tranh tổng thể các ngành nghề thuộc lĩnh vực Công nghệ thông tin trong kỷ nguyên số: Trí tuệ nhân tạo (AI), Khoa học dữ liệu, An ninh mạng, Phát triển phần mềm, Thiết kế vi mạch bán dẫn.\n- Nhận diện nhu cầu nhân lực chất lượng cao trong cuộc Cách mạng công nghiệp 4.0.'
+      yccd: '- Chữa bài kiểm tra cuối năm, hoàn thiện kỹ năng lập trình và phân tích bảng tính.'
     },
     {
       week: 33,
       topic: 'Chủ đề 6: Hướng nghiệp với tin học',
-      name: 'Bài 17: Tin học và thế giới nghề nghiệp (Tiết 2)',
+      name: 'Dự án STEM Tin học 9: "Thiết kế Website cá nhân & Sản phẩm số tốt nghiệp THCS"',
       periods: 1,
-      yccd: '- Phân tích các yêu cầu về kiến thức chuyên môn, kĩ năng mềm và đạo đức nghề nghiệp trong ngành CNTT.\n- Định hướng lựa chọn nhóm môn học chuyên sâu (Tin học, Công nghệ, KHTN) khi bước vào bậc THPT (Lớp 10).'
+      yccd: '- Xây dựng trang Portfolio cá nhân giới thiệu thành tích học tập và sản phẩm số 4 năm THCS.',
+      notes: 'Dự án STEM'
     },
     {
       week: 34,
       topic: 'Chủ đề 6: Hướng nghiệp với tin học',
-      name: 'Ôn tập tổng hợp cuối năm học môn Tin học 9 (1 tiết)',
+      name: 'Bài 16: Ôn tập toàn diện chuẩn bị chuyển cấp vào lớp 10 THPT môn Tin học',
       periods: 1,
-      yccd: '- Hệ thống hóa toàn bộ kiến thức cốt lõi 6 chủ đề môn Tin học Lớp 9.\n- Tổng kết năng lực Tin học cấp THCS, sẵn sàng hành trang bước vào bậc THPT.'
+      yccd: '- Hệ thống hóa toàn bộ kiến thức Tin học cấp THCS, sẵn sàng định hướng học tập Tin học Lớp 10 THPT.'
     },
     {
       week: 35,
       topic: 'Đánh giá định kỳ',
-      name: 'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Tin học 9',
+      name: 'Tổng kết năm học & Xét hoàn thành chương trình Tin học cấp THCS',
       periods: 1,
-      yccd: '- Đánh giá tổng kết mức độ hoàn thành Chuẩn đầu ra Chương trình môn Tin học cấp THCS (Lớp 6 đến Lớp 9) theo CT GDPT 2018.',
-      notes: 'Kiểm tra cuối kỳ 2'
+      yccd: '- Tổng kết đánh giá kết quả học tập và xét hoàn thành chương trình Tin học cấp THCS.'
     }
   ]
 };
@@ -1846,10 +1850,9 @@ export const HIGH_SCHOOL_INFORMATICS_DATA: Record<number, InformaticsLessonDef[]
       { w: 13, t: 'Chủ đề 4: Ứng dụng tin học', n: 'Bài 13: Phần mềm soạn thảo văn bản và bảng tính nâng cao (Tiết 1, 2)', y: '- Soạn thảo văn bản học thuật: Tạo mục lục tự động, chú thích nguồn (Citation), đánh số trang.\n- Xử lý bảng biểu phức tạp trong Word.' },
       { w: 14, t: 'Chủ đề 4: Ứng dụng tin học', n: 'Bài 14: Xử lý dữ liệu bảng tính với công thức và hàm phức hợp (Tiết 1, 2)', y: '- Sử dụng các hàm lồng nhau IF, AND, OR, VLOOKUP, INDEX, MATCH trong Excel.\n- Phân tích dữ liệu bằng PivotTable.' },
       { w: 15, t: 'Chủ đề 4: Ứng dụng tin học', n: 'Bài 15: Tạo bài trình chiếu đa phương tiện chuyên nghiệp (Tiết 1, 2)', y: '- Thiết kế bài thuyết trình báo cáo khoa học bằng PowerPoint nâng cao.\n- Tích hợp đồ thị động, âm thanh và video tương tác.' },
-      { w: 16, t: 'Chủ đề 4: Ứng dụng tin học', n: 'Bài 16: Làm quen với phần mềm thiết kế đồ họa Inkscape (Tiết 1, 2)', y: '- Khám phá giao diện phần mềm đồ họa vector Inkscape.\n- Sử dụng công cụ vẽ đường cong Bezier và xử lý nút (Nodes).' },
-      { w: 17, t: 'Chủ đề 4: Ứng dụng tin học', n: 'Bài 17: Thiết kế ấn phẩm đồ họa vector (Tiết 1, 2)', y: '- Thiết kế logo, banner và infographic truyền thông số.\n- Phối màu và xuất bản file vector SVG, PDF, PNG chất lượng cao.' },
-      { w: 18, t: 'Đánh giá định kỳ', n: 'Ôn tập tổng hợp kiến thức Tin học Học kỳ 1 Lớp 10 (Tiết 1)', y: '- Hệ thống hóa toàn bộ kiến thức 4 chủ đề môn Tin học 10.' },
-      { w: 18, t: 'Đánh giá định kỳ', n: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Tin học 10 (Tiết 2)', y: '- Đánh giá tổng hợp lý thuyết và thực hành Tin học 10 trong Học kỳ 1.', isCK: true },
+      { w: 16, t: 'Đánh giá định kỳ', n: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Tin học 10 (Tiết 1, 2)', y: '- Đánh giá tổng hợp lý thuyết và thực hành Tin học 10 trong Học kỳ 1.', isCK: true },
+      { w: 17, t: 'Đánh giá định kỳ', n: 'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức Tin học 10 (Tiết 1, 2)', y: '- Chữa bài kiểm tra cuối HK1, sửa lỗi thực hành và củng cố kiến thức đồ họa Inkscape.' },
+      { w: 18, t: 'Chủ đề 4: Ứng dụng tin học', n: 'Sơ kết Học kỳ 1 & Báo cáo sản phẩm Thiết kế đồ họa Inkscape (Tiết 1, 2)', y: '- Trưng bày và báo cáo sản phẩm đồ họa vector, đánh giá xếp loại học tập HK1.' },
       // Học kỳ 2: Lập trình Python (Chủ đề 5)
       { w: 19, t: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính (Python)', n: 'Bài 18: Làm quen với ngôn ngữ lập trình Python và môi trường IDLE (Tiết 1, 2)', y: '- Cài đặt Python và tìm hiểu môi trường IDLE/VS Code.\n- Câu lệnh print() và cấu trúc chương trình Python đầu tiên.' },
       { w: 20, t: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính (Python)', n: 'Bài 19: Các kiểu dữ liệu cơ bản, biến và phép toán số học trong Python (Tiết 1, 2)', y: '- Kiểu dữ liệu int, float, str, bool, toán tử số học +, -, *, /, //, %, **.\n- Khai báo và sử dụng biến số trong tính toán.' },
@@ -1864,12 +1867,11 @@ export const HIGH_SCHOOL_INFORMATICS_DATA: Record<number, InformaticsLessonDef[]
       { w: 28, t: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính (Python)', n: 'Bài 27: Hàm (Function) trong Python: Định nghĩa và gọi hàm (Tiết 1, 2)', y: '- Cú pháp định nghĩa hàm def và câu lệnh return trả về giá trị.\n- Lợi ích của việc tái sử dụng mã nguồn và chia nhỏ chương trình thành các hàm.' },
       { w: 29, t: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính (Python)', n: 'Bài 28: Phạm vi của biến và tham số trong hàm (Tiết 1, 2)', y: '- Phân biệt biến cục bộ (Local) và biến toàn cục (Global).\n- Truyền tham số mặc định và tham số từ khóa trong Python.' },
       { w: 30, t: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính (Python)', n: 'Bài 29: Kỹ thuật kiểm thử và gỡ lỗi chương trình Python (Tiết 1, 2)', y: '- Phân biệt các loại lỗi: Lỗi cú pháp (SyntaxError), Lỗi khi chạy (RuntimeError), Lỗi logic.\n- Kỹ thuật đặt bẫy lỗi try - except và sử dụng công cụ Debugger.' },
-      { w: 31, t: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính (Python)', n: 'Bài 30: Thực hành: Dự án phần mềm Python mini (Tiết 1, 2)', y: '- Thiết kế bài toán phần mềm: Quản lý thư viện hoặc Ứng dụng giải toán tự động.\n- Viết mã nguồn hoàn thiện các chức năng chương trình.' },
-      { w: 32, t: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính (Python)', n: 'Bài 31: Hoàn thiện và báo cáo dự án lập trình Python (Tiết 1, 2)', y: '- Kiểm thử và tối ưu hóa hiệu năng mã nguồn.\n- Báo cáo và chạy thử nghiệm sản phẩm trước hội đồng lớp.' },
-      { w: 33, t: 'Chủ đề 6: Hướng nghiệp với tin học', n: 'Bài 32: Nghề nghiệp trong lĩnh vực công nghệ thông tin và chuyển đổi số (Tiết 1, 2)', y: '- Các vị trí việc làm trọng điểm: Kỹ sư AI, Khoa học dữ liệu, An ninh mạng, Lập trình Web/Mobile.\n- Yêu cầu về kiến thức, kỹ năng và phẩm chất cần thiết của nhân lực CNTT.' },
-      { w: 34, t: 'Chủ đề 6: Hướng nghiệp với tin học', n: 'Bài 33: Thị trường lao động và xu hướng phát triển nghề CNTT (Tiết 1, 2)', y: '- Xu hướng phát triển công nghệ: Trí tuệ nhân tạo, Điện toán biên, Bán dẫn.\n- Lập kế hoạch học tập đại học và phát triển năng lực cá nhân.' },
-      { w: 35, t: 'Đánh giá định kỳ', n: 'Ôn tập toàn diện kiến thức Tin học Lớp 10 (Tiết 1)', y: '- Hệ thống hóa toàn bộ kiến thức Tin học Lớp 10.' },
-      { w: 35, t: 'Đánh giá định kỳ', n: 'Kiểm tra, đánh giá cuối Học kỳ 2 môn Tin học 10 (Tiết 2)', y: '- Đánh giá tổng kết môn Tin học Lớp 10 theo Chuẩn đầu ra CT GDPT 2018.', isCK: true }
+      { w: 31, t: 'Đánh giá định kỳ', n: 'Kiểm tra, đánh giá cuối Học kỳ 2 môn Tin học 10 (Tiết 1, 2)', y: '- Đánh giá tổng kết môn Tin học Lớp 10 theo Chuẩn đầu ra CT GDPT 2018.', isCK: true },
+      { w: 32, t: 'Đánh giá định kỳ', n: 'Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành tối ưu hóa mã nguồn Python (Tiết 1, 2)', y: '- Chữa bài kiểm tra, chuẩn hóa phong cách viết mã Python (PEP 8).' },
+      { w: 33, t: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính (Python)', n: 'Dự án STEM Tin học 10: "Xây dựng Ứng dụng Quản lý Thư viện / Giải toán tự động bằng Python" (Tiết 1, 2)', y: '- Báo cáo và chạy thử nghiệm sản phẩm phần mềm trước hội đồng lớp.' },
+      { w: 34, t: 'Chủ đề 6: Hướng nghiệp với tin học', n: 'Bài 32: Nghề nghiệp CNTT & Xu hướng thị trường lao động số (Tiết 1, 2)', y: '- Xu hướng công nghệ AI, bán dẫn, an ninh mạng và kế hoạch phát triển năng lực số.' },
+      { w: 35, t: 'Đánh giá định kỳ', n: 'Tổng kết năm học & Đánh giá xếp loại cả năm môn Tin học 10 (Tiết 1, 2)', y: '- Đánh giá kết quả học tập và định hướng chuyên đề học tập Lớp 11.' }
     ];
 
     topics10.forEach((item) => {
@@ -1877,7 +1879,7 @@ export const HIGH_SCHOOL_INFORMATICS_DATA: Record<number, InformaticsLessonDef[]
         week: item.w,
         topic: item.t,
         name: item.n,
-        periods: 1,
+        periods: item.w === 9 || item.w === 26 ? 1 : 2,
         yccd: item.y,
         equipment: 'Phòng máy tính kết nối Internet tốc độ cao, Python 3.12, VS Code, Inkscape, MS Office, máy chiếu',
         location: 'Phòng học bộ môn Tin học',
@@ -1906,10 +1908,9 @@ export const HIGH_SCHOOL_INFORMATICS_DATA: Record<number, InformaticsLessonDef[]
       { w: 13, t: 'Chủ đề 4: Ứng dụng tin học (Truy vấn CSDL với SQL)', n: 'Bài 13: Ngôn ngữ truy vấn có cấu trúc SQL: Lệnh SELECT cơ bản (Tiết 1, 2)', y: '- Cú pháp câu lệnh SELECT, FROM để trích xuất dữ liệu từ một bảng.\n- Đổi tên cột hiển thị bằng bí danh AS và loại bỏ trùng lặp bằng DISTINCT.' },
       { w: 14, t: 'Chủ đề 4: Ứng dụng tin học (Truy vấn CSDL với SQL)', n: 'Bài 14: Truy vấn dữ liệu có điều kiện WHERE, ORDER BY, GROUP BY (Tiết 1, 2)', y: '- Sử dụng mệnh đề WHERE với các toán tử so sánh và logic.\n- Sắp xếp kết quả bằng ORDER BY và gom nhóm dữ liệu bằng GROUP BY kết hợp các hàm COUNT, SUM, AVG.' },
       { w: 15, t: 'Chủ đề 4: Ứng dụng tin học (Truy vấn CSDL với SQL)', n: 'Bài 15: Cập nhật dữ liệu bằng INSERT, UPDATE, DELETE (Tiết 1, 2)', y: '- Cú pháp thêm bản ghi mới (INSERT INTO), sửa dữ liệu (UPDATE) và xóa dữ liệu (DELETE).\n- Chú ý an toàn dữ liệu khi thực hiện cập nhật có điều kiện.' },
-      { w: 16, t: 'Chủ đề 4: Ứng dụng tin học (Truy vấn CSDL với SQL)', n: 'Bài 16: Thiết kế biểu mẫu (Form) và báo cáo (Report) (Tiết 1, 2)', y: '- Thiết kế giao diện nhập liệu trực quan bằng Form.\n- Tạo báo cáo tổng hợp dữ liệu chuyên nghiệp bằng Report.' },
-      { w: 17, t: 'Chủ đề 4: Ứng dụng tin học (Truy vấn CSDL với SQL)', n: 'Bài 17: Thực hành: Xây dựng CSDL quản lý học sinh (Tiết 1, 2)', y: '- Xây dựng trọn vẹn CSDL "Quản lý điểm học sinh THPT".\n- Viết các câu truy vấn phức hợp truy xuất danh sách khen thưởng học sinh giỏi.' },
-      { w: 18, t: 'Đánh giá định kỳ', n: 'Ôn tập CSDL và Kiến trúc máy tính Học kỳ 1 (Tiết 1)', y: '- Hệ thống hóa toàn bộ kiến thức CSDL quan hệ và truy vấn SQL.' },
-      { w: 18, t: 'Đánh giá định kỳ', n: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Tin học 11 (Tiết 2)', y: '- Đánh giá tổng hợp CSDL và SQL trong Học kỳ 1.', isCK: true },
+      { w: 16, t: 'Đánh giá định kỳ', n: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Tin học 11 (Tiết 1, 2)', y: '- Đánh giá tổng hợp CSDL và SQL trong Học kỳ 1.', isCK: true },
+      { w: 17, t: 'Đánh giá định kỳ', n: 'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố CSDL quan hệ và truy vấn SQL (Tiết 1, 2)', y: '- Chữa bài kiểm tra, tối ưu hóa các câu lệnh SQL nâng cao.' },
+      { w: 18, t: 'Chủ đề 4: Ứng dụng tin học', n: 'Sơ kết Học kỳ 1 & Báo cáo dự án Cơ sở dữ liệu ứng dụng Lớp 11 (Tiết 1, 2)', y: '- Báo cáo sản phẩm CSDL quản lý bán hàng / quản lý học sinh.' },
       // Học kỳ 2: Thuật toán & Lập trình OOP (Chủ đề 5)
       { w: 19, t: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính (Thuật toán & OOP)', n: 'Bài 18: Kỹ thuật đệ quy và chia để trị (Tiết 1, 2)', y: '- Khái niệm đệ quy, điều kiện dừng và bước đệ quy.\n- Lập trình bài toán Tháp Hà Nội, tính dãy Fibonacci và tìm kiếm nhị phân đệ quy.' },
       { w: 20, t: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính (Thuật toán & OOP)', n: 'Bài 19: Các thuật toán sắp xếp nâng cao (Quick Sort, Merge Sort) (Tiết 1, 2)', y: '- Ý tưởng và phân tích độ phức tạp thời gian O(N log N) của Quick Sort và Merge Sort.\n- Lập trình cài đặt thuật toán sắp xếp nâng cao trên Python.' },
@@ -1924,12 +1925,11 @@ export const HIGH_SCHOOL_INFORMATICS_DATA: Record<number, InformaticsLessonDef[]
       { w: 28, t: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính (Thuật toán & OOP)', n: 'Bài 27: Thư viện đồ họa Tkinter: Tạo giao diện người dùng GUI (Tiết 1, 2)', y: '- Khám phá thư viện Tkinter: Cửa sổ chính, nhãn Label, nút bấm Button, ô nhập Entry.\n- Bố trí giao diện bằng phương thức pack() và grid().' },
       { w: 29, t: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính (Thuật toán & OOP)', n: 'Bài 28: Thiết kế ứng dụng máy tính cầm tay với Tkinter (Tiết 1, 2)', y: '- Lập trình xử lý sự kiện bấm nút và tính toán biểu thức toán học.\n- Hoàn thiện giao diện ứng dụng máy tính bỏ túi trực quan.' },
       { w: 30, t: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính (Thuật toán & OOP)', n: 'Bài 29: Dự án: Lập trình phần mềm quản lý thư viện mini (Tiết 1, 2)', y: '- Thiết kế phần mềm quản lý sách kết hợp lập trình OOP, File I/O và giao diện Tkinter.\n- Phân công nhiệm vụ các mô-đun trong nhóm.' },
-      { w: 31, t: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính (Thuật toán & OOP)', n: 'Bài 30: Kiểm thử, đóng gói và hoàn thiện ứng dụng (Tiết 1, 2)', y: '- Kiểm thử tự động và xử lý các ca lỗi dữ liệu.\n- Đóng gói chương trình Python thành tệp thực thi .exe độc lập.' },
-      { w: 32, t: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính (Thuật toán & OOP)', n: 'Bài 31: Báo cáo dự án phần mềm trước hội đồng lớp (Tiết 1, 2)', y: '- Trình bày sản phẩm phần mềm, bảo vệ kiến trúc thiết kế và trả lời câu hỏi phản biện.' },
-      { w: 33, t: 'Chủ đề 6: Hướng nghiệp với tin học', n: 'Bài 32: Kỹ sư phần mềm và chuyên viên an ninh mạng (Tiết 1, 2)', y: '- Phân tích vai trò của Kỹ sư phần mềm (Software Engineer) và Chuyên viên an ninh mạng (Security Analyst).\n- Các chứng chỉ nghề nghiệp quốc tế giá trị (CompTIA Security+, AWS, Cisco CCNA).' },
-      { w: 34, t: 'Chủ đề 6: Hướng nghiệp với tin học', n: 'Bài 33: Lập kế hoạch nghề nghiệp và phát triển năng lực số cá nhân (Tiết 1, 2)', y: '- Xây dựng lộ trình học tập, chuẩn bị hồ sơ ứng tuyển (CV) và danh mục dự án cá nhân (Portfolio).\n- Đón đầu thị trường việc làm công nghệ toàn cầu.' },
-      { w: 35, t: 'Đánh giá định kỳ', n: 'Ôn tập toàn diện kiến thức Tin học Lớp 11 (Tiết 1)', y: '- Hệ thống hóa toàn bộ kiến thức Tin học Lớp 11.' },
-      { w: 35, t: 'Đánh giá định kỳ', n: 'Kiểm tra, đánh giá cuối Học kỳ 2 môn Tin học 11 (Tiết 2)', y: '- Đánh giá tổng kết môn Tin học Lớp 11 theo Chuẩn đầu ra CT GDPT 2018.', isCK: true }
+      { w: 31, t: 'Đánh giá định kỳ', n: 'Kiểm tra, đánh giá cuối Học kỳ 2 môn Tin học 11 (Tiết 1, 2)', y: '- Đánh giá tổng kết môn Tin học Lớp 11 theo Chuẩn đầu ra CT GDPT 2018.', isCK: true },
+      { w: 32, t: 'Đánh giá định kỳ', n: 'Chữa bài kiểm tra cuối HK2 & Hoạt động thực hành lập trình hướng đối tượng OOP (Tiết 1, 2)', y: '- Chữa bài kiểm tra và sửa lỗi thuật toán nâng cao.' },
+      { w: 33, t: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính (Thuật toán & OOP)', n: 'Dự án STEM Tin học 11: "Xây dựng Phần mềm Quản lý Hướng đối tượng OOP" (Tiết 1, 2)', y: '- Báo cáo dự án phần mềm trước hội đồng lớp.' },
+      { w: 34, t: 'Chủ đề 6: Hướng nghiệp với tin học', n: 'Bài 32: Kỹ sư phần mềm, an ninh mạng và lập kế hoạch nghề nghiệp số (Tiết 1, 2)', y: '- Xây dựng lộ trình học tập, chuẩn bị hồ sơ ứng tuyển (CV) và portfolio dự án.' },
+      { w: 35, t: 'Đánh giá định kỳ', n: 'Tổng kết năm học & Đánh giá xếp loại cả năm môn Tin học 11 (Tiết 1, 2)', y: '- Đánh giá kết quả học tập và chuẩn bị chuyển lên Lớp 12 tốt nghiệp.' }
     ];
 
     topics11.forEach((item) => {
@@ -1937,7 +1937,7 @@ export const HIGH_SCHOOL_INFORMATICS_DATA: Record<number, InformaticsLessonDef[]
         week: item.w,
         topic: item.t,
         name: item.n,
-        periods: 1,
+        periods: item.w === 9 || item.w === 26 ? 1 : 2,
         yccd: item.y,
         equipment: 'Phòng máy tính kết nối Internet tốc độ cao, MySQL / MS Access, Python 3.12, VS Code, máy chiếu',
         location: 'Phòng học bộ môn Tin học',
@@ -1966,10 +1966,9 @@ export const HIGH_SCHOOL_INFORMATICS_DATA: Record<number, InformaticsLessonDef[]
       { w: 13, t: 'Chủ đề 4: Ứng dụng tin học (Thiết kế Website HTML5 & CSS3)', n: 'Bài 13: Tổng quan về kiến trúc Web và ngôn ngữ đánh dấu HTML5 (Tiết 1, 2)', y: '- Kiến trúc Client - Server trong ứng dụng Web.\n- Cấu trúc cơ bản của tài liệu HTML5: <!DOCTYPE html>, <html>, <head>, <body> và các thẻ tiêu đề, đoạn văn.' },
       { w: 14, t: 'Chủ đề 4: Ứng dụng tin học (Thiết kế Website HTML5 & CSS3)', n: 'Bài 14: Các thẻ cấu trúc, bảng và biểu mẫu trong HTML5 (Tiết 1, 2)', y: '- Các thẻ ngữ nghĩa: <header>, <nav>, <main>, <section>, <article>, <footer>.\n- Tạo bảng <table> và biểu mẫu nhập liệu <form> với các trường input, select, button.' },
       { w: 15, t: 'Chủ đề 4: Ứng dụng tin học (Thiết kế Website HTML5 & CSS3)', n: 'Bài 15: Định dạng giao diện Web với Cascading Style Sheets (CSS3) (Tiết 1, 2)', y: '- Cú pháp CSS, bộ chọn (Selectors: Element, Class, ID) và mô hình hộp (Box Model: Margin, Border, Padding, Content).\n- Định dạng màu sắc, phông chữ và nền trang Web.' },
-      { w: 16, t: 'Chủ đề 4: Ứng dụng tin học (Thiết kế Website HTML5 & CSS3)', n: 'Bài 16: Thiết kế giao diện Web đáp ứng (Responsive Web Design) (Tiết 1, 2)', y: '- Kỹ thuật Flexbox và CSS Grid trong bố cục trang Web hiện đại.\n- Sử dụng Media Queries để giao diện tự động thích ứng với màn hình điện thoại, máy tính bảng và máy tính.' },
-      { w: 17, t: 'Chủ đề 4: Ứng dụng tin học (Thiết kế Website HTML5 & CSS3)', n: 'Bài 17: Làm quen với ngôn ngữ lập trình JavaScript trên trình duyệt (Tiết 1, 2)', y: '- Nhúng mã JavaScript vào trang HTML.\n- Khai báo biến (let, const), hàm và câu lệnh điều khiển trong JavaScript.' },
-      { w: 18, t: 'Đánh giá định kỳ', n: 'Ôn tập tổng hợp AI, Mạng và Thiết kế Web Học kỳ 1 (Tiết 1)', y: '- Hệ thống hóa toàn bộ kiến thức AI, Mạng TCP/IP và Lập trình HTML5/CSS3.' },
-      { w: 18, t: 'Đánh giá định kỳ', n: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Tin học 12 (Tiết 2)', y: '- Đánh giá tổng hợp lý thuyết và kỹ năng thiết kế Web trong Học kỳ 1.', isCK: true },
+      { w: 16, t: 'Đánh giá định kỳ', n: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Tin học 12 (Tiết 1, 2)', y: '- Đánh giá tổng hợp lý thuyết và kỹ năng thiết kế Web trong Học kỳ 1.', isCK: true },
+      { w: 17, t: 'Đánh giá định kỳ', n: 'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố Responsive Web & JavaScript (Tiết 1, 2)', y: '- Chữa bài kiểm tra, chuẩn hóa giao diện Web đa nền tảng.' },
+      { w: 18, t: 'Chủ đề 4: Ứng dụng tin học', n: 'Sơ kết Học kỳ 1 & Báo cáo dự án Giao diện Web Responsive Lớp 12 (Tiết 1, 2)', y: '- Trưng bày và đánh giá các website giao diện số HK1.' },
       // Học kỳ 2: Dự án phát triển Web & Ứng dụng AI (Chủ đề 5)
       { w: 19, t: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính (Dự án Web & AI)', n: 'Bài 18: Lập trình xử lý sự kiện và tương tác DOM với JavaScript (Tiết 1, 2)', y: '- Truy xuất và thay đổi phần tử DOM bằng getElementById, querySelector.\n- Bắt sự kiện người dùng (click, change, submit) để tạo hiệu ứng tương tác động.' },
       { w: 20, t: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính (Dự án Web & AI)', n: 'Bài 19: Kết nối Website với API và dịch vụ Web (Tiết 1, 2)', y: '- Khái niệm RESTful API và định dạng dữ liệu trao đổi JSON.\n- Sử dụng hàm fetch() để lấy dữ liệu thời tiết, tin tức từ máy chủ về hiển thị lên Web.' },
@@ -1984,12 +1983,11 @@ export const HIGH_SCHOOL_INFORMATICS_DATA: Record<number, InformaticsLessonDef[]
       { w: 28, t: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính (Dự án Web & AI)', n: 'Bài 27: Tích hợp cơ sở dữ liệu và hệ thống phản hồi tự động (Tiết 1, 2)', y: '- Xây dựng tính năng đăng ký thành viên, gửi góp ý và lưu trữ vào cơ sở dữ liệu.\n- Thiết lập thông báo tự động phản hồi người dùng.' },
       { w: 29, t: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính (Dự án Web & AI)', n: 'Bài 28: Kiểm thử an ninh, tối ưu tốc độ tải trang và SEO Web (Tiết 1, 2)', y: '- Tối ưu hóa dung lượng hình ảnh, nén mã nguồn và kiểm tra điểm số Google PageSpeed Insights.\n- Thêm các thẻ meta SEO tối ưu hóa tìm kiếm.' },
       { w: 30, t: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính (Dự án Web & AI)', n: 'Bài 29: Hoàn thiện sản phẩm số và đóng gói mã nguồn (Tiết 1, 2)', y: '- Rà soát toàn diện lỗi hiển thị trên nhiều trình duyệt và thiết bị khác nhau.\n- Hoàn thiện tài liệu hướng dẫn sử dụng và báo cáo kỹ thuật.' },
-      { w: 31, t: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính (Dự án Web & AI)', n: 'Bài 30: Báo cáo và bảo vệ sản phẩm Website trước hội đồng giám khảo lớp (Tiết 1, 2)', y: '- Thuyết trình demo sản phẩm Website trực tiếp, giải thích giải pháp công nghệ và ứng dụng AI tích hợp.' },
-      { w: 32, t: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính (Dự án Web & AI)', n: 'Bài 31: Triển lãm sản phẩm số tốt nghiệp THPT của học sinh (Tiết 1, 2)', y: '- Trưng bày và chia sẻ các sản phẩm Website tiêu biểu lên cổng thông tin trường học.' },
-      { w: 33, t: 'Chủ đề 6: Hướng nghiệp với tin học', n: 'Bài 32: Xu hướng nghề nghiệp trong kỷ nguyên Trí tuệ nhân tạo và Bán dẫn (Tiết 1, 2)', y: '- Phân tích sự chuyển dịch cơ cấu việc làm công nghệ: Kỹ sư Prompt, Kỹ sư phần mềm AI, Kỹ sư vi mạch bán dẫn.\n- Xu hướng việc làm linh hoạt từ xa (Remote) và hội nhập lao động toàn cầu.' },
-      { w: 34, t: 'Chủ đề 6: Hướng nghiệp với tin học', n: 'Bài 33: Lộ trình học tập đại học và định hướng nghề nghiệp CNTT (Tiết 1, 2)', y: '- Lựa chọn ngành học đại học phù hợp: Khoa học máy tính, Kỹ thuật phần mềm, Hệ thống thông tin, An toàn thông tin.\n- Xây dựng kế hoạch phát triển năng lực tự học suốt đời trong thời đại số.' },
-      { w: 35, t: 'Đánh giá định kỳ', n: 'Ôn tập toàn diện chuẩn bị tốt nghiệp THPT môn Tin học (Tiết 1)', y: '- Hệ thống hóa toàn bộ kiến thức 3 năm THPT môn Tin học.' },
-      { w: 35, t: 'Đánh giá định kỳ', n: 'Kiểm tra, đánh giá cuối Học kỳ 2 môn Tin học 12 (Tiết 2)', y: '- Đánh giá tổng kết hoàn thành Chương trình môn Tin học cấp THPT.', isCK: true }
+      { w: 31, t: 'Đánh giá định kỳ', n: 'Kiểm tra, đánh giá cuối Học kỳ 2 môn Tin học 12 (Tiết 1, 2)', y: '- Đánh giá tổng kết hoàn thành Chương trình môn Tin học cấp THPT.', isCK: true },
+      { w: 32, t: 'Đánh giá định kỳ', n: 'Chữa bài kiểm tra cuối HK2 & Hoạt động kiểm thử bảo mật Website (Tiết 1, 2)', y: '- Chữa bài kiểm tra, hoàn thiện tài liệu kỹ thuật.' },
+      { w: 33, t: 'Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính (Dự án Web & AI)', n: 'Dự án Tốt nghiệp STEM Tin học 12: "Website Trường học Số tích hợp AI" (Tiết 1, 2)', y: '- Triển lãm và báo cáo sản phẩm số tốt nghiệp THPT của học sinh.' },
+      { w: 34, t: 'Chủ đề 6: Hướng nghiệp với tin học', n: 'Bài 32: Xu hướng nghề nghiệp AI, Bán dẫn và Lộ trình Đại học CNTT (Tiết 1, 2)', y: '- Lựa chọn ngành học đại học phù hợp và kế hoạch tự học suốt đời.' },
+      { w: 35, t: 'Đánh giá định kỳ', n: 'Tổng kết năm học & Lễ bế giảng Khóa học Tin học cấp THPT (Tiết 1, 2)', y: '- Tổng kết đánh giá hoàn thành chương trình môn Tin học 12 và toàn khóa THPT.' }
     ];
 
     topics12.forEach((item) => {
@@ -1997,7 +1995,7 @@ export const HIGH_SCHOOL_INFORMATICS_DATA: Record<number, InformaticsLessonDef[]
         week: item.w,
         topic: item.t,
         name: item.n,
-        periods: 1,
+        periods: item.w === 9 || item.w === 26 ? 1 : 2,
         yccd: item.y,
         equipment: 'Phòng máy tính kết nối Internet tốc độ cao, VS Code, Node.js, GitHub, máy chiếu',
         location: 'Phòng học bộ môn Tin học',

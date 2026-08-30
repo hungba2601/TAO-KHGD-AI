@@ -1,8 +1,9 @@
-import { CurriculumItem, SchoolType } from '../../types';
+import { CurriculumItem, SchoolType, ConfigFormData } from '../../types';
 import { getNlsCodeForSubjectLesson } from '../constants/nlsGuides';
 import { getAiCodeForSubjectLesson } from '../constants/aiGuides';
 import { getNlsCodeForEnglishLesson } from '../constants/nlsGuidesEn';
 import { getAiCodeForEnglishLesson } from '../constants/aiGuidesEn';
+import { getTechnologySecondaryCurriculum } from './curriculumSecondaryTechnology';
 
 export interface RawSecondaryLesson {
   week: number;
@@ -381,9 +382,9 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         'Đọc: Cây tre Việt Nam (Thép Mới) & Nói và nghe: Giới thiệu về vẻ đẹp quê hương em (4 tiết)',
         'Bài 5: Những nẻo đường xứ sở - Đọc: Cô Tô (Nguyễn Tuân) & Thực hành tiếng Việt: Cụm động từ, Cụm tính từ (4 tiết)',
         'Đọc: Hang Én (Hà My) & Viết: Bài văn tả cảnh sinh hoạt (4 tiết)',
-        'Đọc: Cửu Long Giang ta ơi (Nguyên Hồng) & Nói và nghe: Thuyết minh về một danh lam thắng cảnh (4 tiết)',
-        'Ôn tập tổng hợp kiến thức Đọc hiểu, Tiếng Việt, Tập làm văn Học kỳ 1 (4 tiết)',
-        'Kiểm tra, đánh giá cuối Học kỳ 1 môn Ngữ văn 6 (4 tiết)'
+        'Kiểm tra, đánh giá cuối Học kỳ 1 môn Ngữ văn 6 (4 tiết)',
+        'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức Ngữ văn 6 HK1 (4 tiết)',
+        'Sơ kết Học kỳ 1 & Báo cáo sản phẩm Đọc hiểu văn học Lớp 6 (4 tiết)'
       ],
       term2: [
         'Bài 6: Bài học từ cuộc sống - Đọc: Bài học từ cây cau & Thực hành tiếng Việt: Dấu chấm phẩy, Dấu ngoặc kép (4 tiết)',
@@ -398,11 +399,11 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         'Bài 9: Trái Đất - ngôi nhà chung - Đọc: Trái Đất - cái nôi của sự sống & Thực hành tiếng Việt: Trạng ngữ (4 tiết)',
         'Đọc: Các loài tuyệt chủng đang tăng nhanh & Viết: Biên bản cuộc họp, thảo luận (4 tiết)',
         'Đọc: Sinh vật trên Trái Đất được hình thành như thế nào? & Viết: Tóm tắt văn bản thông tin (4 tiết)',
-        'Bài 10: Cuốn sách tôi yêu - Đọc: Nhà thơ Lò Ngân Sủn - người con của núi & Thực hành tiếng Việt: Lựa chọn từ ngữ (4 tiết)',
-        'Đọc: Bức thư của thủ lĩnh da đỏ (Xi-át-tơn) & Viết: Bài văn thuyết minh giới thiệu một cuốn sách (4 tiết)',
+        'Kiểm tra, đánh giá cuối Học kỳ 2 môn Ngữ văn 6 (4 tiết)',
+        'Chữa bài kiểm tra cuối HK2 & Ôn tập củng cố kiến thức Ngữ văn 6 HK2 (4 tiết)',
         'Dự án Ngữ văn 6: "Tuyển tập Tác phẩm Văn học Thiếu nhi & Sân khấu hóa Truyện cổ tích" (4 tiết)',
-        'Bài 11: Ôn tập toàn diện chuẩn bị kiểm tra cuối năm Ngữ văn 6 (4 tiết)',
-        'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Ngữ văn 6 (4 tiết)'
+        'Bài 11: Ôn tập toàn diện chuẩn bị tổng kết năm học môn Ngữ văn 6 (4 tiết)',
+        'Tổng kết năm học & Đánh giá xếp loại môn Ngữ văn 6 cả năm (4 tiết)'
       ]
     },
     7: {
@@ -422,9 +423,9 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         'Đọc: Bài ca Côn Sơn (Nguyễn Trãi) & Nói và nghe: Trình bày cảm xúc về một bài thơ (4 tiết)',
         'Bài 5: Màu sắc trăm miền - Đọc: Tháng Giêng, mơ về trăng non rét ngọt (Vũ Bằng) & Thực hành tiếng Việt: Dấu gạch nối (4 tiết)',
         'Đọc: Chuyện cơm hến (Hoàng Phủ Ngọc Tường) & Viết: Bài văn thuyết minh về quy tắc một trò chơi dân gian (4 tiết)',
-        'Đọc: Hội lồng tồng & Nói và nghe: Giới thiệu quy tắc một lễ hội hoặc trò chơi dân gian (4 tiết)',
-        'Ôn tập tổng hợp kiến thức Đọc hiểu, Tiếng Việt, Văn biểu cảm Học kỳ 1 (4 tiết)',
-        'Kiểm tra, đánh giá cuối Học kỳ 1 môn Ngữ văn 7 (4 tiết)'
+        'Kiểm tra, đánh giá cuối Học kỳ 1 môn Ngữ văn 7 (4 tiết)',
+        'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức Ngữ văn 7 HK1 (4 tiết)',
+        'Sơ kết Học kỳ 1 & Báo cáo sản phẩm Đọc hiểu văn học Lớp 7 (4 tiết)'
       ],
       term2: [
         'Bài 6: Bài học cuộc sống - Đọc: Đẽo cày giữa đường & Thực hành tiếng Việt: Nói quá và tác dụng (4 tiết)',
@@ -439,11 +440,11 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         'Bài 9: Hòa điệu với tự nhiên - Đọc: Thủy hải sản sông Cửu Long & Thực hành tiếng Việt: Phương tiện giao tiếp phi ngôn ngữ (4 tiết)',
         'Đọc: Thiên nhiên và con người trong truyện "Đất rừng phương Nam" & Viết: Bản tường trình sự việc (4 tiết)',
         'Đọc: Vẻ đẹp của dòng sông quê & Nói và nghe: Giải thích một quy tắc hoặc hiện tượng tự nhiên (4 tiết)',
-        'Bài 10: Trang sách và cuộc sống - Đọc: Bác Hồ và thiếu nhi & Thực hành tiếng Việt: Rút gọn câu (4 tiết)',
-        'Đọc: Tự học - chìa khóa của thành công & Viết: Bài văn phân tích một tác phẩm truyện ngắn (4 tiết)',
+        'Kiểm tra, đánh giá cuối Học kỳ 2 môn Ngữ văn 7 (4 tiết)',
+        'Chữa bài kiểm tra cuối HK2 & Ôn tập củng cố kiến thức Ngữ văn 7 HK2 (4 tiết)',
         'Dự án Ngữ văn 7: "Tuyển tập Tản văn Quê hương & Sân khấu Diễn xướng Thơ ca" (4 tiết)',
-        'Bài 11: Ôn tập toàn diện chuẩn bị kiểm tra cuối năm Ngữ văn 7 (4 tiết)',
-        'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Ngữ văn 7 (4 tiết)'
+        'Bài 11: Ôn tập toàn diện chuẩn bị tổng kết năm học môn Ngữ văn 7 (4 tiết)',
+        'Tổng kết năm học & Đánh giá xếp loại môn Ngữ văn 7 cả năm (4 tiết)'
       ]
     },
     8: {
@@ -463,9 +464,9 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         'Đọc: Một số giọng điệu của tiếng cười trong ca dao & Nói và nghe: Trình bày ý kiến về tác dụng của tiếng cười (4 tiết)',
         'Bài 5: Những gương mặt thân yêu - Đọc: Trong lòng mẹ (Trích Những ngày thơ ấu - Nguyên Hồng) & Thực hành tiếng Việt: Trợ từ, Thán từ (4 tiết)',
         'Đọc: Lão Hạc (Nam Cao) & Viết: Bài văn thuyết minh về một danh lam thắng cảnh (4 tiết)',
-        'Đọc: Cô bé bán diêm & Nói và nghe: Giới thiệu cuốn sách yêu thích về đề tài tình thương (4 tiết)',
-        'Ôn tập tổng hợp kiến thức Đọc hiểu, Tiếng Việt, Văn nghị luận Học kỳ 1 (4 tiết)',
-        'Kiểm tra, đánh giá cuối Học kỳ 1 môn Ngữ văn 8 (4 tiết)'
+        'Kiểm tra, đánh giá cuối Học kỳ 1 môn Ngữ văn 8 (4 tiết)',
+        'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức Ngữ văn 8 HK1 (4 tiết)',
+        'Sơ kết Học kỳ 1 & Báo cáo sản phẩm Đọc hiểu văn học Lớp 8 (4 tiết)'
       ],
       term2: [
         'Bài 6: Chân dung cuộc sống - Đọc: Mắt biếc (Nguyễn Nhật Ánh) & Thực hành tiếng Việt: Câu đơn và câu ghép (4 tiết)',
@@ -480,11 +481,11 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         'Bài 9: Hôm nay và ngày mai - Đọc: Cột mốc chủ quyền trên biển Đông & Thực hành tiếng Việt: Lựa chọn câu đơn/ghép (4 tiết)',
         'Đọc: Thông điệp nhân ngày Môi trường thế giới & Viết: Bản kiến nghị về một vấn đề đời sống (4 tiết)',
         'Đọc: Rác thải nhựa và hiểm họa môi trường & Viết: Bài văn thuyết minh giải thích một hiện tượng tự nhiên (4 tiết)',
-        'Bài 10: Sách - người bạn đồng hành - Đọc: Bàn về đọc sách (Chu Quang Tiềm) & Thực hành tiếng Việt: Chữa lỗi ngữ pháp (4 tiết)',
-        'Đọc: Ý nghĩa của văn chương (Hoài Thanh) & Viết: Giới thiệu cuốn sách làm thay đổi suy nghĩ của em (4 tiết)',
+        'Kiểm tra, đánh giá cuối Học kỳ 2 môn Ngữ văn 8 (4 tiết)',
+        'Chữa bài kiểm tra cuối HK2 & Ôn tập củng cố kiến thức Ngữ văn 8 HK2 (4 tiết)',
         'Dự án Ngữ văn 8: "Sáng tác Truyện ngắn & Diễn đàn Đọc sách Học đường THCS" (4 tiết)',
-        'Bài 11: Ôn tập toàn diện chuẩn bị kiểm tra cuối năm Ngữ văn 8 (4 tiết)',
-        'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Ngữ văn 8 (4 tiết)'
+        'Bài 11: Ôn tập toàn diện chuẩn bị tổng kết năm học môn Ngữ văn 8 (4 tiết)',
+        'Tổng kết năm học & Đánh giá xếp loại môn Ngữ văn 8 cả năm (4 tiết)'
       ]
     },
     9: {
@@ -504,9 +505,9 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         'Đọc: Chiếc lược ngà (Nguyễn Quang Sáng) & Nói và nghe: Phân tích tình cha con sâu sắc trong chiến tranh (4 tiết)',
         'Bài 5: Nhịp cầu kết nối - Đọc: Mùa xuân nho nhỏ (Thanh Hải) & Thực hành tiếng Việt: Sự liên kết câu và đoạn văn (4 tiết)',
         'Đọc: Viếng lăng Bác (Viễn Phương) & Viết: Bài văn thuyết minh về một danh nhân văn hóa (4 tiết)',
-        'Đọc: Sang thu (Hữu Thỉnh) & Nói và nghe: Lắng nghe và phản hồi ý kiến về một bài thơ trữ tình (4 tiết)',
-        'Ôn tập tổng hợp kiến thức Đọc hiểu truyện ngắn, thơ hiện đại và Kỹ năng viết bài nghị luận HK1 (4 tiết)',
-        'Kiểm tra, đánh giá cuối Học kỳ 1 môn Ngữ văn 9 (4 tiết)'
+        'Kiểm tra, đánh giá cuối Học kỳ 1 môn Ngữ văn 9 (4 tiết)',
+        'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức Ngữ văn 9 HK1 (4 tiết)',
+        'Sơ kết Học kỳ 1 & Báo cáo chuyên đề Văn học Lớp 9 (4 tiết)'
       ],
       term2: [
         'Bài 6: Vẻ đẹp của sự cống hiến - Đọc: Những ngôi sao xa xôi (Lê Minh Khuê) & Thực hành tiếng Việt: Thành phần gọi đáp, phụ chú (4 tiết)',
@@ -521,11 +522,11 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         'Bài 9: Hướng về tương lai - Đọc: Chuẩn bị hành trang vào thế kỉ mới (Vũ Khoan) & Thực hành tiếng Việt: Lỗi logic (4 tiết)',
         'Đọc: Bàn về bản lĩnh và khát vọng hội nhập & Viết: Bài văn nghị luận bàn về trách nhiệm của thanh niên thế hệ 2K (4 tiết)',
         'Đọc: Thư gửi học sinh nhân ngày khai trường đầu tiên của nước Việt Nam Độc lập & Nói và nghe: Hùng biện học đường (4 tiết)',
-        'Bài 10: Hành trang người học trò - Đọc: Phong cách Hồ Chí Minh (Lê Anh Trà) & Thực hành tiếng Việt: Tổng kết ngữ pháp (4 tiết)',
-        'Đọc: Tiếng Việt - nguồn cội và tương lai & Viết: Thư chia tay tuổi học trò và tri ân thầy cô trước ngày thi vào 10 (4 tiết)',
+        'Kiểm tra, đánh giá cuối Học kỳ 2 môn Ngữ văn 9 (4 tiết)',
+        'Chữa bài kiểm tra cuối HK2 & Ôn tập củng cố kiến thức Ngữ văn 9 HK2 (4 tiết)',
         'Dự án Ngữ văn 9: "Tuyển tập Tản văn Kỷ yếu Khóa học THCS & Sân khấu Diễn xướng Tác phẩm Lớp 9" (4 tiết)',
         'Luyện giải các đề thi tuyển sinh vào Lớp 10 THPT môn Ngữ văn chuẩn ma trận Bộ GD&ĐT (4 tiết)',
-        'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Ngữ văn 9 (4 tiết)'
+        'Tổng kết năm học & Đánh giá xếp loại môn Ngữ văn 9 cả năm (4 tiết)'
       ]
     }
   };
@@ -536,7 +537,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
   all35Weeks.forEach((name, idx) => {
     const w = idx + 1;
     const isGK = w === 9 || w === 26;
-    const isCK = w === 18 || w === 35;
+    const isCK = w === 16 || w === 31;
     const isProject = name.includes('Dự án') || name.includes('Sân khấu');
 
     list.push({
@@ -592,9 +593,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
       'Bài 11: Khóa lưỡng phân và phân loại thế giới sống (5 giới sinh vật) (4 tiết)',
       'Bài 12: Virus và Vi khuẩn (Cấu tạo, vai trò và một số bệnh do virus, vi khuẩn gây ra) (4 tiết)',
       'Bài 13: Đa dạng nguyên sinh vật và Đa dạng các loài nấm (4 tiết)',
-      'Bài 14: Đa dạng thực vật (Rêu, Dương xỉ, Hạt trần, Hạt kín) (4 tiết)',
-      'Ôn tập tổng hợp kiến thức Chất và Thế giới sống Học kỳ 1 (4 tiết)',
       'Kiểm tra, đánh giá cuối Học kỳ 1 môn KHTN 6 (4 tiết)',
+      'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức KHTN 6 HK1 (4 tiết)',
+      'Sơ kết Học kỳ 1 & Báo cáo sản phẩm thực hành KHTN 6 (4 tiết)',
       'Bài 15: Đa dạng động vật không xương sống (Ruột khoang, Giun, Thân mềm, Chân khớp) (4 tiết)',
       'Bài 16: Đa dạng động vật có xương sống (Cá, Lưỡng cư, Bò sát, Chim, Thú) (4 tiết)',
       'Bài 17: Đa dạng sinh học và Bảo vệ đa dạng sinh học ở Việt Nam (4 tiết)',
@@ -607,11 +608,11 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
       'Bài 23: Năng lượng và các dạng năng lượng (Động năng, thế năng, nhiệt năng, quang năng, điện năng) (4 tiết)',
       'Bài 24: Sự chuyển hóa năng lượng và Định luật bảo toàn năng lượng (4 tiết)',
       'Bài 25: Năng lượng tái tạo (Năng lượng mặt trời, gió, nước) và Tiết kiệm năng lượng (4 tiết)',
-      'Bài 26: Trái Đất và Mặt Trời: Hiện tượng ngày đêm, chuyển động nhìn thấy của Mặt Trời (4 tiết)',
-      'Bài 27: Mặt Trăng và các pha của Mặt Trăng (4 tiết)',
+      'Kiểm tra, đánh giá cuối Học kỳ 2 môn KHTN 6 (4 tiết)',
+      'Chữa bài kiểm tra cuối HK2 & Thực hành bổ trợ KHTN 6 (4 tiết)',
       'Dự án STEM KHTN 6: "Mô hình Bình lọc nước thông minh & Xe chạy bằng lực đàn hồi của lò xo" (4 tiết)',
-      'Bài 28: Ôn tập toàn diện chuẩn bị kiểm tra cuối năm KHTN 6 (4 tiết)',
-      'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn KHTN 6 (4 tiết)'
+      'Bài 28: Ôn tập toàn diện chuẩn bị tổng kết năm học môn KHTN 6 (4 tiết)',
+      'Tổng kết năm học & Đánh giá xếp loại môn KHTN 6 cả năm (4 tiết)'
     ],
     7: [
       'Mở đầu: Phương pháp và kĩ năng học tập môn KHTN (2 tiết) & Bài 1: Nguyên tử (2 tiết)',
@@ -629,9 +630,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
       'Bài 12: Nam châm, từ tính và từ trường. Từ phổ và đường sức từ (4 tiết)',
       'Bài 13: Từ trường Trái Đất và La bàn định hướng (4 tiết)',
       'Bài 14: Nam châm điện và ứng dụng trong công nghiệp (4 tiết)',
-      'Bài 15: Trao đổi chất và chuyển hóa năng lượng ở sinh vật (4 tiết)',
-      'Ôn tập tổng hợp kiến thức Vật lí và Hóa học Học kỳ 1 (4 tiết)',
       'Kiểm tra, đánh giá cuối Học kỳ 1 môn KHTN 7 (4 tiết)',
+      'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức KHTN 7 HK1 (4 tiết)',
+      'Sơ kết Học kỳ 1 & Báo cáo sản phẩm thực hành KHTN 7 (4 tiết)',
       'Bài 16: Quang hợp ở thực vật (Bản chất, phương trình và các nhân tố ảnh hưởng) (4 tiết)',
       'Bài 17: Hô hấp tế bào ở sinh vật (4 tiết)',
       'Bài 18: Khí khổng và sự trao đổi khí ở thực vật và động vật (4 tiết)',
@@ -644,11 +645,11 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
       'Bài 24: Sinh sản hữu tính ở sinh vật (Thụ phấn, thụ tinh, hình thành hạt và quả) (4 tiết)',
       'Bài 25: Các yếu tố ảnh hưởng đến sinh sản và điều khiển sinh sản ở sinh vật (4 tiết)',
       'Bài 26: Cơ thể sinh vật là một thể thống nhất (4 tiết)',
+      'Kiểm tra, đánh giá cuối Học kỳ 2 môn KHTN 7 (4 tiết)',
+      'Chữa bài kiểm tra cuối HK2 & Thực hành bổ trợ KHTN 7 (4 tiết)',
       'Dự án STEM KHTN 7: "Mô hình Nam châm điện nâng tải & Hệ thống trồng cây thủy canh thông minh" (4 tiết)',
-      'Bài 27: Ôn tập toàn diện kiến thức Sinh học và Sinh thái học Lớp 7 (4 tiết)',
-      'Bài 28: Hệ thống hóa kiến thức KHTN cả năm học (4 tiết)',
-      'Luyện giải đề thi KHTN 7 chuẩn ma trận Bộ GD&ĐT (4 tiết)',
-      'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn KHTN 7 (4 tiết)'
+      'Bài 28: Ôn tập toàn diện chuẩn bị tổng kết năm học môn KHTN 7 (4 tiết)',
+      'Tổng kết năm học & Đánh giá xếp loại môn KHTN 7 cả năm (4 tiết)'
     ],
     8: [
       'Chương I: Phản ứng hóa học - Bài 1: Biến đổi vật lí và biến đổi hóa học. Phản ứng hóa học (4 tiết)',
@@ -666,9 +667,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
       'Bài 12: Áp suất chất lỏng và áp suất khí quyển (4 tiết)',
       'Bài 13: Lực đẩy Archimedes và điều kiện vật nổi, vật chìm (4 tiết)',
       'Chương IV: Tác dụng làm quay của lực - Bài 14: Đòn bẩy và ứng dụng của đòn bẩy trong đời sống (4 tiết)',
-      'Bài 15: Moment lực và điều kiện cân bằng của vật có trục quay cố định (4 tiết)',
-      'Ôn tập tổng hợp kiến thức Hóa học và Cơ học Học kỳ 1 (4 tiết)',
       'Kiểm tra, đánh giá cuối Học kỳ 1 môn KHTN 8 (4 tiết)',
+      'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức KHTN 8 HK1 (4 tiết)',
+      'Sơ kết Học kỳ 1 & Báo cáo sản phẩm thực hành KHTN 8 (4 tiết)',
       'Chương V: Điện - Bài 16: Hiện tượng nhiễm điện do cọ xát. Dòng điện và nguồn điện (4 tiết)',
       'Bài 17: Mạch điện đơn giản. Cường độ dòng điện và Hiệu điện thế (4 tiết)',
       'Bài 18: Tác dụng nhiệt, phát sáng, hóa học và từ của dòng điện (4 tiết)',
@@ -681,11 +682,11 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
       'Bài 24: Hệ tuần hoàn và Máu (Nhóm máu, truyền máu, bảo vệ tim mạch) (4 tiết)',
       'Bài 25: Hệ hô hấp và bảo vệ hệ hô hấp khỏe mạnh (4 tiết)',
       'Bài 26: Hệ bài tiết và chăm sóc hệ bài tiết nước tiểu (4 tiết)',
-      'Bài 27: Hệ thần kinh và các giác quan (Thị giác, thính giác) (4 tiết)',
-      'Bài 28: Hệ nội tiết và Hệ sinh sản (Vệ sinh tuổi dậy thì) (4 tiết)',
+      'Kiểm tra, đánh giá cuối Học kỳ 2 môn KHTN 8 (4 tiết)',
+      'Chữa bài kiểm tra cuối HK2 & Thực hành bổ trợ KHTN 8 (4 tiết)',
       'Dự án STEM KHTN 8: "Chế tạo Tàu ngầm Mini ứng dụng Lực đẩy Archimedes & Máy đo Nồng độ Dung dịch" (4 tiết)',
-      'Bài 29: Ôn tập toàn diện chuẩn bị kiểm tra cuối năm KHTN 8 (4 tiết)',
-      'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn KHTN 8 (4 tiết)'
+      'Bài 29: Ôn tập toàn diện chuẩn bị tổng kết năm học môn KHTN 8 (4 tiết)',
+      'Tổng kết năm học & Đánh giá xếp loại môn KHTN 8 cả năm (4 tiết)'
     ],
     9: [
       'Chương I: Kim loại và Phi kim - Bài 1: Tính chất vật lí và tính chất hóa học của kim loại (4 tiết)',
@@ -703,9 +704,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
       'Bài 12: Tinh bột, Cellulose và Polymer tổng hợp (4 tiết)',
       'Chương IV: Ánh sáng - Bài 13: Hiện tượng khúc xạ ánh sáng (4 tiết)',
       'Bài 14: Thấu kính hội tụ và Thấu kính phân kì (4 tiết)',
-      'Bài 15: Ảnh của một vật tạo bởi thấu kính. Kính lúp và Máy ảnh (4 tiết)',
-      'Bài 16: Mắt và các tật của mắt (Cận thị, viễn thị) và cách khắc phục (4 tiết)',
       'Kiểm tra, đánh giá cuối Học kỳ 1 môn KHTN 9 (4 tiết)',
+      'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức KHTN 9 HK1 (4 tiết)',
+      'Sơ kết Học kỳ 1 & Báo cáo chuyên đề KHTN 9 (4 tiết)',
       'Chương V: Điện từ học nâng cao - Bài 17: Hiện tượng cảm ứng điện từ (4 tiết)',
       'Bài 18: Dòng điện xoay chiều và Máy phát điện xoay chiều (4 tiết)',
       'Bài 19: Máy biến áp và Sự truyền tải điện năng đi xa (4 tiết)',
@@ -718,11 +719,11 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
       'Bài 25: Mối quan hệ giữa ADN - ARN - Protein - Tính trạng (4 tiết)',
       'Bài 26: Đột biến gen và Đột biến nhiễm sắc thể (4 tiết)',
       'Bài 27: Di truyền học người và Ứng dụng công nghệ gen trong y học (4 tiết)',
-      'Chương VIII: Sinh thái học và Môi trường - Bài 28: Quần thể sinh vật và Quần xã sinh vật (4 tiết)',
-      'Bài 29: Hệ sinh thái, Chuỗi thức ăn và Lưới thức ăn (4 tiết)',
-      'Bài 30: Bảo vệ môi trường và Phát triển bền vững (4 tiết)',
+      'Kiểm tra, đánh giá cuối Học kỳ 2 môn KHTN 9 (4 tiết)',
+      'Chữa bài kiểm tra cuối HK2 & Ôn tập củng cố kiến thức KHTN 9 HK2 (4 tiết)',
       'Dự án STEM KHTN 9: "Chế tạo Máy phát điện gió Mini & Mô hình Chuỗi ADN 3D Tương tác" (4 tiết)',
-      'Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn KHTN 9 (4 tiết)'
+      'Luyện giải đề thi tuyển sinh vào 10 và Ôn tập tổng hợp KHTN 9 (4 tiết)',
+      'Tổng kết năm học & Đánh giá xếp loại môn KHTN 9 cả năm (4 tiết)'
     ]
   };
 
@@ -731,7 +732,7 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
     const w = idx + 1;
     if (w > 35) return;
     const isGK = w === 9 || w === 26;
-    const isCK = w === 18 || w === 35;
+    const isCK = w === 16 || w === 31;
     const isStem = w === 33 || name.includes('STEM');
 
     list.push({
@@ -754,6 +755,7 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
 // =========================================================================
 import { getGdtcSecondaryCurriculum } from './curriculumSecondaryGdtc';
 export { getGdtcSecondaryCurriculum };
+export { getTechnologySecondaryCurriculum };
 
 // =========================================================================
 // 6. CÁC MÔN CÒN LẠI THCS: LỊCH SỬ & ĐỊA LÍ, TIN HỌC, CÔNG NGHỆ, GDCD, ÂM NHẠC, MĨ THUẬT, HĐTN, GDĐP
@@ -773,62 +775,9 @@ export function getGeneralSecondaryCurriculum(grade: string, subject: string): R
     return getTinHocSecondaryCurriculum(String(g));
   }
 
-  // 6.3. MÔN CÔNG NGHỆ THCS (1 tiết/tuần x 35 tuần = 35 tiết)
+  // 6.3. MÔN CÔNG NGHỆ THCS (Lớp 6, 7, 8, 9)
   if (s.includes('công nghệ') || s.includes('cong nghe') || s.includes('technology')) {
-    const congNgheTopics = [
-      { t: 'Chương I: Vẽ kỹ thuật', n: `Bài 1: Giới thiệu về ngành nghề kỹ thuật công nghệ và tiêu chuẩn an toàn lao động (Lớp ${g})` },
-      { t: 'Chương I: Vẽ kỹ thuật', n: `Bài 2: Tiêu chuẩn bản vẽ kỹ thuật: Khổ giấy, tỉ lệ, nét vẽ và ghi kích thước` },
-      { t: 'Chương I: Vẽ kỹ thuật', n: `Bài 3: Hình chiếu vuông góc và phương pháp chiếu ba hình chiếu` },
-      { t: 'Chương I: Vẽ kỹ thuật', n: `Bài 4: Bản vẽ chi tiết và cách đọc bản vẽ chi tiết đơn giản` },
-      { t: 'Chương I: Vẽ kỹ thuật', n: `Bài 5: Bản vẽ lắp và bản vẽ nhà (Mặt bằng, mặt đứng, mặt cắt)` },
-      { t: 'Chương II: Gia công cơ khí', n: `Bài 6: Vật liệu cơ khí: Kim loại đen, kim loại màu và phi kim loại` },
-      { t: 'Chương II: Gia công cơ khí', n: `Bài 7: Dụng cụ gia công cơ khí cầm tay: Thước lá, đục, dũa, cưa kim loại` },
-      { t: 'Chương II: Gia công cơ khí', n: `Bài 8: Thực hành dũa và cưa kim loại an toàn đúng quy trình` },
-      { t: 'Đánh giá định kỳ', n: `Kiểm tra, đánh giá giữa Học kỳ 1 môn Công nghệ Lớp ${g}` },
-      { t: 'Chương II: Cơ khí truyền động', n: `Bài 9: Chi tiết máy và mối ghép (Mối ghép cố định và mối ghép động)` },
-      { t: 'Chương II: Cơ khí truyền động', n: `Bài 10: Truyền và biến đổi chuyển động: Bộ truyền đai, xích, bánh răng` },
-      { t: 'Chương III: Kỹ thuật điện', n: `Bài 11: Cấu tạo và nguyên lí làm việc của động cơ điện và quạt điện` },
-      { t: 'Chương III: Kỹ thuật điện', n: `Bài 12: Đồ dùng loại điện - nhiệt: Bàn là điện, nồi cơm điện thông minh` },
-      { t: 'Chương III: Kỹ thuật điện', n: `Bài 13: Đồ dùng loại điện - quang: Đèn sợi đốt, đèn huỳnh quang, đèn LED tiết kiệm điện` },
-      { t: 'Chương III: Kỹ thuật điện', n: `Bài 14: Sử dụng năng lượng tiết kiệm và hiệu quả trong gia đình` },
-      { t: 'Chương III: Kỹ thuật điện', n: `Bài 15: Sơ đồ mạch điện và các ký hiệu quy ước trong mạch điện gia đình` },
-      { t: 'Chương III: Kỹ thuật điện', n: `Ôn tập tổng hợp kiến thức Vẽ kỹ thuật và Cơ khí - Điện Học kỳ 1 Lớp ${g}` },
-      { t: 'Đánh giá định kỳ', n: `Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Công nghệ ${g}` },
-      { t: 'Chương III: Mạng điện trong nhà', n: `Bài 16: Mạng điện trong nhà: Cấu tạo, đặc điểm và các phần tử bảo vệ (Aptomat, cầu chì)` },
-      { t: 'Chương III: Mạng điện trong nhà', n: `Bài 17: Thiết bị đóng cắt và lấy điện: Công tắc, ổ cắm, phích cắm điện` },
-      { t: 'Chương III: Mạng điện trong nhà', n: `Bài 18: Thực hành lắp đặt mạch điện chiếu sáng gia đình có cầu chì bảo vệ` },
-      { t: 'Chương III: Mạng điện trong nhà', n: `Bài 19: An toàn điện và các biện pháp sơ cứu người bị điện giật` },
-      { t: 'Chương IV: Nông nghiệp công nghệ cao', n: `Bài 20: Giới thiệu về Nông nghiệp công nghệ cao: Trồng trọt và Chăn nuôi thông minh` },
-      { t: 'Chương IV: Nông nghiệp công nghệ cao', n: `Bài 21: Đất trồng và các biện pháp cải tạo, bón phân an toàn sinh học` },
-      { t: 'Chương IV: Nông nghiệp công nghệ cao', n: `Bài 22: Kỹ thuật trồng cây trong nhà màng, nhà kính và hệ thống tưới tự động` },
-      { t: 'Đánh giá định kỳ', n: `Kiểm tra, đánh giá giữa Học kỳ 2 môn Công nghệ Lớp ${g}` },
-      { t: 'Chương IV: Nông nghiệp công nghệ cao', n: `Bài 23: Phòng trừ sâu bệnh hại cây trồng bằng phương pháp sinh học VietGAP` },
-      { t: 'Chương IV: Nông nghiệp công nghệ cao', n: `Bài 24: Kỹ thuật chăn nuôi gia súc, gia cầm an toàn sinh học` },
-      { t: 'Chương IV: Nông nghiệp công nghệ cao', n: `Bài 25: Chế biến và bảo quản nông sản, thực phẩm tại gia đình` },
-      { t: 'Dự án STEM', n: `Bài 26: Dự án STEM Công nghệ: "Chế tạo Mô hình Hệ thống Tưới Tự động IoT & Đèn Ngủ Thông minh" (Tiết 1)` },
-      { t: 'Dự án STEM', n: `Bài 27: Dự án STEM Công nghệ: Lắp ráp hoàn thiện sản phẩm và thử nghiệm (Tiết 2)` },
-      { t: 'Dự án STEM', n: `Bài 28: Thuyết minh và trưng bày sản phẩm công nghệ trước hội đồng lớp` },
-      { t: 'Chương V: Định hướng nghề nghiệp', n: `Bài 29: Định hướng nghề nghiệp trong lĩnh vực Kỹ thuật - Công nghệ tương lai` },
-      { t: 'Chương V: Ôn tập cuối năm', n: `Bài 30: Ôn tập toàn diện chuẩn bị kiểm tra cuối năm môn Công nghệ ${g}` },
-      { t: 'Đánh giá định kỳ', n: `Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Công nghệ ${g}` }
-    ];
-
-    congNgheTopics.forEach((item, idx) => {
-      const w = idx + 1;
-      if (w > 35) return;
-      list.push({
-        week: w,
-        topic: item.t,
-        name: item.n,
-        periods: 1,
-        yccd: `- Nắm vững nguyên lý bản vẽ kỹ thuật, an toàn điện, kỹ thuật cơ khí và nông nghiệp công nghệ cao của ${item.n} (SGK Công nghệ ${g} Kết nối tri thức).\n- Rèn luyện kỹ năng thực hành chế tạo, lắp ráp mạch điện và vận dụng quy trình thiết kế kỹ thuật an toàn.\n- Bồi dưỡng niềm đam mê sáng tạo công nghệ và định hướng nghề nghiệp trong khối ngành kỹ thuật.`,
-        equipment: 'Bộ dụng cụ thực hành cơ khí, mạch điện thực hành, Aptomat, bóng đèn LED, mô hình STEM',
-        location: 'Phòng học bộ môn Công nghệ / Xưởng thực hành STEM',
-        notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 18 || w === 35 ? 'Kiểm tra cuối kỳ' : w === 26 ? 'Dự án STEM Công nghệ' : ''
-      });
-    });
-
-    return list;
+    return getTechnologySecondaryCurriculum(String(g));
   }
 
   // 6.4. MÔN GIÁO DỤC CÔNG DÂN THCS (1 tiết/tuần x 35 tuần = 35 tiết)
@@ -849,9 +798,9 @@ export function getGeneralSecondaryCurriculum(grade: string, subject: string): R
       { t: 'Chủ đề 6: Quyền và nghĩa vụ công dân', n: `Bài 12: Quyền và nghĩa vụ của công dân trong gia đình` },
       { t: 'Chủ đề 6: Quyền và nghĩa vụ công dân', n: `Bài 13: Phòng chống thiên tai và ứng phó với biến đổi khí hậu` },
       { t: 'Chủ đề 6: Quyền và nghĩa vụ công dân', n: `Bài 14: Kỹ năng kiểm soát cảm xúc tiêu cực và vượt qua áp lực` },
-      { t: 'Chủ đề 6: Quyền và nghĩa vụ công dân', n: `Bài 15: Trách nhiệm của công dân đối với cộng đồng và xã hội` },
-      { t: 'Chủ đề 6: Ôn tập Học kỳ 1', n: `Ôn tập tổng hợp kiến thức Đạo đức và Kỹ năng sống Học kỳ 1 Lớp ${g}` },
-      { t: 'Đánh giá định kỳ', n: `Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn GDCD ${g}` },
+      { t: 'Đánh giá định kỳ', n: `Kiểm tra, đánh giá cuối Học kỳ 1 môn Giáo dục công dân Lớp ${g}` },
+      { t: 'Chữa bài & Ôn tập', n: `Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức GDCD ${g} HK1` },
+      { t: 'Sơ kết Học kỳ 1', n: `Sơ kết Học kỳ 1 môn Giáo dục công dân Lớp ${g}` },
       { t: 'Chủ đề 7: Nhà nước và Pháp luật', n: `Bài 16: Nhà nước Cộng hòa xã hội chủ nghĩa Việt Nam và Bộ máy nhà nước` },
       { t: 'Chủ đề 7: Nhà nước và Pháp luật', n: `Bài 17: Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam` },
       { t: 'Chủ đề 7: Nhà nước và Pháp luật', n: `Bài 18: Pháp luật và kỷ luật trong đời sống xã hội` },
@@ -864,11 +813,11 @@ export function getGeneralSecondaryCurriculum(grade: string, subject: string): R
       { t: 'Chủ đề 9: Quyền học tập và lao động', n: `Bài 24: Quyền và nghĩa vụ lao động của công dân` },
       { t: 'Chủ đề 10: Tham gia quản lý nhà nước', n: `Bài 25: Quyền tham gia quản lý nhà nước và xã hội của công dân` },
       { t: 'Chủ đề 10: Tham gia quản lý nhà nước', n: `Bài 26: Quyền khiếu nại, tố cáo của công dân và nghĩa vụ tôn trọng pháp luật` },
-      { t: 'Chủ đề 10: Tham gia quản lý nhà nước', n: `Bài 27: Trách nhiệm của học sinh trong việc chấp hành và bảo vệ pháp luật` },
+      { t: 'Đánh giá định kỳ', n: `Kiểm tra, đánh giá cuối Học kỳ 2 môn Giáo dục công dân Lớp ${g}` },
+      { t: 'Chữa bài & Ôn tập', n: `Chữa bài kiểm tra cuối HK2 & Ôn tập củng cố kiến thức GDCD ${g} HK2` },
       { t: 'Dự án GDCD', n: `Dự án GDCD: "Phiên tòa Giả định Tuyên truyền Pháp luật Học đường & Phòng chống Bạo lực"` },
-      { t: 'Chủ đề: Ôn tập cuối năm', n: `Bài 28: Hệ thống hóa toàn bộ kiến thức Đạo đức và Pháp luật Lớp ${g}` },
-      { t: 'Chủ đề: Ôn tập cuối năm', n: `Bài 29: Ôn tập toàn diện chuẩn bị kiểm tra cuối năm môn GDCD ${g}` },
-      { t: 'Đánh giá định kỳ', n: `Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn GDCD ${g}` }
+      { t: 'Chủ đề: Ôn tập cuối năm', n: `Bài 29: Ôn tập toàn diện chuẩn bị tổng kết năm học môn GDCD ${g}` },
+      { t: 'Tổng kết năm học', n: `Tổng kết năm học & Đánh giá xếp loại môn GDCD ${g} cả năm` }
     ];
 
     gdcdTopics.forEach((item, idx) => {
@@ -882,7 +831,7 @@ export function getGeneralSecondaryCurriculum(grade: string, subject: string): R
         yccd: `- Nhận biết và thực hiện đúng chuẩn mực đạo đức, kỹ năng sống và pháp luật của ${item.n} (SGK GDCD ${g} Kết nối tri thức).\n- Phân tích và xử lý các tình huống đạo đức, pháp lý thực tế một cách chuẩn mực, nhân văn.\n- Nâng cao ý thức thượng tôn pháp luật, tinh thần trách nhiệm công dân và lòng tự hào dân tộc.`,
         equipment: 'Hiến pháp 2013, Luật Trẻ em, video tình huống đạo đức và pháp luật, máy chiếu',
         location: 'Phòng học / Lớp học',
-        notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 18 || w === 35 ? 'Kiểm tra cuối kỳ' : w === 32 ? 'Phiên tòa Giả định' : ''
+        notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 16 || w === 31 ? 'Kiểm tra cuối kỳ' : w === 33 ? 'Phiên tòa Giả định' : ''
       });
     });
 
@@ -907,9 +856,9 @@ export function getGeneralSecondaryCurriculum(grade: string, subject: string): R
       `Chủ đề 4: Giai điệu quê hương - Hát: Bài ca đất phương Nam`,
       `Chủ đề 4: Giai điệu quê hương - Thường thức âm nhạc: Nhạc cụ dân tộc Đàn Tranh, Đàn Nguyệt`,
       `Chủ đề 4: Giai điệu quê hương - Đọc nhạc: Bài đọc nhạc số 4`,
-      `Chủ đề 4: Giai điệu quê hương - Góc âm nhạc sáng tạo: Biểu diễn tốp ca`,
-      `Ôn tập tổng hợp kiến thức Âm nhạc Học kỳ 1 Lớp ${g}`,
-      `Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Âm nhạc ${g}`,
+      `Kiểm tra, đánh giá cuối Học kỳ 1 môn Âm nhạc Lớp ${g}`,
+      `Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố các bài hát, bài đọc nhạc HK1 Lớp ${g}`,
+      `Sơ kết Học kỳ 1 & Biểu diễn báo cáo âm nhạc học đường HK1 Lớp ${g}`,
       `Chủ đề 5: Mùa xuân ước mơ - Hát: Mùa xuân trên quê hương`,
       `Chủ đề 5: Mùa xuân ước mơ - Nhạc cụ: Độc tấu / Hòa tấu Recorder & Kèn Melodica`,
       `Chủ đề 5: Mùa xuân ước mơ - Đọc nhạc: Bài đọc nhạc số 5`,
@@ -922,11 +871,11 @@ export function getGeneralSecondaryCurriculum(grade: string, subject: string): R
       `Chủ đề 7: Âm nhạc thế giới - Thường thức âm nhạc: Nhạc sĩ thiên tài W.A.Mozart & L.V.Beethoven`,
       `Chủ đề 7: Âm nhạc thế giới - Đọc nhạc: Bài đọc nhạc số 7`,
       `Chủ đề 8: Giai điệu mùa hè - Hát: Tia nắng hạt mưa`,
-      `Chủ đề 8: Giai điệu mùa hè - Dàn dựng tiết mục tốp ca kết hợp múa phụ họa`,
-      `Dự án Âm nhạc: Sáng tạo ban nhạc học đường & Hòa tấu nhạc cụ (Tiết 1)`,
+      `Kiểm tra, đánh giá cuối Học kỳ 2 môn Âm nhạc Lớp ${g}`,
+      `Chữa bài kiểm tra cuối HK2 & Giao lưu âm nhạc học đường Lớp ${g}`,
       `Dự án Âm nhạc: Biểu diễn báo cáo Ngày hội Âm nhạc học sinh THCS Lớp ${g}`,
-      `Ôn tập tổng hợp toàn diện các bài hát, bài đọc nhạc và nhạc cụ cả năm`,
-      `Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Âm nhạc ${g}`
+      `Ôn tập tổng hợp toàn diện các bài hát, bài đọc nhạc và nhạc cụ cả năm Lớp ${g}`,
+      `Tổng kết năm học & Đánh giá xếp loại môn Âm nhạc Lớp ${g} cả năm`
     ];
 
     amNhacTopics.forEach((name, idx) => {
@@ -940,7 +889,7 @@ export function getGeneralSecondaryCurriculum(grade: string, subject: string): R
         yccd: `- Hát đúng cao độ, trường độ, sắc thái cảm xúc và kỹ thuật biểu diễn của ${name} (SGK Âm nhạc ${g} Kết nối tri thức).\n- Đọc đúng nhạc bản, gõ đệm chuẩn xác bằng nhạc cụ gõ/Recorder/Melodica và nhận biết giá trị di sản âm nhạc dân tộc.\n- Phát triển năng lực thẩm mỹ âm nhạc, sự tự tin và tinh thần hợp tác nhóm.`,
         equipment: 'Đàn Organ/Piano điện tử, thanh phách, song loan, sáo Recorder, kèn Melodica, file âm thanh mẫu',
         location: 'Phòng học bộ môn Âm nhạc',
-        notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 18 || w === 35 ? 'Kiểm tra cuối kỳ' : w === 33 ? 'Dự án Âm nhạc học đường' : ''
+        notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 16 || w === 31 ? 'Kiểm tra cuối kỳ' : w === 33 ? 'Dự án Âm nhạc học đường' : ''
       });
     });
 
@@ -965,9 +914,9 @@ export function getGeneralSecondaryCurriculum(grade: string, subject: string): R
       `Chủ đề 4: Nghệ thuật Thiết kế đồ họa - Bài 6: Thực hành hoàn thiện Poster tuyên truyền`,
       `Chủ đề 5: Nghệ thuật Điêu khắc & Tạo hình 3D - Bài 7: Tạo hình nhân vật từ dây thép và đất sét`,
       `Chủ đề 5: Nghệ thuật Điêu khắc - Bài 7: Đắp khối tạo dáng động thể thao nhân vật 3D`,
-      `Chủ đề 5: Nghệ thuật Điêu khắc - Trưng bày tác phẩm tượng dáng người mini`,
-      `Ôn tập tổng hợp kiến thức Hội họa, Đồ họa và Điêu khắc Học kỳ 1 Lớp ${g}`,
-      `Kiểm tra, đánh giá cuối Học kỳ 1 & Triển lãm Mĩ thuật HK1 môn Mĩ thuật ${g}`,
+      `Kiểm tra, đánh giá cuối Học kỳ 1 & Triển lãm Mĩ thuật HK1 môn Mĩ thuật Lớp ${g}`,
+      `Chữa bài kiểm tra cuối HK1 & Hoàn thiện sản phẩm mĩ thuật HK1 Lớp ${g}`,
+      `Sơ kết Học kỳ 1 & Trưng bày không gian sáng tạo mĩ thuật HK1 Lớp ${g}`,
       `Chủ đề 6: Thiết kế thời trang - Bài 8: Thiết kế trang phục từ vật liệu tái chế (Phác thảo ý tưởng)`,
       `Chủ đề 6: Thiết kế thời trang - Bài 8: Thực hành cắt dán mô hình trang phục thời trang`,
       `Chủ đề 7: Tranh phong cảnh quê hương - Bài 9: Luật xa gần (Viễn cận) trong tranh phong cảnh`,
@@ -980,11 +929,11 @@ export function getGeneralSecondaryCurriculum(grade: string, subject: string): R
       `Chủ đề 9: Nghệ thuật Nhiếp ảnh - Bài 11: Thực hành chụp ảnh khoảnh khắc trường lớp`,
       `Chủ đề 10: Nghệ thuật Điêu khắc dân gian - Bài 12: Chạm khắc gỗ đình làng Việt Nam`,
       `Chủ đề 10: Điêu khắc dân gian - Bài 12: Thực hành khắc hoa văn phù điêu trên xốp EVA`,
-      `Dự án Mĩ thuật: Thiết kế Ngôi nhà Ước mơ & Mô hình Không gian Xanh 3D (Tiết 1)`,
-      `Dự án Mĩ thuật: Hoàn thiện mô hình kiến trúc xanh thông minh (Tiết 2)`,
+      `Kiểm tra, đánh giá cuối Học kỳ 2 môn Mĩ thuật Lớp ${g}`,
+      `Chữa bài kiểm tra cuối HK2 & Hoàn thiện sản phẩm mĩ thuật cuối năm Lớp ${g}`,
       `Báo cáo và Triển lãm Dự án Không gian Sáng tạo Mĩ thuật THCS Lớp ${g}`,
-      `Ôn tập toàn diện kiến thức nghệ thuật tạo hình và thiết kế mĩ thuật cả năm`,
-      `Kiểm tra, đánh giá cuối Học kỳ 2 & Triển lãm Tổng kết Mĩ thuật ${g} toàn trường`
+      `Ôn tập toàn diện kiến thức nghệ thuật tạo hình và thiết kế mĩ thuật cả năm Lớp ${g}`,
+      `Tổng kết năm học & Triển lãm Tổng kết Mĩ thuật Lớp ${g} toàn trường`
     ];
 
     miThuatTopics.forEach((name, idx) => {
@@ -998,7 +947,7 @@ export function getGeneralSecondaryCurriculum(grade: string, subject: string): R
         yccd: `- Nắm vững nguyên lý thị giác, kỹ thuật tạo hình hội họa, đồ họa, điêu khắc và thiết kế của ${name} (SGK Mĩ thuật ${g} Kết nối tri thức).\n- Sáng tạo được các sản phẩm mĩ thuật độc đáo, thể hiện tư duy thẩm mỹ và cảm xúc cá nhân sâu sắc.\n- Phát triển năng lực cảm thụ nghệ thuật và trân trọng các giá trị di sản văn hóa dân tộc.`,
         equipment: 'Giấy vẽ A3, màu nước, màu goát, acrylic, đất nặn tạo hình, dây thép dẻo, vật liệu tái chế, kéo, keo dán',
         location: 'Phòng học bộ môn Mĩ thuật / Sảnh triển lãm',
-        notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 18 || w === 35 ? 'Kiểm tra cuối kỳ' : w === 33 ? 'Dự án Không gian Xanh 3D' : ''
+        notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 16 || w === 31 ? 'Kiểm tra cuối kỳ' : w === 33 ? 'Dự án Không gian Xanh 3D' : ''
       });
     });
 
@@ -1027,9 +976,9 @@ export function getGeneralSecondaryCurriculum(grade: string, subject: string): R
     `Chủ đề 3: Văn hóa truyền thống - Ẩm thực truyền thống và các đặc sản vùng miền nổi tiếng`,
     `Chủ đề 4: Kinh tế - xã hội địa phương - Hiện trạng phát triển ngành Nông - Lâm - Ngư nghiệp`,
     `Chủ đề 4: Kinh tế địa phương - Phát triển các ngành Công nghiệp chế biến và tiểu thủ công nghiệp`,
-    `Chủ đề 4: Kinh tế địa phương - Tiềm năng và định hướng phát triển ngành Dịch vụ - Du lịch`,
-    `Ôn tập tổng hợp kiến thức Lịch sử, Địa lí, Văn hóa địa phương Học kỳ 1 Lớp ${g}`,
-    `Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Giáo dục địa phương ${g}`,
+    `Kiểm tra, đánh giá cuối Học kỳ 1 & Sơ kết HK1 môn Giáo dục địa phương Lớp ${g}`,
+    `Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức HK1 Lớp ${g}`,
+    `Sơ kết Học kỳ 1 & Báo cáo tìm hiểu nét đẹp văn hóa địa phương Lớp ${g}`,
     `Chủ đề 5: Làng nghề truyền thống - Lịch sử hình thành và nét tinh hoa của các làng nghề cổ truyền`,
     `Chủ đề 5: Làng nghề truyền thống - Thực trạng bảo tồn, phát triển làng nghề gắn với du lịch sinh thái`,
     `Chủ đề 5: Làng nghề truyền thống - Thực hành làm một sản phẩm thủ công truyền thống đơn giản`,
@@ -1042,11 +991,11 @@ export function getGeneralSecondaryCurriculum(grade: string, subject: string): R
     `Chủ đề 8: Quy hoạch và Tương lai địa phương - Tầm nhìn phát triển kinh tế - đô thị thông minh đến 2030`,
     `Chủ đề 8: Tương lai địa phương - Cơ hội nghề nghiệp và thị trường lao động cho thanh thiếu niên`,
     `Dự án GDĐP: "Cẩm nang Du lịch Văn hóa & Bản đồ Số Di sản Quê hương em" (Tiết 1)`,
-    `Dự án GDĐP: Hoàn thiện sản phẩm truyền thông số quảng bá di tích quê hương (Tiết 2)`,
+    `Kiểm tra, đánh giá cuối Học kỳ 2 & Sơ kết môn Giáo dục địa phương Lớp ${g}`,
+    `Chữa bài kiểm tra cuối HK2 & Hoạt động trải nghiệm văn hóa địa phương Lớp ${g}`,
     `Báo cáo và thuyết trình dự án Tìm hiểu Giáo dục địa phương trước hội đồng lớp`,
-    `Hệ thống hóa toàn bộ kiến thức Giáo dục địa phương Lớp ${g}`,
-    `Ôn tập toàn diện chuẩn bị kiểm tra cuối năm môn Giáo dục địa phương ${g}`,
-    `Kiểm tra, đánh giá cuối Học kỳ 2 & Tổng kết năm học môn Giáo dục địa phương ${g}`
+    `Ôn tập toàn diện chuẩn bị tổng kết môn Giáo dục địa phương Lớp ${g}`,
+    `Tổng kết năm học & Đánh giá kết quả môn Giáo dục địa phương Lớp ${g}`
   ];
 
   gddpTopics.forEach((name, idx) => {
@@ -1060,7 +1009,7 @@ export function getGeneralSecondaryCurriculum(grade: string, subject: string): R
       yccd: `- Hiểu rõ và trình bày được các giá trị lịch sử, địa lí, văn hóa, làng nghề, kinh tế - xã hội của ${name} (Tài liệu Giáo dục địa phương Lớp ${g}).\n- Có kỹ năng tìm hiểu, sưu tầm tư liệu thực tế và quảng bá vẻ đẹp di sản quê hương.\n- Khơi dậy tình yêu quê hương đất nước, niềm tự hào và ý thức cống hiến xây dựng quê hương giàu đẹp.`,
       equipment: 'Tài liệu Giáo dục địa phương tỉnh/thành phố, bản đồ hành chính địa phương, hình ảnh tư liệu di tích',
       location: 'Phòng học / Lớp học',
-      notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 18 || w === 35 ? 'Kiểm tra cuối kỳ' : w === 30 ? 'Dự án Cẩm nang Du lịch' : ''
+      notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 16 || w === 31 ? 'Kiểm tra cuối kỳ' : w === 30 ? 'Dự án Cẩm nang Du lịch' : ''
     });
   });
 
@@ -1070,7 +1019,12 @@ export function getGeneralSecondaryCurriculum(grade: string, subject: string): R
 // =========================================================================
 // MASTER RESOLVER FOR SECONDARY CURRICULUM (LỚP 6 - 9)
 // =========================================================================
-export function buildSecondaryCurriculum(subject: string, grade: string, schoolType: SchoolType): CurriculumItem[] {
+export function buildSecondaryCurriculum(
+  subject: string,
+  grade: string,
+  schoolType: SchoolType,
+  config?: Partial<ConfigFormData>
+): CurriculumItem[] {
   const s = subject.toLowerCase().trim();
   const g = grade.trim();
   const isEnglish = s.includes('tiếng anh') || s.includes('tieng anh') || s.includes('english') || s.includes('ngoại ngữ');
@@ -1091,6 +1045,8 @@ export function buildSecondaryCurriculum(subject: string, grade: string, schoolT
     rawList = getKhtnSecondaryCurriculum(g);
   } else if (s.includes('lịch sử') || s.includes('địa lí') || s.includes('địa lý') || s.includes('ls&đl') || s.includes('lsdl') || s.includes('lich su')) {
     rawList = getLsdlSecondaryCurriculum(g);
+  } else if (s.includes('công nghệ') || s.includes('cong nghe') || s.includes('technology')) {
+    rawList = getTechnologySecondaryCurriculum(g, config);
   } else if (s.includes('trải nghiệm') || s.includes('hđtn') || s.includes('hdtn') || s.includes('hướng nghiệp')) {
     rawList = getHdtnSecondaryCurriculum(g);
   } else {

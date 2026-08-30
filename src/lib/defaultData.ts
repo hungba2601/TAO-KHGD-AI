@@ -114,14 +114,244 @@ export const INITIAL_CONFIG: ConfigFormData = {
 };
 
 // Chuẩn hóa 100% tên bài học và Yêu cầu cần đạt (YCCĐ) theo SGK KẾT NỐI TRI THỨC VỚI CUỘC SỐNG & TIẾNG ANH GLOBAL SUCCESS - ĐỦ 35 TUẦN THỰC HỌC (CT GDPT 2018)
-export function getSubjectCurriculum(subject: string, grade: string, schoolType: SchoolType): CurriculumItem[] {
-  return getCurriculumBySubjectAndGrade(subject, grade, schoolType);
+// Chuẩn hóa 100% tên bài học và Yêu cầu cần đạt (YCCĐ) theo SGK KẾT NỐI TRI THỨC VỚI CUỘC SỐNG & TIẾNG ANH GLOBAL SUCCESS - ĐỦ 35 TUẦN THỰC HỌC (CT GDPT 2018)
+export function getSubjectCurriculum(
+  subject: string,
+  grade: string,
+  schoolType: SchoolType,
+  config?: Partial<ConfigFormData>
+): CurriculumItem[] {
+  return getCurriculumBySubjectAndGrade(subject, grade, schoolType, config);
 }
 
-
-export function getDefaultEquipments(subject: string, grade: string, schoolType: SchoolType) {
+export function getDefaultEquipments(
+  subject: string,
+  grade: string,
+  schoolType: SchoolType,
+  config?: Partial<ConfigFormData>
+) {
   const s = subject.toLowerCase().trim();
   const g = grade.trim();
+
+  // MÔN CÔNG NGHỆ THCS (Lớp 6, 7, 8, 9)
+  if (s.includes('công nghệ') || s.includes('cong nghe')) {
+    if (g === '9') {
+      const mod = config?.technologyModuleGrade9 || 'dien_gia_dung';
+      if (mod === 'dien_gia_dung') {
+        return [
+          {
+            id: 'eq-1',
+            stt: 1,
+            equipmentName: 'Bộ dụng cụ cơ khí & lắp đặt điện cầm tay: Kìm điện, kìm tuốt dây, tua vít cách điện 1000V, bút thử điện, cưa sắt, búa, thước dây',
+            quantity: '08 bộ/phòng',
+            experiments: 'Thực hành các thao tác cơ bản: vạch dấu, cắt, gọt, tuốt dây dẫn điện, đo đạc và nối dây điện',
+            notes: 'TT 38/2021/TT-BGDĐT'
+          },
+          {
+            id: 'eq-2',
+            stt: 2,
+            equipmentName: 'Bộ thiết bị đo kiểm điện: Đồng hồ vạn năng hiện số (DMM), Ampe kìm đo dòng AC, máy đo điện trở cách điện',
+            quantity: '08 bộ/phòng',
+            experiments: 'Đo điện áp xoay chiều, đo dòng điện tải, đo thông mạch và kiểm tra thông số mạng điện sinh hoạt',
+            notes: 'Đạt chuẩn an toàn điện'
+          },
+          {
+            id: 'eq-3',
+            stt: 3,
+            equipmentName: 'Bảng điện thực hành & Khí cụ đóng cắt - bảo vệ: Aptomat MCB 1P/2P, cầu chì ống, công tắc 1 cực, công tắc 2 cực, công tắc 3 cực (cầu thang), ổ cắm đôi, bóng đèn LED, đui đèn E27',
+            quantity: '16 bộ/phòng',
+            experiments: 'Thực hành lắp đặt mạch điện bảng điện, mạch điện chiếu sáng 1 công tắc - 1 đèn, mạch 2 công tắc 3 cực điều khiển 1 đèn (mạch cầu thang)',
+            notes: 'Bộ lắp ráp chuyên dụng'
+          },
+          {
+            id: 'eq-4',
+            stt: 4,
+            equipmentName: 'Vật tư phụ kiện lắp đặt & bảo vệ đường dây: Ống luồn dây PVC chống cháy tròn/dẹt, ống ruột gà, kẹp đỡ ống, hộp nối chia ngả, băng keo cách điện nano, đai ốc vít',
+            quantity: '08 bộ/phòng',
+            experiments: 'Thực hành lắp đặt mạng điện nổi luồn trong ống bảo vệ, đấu nối dây trong hộp chia ngả đúng tiêu chuẩn kỹ thuật',
+            notes: 'Vật tư tiêu hao'
+          }
+        ];
+      } else if (mod === 'che_bien_thuc_pham') {
+        return [
+          {
+            id: 'eq-1',
+            stt: 1,
+            equipmentName: 'Bộ thiết bị gia nhiệt nhà bếp hiện đại: Bếp điện từ / hồng ngoại đa mức nhiệt, nồi inox đáy từ đa tầng, chảo chống dính cao cấp, xửng hấp inox, lò nướng mini',
+            quantity: '06 bộ/phòng',
+            experiments: 'Thực hành các phương pháp chế biến thực phẩm có sử dụng nhiệt: luộc, hấp, xào, rán, nướng',
+            notes: 'TT 38/2021/TT-BGDĐT'
+          },
+          {
+            id: 'eq-2',
+            stt: 2,
+            equipmentName: 'Bộ dụng cụ sơ chế và đo lường an toàn thực phẩm: Cân điện tử tiểu ly 0.1g, cốc đong chia vạch, bộ dao kéo inox chuyên dụng, thớt kháng khuẩn phân màu, nhiệt kế đo tâm thực phẩm',
+            quantity: '08 bộ/phòng',
+            experiments: 'Sơ chế nguyên liệu thực vật/động vật, định lượng gia vị chính xác và đo nhiệt độ làm chín thực phẩm',
+            notes: 'Chuẩn vệ sinh an toàn HACCP'
+          },
+          {
+            id: 'eq-3',
+            stt: 3,
+            equipmentName: 'Thiết bị & Dụng cụ đóng gói - bảo quản: Máy hút chân không gia đình, túi zip chịu nhiệt, hũ thủy tinh tiệt trùng nắp kín, màng bọc thực phẩm an toàn',
+            quantity: '04 bộ/phòng',
+            experiments: 'Thực hành chế biến món ăn không sử dụng nhiệt (trộn, muối chua, làm nộm), đóng gói hút chân không và bảo quản thực phẩm',
+            notes: 'Dụng cụ bảo quản an toàn'
+          },
+          {
+            id: 'eq-4',
+            stt: 4,
+            equipmentName: 'Trang phục & Dụng cụ bảo hộ vệ sinh thực phẩm: Tạp dề, mũ trùm tóc, găng tay thực phẩm dùng 1 lần, dung dịch sát khuẩn tay và dung dịch ngâm rửa thực phẩm hữu cơ',
+            quantity: '45 bộ/lớp',
+            experiments: 'Rèn luyện tác phong chuẩn mực, đảm bảo tuyệt đối vệ sinh an toàn thực phẩm trong quá trình thực hành',
+            notes: 'Bảo hộ cá nhân'
+          }
+        ];
+      } else {
+        // trong_cay_an_qua
+        return [
+          {
+            id: 'eq-1',
+            stt: 1,
+            equipmentName: 'Bộ dụng cụ nhân giống vô tính cây ăn quả chuyên dụng: Dao ghép cây sắc bén thép không gỉ, kéo cắt cành tỉa tán chuyên dụng, băng keo ghép cây tự tiêu, dây nilon chuyên dùng',
+            quantity: '08 bộ/khối',
+            experiments: 'Thực hành các kỹ thuật nhân giống vô tính cây ăn quả: chiết cành, giâm cành, ghép mắt, ghép nêm',
+            notes: 'TT 38/2021/TT-BGDĐT'
+          },
+          {
+            id: 'eq-2',
+            stt: 2,
+            equipmentName: 'Dụng cụ làm đất, trồng và chăm sóc cây ăn quả: Cuốc xẻng làm vườn mini, cào xới đất, bình tưới phun sương áp suất, hệ thống tưới nhỏ giọt mini thông minh',
+            quantity: '08 bộ/vườn',
+            experiments: 'Thực hành kỹ thuật đào hố, bón lót, trồng cây con trong bầu, lắp đặt hệ thống tưới tiêu tiết kiệm nước',
+            notes: 'Chuẩn vườn thực nghiệm'
+          },
+          {
+            id: 'eq-3',
+            stt: 3,
+            equipmentName: 'Vật tư cây giống & Giá thể giâm chiết: Cây giống đầu dòng (xoài, bưởi, ổi, cam...), giá thể xơ dừa đã khử chát, đất sạch hữu cơ, chế phẩm kích thích ra rễ sinh học',
+            quantity: '04 bộ/khóa',
+            experiments: 'Xử lý cành giâm/cành chiết, phối trộn giá thể bầu ươm và chăm sóc cây giống giai đoạn vườn ươm',
+            notes: 'Vật tư thực hành'
+          },
+          {
+            id: 'eq-4',
+            stt: 4,
+            equipmentName: 'Vật tư phòng trừ sâu bệnh sinh học & Dụng cụ bao quả: Chế phẩm sinh học thảo mộc phòng trừ sâu bọ, túi vải không dệt bao trái cây chống rám nắng sâu bệnh, bẫy dính côn trùng pheromone',
+            quantity: '08 bộ/khối',
+            experiments: 'Thực hành phòng trừ sâu bệnh hại cây ăn quả theo quy trình an toàn sinh học VietGAP và kỹ thuật bao quả bảo vệ mùa màng',
+            notes: 'An toàn sinh học'
+          }
+        ];
+      }
+    } else if (g === '8') {
+      return [
+        {
+          id: 'eq-1',
+          stt: 1,
+          equipmentName: 'Bộ dụng cụ Vẽ kĩ thuật chuẩn: Thước chữ T, êke tam giác, compa kỹ thuật, bút chì bấm kỹ thuật 2B/HB, giấy vẽ A4/A3 tiêu chuẩn TCVN',
+          quantity: '45 bộ/lớp',
+          experiments: 'Vẽ hình chiếu vuông góc của khối hình học, vẽ bản vẽ chi tiết và đọc bản vẽ nhà',
+          notes: 'TCVN 7284'
+        },
+        {
+          id: 'eq-2',
+          stt: 2,
+          equipmentName: 'Bộ dụng cụ gia công cơ khí cầm tay: Êtô bàn cơ khí, cưa sắt kim loại, bộ đục dũa cơ khí, thước cặp du xích cơ khí độ chính xác 0.02mm, thước lá thép',
+          quantity: '08 bộ/phòng',
+          experiments: 'Thực hành đo đạc kích thước bằng thước cặp, cưa kim loại và dũa phẳng mặt phẳng kim loại an toàn',
+          notes: 'TT 38/2021/TT-BGDĐT'
+        },
+        {
+          id: 'eq-3',
+          stt: 3,
+          equipmentName: 'Bộ mô hình cơ khí truyền và biến đổi chuyển động: Mô hình bộ truyền đai, bộ truyền xích, bộ truyền bánh răng, cơ cấu tay quay - con trượt',
+          quantity: '08 bộ/phòng',
+          experiments: 'Khảo sát tỉ số truyền, tính toán vận tốc và cơ chế biến đổi chuyển động quay thành tịnh tiến',
+          notes: 'Mô hình trực quan'
+        },
+        {
+          id: 'eq-4',
+          stt: 4,
+          equipmentName: 'Bộ linh kiện mạch điện điều khiển và cảm biến: Module rơle 5V/12V, cảm biến ánh sáng LDR, cảm biến nhiệt độ, nguồn adapter 12V, bóng đèn LED, còi báo',
+          quantity: '08 bộ/phòng',
+          experiments: 'Lắp ráp mạch điện điều khiển tự động sử dụng cảm biến ánh sáng và cảm biến nhiệt độ',
+          notes: 'Phục vụ bài thực hành & STEM'
+        }
+      ];
+    } else if (g === '7') {
+      return [
+        {
+          id: 'eq-1',
+          stt: 1,
+          equipmentName: 'Bộ dụng cụ gieo trồng và chăm sóc cây trồng: Khay ươm hạt giống, bình phun sương tưới nước, phân bón hữu cơ vi sinh, hạt giống rau/hoa đạt chuẩn',
+          quantity: '08 bộ/lớp',
+          experiments: 'Thực hành làm đất, gieo hạt trong khay, tỉa cây và bón phân thúc an toàn sinh học',
+          notes: 'TT 38/2021/TT-BGDĐT'
+        },
+        {
+          id: 'eq-2',
+          stt: 2,
+          equipmentName: 'Mô hình hệ thống tưới tiêu tự động thông minh: Cảm biến độ ẩm đất, module van điện từ tưới nước, ống dẫn nước nhỏ giọt mini',
+          quantity: '04 bộ/phòng',
+          experiments: 'Tìm hiểu nguyên lí nông nghiệp công nghệ cao và tự động hóa tưới cây theo độ ẩm đất',
+          notes: 'Trực quan STEM'
+        },
+        {
+          id: 'eq-3',
+          stt: 3,
+          equipmentName: 'Bộ dụng cụ chăn nuôi & Thủy sản an toàn sinh học: Bút đo pH nước nuôi thủy sản, nhiệt kế nước, mô hình chuồng nuôi gia súc hợp vệ sinh, men vi sinh ủ thức ăn chăn nuôi',
+          quantity: '04 bộ/phòng',
+          experiments: 'Đo chất lượng môi trường nước nuôi thủy sản, kỹ thuật ủ men vi sinh chế biến thức ăn an toàn sinh học',
+          notes: 'An toàn sinh học'
+        },
+        {
+          id: 'eq-4',
+          stt: 4,
+          equipmentName: 'Mẫu cây giống lâm nghiệp và dụng cụ chăm sóc rừng: Hạt giống cây bản địa, kéo tỉa cành rừng mini, khay bầu ươm lâm nghiệp',
+          quantity: '04 bộ/phòng',
+          experiments: 'Nhận biết các loại cây rừng phổ biến, kỹ thuật gieo ươm cây con phục vụ trồng rừng phòng hộ',
+          notes: 'Lâm nghiệp bền vững'
+        }
+      ];
+    } else {
+      // Lớp 6
+      return [
+        {
+          id: 'eq-1',
+          stt: 1,
+          equipmentName: 'Mô hình Ngôi nhà thông minh (Smart Home) & Hệ thống pin năng lượng mặt trời mini',
+          quantity: '04 bộ/phòng',
+          experiments: 'Tìm hiểu đặc điểm ngôi nhà thông minh, nguyên lý sử dụng năng lượng tái tạo tiết kiệm trong gia đình',
+          notes: 'TT 38/2021/TT-BGDĐT'
+        },
+        {
+          id: 'eq-2',
+          stt: 2,
+          equipmentName: 'Bộ dụng cụ phân loại & bảo quản thực phẩm gia đình: Hộp bảo quản chân không, nhiệt kế theo dõi tủ lạnh, thớt sơ chế rau củ, cân mini',
+          quantity: '08 bộ/phòng',
+          experiments: 'Thực hành tính toán khẩu phần ăn hợp lí, phân nhóm thực phẩm và bảo quản thực phẩm không sử dụng hóa chất',
+          notes: 'An toàn thực phẩm gia đình'
+        },
+        {
+          id: 'eq-3',
+          stt: 3,
+          equipmentName: 'Bộ dụng cụ cắt khâu & bảo quản trang phục: Bộ kim chỉ, kéo cắt vải, thước dây, bàn là hơi nước mini, bộ mẫu các loại vải dệt thiên nhiên và nhân tạo',
+          quantity: '08 bộ/phòng',
+          experiments: 'Thực hành khâu đính khuy áo, phân biệt các loại vải và phối hợp trang phục phù hợp với vóc dáng',
+          notes: 'Kỹ năng gia đình'
+        },
+        {
+          id: 'eq-4',
+          stt: 4,
+          equipmentName: 'Bộ đồ dùng điện trong gia đình: Nồi cơm điện, quạt bàn điện tử mini, bóng đèn LED tiết kiệm điện, bảng đo công suất tiêu thụ điện',
+          quantity: '04 bộ/phòng',
+          experiments: 'Khảo sát cấu tạo và nguyên lý làm việc của đồ dùng điện gia đình, tính toán điện năng tiêu thụ tiết kiệm',
+          notes: 'Tiết kiệm năng lượng'
+        }
+      ];
+    }
+  }
 
   if (s.includes('tin học') || s.includes('tin hoc') || s.includes('it')) {
     return [
@@ -292,10 +522,15 @@ export function getDefaultClassrooms(schoolType: SchoolType) {
   ];
 }
 
-export function getDefaultAssessments(grade: string, subject: string) {
+export function getDefaultAssessments(
+  grade: string,
+  subject: string,
+  config?: Partial<ConfigFormData>
+) {
   const s = (subject || '').toLowerCase().trim();
   const g = grade.trim();
   const isEn = s.includes('tiếng anh') || s.includes('ngoại ngữ') || s.includes('english') || s.includes('tieng anh');
+  const isSecondaryEn = isEn && ['6', '7', '8', '9'].includes(g);
 
   if (isEn) {
     return [
@@ -314,7 +549,7 @@ export function getDefaultAssessments(grade: string, subject: string) {
         stt: 2,
         assessmentName: `End-of-Term 1 Test (English ${g})`,
         time: '45 minutes / 60 minutes',
-        week: 'Week 18',
+        week: isSecondaryEn ? 'Week 18' : 'Week 16',
         form: 'Standardized Semester Examination (4 Skills Assessment: Listening, Reading, Writing, Speaking)',
         units: 'Comprehensive curriculum covered in Term 1 (Units 1 - 6 for Secondary/High School / Units 1 - 10 for Primary)',
         requirements: 'Evaluate Term 1 learning outcomes and communicative language competencies of students.'
@@ -334,10 +569,113 @@ export function getDefaultAssessments(grade: string, subject: string) {
         stt: 4,
         assessmentName: `End-of-Year Test / Final Examination (English ${g})`,
         time: '45 minutes / 60 minutes',
-        week: 'Week 35',
+        week: isSecondaryEn ? 'Week 35' : 'Week 31',
         form: 'Standardized School-wide Final Examination (4 Skills + Grammar & Vocabulary)',
         units: 'Key language focus of Term 2 and overall core competence of the school year',
         requirements: 'Comprehensive assessment of year-end English proficiency as basis for grade progression and completion.'
+      }
+    ];
+  }
+
+  // MÔN CÔNG NGHỆ THCS (Lớp 6, 7, 8, 9)
+  if (s.includes('công nghệ') || s.includes('cong nghe')) {
+    if (g === '9') {
+      const mod = config?.technologyModuleGrade9 || 'dien_gia_dung';
+      const modName = mod === 'che_bien_thuc_pham'
+        ? 'Mô đun Chế biến thực phẩm'
+        : mod === 'trong_cay_an_qua'
+        ? 'Mô đun Trồng cây ăn quả'
+        : 'Mô đun Lắp đặt mạng điện trong nhà';
+
+      const mid1Units = 'Phần Định hướng nghề nghiệp (Bài 1 đến Bài 5) và các bài học đầu mô đun';
+      const end1Units = `Toàn bộ kiến thức Phần Định hướng nghề nghiệp và thực hành ${modName} Học kỳ 1`;
+      const mid2Units = `Các bài thực hành chuyên sâu của ${modName} từ Tuần 19 đến Tuần 25`;
+      const end2Units = `Toàn bộ chương trình Công nghệ 9 (${modName}) và năng lực định hướng nghề nghiệp`;
+
+      return [
+        {
+          id: 'as-1',
+          stt: 1,
+          assessmentName: `Kiểm tra, đánh giá giữa Học kỳ 1 (Công nghệ 9 - ${modName})`,
+          time: '45 phút',
+          week: 'Tuần 9',
+          form: 'Trắc nghiệm khách quan kết hợp tự luận / Đánh giá hồ sơ học tập nghề nghiệp',
+          units: mid1Units,
+          requirements: 'Đánh giá hiểu biết về thị trường lao động kỹ thuật, cơ cấu hệ thống giáo dục quốc dân và các kỹ năng nghề cơ bản.'
+        },
+        {
+          id: 'as-2',
+          stt: 2,
+          assessmentName: `Kiểm tra, đánh giá cuối Học kỳ 1 (Công nghệ 9 - ${modName})`,
+          time: '45 phút',
+          week: 'Tuần 16',
+          form: 'Thực hành kỹ năng nghề / Bài kiểm tra kết hợp lý thuyết và thực hành theo ma trận chuẩn',
+          units: end1Units,
+          requirements: 'Đánh giá năng lực thực hành nghề nghiệp, kỹ năng vận dụng quy trình kỹ thuật an toàn và ý thức lao động kỷ luật.'
+        },
+        {
+          id: 'as-3',
+          stt: 3,
+          assessmentName: `Kiểm tra, đánh giá giữa Học kỳ 2 (Công nghệ 9 - ${modName})`,
+          time: '45 phút',
+          week: 'Tuần 26',
+          form: 'Thực hành thao tác nghề / Báo cáo sản phẩm dự án trải nghiệm nghề nghiệp',
+          units: mid2Units,
+          requirements: 'Đánh giá kỹ năng thao tác chuẩn xác, an toàn lao động và năng lực giải quyết tình huống kỹ thuật thực tế.'
+        },
+        {
+          id: 'as-4',
+          stt: 4,
+          assessmentName: `Kiểm tra, đánh giá cuối Học kỳ 2 & Cả năm (Công nghệ 9 - ${modName})`,
+          time: '45 phút',
+          week: 'Tuần 31',
+          form: 'Đề kiểm tra chuẩn hóa cấp trường / Đánh giá sản phẩm thực hành tổng hợp cuối năm',
+          units: end2Units,
+          requirements: 'Đánh giá tổng kết kết quả học tập và rèn luyện môn Công nghệ 9, mức độ sẵn sàng cho định hướng nghề nghiệp tương lai.'
+        }
+      ];
+    }
+
+    return [
+      {
+        id: 'as-1',
+        stt: 1,
+        assessmentName: `Kiểm tra, đánh giá giữa Học kỳ 1 (Công nghệ ${g})`,
+        time: '45 phút',
+        week: 'Tuần 9',
+        form: 'Trắc nghiệm khách quan (70%) kết hợp tự luận / thực hành kỹ năng (30%)',
+        units: `Toàn bộ mạch kiến thức, kỹ năng đã học từ Tuần 1 đến hết Tuần 8 (SGK Công nghệ ${g} Kết nối tri thức)`,
+        requirements: 'Đánh giá mức độ đạt chuẩn kiến thức kỹ thuật, công nghệ và khả năng vận dụng vào đời sống gia đình.'
+      },
+      {
+        id: 'as-2',
+        stt: 2,
+        assessmentName: `Kiểm tra, đánh giá cuối Học kỳ 1 (Công nghệ ${g})`,
+        time: '45 phút',
+        week: 'Tuần 16',
+        form: 'Đề kiểm tra chuẩn hóa tập trung toàn khối theo ma trận chuẩn của Bộ GD&ĐT',
+        units: `Toàn bộ nội dung chương trình Công nghệ ${g} Học kỳ 1`,
+        requirements: 'Đánh giá tổng kết năng lực công nghệ, tư duy thiết kế và kỹ năng thực hành kỹ thuật an toàn của học sinh.'
+      },
+      {
+        id: 'as-3',
+        stt: 3,
+        assessmentName: `Kiểm tra, đánh giá giữa Học kỳ 2 (Công nghệ ${g})`,
+        time: '45 phút',
+        week: 'Tuần 26',
+        form: 'Thực hành thao tác kỹ thuật / Báo cáo sản phẩm dự án STEM Công nghệ',
+        units: `Mạch kiến thức từ Tuần 19 đến hết Tuần 25 theo SGK Công nghệ ${g}`,
+        requirements: 'Kiểm tra kỹ năng thực hành chế tạo, lắp ráp và năng lực tư duy sáng tạo kỹ thuật.'
+      },
+      {
+        id: 'as-4',
+        stt: 4,
+        assessmentName: `Kiểm tra, đánh giá cuối Học kỳ 2 & Cả năm (Công nghệ ${g})`,
+        time: '45 phút',
+        week: 'Tuần 31',
+        form: 'Đề kiểm tra chuẩn hóa cấp trường theo ma trận chuẩn của Bộ GD&ĐT',
+        units: `Nội dung cốt lõi Học kỳ 2 và kiến thức trọng tâm cả năm học môn Công nghệ ${g}`,
+        requirements: 'Đánh giá toàn diện kết quả học tập môn Công nghệ cả năm, làm căn cứ xét hoàn thành chương trình môn học.'
       }
     ];
   }
@@ -359,7 +697,7 @@ export function getDefaultAssessments(grade: string, subject: string) {
         stt: 2,
         assessmentName: `Kiểm tra, đánh giá cuối Học kỳ 1 (GDTC ${g})`,
         time: '45 phút (02 tiết)',
-        week: 'Tuần 18',
+        week: 'Tuần 16',
         form: 'Thực hành kiểm tra kỹ thuật môn thể thao tự chọn (Bóng đá/Bóng rổ/Cầu lông) hoặc Chạy bền',
         units: 'Kỹ thuật dẫn bóng, đá bóng, phối hợp chuyền bóng hoặc Chạy cự li trung bình',
         requirements: 'Đánh giá kỹ năng thực hành thể thao và sự phát triển sức bền theo chuẩn CT GDPT 2018.'
@@ -379,7 +717,7 @@ export function getDefaultAssessments(grade: string, subject: string) {
         stt: 4,
         assessmentName: `Kiểm tra, đánh giá cuối Học kỳ 2 & Cả năm (GDTC ${g})`,
         time: '45 phút (02 tiết)',
-        week: 'Tuần 35',
+        week: 'Tuần 31',
         form: 'Thực hành kiểm tra tổng hợp kỹ năng vận động và Tiêu chuẩn rèn luyện thể lực học sinh',
         units: 'Chạy 30m xuất phát cao, Bật xa tại chỗ, Gập bụng 30s, Chạy con thoi 4x10m (QĐ 53/2008/QĐ-BGDĐT)',
         requirements: 'Đánh giá toàn diện kết quả rèn luyện thể chất cả năm học và xếp loại thể lực học sinh theo chuẩn Bộ GD&ĐT.'
@@ -403,7 +741,7 @@ export function getDefaultAssessments(grade: string, subject: string) {
       stt: 2,
       assessmentName: `Kiểm tra, đánh giá cuối Học kỳ 1 (${subject} ${grade})`,
       time: '45 phút / 90 phút',
-      week: 'Tuần 18',
+      week: 'Tuần 16',
       form: 'Đề kiểm tra chuẩn hóa tập trung toàn khối theo ma trận chuẩn của Bộ GD&ĐT',
       units: 'Toàn bộ nội dung chương trình Học kỳ 1 theo SGK Kết nối tri thức',
       requirements: 'Đánh giá tổng kết kết quả rèn luyện và học tập HK1 theo định hướng phát triển phẩm chất, năng lực học sinh.'
@@ -423,7 +761,7 @@ export function getDefaultAssessments(grade: string, subject: string) {
       stt: 4,
       assessmentName: `Kiểm tra, đánh giá cuối Học kỳ 2 & Cả năm (${subject} ${grade})`,
       time: '45 phút / 90 phút',
-      week: 'Tuần 35',
+      week: 'Tuần 31',
       form: 'Đề kiểm tra chuẩn hóa cấp trường theo ma trận chuẩn của Bộ GD&ĐT',
       units: 'Nội dung cốt lõi của Học kỳ 2 và kiến thức trọng tâm cả năm học',
       requirements: 'Đánh giá toàn diện kết quả học tập cả năm, làm căn cứ xét hoàn thành chương trình môn học.'
@@ -443,7 +781,7 @@ export function generateMockPlan(config: ConfigFormData): PlanData {
     // ĐẶC QUYỀN MÔN TIẾNG ANH (GLOBAL SUCCESS):
     // Luôn giữ nguyên 100% cấu trúc 35 tuần chuẩn SGK Global Success từ data hệ thống.
     // Chỉ đọc và trích xuất nội dung NLS & AI từ file tải lên (nếu có) để áp dụng vào từng bài học.
-    const standardCurriculum = getSubjectCurriculum(config.subject, config.grade, config.schoolType);
+    const standardCurriculum = getSubjectCurriculum(config.subject, config.grade, config.schoolType, config);
     if (config.attachedFiles && config.attachedFiles.length > 0) {
       curriculum = applyUploadedNlsAiToEnglishCurriculum(
         standardCurriculum,
@@ -464,7 +802,7 @@ export function generateMockPlan(config: ConfigFormData): PlanData {
       curriculum = fileWithCurriculum.parsedCurriculum;
     } else {
       // Generate 100% genuine curriculum with authentic lesson names and YCCD
-      curriculum = getSubjectCurriculum(config.subject, config.grade, config.schoolType);
+      curriculum = getSubjectCurriculum(config.subject, config.grade, config.schoolType, config);
     }
   }
 
@@ -711,9 +1049,9 @@ export function generateMockPlan(config: ConfigFormData): PlanData {
     config,
     appendix1: {
       curriculum,
-      equipments: getDefaultEquipments(config.subject, config.grade, config.schoolType),
+      equipments: getDefaultEquipments(config.subject, config.grade, config.schoolType, config),
       classrooms: getDefaultClassrooms(config.schoolType),
-      assessments: getDefaultAssessments(config.grade, config.subject),
+      assessments: getDefaultAssessments(config.grade, config.subject, config),
       otherTasks
     },
     appendix2: {

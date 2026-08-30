@@ -44,9 +44,13 @@ export interface ConfigFormData {
   evalExcellent: number;
   evalGood: number;
   evalPass: number;
-  evalFail: number;
+  evalFail?: number;
   notes: string;
   attachedFiles: AttachedFile[];
+  // Cấu hình đặc thù Môn Công nghệ Lớp 9 (CT GDPT 2018)
+  technologyModuleGrade9?: 'dien_gia_dung' | 'che_bien_thuc_pham' | 'trong_cay_an_qua';
+  periodsPerWeekTerm1?: number;
+  periodsPerWeekTerm2?: number;
 }
 
 export interface CurriculumItem {

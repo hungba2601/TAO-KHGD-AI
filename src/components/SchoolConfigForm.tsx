@@ -15,7 +15,13 @@ import {
   CheckCircle2,
   RefreshCw,
   Award,
-  BookOpen
+  BookOpen,
+  Zap,
+  Utensils,
+  Sprout,
+  Sliders,
+  Check,
+  X
 } from './icons';
 import { ConfigFormData, SchoolType, AttachedFile } from '../types';
 import { INITIAL_CONFIG, SUBJECTS_BY_SCHOOL_TYPE, GRADES_BY_SCHOOL_TYPE } from '../lib/defaultData';
@@ -36,17 +42,88 @@ export const SchoolConfigForm: React.FC<SchoolConfigFormProps> = ({
   isGenerating
 }) => {
   const [dragActive, setDragActive] = useState(false);
+  const [isTechModalOpen, setIsTechModalOpen] = useState(false);
+  const [isTech8ModalOpen, setIsTech8ModalOpen] = useState(false);
+
+  const isTechSubject = (s: string) => {
+    const norm = (s || '').toLowerCase().trim();
+    return norm.includes('công nghệ') || norm.includes('cong nghe');
+  };
 
   const handleSchoolTypeChange = (type: SchoolType) => {
     const availableSubjects = SUBJECTS_BY_SCHOOL_TYPE[type];
     const availableGrades = GRADES_BY_SCHOOL_TYPE[type];
+    const nextSubject = availableSubjects.includes(config.subject) ? config.subject : availableSubjects[0];
+    const nextGrade = availableGrades.includes(config.grade) ? config.grade : availableGrades[0];
+    const isTech8 = isTechSubject(nextSubject) && nextGrade === '8';
+    const isTech9 = isTechSubject(nextSubject) && nextGrade === '9';
 
     onChange({
       ...config,
       schoolType: type,
-      subject: availableSubjects.includes(config.subject) ? config.subject : availableSubjects[0],
-      grade: availableGrades.includes(config.grade) ? config.grade : availableGrades[0]
+      subject: nextSubject,
+      grade: nextGrade,
+      ...(isTech8 && {
+        periodsPerWeekTerm1: config.periodsPerWeekTerm1 ?? 1,
+        periodsPerWeekTerm2: config.periodsPerWeekTerm2 ?? 2
+      }),
+      ...(isTech9 && {
+        technologyModuleGrade9: config.technologyModuleGrade9 || 'dien_gia_dung',
+        periodsPerWeekTerm1: config.periodsPerWeekTerm1 ?? 1,
+        periodsPerWeekTerm2: config.periodsPerWeekTerm2 ?? 1
+      })
     });
+    if (isTech8) {
+      setIsTech8ModalOpen(true);
+    } else if (isTech9) {
+      setIsTechModalOpen(true);
+    }
+  };
+
+  const handleSubjectChange = (newSubject: string) => {
+    const isTech8 = isTechSubject(newSubject) && config.grade === '8';
+    const isTech9 = isTechSubject(newSubject) && config.grade === '9';
+    onChange({
+      ...config,
+      subject: newSubject,
+      ...(isTech8 && {
+        periodsPerWeekTerm1: config.periodsPerWeekTerm1 ?? 1,
+        periodsPerWeekTerm2: config.periodsPerWeekTerm2 ?? 2
+      }),
+      ...(isTech9 && {
+        technologyModuleGrade9: config.technologyModuleGrade9 || 'dien_gia_dung',
+        periodsPerWeekTerm1: config.periodsPerWeekTerm1 ?? 1,
+        periodsPerWeekTerm2: config.periodsPerWeekTerm2 ?? 1
+      })
+    });
+    if (isTech8) {
+      setIsTech8ModalOpen(true);
+    } else if (isTech9) {
+      setIsTechModalOpen(true);
+    }
+  };
+
+  const handleGradeChange = (newGrade: string) => {
+    const isTech8 = isTechSubject(config.subject) && newGrade === '8';
+    const isTech9 = isTechSubject(config.subject) && newGrade === '9';
+    onChange({
+      ...config,
+      grade: newGrade,
+      ...(isTech8 && {
+        periodsPerWeekTerm1: config.periodsPerWeekTerm1 ?? 1,
+        periodsPerWeekTerm2: config.periodsPerWeekTerm2 ?? 2
+      }),
+      ...(isTech9 && {
+        technologyModuleGrade9: config.technologyModuleGrade9 || 'dien_gia_dung',
+        periodsPerWeekTerm1: config.periodsPerWeekTerm1 ?? 1,
+        periodsPerWeekTerm2: config.periodsPerWeekTerm2 ?? 1
+      })
+    });
+    if (isTech8) {
+      setIsTech8ModalOpen(true);
+    } else if (isTech9) {
+      setIsTechModalOpen(true);
+    }
   };
 
   const handleChange = (field: keyof ConfigFormData, value: any) => {
@@ -355,7 +432,7 @@ export const SchoolConfigForm: React.FC<SchoolConfigFormProps> = ({
                 <label className="block font-semibold text-slate-700 dark:text-slate-300 mb-1">Môn học giảng dạy</label>
                 <select
                   value={config.subject}
-                  onChange={(e) => handleChange('subject', e.target.value)}
+                  onChange={(e) => handleSubjectChange(e.target.value)}
                   className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/60 text-slate-900 dark:text-white font-semibold focus:ring-2 focus:ring-amber-500/30 focus:border-amber-500 outline-none transition"
                 >
                   {SUBJECTS_BY_SCHOOL_TYPE[config.schoolType].map((sub) => (
@@ -370,7 +447,7 @@ export const SchoolConfigForm: React.FC<SchoolConfigFormProps> = ({
                 <label className="block font-semibold text-slate-700 dark:text-slate-300 mb-1">Khối lớp</label>
                 <select
                   value={config.grade}
-                  onChange={(e) => handleChange('grade', e.target.value)}
+                  onChange={(e) => handleGradeChange(e.target.value)}
                   className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/60 text-slate-900 dark:text-white font-bold focus:ring-2 focus:ring-amber-500/30 focus:border-amber-500 outline-none transition"
                 >
                   {GRADES_BY_SCHOOL_TYPE[config.schoolType].map((g) => (
@@ -381,6 +458,96 @@ export const SchoolConfigForm: React.FC<SchoolConfigFormProps> = ({
                 </select>
               </div>
             </div>
+
+            {/* Banner hiển thị Thời lượng & Số tiết cho môn Công nghệ Lớp 8 */}
+            {isTechSubject(config.subject) && config.grade === '8' && (
+              <div className="p-3.5 rounded-2xl bg-gradient-to-r from-blue-500/10 via-cyan-500/10 to-indigo-500/10 border border-blue-500/30 dark:border-blue-400/20 space-y-2.5">
+                <div className="flex items-center justify-between gap-2">
+                  <div className="flex items-center gap-2.5 min-w-0">
+                    <span className="p-2 rounded-xl bg-blue-600 text-white shadow-sm shrink-0">
+                      <Sliders className="w-4 h-4" />
+                    </span>
+                    <div className="min-w-0">
+                      <div className="text-[10px] font-extrabold uppercase tracking-wider text-blue-700 dark:text-blue-300">
+                        Cấu hình Thời lượng Công nghệ 8 (CT GDPT 2018)
+                      </div>
+                      <div className="text-xs font-black text-slate-900 dark:text-white truncate">
+                        HK1: {config.periodsPerWeekTerm1 ?? 1} tiết/tuần • HK2: {config.periodsPerWeekTerm2 ?? 2} tiết/tuần
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => setIsTech8ModalOpen(true)}
+                    className="px-3 py-1.5 rounded-xl bg-white dark:bg-slate-800 hover:bg-blue-50 dark:hover:bg-blue-950/40 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-700/60 text-xs font-bold flex items-center gap-1.5 shadow-sm transition shrink-0"
+                  >
+                    <Sliders className="w-3.5 h-3.5" />
+                    <span>Cấu hình số tiết</span>
+                  </button>
+                </div>
+                <div className="flex flex-wrap items-center gap-2 text-[11px] text-slate-700 dark:text-slate-300 bg-white/80 dark:bg-slate-900/70 px-2.5 py-1.5 rounded-xl border border-slate-200/60 dark:border-slate-800/60">
+                  <span className="font-bold text-blue-600 dark:text-blue-400">⏱ Phân bổ:</span>
+                  <span><strong>HK1:</strong> {config.periodsPerWeekTerm1 ?? 1} tiết/tuần ({ (config.periodsPerWeekTerm1 ?? 1) * 18 }t)</span>
+                  <span>•</span>
+                  <span><strong>HK2:</strong> {config.periodsPerWeekTerm2 ?? 2} tiết/tuần ({ (config.periodsPerWeekTerm2 ?? 2) * 17 }t)</span>
+                  <span>•</span>
+                  <span className="font-extrabold text-blue-700 dark:text-blue-300">
+                    Tổng: { (config.periodsPerWeekTerm1 ?? 1) * 18 + (config.periodsPerWeekTerm2 ?? 2) * 17 } tiết/năm
+                  </span>
+                </div>
+              </div>
+            )}
+
+            {/* Banner hiển thị Mô đun & Số tiết cho môn Công nghệ Lớp 9 */}
+            {isTechSubject(config.subject) && config.grade === '9' && (
+              <div className="p-3.5 rounded-2xl bg-gradient-to-r from-amber-500/10 via-orange-500/10 to-emerald-500/10 border border-amber-500/30 dark:border-amber-400/20 space-y-2.5">
+                <div className="flex items-center justify-between gap-2">
+                  <div className="flex items-center gap-2.5 min-w-0">
+                    <span className="p-2 rounded-xl bg-amber-500 text-white shadow-sm shrink-0">
+                      {config.technologyModuleGrade9 === 'che_bien_thuc_pham' ? (
+                        <Utensils className="w-4 h-4" />
+                      ) : config.technologyModuleGrade9 === 'trong_cay_an_qua' ? (
+                        <Sprout className="w-4 h-4" />
+                      ) : (
+                        <Zap className="w-4 h-4" />
+                      )}
+                    </span>
+                    <div className="min-w-0">
+                      <div className="text-[10px] font-extrabold uppercase tracking-wider text-amber-700 dark:text-amber-300">
+                        Mô đun Tự chọn Lớp 9 (CT GDPT 2018)
+                      </div>
+                      <div className="text-xs font-black text-slate-900 dark:text-white truncate">
+                        {config.technologyModuleGrade9 === 'che_bien_thuc_pham'
+                          ? 'MÔ ĐUN II: CHẾ BIẾN THỰC PHẨM'
+                          : config.technologyModuleGrade9 === 'trong_cay_an_qua'
+                          ? 'MÔ ĐUN III: TRỒNG CÂY ĂN QUẢ'
+                          : 'MÔ ĐUN I: LẮP ĐẶT MẠNG ĐIỆN (MẠNG ĐIỆN TRONG NHÀ)'}
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => setIsTechModalOpen(true)}
+                    className="px-3 py-1.5 rounded-xl bg-white dark:bg-slate-800 hover:bg-amber-50 dark:hover:bg-amber-950/40 text-amber-700 dark:text-amber-300 border border-amber-200 dark:border-amber-700/60 text-xs font-bold flex items-center gap-1.5 shadow-sm transition shrink-0"
+                  >
+                    <Sliders className="w-3.5 h-3.5" />
+                    <span>Đổi Mô đun</span>
+                  </button>
+                </div>
+                <div className="flex flex-wrap items-center gap-2 text-[11px] text-slate-700 dark:text-slate-300 bg-white/80 dark:bg-slate-900/70 px-2.5 py-1.5 rounded-xl border border-slate-200/60 dark:border-slate-800/60">
+                  <span className="font-bold text-amber-600 dark:text-amber-400">⏱ Phân bổ HK1:</span>
+                  <span><strong>Định hướng nghề nghiệp</strong> ({(config.periodsPerWeekTerm1 || 1) === 2 ? 'Tuần 1 → 8: 15 tiết + 1t Ôn tập' : 'Tuần 1 → 16'})</span>
+                  <span>•</span>
+                  <span><strong>KTĐGGK1</strong> (Tuần 9)</span>
+                  <span>•</span>
+                  <span><strong>Mô đun tự chọn</strong> ({(config.periodsPerWeekTerm1 || 1) === 2 ? 'Tuần 10 → 16' : 'HK2'})</span>
+                  <span>•</span>
+                  <span className="font-extrabold text-slate-900 dark:text-white">
+                    Tổng: {(config.periodsPerWeekTerm1 || 1) * 18 + (config.periodsPerWeekTerm2 || 1) * 17} tiết/năm
+                  </span>
+                </div>
+              </div>
+            )}
 
             <div>
               <label className="block font-semibold text-slate-700 dark:text-slate-300 mb-1">Năm học</label>
@@ -729,6 +896,476 @@ export const SchoolConfigForm: React.FC<SchoolConfigFormProps> = ({
           </span>
         </button>
       </div>
+
+      {/* MODAL LỰA CHỌN MÔ ĐUN CÔNG NGHỆ 9 & SỐ TIẾT/TUẦN */}
+      {isTechModalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-sm animate-fadeIn">
+          <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl max-w-2xl w-full shadow-2xl overflow-hidden flex flex-col max-h-[92vh] animate-scaleUp">
+            {/* Modal Header */}
+            <div className="p-5 border-b border-slate-100 dark:border-slate-800 flex items-center justify-between bg-gradient-to-r from-amber-500/10 via-orange-500/10 to-amber-500/5">
+              <div className="flex items-center gap-3">
+                <div className="p-2.5 rounded-2xl bg-gradient-to-br from-amber-500 to-orange-500 text-white shadow-md shadow-amber-500/20">
+                  <Zap className="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 className="text-base font-extrabold text-slate-900 dark:text-white">
+                    Cấu hình Mô đun Tự chọn môn Công nghệ Lớp 9
+                  </h3>
+                  <p className="text-xs text-slate-500 dark:text-slate-400">
+                    Chương trình GDPT 2018 - SGK Kết nối tri thức với cuộc sống
+                  </p>
+                </div>
+              </div>
+              <button
+                type="button"
+                onClick={() => setIsTechModalOpen(false)}
+                className="p-2 rounded-xl text-slate-400 hover:text-slate-700 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            {/* Modal Body */}
+            <div className="p-6 overflow-y-auto space-y-5 text-xs">
+              {/* Notice về phần Định hướng nghề nghiệp bắt buộc */}
+              <div className="p-3.5 rounded-2xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800/60 flex items-start gap-2.5">
+                <AlertCircle className="w-4 h-4 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5" />
+                <div className="text-amber-900 dark:text-amber-200 leading-relaxed text-xs">
+                  <strong>Nội dung học chung bắt buộc:</strong> Phần <strong>ĐỊNH HƯỚNG NGHỀ NGHIỆP</strong> (Bài 1 → Bài 5) là phần chung bắt buộc <strong>toàn bộ học sinh học đầu tiên ở cả 3 Option</strong> (từ Tuần 1 đến Tuần 5). Sau khi học xong 5 bài chung, học sinh sẽ tiếp tục học <strong>01 trong 03 Mô đun trải nghiệm nghề nghiệp</strong> dưới đây:
+                </div>
+              </div>
+
+              {/* 3 Module Options */}
+              <div className="space-y-3">
+                <label className="block font-bold text-slate-900 dark:text-white text-xs">
+                  Chọn 01 trong 03 Mô đun Trải nghiệm nghề nghiệp:
+                </label>
+
+                {/* Option 1: Lắp đặt mạng điện */}
+                <div
+                  onClick={() => handleChange('technologyModuleGrade9', 'dien_gia_dung')}
+                  className={`p-4 rounded-2xl border-2 transition cursor-pointer flex items-start gap-3.5 ${
+                    (config.technologyModuleGrade9 || 'dien_gia_dung') === 'dien_gia_dung'
+                      ? 'border-amber-500 bg-amber-50/60 dark:bg-amber-950/30 shadow-md ring-2 ring-amber-500/20'
+                      : 'border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 bg-white dark:bg-slate-800/40'
+                  }`}
+                >
+                  <div className={`p-2.5 rounded-xl text-white shadow-sm shrink-0 ${(config.technologyModuleGrade9 || 'dien_gia_dung') === 'dien_gia_dung' ? 'bg-amber-500' : 'bg-slate-400'}`}>
+                    <Zap className="w-5 h-5" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center justify-between mb-1">
+                      <h4 className="font-extrabold text-sm text-slate-900 dark:text-white">
+                        MÔ ĐUN I: LẮP ĐẶT MẠNG ĐIỆN
+                      </h4>
+                      {(config.technologyModuleGrade9 || 'dien_gia_dung') === 'dien_gia_dung' && (
+                        <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-500 text-white">Đang chọn</span>
+                      )}
+                    </div>
+                    <p className="text-slate-600 dark:text-slate-300 text-xs leading-relaxed">
+                      <strong>(Lắp đặt mạng điện trong nhà)</strong>: Dụng cụ đo kiểm điện, an toàn điện, thiết bị đóng cắt &amp; lấy điện, sơ đồ mạch điện, thiết kế bảng điện, thực hành lắp đặt mạng điện trong nhà.
+                    </p>
+                    <div className="mt-2 text-[11px] text-amber-700 dark:text-amber-400 font-semibold">
+                      ✓ Đầy đủ 7 bài học chuyên sâu + 4 mốc kiểm tra định kỳ + Tích hợp NLS &amp; AI
+                    </div>
+                  </div>
+                </div>
+
+                {/* Option 2: Chế biến thực phẩm */}
+                <div
+                  onClick={() => handleChange('technologyModuleGrade9', 'che_bien_thuc_pham')}
+                  className={`p-4 rounded-2xl border-2 transition cursor-pointer flex items-start gap-3.5 ${
+                    config.technologyModuleGrade9 === 'che_bien_thuc_pham'
+                      ? 'border-orange-500 bg-orange-50/60 dark:bg-orange-950/30 shadow-md ring-2 ring-orange-500/20'
+                      : 'border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 bg-white dark:bg-slate-800/40'
+                  }`}
+                >
+                  <div className={`p-2.5 rounded-xl text-white shadow-sm shrink-0 ${config.technologyModuleGrade9 === 'che_bien_thuc_pham' ? 'bg-orange-500' : 'bg-slate-400'}`}>
+                    <Utensils className="w-5 h-5" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center justify-between mb-1">
+                      <h4 className="font-extrabold text-sm text-slate-900 dark:text-white">
+                        MÔ ĐUN II: CHẾ BIẾN THỰC PHẨM
+                      </h4>
+                      {config.technologyModuleGrade9 === 'che_bien_thuc_pham' && (
+                        <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-orange-500 text-white">Đang chọn</span>
+                      )}
+                    </div>
+                    <p className="text-slate-600 dark:text-slate-300 text-xs leading-relaxed">
+                      An toàn vệ sinh thực phẩm, giá trị dinh dưỡng, sơ chế nguyên liệu, chế biến món ăn không sử dụng nhiệt (nộm/trộn/muối chua), chế biến có sử dụng nhiệt (luộc/hấp/rán), bảo quản thực phẩm.
+                    </p>
+                    <div className="mt-2 text-[11px] text-orange-700 dark:text-orange-400 font-semibold">
+                      ✓ Đầy đủ 7 bài học chuyên sâu + 4 mốc kiểm tra định kỳ + Tích hợp NLS &amp; AI
+                    </div>
+                  </div>
+                </div>
+
+                {/* Option 3: Trồng cây ăn quả */}
+                <div
+                  onClick={() => handleChange('technologyModuleGrade9', 'trong_cay_an_qua')}
+                  className={`p-4 rounded-2xl border-2 transition cursor-pointer flex items-start gap-3.5 ${
+                    config.technologyModuleGrade9 === 'trong_cay_an_qua'
+                      ? 'border-emerald-500 bg-emerald-50/60 dark:bg-emerald-950/30 shadow-md ring-2 ring-emerald-500/20'
+                      : 'border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 bg-white dark:bg-slate-800/40'
+                  }`}
+                >
+                  <div className={`p-2.5 rounded-xl text-white shadow-sm shrink-0 ${config.technologyModuleGrade9 === 'trong_cay_an_qua' ? 'bg-emerald-500' : 'bg-slate-400'}`}>
+                    <Sprout className="w-5 h-5" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center justify-between mb-1">
+                      <h4 className="font-extrabold text-sm text-slate-900 dark:text-white">
+                        MÔ ĐUN III: TRỒNG CÂY ĂN QUẢ
+                      </h4>
+                      {config.technologyModuleGrade9 === 'trong_cay_an_qua' && (
+                        <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-500 text-white">Đang chọn</span>
+                      )}
+                    </div>
+                    <p className="text-slate-600 dark:text-slate-300 text-xs leading-relaxed">
+                      Đặc điểm sinh học cây ăn quả, kỹ thuật nhân giống vô tính (chiết cành, ghép cành, giâm cành), kỹ thuật làm đất &amp; trồng cây, chăm sóc bón phân, phòng trừ sâu bệnh sinh học VietGAP.
+                    </p>
+                    <div className="mt-2 text-[11px] text-emerald-700 dark:text-emerald-400 font-semibold">
+                      ✓ Đầy đủ 8 bài học chuyên sâu + 4 mốc kiểm tra định kỳ + Tích hợp NLS &amp; AI
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Cấu hình số tiết/tuần cho HK1 và HK2 */}
+              <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 space-y-3">
+                <label className="block font-bold text-slate-900 dark:text-white text-xs">
+                  Cấu hình thời lượng giảng dạy (Số tiết / tuần):
+                </label>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block font-medium text-slate-700 dark:text-slate-300 mb-1 text-[11px]">
+                      Số tiết / 1 tuần Học kỳ 1 (18 tuần thực học):
+                    </label>
+                    <select
+                      value={config.periodsPerWeekTerm1 || 1}
+                      onChange={(e) => handleChange('periodsPerWeekTerm1', Number(e.target.value))}
+                      className="w-full px-3 py-2 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 text-slate-900 dark:text-white font-bold text-xs outline-none focus:ring-2 focus:ring-amber-500"
+                    >
+                      <option value={1}>1 tiết / tuần (Tổng HK1 = 18 tiết)</option>
+                      <option value={2}>2 tiết / tuần (Tổng HK1 = 36 tiết)</option>
+                      <option value={3}>3 tiết / tuần (Tổng HK1 = 54 tiết)</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label className="block font-medium text-slate-700 dark:text-slate-300 mb-1 text-[11px]">
+                      Số tiết / 1 tuần Học kỳ 2 (17 tuần thực học):
+                    </label>
+                    <select
+                      value={config.periodsPerWeekTerm2 || 1}
+                      onChange={(e) => handleChange('periodsPerWeekTerm2', Number(e.target.value))}
+                      className="w-full px-3 py-2 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 text-slate-900 dark:text-white font-bold text-xs outline-none focus:ring-2 focus:ring-amber-500"
+                    >
+                      <option value={1}>1 tiết / tuần (Tổng HK2 = 17 tiết)</option>
+                      <option value={2}>2 tiết / tuần (Tổng HK2 = 34 tiết)</option>
+                      <option value={3}>3 tiết / tuần (Tổng HK2 = 51 tiết)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div className="p-3 rounded-xl bg-amber-500/10 border border-amber-500/30 text-[11px] text-amber-900 dark:text-amber-200 space-y-1.5">
+                  <div className="font-bold flex items-center gap-1.5">
+                    <span>📅 Tiến độ phân phối chương trình HK1 môn Công nghệ 9:</span>
+                  </div>
+                  <div>
+                    • Phần chung <strong>Định hướng nghề nghiệp (15 tiết + 1t Ôn tập KTGK1)</strong>:
+                    <span className="block pl-3 text-slate-700 dark:text-slate-300">
+                      - Bài 1 (3 tiết), Bài 2 (2 tiết), Bài 3 (4 tiết), Bài 4 (3 tiết), Bài 5 (3 tiết) + Ôn tập KTGK1 (1 tiết) = <strong>16 tiết (Tuần 1 → 8)</strong>.
+                    </span>
+                  </div>
+                  <div>
+                    • <strong>KTĐGGK1 (Tuần 9)</strong>: Kiểm tra, đánh giá giữa Học kỳ 1.
+                  </div>
+                  <div>
+                    • <strong>Mô đun Tự chọn</strong>: Giảng dạy từ <strong>Tuần 10 → Tuần 16</strong> (7 tuần x 2 tiết = 14 tiết) và tiếp tục thực hành chuyên sâu trong Học kỳ 2.
+                  </div>
+                </div>
+
+                <div className="pt-2 border-t border-slate-200 dark:border-slate-700 flex items-center justify-between text-xs">
+                  <span className="text-slate-500 dark:text-slate-400">Tổng thời lượng cả năm học:</span>
+                  <span className="font-extrabold text-amber-600 dark:text-amber-400 text-sm">
+                    {(config.periodsPerWeekTerm1 || 1) * 18 + (config.periodsPerWeekTerm2 || 1) * 17} tiết / năm
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Modal Footer */}
+            <div className="p-4 border-t border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/40 flex items-center justify-end gap-3">
+              <button
+                type="button"
+                onClick={() => setIsTechModalOpen(false)}
+                className="px-5 py-2.5 rounded-xl font-semibold text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 text-xs transition"
+              >
+                Đóng
+              </button>
+              <button
+                type="button"
+                onClick={() => setIsTechModalOpen(false)}
+                className="px-6 py-2.5 rounded-xl font-bold text-white bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 shadow-md shadow-amber-500/20 text-xs transition flex items-center gap-2"
+              >
+                <Check className="w-4 h-4" />
+                <span>Xác nhận &amp; Áp dụng</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* MODAL CẤU HÌNH THỜI LƯỢNG MÔN CÔNG NGHỆ LỚP 8 */}
+      {isTech8ModalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/70 backdrop-blur-sm animate-fade-in">
+          <div className="relative w-full max-w-2xl max-h-[92vh] flex flex-col rounded-3xl bg-white dark:bg-slate-900 border border-blue-200 dark:border-blue-800 shadow-2xl overflow-hidden">
+            {/* Modal Header */}
+            <div className="p-5 border-b border-slate-100 dark:border-slate-800 bg-gradient-to-r from-blue-500/10 via-cyan-500/10 to-indigo-500/10 flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <span className="p-2.5 rounded-2xl bg-blue-600 text-white shadow-md shadow-blue-600/30">
+                  <Sliders className="w-5 h-5" />
+                </span>
+                <div>
+                  <h3 className="text-base font-extrabold text-slate-900 dark:text-white flex items-center gap-2">
+                    <span>Cấu hình Thời lượng Môn Công nghệ Lớp 8</span>
+                    <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-blue-100 dark:bg-blue-900/60 text-blue-700 dark:text-blue-300">
+                      CT GDPT 2018
+                    </span>
+                  </h3>
+                  <p className="text-xs text-slate-500 dark:text-slate-400">
+                    SGK Kết nối tri thức với cuộc sống • Chọn số tiết/tuần cho Học kỳ 1 và Học kỳ 2
+                  </p>
+                </div>
+              </div>
+              <button
+                type="button"
+                onClick={() => setIsTech8ModalOpen(false)}
+                className="p-2 rounded-xl text-slate-400 hover:text-slate-700 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            {/* Modal Body */}
+            <div className="p-6 overflow-y-auto space-y-5 text-xs">
+              {/* Notice */}
+              <div className="p-3.5 rounded-2xl bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-800/60 flex items-start gap-2.5">
+                <AlertCircle className="w-4 h-4 text-blue-600 dark:text-blue-400 shrink-0 mt-0.5" />
+                <div className="text-blue-900 dark:text-blue-200 leading-relaxed text-xs">
+                  <strong>Quy định phân phối thời lượng:</strong> Theo kế hoạch giáo dục của các trường THCS, môn Công nghệ Lớp 8 có thể phân bổ <strong>1 hoặc 2 tiết/tuần</strong> tùy theo từng học kỳ. Bạn có thể chọn nhanh phương án mẫu hoặc tự chỉnh số tiết/tuần bên dưới.
+                </div>
+              </div>
+
+              {/* 4 Quick Presets */}
+              <div className="space-y-3">
+                <label className="block font-bold text-slate-900 dark:text-white text-xs">
+                  Chọn nhanh Phương án phân bổ phổ biến:
+                </label>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {/* Preset 1: 52 tiết (1t HK1 + 2t HK2) */}
+                  <div
+                    onClick={() => {
+                      onChange({
+                        ...config,
+                        periodsPerWeekTerm1: 1,
+                        periodsPerWeekTerm2: 2
+                      });
+                    }}
+                    className={`p-3.5 rounded-2xl border-2 transition cursor-pointer flex flex-col justify-between ${
+                      (config.periodsPerWeekTerm1 || 1) === 1 && (config.periodsPerWeekTerm2 ?? 2) === 2
+                        ? 'border-blue-500 bg-blue-50/70 dark:bg-blue-950/40 shadow-md ring-2 ring-blue-500/20'
+                        : 'border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 bg-white dark:bg-slate-800/40'
+                    }`}
+                  >
+                    <div className="flex items-center justify-between mb-1.5">
+                      <span className="font-extrabold text-xs text-blue-600 dark:text-blue-400">
+                        Phương án 1 (Chuẩn 52 tiết)
+                      </span>
+                      <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-full bg-blue-500 text-white">
+                        Phổ biến nhất
+                      </span>
+                    </div>
+                    <div className="text-[11px] text-slate-700 dark:text-slate-300 space-y-1">
+                      <div>• <strong>HK1:</strong> 1 tiết/tuần (18 tiết)</div>
+                      <div>• <strong>HK2:</strong> 2 tiết/tuần (34 tiết)</div>
+                      <div className="font-extrabold text-blue-700 dark:text-blue-300 pt-1 border-t border-blue-200/60 dark:border-blue-800/60">
+                        👉 Tổng: 52 tiết / năm
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Preset 2: 53 tiết (2t HK1 + 1t HK2) */}
+                  <div
+                    onClick={() => {
+                      onChange({
+                        ...config,
+                        periodsPerWeekTerm1: 2,
+                        periodsPerWeekTerm2: 1
+                      });
+                    }}
+                    className={`p-3.5 rounded-2xl border-2 transition cursor-pointer flex flex-col justify-between ${
+                      (config.periodsPerWeekTerm1 || 1) === 2 && (config.periodsPerWeekTerm2 ?? 2) === 1
+                        ? 'border-cyan-500 bg-cyan-50/70 dark:bg-cyan-950/40 shadow-md ring-2 ring-cyan-500/20'
+                        : 'border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 bg-white dark:bg-slate-800/40'
+                    }`}
+                  >
+                    <div className="flex items-center justify-between mb-1.5">
+                      <span className="font-extrabold text-xs text-cyan-600 dark:text-cyan-400">
+                        Phương án 2 (Phân bổ 53 tiết)
+                      </span>
+                    </div>
+                    <div className="text-[11px] text-slate-700 dark:text-slate-300 space-y-1">
+                      <div>• <strong>HK1:</strong> 2 tiết/tuần (36 tiết)</div>
+                      <div>• <strong>HK2:</strong> 1 tiết/tuần (17 tiết)</div>
+                      <div className="font-extrabold text-cyan-700 dark:text-cyan-300 pt-1 border-t border-cyan-200/60 dark:border-cyan-800/60">
+                        👉 Tổng: 53 tiết / năm
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Preset 3: 35 tiết (1t HK1 + 1t HK2) */}
+                  <div
+                    onClick={() => {
+                      onChange({
+                        ...config,
+                        periodsPerWeekTerm1: 1,
+                        periodsPerWeekTerm2: 1
+                      });
+                    }}
+                    className={`p-3.5 rounded-2xl border-2 transition cursor-pointer flex flex-col justify-between ${
+                      (config.periodsPerWeekTerm1 || 1) === 1 && (config.periodsPerWeekTerm2 ?? 2) === 1
+                        ? 'border-indigo-500 bg-indigo-50/70 dark:bg-indigo-950/40 shadow-md ring-2 ring-indigo-500/20'
+                        : 'border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 bg-white dark:bg-slate-800/40'
+                    }`}
+                  >
+                    <div className="flex items-center justify-between mb-1.5">
+                      <span className="font-extrabold text-xs text-indigo-600 dark:text-indigo-400">
+                        Phương án 3 (1 tiết/tuần cả năm)
+                      </span>
+                    </div>
+                    <div className="text-[11px] text-slate-700 dark:text-slate-300 space-y-1">
+                      <div>• <strong>HK1:</strong> 1 tiết/tuần (18 tiết)</div>
+                      <div>• <strong>HK2:</strong> 1 tiết/tuần (17 tiết)</div>
+                      <div className="font-extrabold text-indigo-700 dark:text-indigo-300 pt-1 border-t border-indigo-200/60 dark:border-indigo-800/60">
+                        👉 Tổng: 35 tiết / năm
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Preset 4: 70 tiết (2t HK1 + 2t HK2) */}
+                  <div
+                    onClick={() => {
+                      onChange({
+                        ...config,
+                        periodsPerWeekTerm1: 2,
+                        periodsPerWeekTerm2: 2
+                      });
+                    }}
+                    className={`p-3.5 rounded-2xl border-2 transition cursor-pointer flex flex-col justify-between ${
+                      (config.periodsPerWeekTerm1 || 1) === 2 && (config.periodsPerWeekTerm2 ?? 2) === 2
+                        ? 'border-violet-500 bg-violet-50/70 dark:bg-violet-950/40 shadow-md ring-2 ring-violet-500/20'
+                        : 'border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 bg-white dark:bg-slate-800/40'
+                    }`}
+                  >
+                    <div className="flex items-center justify-between mb-1.5">
+                      <span className="font-extrabold text-xs text-violet-600 dark:text-violet-400">
+                        Phương án 4 (2 tiết/tuần cả năm)
+                      </span>
+                    </div>
+                    <div className="text-[11px] text-slate-700 dark:text-slate-300 space-y-1">
+                      <div>• <strong>HK1:</strong> 2 tiết/tuần (36 tiết)</div>
+                      <div>• <strong>HK2:</strong> 2 tiết/tuần (34 tiết)</div>
+                      <div className="font-extrabold text-violet-700 dark:text-violet-300 pt-1 border-t border-violet-200/60 dark:border-violet-800/60">
+                        👉 Tổng: 70 tiết / năm
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Tùy chỉnh chi tiết */}
+              <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 space-y-3">
+                <label className="block font-bold text-slate-900 dark:text-white text-xs">
+                  Hoặc Tùy chỉnh chi tiết số tiết mỗi tuần:
+                </label>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block font-medium text-slate-700 dark:text-slate-300 mb-1 text-[11px]">
+                      Số tiết / 1 tuần Học kỳ 1 (18 tuần thực học):
+                    </label>
+                    <select
+                      value={config.periodsPerWeekTerm1 || 1}
+                      onChange={(e) => handleChange('periodsPerWeekTerm1', Number(e.target.value))}
+                      className="w-full px-3 py-2 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 text-slate-900 dark:text-white font-bold text-xs outline-none focus:ring-2 focus:ring-blue-500"
+                    >
+                      <option value={1}>1 tiết / tuần (Tổng HK1 = 18 tiết)</option>
+                      <option value={2}>2 tiết / tuần (Tổng HK1 = 36 tiết)</option>
+                      <option value={3}>3 tiết / tuần (Tổng HK1 = 54 tiết)</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label className="block font-medium text-slate-700 dark:text-slate-300 mb-1 text-[11px]">
+                      Số tiết / 1 tuần Học kỳ 2 (17 tuần thực học):
+                    </label>
+                    <select
+                      value={config.periodsPerWeekTerm2 ?? 2}
+                      onChange={(e) => handleChange('periodsPerWeekTerm2', Number(e.target.value))}
+                      className="w-full px-3 py-2 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 text-slate-900 dark:text-white font-bold text-xs outline-none focus:ring-2 focus:ring-blue-500"
+                    >
+                      <option value={1}>1 tiết / tuần (Tổng HK2 = 17 tiết)</option>
+                      <option value={2}>2 tiết / tuần (Tổng HK2 = 34 tiết)</option>
+                      <option value={3}>3 tiết / tuần (Tổng HK2 = 51 tiết)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div className="p-3 rounded-xl bg-blue-500/10 border border-blue-500/30 text-[11px] text-blue-900 dark:text-blue-200 space-y-1.5">
+                  <div className="font-bold flex items-center gap-1.5">
+                    <span>📅 Phân phối nội dung chương trình Công nghệ 8:</span>
+                  </div>
+                  <div>
+                    • <strong>Học kỳ 1 (18 tuần)</strong>: Chương I (Vẽ kĩ thuật) &amp; Chương II (Cơ khí). KTGK1: <strong>Tuần 9</strong> | KTCK1: <strong>Tuần 16</strong>.
+                  </div>
+                  <div>
+                    • <strong>Học kỳ 2 (17 tuần)</strong>: Chương III (An toàn điện), Chương IV (Kĩ thuật điện) &amp; Chương V (Thiết kế kĩ thuật). KTGK2: <strong>Tuần 26</strong> | KTCK2: <strong>Tuần 31</strong>.
+                  </div>
+                </div>
+
+                <div className="pt-2 border-t border-slate-200 dark:border-slate-700 flex items-center justify-between text-xs">
+                  <span className="text-slate-500 dark:text-slate-400">Tổng thời lượng cả năm học:</span>
+                  <span className="font-extrabold text-blue-600 dark:text-blue-400 text-sm">
+                    {(config.periodsPerWeekTerm1 || 1) * 18 + (config.periodsPerWeekTerm2 ?? 2) * 17} tiết / năm
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Modal Footer */}
+            <div className="p-4 border-t border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/40 flex items-center justify-end gap-3">
+              <button
+                type="button"
+                onClick={() => setIsTech8ModalOpen(false)}
+                className="px-5 py-2.5 rounded-xl font-semibold text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 text-xs transition"
+              >
+                Đóng
+              </button>
+              <button
+                type="button"
+                onClick={() => setIsTech8ModalOpen(false)}
+                className="px-6 py-2.5 rounded-xl font-bold text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 shadow-md shadow-blue-500/20 text-xs transition flex items-center gap-2"
+              >
+                <Check className="w-4 h-4" />
+                <span>Xác nhận &amp; Áp dụng</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
