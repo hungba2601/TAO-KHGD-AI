@@ -539,42 +539,42 @@ export function getDefaultAssessments(
       {
         id: 'as-1',
         stt: 1,
-        assessmentName: `Mid-term Test 1 (English ${g})`,
-        time: '45 minutes',
-        week: 'Week 9',
-        form: 'Written Test (Listening, Language, Reading, Writing) & Speaking Test (70% - 30%)',
-        units: 'Knowledge and language skills covered in Units 1 to 5 (Global Success SGK)',
-        requirements: 'Assess 4 communicative skills (Listening, Speaking, Reading, Writing) aligned with CEFR & MOET matrix standards.'
+        assessmentName: `Kiểm tra, đánh giá giữa Học kỳ 1 (Tiếng Anh ${g})`,
+        time: '45 phút',
+        week: 'Tuần 9',
+        form: 'Kiểm tra viết trên giấy/máy tính (Nghe, Đọc, Viết) kết hợp Kiểm tra Nói (Tỉ lệ 70% viết - 30% nói)',
+        units: `Kiến thức và kỹ năng ngôn ngữ từ Unit 1 đến Unit 5 (SGK Tiếng Anh ${g})`,
+        requirements: 'Đánh giá 4 kỹ năng giao tiếp (Nghe, Nói, Đọc, Viết) và kiến thức ngôn ngữ theo ma trận đề chuẩn của Bộ GD&ĐT.'
       },
       {
         id: 'as-2',
         stt: 2,
-        assessmentName: `End-of-Term 1 Test (English ${g})`,
-        time: '45 minutes / 60 minutes',
-        week: isSecondaryEn ? 'Week 18' : 'Week 16',
-        form: 'Standardized Semester Examination (4 Skills Assessment: Listening, Reading, Writing, Speaking)',
-        units: 'Comprehensive curriculum covered in Term 1 (Units 1 - 6 for Secondary/High School / Units 1 - 10 for Primary)',
-        requirements: 'Evaluate Term 1 learning outcomes and communicative language competencies of students.'
+        assessmentName: `Kiểm tra, đánh giá cuối Học kỳ 1 (Tiếng Anh ${g})`,
+        time: '45 phút / 60 phút',
+        week: isSecondaryEn ? 'Tuần 18' : 'Tuần 16',
+        form: 'Đề kiểm tra chuẩn hóa cuối kỳ cấp trường (Đánh giá đủ 4 kỹ năng: Nghe, Nói, Đọc, Viết)',
+        units: `Toàn bộ chương trình Tiếng Anh Học kỳ 1 (Units 1 - 6 đối với THCS/THPT; Units 1 - 10 đối với Tiểu học)`,
+        requirements: 'Đánh giá tổng kết kết quả học tập và năng lực giao tiếp Tiếng Anh của học sinh trong toàn bộ Học kỳ 1.'
       },
       {
         id: 'as-3',
         stt: 3,
-        assessmentName: `Mid-term Test 2 (English ${g})`,
-        time: '45 minutes',
-        week: 'Week 26',
-        form: 'Written Test & Project Presentation / Speaking Interaction',
-        units: 'Knowledge and skills covered in Term 2 (Units 7 to 9 / Units 11 to 15)',
-        requirements: 'Evaluate language retention, speaking fluency, and problem-solving skills in English.'
+        assessmentName: `Kiểm tra, đánh giá giữa Học kỳ 2 (Tiếng Anh ${g})`,
+        time: '45 phút',
+        week: 'Tuần 26',
+        form: 'Kiểm tra viết kết hợp Báo cáo dự án / Vấn đáp giao tiếp tiếng Anh',
+        units: 'Kiến thức và kỹ năng ngôn ngữ nửa đầu Học kỳ 2 (Units 7 đến 9)',
+        requirements: 'Đánh giá sự tiến bộ về kỹ năng ngôn ngữ, độ trôi chảy và khả năng vận dụng kiến thức Tiếng Anh trong nửa đầu Học kỳ 2.'
       },
       {
         id: 'as-4',
         stt: 4,
-        assessmentName: `End-of-Year Test / Final Examination (English ${g})`,
-        time: '45 minutes / 60 minutes',
-        week: isSecondaryEn ? 'Week 35' : 'Week 31',
-        form: 'Standardized School-wide Final Examination (4 Skills + Grammar & Vocabulary)',
-        units: 'Key language focus of Term 2 and overall core competence of the school year',
-        requirements: 'Comprehensive assessment of year-end English proficiency as basis for grade progression and completion.'
+        assessmentName: `Kiểm tra, đánh giá cuối Học kỳ 2 & Cả năm (Tiếng Anh ${g})`,
+        time: '45 phút / 60 phút',
+        week: isSecondaryEn ? 'Tuần 35' : 'Tuần 31',
+        form: 'Đề kiểm tra chuẩn hóa cả năm cấp trường (Đánh giá 4 kỹ năng kết hợp Ngữ pháp & Từ vựng)',
+        units: 'Kiến thức trọng tâm Học kỳ 2 và năng lực ngôn ngữ cốt lõi của cả năm học',
+        requirements: 'Đánh giá toàn diện năng lực tiếng Anh cả năm học, làm căn cứ xét hoàn thành chương trình môn học và lên lớp.'
       }
     ];
   }

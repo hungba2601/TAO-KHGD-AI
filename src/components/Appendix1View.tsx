@@ -751,25 +751,71 @@ export const Appendix1View: React.FC<Appendix1ViewProps> = ({ planData, onUpdate
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-100 dark:divide-slate-800 text-slate-700 dark:text-slate-300">
-                  {appendix1.assessments.map((as) => (
-                    <tr key={as.id} className="hover:bg-slate-50 dark:hover:bg-slate-800/50">
-                      <td className="p-3 font-semibold text-slate-900 dark:text-white border-r border-slate-100 dark:border-slate-800">
-                        {as.assessmentName}
-                      </td>
-                      <td className="p-3 text-center border-r border-slate-100 dark:border-slate-800">
-                        {as.time}
-                      </td>
-                      <td className="p-3 text-center font-medium border-r border-slate-100 dark:border-slate-800">
-                        {formatWeekDisplay(as.week)}
-                      </td>
-                      <td className="p-3 text-[11px] border-r border-slate-100 dark:border-slate-800 leading-relaxed">
-                        {as.requirements}
-                      </td>
-                      <td className="p-3 text-[11px]">
-                        {as.form}
-                      </td>
-                    </tr>
-                  ))}
+                  {appendix1.assessments.map((as, aIdx) => {
+                    let name = as.assessmentName;
+                    let time = as.time;
+                    let week = as.week;
+                    let req = as.requirements;
+                    let form = as.form;
+
+                    if (name.toLowerCase().includes('mid-term test 1') || name.toLowerCase().includes('mid-term 1')) {
+                      name = `Kiểm tra, đánh giá giữa Học kỳ 1 (Tiếng Anh ${config.grade})`;
+                    } else if (name.toLowerCase().includes('end-of-term 1') || name.toLowerCase().includes('end-term 1') || name.toLowerCase().includes('semester 1')) {
+                      name = `Kiểm tra, đánh giá cuối Học kỳ 1 (Tiếng Anh ${config.grade})`;
+                    } else if (name.toLowerCase().includes('mid-term test 2') || name.toLowerCase().includes('mid-term 2')) {
+                      name = `Kiểm tra, đánh giá giữa Học kỳ 2 (Tiếng Anh ${config.grade})`;
+                    } else if (name.toLowerCase().includes('end-of-year') || name.toLowerCase().includes('final exam') || name.toLowerCase().includes('semester 2')) {
+                      name = `Kiểm tra, đánh giá cuối Học kỳ 2 & Cả năm (Tiếng Anh ${config.grade})`;
+                    }
+
+                    if (time.toLowerCase().includes('minutes')) {
+                      time = time.replace(/minutes/gi, 'phút').replace(/minute/gi, 'phút');
+                    }
+
+                    if (String(week).toLowerCase().includes('week')) {
+                      week = String(week).replace(/week\s*/gi, 'Tuần ');
+                    }
+
+                    if (req.toLowerCase().includes('assess 4 communicative skills') || req.toLowerCase().includes('cefr')) {
+                      req = 'Đánh giá 4 kỹ năng giao tiếp (Nghe, Nói, Đọc, Viết) và kiến thức ngôn ngữ theo ma trận đề chuẩn của Bộ GD&ĐT.';
+                    } else if (req.toLowerCase().includes('evaluate term 1')) {
+                      req = 'Đánh giá tổng kết kết quả học tập và năng lực giao tiếp Tiếng Anh của học sinh trong toàn bộ Học kỳ 1.';
+                    } else if (req.toLowerCase().includes('evaluate language retention') || req.toLowerCase().includes('term 2')) {
+                      req = 'Đánh giá sự tiến bộ về kỹ năng ngôn ngữ, độ trôi chảy và khả năng vận dụng kiến thức Tiếng Anh trong nửa đầu Học kỳ 2.';
+                    } else if (req.toLowerCase().includes('comprehensive assessment') || req.toLowerCase().includes('year-end')) {
+                      req = 'Đánh giá toàn diện năng lực tiếng Anh cả năm học, làm căn cứ xét hoàn thành chương trình môn học và lên lớp.';
+                    }
+
+                    if (form.toLowerCase().includes('written test') && form.toLowerCase().includes('speaking test')) {
+                      form = 'Kiểm tra viết trên giấy/máy tính (Nghe, Đọc, Viết) kết hợp Kiểm tra Nói (Tỉ lệ 70% viết - 30% nói)';
+                    } else if (form.toLowerCase().includes('standardized semester')) {
+                      form = 'Đề kiểm tra chuẩn hóa cuối kỳ cấp trường (Đánh giá đủ 4 kỹ năng: Nghe, Nói, Đọc, Viết)';
+                    } else if (form.toLowerCase().includes('project presentation') || form.toLowerCase().includes('speaking interaction')) {
+                      form = 'Kiểm tra viết kết hợp Báo cáo dự án / Vấn đáp giao tiếp tiếng Anh';
+                    } else if (form.toLowerCase().includes('standardized school-wide') || form.toLowerCase().includes('final examination')) {
+                      form = 'Đề kiểm tra chuẩn hóa cả năm cấp trường (Đánh giá 4 kỹ năng kết hợp Ngữ pháp & Từ vựng)';
+                    }
+
+                    return (
+                      <tr key={as.id || aIdx} className="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+                        <td className="p-3 font-semibold text-slate-900 dark:text-white border-r border-slate-100 dark:border-slate-800">
+                          {name}
+                        </td>
+                        <td className="p-3 text-center border-r border-slate-100 dark:border-slate-800">
+                          {time}
+                        </td>
+                        <td className="p-3 text-center font-medium border-r border-slate-100 dark:border-slate-800">
+                          {formatWeekDisplay(week)}
+                        </td>
+                        <td className="p-3 text-[11px] border-r border-slate-100 dark:border-slate-800 leading-relaxed">
+                          {req}
+                        </td>
+                        <td className="p-3 text-[11px]">
+                          {form}
+                        </td>
+                      </tr>
+                    );
+                  })}
                 </tbody>
               </table>
             </div>
