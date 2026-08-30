@@ -2,19 +2,21 @@
 
 import React, { useState } from 'react';
 import {
-  FileText,
   Search,
   Trash2,
   Edit3,
   Check,
-  Printer,
   Download,
-  School,
+  BookOpen,
   Sparkles,
-  BookOpen
+  Plus,
+  RefreshCw
 } from './icons';
-import { PlanData, CurriculumItem, EquipmentItem, ClassroomItem, AssessmentItem } from '../types';
+import { PlanData, CurriculumItem, SelectiveTopicItem } from '../types';
 import { exportAppendix1Docx } from '../lib/docxExport';
+import { getNlsCodeForSubjectLesson } from '../lib/constants/nlsGuides';
+import { getAiCodeForSubjectLesson } from '../lib/constants/aiGuides';
+import { getSelectiveTopicsBySubjectAndGrade } from '../lib/curriculum/selectiveTopics';
 
 interface Appendix1ViewProps {
   planData: PlanData;
@@ -23,13 +25,15 @@ interface Appendix1ViewProps {
 
 export const Appendix1View: React.FC<Appendix1ViewProps> = ({ planData, onUpdatePlan }) => {
   const { config, appendix1 } = planData;
-  const isPrimary = config.schoolType === 'primary';
-  const circular = isPrimary ? 'Công văn 2345/BGDĐT-GDTH' : 'Công văn 5512/BGDĐT-GDTrH';
   const isEn =
     config.subject.toLowerCase().includes('tiếng anh') ||
     config.subject.toLowerCase().includes('english') ||
     config.subject.toLowerCase().includes('tieng anh');
-  const isSecondaryEnglish = isEn && (config.schoolType === 'secondary' || config.schoolType === 'multi_level');
+
+  const totalTeachers =
+    (Number(config.teachersCollege) || 0) +
+    (Number(config.teachersUniversity) || 0) +
+    (Number(config.teachersMasterDoc) || 0);
 
   const formatWeekDisplay = (week: string | number) => {
     if (!week) return isEn ? 'Week 1' : 'Tuần 1';
@@ -48,7 +52,28 @@ export const Appendix1View: React.FC<Appendix1ViewProps> = ({ planData, onUpdate
     if (isEn) {
       return `${periods} ${periods > 1 ? 'periods' : 'period'}`;
     }
-    return `${periods} tiết`;
+    return `${periods}`;
+  };
+
+  // Helper để lấy chuỗi tích hợp NLS & AI chuẩn xác phù hợp với YCCĐ bài học
+  const getResolvedDigitalCompetency = (lesson: CurriculumItem, index: number): string => {
+    if (lesson.digitalCompetency && lesson.digitalCompetency.trim().length > 0) {
+      return lesson.digitalCompetency;
+    }
+    const lessonCtx = {
+      lessonName: lesson.lessonName,
+      subject: config.subject,
+      grade: config.grade,
+      lessonIndex: index,
+      topic: lesson.topic,
+      yccd: lesson.yccd
+    };
+    const nls = getNlsCodeForSubjectLesson(config.grade, config.schoolType, lessonCtx);
+    const ai = getAiCodeForSubjectLesson(config.grade, lessonCtx);
+
+    return isEn
+      ? `• [NLS Code: ${nls.code}] ${nls.requirement}\n• [AI Code: ${ai.code}] ${ai.requirement}`
+      : `• [Mã NLS: ${nls.code}] ${nls.requirement}\n• [Mã AI: ${ai.code}] ${ai.requirement}`;
   };
 
   const [searchTerm, setSearchTerm] = useState('');
@@ -59,6 +84,7 @@ export const Appendix1View: React.FC<Appendix1ViewProps> = ({ planData, onUpdate
       c.lessonName.toLowerCase().includes(searchTerm.toLowerCase()) ||
       c.topic.toLowerCase().includes(searchTerm.toLowerCase()) ||
       (c.yccd && c.yccd.toLowerCase().includes(searchTerm.toLowerCase())) ||
+      (c.digitalCompetency && c.digitalCompetency.toLowerCase().includes(searchTerm.toLowerCase())) ||
       String(c.week).toLowerCase().includes(searchTerm.toLowerCase())
   );
 
@@ -85,6 +111,88 @@ export const Appendix1View: React.FC<Appendix1ViewProps> = ({ planData, onUpdate
     });
   };
 
+  const [editingTopicIdx, setEditingTopicIdx] = useState<number | null>(null);
+
+  const selectiveTopicsList: SelectiveTopicItem[] =
+    appendix1.selectiveTopics && appendix1.selectiveTopics.length > 0
+      ? appendix1.selectiveTopics
+      : getSelectiveTopicsBySubjectAndGrade(config.subject, config.grade, config.schoolType, config);
+
+  const handleUpdateTopic = (idx: number, field: keyof SelectiveTopicItem, value: any) => {
+    const updated = [...selectiveTopicsList];
+    updated[idx] = { ...updated[idx], [field]: value };
+    onUpdatePlan({
+      ...planData,
+      appendix1: {
+        ...appendix1,
+        selectiveTopics: updated
+      },
+      appendix3: {
+        ...planData.appendix3,
+        selectiveTopics: updated
+      }
+    });
+  };
+
+  const handleAddTopic = () => {
+    const newStt = selectiveTopicsList.length + 1;
+    const newTopic: SelectiveTopicItem = {
+      id: `st-custom-${Date.now()}`,
+      stt: newStt,
+      topicName: `Chuyên đề ${newStt}: Ứng dụng Công nghệ số và AI mở rộng trong môn ${config.subject}`,
+      periods: 10,
+      timeline: `Tuần ${20 + newStt * 2} - Tuần ${28 + newStt * 2}`,
+      yccd: `- Biết, nhận biết được các khái niệm và nguyên lý ứng dụng thực tiễn của chuyên đề.\n- Trình bày được và hiểu rõ quy trình thực hiện, kỹ năng nghiên cứu và giải quyết vấn đề.\n- Vận dụng được kiến thức vào sáng tạo sản phẩm học tập và thực hành thực tế.`,
+      equipment: 'Máy tính, máy chiếu, tài liệu học liệu số, phần mềm chuyên dụng',
+      location: 'Phòng học bộ môn / Phòng Tin học',
+      digitalCompetency: `• [Mã NLS: 5.3.TC2a] Vận dụng công nghệ số tạo ra sản phẩm sáng tạo\n• [Mã AI: 8.C1.2] Khai thác trợ lý AI hỗ trợ học tập và nghiên cứu`,
+      notes: 'Chuyên đề tự chọn bổ sung'
+    };
+    const updated = [...selectiveTopicsList, newTopic];
+    onUpdatePlan({
+      ...planData,
+      appendix1: {
+        ...appendix1,
+        selectiveTopics: updated
+      },
+      appendix3: {
+        ...planData.appendix3,
+        selectiveTopics: updated
+      }
+    });
+    setEditingTopicIdx(updated.length - 1);
+  };
+
+  const handleDeleteTopic = (idx: number) => {
+    const updated = selectiveTopicsList.filter((_, i) => i !== idx).map((t, i) => ({ ...t, stt: i + 1 }));
+    onUpdatePlan({
+      ...planData,
+      appendix1: {
+        ...appendix1,
+        selectiveTopics: updated
+      },
+      appendix3: {
+        ...planData.appendix3,
+        selectiveTopics: updated
+      }
+    });
+  };
+
+  const handleResetCreativeTopics = () => {
+    const generated = getSelectiveTopicsBySubjectAndGrade(config.subject, config.grade, config.schoolType, config);
+    onUpdatePlan({
+      ...planData,
+      appendix1: {
+        ...appendix1,
+        selectiveTopics: generated
+      },
+      appendix3: {
+        ...planData.appendix3,
+        selectiveTopics: generated
+      }
+    });
+  };
+
   return (
     <div className="space-y-6 animate-in fade-in duration-300">
       {/* Control Bar */}
@@ -93,7 +201,7 @@ export const Appendix1View: React.FC<Appendix1ViewProps> = ({ planData, onUpdate
           <Search className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
           <input
             type="text"
-            placeholder={isEn ? "Tìm kiếm Unit, bài học, YCCĐ, Week..." : "Tìm kiếm chủ đề, bài học, YCCĐ, tuần..."}
+            placeholder={isEn ? "Tìm kiếm bài học, YCCĐ, NLS, AI..." : "Tìm kiếm bài học, YCCĐ, mã NLS, AI..."}
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             className="w-full pl-9 pr-4 py-2 text-xs rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white outline-none focus:ring-2 focus:ring-amber-500/30"
@@ -111,128 +219,193 @@ export const Appendix1View: React.FC<Appendix1ViewProps> = ({ planData, onUpdate
             className="px-4 py-2 text-xs font-bold rounded-xl bg-amber-600 hover:bg-amber-700 text-white shadow-md shadow-amber-600/20 transition flex items-center gap-1.5"
           >
             <Download className="w-3.5 h-3.5" />
-            Xuất File Word (.docx)
+            Xuất Phụ lục 1 (.docx)
           </button>
         </div>
       </div>
 
       {/* Main Document Paper */}
       <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 sm:p-10 shadow-md space-y-8 font-serif">
-        {/* Document Header Standard */}
-        <div className="grid grid-cols-2 gap-4 pb-6 border-b border-slate-200 dark:border-slate-800 text-center font-sans">
-          <div className="space-y-1 text-xs">
-            <p className="text-slate-600 dark:text-slate-400 uppercase">{config.governingBody}</p>
-            <p className="font-bold text-slate-900 dark:text-white uppercase">{config.schoolName}</p>
-            <p className="font-bold text-amber-700 dark:text-amber-400 uppercase">TỔ: {config.departmentName}</p>
+        {/* Document Header Standard - Theo mẫu Phụ lục I CV 5512 */}
+        <div className="text-center font-sans space-y-1">
+          <p className="text-xs font-bold text-slate-900 dark:text-white">Phụ lục I</p>
+          <p className="text-sm font-black text-slate-900 dark:text-white uppercase">
+            KHUNG KẾ HOẠCH DẠY HỌC MÔN HỌC CỦA TỔ CHUYÊN MÔN
+          </p>
+          <p className="text-xs italic text-slate-600 dark:text-slate-400">
+            (Kèm theo Công văn số 5512/BGDĐT-GDTrH ngày 18 tháng 12 năm 2020 của Bộ GDĐT)
+          </p>
+        </div>
+
+        {/* 2 Columns Header */}
+        <div className="grid grid-cols-2 gap-4 pb-4 border-b border-slate-200 dark:border-slate-800 font-sans text-xs">
+          <div className="space-y-1">
+            <p className="font-semibold text-slate-900 dark:text-white">
+              TRƯỜNG: <span className="font-bold uppercase">{config.schoolName}</span>
+            </p>
+            <p className="font-semibold text-slate-900 dark:text-white">
+              TỔ: <span className="font-bold uppercase">{config.departmentName}</span>
+            </p>
           </div>
-          <div className="space-y-1 text-xs">
-            <p className="font-bold text-slate-900 dark:text-white">CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</p>
+          <div className="text-center space-y-1">
+            <p className="font-bold text-slate-900 dark:text-white uppercase">CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</p>
             <p className="font-bold text-slate-900 dark:text-white underline">Độc lập - Tự do - Hạnh phúc</p>
           </div>
         </div>
 
-        {/* Title */}
-        <div className="text-center space-y-2 font-sans">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 dark:bg-amber-950/50 text-amber-700 dark:text-amber-300 text-xs font-bold">
-            <span>{circular}</span>
-            <span>•</span>
-            <span>SGK: {isEn ? 'Tiếng Anh Global Success' : 'Kết nối tri thức với cuộc sống'}</span>
-          </div>
-          <h2 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white uppercase tracking-tight">
-            PHỤ LỤC 1: KẾ HOẠCH DẠY HỌC CỦA TỔ CHUYÊN MÔN
+        {/* Document Title */}
+        <div className="text-center space-y-1 font-sans">
+          <h2 className="text-lg sm:text-xl font-black text-slate-900 dark:text-white uppercase tracking-tight">
+            KẾ HOẠCH DẠY HỌC CỦA TỔ CHUYÊN MÔN
           </h2>
-          <p className="text-sm font-semibold text-slate-700 dark:text-slate-300">
-            Môn học/Hoạt động giáo dục: <span className="text-amber-600 uppercase font-bold">{config.subject}</span> - Khối lớp: <span className="text-amber-600 font-bold">{config.grade}</span>
+          <p className="text-sm font-bold text-slate-800 dark:text-slate-200 uppercase">
+            MÔN HỌC/HOẠT ĐỘNG GIÁO DỤC: <span className="text-amber-600">{config.subject}</span>, KHỐI LỚP: <span className="text-amber-600">{config.grade}</span>
           </p>
-          <p className="text-xs text-slate-500 italic">Năm học: {config.academicYear} (Khung chương trình: 35 tuần thực học)</p>
+          <p className="text-xs text-slate-600 dark:text-slate-400 italic">
+            (Năm học {config.academicYear})
+          </p>
         </div>
 
         {/* Section I: Đặc điểm tình hình */}
-        <div className="space-y-3 font-sans">
+        <div className="space-y-4 font-sans text-xs">
           <h3 className="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider bg-slate-100 dark:bg-slate-800/80 px-3.5 py-2 rounded-xl">
             I. Đặc điểm tình hình
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
-            <div className="p-3.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-800/40">
-              <span className="font-bold block text-slate-700 dark:text-slate-300 mb-1">1. Quy mô học sinh:</span>
-              <p className="text-slate-600 dark:text-slate-400">
-                - Số lớp: <strong className="text-slate-900 dark:text-white">{config.totalClasses} lớp</strong>
-              </p>
-              <p className="text-slate-600 dark:text-slate-400">
-                - Tổng số học sinh: <strong className="text-slate-900 dark:text-white">{config.totalStudents} em</strong>
-              </p>
-            </div>
 
-            <div className="p-3.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-800/40">
-              <span className="font-bold block text-slate-700 dark:text-slate-300 mb-1">2. Đội ngũ giáo viên:</span>
-              <p className="text-slate-600 dark:text-slate-400">
-                - Trình độ: ĐH ({config.teachersUniversity}), ThS/TS ({config.teachersMasterDoc}), CĐ ({config.teachersCollege})
-              </p>
-              <p className="text-slate-600 dark:text-slate-400">
-                - Chuẩn nghề nghiệp: Tốt ({config.evalExcellent}), Khá ({config.evalGood})
-              </p>
-            </div>
+          {/* 1. Số lớp, số học sinh */}
+          <div className="space-y-1 pl-2 text-slate-800 dark:text-slate-200 leading-relaxed">
+            <p>
+              <strong>1. Số lớp:</strong> <span className="text-slate-900 dark:text-white font-bold">{config.totalClasses}</span>;&nbsp;&nbsp;&nbsp;&nbsp;
+              <strong>Số học sinh:</strong> <span className="text-slate-900 dark:text-white font-bold">{config.totalStudents}</span>;&nbsp;&nbsp;&nbsp;&nbsp;
+              <strong>Số học sinh học chuyên đề lựa chọn (nếu có):</strong> ....................
+            </p>
+          </div>
 
-            <div className="p-3.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-800/40">
-              <span className="font-bold block text-slate-700 dark:text-slate-300 mb-1">3. Thiết bị &amp; Phòng học:</span>
-              <p className="text-slate-600 dark:text-slate-400">- TBDH tối thiểu chuẩn TT 37/38/39</p>
-              <p className="text-slate-600 dark:text-slate-400">- Phòng bộ môn chuẩn TT 14/2020</p>
+          {/* 2. Tình hình đội ngũ */}
+          <div className="space-y-1.5 pl-2 text-slate-800 dark:text-slate-200 leading-relaxed">
+            <p>
+              <strong>2. Tình hình đội ngũ:</strong> Số giáo viên: <strong className="text-slate-900 dark:text-white">{totalTeachers}</strong>;&nbsp;&nbsp;&nbsp;&nbsp;
+              Trình độ đào tạo: Cao đẳng: <strong className="text-slate-900 dark:text-white">{config.teachersCollege}</strong>;&nbsp;&nbsp;&nbsp;&nbsp;
+              Đại học: <strong className="text-slate-900 dark:text-white">{config.teachersUniversity}</strong>;&nbsp;&nbsp;&nbsp;&nbsp;
+              Trên đại học: <strong className="text-slate-900 dark:text-white">{config.teachersMasterDoc}</strong>
+            </p>
+            <p>
+              Mức đạt chuẩn nghề nghiệp giáo viên: Tốt: <strong className="text-slate-900 dark:text-white">{config.evalExcellent}</strong>;&nbsp;&nbsp;&nbsp;&nbsp;
+              Khá: <strong className="text-slate-900 dark:text-white">{config.evalGood}</strong>;&nbsp;&nbsp;&nbsp;&nbsp;
+              Đạt: <strong className="text-slate-900 dark:text-white">{config.evalPass}</strong>;&nbsp;&nbsp;&nbsp;&nbsp;
+              Chưa đạt: <strong className="text-slate-900 dark:text-white">{config.evalFail || 0}</strong>
+            </p>
+          </div>
+
+          {/* 3. Thiết bị dạy học */}
+          <div className="space-y-2 pt-2">
+            <p className="font-bold text-slate-900 dark:text-white pl-2">
+              3. Thiết bị dạy học: <span className="font-normal italic text-slate-600 dark:text-slate-400">(Trình bày cụ thể các thiết bị dạy học có thể sử dụng để tổ chức dạy học môn học/hoạt động giáo dục)</span>
+            </p>
+            <div className="overflow-x-auto rounded-2xl border border-slate-200 dark:border-slate-800">
+              <table className="w-full text-left text-xs border-collapse">
+                <thead>
+                  <tr className="bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-bold border-b border-slate-200 dark:border-slate-700">
+                    <th className="p-2.5 w-12 text-center border-r border-slate-200 dark:border-slate-700">STT</th>
+                    <th className="p-2.5 w-60 border-r border-slate-200 dark:border-slate-700">Thiết bị dạy học</th>
+                    <th className="p-2.5 w-24 text-center border-r border-slate-200 dark:border-slate-700">Số lượng</th>
+                    <th className="p-2.5 border-r border-slate-200 dark:border-slate-700">Các bài thí nghiệm/thực hành</th>
+                    <th className="p-2.5 w-32">Ghi chú</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-100 dark:divide-slate-800 text-slate-700 dark:text-slate-300">
+                  {appendix1.equipments.map((eq) => (
+                    <tr key={eq.id} className="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+                      <td className="p-2.5 text-center font-bold border-r border-slate-100 dark:border-slate-800">{eq.stt}</td>
+                      <td className="p-2.5 font-semibold text-slate-900 dark:text-white border-r border-slate-100 dark:border-slate-800">{eq.equipmentName}</td>
+                      <td className="p-2.5 text-center font-medium border-r border-slate-100 dark:border-slate-800">{eq.quantity}</td>
+                      <td className="p-2.5 border-r border-slate-100 dark:border-slate-800">{eq.experiments}</td>
+                      <td className="p-2.5 text-slate-500">{eq.notes}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* 4. Phòng học bộ môn */}
+          <div className="space-y-2 pt-2">
+            <p className="font-bold text-slate-900 dark:text-white pl-2">
+              4. Phòng học bộ môn/phòng thí nghiệm/phòng đa năng/sân chơi, bãi tập: <span className="font-normal italic text-slate-600 dark:text-slate-400">(Trình bày cụ thể các phòng thí nghiệm/phòng bộ môn/phòng đa năng/sân chơi/bãi tập có thể sử dụng để tổ chức dạy học môn học/hoạt động giáo dục)</span>
+            </p>
+            <div className="overflow-x-auto rounded-2xl border border-slate-200 dark:border-slate-800">
+              <table className="w-full text-left text-xs border-collapse">
+                <thead>
+                  <tr className="bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-bold border-b border-slate-200 dark:border-slate-700">
+                    <th className="p-2.5 w-12 text-center border-r border-slate-200 dark:border-slate-700">STT</th>
+                    <th className="p-2.5 w-60 border-r border-slate-200 dark:border-slate-700">Tên phòng</th>
+                    <th className="p-2.5 w-24 text-center border-r border-slate-200 dark:border-slate-700">Số lượng</th>
+                    <th className="p-2.5 border-r border-slate-200 dark:border-slate-700">Phạm vi và nội dung sử dụng</th>
+                    <th className="p-2.5 w-32">Ghi chú</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-100 dark:divide-slate-800 text-slate-700 dark:text-slate-300">
+                  {appendix1.classrooms.map((cr) => (
+                    <tr key={cr.id} className="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+                      <td className="p-2.5 text-center font-bold border-r border-slate-100 dark:border-slate-800">{cr.stt}</td>
+                      <td className="p-2.5 font-semibold text-slate-900 dark:text-white border-r border-slate-100 dark:border-slate-800">{cr.roomName}</td>
+                      <td className="p-2.5 text-center font-medium border-r border-slate-100 dark:border-slate-800">{cr.quantity}</td>
+                      <td className="p-2.5 border-r border-slate-100 dark:border-slate-800">{cr.features}</td>
+                      <td className="p-2.5 text-slate-500">{cr.notes}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
 
-        {/* Section II: Bảng phân phối chương trình 35 tuần với CỘT CHỦ ĐỀ & CỘT YCCĐ RIÊNG BIỆT */}
-        <div className="space-y-3 font-sans">
-          <div className="flex items-center justify-between">
-            <h3 className="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider bg-slate-100 dark:bg-slate-800/80 px-3.5 py-2 rounded-xl flex-1">
-              II. Kế hoạch dạy học chi tiết (Phân phối chương trình 35 tuần)
-            </h3>
-          </div>
+        {/* Section II: Kế hoạch dạy học */}
+        <div className="space-y-5 font-sans">
+          <h3 className="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider bg-slate-100 dark:bg-slate-800/80 px-3.5 py-2 rounded-xl">
+            II. Kế hoạch dạy học
+          </h3>
 
-          <div className="overflow-x-auto rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
-            <table className="w-full text-left text-xs border-collapse">
-              <thead>
-                {isSecondaryEnglish ? (
-                  <tr className="bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 border-b border-slate-200 dark:border-slate-700 font-bold">
-                    <th className="p-3 w-16 text-center border-r border-slate-200 dark:border-slate-700">Week</th>
-                    <th className="p-3 w-64 border-r border-slate-200 dark:border-slate-700">Lesson</th>
-                    <th className="p-3 w-16 text-center border-r border-slate-200 dark:border-slate-700">Period</th>
-                    <th className="p-3 border-r border-slate-200 dark:border-slate-700 min-w-[260px]">
-                      Objectives
-                    </th>
-                    <th className="p-3 w-36 border-r border-slate-200 dark:border-slate-700">Teaching Equipment</th>
-                    <th className="p-3 w-48 border-r border-slate-200 dark:border-slate-700">Location &amp; Digital Competency / AI</th>
-                    <th className="p-3 w-14 text-center">Thao tác</th>
-                  </tr>
-                ) : (
+          {/* 1. Phân phối chương trình - Kèm Cột Tích hợp Năng lực số & AI */}
+          <div className="space-y-2">
+            <h4 className="text-xs font-bold text-slate-900 dark:text-white pl-2">
+              1. Phân phối chương trình
+            </h4>
+
+            <div className="overflow-x-auto rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
+              <table className="w-full text-left text-xs border-collapse">
+                <thead>
                   <tr className="bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 border-b border-slate-200 dark:border-slate-700 font-bold">
                     <th className="p-3 w-12 text-center border-r border-slate-200 dark:border-slate-700">STT</th>
-                    <th className="p-3 w-44 border-r border-slate-200 dark:border-slate-700">{isEn ? 'Unit / Chủ đề' : 'Khung / Chủ đề'}</th>
-                    <th className="p-3 w-52 border-r border-slate-200 dark:border-slate-700">{isEn ? 'Bài học / Tên bài (SGK Global Success)' : 'Bài học / Tên bài (SGK Kết nối tri thức)'}</th>
-                    <th className="p-3 w-16 text-center border-r border-slate-200 dark:border-slate-700">{isEn ? 'Số tiết' : 'Số tiết'}</th>
-                    <th className="p-3 w-20 text-center border-r border-slate-200 dark:border-slate-700">{isEn ? 'Thời điểm' : 'Thời điểm'}</th>
-                    <th className="p-3 border-r border-slate-200 dark:border-slate-700 min-w-[230px]">
-                      Yêu cầu cần đạt (YCCĐ)
+                    <th className="p-3 w-64 border-r border-slate-200 dark:border-slate-700">
+                      Bài học<br /><span className="text-[11px] font-normal text-slate-500">(1)</span>
                     </th>
-                    <th className="p-3 w-36 border-r border-slate-200 dark:border-slate-700">Thiết bị dạy học</th>
-                    <th className="p-3 w-40 border-r border-slate-200 dark:border-slate-700">Địa điểm &amp; Năng lực số / AI</th>
+                    <th className="p-3 w-16 text-center border-r border-slate-200 dark:border-slate-700">
+                      Số tiết<br /><span className="text-[11px] font-normal text-slate-500">(2)</span>
+                    </th>
+                    <th className="p-3 border-r border-slate-200 dark:border-slate-700 min-w-[240px]">
+                      Yêu cầu cần đạt<br /><span className="text-[11px] font-normal text-slate-500">(3)</span>
+                    </th>
+                    <th className="p-3 border-r border-slate-200 dark:border-slate-700 min-w-[220px]">
+                      Tích hợp Năng lực số &amp; AI<br />
+                      <span className="text-[10px] font-normal text-emerald-600 dark:text-emerald-400">(CV 3456 &amp; QĐ 2422)</span>
+                    </th>
                     <th className="p-3 w-14 text-center">Thao tác</th>
                   </tr>
-                )}
-              </thead>
-              <tbody className="divide-y divide-slate-100 dark:divide-slate-800 text-slate-700 dark:text-slate-300">
-                {filteredCurriculum.map((lesson) => {
-                  const isEditing = editingLessonId === lesson.id;
+                </thead>
+                <tbody className="divide-y divide-slate-100 dark:divide-slate-800 text-slate-700 dark:text-slate-300">
+                  {filteredCurriculum.map((lesson, idx) => {
+                    const isEditing = editingLessonId === lesson.id;
+                    const compText = getResolvedDigitalCompetency(lesson, idx);
 
-                  if (isSecondaryEnglish) {
                     return (
                       <tr key={lesson.id} className="hover:bg-slate-50 dark:hover:bg-slate-800/50 transition">
-                        {/* Week */}
-                        <td className="p-3 text-center border-r border-slate-100 dark:border-slate-800 font-semibold text-slate-700 dark:text-slate-300">
-                          {formatWeekDisplay(lesson.week)}
+                        {/* STT */}
+                        <td className="p-3 text-center font-bold border-r border-slate-100 dark:border-slate-800">
+                          {lesson.stt}
                         </td>
 
-                        {/* Lesson */}
+                        {/* BÀI HỌC (1) */}
                         <td className="p-3 border-r border-slate-100 dark:border-slate-800">
                           {isEditing ? (
                             <div className="space-y-1.5">
@@ -240,137 +413,95 @@ export const Appendix1View: React.FC<Appendix1ViewProps> = ({ planData, onUpdate
                                 type="text"
                                 value={lesson.topic}
                                 onChange={(e) => handleUpdateCurriculumItem(lesson.id, 'topic', e.target.value)}
-                                placeholder="Unit (e.g. UNIT 1)..."
-                                className="w-full p-1 rounded border border-amber-300 dark:border-amber-700 bg-amber-50/50 dark:bg-amber-950/40 text-xs font-bold text-amber-900 dark:text-amber-200 uppercase"
+                                placeholder="Chủ đề / Unit (nếu có)..."
+                                className="w-full p-1 rounded border border-amber-300 dark:border-amber-700 bg-amber-50/50 dark:bg-amber-950/40 text-xs font-semibold text-amber-900 dark:text-amber-200"
                               />
                               <input
                                 type="text"
                                 value={lesson.lessonName}
                                 onChange={(e) => handleUpdateCurriculumItem(lesson.id, 'lessonName', e.target.value)}
-                                placeholder="Lesson name (e.g. Getting started)..."
-                                className="w-full p-1 rounded border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-xs font-semibold text-slate-900 dark:text-white"
+                                placeholder="Tên bài học..."
+                                className="w-full p-1 rounded border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-xs font-bold text-slate-900 dark:text-white"
                               />
                             </div>
                           ) : (
                             <div>
-                              {lesson.topic && lesson.topic.trim().length > 0 ? (
-                                <span className="font-bold text-amber-700 dark:text-amber-400 text-[11px] block uppercase tracking-wide">
+                              {lesson.topic && lesson.topic.trim().length > 0 && (
+                                <span className="font-semibold text-amber-700 dark:text-amber-400 text-[11px] block uppercase">
                                   {lesson.topic}
                                 </span>
-                              ) : null}
-                              <span className="font-semibold text-slate-900 dark:text-white leading-tight block text-xs">
+                              )}
+                              <span className="font-bold text-slate-900 dark:text-white leading-tight block">
                                 {lesson.lessonName}
                               </span>
                             </div>
                           )}
                         </td>
 
-                        {/* Period */}
+                        {/* SỐ TIẾT (2) */}
                         <td className="p-3 text-center font-bold border-r border-slate-100 dark:border-slate-800">
                           {isEditing ? (
                             <input
                               type="number"
                               min={1}
-                              value={lesson.stt}
+                              value={lesson.periods}
                               onChange={(e) =>
-                                handleUpdateCurriculumItem(lesson.id, 'stt', parseInt(e.target.value, 10) || 1)
+                                handleUpdateCurriculumItem(lesson.id, 'periods', parseInt(e.target.value, 10) || 1)
                               }
                               className="w-12 p-1 text-center rounded border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-xs font-bold"
                             />
                           ) : (
-                            lesson.stt
+                            formatPeriodDisplay(lesson.periods)
                           )}
                         </td>
 
-                        {/* Objectives */}
+                        {/* YÊU CẦU CẦN ĐẠT (3) */}
                         <td className="p-3 border-r border-slate-100 dark:border-slate-800 text-[11px] leading-relaxed">
                           {isEditing ? (
                             <textarea
-                              rows={5}
+                              rows={4}
                               value={lesson.yccd || ''}
                               onChange={(e) => handleUpdateCurriculumItem(lesson.id, 'yccd', e.target.value)}
-                              placeholder="By the end of this unit, students will be able to:&#10;- ..."
+                              placeholder="- Nêu kiến thức, kỹ năng cần đạt...&#10;- Nêu phẩm chất, năng lực..."
                               className="w-full p-1.5 rounded border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-xs font-sans leading-relaxed"
                             />
                           ) : (
                             <div className="space-y-1 text-slate-700 dark:text-slate-300">
                               {(() => {
-                                const rawYccd = (lesson.yccd || '').trim();
-                                if (!rawYccd) return null;
+                                const rawYccd = lesson.yccd || (isEn ? 'Master target language knowledge and communication skills according to CT GDPT 2018.' : 'Đạt chuẩn kiến thức, kỹ năng và phát triển năng lực phẩm chất theo CT GDPT 2018.');
                                 const lines = rawYccd.includes('\n')
                                   ? rawYccd.split('\n').filter((l) => l.trim().length > 0)
                                   : rawYccd.split(';').map((s) => s.trim()).filter((s) => s.length > 0);
 
-                                return lines.map((line, lIdx) => {
-                                  const trimmed = line.trim();
-                                  if (trimmed.toLowerCase().startsWith('by the end of')) {
-                                    return (
-                                      <div key={lIdx} className="font-semibold text-slate-900 dark:text-white leading-snug mb-1">
-                                        {trimmed}
-                                      </div>
-                                    );
-                                  }
-                                  return (
-                                    <div key={lIdx} className="flex items-start gap-1.5 leading-snug pl-1">
-                                      <span className="text-amber-600 dark:text-amber-400 font-bold shrink-0 mt-0.5">–</span>
-                                      <span className="text-slate-800 dark:text-slate-200">{trimmed.replace(/^[-–•*]\s*/, '')}</span>
-                                    </div>
-                                  );
-                                });
+                                return lines.map((line, lIdx) => (
+                                  <div key={lIdx} className="flex items-start gap-1.5 leading-snug">
+                                    <span className="text-amber-600 dark:text-amber-400 font-bold shrink-0 mt-0.5">•</span>
+                                    <span className="text-slate-800 dark:text-slate-200">{line.replace(/^[-•*]\s*/, '')}</span>
+                                  </div>
+                                ));
                               })()}
                             </div>
                           )}
                         </td>
 
-                        {/* Teaching Equipment */}
-                        <td className="p-3 border-r border-slate-100 dark:border-slate-800 text-[11px]">
-                          {isEditing ? (
-                            <textarea
-                              rows={3}
-                              value={lesson.equipment || ''}
-                              onChange={(e) => handleUpdateCurriculumItem(lesson.id, 'equipment', e.target.value)}
-                              placeholder="Teaching equipment..."
-                              className="w-full p-1 rounded border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-xs"
-                            />
-                          ) : (
-                            lesson.equipment
-                          )}
-                        </td>
-
-                        {/* Location & Digital Competency / AI */}
+                        {/* TÍCH HỢP NĂNG LỰC SỐ & AI PHÙ HỢP VỚI YCCĐ */}
                         <td className="p-3 border-r border-slate-100 dark:border-slate-800 text-[11px] leading-relaxed">
                           {isEditing ? (
-                            <div className="space-y-1.5">
-                              <input
-                                type="text"
-                                value={lesson.location || ''}
-                                onChange={(e) => handleUpdateCurriculumItem(lesson.id, 'location', e.target.value)}
-                                placeholder="Teaching location..."
-                                className="w-full p-1.5 rounded border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-xs font-semibold"
-                              />
-                              <textarea
-                                rows={3}
-                                value={lesson.digitalCompetency || ''}
-                                onChange={(e) => handleUpdateCurriculumItem(lesson.id, 'digitalCompetency', e.target.value)}
-                                placeholder="• [Mã NLS: 1.1.TC1b] ...&#10;• [Mã AI: 8.C1.1] ..."
-                                className="w-full p-1.5 rounded border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-xs font-mono leading-relaxed"
-                              />
-                            </div>
+                            <textarea
+                              rows={4}
+                              value={lesson.digitalCompetency || compText}
+                              onChange={(e) => handleUpdateCurriculumItem(lesson.id, 'digitalCompetency', e.target.value)}
+                              placeholder="• [Mã NLS: ...] Nội dung NLS...&#10;• [Mã AI: ...] Nội dung AI..."
+                              className="w-full p-1.5 rounded border border-emerald-400 bg-white dark:bg-slate-800 text-xs font-mono leading-relaxed"
+                            />
                           ) : (
-                            <div className="space-y-1">
-                              <span className="font-bold text-slate-800 dark:text-slate-200 block text-xs">
-                                {lesson.location || 'English Language Lab / Classroom'}
-                              </span>
-                              {lesson.digitalCompetency && (
-                                <div className="space-y-1 text-emerald-700 dark:text-emerald-300 text-[11px] leading-snug">
-                                  {lesson.digitalCompetency.split('\n').filter((l) => l.trim().length > 0).map((line, dIdx) => (
-                                    <div key={dIdx} className="flex items-start gap-1">
-                                      <span className="text-emerald-500 font-bold shrink-0">•</span>
-                                      <span>{line.replace(/^[-•*]\s*/, '')}</span>
-                                    </div>
-                                  ))}
+                            <div className="space-y-1.5">
+                              {compText.split('\n').filter((l) => l.trim().length > 0).map((line, cIdx) => (
+                                <div key={cIdx} className="flex items-start gap-1.5 text-emerald-800 dark:text-emerald-300 leading-snug">
+                                  <span className="text-emerald-500 font-bold shrink-0 mt-0.5">•</span>
+                                  <span>{line.replace(/^[-•*]\s*/, '')}</span>
                                 </div>
-                              )}
+                              ))}
                             </div>
                           )}
                         </td>
@@ -380,14 +511,14 @@ export const Appendix1View: React.FC<Appendix1ViewProps> = ({ planData, onUpdate
                           <div className="flex items-center justify-center gap-1">
                             <button
                               onClick={() => setEditingLessonId(isEditing ? null : lesson.id)}
-                              className="p-1 rounded text-slate-400 hover:text-amber-500"
+                              className="p-1 rounded text-slate-400 hover:text-amber-500 transition"
                               title={isEditing ? 'Hoàn thành' : 'Chỉnh sửa'}
                             >
                               {isEditing ? <Check className="w-3.5 h-3.5 text-emerald-500" /> : <Edit3 className="w-3.5 h-3.5" />}
                             </button>
                             <button
                               onClick={() => handleDeleteLesson(lesson.id)}
-                              className="p-1 rounded text-slate-400 hover:text-rose-500"
+                              className="p-1 rounded text-slate-400 hover:text-rose-500 transition"
                               title="Xóa bài học"
                             >
                               <Trash2 className="w-3.5 h-3.5" />
@@ -396,276 +527,263 @@ export const Appendix1View: React.FC<Appendix1ViewProps> = ({ planData, onUpdate
                         </td>
                       </tr>
                     );
-                  }
+                  })}
+                </tbody>
+              </table>
+            </div>
+          </div>
 
-                  return (
-                    <tr key={lesson.id} className="hover:bg-slate-50 dark:hover:bg-slate-800/50 transition">
-                      {/* STT */}
-                      <td className="p-3 text-center font-bold border-r border-slate-100 dark:border-slate-800">
-                        {lesson.stt}
-                      </td>
+          {/* 2. Chuyên đề lựa chọn (đối với cấp trung học phổ thông / Chuyên đề mở rộng & STEM) */}
+          <div className="space-y-3 pt-2">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pl-1 pr-1">
+              <div className="flex items-center gap-2">
+                <h4 className="text-xs font-bold text-slate-900 dark:text-white uppercase tracking-wide">
+                  2. Chuyên đề lựa chọn (đối với cấp trung học phổ thông)
+                </h4>
+                <span className="text-[11px] bg-amber-100 dark:bg-amber-900/40 text-amber-800 dark:text-amber-300 font-bold px-2 py-0.5 rounded-full">
+                  {selectiveTopicsList.length} chuyên đề
+                </span>
+              </div>
 
-                      {/* CỘT CHỦ ĐỀ */}
-                      <td className="p-3 border-r border-slate-100 dark:border-slate-800">
-                        {isEditing ? (
-                          <input
-                            type="text"
-                            value={lesson.topic}
-                            onChange={(e) => handleUpdateCurriculumItem(lesson.id, 'topic', e.target.value)}
-                            placeholder="Nhập tên chủ đề..."
-                            className="w-full p-1 rounded border border-amber-300 dark:border-amber-700 bg-amber-50/50 dark:bg-amber-950/40 text-xs font-semibold text-amber-900 dark:text-amber-200"
-                          />
-                        ) : (
-                          <span className="font-semibold text-amber-700 dark:text-amber-400 text-xs block">
-                            {lesson.topic}
-                          </span>
-                        )}
-                      </td>
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  onClick={handleResetCreativeTopics}
+                  className="px-2.5 py-1 text-[11px] font-bold rounded-lg border border-amber-300 dark:border-amber-700 bg-amber-50 dark:bg-amber-950/30 text-amber-700 dark:text-amber-300 hover:bg-amber-100 transition flex items-center gap-1 shadow-sm"
+                  title="Khôi phục danh sách chuyên đề sáng tạo theo chuẩn CT GDPT 2018"
+                >
+                  <Sparkles className="w-3 h-3 text-amber-600 animate-pulse" />
+                  <span>Tự động tạo chuyên đề sáng tạo</span>
+                </button>
 
-                      {/* TÊN BÀI HỌC */}
-                      <td className="p-3 border-r border-slate-100 dark:border-slate-800">
-                        {isEditing ? (
-                          <input
-                            type="text"
-                            value={lesson.lessonName}
-                            onChange={(e) => handleUpdateCurriculumItem(lesson.id, 'lessonName', e.target.value)}
-                            placeholder="Nhập tên bài học..."
-                            className="w-full p-1 rounded border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-xs font-bold text-slate-900 dark:text-white"
-                          />
-                        ) : (
-                          <span className="font-bold text-slate-900 dark:text-white leading-tight block">
-                            {lesson.lessonName}
-                          </span>
-                        )}
-                      </td>
+                <button
+                  type="button"
+                  onClick={handleAddTopic}
+                  className="px-2.5 py-1 text-[11px] font-bold rounded-lg bg-amber-600 hover:bg-amber-700 text-white transition flex items-center gap-1 shadow-sm"
+                  title="Thêm chuyên đề lựa chọn mới"
+                >
+                  <Plus className="w-3 h-3" />
+                  <span>Thêm chuyên đề</span>
+                </button>
+              </div>
+            </div>
 
-                      {/* Số tiết */}
-                      <td className="p-3 text-center font-semibold border-r border-slate-100 dark:border-slate-800">
-                        {isEditing ? (
-                          <input
-                            type="number"
-                            min={1}
-                            value={lesson.periods}
-                            onChange={(e) =>
-                              handleUpdateCurriculumItem(lesson.id, 'periods', parseInt(e.target.value, 10) || 1)
-                            }
-                            className="w-12 p-1 text-center rounded border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-xs"
-                          />
-                        ) : (
-                          formatPeriodDisplay(lesson.periods)
-                        )}
-                      </td>
+            <div className="overflow-x-auto rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
+              <table className="w-full text-left text-xs border-collapse">
+                <thead>
+                  <tr className="bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 border-b border-slate-200 dark:border-slate-700 font-bold">
+                    <th className="p-3 w-12 text-center border-r border-slate-200 dark:border-slate-700">STT</th>
+                    <th className="p-3 w-64 border-r border-slate-200 dark:border-slate-700">
+                      Chuyên đề<br /><span className="text-[11px] font-normal text-slate-500">(1)</span>
+                    </th>
+                    <th className="p-3 w-16 text-center border-r border-slate-200 dark:border-slate-700">
+                      Số tiết<br /><span className="text-[11px] font-normal text-slate-500">(2)</span>
+                    </th>
+                    <th className="p-3 border-r border-slate-200 dark:border-slate-700 min-w-[280px]">
+                      Yêu cầu cần đạt<br /><span className="text-[11px] font-normal text-slate-500">(3)</span>
+                    </th>
+                    <th className="p-3 min-w-[240px] border-r border-slate-200 dark:border-slate-700">
+                      Tích hợp Năng lực số &amp; AI
+                    </th>
+                    <th className="p-3 w-20 text-center">Thao tác</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-100 dark:divide-slate-800 text-slate-700 dark:text-slate-300">
+                  {selectiveTopicsList.map((topic, idx) => {
+                    const isEditing = editingTopicIdx === idx;
+                    const compText =
+                      topic.digitalCompetency ||
+                      `• [Mã NLS: 5.3.TC2a] Vận dụng công nghệ số tạo ra sản phẩm sáng tạo\n• [Mã AI: 8.C1.2] Khai thác trợ lý AI hỗ trợ học tập và nghiên cứu`;
 
-                      {/* Thời điểm */}
-                      <td className="p-3 text-center border-r border-slate-100 dark:border-slate-800 font-medium text-slate-600 dark:text-slate-400">
-                        {formatWeekDisplay(lesson.week)}
-                      </td>
+                    return (
+                      <tr key={topic.id || idx} className={`hover:bg-slate-50 dark:hover:bg-slate-800/50 ${isEditing ? 'bg-amber-50/40 dark:bg-amber-950/20' : ''}`}>
+                        {/* STT */}
+                        <td className="p-3 text-center font-bold border-r border-slate-100 dark:border-slate-800">
+                          {topic.stt || idx + 1}
+                        </td>
 
-                      {/* YÊU CẦU CẦN ĐẠT (YCCĐ) - TRÌNH BÀY DẠNG TỪNG GẠCH ĐẦU DÒNG */}
-                      <td className="p-3 border-r border-slate-100 dark:border-slate-800 text-[11px] leading-relaxed">
-                        {isEditing ? (
-                          <textarea
-                            rows={4}
-                            value={lesson.yccd || ''}
-                            onChange={(e) => handleUpdateCurriculumItem(lesson.id, 'yccd', e.target.value)}
-                            placeholder="- Kiến thức: ...&#10;- Kỹ năng: ...&#10;- Năng lực số / Phẩm chất: ..."
-                            className="w-full p-1.5 rounded border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-xs font-sans leading-relaxed"
-                          />
-                        ) : (
-                          <div className="space-y-1 text-slate-700 dark:text-slate-300">
-                            {(() => {
-                              const rawYccd = lesson.yccd || (isEn ? 'Master target language knowledge and communication skills according to CT GDPT 2018.' : 'Đạt chuẩn kiến thức, kỹ năng và phát triển năng lực phẩm chất theo CT GDPT 2018.');
-                              const lines = rawYccd.includes('\n')
-                                ? rawYccd.split('\n').filter((l) => l.trim().length > 0)
-                                : rawYccd.split(';').map((s) => s.trim()).filter((s) => s.length > 0);
-
-                              return lines.map((line, lIdx) => (
-                                <div key={lIdx} className="flex items-start gap-1.5 leading-snug">
-                                  <span className="text-amber-600 dark:text-amber-400 font-bold shrink-0 mt-0.5">•</span>
-                                  <span className="text-slate-800 dark:text-slate-200">{line.replace(/^[-•*]\s*/, '')}</span>
-                                </div>
-                              ));
-                            })()}
-                          </div>
-                        )}
-                      </td>
-
-                      {/* Thiết bị dạy học */}
-                      <td className="p-3 border-r border-slate-100 dark:border-slate-800 text-[11px]">
-                        {lesson.equipment}
-                      </td>
-
-                      {/* Địa điểm & Năng lực số / AI */}
-                      <td className="p-3 border-r border-slate-100 dark:border-slate-800 text-[11px] leading-relaxed">
-                        {isEditing ? (
-                          <div className="space-y-1.5">
-                            <input
-                              type="text"
-                              value={lesson.location || ''}
-                              onChange={(e) => handleUpdateCurriculumItem(lesson.id, 'location', e.target.value)}
-                              placeholder="Địa điểm dạy học..."
-                              className="w-full p-1.5 rounded border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-xs font-semibold"
-                            />
+                        {/* TÊN CHUYÊN ĐỀ (1) */}
+                        <td className="p-3 font-semibold text-slate-900 dark:text-white border-r border-slate-100 dark:border-slate-800">
+                          {isEditing ? (
                             <textarea
                               rows={3}
-                              value={lesson.digitalCompetency || ''}
-                              onChange={(e) => handleUpdateCurriculumItem(lesson.id, 'digitalCompetency', e.target.value)}
-                              placeholder="• [Mã NLS: 1.1.TC1b] ...&#10;• [Mã AI: 8.C1.1] ..."
-                              className="w-full p-1.5 rounded border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-xs font-mono leading-relaxed"
+                              value={topic.topicName}
+                              onChange={(e) => handleUpdateTopic(idx, 'topicName', e.target.value)}
+                              placeholder="Tên chuyên đề lựa chọn..."
+                              className="w-full p-1.5 rounded border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-xs font-bold text-slate-900 dark:text-white"
                             />
-                          </div>
-                        ) : (
-                          <div className="space-y-1">
-                            <span className="font-bold text-slate-800 dark:text-slate-200 block text-xs">
-                              {lesson.location || 'Phòng học bộ môn'}
+                          ) : (
+                            <span className="font-bold text-slate-900 dark:text-white leading-tight block">
+                              {topic.topicName}
                             </span>
-                            {lesson.digitalCompetency && (
-                              <div className="space-y-1 text-emerald-700 dark:text-emerald-300 text-[11px] leading-snug">
-                                {lesson.digitalCompetency.split('\n').filter((l) => l.trim().length > 0).map((line, dIdx) => (
-                                  <div key={dIdx} className="flex items-start gap-1">
-                                    <span className="text-emerald-500 font-bold shrink-0">•</span>
-                                    <span>{line.replace(/^[-•*]\s*/, '')}</span>
+                          )}
+                        </td>
+
+                        {/* SỐ TIẾT (2) */}
+                        <td className="p-3 text-center font-bold border-r border-slate-100 dark:border-slate-800">
+                          {isEditing ? (
+                            <input
+                              type="number"
+                              min={1}
+                              value={topic.periods}
+                              onChange={(e) => handleUpdateTopic(idx, 'periods', parseInt(e.target.value, 10) || 1)}
+                              className="w-12 p-1 text-center rounded border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-xs font-bold"
+                            />
+                          ) : (
+                            topic.periods
+                          )}
+                        </td>
+
+                        {/* YÊU CẦU CẦN ĐẠT (3) */}
+                        <td className="p-3 text-[11px] border-r border-slate-100 dark:border-slate-800 leading-relaxed">
+                          {isEditing ? (
+                            <textarea
+                              rows={4}
+                              value={topic.yccd || ''}
+                              onChange={(e) => handleUpdateTopic(idx, 'yccd', e.target.value)}
+                              placeholder="- Biết, nhận biết được...&#10;- Trình bày được, hiểu được...&#10;- Vận dụng được..."
+                              className="w-full p-1.5 rounded border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-xs leading-relaxed"
+                            />
+                          ) : (
+                            <div className="space-y-1 text-slate-700 dark:text-slate-300">
+                              {(topic.yccd || 'Đạt chuẩn kiến thức, kỹ năng và phát triển năng lực chuyên đề theo CT GDPT 2018.')
+                                .split('\n')
+                                .filter((l) => l.trim().length > 0)
+                                .map((line, lIdx) => (
+                                  <div key={lIdx} className="flex items-start gap-1.5 leading-snug">
+                                    <span className="text-amber-600 dark:text-amber-400 font-bold shrink-0 mt-0.5">•</span>
+                                    <span className="text-slate-800 dark:text-slate-200">{line.replace(/^[-•*]\s*/, '')}</span>
                                   </div>
                                 ))}
-                              </div>
-                            )}
-                          </div>
-                        )}
-                      </td>
+                            </div>
+                          )}
+                        </td>
 
-                      {/* Thao tác */}
-                      <td className="p-3 text-center">
-                        <div className="flex items-center justify-center gap-1">
-                          <button
-                            onClick={() => setEditingLessonId(isEditing ? null : lesson.id)}
-                            className="p-1 rounded text-slate-400 hover:text-amber-500"
-                            title={isEditing ? 'Hoàn thành' : 'Chỉnh sửa'}
-                          >
-                            {isEditing ? <Check className="w-3.5 h-3.5 text-emerald-500" /> : <Edit3 className="w-3.5 h-3.5" />}
-                          </button>
-                          <button
-                            onClick={() => handleDeleteLesson(lesson.id)}
-                            className="p-1 rounded text-slate-400 hover:text-rose-500"
-                            title="Xóa bài học"
-                          >
-                            <Trash2 className="w-3.5 h-3.5" />
-                          </button>
-                        </div>
+                        {/* TÍCH HỢP NĂNG LỰC SỐ & AI */}
+                        <td className="p-3 text-[11px] border-r border-slate-100 dark:border-slate-800 leading-relaxed">
+                          {isEditing ? (
+                            <textarea
+                              rows={4}
+                              value={topic.digitalCompetency || compText}
+                              onChange={(e) => handleUpdateTopic(idx, 'digitalCompetency', e.target.value)}
+                              placeholder="• [Mã NLS: ...] ...&#10;• [Mã AI: ...] ..."
+                              className="w-full p-1.5 rounded border border-emerald-400 bg-white dark:bg-slate-800 text-xs font-mono leading-relaxed"
+                            />
+                          ) : (
+                            <div className="space-y-1.5">
+                              {compText.split('\n').filter((l) => l.trim().length > 0).map((line, cIdx) => (
+                                <div key={cIdx} className="flex items-start gap-1.5 text-emerald-800 dark:text-emerald-300 leading-snug">
+                                  <span className="text-emerald-500 font-bold shrink-0 mt-0.5">•</span>
+                                  <span>{line.replace(/^[-•*]\s*/, '')}</span>
+                                </div>
+                              ))}
+                            </div>
+                          )}
+                        </td>
+
+                        {/* THAO TÁC */}
+                        <td className="p-3 text-center">
+                          <div className="flex items-center justify-center gap-1">
+                            <button
+                              type="button"
+                              onClick={() => setEditingTopicIdx(isEditing ? null : idx)}
+                              className="p-1 rounded text-slate-400 hover:text-amber-500 transition"
+                              title={isEditing ? 'Hoàn thành' : 'Chỉnh sửa'}
+                            >
+                              {isEditing ? <Check className="w-3.5 h-3.5 text-emerald-500" /> : <Edit3 className="w-3.5 h-3.5" />}
+                            </button>
+                            <button
+                              type="button"
+                              onClick={() => handleDeleteTopic(idx)}
+                              className="p-1 rounded text-slate-400 hover:text-rose-500 transition"
+                              title="Xóa chuyên đề"
+                            >
+                              <Trash2 className="w-3.5 h-3.5" />
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* Ghi chú chú thích chân bảng chuẩn CV 5512 */}
+          <div className="space-y-1 text-xs italic text-slate-600 dark:text-slate-400 pl-2 leading-relaxed">
+            <p>(1) Tên bài học/chuyên đề được xây dựng từ nội dung/chủ đề (được lấy nguyên hoặc thiết kế lại phù hợp với điều kiện thực tế của nhà trường) theo chương trình, sách giáo khoa môn học/hoạt động giáo dục.</p>
+            <p>(2) Số tiết được sử dụng để thực hiện bài dạy/chuyên đề.</p>
+            <p>(3) Yêu cầu (mức độ) cần đạt theo chương trình môn học: Giáo viên chủ động các đơn vị bài học, chủ đề và xác định yêu cầu (mức độ) cần đạt.</p>
+          </div>
+
+          {/* 3. Kiểm tra, đánh giá định kỳ */}
+          <div className="space-y-2 pt-2">
+            <h4 className="text-xs font-bold text-slate-900 dark:text-white pl-2">
+              3. Kiểm tra, đánh giá định kỳ
+            </h4>
+
+            <div className="overflow-x-auto rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
+              <table className="w-full text-left text-xs border-collapse">
+                <thead>
+                  <tr className="bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 border-b border-slate-200 dark:border-slate-700 font-bold">
+                    <th className="p-3 w-48 border-r border-slate-200 dark:border-slate-700">
+                      Bài kiểm tra, đánh giá
+                    </th>
+                    <th className="p-3 w-28 text-center border-r border-slate-200 dark:border-slate-700">
+                      Thời gian<br /><span className="text-[11px] font-normal text-slate-500">(1)</span>
+                    </th>
+                    <th className="p-3 w-28 text-center border-r border-slate-200 dark:border-slate-700">
+                      Thời điểm<br /><span className="text-[11px] font-normal text-slate-500">(2)</span>
+                    </th>
+                    <th className="p-3 border-r border-slate-200 dark:border-slate-700 min-w-[240px]">
+                      Yêu cầu cần đạt<br /><span className="text-[11px] font-normal text-slate-500">(3)</span>
+                    </th>
+                    <th className="p-3 w-48">
+                      Hình thức<br /><span className="text-[11px] font-normal text-slate-500">(4)</span>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-100 dark:divide-slate-800 text-slate-700 dark:text-slate-300">
+                  {appendix1.assessments.map((as) => (
+                    <tr key={as.id} className="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+                      <td className="p-3 font-semibold text-slate-900 dark:text-white border-r border-slate-100 dark:border-slate-800">
+                        {as.assessmentName}
+                      </td>
+                      <td className="p-3 text-center border-r border-slate-100 dark:border-slate-800">
+                        {as.time}
+                      </td>
+                      <td className="p-3 text-center font-medium border-r border-slate-100 dark:border-slate-800">
+                        {formatWeekDisplay(as.week)}
+                      </td>
+                      <td className="p-3 text-[11px] border-r border-slate-100 dark:border-slate-800 leading-relaxed">
+                        {as.requirements}
+                      </td>
+                      <td className="p-3 text-[11px]">
+                        {as.form}
                       </td>
                     </tr>
-                  );
-                })}
-              </tbody>
-            </table>
-          </div>
-          {isSecondaryEnglish && (
-            <p className="text-xs text-slate-500 dark:text-slate-400 italic mt-2 px-1">
-              Ghi chú: Tùy vào tình hình thực tế của mỗi lớp, giáo viên có thể linh động sử dụng mã NLS và các công cụ AI cho phù hợp
-            </p>
-          )}
-        </div>
+                  ))}
+                </tbody>
+              </table>
+            </div>
 
-        {/* Section III: Thiết bị dạy học */}
-        <div className="space-y-3 font-sans">
-          <h3 className="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider bg-slate-100 dark:bg-slate-800/80 px-3.5 py-2 rounded-xl">
-            III. Danh mục Thiết bị dạy học (Theo Thông tư 37/38/39/TT-BGDĐT)
-          </h3>
-          <div className="overflow-x-auto rounded-2xl border border-slate-200 dark:border-slate-800">
-            <table className="w-full text-left text-xs border-collapse">
-              <thead>
-                <tr className="bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-bold">
-                  <th className="p-3 w-12 text-center">STT</th>
-                  <th className="p-3 w-64">Tên thiết bị dạy học</th>
-                  <th className="p-3 w-28 text-center">Số lượng</th>
-                  <th className="p-3">Các bài thí nghiệm / thực hành tương ứng</th>
-                  <th className="p-3 w-32">Ghi chú</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-slate-100 dark:divide-slate-800 text-slate-700 dark:text-slate-300">
-                {appendix1.equipments.map((eq) => (
-                  <tr key={eq.id}>
-                    <td className="p-3 text-center font-bold">{eq.stt}</td>
-                    <td className="p-3 font-semibold text-slate-900 dark:text-white">{eq.equipmentName}</td>
-                    <td className="p-3 text-center font-medium">{eq.quantity}</td>
-                    <td className="p-3">{eq.experiments}</td>
-                    <td className="p-3 text-slate-500">{eq.notes}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+            {/* Chú thích chân bảng kiểm tra đánh giá */}
+            <div className="space-y-1 text-xs italic text-slate-600 dark:text-slate-400 pl-2 leading-relaxed pt-1">
+              <p>(1) Thời gian làm bài kiểm tra, đánh giá.</p>
+              <p>(2) Tuần thứ, tháng, năm thực hiện bài kiểm tra, đánh giá.</p>
+              <p>(3) Yêu cầu (mức độ) cần đạt đến thời điểm kiểm tra, đánh giá (theo phân phối chương trình).</p>
+              <p>(4) Hình thức bài kiểm tra, đánh giá: viết (trên giấy hoặc trên máy tính); bài thực hành; dự án học tập.</p>
+            </div>
           </div>
         </div>
 
-        {/* Section IV: Phòng học bộ môn */}
+        {/* Section III: Các nội dung khác (nếu có) */}
         <div className="space-y-3 font-sans">
           <h3 className="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider bg-slate-100 dark:bg-slate-800/80 px-3.5 py-2 rounded-xl">
-            IV. Phòng học bộ môn (Theo Thông tư 14/2020/TT-BGDĐT)
+            III. Các nội dung khác (nếu có):
           </h3>
-          <div className="overflow-x-auto rounded-2xl border border-slate-200 dark:border-slate-800">
-            <table className="w-full text-left text-xs border-collapse">
-              <thead>
-                <tr className="bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-bold">
-                  <th className="p-3 w-12 text-center">STT</th>
-                  <th className="p-3 w-64">Tên phòng học bộ môn</th>
-                  <th className="p-3 w-24 text-center">Số lượng</th>
-                  <th className="p-3">Đặc điểm, trang thiết bị nổi bật</th>
-                  <th className="p-3 w-32">Ghi chú</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-slate-100 dark:divide-slate-800 text-slate-700 dark:text-slate-300">
-                {appendix1.classrooms.map((cr) => (
-                  <tr key={cr.id}>
-                    <td className="p-3 text-center font-bold">{cr.stt}</td>
-                    <td className="p-3 font-semibold text-slate-900 dark:text-white">{cr.roomName}</td>
-                    <td className="p-3 text-center font-medium">{cr.quantity}</td>
-                    <td className="p-3">{cr.features}</td>
-                    <td className="p-3 text-slate-500">{cr.notes}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        {/* Section V: Kiểm tra đánh giá định kỳ */}
-        <div className="space-y-3 font-sans">
-          <h3 className="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider bg-slate-100 dark:bg-slate-800/80 px-3.5 py-2 rounded-xl">
-            V. Kế hoạch Kiểm tra, đánh giá định kỳ (GK1, CK1, GK2, CK2)
-          </h3>
-          <div className="overflow-x-auto rounded-2xl border border-slate-200 dark:border-slate-800">
-            <table className="w-full text-left text-xs border-collapse">
-              <thead>
-                <tr className="bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-bold">
-                  <th className="p-3 w-12 text-center">STT</th>
-                  <th className="p-3 w-48">Bài kiểm tra, đánh giá</th>
-                  <th className="p-3 w-24 text-center">Thời gian</th>
-                  <th className="p-3 w-24 text-center">Thời điểm</th>
-                  <th className="p-3 w-40">Hình thức</th>
-                  <th className="p-3">Yêu cầu cần đạt</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-slate-100 dark:divide-slate-800 text-slate-700 dark:text-slate-300">
-                {appendix1.assessments.map((as) => (
-                  <tr key={as.id}>
-                    <td className="p-3 text-center font-bold">{as.stt}</td>
-                    <td className="p-3 font-semibold text-slate-900 dark:text-white">{as.assessmentName}</td>
-                    <td className="p-3 text-center">{as.time}</td>
-                    <td className="p-3 text-center font-medium">{formatWeekDisplay(as.week)}</td>
-                    <td className="p-3">{as.form}</td>
-                    <td className="p-3 text-[11px]">{as.requirements}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        {/* Section VI: Nhiệm vụ khác */}
-        <div className="space-y-3 font-sans">
-          <h3 className="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider bg-slate-100 dark:bg-slate-800/80 px-3.5 py-2 rounded-xl">
-            VI. Các nhiệm vụ chuyên môn khác
-          </h3>
-          <div className="space-y-2 text-xs text-slate-700 dark:text-slate-300">
+          <div className="space-y-2 text-xs text-slate-700 dark:text-slate-300 pl-2 leading-relaxed">
             <p>
               • <strong>Bồi dưỡng học sinh giỏi:</strong> {appendix1.otherTasks.advancedTraining}
             </p>
@@ -673,7 +791,7 @@ export const Appendix1View: React.FC<Appendix1ViewProps> = ({ planData, onUpdate
               • <strong>Phụ đạo học sinh:</strong> {appendix1.otherTasks.remedialTeaching}
             </p>
             <p>
-              • <strong>Sinh hoạt chuyên môn NCBH:</strong> {appendix1.otherTasks.lessonStudyGroup}
+              • <strong>Sinh hoạt chuyên môn theo NCBH:</strong> {appendix1.otherTasks.lessonStudyGroup}
             </p>
             <p>
               • <strong>Hoạt động giáo dục khác:</strong> {appendix1.otherTasks.otherActivities}
@@ -681,20 +799,21 @@ export const Appendix1View: React.FC<Appendix1ViewProps> = ({ planData, onUpdate
           </div>
         </div>
 
-        {/* Signature Block */}
+        {/* Signature Block - Chuẩn CV 5512: Trái là TỔ TRƯỞNG, Phải là HIỆU TRƯỞNG */}
         <div className="grid grid-cols-2 gap-8 pt-10 text-center font-sans">
           <div className="space-y-1">
-            <p className="font-bold text-sm text-slate-900 dark:text-white uppercase">HIỆU TRƯỞNG DUYỆT</p>
-            <p className="text-xs text-slate-500 italic">(Ký, ghi rõ họ tên và đóng dấu)</p>
-            <div className="h-20" />
-            <p className="font-bold text-sm text-slate-900 dark:text-white">{config.principalName}</p>
-          </div>
-
-          <div className="space-y-1">
-            <p className="font-bold text-sm text-slate-900 dark:text-white uppercase">TỔ TRƯỞNG CHUYÊN MÔN</p>
+            <p className="font-bold text-sm text-slate-900 dark:text-white uppercase">TỔ TRƯỞNG</p>
             <p className="text-xs text-slate-500 italic">(Ký và ghi rõ họ tên)</p>
             <div className="h-20" />
             <p className="font-bold text-sm text-slate-900 dark:text-white">{config.departmentHead}</p>
+          </div>
+
+          <div className="space-y-1">
+            <p className="text-xs text-slate-600 dark:text-slate-400 italic">..., ngày ...... tháng ...... năm 20...</p>
+            <p className="font-bold text-sm text-slate-900 dark:text-white uppercase">HIỆU TRƯỞNG</p>
+            <p className="text-xs text-slate-500 italic">(Ký và ghi rõ họ tên)</p>
+            <div className="h-16" />
+            <p className="font-bold text-sm text-slate-900 dark:text-white">{config.principalName}</p>
           </div>
         </div>
       </div>

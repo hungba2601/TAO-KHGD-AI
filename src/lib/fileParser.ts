@@ -115,7 +115,7 @@ export function generateYccdForLesson(
   }
 
   // 5. Fallback chất lượng cao dựa trên tên bài học
-  return `- Nắm vững kiến thức cốt lõi, khái niệm và nội dung trọng tâm trong bài: "${name}" (Chương trình GDPT 2018).\n- Rèn luyện kỹ năng phân tích, thực hành và vận dụng kiến thức bài học vào giải quyết các tình huống thực tiễn đời sống.\n- Bồi dưỡng tư duy khoa học, năng lực tự chủ và phẩm chất chăm chỉ, trách nhiệm.`;
+  return `- Biết, nhận biết được các kiến thức cốt lõi, khái niệm và nội dung trọng tâm trong bài: "${name}" (Chương trình GDPT 2018).\n- Trình bày được và hiểu rõ bản chất quy luật, ý nghĩa và phương pháp của bài học.\n- Vận dụng được kiến thức và kỹ năng vào giải quyết các bài tập và tình huống thực tiễn đời sống.`;
 }
 
 /**

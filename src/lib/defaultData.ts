@@ -8,10 +8,12 @@ import {
   TeacherSelfTraining,
   PlanData,
   SchoolType,
-  CurriculumItem
+  CurriculumItem,
+  SelectiveTopicItem
 } from '../types';
 import { getCurriculumBySubjectAndGrade } from './curriculum';
 import { applyUploadedNlsAiToEnglishCurriculum } from './fileParser';
+import { getSelectiveTopicsBySubjectAndGrade } from './curriculum/selectiveTopics';
 
 export const SUBJECTS_BY_SCHOOL_TYPE: Record<SchoolType, string[]> = {
   primary: [
@@ -1120,10 +1122,13 @@ export function generateMockPlan(config: ConfigFormData): PlanData {
         otherActivities: 'Tổ chức các hoạt động ngoại khóa, câu lạc bộ bộ môn, hội thi sáng tạo khoa học kỹ thuật cấp trường và tham gia đầy đủ các phong trào thi đua của ngành GD&ĐT.'
       };
 
+  const selectiveTopics = getSelectiveTopicsBySubjectAndGrade(config.subject, config.grade, config.schoolType, config);
+
   return {
     config,
     appendix1: {
       curriculum,
+      selectiveTopics,
       equipments: getDefaultEquipments(config.subject, config.grade, config.schoolType, config),
       classrooms: getDefaultClassrooms(config.schoolType),
       assessments: getDefaultAssessments(config.grade, config.subject, config),
@@ -1135,7 +1140,7 @@ export function generateMockPlan(config: ConfigFormData): PlanData {
     },
     appendix3: {
       teachingPlan,
-      selectiveTopics: [],
+      selectiveTopics,
       otherDuties: {
         advancedTraining: otherTasks.advancedTraining,
         remedialTeaching: otherTasks.remedialTeaching,

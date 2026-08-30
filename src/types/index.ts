@@ -150,8 +150,24 @@ export interface TeacherLessonPlanItem {
   notes?: string;
 }
 
+export interface SelectiveTopicItem {
+  id?: string;
+  stt: number;
+  topicName: string;
+  periods: number;
+  timeline?: string;
+  yccd?: string;
+  equipment?: string;
+  location?: string;
+  digitalCompetency?: string;
+  nlsCode?: string;
+  aiCode?: string;
+  notes?: string;
+}
+
 export interface Appendix1Data {
   curriculum: CurriculumItem[];
+  selectiveTopics?: SelectiveTopicItem[];
   equipments: EquipmentItem[];
   classrooms: ClassroomItem[];
   assessments: AssessmentItem[];
@@ -165,14 +181,7 @@ export interface Appendix2Data {
 
 export interface Appendix3Data {
   teachingPlan?: TeacherLessonPlanItem[];
-  selectiveTopics?: {
-    stt: number;
-    topicName: string;
-    periods: number;
-    timeline: string;
-    equipment: string;
-    location: string;
-  }[];
+  selectiveTopics?: SelectiveTopicItem[];
   otherDuties?: {
     advancedTraining: string;
     remedialTeaching: string;

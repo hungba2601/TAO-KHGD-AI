@@ -1,6 +1,7 @@
 import { ConfigFormData, PlanData, GenerationStep } from '../types';
 import { buildSystemInstruction, buildPhase1Prompt, buildPhase2Prompt, buildPhase3Prompt } from './prompts';
 import { generateMockPlan, getDefaultClassrooms, getDefaultEquipments, getDefaultAssessments } from './defaultData';
+import { getSelectiveTopicsBySubjectAndGrade } from './curriculum/selectiveTopics';
 
 const LOCAL_STORAGE_KEY = 'GEMINI_API_KEY_LOCAL';
 const LOCAL_MODEL_KEY = 'GEMINI_MODEL_SELECTED';
@@ -329,6 +330,9 @@ export async function generateFullPlan(
                 };
               })
             : baseMock.appendix1.assessments,
+          selectiveTopics: parsedP1.selectiveTopics?.length
+            ? parsedP1.selectiveTopics
+            : baseMock.appendix1.selectiveTopics || getSelectiveTopicsBySubjectAndGrade(config.subject, config.grade, config.schoolType, config),
           otherTasks: parsedP1.otherTasks || baseMock.appendix1.otherTasks
         };
       } else {
@@ -406,6 +410,20 @@ export async function generateFullPlan(
                 };
               })
             : getDefaultAssessments(config.grade, config.subject),
+          selectiveTopics: parsedP1.selectiveTopics?.length
+            ? parsedP1.selectiveTopics.map((st: any, idx: number) => ({
+                id: `st-${idx + 1}`,
+                stt: st.stt || idx + 1,
+                topicName: st.topicName || `Chuyên đề ${idx + 1}`,
+                periods: st.periods || 10,
+                timeline: st.timeline || `Tuần ${idx * 10 + 1} - Tuần ${(idx + 1) * 10}`,
+                yccd: st.yccd || '- Biết, nhận biết được kiến thức trọng tâm.\n- Trình bày được và hiểu rõ nội dung.\n- Vận dụng được vào giải quyết vấn đề.',
+                equipment: st.equipment || 'Máy tính, máy chiếu, tài liệu học liệu số',
+                location: st.location || 'Phòng học bộ môn / Phòng STEM',
+                digitalCompetency: st.digitalCompetency || '• [Mã NLS: 5.3.TC2a] Vận dụng công nghệ số tạo ra sản phẩm\n• [Mã AI: 8.C1.2] Khai thác trợ lý AI hỗ trợ sáng tạo',
+                notes: st.notes || 'Chuyên đề lựa chọn'
+              }))
+            : baseMock.appendix1.selectiveTopics || getSelectiveTopicsBySubjectAndGrade(config.subject, config.grade, config.schoolType, config),
           otherTasks: parsedP1.otherTasks || baseMock.appendix1.otherTasks
         };
       }
@@ -452,10 +470,10 @@ export async function generateFullPlan(
         })) : baseMock.appendix2.stemProjects
       };
     }
-    report(2, 'completed', `Đã hoàn thành Phụ lục 2 môn ${config.subject}.`, 80);
+    report(2, 'completed', 'Đã thiết kế xong Phụ lục 2 Hoạt động GD & STEM.', 80);
 
     // Phase 3
-    report(3, 'running', `Đang xây dựng Kế hoạch cá nhân giáo viên ${config.teacherName} với ${modelDisplayName}...`, 85);
+    report(3, 'running', `Đang lập Kế hoạch cá nhân giáo viên với ${modelDisplayName}...`, 85);
     const p3Response = await callGeminiApi(
       apiKey,
       systemInst,
@@ -493,7 +511,9 @@ export async function generateFullPlan(
 
     p3Data = {
       teachingPlan,
-      selectiveTopics: [],
+      selectiveTopics: p1Data.selectiveTopics && p1Data.selectiveTopics.length > 0
+        ? p1Data.selectiveTopics
+        : getSelectiveTopicsBySubjectAndGrade(config.subject, config.grade, config.schoolType, config),
       otherDuties: {
         advancedTraining: p1Data.otherTasks.advancedTraining,
         remedialTeaching: p1Data.otherTasks.remedialTeaching,

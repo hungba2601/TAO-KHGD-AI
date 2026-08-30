@@ -15,7 +15,11 @@ export function buildSystemInstruction(schoolType: SchoolType): string {
 QUY TẮC CỐT LÕI BẮT BUỘC:
 1. CƠ SỞ THAM KHẢO CHUẨN: BẮT BUỘC sử dụng Bộ sách "KẾT NỐI TRI THỨC VỚI CUỘC SỐNG" (NXB Giáo dục Việt Nam; đối với môn Tiếng Anh sử dụng bộ Tiếng Anh Global Success của NXB Giáo dục Việt Nam) hoặc bám sát 100% tài liệu tham khảo do giáo viên tải lên.
 2. TÊN BÀI HỌC VÀ CHỦ ĐỀ: Phải ghi chính xác 100% tên bài học và chủ đề theo đúng mục lục SGK Kết nối tri thức hoặc phân phối chương trình trong tài liệu tham khảo. TUYỆT ĐỐI KHÔNG DÙNG TÊN BÀI CHUNG CHUNG.
-3. CỘT YÊU CẦU CẦN ĐẠT (YCCĐ): BẮT BUỘC TRÌNH BÀY DƯỚI DẠNG TỪNG DÒNG GẠCH ĐẦU DÒNG (mỗi ý là 1 dòng bắt đầu bằng dấu "- ", có ít nhất 2 - 3 gạch đầu dòng rõ ràng về Kiến thức, Kỹ năng, Năng lực đặc thù và Phẩm chất gắn với nội dung bài học). TUYỆT ĐỐI KHÔNG VIẾT THÀNH ĐOẠN VĂN LIỀN MẠCH, KHÔNG VIẾT CHUNG CHUNG.
+3. CỘT YÊU CẦU CẦN ĐẠT (YCCĐ): YCCĐ là các NĂNG LỰC ĐẠT ĐƯỢC của học sinh sau bài học, BẮT BUỘC phải sử dụng các động từ hành vi theo các mức độ nhận thức (Biết, Trình bày được, Hiểu được, Vận dụng được). Trình bày dưới dạng từng gạch đầu dòng rõ ràng:
+   - Mức Biết / Nhận biết: Bắt đầu bằng "- Biết...", "- Nhận biết được...", "- Nêu được..." (về khái niệm, định nghĩa, đặc điểm của bài học).
+   - Mức Thông hiểu / Trình bày: Bắt đầu bằng "- Trình bày được...", "- Hiểu được...", "- Giải thích được..." (về nội dung, ý nghĩa, quy luật, cấu trúc).
+   - Mức Vận dụng: Bắt đầu bằng "- Vận dụng được..." (vào làm bài tập, giải quyết bài toán, thực hành, xử lý tình huống thực tiễn).
+   Mỗi bài học BẮT BUỘC có từ 2 - 3 gạch đầu dòng rõ ràng. TUYỆT ĐỐI KHÔNG VIẾT THÀNH ĐOẠN VĂN LIỀN MẠCH, KHÔNG VIẾT CHUNG CHUNG.
 4. QUY TẮC MÃ NĂNG LỰC SỐ (CV 3456) VÀ MÃ AI (QĐ 2422) BẮT BUỘC THEO ĐÚNG CẤP ĐỘ KHỐI LỚP:
    - Tiểu học Lớp 1, 2, 3: Mức độ CƠ BẢN 1 (mã NLS dạng X.X.CB1x) & Khung AI Lớp 1, 2, 3 (mã dạng 1.x, 2.x, 3.x)
    - Tiểu học Lớp 4, 5: Mức độ CƠ BẢN 2 (mã NLS dạng X.X.CB2x) & Khung AI Lớp 4, 5 (mã dạng 4.x, 5.x)
@@ -142,10 +146,13 @@ ${aiGuideText}
 
 YÊU CẦU ĐẶC BIỆT QUAN TRỌNG VỀ KHUNG THỜI GIAN 35 TUẦN THỰC HỌC (CT GDPT 2018):
 1. BẮT BUỘC danh sách "curriculum" PHẢI TRẢI DÀI ĐỦ 35 TUẦN THỰC HỌC (TỪ TUẦN 1 ĐẾN TUẦN 35). TUYỆT ĐỐI KHÔNG ĐƯỢC THIẾU TUẦN HOẶC DỪNG LẠI Ở GIỮA CHỪNG.
-2. NỘI DUNG YÊU CẦU CẦN ĐẠT (YCCĐ) PHẢI LẤY TRỰC TIẾP TỪ CHƯƠNG TRÌNH GDPT 2018 (Thông tư 32/2018/TT-BGDĐT):
-   - Cột "yccd" của TẤT CẢ các môn học từ Lớp 1 đến Lớp 12 BẮT BUỘC viết bằng các động từ hành vi chuẩn ("Nhận biết được...", "Trình bày được...", "Mô tả được...", "Thực hiện được...", "Vận dụng được...").
-   - Trình bày thành 2-3 gạch đầu dòng rõ ràng (- Kiến thức & Năng lực đặc thù; - Kỹ năng thực hành & Vận dụng; - Phẩm chất và Năng lực chung).
-   - Tuyệt đối KHÔNG viết YCCĐ chung chung một dòng.
+2. NỘI DUNG YÊU CẦU CẦN ĐẠT (YCCĐ) LÀ NĂNG LỰC HỌC SINH ĐẠT ĐƯỢC THEO CT GDPT 2018:
+   - BẮT BUỘC sử dụng các động từ hành vi theo các mức độ nhận thức: "Biết...", "Nhận biết được...", "Trình bày được...", "Hiểu được...", "Giải thích được...", "Vận dụng được..." (vào bài tập hoặc thực tiễn).
+   - Trình bày thành 2-3 gạch đầu dòng rõ ràng:
+     • Dòng 1 (Mức Biết/Nhận biết): "- Biết...", "- Nhận biết được...", "- Nêu được..."
+     • Dòng 2 (Mức Hiểu/Trình bày): "- Trình bày được...", "- Hiểu được...", "- Giải thích được..."
+     • Dòng 3 (Mức Vận dụng): "- Vận dụng được... vào giải quyết bài tập và tình huống thực tiễn."
+   - Tuyệt đối KHÔNG viết YCCĐ chung chung hoặc thiếu động từ hành vi.
 3. QUY TẮC TÍCH HỢP NLS & AI TỪNG BÀI:
    - Dựa vào nội dung và YCCĐ của từng bài để chọn mã NLS và mã AI tương ứng từ danh mục tham chiếu ở trên.
    - Ví dụ: bài thực hành/lập trình/bảng tính chọn mã miền 3.x hoặc 5.x; bài làm việc nhóm/thuyết trình chọn miền 2.x; bài an toàn chọn miền 4.x; bài kiểm tra đánh giá chọn an toàn bài thi.
@@ -240,6 +247,41 @@ Hãy tạo JSON có cấu trúc sau:
       "form": "${isEn ? 'School-wide Standardized Final Exam' : 'Đề kiểm tra chuẩn hóa cấp trường theo ma trận Bộ GD&ĐT'}",
       "units": "${isEn ? 'Core language competencies of the school year' : 'Kiến thức trọng tâm Học kỳ 2 và cả năm học'}",
       "requirements": "${isEn ? '- Evaluate overall English competency for grade completion.' : '- Đánh giá toàn diện kết quả học tập cả năm học, xét hoàn thành chương trình.'}"
+    }
+  ],
+  "selectiveTopics": [
+    {
+      "stt": 1,
+      "topicName": "Chuyên đề 1: Tên chuyên đề học tập lựa chọn / STEM sáng tạo",
+      "periods": 15,
+      "timeline": "Tuần 10 - Tuần 24",
+      "yccd": "- Biết, nhận biết được...\\n- Trình bày được, hiểu được...\\n- Vận dụng được...",
+      "equipment": "Máy tính, thiết bị thực hành, học liệu số",
+      "location": "Phòng học bộ môn / Phòng STEM",
+      "digitalCompetency": "• [Mã NLS: 5.3.TC2a] Vận dụng công nghệ số tạo ra sản phẩm\\n• [Mã AI: 8.C1.2] Khai thác trợ lý AI hỗ trợ sáng tạo",
+      "notes": "Chuyên đề lựa chọn"
+    },
+    {
+      "stt": 2,
+      "topicName": "Chuyên đề 2: Tên chuyên đề học tập lựa chọn / STEM sáng tạo",
+      "periods": 10,
+      "timeline": "Tuần 22 - Tuần 31",
+      "yccd": "- Biết, nhận biết được...\\n- Trình bày được, hiểu được...\\n- Vận dụng được...",
+      "equipment": "Máy tính, thiết bị thực hành, học liệu số",
+      "location": "Phòng học bộ môn / Phòng STEM",
+      "digitalCompetency": "• [Mã NLS: 3.1.TC2b] Tạo và chỉnh sửa nội dung số\\n• [Mã AI: 8.C2.1] Ứng dụng công cụ AI",
+      "notes": "Chuyên đề lựa chọn"
+    },
+    {
+      "stt": 3,
+      "topicName": "Chuyên đề 3: Tên chuyên đề học tập lựa chọn / STEM sáng tạo",
+      "periods": 10,
+      "timeline": "Tuần 1 - Tuần 10",
+      "yccd": "- Biết, nhận biết được...\\n- Trình bày được, hiểu được...\\n- Vận dụng được...",
+      "equipment": "Máy tính, thiết bị thực hành, học liệu số",
+      "location": "Phòng học bộ môn / Phòng STEM",
+      "digitalCompetency": "• [Mã NLS: 1.3.TC2a] Phân tích và trực quan hóa dữ liệu\\n• [Mã AI: 8.D1.1] Giải pháp số giải quyết vấn đề",
+      "notes": "Chuyên đề lựa chọn"
     }
   ],
   "otherTasks": {

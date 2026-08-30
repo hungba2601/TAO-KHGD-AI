@@ -9,18 +9,20 @@ import {
   WidthType,
   AlignmentType,
   BorderStyle,
-  HeadingLevel,
-  HeightRule
+  HeadingLevel
 } from 'docx';
 import { saveAs } from 'file-saver';
 import { PlanData } from '../types';
+import { getNlsCodeForSubjectLesson } from './constants/nlsGuides';
+import { getAiCodeForSubjectLesson } from './constants/aiGuides';
+import { getSelectiveTopicsBySubjectAndGrade } from './curriculum/selectiveTopics';
 
 const FONT_FAMILY = 'Times New Roman';
 
 function createTitle(text: string, size = 26, isBold = true, align = AlignmentType.CENTER): Paragraph {
   return new Paragraph({
     alignment: align,
-    spacing: { before: 120, after: 120 },
+    spacing: { before: 80, after: 80 },
     children: [
       new TextRun({
         text,
@@ -32,7 +34,7 @@ function createTitle(text: string, size = 26, isBold = true, align = AlignmentTy
   });
 }
 
-function createHeading(text: string, level = HeadingLevel.HEADING_2): Paragraph {
+function createHeading(text: string, level: any = HeadingLevel.HEADING_2): Paragraph {
   return new Paragraph({
     heading: level,
     spacing: { before: 180, after: 80 },
@@ -50,13 +52,27 @@ function createHeading(text: string, level = HeadingLevel.HEADING_2): Paragraph 
 
 function createBodyParagraph(text: string, isBold = false, isItalic = false): Paragraph {
   return new Paragraph({
-    spacing: { before: 60, after: 60, line: 276 }, // 1.15 line spacing
+    spacing: { before: 50, after: 50, line: 276 }, // 1.15 line spacing
     children: [
       new TextRun({
         text,
         bold: isBold,
         italics: isItalic,
         size: 24, // 12pt
+        font: FONT_FAMILY
+      })
+    ]
+  });
+}
+
+function createFootnoteParagraph(text: string): Paragraph {
+  return new Paragraph({
+    spacing: { before: 30, after: 30, line: 240 },
+    children: [
+      new TextRun({
+        text,
+        italics: true,
+        size: 20, // 10pt
         font: FONT_FAMILY
       })
     ]
@@ -83,13 +99,7 @@ function createHeaderSection(config: PlanData['config']): Table {
               new Paragraph({
                 alignment: AlignmentType.CENTER,
                 children: [
-                  new TextRun({ text: config.governingBody.toUpperCase(), bold: false, size: 22, font: FONT_FAMILY })
-                ]
-              }),
-              new Paragraph({
-                alignment: AlignmentType.CENTER,
-                children: [
-                  new TextRun({ text: config.schoolName.toUpperCase(), bold: true, size: 22, font: FONT_FAMILY })
+                  new TextRun({ text: `TRƯỜNG: ${config.schoolName.toUpperCase()}`, bold: true, size: 22, font: FONT_FAMILY })
                 ]
               }),
               new Paragraph({
@@ -123,7 +133,70 @@ function createHeaderSection(config: PlanData['config']): Table {
   });
 }
 
-function createSignatureSection(config: PlanData['config']): Table {
+function createHeaderSectionWithTeacher(config: PlanData['config']): Table {
+  return new Table({
+    width: { size: 100, type: WidthType.PERCENTAGE },
+    borders: {
+      top: { style: BorderStyle.NONE },
+      bottom: { style: BorderStyle.NONE },
+      left: { style: BorderStyle.NONE },
+      right: { style: BorderStyle.NONE },
+      insideHorizontal: { style: BorderStyle.NONE },
+      insideVertical: { style: BorderStyle.NONE }
+    },
+    rows: [
+      new TableRow({
+        children: [
+          new TableCell({
+            width: { size: 48, type: WidthType.PERCENTAGE },
+            children: [
+              new Paragraph({
+                alignment: AlignmentType.LEFT,
+                children: [
+                  new TextRun({ text: `TRƯỜNG: `, bold: true, size: 22, font: FONT_FAMILY }),
+                  new TextRun({ text: config.schoolName.toUpperCase(), bold: true, size: 22, font: FONT_FAMILY })
+                ]
+              }),
+              new Paragraph({
+                alignment: AlignmentType.LEFT,
+                children: [
+                  new TextRun({ text: `TỔ: `, bold: true, size: 22, font: FONT_FAMILY }),
+                  new TextRun({ text: config.departmentName.toUpperCase(), bold: true, size: 22, font: FONT_FAMILY })
+                ]
+              }),
+              new Paragraph({
+                alignment: AlignmentType.LEFT,
+                children: [
+                  new TextRun({ text: `Họ và tên giáo viên: `, size: 22, font: FONT_FAMILY }),
+                  new TextRun({ text: config.teacherName, bold: true, size: 22, font: FONT_FAMILY })
+                ]
+              })
+            ]
+          }),
+          new TableCell({
+            width: { size: 52, type: WidthType.PERCENTAGE },
+            children: [
+              new Paragraph({
+                alignment: AlignmentType.CENTER,
+                children: [
+                  new TextRun({ text: 'CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM', bold: true, size: 22, font: FONT_FAMILY })
+                ]
+              }),
+              new Paragraph({
+                alignment: AlignmentType.CENTER,
+                children: [
+                  new TextRun({ text: 'Độc lập - Tự do - Hạnh phúc', bold: true, size: 22, font: FONT_FAMILY, underline: {} })
+                ]
+              })
+            ]
+          })
+        ]
+      })
+    ]
+  });
+}
+
+function createAppendix1SignatureSection(config: PlanData['config']): Table {
   return new Table({
     width: { size: 100, type: WidthType.PERCENTAGE },
     borders: {
@@ -143,20 +216,20 @@ function createSignatureSection(config: PlanData['config']): Table {
               new Paragraph({
                 alignment: AlignmentType.CENTER,
                 children: [
-                  new TextRun({ text: 'HIỆU TRƯỞNG DUYỆT', bold: true, size: 24, font: FONT_FAMILY })
+                  new TextRun({ text: 'TỔ TRƯỞNG', bold: true, size: 24, font: FONT_FAMILY })
                 ]
               }),
               new Paragraph({
                 alignment: AlignmentType.CENTER,
                 children: [
-                  new TextRun({ text: '(Ký và ghi rõ họ tên, đóng dấu)', italics: true, size: 20, font: FONT_FAMILY })
+                  new TextRun({ text: '(Ký và ghi rõ họ tên)', italics: true, size: 20, font: FONT_FAMILY })
                 ]
               }),
-              new Paragraph({ spacing: { before: 600 } }),
+              new Paragraph({ spacing: { before: 650 } }),
               new Paragraph({
                 alignment: AlignmentType.CENTER,
                 children: [
-                  new TextRun({ text: config.principalName, bold: true, size: 24, font: FONT_FAMILY })
+                  new TextRun({ text: config.departmentHead, bold: true, size: 24, font: FONT_FAMILY })
                 ]
               })
             ]
@@ -167,7 +240,13 @@ function createSignatureSection(config: PlanData['config']): Table {
               new Paragraph({
                 alignment: AlignmentType.CENTER,
                 children: [
-                  new TextRun({ text: 'TỔ TRƯỞNG CHUYÊN MÔN', bold: true, size: 24, font: FONT_FAMILY })
+                  new TextRun({ text: '..., ngày ...... tháng ...... năm 20...', italics: true, size: 20, font: FONT_FAMILY })
+                ]
+              }),
+              new Paragraph({
+                alignment: AlignmentType.CENTER,
+                children: [
+                  new TextRun({ text: 'HIỆU TRƯỞNG', bold: true, size: 24, font: FONT_FAMILY })
                 ]
               }),
               new Paragraph({
@@ -176,11 +255,85 @@ function createSignatureSection(config: PlanData['config']): Table {
                   new TextRun({ text: '(Ký và ghi rõ họ tên)', italics: true, size: 20, font: FONT_FAMILY })
                 ]
               }),
-              new Paragraph({ spacing: { before: 600 } }),
+              new Paragraph({ spacing: { before: 550 } }),
+              new Paragraph({
+                alignment: AlignmentType.CENTER,
+                children: [
+                  new TextRun({ text: config.principalName, bold: true, size: 24, font: FONT_FAMILY })
+                ]
+              })
+            ]
+          })
+        ]
+      })
+    ]
+  });
+}
+
+function createAppendix3SignatureSection(config: PlanData['config']): Table {
+  return new Table({
+    width: { size: 100, type: WidthType.PERCENTAGE },
+    borders: {
+      top: { style: BorderStyle.NONE },
+      bottom: { style: BorderStyle.NONE },
+      left: { style: BorderStyle.NONE },
+      right: { style: BorderStyle.NONE },
+      insideHorizontal: { style: BorderStyle.NONE },
+      insideVertical: { style: BorderStyle.NONE }
+    },
+    rows: [
+      new TableRow({
+        children: [
+          new TableCell({
+            width: { size: 50, type: WidthType.PERCENTAGE },
+            children: [
+              new Paragraph({
+                alignment: AlignmentType.CENTER,
+                children: [
+                  new TextRun({ text: 'TỔ TRƯỞNG', bold: true, size: 24, font: FONT_FAMILY })
+                ]
+              }),
+              new Paragraph({
+                alignment: AlignmentType.CENTER,
+                children: [
+                  new TextRun({ text: '(Ký và ghi rõ họ tên)', italics: true, size: 20, font: FONT_FAMILY })
+                ]
+              }),
+              new Paragraph({ spacing: { before: 650 } }),
               new Paragraph({
                 alignment: AlignmentType.CENTER,
                 children: [
                   new TextRun({ text: config.departmentHead, bold: true, size: 24, font: FONT_FAMILY })
+                ]
+              })
+            ]
+          }),
+          new TableCell({
+            width: { size: 50, type: WidthType.PERCENTAGE },
+            children: [
+              new Paragraph({
+                alignment: AlignmentType.CENTER,
+                children: [
+                  new TextRun({ text: '... ngày ...... tháng ...... năm 20...', italics: true, size: 20, font: FONT_FAMILY })
+                ]
+              }),
+              new Paragraph({
+                alignment: AlignmentType.CENTER,
+                children: [
+                  new TextRun({ text: 'GIÁO VIÊN', bold: true, size: 24, font: FONT_FAMILY })
+                ]
+              }),
+              new Paragraph({
+                alignment: AlignmentType.CENTER,
+                children: [
+                  new TextRun({ text: '(Ký và ghi rõ họ tên)', italics: true, size: 20, font: FONT_FAMILY })
+                ]
+              }),
+              new Paragraph({ spacing: { before: 550 } }),
+              new Paragraph({
+                alignment: AlignmentType.CENTER,
+                children: [
+                  new TextRun({ text: config.teacherName, bold: true, size: 24, font: FONT_FAMILY })
                 ]
               })
             ]
@@ -213,191 +366,328 @@ const formatDocxPeriod = (periods: number, isEn: boolean): string => {
   if (isEn) {
     return `${periods} ${periods > 1 ? 'periods' : 'period'}`;
   }
-  return `${periods} tiết`;
+  return `${periods}`;
 };
+
+function resolveDigitalCompForDocx(
+  item: { lessonName: string; digitalCompetency?: string; topic?: string; yccd?: string },
+  index: number,
+  config: PlanData['config'],
+  isEn: boolean
+): string {
+  if (item.digitalCompetency && item.digitalCompetency.trim().length > 0) {
+    return item.digitalCompetency;
+  }
+  const lessonCtx = {
+    lessonName: item.lessonName,
+    subject: config.subject,
+    grade: config.grade,
+    lessonIndex: index,
+    topic: item.topic || '',
+    yccd: item.yccd || ''
+  };
+  const nls = getNlsCodeForSubjectLesson(config.grade, config.schoolType, lessonCtx);
+  const ai = getAiCodeForSubjectLesson(config.grade, lessonCtx);
+
+  return isEn
+    ? `• [NLS Code: ${nls.code}] ${nls.requirement}\n• [AI Code: ${ai.code}] ${ai.requirement}`
+    : `• [Mã NLS: ${nls.code}] ${nls.requirement}\n• [Mã AI: ${ai.code}] ${ai.requirement}`;
+}
 
 export async function exportAppendix1Docx(plan: PlanData): Promise<void> {
   const { config, appendix1 } = plan;
-  const isPrimary = config.schoolType === 'primary';
-  const circular = isPrimary ? 'Công văn 2345/BGDĐT-GDTH' : 'Công văn 5512/BGDĐT-GDTrH';
   const isEn = isEnglishSubject(config.subject);
-  const isSecondaryEnglish = isEn && (config.schoolType === 'secondary' || config.schoolType === 'multi_level');
 
-  // Table Curriculum
-  const tableRows = isSecondaryEnglish
-    ? [
-        new TableRow({
-          tableHeader: true,
+  const totalTeachers =
+    (Number(config.teachersCollege) || 0) +
+    (Number(config.teachersUniversity) || 0) +
+    (Number(config.teachersMasterDoc) || 0);
+
+  // Table Curriculum - 5 columns kèm Cột Tích hợp NLS và AI chuẩn YCCĐ
+  const curriculumRows = [
+    new TableRow({
+      tableHeader: true,
+      children: [
+        new TableCell({
+          width: { size: 5, type: WidthType.PERCENTAGE },
           children: [
-            new TableCell({ width: { size: 7, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'Week', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
-            new TableCell({ width: { size: 22, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'Lesson', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
-            new TableCell({ width: { size: 6, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'Period', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
-            new TableCell({ width: { size: 33, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'Objectives', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
-            new TableCell({ width: { size: 14, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'Teaching Equipment', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
-            new TableCell({ width: { size: 18, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'Location & Digital Competency / AI', bold: true, font: FONT_FAMILY, size: 20 })] })] })
+            new Paragraph({
+              alignment: AlignmentType.CENTER,
+              children: [new TextRun({ text: 'STT', bold: true, font: FONT_FAMILY, size: 20 })]
+            })
           ]
         }),
-        ...appendix1.curriculum.map((c) => new TableRow({
+        new TableCell({
+          width: { size: 24, type: WidthType.PERCENTAGE },
           children: [
-            new TableCell({ children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: formatDocxWeek(c.week, true), font: FONT_FAMILY, size: 20 })] })] }),
-            new TableCell({
+            new Paragraph({
+              alignment: AlignmentType.CENTER,
               children: [
-                ...(c.topic && c.topic.trim().length > 0
-                  ? [
-                      new Paragraph({
-                        children: [new TextRun({ text: c.topic, bold: true, font: FONT_FAMILY, size: 19, color: 'B45309' })]
-                      })
-                    ]
-                  : []),
-                new Paragraph({
-                  children: [new TextRun({ text: c.lessonName, font: FONT_FAMILY, size: 20 })]
-                })
-              ]
-            }),
-            new TableCell({ children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: c.stt.toString(), font: FONT_FAMILY, size: 20 })] })] }),
-            new TableCell({
-              children: (() => {
-                const raw = (c.yccd || '').trim();
-                if (!raw) return [new Paragraph({ children: [] })];
-                const lines = raw.includes('\n')
-                  ? raw.split('\n').filter((l) => l.trim().length > 0)
-                  : raw.split(';').map((s) => s.trim()).filter(Boolean);
-
-                return lines.map((line) => {
-                  const trimmed = line.trim();
-                  if (trimmed.toLowerCase().startsWith('by the end of')) {
-                    return new Paragraph({
-                      spacing: { before: 30, after: 20 },
-                      children: [
-                        new TextRun({
-                          text: trimmed,
-                          bold: true,
-                          font: FONT_FAMILY,
-                          size: 19
-                        })
-                      ]
-                    });
-                  }
-                  return new Paragraph({
-                    spacing: { before: 15, after: 15 },
-                    children: [
-                      new TextRun({
-                        text: trimmed.startsWith('-') || trimmed.startsWith('–') || trimmed.startsWith('•') ? trimmed : `– ${trimmed}`,
-                        font: FONT_FAMILY,
-                        size: 19
-                      })
-                    ]
-                  });
-                });
-              })()
-            }),
-            new TableCell({ children: [new Paragraph({ children: [new TextRun({ text: c.equipment, font: FONT_FAMILY, size: 19 })] })] }),
-            new TableCell({
-              children: [
-                new Paragraph({
-                  spacing: { before: 20, after: 20 },
-                  children: [new TextRun({ text: c.location || 'English Language Lab / Classroom', bold: true, font: FONT_FAMILY, size: 19 })]
-                }),
-                ...(c.digitalCompetency
-                  ? c.digitalCompetency
-                      .split('\n')
-                      .filter((l) => l.trim().length > 0)
-                      .map((line) => new Paragraph({
-                        spacing: { before: 20, after: 20 },
-                        children: [
-                          new TextRun({
-                            text: line.startsWith('•') || line.startsWith('-') ? line : `• ${line}`,
-                            font: FONT_FAMILY,
-                            size: 18,
-                            color: '047857'
-                          })
-                        ]
-                      }))
-                  : [])
+                new TextRun({ text: 'Bài học', bold: true, font: FONT_FAMILY, size: 20 }),
+                new TextRun({ text: '\n(1)', font: FONT_FAMILY, size: 18 })
               ]
             })
           ]
-        }))
-      ]
-    : [
-        new TableRow({
-          tableHeader: true,
+        }),
+        new TableCell({
+          width: { size: 8, type: WidthType.PERCENTAGE },
           children: [
-            new TableCell({ width: { size: 5, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'STT', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
-            new TableCell({ width: { size: 16, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: isEn ? 'Unit / Khung chủ đề' : 'Khung / Chủ đề', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
-            new TableCell({ width: { size: 18, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: isEn ? 'Bài học / Tên bài (SGK Global Success)' : 'Bài học / Tên bài (SGK Kết nối tri thức)', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
-            new TableCell({ width: { size: 6, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: isEn ? 'Số tiết (Periods)' : 'Số tiết', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
-            new TableCell({ width: { size: 7, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: isEn ? 'Thời điểm (Week)' : 'Thời điểm', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
-            new TableCell({ width: { size: 24, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'Yêu cầu cần đạt (YCCĐ)', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
-            new TableCell({ width: { size: 12, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'Thiết bị dạy học', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
-            new TableCell({ width: { size: 14, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'Địa điểm & Năng lực số / AI', bold: true, font: FONT_FAMILY, size: 20 })] })] })
+            new Paragraph({
+              alignment: AlignmentType.CENTER,
+              children: [
+                new TextRun({ text: 'Số tiết', bold: true, font: FONT_FAMILY, size: 20 }),
+                new TextRun({ text: '\n(2)', font: FONT_FAMILY, size: 18 })
+              ]
+            })
           ]
         }),
-        ...appendix1.curriculum.map((c) => new TableRow({
+        new TableCell({
+          width: { size: 36, type: WidthType.PERCENTAGE },
           children: [
-            new TableCell({ children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: c.stt.toString(), font: FONT_FAMILY, size: 20 })] })] }),
-            new TableCell({ children: [new Paragraph({ children: [new TextRun({ text: c.topic, font: FONT_FAMILY, size: 19 })] })] }),
-            new TableCell({ children: [new Paragraph({ children: [new TextRun({ text: c.lessonName, bold: true, font: FONT_FAMILY, size: 20 })] })] }),
-            new TableCell({ children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: formatDocxPeriod(c.periods, isEn), font: FONT_FAMILY, size: 20 })] })] }),
-            new TableCell({ children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: formatDocxWeek(c.week, isEn), font: FONT_FAMILY, size: 20 })] })] }),
-            new TableCell({
-              children: (() => {
-                const raw = c.yccd || 'Đạt chuẩn yêu cầu kiến thức kỹ năng theo CT GDPT 2018.';
-                const lines = raw.includes('\n')
-                  ? raw.split('\n').filter((l) => l.trim().length > 0)
-                  : raw.split(';').map((s) => s.trim()).filter(Boolean);
+            new Paragraph({
+              alignment: AlignmentType.CENTER,
+              children: [
+                new TextRun({ text: 'Yêu cầu cần đạt', bold: true, font: FONT_FAMILY, size: 20 }),
+                new TextRun({ text: '\n(3)', font: FONT_FAMILY, size: 18 })
+              ]
+            })
+          ]
+        }),
+        new TableCell({
+          width: { size: 27, type: WidthType.PERCENTAGE },
+          children: [
+            new Paragraph({
+              alignment: AlignmentType.CENTER,
+              children: [
+                new TextRun({ text: 'Tích hợp NLS & AI', bold: true, font: FONT_FAMILY, size: 20 }),
+                new TextRun({ text: '\n(CV 3456 & QĐ 2422)', font: FONT_FAMILY, size: 18 })
+              ]
+            })
+          ]
+        })
+      ]
+    }),
+    ...appendix1.curriculum.map((c, idx) => {
+      const compText = resolveDigitalCompForDocx(c, idx, config, isEn);
 
-                return lines.map((line) => new Paragraph({
-                  spacing: { before: 40, after: 40 },
+      return new TableRow({
+        children: [
+          new TableCell({
+            children: [
+              new Paragraph({
+                alignment: AlignmentType.CENTER,
+                children: [new TextRun({ text: c.stt.toString(), font: FONT_FAMILY, size: 20 })]
+              })
+            ]
+          }),
+          new TableCell({
+            children: [
+              ...(c.topic && c.topic.trim().length > 0
+                ? [
+                    new Paragraph({
+                      children: [new TextRun({ text: c.topic, bold: true, font: FONT_FAMILY, size: 19 })]
+                    })
+                  ]
+                : []),
+              new Paragraph({
+                children: [new TextRun({ text: c.lessonName, font: FONT_FAMILY, size: 20 })]
+              })
+            ]
+          }),
+          new TableCell({
+            children: [
+              new Paragraph({
+                alignment: AlignmentType.CENTER,
+                children: [new TextRun({ text: formatDocxPeriod(c.periods, isEn), font: FONT_FAMILY, size: 20 })]
+              })
+            ]
+          }),
+          new TableCell({
+            children: (() => {
+              const raw = c.yccd || (isEn ? 'Master target language knowledge and communication skills according to CT GDPT 2018.' : 'Đạt chuẩn yêu cầu kiến thức kỹ năng theo CT GDPT 2018.');
+              const lines = raw.includes('\n')
+                ? raw.split('\n').filter((l) => l.trim().length > 0)
+                : raw.split(';').map((s) => s.trim()).filter(Boolean);
+
+              return lines.map((line) => new Paragraph({
+                spacing: { before: 15, after: 15 },
+                children: [
+                  new TextRun({
+                    text: line.startsWith('-') || line.startsWith('–') || line.startsWith('•') ? line : `- ${line}`,
+                    font: FONT_FAMILY,
+                    size: 19
+                  })
+                ]
+              }));
+            })()
+          }),
+          new TableCell({
+            children: (() => {
+              const lines = compText.split('\n').filter((l) => l.trim().length > 0);
+              return lines.map((line) => new Paragraph({
+                spacing: { before: 15, after: 15 },
+                children: [
+                  new TextRun({
+                    text: line.startsWith('•') || line.startsWith('-') ? line : `• ${line}`,
+                    font: FONT_FAMILY,
+                    size: 18,
+                    color: '047857'
+                  })
+                ]
+              }));
+            })()
+          })
+        ]
+      });
+    })
+  ];
+
+  // Table Selective Topics (Chuyên đề lựa chọn)
+  const selectiveTopics =
+    appendix1.selectiveTopics && appendix1.selectiveTopics.length > 0
+      ? appendix1.selectiveTopics
+      : getSelectiveTopicsBySubjectAndGrade(config.subject, config.grade, config.schoolType, config);
+
+  const selectiveTopicRows = [
+    new TableRow({
+      tableHeader: true,
+      children: [
+        new TableCell({
+          width: { size: 5, type: WidthType.PERCENTAGE },
+          children: [
+            new Paragraph({
+              alignment: AlignmentType.CENTER,
+              children: [new TextRun({ text: 'STT', bold: true, font: FONT_FAMILY, size: 20 })]
+            })
+          ]
+        }),
+        new TableCell({
+          width: { size: 24, type: WidthType.PERCENTAGE },
+          children: [
+            new Paragraph({
+              alignment: AlignmentType.CENTER,
+              children: [
+                new TextRun({ text: 'Chuyên đề', bold: true, font: FONT_FAMILY, size: 20 }),
+                new TextRun({ text: '\n(1)', font: FONT_FAMILY, size: 18 })
+              ]
+            })
+          ]
+        }),
+        new TableCell({
+          width: { size: 8, type: WidthType.PERCENTAGE },
+          children: [
+            new Paragraph({
+              alignment: AlignmentType.CENTER,
+              children: [
+                new TextRun({ text: 'Số tiết', bold: true, font: FONT_FAMILY, size: 20 }),
+                new TextRun({ text: '\n(2)', font: FONT_FAMILY, size: 18 })
+              ]
+            })
+          ]
+        }),
+        new TableCell({
+          width: { size: 36, type: WidthType.PERCENTAGE },
+          children: [
+            new Paragraph({
+              alignment: AlignmentType.CENTER,
+              children: [
+                new TextRun({ text: 'Yêu cầu cần đạt', bold: true, font: FONT_FAMILY, size: 20 }),
+                new TextRun({ text: '\n(3)', font: FONT_FAMILY, size: 18 })
+              ]
+            })
+          ]
+        }),
+        new TableCell({
+          width: { size: 27, type: WidthType.PERCENTAGE },
+          children: [
+            new Paragraph({
+              alignment: AlignmentType.CENTER,
+              children: [
+                new TextRun({ text: 'Tích hợp NLS & AI', bold: true, font: FONT_FAMILY, size: 20 })
+              ]
+            })
+          ]
+        })
+      ]
+    }),
+    ...selectiveTopics.map((top, sIdx) => {
+      const compText =
+        top.digitalCompetency ||
+        `• [Mã NLS: 5.3.TC2a] Vận dụng công nghệ số tạo ra sản phẩm sáng tạo\n• [Mã AI: 8.C1.2] Khai thác trợ lý AI hỗ trợ học tập và nghiên cứu`;
+      const yccdLines = (top.yccd || 'Đạt chuẩn yêu cầu kiến thức kỹ năng theo CT GDPT 2018.').split('\n').filter((l) => l.trim().length > 0);
+      const compLines = compText.split('\n').filter((l) => l.trim().length > 0);
+
+      return new TableRow({
+        children: [
+          new TableCell({
+            children: [
+              new Paragraph({
+                alignment: AlignmentType.CENTER,
+                children: [new TextRun({ text: (top.stt || sIdx + 1).toString(), font: FONT_FAMILY, size: 20 })]
+              })
+            ]
+          }),
+          new TableCell({
+            children: [
+              new Paragraph({
+                children: [new TextRun({ text: top.topicName, bold: true, font: FONT_FAMILY, size: 20 })]
+              })
+            ]
+          }),
+          new TableCell({
+            children: [
+              new Paragraph({
+                alignment: AlignmentType.CENTER,
+                children: [new TextRun({ text: top.periods.toString(), font: FONT_FAMILY, size: 20 })]
+              })
+            ]
+          }),
+          new TableCell({
+            children: yccdLines.map(
+              (line) =>
+                new Paragraph({
+                  spacing: { before: 15, after: 15 },
                   children: [
                     new TextRun({
-                      text: line.startsWith('-') ? line : `- ${line}`,
+                      text: line.startsWith('-') || line.startsWith('•') ? line : `- ${line}`,
                       font: FONT_FAMILY,
                       size: 19
                     })
                   ]
-                }));
-              })()
-            }),
-            new TableCell({ children: [new Paragraph({ children: [new TextRun({ text: c.equipment, font: FONT_FAMILY, size: 19 })] })] }),
-            new TableCell({
-              children: [
+                })
+            )
+          }),
+          new TableCell({
+            children: compLines.map(
+              (line) =>
                 new Paragraph({
-                  spacing: { before: 20, after: 20 },
-                  children: [new TextRun({ text: c.location || 'Phòng học bộ môn', bold: true, font: FONT_FAMILY, size: 19 })]
-                }),
-                ...(c.digitalCompetency
-                  ? c.digitalCompetency
-                      .split('\n')
-                      .filter((l) => l.trim().length > 0)
-                      .map((line) => new Paragraph({
-                        spacing: { before: 20, after: 20 },
-                        children: [
-                          new TextRun({
-                            text: line.startsWith('•') || line.startsWith('-') ? line : `• ${line}`,
-                            font: FONT_FAMILY,
-                            size: 18,
-                            color: '047857'
-                          })
-                        ]
-                      }))
-                  : [])
-              ]
-            })
-          ]
-        }))
-      ];
+                  spacing: { before: 15, after: 15 },
+                  children: [
+                    new TextRun({
+                      text: line.startsWith('•') || line.startsWith('-') ? line : `• ${line}`,
+                      font: FONT_FAMILY,
+                      size: 18,
+                      color: '047857'
+                    })
+                  ]
+                })
+            )
+          })
+        ]
+      });
+    })
+  ];
 
-  // Table Equipments (Mục III)
+  // Table Equipments (Mục I.3)
   const equipments = appendix1.equipments || [];
   const equipmentTableRows = [
     new TableRow({
       tableHeader: true,
       children: [
         new TableCell({ width: { size: 6, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'STT', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
-        new TableCell({ width: { size: 30, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'Tên thiết bị dạy học', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
+        new TableCell({ width: { size: 30, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'Thiết bị dạy học', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
         new TableCell({ width: { size: 14, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'Số lượng', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
-        new TableCell({ width: { size: 36, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'Các bài thí nghiệm / thực hành tương ứng', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
+        new TableCell({ width: { size: 36, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'Các bài thí nghiệm/thực hành', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
         new TableCell({ width: { size: 14, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'Ghi chú', bold: true, font: FONT_FAMILY, size: 20 })] })] })
       ]
     }),
@@ -412,16 +702,16 @@ export async function exportAppendix1Docx(plan: PlanData): Promise<void> {
     }))
   ];
 
-  // Table Classrooms (Mục IV)
+  // Table Classrooms (Mục I.4)
   const classrooms = appendix1.classrooms || [];
   const classroomTableRows = [
     new TableRow({
       tableHeader: true,
       children: [
         new TableCell({ width: { size: 6, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'STT', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
-        new TableCell({ width: { size: 30, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'Tên phòng học bộ môn', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
+        new TableCell({ width: { size: 30, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'Tên phòng', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
         new TableCell({ width: { size: 14, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'Số lượng', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
-        new TableCell({ width: { size: 36, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'Đặc điểm, trang thiết bị nổi bật', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
+        new TableCell({ width: { size: 36, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'Phạm vi và nội dung sử dụng', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
         new TableCell({ width: { size: 14, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'Ghi chú', bold: true, font: FONT_FAMILY, size: 20 })] })] })
       ]
     }),
@@ -436,28 +726,78 @@ export async function exportAppendix1Docx(plan: PlanData): Promise<void> {
     }))
   ];
 
-  // Table Assessments (Mục V)
+  // Table Assessments (Mục II.3)
   const assessments = appendix1.assessments || [];
   const assessmentTableRows = [
     new TableRow({
       tableHeader: true,
       children: [
-        new TableCell({ width: { size: 6, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'STT', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
-        new TableCell({ width: { size: 22, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'Bài kiểm tra, đánh giá', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
-        new TableCell({ width: { size: 12, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'Thời gian', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
-        new TableCell({ width: { size: 12, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'Thời điểm', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
-        new TableCell({ width: { size: 20, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'Hình thức', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
-        new TableCell({ width: { size: 28, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'Yêu cầu cần đạt', bold: true, font: FONT_FAMILY, size: 20 })] })] })
+        new TableCell({
+          width: { size: 26, type: WidthType.PERCENTAGE },
+          children: [
+            new Paragraph({
+              alignment: AlignmentType.CENTER,
+              children: [new TextRun({ text: 'Bài kiểm tra, đánh giá', bold: true, font: FONT_FAMILY, size: 20 })]
+            })
+          ]
+        }),
+        new TableCell({
+          width: { size: 12, type: WidthType.PERCENTAGE },
+          children: [
+            new Paragraph({
+              alignment: AlignmentType.CENTER,
+              children: [
+                new TextRun({ text: 'Thời gian', bold: true, font: FONT_FAMILY, size: 20 }),
+                new TextRun({ text: '\n(1)', font: FONT_FAMILY, size: 18 })
+              ]
+            })
+          ]
+        }),
+        new TableCell({
+          width: { size: 14, type: WidthType.PERCENTAGE },
+          children: [
+            new Paragraph({
+              alignment: AlignmentType.CENTER,
+              children: [
+                new TextRun({ text: 'Thời điểm', bold: true, font: FONT_FAMILY, size: 20 }),
+                new TextRun({ text: '\n(2)', font: FONT_FAMILY, size: 18 })
+              ]
+            })
+          ]
+        }),
+        new TableCell({
+          width: { size: 30, type: WidthType.PERCENTAGE },
+          children: [
+            new Paragraph({
+              alignment: AlignmentType.CENTER,
+              children: [
+                new TextRun({ text: 'Yêu cầu cần đạt', bold: true, font: FONT_FAMILY, size: 20 }),
+                new TextRun({ text: '\n(3)', font: FONT_FAMILY, size: 18 })
+              ]
+            })
+          ]
+        }),
+        new TableCell({
+          width: { size: 18, type: WidthType.PERCENTAGE },
+          children: [
+            new Paragraph({
+              alignment: AlignmentType.CENTER,
+              children: [
+                new TextRun({ text: 'Hình thức', bold: true, font: FONT_FAMILY, size: 20 }),
+                new TextRun({ text: '\n(4)', font: FONT_FAMILY, size: 18 })
+              ]
+            })
+          ]
+        })
       ]
     }),
     ...assessments.map((as) => new TableRow({
       children: [
-        new TableCell({ children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: as.stt.toString(), font: FONT_FAMILY, size: 20 })] })] }),
         new TableCell({ children: [new Paragraph({ children: [new TextRun({ text: as.assessmentName, bold: true, font: FONT_FAMILY, size: 20 })] })] }),
         new TableCell({ children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: as.time, font: FONT_FAMILY, size: 20 })] })] }),
         new TableCell({ children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: formatDocxWeek(as.week, isEn), font: FONT_FAMILY, size: 20 })] })] }),
-        new TableCell({ children: [new Paragraph({ children: [new TextRun({ text: as.form, font: FONT_FAMILY, size: 19 })] })] }),
-        new TableCell({ children: [new Paragraph({ children: [new TextRun({ text: as.requirements, font: FONT_FAMILY, size: 19 })] })] })
+        new TableCell({ children: [new Paragraph({ children: [new TextRun({ text: as.requirements, font: FONT_FAMILY, size: 19 })] })] }),
+        new TableCell({ children: [new Paragraph({ children: [new TextRun({ text: as.form, font: FONT_FAMILY, size: 19 })] })] })
       ]
     }))
   ];
@@ -466,64 +806,72 @@ export async function exportAppendix1Docx(plan: PlanData): Promise<void> {
     sections: [
       {
         children: [
+          createTitle('Phụ lục I', 22, true),
+          createTitle('KHUNG KẾ HOẠCH DẠY HỌC MÔN HỌC CỦA TỔ CHUYÊN MÔN', 24, true),
+          createTitle('(Kèm theo Công văn số 5512/BGDĐT-GDTrH ngày 18 tháng 12 năm 2020 của Bộ GDĐT)', 20, false),
+
           createHeaderSection(config),
-          createTitle('PHỤ LỤC 1', 26, true),
-          createTitle(`KẾ HOẠCH DẠY HỌC MÔN ${config.subject.toUpperCase()} - KHỐI ${config.grade}`, 24, true),
-          createTitle(`(Kèm theo ${circular} - Năm học ${config.academicYear})`, 22, false),
+          new Paragraph({ spacing: { before: 120 } }),
 
-          createHeading('I. ĐẶC ĐIỂM TÌNH HÌNH'),
-          createBodyParagraph(`1. Số lớp: ${config.totalClasses} lớp; Tổng số học sinh: ${config.totalStudents} học sinh.`),
-          createBodyParagraph(`2. Tình hình đội ngũ giáo viên: Đại học (${config.teachersUniversity}), ThS/TS (${config.teachersMasterDoc}), Cao đẳng (${config.teachersCollege}). Đánh giá chuẩn nghề nghiệp: Tốt (${config.evalExcellent}), Khá (${config.evalGood}).`),
-          createBodyParagraph(`3. Thiết bị dạy học và Phòng học bộ môn: Đạt chuẩn quy định Thông tư 37/38/39 và TT 14/2020 của Bộ GD&ĐT.`),
+          createTitle('KẾ HOẠCH DẠY HỌC CỦA TỔ CHUYÊN MÔN', 24, true),
+          createTitle(`MÔN HỌC/HOẠT ĐỘNG GIÁO DỤC ${config.subject.toUpperCase()}, KHỐI LỚP ${config.grade}`, 22, true),
+          createTitle(`(Năm học ${config.academicYear})`, 20, false),
 
-          createHeading('II. KẾ HOẠCH DẠY HỌC (PHÂN PHỐI CHƯƠNG TRÌNH 35 TUẦN)'),
-          new Table({
-            width: { size: 100, type: WidthType.PERCENTAGE },
-            rows: tableRows
-          }),
-          ...(isSecondaryEnglish
-            ? [
-                new Paragraph({
-                  spacing: { before: 80, after: 120 },
-                  children: [
-                    new TextRun({
-                      text: 'Ghi chú: Tùy vào tình hình thực tế của mỗi lớp, giáo viên có thể linh động sử dụng mã NLS và các công cụ AI cho phù hợp',
-                      italics: true,
-                      font: FONT_FAMILY,
-                      size: 19,
-                      color: '475569'
-                    })
-                  ]
-                })
-              ]
-            : []),
-
-          createHeading('III. DANH MỤC THIẾT BỊ DẠY HỌC (Theo Thông tư 37/38/39/TT-BGDĐT)'),
+          createHeading('I. Đặc điểm tình hình'),
+          createBodyParagraph(`1. Số lớp: ${config.totalClasses}; Số học sinh: ${config.totalStudents}; Số học sinh học chuyên đề lựa chọn (nếu có): ......`),
+          createBodyParagraph(`2. Tình hình đội ngũ: Số giáo viên: ${totalTeachers}; Trình độ đào tạo: Cao đẳng: ${config.teachersCollege}; Đại học: ${config.teachersUniversity}; Trên đại học: ${config.teachersMasterDoc}`),
+          createBodyParagraph(`Mức đạt chuẩn nghề nghiệp giáo viên: Tốt: ${config.evalExcellent}; Khá: ${config.evalGood}; Đạt: ${config.evalPass}; Chưa đạt: ${config.evalFail || 0}`),
+          createBodyParagraph('3. Thiết bị dạy học: (Trình bày cụ thể các thiết bị dạy học có thể sử dụng để tổ chức dạy học môn học/hoạt động giáo dục)'),
           new Table({
             width: { size: 100, type: WidthType.PERCENTAGE },
             rows: equipmentTableRows
           }),
 
-          createHeading('IV. PHÒNG HỌC BỘ MÔN (Theo Thông tư 14/2020/TT-BGDĐT)'),
+          new Paragraph({ spacing: { before: 80 } }),
+          createBodyParagraph('4. Phòng học bộ môn/phòng thí nghiệm/phòng đa năng/sân chơi, bãi tập (Trình bày cụ thể các phòng thí nghiệm/phòng bộ môn/phòng đa năng/sân chơi/bãi tập có thể sử dụng để tổ chức dạy học môn học/hoạt động giáo dục)'),
           new Table({
             width: { size: 100, type: WidthType.PERCENTAGE },
             rows: classroomTableRows
           }),
 
-          createHeading('V. KẾ HOẠCH KIỂM TRA, ĐÁNH GIÁ ĐỊNH KỲ (GK1, CK1, GK2, CK2)'),
+          createHeading('II. Kế hoạch dạy học'),
+          createHeading('1. Phân phối chương trình', HeadingLevel.HEADING_3),
+          new Table({
+            width: { size: 100, type: WidthType.PERCENTAGE },
+            rows: curriculumRows
+          }),
+
+          new Paragraph({ spacing: { before: 80 } }),
+          createHeading('2. Chuyên đề lựa chọn (đối với cấp trung học phổ thông)', HeadingLevel.HEADING_3),
+          new Table({
+            width: { size: 100, type: WidthType.PERCENTAGE },
+            rows: selectiveTopicRows
+          }),
+
+          createFootnoteParagraph('(1) Tên bài học/chuyên đề được xây dựng từ nội dung/chủ đề (được lấy nguyên hoặc thiết kế lại phù hợp với điều kiện thực tế của nhà trường) theo chương trình, sách giáo khoa môn học/hoạt động giáo dục.'),
+          createFootnoteParagraph('(2) Số tiết được sử dụng để thực hiện bài dạy/chuyên đề.'),
+          createFootnoteParagraph('(3) Yêu cầu (mức độ) cần đạt theo chương trình môn học: Giáo viên chủ động các đơn vị bài học, chủ đề và xác định yêu cầu (mức độ) cần đạt.'),
+
+          new Paragraph({ spacing: { before: 80 } }),
+          createHeading('3. Kiểm tra, đánh giá định kỳ', HeadingLevel.HEADING_3),
           new Table({
             width: { size: 100, type: WidthType.PERCENTAGE },
             rows: assessmentTableRows
           }),
 
-          createHeading('VI. CÁC NHIỆM VỤ CHUYÊN MÔN KHÁC'),
+          createFootnoteParagraph('(1) Thời gian làm bài kiểm tra, đánh giá.'),
+          createFootnoteParagraph('(2) Tuần thứ, tháng, năm thực hiện bài kiểm tra, đánh giá.'),
+          createFootnoteParagraph('(3) Yêu cầu (mức độ) cần đạt đến thời điểm kiểm tra, đánh giá (theo phân phối chương trình).'),
+          createFootnoteParagraph('(4) Hình thức bài kiểm tra, đánh giá: viết (trên giấy hoặc trên máy tính); bài thực hành; dự án học tập.'),
+
+          createHeading('III. Các nội dung khác (nếu có):'),
           createBodyParagraph(`- Bồi dưỡng học sinh giỏi: ${appendix1.otherTasks?.advancedTraining || ''}`),
           createBodyParagraph(`- Phụ đạo học sinh: ${appendix1.otherTasks?.remedialTeaching || ''}`),
-          createBodyParagraph(`- Sinh hoạt chuyên môn: ${appendix1.otherTasks?.lessonStudyGroup || ''}`),
+          createBodyParagraph(`- Sinh hoạt chuyên môn theo NCBH: ${appendix1.otherTasks?.lessonStudyGroup || ''}`),
           createBodyParagraph(`- Hoạt động giáo dục khác: ${appendix1.otherTasks?.otherActivities || ''}`),
 
           new Paragraph({ spacing: { before: 200 } }),
-          createSignatureSection(config)
+          createAppendix1SignatureSection(config)
         ]
       }
     ]
@@ -541,10 +889,16 @@ export async function exportAppendix2Docx(plan: PlanData): Promise<void> {
     sections: [
       {
         children: [
+          createTitle('PHỤ LỤC II', 22, true),
+          createTitle('KHUNG KẾ HOẠCH TỔ CHỨC CÁC HOẠT ĐỘNG GIÁO DỤC CỦA TỔ CHUYÊN MÔN', 24, true),
+          createTitle('(Kèm theo Công văn số 5512/BGDĐT-GDTrH ngày 18 tháng 12 năm 2020 của Bộ GDĐT)', 20, false),
+
           createHeaderSection(config),
-          createTitle('PHỤ LỤC 2', 26, true),
+          new Paragraph({ spacing: { before: 120 } }),
+
           createTitle(`KẾ HOẠCH TỔ CHỨC CÁC HOẠT ĐỘNG GIÁO DỤC CỦA TỔ CHUYÊN MÔN`, 24, true),
-          createTitle(`Môn: ${config.subject} - Khối ${config.grade} - Năm học ${config.academicYear}`, 22, false),
+          createTitle(`MÔN: ${config.subject.toUpperCase()} - KHỐI ${config.grade}`, 22, true),
+          createTitle(`(Năm học ${config.academicYear})`, 20, false),
 
           createHeading(isEn ? 'I. CÁC HOẠT ĐỘNG GIÁO DỤC / TRẢI NGHIỆM SỐ & AI' : 'I. CÁC HOẠT ĐỘNG GIÁO DỤC / TRẢI NGHIỆM SỐ & AI'),
           new Table({
@@ -554,11 +908,11 @@ export async function exportAppendix2Docx(plan: PlanData): Promise<void> {
                 tableHeader: true,
                 children: [
                   new TableCell({ width: { size: 6, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'STT', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
-                  new TableCell({ width: { size: 28, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: isEn ? 'Chủ đề / Hoạt động (Theme / Activity)' : 'Chủ đề / Hoạt động', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
-                  new TableCell({ width: { size: 8, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: isEn ? 'Số tiết (Periods)' : 'Số tiết', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
-                  new TableCell({ width: { size: 14, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: isEn ? 'Thời điểm (Timeline)' : 'Thời điểm', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
-                  new TableCell({ width: { size: 18, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: isEn ? 'Địa điểm / Chủ trì (Location & Host)' : 'Địa điểm / Chủ trì', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
-                  new TableCell({ width: { size: 26, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: isEn ? 'Yêu cầu cần đạt & CSVC (Objectives)' : 'Yêu cầu cần đạt & CSVC', bold: true, font: FONT_FAMILY, size: 20 })] })] })
+                  new TableCell({ width: { size: 28, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: isEn ? 'Chủ đề / Hoạt động' : 'Chủ đề / Hoạt động', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
+                  new TableCell({ width: { size: 8, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'Số tiết', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
+                  new TableCell({ width: { size: 14, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'Thời điểm', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
+                  new TableCell({ width: { size: 18, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'Địa điểm / Chủ trì', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
+                  new TableCell({ width: { size: 26, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'Yêu cầu cần đạt & CSVC', bold: true, font: FONT_FAMILY, size: 20 })] })] })
                 ]
               }),
               ...appendix2.activities.map((a) => new TableRow({
@@ -582,10 +936,10 @@ export async function exportAppendix2Docx(plan: PlanData): Promise<void> {
                 tableHeader: true,
                 children: [
                   new TableCell({ width: { size: 6, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'STT', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
-                  new TableCell({ width: { size: 30, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: isEn ? 'Tên Dự án STEM (Project Name)' : 'Tên Dự án STEM', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
-                  new TableCell({ width: { size: 8, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: isEn ? 'Thời lượng (Duration)' : 'Thời lượng', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
-                  new TableCell({ width: { size: 16, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: isEn ? 'Thời điểm / Nơi thực hiện' : 'Thời điểm / Nơi thực hiện', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
-                  new TableCell({ width: { size: 40, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: isEn ? 'Mục tiêu & Vật liệu (Objectives & Materials)' : 'Mục tiêu & Vật liệu chế tạo', bold: true, font: FONT_FAMILY, size: 20 })] })] })
+                  new TableCell({ width: { size: 30, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'Tên Dự án STEM', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
+                  new TableCell({ width: { size: 8, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'Thời lượng', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
+                  new TableCell({ width: { size: 16, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'Thời điểm / Nơi thực hiện', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
+                  new TableCell({ width: { size: 40, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'Mục tiêu & Vật liệu chế tạo', bold: true, font: FONT_FAMILY, size: 20 })] })] })
                 ]
               }),
               ...appendix2.stemProjects.map((s) => new TableRow({
@@ -601,7 +955,7 @@ export async function exportAppendix2Docx(plan: PlanData): Promise<void> {
           }),
 
           new Paragraph({ spacing: { before: 200 } }),
-          createSignatureSection(config)
+          createAppendix1SignatureSection(config)
         ]
       }
     ]
@@ -624,13 +978,20 @@ export async function exportAppendix3Docx(plan: PlanData): Promise<void> {
           lessonName: c.lessonName,
           periods: c.periods,
           timeline: typeof c.week === 'number' ? (isEn ? `Week ${c.week}` : `Tuần ${c.week}`) : (isEn ? String(c.week).replace(/tuần\s*/i, 'Week ') : c.week),
-          equipment: c.equipment || (isEn ? 'Audio CD/MP3 Global Success, Smart TV/Projector, Loudspeaker, Flashcards, LMS' : 'Máy tính, máy chiếu/Tivi, SGK, phần mềm dạy học'),
-          location: c.location || (isEn ? 'English Language Lab / Classroom' : (config.schoolType === 'primary' ? 'Phòng học Tiếng Anh/Tin học' : 'Phòng học bộ môn')),
+          equipment: c.equipment || (isEn ? 'Audio CD/MP3 Global Success, Smart TV/Projector, Flashcards, LMS' : 'Máy tính, máy chiếu/Tivi thông minh, SGK, phần mềm dạy học'),
+          location: c.location || (isEn ? 'Phòng học Tiếng Anh / Lớp học' : (config.schoolType === 'primary' ? 'Phòng học Tiếng Anh/Tin học' : 'Phòng học bộ môn')),
           digitalCompetency: c.digitalCompetency || '',
           nlsCode: c.nlsCode || '',
           aiCode: c.aiCode || '',
           notes: c.notes || ''
         }));
+
+  const selectiveTopics =
+    appendix3.selectiveTopics && appendix3.selectiveTopics.length > 0
+      ? appendix3.selectiveTopics
+      : appendix1.selectiveTopics && appendix1.selectiveTopics.length > 0
+      ? appendix1.selectiveTopics
+      : getSelectiveTopicsBySubjectAndGrade(config.subject, config.grade, config.schoolType, config);
 
   const otherDuties = appendix3.otherDuties || {
     advancedTraining: appendix1.otherTasks.advancedTraining,
@@ -641,76 +1002,358 @@ export async function exportAppendix3Docx(plan: PlanData): Promise<void> {
     extracurricularAndDuties: appendix1.otherTasks.otherActivities
   };
 
+  const teachingTableRows = [
+    new TableRow({
+      tableHeader: true,
+      children: [
+        new TableCell({
+          width: { size: 5, type: WidthType.PERCENTAGE },
+          children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'STT', bold: true, font: FONT_FAMILY, size: 20 })] })]
+        }),
+        new TableCell({
+          width: { size: 25, type: WidthType.PERCENTAGE },
+          children: [
+            new Paragraph({
+              alignment: AlignmentType.CENTER,
+              children: [
+                new TextRun({ text: 'Bài học', bold: true, font: FONT_FAMILY, size: 20 }),
+                new TextRun({ text: '\n(1)', font: FONT_FAMILY, size: 18 })
+              ]
+            })
+          ]
+        }),
+        new TableCell({
+          width: { size: 6, type: WidthType.PERCENTAGE },
+          children: [
+            new Paragraph({
+              alignment: AlignmentType.CENTER,
+              children: [
+                new TextRun({ text: 'Số tiết', bold: true, font: FONT_FAMILY, size: 20 }),
+                new TextRun({ text: '\n(2)', font: FONT_FAMILY, size: 18 })
+              ]
+            })
+          ]
+        }),
+        new TableCell({
+          width: { size: 8, type: WidthType.PERCENTAGE },
+          children: [
+            new Paragraph({
+              alignment: AlignmentType.CENTER,
+              children: [
+                new TextRun({ text: 'Thời điểm', bold: true, font: FONT_FAMILY, size: 20 }),
+                new TextRun({ text: '\n(3)', font: FONT_FAMILY, size: 18 })
+              ]
+            })
+          ]
+        }),
+        new TableCell({
+          width: { size: 16, type: WidthType.PERCENTAGE },
+          children: [
+            new Paragraph({
+              alignment: AlignmentType.CENTER,
+              children: [
+                new TextRun({ text: 'Thiết bị dạy học', bold: true, font: FONT_FAMILY, size: 20 }),
+                new TextRun({ text: '\n(4)', font: FONT_FAMILY, size: 18 })
+              ]
+            })
+          ]
+        }),
+        new TableCell({
+          width: { size: 15, type: WidthType.PERCENTAGE },
+          children: [
+            new Paragraph({
+              alignment: AlignmentType.CENTER,
+              children: [
+                new TextRun({ text: 'Địa điểm dạy học', bold: true, font: FONT_FAMILY, size: 20 }),
+                new TextRun({ text: '\n(5)', font: FONT_FAMILY, size: 18 })
+              ]
+            })
+          ]
+        }),
+        new TableCell({
+          width: { size: 25, type: WidthType.PERCENTAGE },
+          children: [
+            new Paragraph({
+              alignment: AlignmentType.CENTER,
+              children: [
+                new TextRun({ text: 'Tích hợp NLS & AI', bold: true, font: FONT_FAMILY, size: 20 }),
+                new TextRun({ text: '\n(6)', font: FONT_FAMILY, size: 18 })
+              ]
+            })
+          ]
+        })
+      ]
+    }),
+    ...teachingItems.map((item, idx) => {
+      const compText = resolveDigitalCompForDocx(item, idx, config, isEn);
+
+      return new TableRow({
+        children: [
+          new TableCell({
+            children: [
+              new Paragraph({
+                alignment: AlignmentType.CENTER,
+                children: [new TextRun({ text: (item.stt || idx + 1).toString(), font: FONT_FAMILY, size: 20 })]
+              })
+            ]
+          }),
+          new TableCell({
+            children: [
+              new Paragraph({
+                children: [new TextRun({ text: item.lessonName, font: FONT_FAMILY, size: 20 })]
+              })
+            ]
+          }),
+          new TableCell({
+            children: [
+              new Paragraph({
+                alignment: AlignmentType.CENTER,
+                children: [new TextRun({ text: formatDocxPeriod(item.periods, isEn), font: FONT_FAMILY, size: 20 })]
+              })
+            ]
+          }),
+          new TableCell({
+            children: [
+              new Paragraph({
+                alignment: AlignmentType.CENTER,
+                children: [new TextRun({ text: item.timeline || `Tuần ${idx + 1}`, font: FONT_FAMILY, size: 20 })]
+              })
+            ]
+          }),
+          new TableCell({
+            children: [
+              new Paragraph({
+                children: [new TextRun({ text: item.equipment || (isEn ? 'Audio CD/MP3, Projector, LMS' : 'Máy tính, máy chiếu/Tivi thông minh, SGK'), font: FONT_FAMILY, size: 18 })]
+              })
+            ]
+          }),
+          new TableCell({
+            children: [
+              new Paragraph({
+                children: [new TextRun({ text: item.location || (isEn ? 'Phòng học Tiếng Anh / Lớp học' : (config.schoolType === 'primary' ? 'Phòng học Tiếng Anh/Tin học' : 'Phòng học bộ môn')), font: FONT_FAMILY, size: 19 })]
+              })
+            ]
+          }),
+          new TableCell({
+            children: (() => {
+              const lines = compText.split('\n').filter((l) => l.trim().length > 0);
+              return lines.map((line) => new Paragraph({
+                spacing: { before: 15, after: 15 },
+                children: [
+                  new TextRun({
+                    text: line.startsWith('•') || line.startsWith('-') ? line : `• ${line}`,
+                    font: FONT_FAMILY,
+                    size: 18,
+                    color: '047857'
+                  })
+                ]
+              }));
+            })()
+          })
+        ]
+      });
+    })
+  ];
+
+  const selectiveTopicsTableRows = [
+    new TableRow({
+      tableHeader: true,
+      children: [
+        new TableCell({
+          width: { size: 5, type: WidthType.PERCENTAGE },
+          children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'STT', bold: true, font: FONT_FAMILY, size: 20 })] })]
+        }),
+        new TableCell({
+          width: { size: 25, type: WidthType.PERCENTAGE },
+          children: [
+            new Paragraph({
+              alignment: AlignmentType.CENTER,
+              children: [
+                new TextRun({ text: 'Chuyên đề', bold: true, font: FONT_FAMILY, size: 20 }),
+                new TextRun({ text: '\n(1)', font: FONT_FAMILY, size: 18 })
+              ]
+            })
+          ]
+        }),
+        new TableCell({
+          width: { size: 6, type: WidthType.PERCENTAGE },
+          children: [
+            new Paragraph({
+              alignment: AlignmentType.CENTER,
+              children: [
+                new TextRun({ text: 'Số tiết', bold: true, font: FONT_FAMILY, size: 20 }),
+                new TextRun({ text: '\n(2)', font: FONT_FAMILY, size: 18 })
+              ]
+            })
+          ]
+        }),
+        new TableCell({
+          width: { size: 8, type: WidthType.PERCENTAGE },
+          children: [
+            new Paragraph({
+              alignment: AlignmentType.CENTER,
+              children: [
+                new TextRun({ text: 'Thời điểm', bold: true, font: FONT_FAMILY, size: 20 }),
+                new TextRun({ text: '\n(3)', font: FONT_FAMILY, size: 18 })
+              ]
+            })
+          ]
+        }),
+        new TableCell({
+          width: { size: 16, type: WidthType.PERCENTAGE },
+          children: [
+            new Paragraph({
+              alignment: AlignmentType.CENTER,
+              children: [
+                new TextRun({ text: 'Thiết bị dạy học', bold: true, font: FONT_FAMILY, size: 20 }),
+                new TextRun({ text: '\n(4)', font: FONT_FAMILY, size: 18 })
+              ]
+            })
+          ]
+        }),
+        new TableCell({
+          width: { size: 15, type: WidthType.PERCENTAGE },
+          children: [
+            new Paragraph({
+              alignment: AlignmentType.CENTER,
+              children: [
+                new TextRun({ text: 'Địa điểm dạy học', bold: true, font: FONT_FAMILY, size: 20 }),
+                new TextRun({ text: '\n(5)', font: FONT_FAMILY, size: 18 })
+              ]
+            })
+          ]
+        }),
+        new TableCell({
+          width: { size: 25, type: WidthType.PERCENTAGE },
+          children: [
+            new Paragraph({
+              alignment: AlignmentType.CENTER,
+              children: [
+                new TextRun({ text: 'Tích hợp NLS & AI', bold: true, font: FONT_FAMILY, size: 20 }),
+                new TextRun({ text: '\n(6)', font: FONT_FAMILY, size: 18 })
+              ]
+            })
+          ]
+        })
+      ]
+    }),
+    ...selectiveTopics.map((top, sIdx) => {
+      const compText =
+        top.digitalCompetency ||
+        `• [Mã NLS: 5.3.TC2a] Vận dụng công nghệ số tạo ra sản phẩm sáng tạo\n• [Mã AI: 8.C1.2] Khai thác trợ lý AI hỗ trợ học tập và nghiên cứu`;
+      const compLines = compText.split('\n').filter((l) => l.trim().length > 0);
+
+      return new TableRow({
+        children: [
+          new TableCell({
+            children: [
+              new Paragraph({
+                alignment: AlignmentType.CENTER,
+                children: [new TextRun({ text: (top.stt || sIdx + 1).toString(), font: FONT_FAMILY, size: 20 })]
+              })
+            ]
+          }),
+          new TableCell({
+            children: [
+              new Paragraph({
+                children: [new TextRun({ text: top.topicName, bold: true, font: FONT_FAMILY, size: 20 })]
+              })
+            ]
+          }),
+          new TableCell({
+            children: [
+              new Paragraph({
+                alignment: AlignmentType.CENTER,
+                children: [new TextRun({ text: top.periods.toString(), font: FONT_FAMILY, size: 20 })]
+              })
+            ]
+          }),
+          new TableCell({
+            children: [
+              new Paragraph({
+                alignment: AlignmentType.CENTER,
+                children: [new TextRun({ text: top.timeline || `Tuần ${sIdx * 10 + 1} - Tuần ${(sIdx + 1) * 10}`, font: FONT_FAMILY, size: 20 })]
+              })
+            ]
+          }),
+          new TableCell({
+            children: [
+              new Paragraph({
+                children: [new TextRun({ text: top.equipment || 'Máy tính, máy chiếu, tài liệu học liệu số', font: FONT_FAMILY, size: 18 })]
+              })
+            ]
+          }),
+          new TableCell({
+            children: [
+              new Paragraph({
+                children: [new TextRun({ text: top.location || 'Phòng học bộ môn / Phòng STEM', font: FONT_FAMILY, size: 19 })]
+              })
+            ]
+          }),
+          new TableCell({
+            children: compLines.map(
+              (line) =>
+                new Paragraph({
+                  spacing: { before: 15, after: 15 },
+                  children: [
+                    new TextRun({
+                      text: line.startsWith('•') || line.startsWith('-') ? line : `• ${line}`,
+                      font: FONT_FAMILY,
+                      size: 18,
+                      color: '047857'
+                    })
+                  ]
+                })
+            )
+          })
+        ]
+      });
+    })
+  ];
+
   const doc = new Document({
     sections: [
       {
         children: [
-          createHeaderSection(config),
-          createTitle('PHỤ LỤC 3', 26, true),
+          createTitle('Phụ lục III', 22, true),
+          createTitle('KHUNG KẾ HOẠCH GIÁO DỤC CỦA GIÁO VIÊN', 24, true),
+          createTitle('(Kèm theo Công văn số 5512/BGDĐT-GDTrH ngày 18 tháng 12 năm 2020 của Bộ GDĐT)', 20, false),
+
+          createHeaderSectionWithTeacher(config),
+          new Paragraph({ spacing: { before: 120 } }),
+
           createTitle('KẾ HOẠCH GIÁO DỤC CỦA GIÁO VIÊN', 24, true),
           createTitle(`MÔN HỌC/HOẠT ĐỘNG GIÁO DỤC: ${config.subject.toUpperCase()}, LỚP: ${config.grade}`, 22, true),
-          createTitle(`Họ và tên giáo viên: ${config.teacherName} - Năm học: ${config.academicYear}`, 20, false),
+          createTitle(`(Năm học ${config.academicYear})`, 20, false),
 
-          createHeading(isEn ? 'I. KẾ HOẠCH DẠY HỌC (TEACHING SYLLABUS)' : 'I. KẾ HOẠCH DẠY HỌC'),
-          createHeading(isEn ? '1. Phân phối chương trình (Curriculum distribution)' : '1. Phân phối chương trình'),
+          createHeading('I. Kế hoạch dạy học'),
+          createHeading('1. Phân phối chương trình', HeadingLevel.HEADING_3),
           new Table({
             width: { size: 100, type: WidthType.PERCENTAGE },
-            rows: [
-              new TableRow({
-                tableHeader: true,
-                children: [
-                  new TableCell({ width: { size: 5, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'STT', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
-                  new TableCell({ width: { size: 30, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: isEn ? 'Bài học (Lesson)' : 'Bài học', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
-                  new TableCell({ width: { size: 7, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: isEn ? 'Số tiết (Periods)' : 'Số tiết', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
-                  new TableCell({ width: { size: 12, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: isEn ? 'Thời điểm (Week)' : 'Thời điểm', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
-                  new TableCell({ width: { size: 22, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: isEn ? 'Thiết bị dạy học (Equipment)' : 'Thiết bị dạy học', bold: true, font: FONT_FAMILY, size: 20 })] })] }),
-                  new TableCell({ width: { size: 24, type: WidthType.PERCENTAGE }, children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: isEn ? 'Địa điểm & Năng lực số / AI' : 'Địa điểm & Năng lực số / AI', bold: true, font: FONT_FAMILY, size: 20 })] })] })
-                ]
-              }),
-              ...teachingItems.map((item) => new TableRow({
-                children: [
-                  new TableCell({ children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: item.stt.toString(), font: FONT_FAMILY, size: 20 })] })] }),
-                  new TableCell({ children: [new Paragraph({ children: [new TextRun({ text: item.lessonName, bold: true, font: FONT_FAMILY, size: 20 })] })] }),
-                  new TableCell({ children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: item.periods.toString(), font: FONT_FAMILY, size: 20 })] })] }),
-                  new TableCell({ children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: isEn ? (typeof item.timeline === 'number' ? `Week ${item.timeline}` : String(item.timeline).replace(/tuần\s*/i, 'Week ')) : item.timeline, font: FONT_FAMILY, size: 20 })] })] }),
-                  new TableCell({ children: [new Paragraph({ children: [new TextRun({ text: item.equipment, font: FONT_FAMILY, size: 18 })] })] }),
-                  new TableCell({
-                    children: [
-                      new Paragraph({
-                        spacing: { before: 20, after: 20 },
-                        children: [new TextRun({ text: item.location || (isEn ? 'English Language Lab / Classroom' : 'Phòng học bộ môn'), bold: true, font: FONT_FAMILY, size: 19 })]
-                      }),
-                      ...(item.digitalCompetency
-                        ? item.digitalCompetency
-                            .split('\n')
-                            .filter((l) => l.trim().length > 0)
-                            .map((line) => new Paragraph({
-                              spacing: { before: 20, after: 20 },
-                              children: [
-                                new TextRun({
-                                  text: line.startsWith('•') || line.startsWith('-') ? line : `• ${line}`,
-                                  font: FONT_FAMILY,
-                                  size: 18,
-                                  color: '047857'
-                                })
-                              ]
-                            }))
-                        : [])
-                    ]
-                  })
-                ]
-              }))
-            ]
+            rows: teachingTableRows
           }),
 
-          createHeading('II. NHIỆM VỤ KHÁC (NẾU CÓ)'),
-          createBodyParagraph(`1. Bồi dưỡng học sinh giỏi: ${otherDuties.advancedTraining}`),
-          createBodyParagraph(`2. Phụ đạo học sinh cần hỗ trợ: ${otherDuties.remedialTeaching}`),
-          createBodyParagraph(`3. Hướng dẫn nghiên cứu KHKT / STEM & AI: ${otherDuties.scienceResearch}`),
-          createBodyParagraph(`4. Hoạt động trải nghiệm & nhiệm vụ kiêm nhiệm: ${otherDuties.extracurricularAndDuties}`),
+          new Paragraph({ spacing: { before: 80 } }),
+          createHeading('2. Chuyên đề lựa chọn (đối với cấp trung học phổ thông)', HeadingLevel.HEADING_3),
+          new Table({
+            width: { size: 100, type: WidthType.PERCENTAGE },
+            rows: selectiveTopicsTableRows
+          }),
+
+          createFootnoteParagraph('(1) Tên bài học/chuyên đề được xây dựng từ nội dung/chủ đề (được lấy nguyên hoặc thiết kế lại phù hợp với điều kiện thực tế của nhà trường) theo chương trình, sách giáo khoa môn học/hoạt động giáo dục.'),
+          createFootnoteParagraph('(2) Số tiết được sử dụng để thực hiện bài dạy/chuyên đề.'),
+          createFootnoteParagraph('(3) Tuần thực hiện bài học/chuyên đề.'),
+          createFootnoteParagraph('(4) Thiết bị dạy học được sử dụng để tổ chức dạy học.'),
+          createFootnoteParagraph('(5) Địa điểm tổ chức hoạt động dạy học (lớp học, phòng học bộ môn, phòng đa năng, bãi tập, tại di sản, thực địa...).'),
+
+          createHeading('II. Nhiệm vụ khác (nếu có): (Bồi dưỡng học sinh giỏi; Tổ chức hoạt động giáo dục...)'),
+          createBodyParagraph(`- Bồi dưỡng học sinh giỏi: ${otherDuties.advancedTraining}`),
+          createBodyParagraph(`- Phụ đạo học sinh cần hỗ trợ: ${otherDuties.remedialTeaching}`),
+          createBodyParagraph(`- Tổ chức hoạt động giáo dục / Hướng dẫn nghiên cứu KHKT, STEM & AI: ${otherDuties.scienceResearch}`),
+          createBodyParagraph(`- Hoạt động trải nghiệm & nhiệm vụ kiêm nhiệm: ${otherDuties.extracurricularAndDuties}`),
 
           new Paragraph({ spacing: { before: 200 } }),
-          createSignatureSection(config)
+          createAppendix3SignatureSection(config)
         ]
       }
     ]
@@ -765,7 +1408,7 @@ export async function exportPersonalPlanDocx(plan: PlanData): Promise<void> {
           createBodyParagraph(`4. Các nhiệm vụ kiêm nhiệm khác: ${personalPlan.selfTraining.extraDuties}`),
 
           new Paragraph({ spacing: { before: 200 } }),
-          createSignatureSection(config)
+          createAppendix1SignatureSection(config)
         ]
       }
     ]
