@@ -557,7 +557,7 @@ export async function exportAppendix1Docx(plan: PlanData): Promise<void> {
           children: [
             new Paragraph({
               alignment: AlignmentType.CENTER,
-              children: [new TextRun({ text: 'STT', bold: true, font: FONT_FAMILY, size: 20 })]
+              children: [new TextRun({ text: isEn ? 'No.' : 'STT', bold: true, font: FONT_FAMILY, size: 20 })]
             })
           ]
         }),
@@ -567,7 +567,7 @@ export async function exportAppendix1Docx(plan: PlanData): Promise<void> {
             new Paragraph({
               alignment: AlignmentType.CENTER,
               children: [
-                new TextRun({ text: 'Chuyên đề', bold: true, font: FONT_FAMILY, size: 20 }),
+                new TextRun({ text: isEn ? 'Topic' : 'Chuyên đề', bold: true, font: FONT_FAMILY, size: 20 }),
                 new TextRun({ text: '\n(1)', font: FONT_FAMILY, size: 18 })
               ]
             })
@@ -579,7 +579,7 @@ export async function exportAppendix1Docx(plan: PlanData): Promise<void> {
             new Paragraph({
               alignment: AlignmentType.CENTER,
               children: [
-                new TextRun({ text: 'Số tiết', bold: true, font: FONT_FAMILY, size: 20 }),
+                new TextRun({ text: isEn ? 'Periods' : 'Số tiết', bold: true, font: FONT_FAMILY, size: 20 }),
                 new TextRun({ text: '\n(2)', font: FONT_FAMILY, size: 18 })
               ]
             })
@@ -591,7 +591,7 @@ export async function exportAppendix1Docx(plan: PlanData): Promise<void> {
             new Paragraph({
               alignment: AlignmentType.CENTER,
               children: [
-                new TextRun({ text: 'Yêu cầu cần đạt', bold: true, font: FONT_FAMILY, size: 20 }),
+                new TextRun({ text: isEn ? 'Learning Objectives' : 'Yêu cầu cần đạt', bold: true, font: FONT_FAMILY, size: 20 }),
                 new TextRun({ text: '\n(3)', font: FONT_FAMILY, size: 18 })
               ]
             })
@@ -603,7 +603,7 @@ export async function exportAppendix1Docx(plan: PlanData): Promise<void> {
             new Paragraph({
               alignment: AlignmentType.CENTER,
               children: [
-                new TextRun({ text: 'Tích hợp NLS & AI', bold: true, font: FONT_FAMILY, size: 20 })
+                new TextRun({ text: isEn ? 'Digital Competency & AI' : 'Tích hợp NLS & AI', bold: true, font: FONT_FAMILY, size: 20 })
               ]
             })
           ]
@@ -1205,7 +1205,7 @@ export async function exportAppendix3Docx(plan: PlanData): Promise<void> {
       children: [
         new TableCell({
           width: { size: 5, type: WidthType.PERCENTAGE },
-          children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: 'STT', bold: true, font: FONT_FAMILY, size: 20 })] })]
+          children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: isEn ? 'No.' : 'STT', bold: true, font: FONT_FAMILY, size: 20 })] })]
         }),
         new TableCell({
           width: { size: 25, type: WidthType.PERCENTAGE },
@@ -1213,7 +1213,7 @@ export async function exportAppendix3Docx(plan: PlanData): Promise<void> {
             new Paragraph({
               alignment: AlignmentType.CENTER,
               children: [
-                new TextRun({ text: 'Chuyên đề', bold: true, font: FONT_FAMILY, size: 20 }),
+                new TextRun({ text: isEn ? 'Topic' : 'Chuyên đề', bold: true, font: FONT_FAMILY, size: 20 }),
                 new TextRun({ text: '\n(1)', font: FONT_FAMILY, size: 18 })
               ]
             })
@@ -1225,7 +1225,7 @@ export async function exportAppendix3Docx(plan: PlanData): Promise<void> {
             new Paragraph({
               alignment: AlignmentType.CENTER,
               children: [
-                new TextRun({ text: 'Số tiết', bold: true, font: FONT_FAMILY, size: 20 }),
+                new TextRun({ text: isEn ? 'Periods' : 'Số tiết', bold: true, font: FONT_FAMILY, size: 20 }),
                 new TextRun({ text: '\n(2)', font: FONT_FAMILY, size: 18 })
               ]
             })
@@ -1237,7 +1237,7 @@ export async function exportAppendix3Docx(plan: PlanData): Promise<void> {
             new Paragraph({
               alignment: AlignmentType.CENTER,
               children: [
-                new TextRun({ text: 'Thời điểm', bold: true, font: FONT_FAMILY, size: 20 }),
+                new TextRun({ text: isEn ? 'Timeline' : 'Thời điểm', bold: true, font: FONT_FAMILY, size: 20 }),
                 new TextRun({ text: '\n(3)', font: FONT_FAMILY, size: 18 })
               ]
             })
@@ -1249,7 +1249,7 @@ export async function exportAppendix3Docx(plan: PlanData): Promise<void> {
             new Paragraph({
               alignment: AlignmentType.CENTER,
               children: [
-                new TextRun({ text: 'Thiết bị dạy học', bold: true, font: FONT_FAMILY, size: 20 }),
+                new TextRun({ text: isEn ? 'Teaching Equipment' : 'Thiết bị dạy học', bold: true, font: FONT_FAMILY, size: 20 }),
                 new TextRun({ text: '\n(4)', font: FONT_FAMILY, size: 18 })
               ]
             })
@@ -1261,7 +1261,7 @@ export async function exportAppendix3Docx(plan: PlanData): Promise<void> {
             new Paragraph({
               alignment: AlignmentType.CENTER,
               children: [
-                new TextRun({ text: 'Địa điểm dạy học', bold: true, font: FONT_FAMILY, size: 20 }),
+                new TextRun({ text: isEn ? 'Teaching Location' : 'Địa điểm dạy học', bold: true, font: FONT_FAMILY, size: 20 }),
                 new TextRun({ text: '\n(5)', font: FONT_FAMILY, size: 18 })
               ]
             })
@@ -1273,7 +1273,7 @@ export async function exportAppendix3Docx(plan: PlanData): Promise<void> {
             new Paragraph({
               alignment: AlignmentType.CENTER,
               children: [
-                new TextRun({ text: 'Tích hợp NLS & AI', bold: true, font: FONT_FAMILY, size: 20 }),
+                new TextRun({ text: isEn ? 'Digital Competency & AI' : 'Tích hợp NLS & AI', bold: true, font: FONT_FAMILY, size: 20 }),
                 new TextRun({ text: '\n(6)', font: FONT_FAMILY, size: 18 })
               ]
             })
