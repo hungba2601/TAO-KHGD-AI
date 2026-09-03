@@ -17,6 +17,7 @@ export interface RawSecondaryLesson {
   nlsCode?: string;
   aiCode?: string;
   digitalCompetency?: string;
+  dc?: string;
   notes?: string;
 }
 
@@ -368,11 +369,15 @@ import { getEnglishSecondaryCurriculum } from './curriculumSecondaryEnglish';
 import { getTinHocSecondaryCurriculum } from './curriculumInformatics';
 import { getLsdlSecondaryCurriculum } from './curriculumSecondaryLsdl';
 import { getHdtnSecondaryCurriculum } from './curriculumSecondaryHdtn';
+import { getMusicSecondaryCurriculum } from './curriculumSecondaryMusic';
+import { getArtSecondaryCurriculum } from './curriculumSecondaryArt';
 export {
   getEnglishSecondaryCurriculum,
   getTinHocSecondaryCurriculum,
   getLsdlSecondaryCurriculum,
-  getHdtnSecondaryCurriculum
+  getHdtnSecondaryCurriculum,
+  getMusicSecondaryCurriculum,
+  getArtSecondaryCurriculum
 };
 
 // =========================================================================
@@ -471,118 +476,12 @@ export function getGeneralSecondaryCurriculum(grade: string, subject: string): R
 
   // 6.5. ÂM NHẠC THCS (1 tiết/tuần x 35 tuần = 35 tiết)
   if (s.includes('âm nhạc') || s.includes('am nhac') || s.includes('music')) {
-    const amNhacTopics = [
-      `Chủ đề 1: Khai trường - Hát: Mùa khai trường (Phan Trần Bảng) (Lớp ${g})`,
-      `Chủ đề 1: Khai trường - Nhạc cụ: Nhạc cụ gõ & Sáo Recorder / Kèn phím Melodica`,
-      `Chủ đề 1: Khai trường - Đọc nhạc: Bài đọc nhạc số 1 (Giọng Đô trưởng)`,
-      `Chủ đề 1: Khai trường - Thường thức âm nhạc: Giới thiệu đàn Bầu và Dân ca Việt Nam`,
-      `Chủ đề 2: Tình bạn - Hát: Lí cây đa (Dân ca quan họ Bắc Ninh)`,
-      `Chủ đề 2: Tình bạn - Hát: Lí cây đa (Vận động phụ họa & Gõ đệm)`,
-      `Chủ đề 2: Tình bạn - Đọc nhạc: Bài đọc nhạc số 2 kết hợp hòa tấu`,
-      `Chủ đề 2: Tình bạn - Thường thức âm nhạc: Nhạc sĩ Trịnh Công Sơn và ca khúc thiếu nhi`,
-      `Kiểm tra, đánh giá giữa Học kỳ 1 môn Âm nhạc Lớp ${g}`,
-      `Chủ đề 3: Thầy cô và mái trường - Hát: Thầy cô là tất cả`,
-      `Chủ đề 3: Thầy cô và mái trường - Nhạc cụ: Luyện tập mẫu tiết tấu đệm bài hát`,
-      `Chủ đề 3: Thầy cô và mái trường - Đọc nhạc: Bài đọc nhạc số 3`,
-      `Chủ đề 4: Giai điệu quê hương - Hát: Bài ca đất phương Nam`,
-      `Chủ đề 4: Giai điệu quê hương - Thường thức âm nhạc: Nhạc cụ dân tộc Đàn Tranh, Đàn Nguyệt`,
-      `Chủ đề 4: Giai điệu quê hương - Đọc nhạc: Bài đọc nhạc số 4`,
-      `Kiểm tra, đánh giá cuối Học kỳ 1 môn Âm nhạc Lớp ${g}`,
-      `Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố các bài hát, bài đọc nhạc HK1 Lớp ${g}`,
-      `Sơ kết Học kỳ 1 & Biểu diễn báo cáo âm nhạc học đường HK1 Lớp ${g}`,
-      `Chủ đề 5: Mùa xuân ước mơ - Hát: Mùa xuân trên quê hương`,
-      `Chủ đề 5: Mùa xuân ước mơ - Nhạc cụ: Độc tấu / Hòa tấu Recorder & Kèn Melodica`,
-      `Chủ đề 5: Mùa xuân ước mơ - Đọc nhạc: Bài đọc nhạc số 5`,
-      `Chủ đề 5: Mùa xuân ước mơ - Thường thức âm nhạc: Nghệ thuật Hát chèo / Hát Xoan Phú Thọ`,
-      `Chủ đề 6: Tuổi hồng - Hát: Khát vọng tuổi trẻ / Tiến lên đoàn viên`,
-      `Chủ đề 6: Tuổi hồng - Nhạc cụ gõ đệm tiết tấu phức hợp`,
-      `Chủ đề 6: Tuổi hồng - Đọc nhạc: Bài đọc nhạc số 6`,
-      `Kiểm tra, đánh giá giữa Học kỳ 2 môn Âm nhạc Lớp ${g}`,
-      `Chủ đề 7: Âm nhạc thế giới - Hát: Niềm vui thế giới (Beethoven) / Khúc ca ban mai`,
-      `Chủ đề 7: Âm nhạc thế giới - Thường thức âm nhạc: Nhạc sĩ thiên tài W.A.Mozart & L.V.Beethoven`,
-      `Chủ đề 7: Âm nhạc thế giới - Đọc nhạc: Bài đọc nhạc số 7`,
-      `Chủ đề 8: Giai điệu mùa hè - Hát: Tia nắng hạt mưa`,
-      `Kiểm tra, đánh giá cuối Học kỳ 2 môn Âm nhạc Lớp ${g}`,
-      `Chữa bài kiểm tra cuối HK2 & Giao lưu âm nhạc học đường Lớp ${g}`,
-      `Dự án Âm nhạc: Biểu diễn báo cáo Ngày hội Âm nhạc học sinh THCS Lớp ${g}`,
-      `Ôn tập tổng hợp toàn diện các bài hát, bài đọc nhạc và nhạc cụ cả năm Lớp ${g}`,
-      `Tổng kết năm học & Đánh giá xếp loại môn Âm nhạc Lớp ${g} cả năm`
-    ];
-
-    amNhacTopics.forEach((name, idx) => {
-      const w = idx + 1;
-      if (w > 35) return;
-      list.push({
-        week: w,
-        topic: name.includes('Chủ đề') ? name.split(' - ')[0] : 'Đánh giá định kỳ',
-        name: name,
-        periods: 1,
-        yccd: `- Hát đúng cao độ, trường độ, sắc thái cảm xúc và kỹ thuật biểu diễn của ${name} (SGK Âm nhạc ${g} Kết nối tri thức).\n- Đọc đúng nhạc bản, gõ đệm chuẩn xác bằng nhạc cụ gõ/Recorder/Melodica và nhận biết giá trị di sản âm nhạc dân tộc.\n- Phát triển năng lực thẩm mỹ âm nhạc, sự tự tin và tinh thần hợp tác nhóm.`,
-        equipment: 'Đàn Organ/Piano điện tử, thanh phách, song loan, sáo Recorder, kèn Melodica, file âm thanh mẫu',
-        location: 'Phòng học bộ môn Âm nhạc',
-        notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 16 || w === 31 ? 'Kiểm tra cuối kỳ' : w === 33 ? 'Dự án Âm nhạc học đường' : ''
-      });
-    });
-
-    return list;
+    return getMusicSecondaryCurriculum(String(g));
   }
 
   // 6.6. MĨ THUẬT THCS (1 tiết/tuần x 35 tuần = 35 tiết)
-  if (s.includes('mĩ thuật') || s.includes('mỹ thuật') || s.includes('art')) {
-    const miThuatTopics = [
-      `Chủ đề 1: Mĩ thuật thế giới thời kì Cổ đại và Trung đại - Bài 1: Mĩ thuật thời Cổ đại (Lớp ${g})`,
-      `Chủ đề 1: Mĩ thuật thế giới Cổ đại - Bài 1: Thực hành mô phỏng họa tiết kiến trúc cổ`,
-      `Chủ đề 1: Mĩ thuật thế giới Cổ đại - Bài 2: Tranh kính màu kiến trúc Trung đại Gothic`,
-      `Chủ đề 2: Di sản mĩ thuật Việt Nam thời phong kiến - Bài 3: Nghệ thuật điêu khắc thời Lí - Trần`,
-      `Chủ đề 2: Di sản mĩ thuật Lí - Trần - Bài 3: Thực hành vẽ trang trí họa tiết Rồng thời Lí`,
-      `Chủ đề 3: Hội họa & Tranh tĩnh vật màu - Bài 4: Khám phá nguồn sáng, bóng đổ và hòa sắc`,
-      `Chủ đề 3: Hội họa & Tranh tĩnh vật màu - Bài 4: Thực hành vẽ tranh tĩnh vật màu lọ hoa và quả`,
-      `Chủ đề 3: Hội họa & Tranh tĩnh vật màu - Trưng bày và đánh giá sản phẩm tranh tĩnh vật`,
-      `Kiểm tra, đánh giá giữa Học kỳ 1 môn Mĩ thuật Lớp ${g}`,
-      `Chủ đề 4: Nghệ thuật Thiết kế đồ họa - Bài 5: Thiết kế Logo biểu trưng trường lớp`,
-      `Chủ đề 4: Nghệ thuật Thiết kế đồ họa - Bài 5: Thực hành hoàn thiện biểu trưng Logo nhóm`,
-      `Chủ đề 4: Nghệ thuật Thiết kế đồ họa - Bài 6: Thiết kế Áp phích (Poster) Bảo vệ môi trường`,
-      `Chủ đề 4: Nghệ thuật Thiết kế đồ họa - Bài 6: Thực hành hoàn thiện Poster tuyên truyền`,
-      `Chủ đề 5: Nghệ thuật Điêu khắc & Tạo hình 3D - Bài 7: Tạo hình nhân vật từ dây thép và đất sét`,
-      `Chủ đề 5: Nghệ thuật Điêu khắc - Bài 7: Đắp khối tạo dáng động thể thao nhân vật 3D`,
-      `Kiểm tra, đánh giá cuối Học kỳ 1 & Triển lãm Mĩ thuật HK1 môn Mĩ thuật Lớp ${g}`,
-      `Chữa bài kiểm tra cuối HK1 & Hoàn thiện sản phẩm mĩ thuật HK1 Lớp ${g}`,
-      `Sơ kết Học kỳ 1 & Trưng bày không gian sáng tạo mĩ thuật HK1 Lớp ${g}`,
-      `Chủ đề 6: Thiết kế thời trang - Bài 8: Thiết kế trang phục từ vật liệu tái chế (Phác thảo ý tưởng)`,
-      `Chủ đề 6: Thiết kế thời trang - Bài 8: Thực hành cắt dán mô hình trang phục thời trang`,
-      `Chủ đề 7: Tranh phong cảnh quê hương - Bài 9: Luật xa gần (Viễn cận) trong tranh phong cảnh`,
-      `Chủ đề 7: Tranh phong cảnh quê hương - Bài 9: Thực hành vẽ tranh phong cảnh quê hương đất nước`,
-      `Chủ đề 8: Trang trí ứng dụng - Bài 10: Thiết kế Trang trí bìa sách văn học nghệ thuật`,
-      `Chủ đề 8: Trang trí ứng dụng - Bài 10: Thực hành hoàn thiện bìa sách yêu thích`,
-      `Chủ đề 8: Trang trí ứng dụng - Trưng bày và thuyết trình tác phẩm bìa sách sáng tạo`,
-      `Kiểm tra, đánh giá giữa Học kỳ 2 môn Mĩ thuật Lớp ${g}`,
-      `Chủ đề 9: Nghệ thuật Nhiếp ảnh & Đồ họa số - Bài 11: Góc nhìn nhiếp ảnh và bố cục ảnh đẹp`,
-      `Chủ đề 9: Nghệ thuật Nhiếp ảnh - Bài 11: Thực hành chụp ảnh khoảnh khắc trường lớp`,
-      `Chủ đề 10: Nghệ thuật Điêu khắc dân gian - Bài 12: Chạm khắc gỗ đình làng Việt Nam`,
-      `Chủ đề 10: Điêu khắc dân gian - Bài 12: Thực hành khắc hoa văn phù điêu trên xốp EVA`,
-      `Kiểm tra, đánh giá cuối Học kỳ 2 môn Mĩ thuật Lớp ${g}`,
-      `Chữa bài kiểm tra cuối HK2 & Hoàn thiện sản phẩm mĩ thuật cuối năm Lớp ${g}`,
-      `Báo cáo và Triển lãm Dự án Không gian Sáng tạo Mĩ thuật THCS Lớp ${g}`,
-      `Ôn tập toàn diện kiến thức nghệ thuật tạo hình và thiết kế mĩ thuật cả năm Lớp ${g}`,
-      `Tổng kết năm học & Triển lãm Tổng kết Mĩ thuật Lớp ${g} toàn trường`
-    ];
-
-    miThuatTopics.forEach((name, idx) => {
-      const w = idx + 1;
-      if (w > 35) return;
-      list.push({
-        week: w,
-        topic: name.includes('Chủ đề') ? name.split(' - ')[0] : 'Đánh giá định kỳ',
-        name: name,
-        periods: 1,
-        yccd: `- Nắm vững nguyên lý thị giác, kỹ thuật tạo hình hội họa, đồ họa, điêu khắc và thiết kế của ${name} (SGK Mĩ thuật ${g} Kết nối tri thức).\n- Sáng tạo được các sản phẩm mĩ thuật độc đáo, thể hiện tư duy thẩm mỹ và cảm xúc cá nhân sâu sắc.\n- Phát triển năng lực cảm thụ nghệ thuật và trân trọng các giá trị di sản văn hóa dân tộc.`,
-        equipment: 'Giấy vẽ A3, màu nước, màu goát, acrylic, đất nặn tạo hình, dây thép dẻo, vật liệu tái chế, kéo, keo dán',
-        location: 'Phòng học bộ môn Mĩ thuật / Sảnh triển lãm',
-        notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 16 || w === 31 ? 'Kiểm tra cuối kỳ' : w === 33 ? 'Dự án Không gian Xanh 3D' : ''
-      });
-    });
-
-    return list;
+  if (s.includes('mĩ thuật') || s.includes('mỹ thuật') || s.includes('art') || s.includes('mi thuat')) {
+    return getArtSecondaryCurriculum(String(g));
   }
 
   // 6.7. HOẠT ĐỘNG TRẢI NGHIỆM, HƯỚNG NGHIỆP THCS (3 tiết/tuần x 35 tuần = 105 tiết)
@@ -680,6 +579,10 @@ export function buildSecondaryCurriculum(
     rawList = getTechnologySecondaryCurriculum(g, config);
   } else if (s.includes('trải nghiệm') || s.includes('hđtn') || s.includes('hdtn') || s.includes('hướng nghiệp')) {
     rawList = getHdtnSecondaryCurriculum(g);
+  } else if (s.includes('âm nhạc') || s.includes('am nhac') || s.includes('music')) {
+    rawList = getMusicSecondaryCurriculum(g);
+  } else if (s.includes('mĩ thuật') || s.includes('mỹ thuật') || s.includes('art') || s.includes('mi thuat')) {
+    rawList = getArtSecondaryCurriculum(g);
   } else {
     rawList = getGeneralSecondaryCurriculum(g, subject);
   }
@@ -697,24 +600,29 @@ export function buildSecondaryCurriculum(
 
     const isBlankTest = isEnglish && customYccd === '';
 
-    const nls = item.nlsCode !== undefined
-      ? { code: item.nlsCode, requirement: lookupNlsRequirement(item.nlsCode) || '' }
+    const nlsMatch = (item.digitalCompetency || item.dc || '').match(/\[(?:Mã NLS|NLS Code):\s*([^\]]+)\]/i);
+    const aiMatch = (item.digitalCompetency || item.dc || '').match(/\[(?:Mã AI|AI Code):\s*([^\]]+)\]/i);
+    const extractedNlsCode = item.nlsCode !== undefined ? item.nlsCode : (nlsMatch ? nlsMatch[1].trim() : undefined);
+    const extractedAiCode = item.aiCode !== undefined ? item.aiCode : (aiMatch ? aiMatch[1].trim() : undefined);
+
+    const nls = extractedNlsCode !== undefined
+      ? { code: extractedNlsCode, requirement: lookupNlsRequirement(extractedNlsCode) || '' }
       : isBlankTest
       ? { code: '', requirement: '' }
       : isEnglish
       ? getNlsCodeForEnglishLesson(g, schoolType, lessonCtx)
       : getNlsCodeForSubjectLesson(g, schoolType, lessonCtx);
 
-    const ai = item.aiCode !== undefined
-      ? { code: item.aiCode, requirement: lookupAiRequirement(item.aiCode)?.requirement || '' }
+    const ai = extractedAiCode !== undefined
+      ? { code: extractedAiCode, requirement: lookupAiRequirement(extractedAiCode)?.requirement || '' }
       : isBlankTest
       ? { code: '', requirement: '' }
       : isEnglish
       ? getAiCodeForEnglishLesson(g, lessonCtx)
       : getAiCodeForSubjectLesson(g, lessonCtx);
 
-    const digitalComp = item.digitalCompetency !== undefined
-      ? item.digitalCompetency
+    const digitalComp = (item.digitalCompetency !== undefined ? item.digitalCompetency : item.dc) !== undefined
+      ? (item.digitalCompetency ?? item.dc)
       : isBlankTest
       ? ''
       : (isEnglish
@@ -731,8 +639,8 @@ export function buildSecondaryCurriculum(
       yccd: customYccd,
       equipment: item.equipment,
       location: item.location,
-      nlsCode: item.nlsCode !== undefined ? item.nlsCode : nls.code,
-      aiCode: item.aiCode !== undefined ? item.aiCode : ai.code,
+      nlsCode: extractedNlsCode !== undefined ? extractedNlsCode : nls.code,
+      aiCode: extractedAiCode !== undefined ? extractedAiCode : ai.code,
       digitalCompetency: digitalComp,
       notes: item.notes || (item.name.includes('Dự án') || item.name.includes('STEM') ? 'Tích hợp STEM & Năng lực số' : '')
     };
