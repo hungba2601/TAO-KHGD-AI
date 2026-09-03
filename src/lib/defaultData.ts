@@ -495,6 +495,43 @@ export function getDefaultEquipments(
     ];
   }
 
+  if (s.includes('giáo dục công dân') || s.includes('gdcd') || s.includes('công dân')) {
+    return [
+      {
+        id: 'eq-1',
+        stt: 1,
+        equipmentName: `Bộ văn bản quy phạm pháp luật chuẩn hóa: Hiến pháp 2013, Luật Trẻ em 2016, Bộ luật Dân sự, Bộ luật Hình sự, Luật Hôn nhân & Gia đình và Luật An ninh mạng phục vụ GDCD Lớp ${g}`,
+        quantity: '04 bộ/môn',
+        experiments: 'Tra cứu, đối chiếu điều khoản pháp luật, xử lý tình huống pháp lý thực tế',
+        notes: 'TT 38/2021/TT-BGDĐT'
+      },
+      {
+        id: 'eq-2',
+        stt: 2,
+        equipmentName: 'Hệ thống thiết bị số đa phương tiện: Màn hình tương tác thông minh, máy chiếu, máy tính kết nối Internet tốc độ cao, loa trợ giảng',
+        quantity: '01 bộ/phòng',
+        experiments: 'Trình chiếu phim tài liệu đạo đức, phóng sự truyền hình, tình huống pháp luật và phiên tòa giả định',
+        notes: 'Trang bị phòng học thông minh'
+      },
+      {
+        id: 'eq-3',
+        stt: 3,
+        equipmentName: 'Bộ tranh ảnh, Infographic giáo dục đạo đức, kỹ năng sống và phòng chống tệ nạn xã hội, bạo lực học đường',
+        quantity: '04 bộ/môn',
+        experiments: 'Thảo luận nhóm, triển lãm tranh cổ động tuyên truyền pháp luật học đường',
+        notes: 'Học liệu trực quan'
+      },
+      {
+        id: 'eq-4',
+        stt: 4,
+        equipmentName: 'Hồ sơ kịch bản và đạo cụ mô phỏng Phiên tòa Giả định: Búa thẩm phán, bảng chức danh (Hội đồng xét xử, Viện kiểm sát, Luật sư, Bị cáo), trang phục mô phỏng',
+        quantity: '02 bộ/trường',
+        experiments: 'Thực hành dự án GDCD, diễn tập Phiên tòa Giả định tuyên truyền pháp luật',
+        notes: 'Dự án thực hành STEM & Pháp luật'
+      }
+    ];
+  }
+
   // General default
   return [
     {

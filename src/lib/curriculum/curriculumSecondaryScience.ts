@@ -32,9 +32,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được khái niệm Khoa học tự nhiên; chỉ ra được các đối tượng nghiên cứu của Khoa học tự nhiên.\n- Trình bày được vai trò của Khoa học tự nhiên trong đời sống, sản xuất và bảo vệ môi trường.",
         equipment: "Tranh ảnh, video về các thành tựu khoa học tự nhiên, máy chiếu",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "1.1.TC1a",
+        nlsCode: "1.1.TC1c",
         aiCode: "6.A1.1",
-        dc: "• [Mã NLS: 1.1.TC1a] Tìm kiếm và chọn lọc thông tin số về các phát minh khoa học tự nhiên tiêu biểu trên Internet.\n• [Mã AI: 6.A1.1] Nhận biết vai trò của trí tuệ nhân tạo (AI) trong việc hỗ trợ các nhà khoa học thu thập dữ liệu tự nhiên.",
+        dc: "• [Mã NLS: 1.1.TC1c] Tìm kiếm và chọn lọc thông tin số về các phát minh khoa học tự nhiên tiêu biểu trên Internet.\n• [Mã AI: 6.A1.1] Nhận biết vai trò của trí tuệ nhân tạo (AI) trong việc hỗ trợ các nhà khoa học thu thập dữ liệu tự nhiên.",
         notes: ""
       },
       {
@@ -45,9 +45,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Phân biệt được các ký hiệu cảnh báo trong phòng thực hành (chất độc, chất ăn mòn, dễ cháy, nguy hiểm điện...).\n- Nắm vững và thực hiện đúng các quy tắc an toàn khi tiến hành thí nghiệm; biết cách xử lý tình huống sơ cứu cơ bản.",
         equipment: "Bảng nội quy phòng thực hành, bộ biển báo cảnh báo nguy hiểm, bình cứu hỏa mini, hộp sơ cứu y tế",
         location: "Phòng thực hành KHTN",
-        nlsCode: "4.1.TC1a",
+        nlsCode: "4.1.TC1c",
         aiCode: "6.A3.3",
-        dc: "• [Mã NLS: 4.1.TC1a] Nhận biết các biểu tượng an toàn trên môi trường số tương tự các cảnh báo an toàn phòng thí nghiệm.\n• [Mã AI: 6.A3.3] Thảo luận về việc ứng dụng hệ thống camera AI thông minh phát hiện vi phạm an toàn phòng lab.",
+        dc: "• [Mã NLS: 4.1.TC1c] Nhận biết các biểu tượng an toàn trên môi trường số tương tự các cảnh báo an toàn phòng thí nghiệm.\n• [Mã AI: 6.A3.3] Thảo luận về việc ứng dụng hệ thống camera AI thông minh phát hiện vi phạm an toàn phòng lab.",
         notes: ""
       },
       {
@@ -84,9 +84,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Lấy được ví dụ về đơn vị đo chiều dài (m, cm, mm, km); xác định được GHĐ và ĐCNN của các loại thước đo.\n- Thực hiện đúng quy trình đo chiều dài của một vật bằng thước thẳng, thước cuộn; ước lượng và xử lý sai số đo.",
         equipment: "Thước kẻ học sinh, thước dây, thước cuộn, thước kẹp, các vật thể cần đo",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "3.1.TC1a",
+        nlsCode: "3.2.TC1a",
         aiCode: "6.A1.3",
-        dc: "• [Mã NLS: 3.1.TC1a] Nhập số liệu đo đạc vào bảng tính số (Google Sheets/Excel) và tính giá trị trung bình phép đo.\n• [Mã AI: 6.A1.3] Trải nghiệm ứng dụng đo kích thước vật thể thời gian thực bằng camera tích hợp công nghệ AI AR.",
+        dc: "• [Mã NLS: 3.2.TC1a] Nhập số liệu đo đạc vào bảng tính số (Google Sheets/Excel) và tính giá trị trung bình phép đo.\n• [Mã AI: 6.A1.3] Trải nghiệm ứng dụng đo kích thước vật thể thời gian thực bằng camera tích hợp công nghệ AI AR.",
         notes: ""
       },
       {
@@ -110,9 +110,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được đơn vị đo thời gian chuẩn (s, phút, giờ); chọn được loại đồng hồ phù hợp với hoạt động cần đo.\n- Thực hành đo thời gian một chuyển động bằng đồng hồ bấm giây cơ học và điện tử; tính toán thời gian trung bình.",
         equipment: "Đồng hồ bấm giây điện tử, đồng hồ cơ học, xe lăn nhỏ chuyển động trên máng nghiêng",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "2.1.TC1a",
+        nlsCode: "2.1.TC1b",
         aiCode: "6.D1.1",
-        dc: "• [Mã NLS: 2.1.TC1a] Sử dụng đồng hồ bấm giờ số trên điện thoại thông minh để ghi lại nhiều mốc thời gian (Lap time).\n• [Mã AI: 6.D1.1] Khám phá cách thuật toán AI nhận diện vạch xuất phát và vạch đích để bấm giờ tự động trong thể thao.",
+        dc: "• [Mã NLS: 2.1.TC1b] Sử dụng đồng hồ bấm giờ số trên điện thoại thông minh để ghi lại nhiều mốc thời gian (Lap time).\n• [Mã AI: 6.D1.1] Khám phá cách thuật toán AI nhận diện vạch xuất phát và vạch đích để bấm giờ tự động trong thể thao.",
         notes: ""
       },
       {
@@ -136,9 +136,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nhận biết được chất có ở xung quanh ta (trong vật thể tự nhiên và vật thể nhân tạo).\n- Phân biệt được tính chất vật lí (màu sắc, mùi vị, thể, khối lượng riêng...) và tính chất hoá học (khả năng cháy, bị phân hủy...) của chất.",
         equipment: "Mẫu nước cất, muối ăn, đường kính, cồn 96 độ, dây đồng, đinh sắt, cốc đun, đèn cồn",
         location: "Phòng thực hành KHTN",
-        nlsCode: "1.1.TC1b",
+        nlsCode: "1.1.TC1d",
         aiCode: "6.C1.1",
-        dc: "• [Mã NLS: 1.1.TC1b] Truy cập cơ sở dữ liệu số hóa học tra cứu nhiệt độ sôi, nhiệt độ nóng chảy của các chất.\n• [Mã AI: 6.C1.1] Thử nghiệm chatbot AI hỏi đáp về tính chất vật lý và hóa học của các chất thường gặp.",
+        dc: "• [Mã NLS: 1.1.TC1d] Truy cập cơ sở dữ liệu số hóa học tra cứu nhiệt độ sôi, nhiệt độ nóng chảy của các chất.\n• [Mã AI: 6.C1.1] Thử nghiệm chatbot AI hỏi đáp về tính chất vật lý và hóa học của các chất thường gặp.",
         notes: ""
       },
       {
@@ -188,9 +188,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được khái niệm nguyên liệu và phân loại nguyên liệu (nguyên liệu tự nhiên, nguyên liệu nhân tạo).\n- Nêu được một số nguyên liệu thông dụng trong sản xuất: quặng, đá vôi, cát; nêu biện pháp khai thác và sử dụng bền vững.",
         equipment: "Mẫu quặng sắt, đá vôi, cát xây dựng, tranh quy trình sản xuất xi măng và luyện kim",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "1.1.TC1a",
+        nlsCode: "1.2.TC1b",
         aiCode: "6.A1.1",
-        dc: "• [Mã NLS: 1.1.TC1a] Tìm kiếm tư liệu hình ảnh và video về các mỏ khoáng sản của Việt Nam trên không gian số.\n• [Mã AI: 6.A1.1] Nhận biết cách AI xử lý dữ liệu địa chấn và viễn thám để thăm dò tài nguyên khoáng sản.",
+        dc: "• [Mã NLS: 1.2.TC1b] Tìm kiếm tư liệu hình ảnh và video về các mỏ khoáng sản của Việt Nam trên không gian số.\n• [Mã AI: 6.A1.1] Nhận biết cách AI xử lý dữ liệu địa chấn và viễn thám để thăm dò tài nguyên khoáng sản.",
         notes: ""
       },
       {
@@ -201,9 +201,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được khái niệm nhiên liệu và phân loại nhiên liệu (rắn, lỏng, khí); nêu ví dụ về than đá, xăng, dầu, khí gas, sinh khối.\n- Trình bày được cách sử dụng nhiên liệu an toàn, hiệu quả, tiết kiệm năng lượng và giảm thiểu ô nhiễm môi trường.",
         equipment: "Mẫu than củi, than đá, cồn y tế, bếp cồn, đèn cồn mini",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "2.1.TC1a",
+        nlsCode: "2.5.TC1b",
         aiCode: "6.B1.1",
-        dc: "• [Mã NLS: 2.1.TC1a] Tìm kiếm và tổng hợp các infographic số về các nguồn năng lượng sạch và nhiên liệu sinh học.\n• [Mã AI: 6.B1.1] Thảo luận về trách nhiệm bảo vệ môi trường khi công nghệ AI tiêu thụ lượng lớn điện năng.",
+        dc: "• [Mã NLS: 2.5.TC1b] Tìm kiếm và tổng hợp các infographic số về các nguồn năng lượng sạch và nhiên liệu sinh học.\n• [Mã AI: 6.B1.1] Thảo luận về trách nhiệm bảo vệ môi trường khi công nghệ AI tiêu thụ lượng lớn điện năng.",
         notes: ""
       },
       {
@@ -227,9 +227,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Phân biệt được chất tinh khiết và hỗn hợp; phân biệt được hỗn hợp đồng nhất và hỗn hợp không đồng nhất.\n- Phân biệt được dung dịch, huyền phù và nhũ tương; nêu được các yếu tố ảnh hưởng đến độ tan của chất rắn trong nước.",
         equipment: "Cốc thủy tinh, đũa khuấy, nước cất, muối ăn, đường, bột sắn dây, dầu ăn, giấm",
         location: "Phòng thực hành KHTN",
-        nlsCode: "3.1.TC1a",
+        nlsCode: "3.2.TC1a",
         aiCode: "6.C1.1",
-        dc: "• [Mã NLS: 3.1.TC1a] Chụp ảnh và quay video ngắn so sánh sự khác nhau giữa dung dịch, huyền phù và nhũ tương.\n• [Mã AI: 6.C1.1] Sử dụng công cụ AI phân loại hình ảnh để nhận diện trạng thái phân tán của các hạt trong chất lỏng.",
+        dc: "• [Mã NLS: 3.2.TC1a] Chụp ảnh và quay video ngắn so sánh sự khác nhau giữa dung dịch, huyền phù và nhũ tương.\n• [Mã AI: 6.C1.1] Sử dụng công cụ AI phân loại hình ảnh để nhận diện trạng thái phân tán của các hạt trong chất lỏng.",
         notes: ""
       },
       {
@@ -266,9 +266,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Đánh giá mức độ đạt chuẩn kiến thức, kĩ năng môn KHTN 6 từ Tuần 1 đến Tuần 8 theo ma trận đề chuẩn Bộ GD&ĐT (thời gian làm bài 90 phút).\n- Đánh giá năng lực tìm hiểu tự nhiên, tư duy thực nghiệm khoa học và tính trung thực trong kiểm tra.",
         equipment: "Đề kiểm tra giữa kỳ 1 chuẩn ma trận, bảng đặc tả và hướng dẫn chấm",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC1a",
+        nlsCode: "4.3.TC1a",
         aiCode: "6.A3.3",
-        dc: "• [Mã NLS: 4.1.TC1a] Thực hiện bài kiểm tra nghiêm túc, tuân thủ quy chế an toàn số và bảo mật thông tin phòng thi.\n• [Mã AI: 6.A3.3] Tìm hiểu hệ thống chấm thi tự động và phân tích phổ điểm kiểm tra bằng AI.",
+        dc: "• [Mã NLS: 4.3.TC1a] Thực hiện bài kiểm tra nghiêm túc, tuân thủ quy chế an toàn số và bảo mật thông tin phòng thi.\n• [Mã AI: 6.A3.3] Tìm hiểu hệ thống chấm thi tự động và phân tích phổ điểm kiểm tra bằng AI.",
         notes: "Kiểm tra giữa kỳ"
       },
       {
@@ -279,9 +279,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được tế bào là đơn vị cơ bản cấu tạo nên mọi cơ thể sống; nêu được hình dạng và kích thước đa dạng của tế bào.\n- Nhận biết được đơn vị đo kích thước tế bào (micromet, nanomet) và dụng cụ cần thiết để quan sát tế bào.",
         equipment: "Tranh ảnh các loại tế bào (tế bào vi khuẩn, thực vật, nấm, hồng cầu, tế bào thần kinh), máy chiếu",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "1.1.TC1a",
+        nlsCode: "1.1.TC1c",
         aiCode: "6.C2.2",
-        dc: "• [Mã NLS: 1.1.TC1a] Truy cập kho tranh ảnh hiển vi điện tử quét (SEM) về tế bào trên cổng học liệu trực tuyến.\n• [Mã AI: 6.C2.2] Khám phá mô hình 3D tương tác của tế bào sống được hỗ trợ bởi công nghệ AI sinh đồ họa.",
+        dc: "• [Mã NLS: 1.1.TC1c] Truy cập kho tranh ảnh hiển vi điện tử quét (SEM) về tế bào trên cổng học liệu trực tuyến.\n• [Mã AI: 6.C2.2] Khám phá mô hình 3D tương tác của tế bào sống được hỗ trợ bởi công nghệ AI sinh đồ họa.",
         notes: ""
       },
       {
@@ -305,9 +305,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Mô tả được quá trình lớn lên và sinh sản (phân chia) của tế bào từ 1 tế bào mẹ thành 2 tế bào con.\n- Nêu được ý nghĩa của sự lớn lên và phân chia tế bào đối với sự sinh trưởng, phát triển và thay thế tế bào tổn thương ở cơ thể sinh vật.",
         equipment: "Video mô phỏng quá trình nguyên phân của tế bào, tranh minh họa sơ đồ phân chia tế bào",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "2.1.TC1a",
+        nlsCode: "2.2.TC1c",
         aiCode: "6.D1.1",
-        dc: "• [Mã NLS: 2.1.TC1a] Xem và chia sẻ clip mô phỏng 3D quá trình tế bào phân chia trên nền tảng học tập trực tuyến.\n• [Mã AI: 6.D1.1] Tìm hiểu ứng dụng AI đếm số lượng tế bào phân chia tự động trong các xét nghiệm y học hiện đại.",
+        dc: "• [Mã NLS: 2.2.TC1c] Xem và chia sẻ clip mô phỏng 3D quá trình tế bào phân chia trên nền tảng học tập trực tuyến.\n• [Mã AI: 6.D1.1] Tìm hiểu ứng dụng AI đếm số lượng tế bào phân chia tự động trong các xét nghiệm y học hiện đại.",
         notes: ""
       },
       {
@@ -318,9 +318,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Tự làm được tiêu bản tạm thời tế bào biểu bì vảy hành và tiêu bản tế bào niêm mạc khoang miệng.\n- Quan sát, vẽ hình và chú thích được các thành phần chính của tế bào thực vật và tế bào động vật dưới kính hiển vi quang học.",
         equipment: "Kính hiển vi, lam kính, lamen, kim mũi mác, tăm tre, củ hành tây, dung dịch xanh methylen, nước cất",
         location: "Phòng thực hành KHTN",
-        nlsCode: "3.1.TC1a",
+        nlsCode: "3.2.TC1a",
         aiCode: "6.A1.3",
-        dc: "• [Mã NLS: 3.1.TC1a] Chụp ảnh sắc nét mẫu tế bào qua thị kính hiển vi và biên tập báo cáo thực hành số (PDF).\n• [Mã AI: 6.A1.3] Sử dụng tính năng AI Auto-Enhance trên ứng dụng chụp ảnh để tăng độ tương phản của tiêu bản.",
+        dc: "• [Mã NLS: 3.2.TC1a] Chụp ảnh sắc nét mẫu tế bào qua thị kính hiển vi và biên tập báo cáo thực hành số (PDF).\n• [Mã AI: 6.A1.3] Sử dụng tính năng AI Auto-Enhance trên ứng dụng chụp ảnh để tăng độ tương phản của tiêu bản.",
         notes: ""
       },
       {
@@ -331,9 +331,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được khái niệm cơ thể sinh vật; phân biệt được cơ thể đơn bào (cấu tạo từ 1 tế bào) và cơ thể đa bào (nhiều tế bào).\n- Lấy được ví dụ minh họa về sinh vật đơn bào (trùng roi, vi khuẩn) và sinh vật đa bào (cây hoa hồng, con người).",
         equipment: "Tranh ảnh, mẫu vật ngâm trùng roi, trùng giày, cây cà chua, tiêu bản cơ thể đơn bào",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "1.1.TC1a",
+        nlsCode: "1.2.TC1b",
         aiCode: "6.A1.1",
-        dc: "• [Mã NLS: 1.1.TC1a] Tìm kiếm dữ liệu số và tổng hợp danh sách các đại diện sinh vật đơn bào và đa bào.\n• [Mã AI: 6.A1.1] Đặt câu hỏi cho trợ lý AI phân tích ưu thế và hạn chế của cấu trúc cơ thể đơn bào so với đa bào.",
+        dc: "• [Mã NLS: 1.2.TC1b] Tìm kiếm dữ liệu số và tổng hợp danh sách các đại diện sinh vật đơn bào và đa bào.\n• [Mã AI: 6.A1.1] Đặt câu hỏi cho trợ lý AI phân tích ưu thế và hạn chế của cấu trúc cơ thể đơn bào so với đa bào.",
         notes: ""
       },
       {
@@ -344,9 +344,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Trình bày được các cấp độ tổ chức trong cơ thể đa bào: Tế bào -> Mô -> Cơ quan -> Hệ cơ quan -> Cơ thể.\n- Lấy được ví dụ các cấp độ tổ chức ở thực vật (mô giậu, lá, cành...) và ở động vật/người (tế bào cơ, mô cơ, tim, hệ tuần hoàn...).",
         equipment: "Mô hình tháo lắp cơ thể người, tranh sơ đồ các cấp tổ chức sống ở cây xanh và người",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "2.4.TC1a",
+        nlsCode: "2.1.TC1b",
         aiCode: "6.C1.1",
-        dc: "• [Mã NLS: 2.4.TC1a] Phối hợp nhóm tạo sơ đồ kéo thả tương tác các cấp độ tổ chức sống trên nền tảng số (Jamboard/Padlet).\n• [Mã AI: 6.C1.1] Tìm hiểu cách AI hỗ trợ bác sĩ quét 3D toàn thân để kiểm tra đồng thời nhiều hệ cơ quan.",
+        dc: "• [Mã NLS: 2.1.TC1b] Phối hợp nhóm tạo sơ đồ kéo thả tương tác các cấp độ tổ chức sống trên nền tảng số (Jamboard/Padlet).\n• [Mã AI: 6.C1.1] Tìm hiểu cách AI hỗ trợ bác sĩ quét 3D toàn thân để kiểm tra đồng thời nhiều hệ cơ quan.",
         notes: ""
       },
       {
@@ -370,9 +370,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được sự cần thiết của việc phân loại thế giới sống; kể tên được các bậc phân loại từ nhỏ đến lớn (loài, chi, họ, bộ, lớp, ngành, giới).\n- Nêu được 5 giới sinh vật (Khởi sinh, Nguyên sinh, Nấm, Thực vật, Động vật); gọi được tên khoa học của một số loài quen thuộc.",
         equipment: "Sơ đồ hệ thống 5 giới sinh vật của Whittaker, tranh ảnh đại diện các giới",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "1.2.TC1a",
+        nlsCode: "1.1.TC1d",
         aiCode: "6.C1.1",
-        dc: "• [Mã NLS: 1.2.TC1a] Tra cứu hệ thống danh mục phân loại sinh vật trên CSDL trực tuyến GBIF (Global Biodiversity Information Facility).\n• [Mã AI: 6.C1.1] Khám phá cách thuật toán phân cụm AI (Clustering) tự động nhóm các loài sinh vật theo đặc điểm di truyền.",
+        dc: "• [Mã NLS: 1.1.TC1d] Tra cứu hệ thống danh mục phân loại sinh vật trên CSDL trực tuyến GBIF (Global Biodiversity Information Facility).\n• [Mã AI: 6.C1.1] Khám phá cách thuật toán phân cụm AI (Clustering) tự động nhóm các loài sinh vật theo đặc điểm di truyền.",
         notes: ""
       },
       {
@@ -383,9 +383,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được nguyên tắc xây dựng khóa lưỡng phân (dựa trên các cặp đặc điểm đối lập để chia nhóm dần sinh vật).\n- Thực hành xây dựng được khóa lưỡng phân để phân loại một nhóm sinh vật cụ thể (ví dụ: các loài động vật hoặc thực vật xung quanh).",
         equipment: "Bộ tranh ảnh các nhóm sinh vật (cá rô, ếch đồng, thằn lằn, chim bồ câu, mèo), phiếu học tập xây dựng khóa",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "3.1.TC1a",
+        nlsCode: "3.2.TC1a",
         aiCode: "6.A1.3",
-        dc: "• [Mã NLS: 3.1.TC1a] Sử dụng phần mềm vẽ cây quyết định (Decision Tree Diagram) để số hóa khóa lưỡng phân.\n• [Mã AI: 6.A1.3] Thảo luận về sự tương đồng giữa nguyên lý khóa lưỡng phân và cây quyết định nhị phân trong thuật toán học máy AI.",
+        dc: "• [Mã NLS: 3.2.TC1a] Sử dụng phần mềm vẽ cây quyết định (Decision Tree Diagram) để số hóa khóa lưỡng phân.\n• [Mã AI: 6.A1.3] Thảo luận về sự tương đồng giữa nguyên lý khóa lưỡng phân và cây quyết định nhị phân trong thuật toán học máy AI.",
         notes: ""
       },
       {
@@ -422,9 +422,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Trình bày được cấu tạo đơn giản của virus (lõi nucleic acid và vỏ protein, chưa có cấu tạo tế bào).\n- Kể tên được một số bệnh nguy hiểm do virus gây ra ở người, vật nuôi, cây trồng (COVID-19, cúm, sốt xuất huyết, dại); giải thích vì sao cần tiêm vaccine.",
         equipment: "Tranh ảnh, mô hình cấu tạo virus SARS-CoV-2, virus HIV, video mô phỏng virus nhân lên trong tế bào chủ",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "2.1.TC1a",
+        nlsCode: "2.1.TC1b",
         aiCode: "6.B1.1",
-        dc: "• [Mã NLS: 2.1.TC1a] Tra cứu thông tin tiêm chủng số và bản đồ dịch tễ điện tử trên cổng thông tin y tế chính thống.\n• [Mã AI: 6.B1.1] Thảo luận về việc AI AlphaFold giải mã cấu trúc vỏ protein của virus giúp rút ngắn thời gian điều chế vaccine.",
+        dc: "• [Mã NLS: 2.1.TC1b] Tra cứu thông tin tiêm chủng số và bản đồ dịch tễ điện tử trên cổng thông tin y tế chính thống.\n• [Mã AI: 6.B1.1] Thảo luận về việc AI AlphaFold giải mã cấu trúc vỏ protein của virus giúp rút ngắn thời gian điều chế vaccine.",
         notes: ""
       },
       {
@@ -435,9 +435,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Hệ thống hóa toàn diện chuẩn kiến thức, kĩ năng môn KHTN 6 trong toàn bộ Học kỳ 1; rèn luyện kĩ năng phân tích đồ thị, phương trình và xử lý số liệu thí nghiệm.",
         equipment: "Đề cương ôn tập HK1, bảng hệ thống kiến thức toàn diện",
         location: "Phòng học / Lớp học",
-        nlsCode: "3.1.TC1a",
+        nlsCode: "3.2.TC1a",
         aiCode: "6.A1.3",
-        dc: "• [Mã NLS: 3.1.TC1a] Lập sơ đồ tư duy số tổng kết toàn bộ kiến thức Học kỳ 1 trên phần mềm sơ đồ tư duy.\n• [Mã AI: 6.A1.3] Sử dụng AI để tạo đề thi thử trắc nghiệm có giải thích chi tiết giúp ôn tập hiệu quả.",
+        dc: "• [Mã NLS: 3.2.TC1a] Lập sơ đồ tư duy số tổng kết toàn bộ kiến thức Học kỳ 1 trên phần mềm sơ đồ tư duy.\n• [Mã AI: 6.A1.3] Sử dụng AI để tạo đề thi thử trắc nghiệm có giải thích chi tiết giúp ôn tập hiệu quả.",
         notes: "Ôn tập cuối kỳ 1"
       },
       {
@@ -461,9 +461,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nhận xét, chữa bài kiểm tra cuối HK1 chi tiết; giải thích cặn kẽ các câu hỏi khó và sửa chữa các lỗi sai thường gặp.\n- Củng cố hệ thống kiến thức và kĩ năng thực hành môn KHTN 6 trong toàn bộ Học kỳ 1.",
         equipment: "Bài làm học sinh, đáp án và bảng biểu điểm sửa sai",
         location: "Phòng học / Lớp học",
-        nlsCode: "5.2.TC1a",
+        nlsCode: "5.2.TC1b",
         aiCode: "6.A1.3",
-        dc: "• [Mã NLS: 5.2.TC1a] Nhập và đối chiếu kết quả bài làm trên hệ thống học liệu số để tự đánh giá năng lực.\n• [Mã AI: 6.A1.3] Sử dụng AI gợi ý các dạng bài tập tương tự để khắc phục các phần kiến thức còn yếu.",
+        dc: "• [Mã NLS: 5.2.TC1b] Nhập và đối chiếu kết quả bài làm trên hệ thống học liệu số để tự đánh giá năng lực.\n• [Mã AI: 6.A1.3] Sử dụng AI gợi ý các dạng bài tập tương tự để khắc phục các phần kiến thức còn yếu.",
         notes: "Chữa bài kiểm tra & Ôn tập"
       },
       {
@@ -474,9 +474,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Sơ kết thi đua kết quả học tập môn KHTN 6 Học kỳ 1; trưng bày, báo cáo các sản phẩm thực hành/chuyên đề khoa học của học sinh.\n- Rèn luyện kĩ năng làm việc nhóm, thuyết trình khoa học và định hướng nhiệm vụ học tập Học kỳ 2.",
         equipment: "Sản phẩm tập san, video clip thực hành, slide báo cáo chuyên đề của học sinh, máy chiếu",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "2.4.TC1b",
+        nlsCode: "2.4.TC1a",
         aiCode: "6.D1.1",
-        dc: "• [Mã NLS: 2.4.TC1b] Trình chiếu báo cáo số đa phương tiện tổng kết hoạt động học tập nhóm trong HK1.\n• [Mã AI: 6.D1.1] Khám phá ứng dụng AI hỗ trợ thiết kế slide báo cáo và tổng kết dữ liệu học tập trực quan.",
+        dc: "• [Mã NLS: 2.4.TC1a] Trình chiếu báo cáo số đa phương tiện tổng kết hoạt động học tập nhóm trong HK1.\n• [Mã AI: 6.D1.1] Khám phá ứng dụng AI hỗ trợ thiết kế slide báo cáo và tổng kết dữ liệu học tập trực quan.",
         notes: "Sơ kết Học kỳ 1"
       },
       {
@@ -487,9 +487,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nhận biết được một số nguyên sinh vật điển hình (trùng roi, trùng giày, trùng biến hình, tảo lục đơn bào).\n- Nêu được vai trò của nguyên sinh vật trong tự nhiên (thức ăn cho động vật thủy sinh, chỉ thị môi trường) và tác hại (bệnh sốt rét, bệnh kiết lị).",
         equipment: "Tranh ảnh các loại nguyên sinh vật, vòng đời của trùng sốt rét Plasmodium trong cơ thể muỗi Anopheles",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "1.2.TC1a",
+        nlsCode: "1.1.TC1d",
         aiCode: "6.C1.1",
-        dc: "• [Mã NLS: 1.2.TC1a] Tra cứu các bài viết khoa học điện tử về chu trình lây truyền bệnh sốt rét và biện pháp phòng chống.\n• [Mã AI: 6.C1.1] Trải nghiệm ứng dụng AI nhận diện và phân loại nguyên sinh vật nước ngọt qua ảnh chụp camera.",
+        dc: "• [Mã NLS: 1.1.TC1d] Tra cứu các bài viết khoa học điện tử về chu trình lây truyền bệnh sốt rét và biện pháp phòng chống.\n• [Mã AI: 6.C1.1] Trải nghiệm ứng dụng AI nhận diện và phân loại nguyên sinh vật nước ngọt qua ảnh chụp camera.",
         notes: ""
       },
       {
@@ -500,9 +500,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Tự làm tiêu bản giọt nước ao/rãnh chứa nguyên sinh vật; quan sát được hình thái và sự chuyển động của trùng giày, trùng roi dưới kính hiển vi.\n- Vẽ lại hình dạng các nguyên sinh vật quan sát được và đối chiếu với tài liệu nhận diện.",
         equipment: "Kính hiển vi quang học, mẫu nước ao bèo/rãnh ngập, lam kính, lamen, giấy thấm, bông gòn sợi",
         location: "Phòng thực hành KHTN",
-        nlsCode: "3.1.TC1a",
+        nlsCode: "3.2.TC1a",
         aiCode: "6.A1.3",
-        dc: "• [Mã NLS: 3.1.TC1a] Quay video time-lapse vi sinh vật chuyển động và tải lên hệ thống nộp bài trực tuyến của lớp.\n• [Mã AI: 6.A1.3] Sử dụng công cụ Google Lens hoặc iNaturalist AI nhận diện loài vi sinh vật từ ảnh chụp.",
+        dc: "• [Mã NLS: 3.2.TC1a] Quay video time-lapse vi sinh vật chuyển động và tải lên hệ thống nộp bài trực tuyến của lớp.\n• [Mã AI: 6.A1.3] Sử dụng công cụ Google Lens hoặc iNaturalist AI nhận diện loài vi sinh vật từ ảnh chụp.",
         notes: ""
       },
       {
@@ -578,9 +578,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Quan sát và ghi nhận được tập tính, nơi sống của một số loài động vật trong khuôn viên trường hoặc địa phương.\n- Sử dụng khóa phân loại hoặc tài liệu nhận diện để định loại mẫu động vật thu thập được.",
         equipment: "Kính lúp cầm tay, ống nhòm, vợt bắt côn trùng, hộp quan sát động vật có nắp thông khí",
         location: "Khuôn viên trường học / Ngoài trời",
-        nlsCode: "3.1.TC1a",
+        nlsCode: "3.2.TC1a",
         aiCode: "6.A1.3",
-        dc: "• [Mã NLS: 3.1.TC1a] Sử dụng ứng dụng nhật ký số iNaturalist ghi nhận tọa độ và hình ảnh động vật quan sát được.\n• [Mã AI: 6.A1.3] Sử dụng tính năng AI phân tích âm thanh tiếng chim hót nhận diện loài (Merlin Bird ID).",
+        dc: "• [Mã NLS: 3.2.TC1a] Sử dụng ứng dụng nhật ký số iNaturalist ghi nhận tọa độ và hình ảnh động vật quan sát được.\n• [Mã AI: 6.A1.3] Sử dụng tính năng AI phân tích âm thanh tiếng chim hót nhận diện loài (Merlin Bird ID).",
         notes: ""
       },
       {
@@ -604,9 +604,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Thực hiện được chuyến khảo sát thực địa tìm hiểu thế giới sinh vật tại địa phương theo kế hoạch nhóm.\n- Viết và trình bày được báo cáo thu hoạch dã ngoại khoa học tự nhiên rõ ràng, sinh động.",
         equipment: "Sổ tay dã ngoại, máy ảnh/smartphone, nhiệt kế đo nhiệt độ môi trường, túi zip đựng mẫu vật lá rơi",
         location: "Ngoài trời / Công viên / Khu sinh thái",
-        nlsCode: "2.4.TC1a",
+        nlsCode: "2.5.TC1b",
         aiCode: "6.D1.1",
-        dc: "• [Mã NLS: 2.4.TC1a] Hợp tác nhóm trên Google Slides biên tập báo cáo kết quả chuyến khảo sát thực địa.\n• [Mã AI: 6.D1.1] Sử dụng AI hỗ trợ tóm tắt các phát hiện nổi bật trong chuyến dã ngoại và đề xuất ý tưởng nghiên cứu tiếp theo.",
+        dc: "• [Mã NLS: 2.5.TC1b] Hợp tác nhóm trên Google Slides biên tập báo cáo kết quả chuyến khảo sát thực địa.\n• [Mã AI: 6.D1.1] Sử dụng AI hỗ trợ tóm tắt các phát hiện nổi bật trong chuyến dã ngoại và đề xuất ý tưởng nghiên cứu tiếp theo.",
         notes: ""
       },
       {
@@ -630,9 +630,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Đánh giá mức độ tiếp thu các nội dung trọng tâm môn KHTN 6 từ Tuần 19 đến Tuần 25 theo ma trận chuẩn của Bộ GD&ĐT (thời gian làm bài 90 phút).\n- Giúp học sinh tự đánh giá năng lực, rèn luyện tư duy độc lập và chuẩn bị tốt cho kì kiểm tra cuối năm.",
         equipment: "Đề kiểm tra giữa kỳ 2 chuẩn ma trận, bảng đặc tả và đáp án",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC1a",
+        nlsCode: "4.1.TC1c",
         aiCode: "6.A3.3",
-        dc: "• [Mã NLS: 4.1.TC1a] Thực hiện bài kiểm tra giữa kì 2 nghiêm túc, tuân thủ kỷ luật phòng thi và bảo mật thông tin.\n• [Mã AI: 6.A3.3] Nhận biết quy trình phân tích tự động dữ liệu bài thi trắc nghiệm bằng AI.",
+        dc: "• [Mã NLS: 4.1.TC1c] Thực hiện bài kiểm tra giữa kì 2 nghiêm túc, tuân thủ kỷ luật phòng thi và bảo mật thông tin.\n• [Mã AI: 6.A3.3] Nhận biết quy trình phân tích tự động dữ liệu bài thi trắc nghiệm bằng AI.",
         notes: "Kiểm tra giữa kỳ"
       },
       {
@@ -643,9 +643,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Lấy được ví dụ về tác dụng của lực làm biến đổi chuyển động (nhanh dần, chậm dần, đổi hướng) hoặc làm biến dạng vật thể.\n- Phân biệt được lực tiếp xúc (lực đẩy của tay, lực ma sát) và lực không tiếp xúc (lực hút của nam châm, trọng lực).",
         equipment: "Xe lăn nhỏ, lò xo xoắn, nam châm thanh, quả nặng kim loại, bóng cao su",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "1.1.TC1a",
+        nlsCode: "1.1.TC1d",
         aiCode: "6.A1.1",
-        dc: "• [Mã NLS: 1.1.TC1a] Tìm kiếm và chọn lọc video slow-motion phân tích biến dạng của vật khi chịu lực tác dụng.\n• [Mã AI: 6.A1.1] Trải nghiệm trò chơi vật lý mô phỏng tương tác lực có tích hợp AI tính toán va chạm theo thời gian thực.",
+        dc: "• [Mã NLS: 1.1.TC1d] Tìm kiếm và chọn lọc video slow-motion phân tích biến dạng của vật khi chịu lực tác dụng.\n• [Mã AI: 6.A1.1] Trải nghiệm trò chơi vật lý mô phỏng tương tác lực có tích hợp AI tính toán va chạm theo thời gian thực.",
         notes: ""
       },
       {
@@ -656,9 +656,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được các yếu tố của một lực: gốc (điểm đặt), phương, chiều và độ lớn; đơn vị đo lực là newton (N).\n- Biểu diễn được lực bằng một mũi tên theo tỉ xích cho trước trên hình vẽ; sử dụng được lực kế đo độ lớn của lực.",
         equipment: "Lực kế lò xo 5N, quả nặng 50g, 100g, thước kẻ, bảng phụ vẽ hệ trục tỉ xích",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "3.1.TC1a",
+        nlsCode: "3.2.TC1a",
         aiCode: "6.C1.1",
-        dc: "• [Mã NLS: 3.1.TC1a] Sử dụng phần mềm hình học số Geogebra vẽ và biểu diễn chính xác vectơ lực theo tỉ xích.\n• [Mã AI: 6.C1.1] Khám phá cách thuật toán AI trong game đồ họa 3D tính toán và hiển thị các vectơ lực tác dụng lên nhân vật.",
+        dc: "• [Mã NLS: 3.2.TC1a] Sử dụng phần mềm hình học số Geogebra vẽ và biểu diễn chính xác vectơ lực theo tỉ xích.\n• [Mã AI: 6.C1.1] Khám phá cách thuật toán AI trong game đồ họa 3D tính toán và hiển thị các vectơ lực tác dụng lên nhân vật.",
         notes: ""
       },
       {
@@ -695,9 +695,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được khái niệm lực ma sát (ma sát trượt, ma sát nghỉ, ma sát lăn); nêu được nguyên nhân xuất hiện lực ma sát.\n- Chỉ ra được tác hại và lợi ích của ma sát trong đời sống; đề xuất các biện pháp tăng ma sát có lợi và giảm ma sát có hại.",
         equipment: "Khối gỗ hình hộp chữ nhật, lực kế 5N, máng gỗ có các bề mặt khác nhau (nhẵn, ráp, phủ dầu mỡ), con lăn",
         location: "Phòng thực hành KHTN",
-        nlsCode: "2.1.TC1a",
+        nlsCode: "2.5.TC1b",
         aiCode: "6.D1.1",
-        dc: "• [Mã NLS: 2.1.TC1a] Sử dụng cảm biến lực gắn trên điện thoại ghi nhận biến thiên lực ma sát nghỉ cực đại sang ma sát trượt.\n• [Mã AI: 6.D1.1] Tìm hiểu hệ thống phanh chống bó cứng ABS trên ô tô sử dụng thuật toán AI kiểm soát ma sát bánh xe.",
+        dc: "• [Mã NLS: 2.5.TC1b] Sử dụng cảm biến lực gắn trên điện thoại ghi nhận biến thiên lực ma sát nghỉ cực đại sang ma sát trượt.\n• [Mã AI: 6.D1.1] Tìm hiểu hệ thống phanh chống bó cứng ABS trên ô tô sử dụng thuật toán AI kiểm soát ma sát bánh xe.",
         notes: ""
       },
       {
@@ -708,9 +708,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nhận biết được lực cản của nước và chất lỏng tác dụng lên vật chuyển động trong nó.\n- Giải thích được hình dạng khí động học/thủy động học (dạng thuôn nhọn) của cá, tàu thuyền, tàu ngầm giúp giảm lực cản.",
         equipment: "Bình thủy tinh hình trụ đựng nước, các khối đất nặn có hình dạng khác nhau (tròn, dẹt, hình giọt nước thuôn)",
         location: "Phòng thực hành KHTN",
-        nlsCode: "3.1.TC1a",
+        nlsCode: "3.2.TC1a",
         aiCode: "6.C1.1",
-        dc: "• [Mã NLS: 3.1.TC1a] Ghi lại video chuyển động rơi của các vật có hình dạng khác nhau trong nước và so sánh thời gian rơi.\n• [Mã AI: 6.C1.1] Khám phá phần mềm mô phỏng động lực học chất lưu CFD tích hợp AI tối ưu hóa thiết kế thân tàu thủy.",
+        dc: "• [Mã NLS: 3.2.TC1a] Ghi lại video chuyển động rơi của các vật có hình dạng khác nhau trong nước và so sánh thời gian rơi.\n• [Mã AI: 6.C1.1] Khám phá phần mềm mô phỏng động lực học chất lưu CFD tích hợp AI tối ưu hóa thiết kế thân tàu thủy.",
         notes: ""
       },
       {
@@ -721,9 +721,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Hệ thống hóa toàn diện kiến thức và kĩ năng môn KHTN Lớp 6 cả năm học; rèn luyện kĩ năng giải đề tổng hợp đạt điểm tối đa.",
         equipment: "Bộ đề ôn tập cuối năm, bảng tóm tắt kiến thức cốt lõi",
         location: "Phòng học / Lớp học",
-        nlsCode: "3.1.TC1a",
+        nlsCode: "3.2.TC1a",
         aiCode: "6.A1.3",
-        dc: "• [Mã NLS: 3.1.TC1a] Xây dựng ngân hàng câu hỏi ôn tập cá nhân trên ứng dụng ghi chú số Notion/Google Keep.\n• [Mã AI: 6.A1.3] Sử dụng AI đánh giá mức độ tự tin và đề xuất các chủ đề cần ôn tập bổ sung.",
+        dc: "• [Mã NLS: 3.2.TC1a] Xây dựng ngân hàng câu hỏi ôn tập cá nhân trên ứng dụng ghi chú số Notion/Google Keep.\n• [Mã AI: 6.A1.3] Sử dụng AI đánh giá mức độ tự tin và đề xuất các chủ đề cần ôn tập bổ sung.",
         notes: "Ôn tập cuối kỳ 2"
       },
       {
@@ -747,9 +747,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Chữa bài kiểm tra cuối HK2 chi tiết; phân tích ma trận điểm thi, các lỗi hay mất điểm và kĩ năng phân bổ thời gian làm bài.\n- Củng cố toàn diện các chủ đề kiến thức trọng tâm Học kỳ 2.",
         equipment: "Bài làm học sinh, đáp án và bảng phân tích thang điểm chi tiết",
         location: "Phòng học / Lớp học",
-        nlsCode: "5.2.TC1a",
+        nlsCode: "5.2.TC1b",
         aiCode: "6.A3.1",
-        dc: "• [Mã NLS: 5.2.TC1a] Tự đánh giá và lưu trữ nhật ký học tập số (Digital Learning Portfolio) của môn học.\n• [Mã AI: 6.A3.1] Sử dụng AI để tổng hợp các điểm kiến thức cần củng cố sau kì kiểm tra cuối năm.",
+        dc: "• [Mã NLS: 5.2.TC1b] Tự đánh giá và lưu trữ nhật ký học tập số (Digital Learning Portfolio) của môn học.\n• [Mã AI: 6.A3.1] Sử dụng AI để tổng hợp các điểm kiến thức cần củng cố sau kì kiểm tra cuối năm.",
         notes: "Chữa bài kiểm tra"
       },
       {
@@ -760,9 +760,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được mọi vật đều có năng lượng; nhận biết được sự truyền năng lượng giữa các vật qua tác dụng lực hoặc truyền nhiệt.\n- Lấy được ví dụ chứng tỏ năng lượng đặc trưng cho khả năng tác dụng lực; đơn vị của năng lượng là jun (J).",
         equipment: "Máng nghiêng, viên bi sắt, khối gỗ, đèn cồn, nhiệt kế, cốc nước",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "1.1.TC1a",
+        nlsCode: "1.2.TC1b",
         aiCode: "6.A1.1",
-        dc: "• [Mã NLS: 1.1.TC1a] Tìm kiếm tài liệu đa phương tiện về các hình thức truyền năng lượng trong tự nhiên và công nghệ.\n• [Mã AI: 6.A1.1] Đặt câu hỏi cho AI so sánh sự khác nhau giữa truyền nhiệt và truyền công cơ học.",
+        dc: "• [Mã NLS: 1.2.TC1b] Tìm kiếm tài liệu đa phương tiện về các hình thức truyền năng lượng trong tự nhiên và công nghệ.\n• [Mã AI: 6.A1.1] Đặt câu hỏi cho AI so sánh sự khác nhau giữa truyền nhiệt và truyền công cơ học.",
         notes: ""
       },
       {
@@ -799,9 +799,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nhận biết được khi năng lượng chuyển hóa, luôn có một phần năng lượng bị hao phí (thường tỏa ra dưới dạng nhiệt năng hoặc âm thanh vô ích).\n- Phân tích được năng lượng có ích và năng lượng hao phí trong một số hoạt động sản xuất và sinh hoạt; nêu khái niệm hiệu suất.",
         equipment: "Bóng đèn sợi đốt, bóng đèn compact, bóng đèn LED, nhiệt kế đo nhiệt độ tỏa ra từ các loại bóng đèn",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "3.1.TC1a",
+        nlsCode: "3.2.TC1a",
         aiCode: "6.A1.3",
-        dc: "• [Mã NLS: 3.1.TC1a] Tính toán phần trăm năng lượng hao phí trên bảng tính Excel và vẽ biểu đồ hình tròn so sánh.\n• [Mã AI: 6.A1.3] Tìm hiểu cách các trung tâm dữ liệu AI lớn tối ưu hóa hệ thống làm mát để giảm thiểu năng lượng hao phí.",
+        dc: "• [Mã NLS: 3.2.TC1a] Tính toán phần trăm năng lượng hao phí trên bảng tính Excel và vẽ biểu đồ hình tròn so sánh.\n• [Mã AI: 6.A1.3] Tìm hiểu cách các trung tâm dữ liệu AI lớn tối ưu hóa hệ thống làm mát để giảm thiểu năng lượng hao phí.",
         notes: ""
       },
       {
@@ -825,9 +825,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được sự cần thiết phải tiết kiệm năng lượng trong sinh hoạt và sản xuất; đề xuất các biện pháp tiết kiệm điện trong gia đình và trường học.\n- Thực hiện được các thói quen tiết kiệm năng lượng: tắt thiết bị khi không dùng, sử dụng thiết bị dán nhãn năng lượng cao sao.",
         equipment: "Tranh ảnh các loại nhãn dán năng lượng của Bộ Công Thương, hóa đơn tiền điện gia đình",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "2.4.TC1a",
+        nlsCode: "2.1.TC1b",
         aiCode: "6.D1.1",
-        dc: "• [Mã NLS: 2.4.TC1a] Lập kế hoạch hành động tiết kiệm điện của gia đình trên Google Forms và chia sẻ kết quả với lớp.\n• [Mã AI: 6.D1.1] Khám phá hệ thống nhà thông minh Smart Home sử dụng AI tự động tắt đèn và điều chỉnh nhiệt độ phòng.",
+        dc: "• [Mã NLS: 2.1.TC1b] Lập kế hoạch hành động tiết kiệm điện của gia đình trên Google Forms và chia sẻ kết quả với lớp.\n• [Mã AI: 6.D1.1] Khám phá hệ thống nhà thông minh Smart Home sử dụng AI tự động tắt đèn và điều chỉnh nhiệt độ phòng.",
         notes: ""
       },
       {
@@ -838,9 +838,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Giải thích được chuyển động nhìn thấy của Mặt Trời (mọc ở đằng Đông, lặn ở đằng Tây) là do Trái Đất tự quay quanh trục từ Tây sang Đông.\n- Phân biệt được các khái niệm: ngôi sao (tự phát sáng), hành tinh (phản xạ ánh sáng), vệ tinh quay quanh hành tinh.",
         equipment: "Quả địa cầu, đèn pin mô phỏng ánh sáng Mặt Trời, mô hình chuyển động Trái Đất",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "1.1.TC1a",
+        nlsCode: "1.1.TC1c",
         aiCode: "6.C2.2",
-        dc: "• [Mã NLS: 1.1.TC1a] Sử dụng phần mềm thiên văn số Stellarium quan sát chuyển động bầu trời theo thời gian thực.\n• [Mã AI: 6.C2.2] Trải nghiệm ứng dụng AI thiên văn học nhận dạng vị trí các chòm sao qua camera điện thoại.",
+        dc: "• [Mã NLS: 1.1.TC1c] Sử dụng phần mềm thiên văn số Stellarium quan sát chuyển động bầu trời theo thời gian thực.\n• [Mã AI: 6.C2.2] Trải nghiệm ứng dụng AI thiên văn học nhận dạng vị trí các chòm sao qua camera điện thoại.",
         notes: ""
       },
       {
@@ -851,9 +851,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Giải thích được các hình dạng nhìn thấy của Mặt Trăng (tuần trăng: Trăng non, Trăng tròn, Trăng khuyết...) là do vị trí tương đối giữa Trái Đất, Mặt Trăng và Mặt Trời.\n- Nêu được Mặt Trăng là vệ tinh tự nhiên duy nhất của Trái Đất và không tự phát sáng.",
         equipment: "Mô hình ba thiên thể: Mặt Trời - Trái Đất - Mặt Trăng, quả bóng xốp mô phỏng Mặt Trăng",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "1.2.TC1a",
+        nlsCode: "1.1.TC1b",
         aiCode: "6.A1.3",
-        dc: "• [Mã NLS: 1.2.TC1a] Tra cứu lịch âm dương và hình thái tuần trăng từng ngày trên trang web quan sát thiên văn số.\n• [Mã AI: 6.A1.3] Xem hình ảnh bề mặt Mặt Trăng độ phân giải siêu nét được phục dựng bởi thuật toán AI từ tàu thám hiểm.",
+        dc: "• [Mã NLS: 1.1.TC1b] Tra cứu lịch âm dương và hình thái tuần trăng từng ngày trên trang web quan sát thiên văn số.\n• [Mã AI: 6.A1.3] Xem hình ảnh bề mặt Mặt Trăng độ phân giải siêu nét được phục dựng bởi thuật toán AI từ tàu thám hiểm.",
         notes: ""
       },
       {
@@ -864,9 +864,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được cấu tạo cơ bản của Hệ Mặt Trời gồm Mặt Trời ở trung tâm và 8 hành tinh (Thủy, Kim, Trái Đất, Hỏa, Mộc, Thổ, Thiên Vương, Hải Vương) cùng các tiểu hành tinh.\n- So sánh được khoảng cách từ các hành tinh đến Mặt Trời và chu kì quay quanh Mặt Trời của các hành tinh.",
         equipment: "Mô hình Hệ Mặt Trời 3D cơ học hoặc tranh toàn cảnh Hệ Mặt Trời",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "3.1.TC1a",
+        nlsCode: "3.2.TC1a",
         aiCode: "6.C1.1",
-        dc: "• [Mã NLS: 3.1.TC1a] Sử dụng trang web tương tác Solar System Scope du hành không gian ảo khám phá Hệ Mặt Trời.\n• [Mã AI: 6.C1.1] Khám phá cách các mô hình AI của NASA phát hiện ngoại hành tinh (Exoplanet) dựa trên dữ liệu kính viễn vọng Kepler.",
+        dc: "• [Mã NLS: 3.2.TC1a] Sử dụng trang web tương tác Solar System Scope du hành không gian ảo khám phá Hệ Mặt Trời.\n• [Mã AI: 6.C1.1] Khám phá cách các mô hình AI của NASA phát hiện ngoại hành tinh (Exoplanet) dựa trên dữ liệu kính viễn vọng Kepler.",
         notes: ""
       },
       {
@@ -911,9 +911,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Trình bày được các phương pháp tìm hiểu tự nhiên (quan sát, thực nghiệm, mô hình hóa).\n- Thực hiện được các kỹ năng cơ bản trong nghiên cứu khoa học: quan sát, phân loại, đo đạc, dự đoán, viết báo cáo nghiên cứu và thuyết trình.",
         equipment: "Tranh ảnh về các bước phương pháp nghiên cứu khoa học, bảng tiêu chí đánh giá báo cáo thực nghiệm",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "1.1.TC1a",
+        nlsCode: "1.2.TC1b",
         aiCode: "7.A1.1",
-        dc: "• [Mã NLS: 1.1.TC1a] Sử dụng các công cụ tìm kiếm học thuật số và quản lý tài liệu tham khảo khoa học.\n• [Mã AI: 7.A1.1] Nhận thức vai trò con người giữ quyền quyết định cuối cùng khi sử dụng AI hỗ trợ phân tích dữ liệu nghiên cứu.",
+        dc: "• [Mã NLS: 1.2.TC1b] Sử dụng các công cụ tìm kiếm học thuật số và quản lý tài liệu tham khảo khoa học.\n• [Mã AI: 7.A1.1] Nhận thức vai trò con người giữ quyền quyết định cuối cùng khi sử dụng AI hỗ trợ phân tích dữ liệu nghiên cứu.",
         notes: ""
       },
       {
@@ -924,9 +924,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Trình bày được mô hình nguyên tử của Rutherford - Bohr (hạt nhân ở giữa mang điện tích dương, các electron mang điện tích âm chuyển động xung quanh).\n- Nêu được khối lượng nguyên tử theo đơn vị amu; tính được số proton, neutron, electron trong một nguyên tử cụ thể.",
         equipment: "Mô hình 3D nguyên tử Rutherford - Bohr, bảng số liệu khối lượng và điện tích các hạt dưới nguyên tử",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "1.2.TC1a",
+        nlsCode: "1.2.TC1b",
         aiCode: "7.C1.1",
-        dc: "• [Mã NLS: 1.2.TC1a] Khám phá mô phỏng 3D tương tác Build an Atom của PhET Colorado trên máy tính.\n• [Mã AI: 7.C1.1] Tìm hiểu cách AI lượng tử mô phỏng đám mây xác suất tìm thấy electron quanh hạt nhân.",
+        dc: "• [Mã NLS: 1.2.TC1b] Khám phá mô phỏng 3D tương tác Build an Atom của PhET Colorado trên máy tính.\n• [Mã AI: 7.C1.1] Tìm hiểu cách AI lượng tử mô phỏng đám mây xác suất tìm thấy electron quanh hạt nhân.",
         notes: ""
       },
       {
@@ -937,9 +937,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được khái niệm nguyên tố hóa học (tập hợp các nguyên tử cùng số proton trong hạt nhân).\n- Viết và đọc đúng ký hiệu hóa học của 20 nguyên tố đầu tiên trong bảng tuần hoàn theo chuẩn IUPAC (H, He, Li, Be, B, C, N, O, F, Ne, Na, Mg, Al, Si, P, S, Cl, Ar, K, Ca).",
         equipment: "Bộ thẻ Flashcard 20 nguyên tố hóa học IUPAC, bảng tra cứu ký hiệu và tên gọi tiếng Anh",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "3.1.TC1a",
+        nlsCode: "3.2.TC1a",
         aiCode: "7.C2.1",
-        dc: "• [Mã NLS: 3.1.TC1a] Sử dụng ứng dụng flashcard số Quizlet luyện đọc và ghi nhớ tên 20 nguyên tố theo phiên âm quốc tế IUPAC.\n• [Mã AI: 7.C2.1] Sử dụng trợ lý AI luyện phát âm tiếng Anh chuẩn tên các nguyên tố hóa học.",
+        dc: "• [Mã NLS: 3.2.TC1a] Sử dụng ứng dụng flashcard số Quizlet luyện đọc và ghi nhớ tên 20 nguyên tố theo phiên âm quốc tế IUPAC.\n• [Mã AI: 7.C2.1] Sử dụng trợ lý AI luyện phát âm tiếng Anh chuẩn tên các nguyên tố hóa học.",
         notes: ""
       },
       {
@@ -976,9 +976,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Trình bày được quy tắc octet (xu hướng đạt lớp vỏ 8 electron bền vững như khí hiếm).\n- Phân biệt được liên kết ion (sự nhường - nhận electron giữa kim loại điển hình và phi kim điển hình, ví dụ NaCl) và liên kết cộng hóa trị (dùng chung cặp electron giữa các phi kim, ví dụ H2, O2, H2O).",
         equipment: "Tranh sơ đồ hình thành liên kết ion trong NaCl, sơ đồ dùng chung electron trong phân tử H2, Cl2, H2O",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "1.2.TC1b",
+        nlsCode: "1.1.TC1d",
         aiCode: "7.C2.1",
-        dc: "• [Mã NLS: 1.2.TC1b] Xem mô phỏng đồ họa chuyển động của electron khi hình thành liên kết hóa học trên YouTube KHTN.\n• [Mã AI: 7.C2.1] Khám phá cách phần mềm hóa học lượng tử ứng dụng AI tính toán mật độ điện tích giữa các nguyên tử.",
+        dc: "• [Mã NLS: 1.1.TC1d] Xem mô phỏng đồ họa chuyển động của electron khi hình thành liên kết hóa học trên YouTube KHTN.\n• [Mã AI: 7.C2.1] Khám phá cách phần mềm hóa học lượng tử ứng dụng AI tính toán mật độ điện tích giữa các nguyên tử.",
         notes: ""
       },
       {
@@ -989,9 +989,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được khái niệm hóa trị của nguyên tố trong hợp chất; phát biểu và vận dụng quy tắc hóa trị với hợp chất 2 nguyên tố AxBy: a.x = b.y.\n- Lập được công thức hóa học của hợp chất khi biết hóa trị; xác định được hóa trị của nguyên tố khi biết công thức hóa học; tính phần trăm khối lượng nguyên tố.",
         equipment: "Bảng hóa trị của một số nguyên tố và nhóm nguyên tử thông dụng, phiếu bài tập lập CTHH",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "3.1.TC1a",
+        nlsCode: "3.2.TC1a",
         aiCode: "7.A1.MR1",
-        dc: "• [Mã NLS: 3.1.TC1a] Sử dụng bảng tính Excel lập công thức tự động tính khối lượng phân tử và phần trăm khối lượng nguyên tố.\n• [Mã AI: 7.A1.MR1] Dùng chatbot AI để kiểm tra nhanh kết quả lập CTHH và đối chiếu lại với quy tắc hóa trị SGK.",
+        dc: "• [Mã NLS: 3.2.TC1a] Sử dụng bảng tính Excel lập công thức tự động tính khối lượng phân tử và phần trăm khối lượng nguyên tố.\n• [Mã AI: 7.A1.MR1] Dùng chatbot AI để kiểm tra nhanh kết quả lập CTHH và đối chiếu lại với quy tắc hóa trị SGK.",
         notes: ""
       },
       {
@@ -1002,9 +1002,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được ý nghĩa của tốc độ là đại lượng đặc trưng cho sự nhanh hay chậm của chuyển động.\n- Nắm vững công thức tính tốc độ v = s/t; đổi được các đơn vị đo tốc độ thông dụng (m/s, km/h).",
         equipment: "Máng nghiêng, xe lăn đồ chơi, thước cuộn, đồng hồ bấm giây điện tử",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "1.1.TC1a",
+        nlsCode: "1.1.TC1c",
         aiCode: "7.C2.1",
-        dc: "• [Mã NLS: 1.1.TC1a] Tìm kiếm tư liệu về tốc độ di chuyển của các phương tiện giao thông hiện đại (máy bay phản lực, tàu cao tốc shinkansen).\n• [Mã AI: 7.C2.1] Khám phá thuật toán AI trên ứng dụng Google Maps ước tính thời gian di chuyển dựa trên tốc độ lưu thông.",
+        dc: "• [Mã NLS: 1.1.TC1c] Tìm kiếm tư liệu về tốc độ di chuyển của các phương tiện giao thông hiện đại (máy bay phản lực, tàu cao tốc shinkansen).\n• [Mã AI: 7.C2.1] Khám phá thuật toán AI trên ứng dụng Google Maps ước tính thời gian di chuyển dựa trên tốc độ lưu thông.",
         notes: ""
       },
       {
@@ -1015,9 +1015,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Mô tả được các phương pháp đo tốc độ thông dụng (dùng đồng hồ bấm giây và cổng quang điện kết hợp đồng hồ đo thời gian hiện số).\n- Thực hành đo được tốc độ chuyển động của một vật bằng cổng quang điện và đồng hồ đo thời gian hiện số trong phòng thực hành.",
         equipment: "Bộ thí nghiệm đo tốc độ: máng dẫn ray nhôm, xe trượt có tấm cản quang, 2 cổng quang điện E, đồng hồ đo thời gian hiện số",
         location: "Phòng thực hành KHTN",
-        nlsCode: "2.1.TC1a",
+        nlsCode: "2.2.TC1c",
         aiCode: "7.C1.1",
-        dc: "• [Mã NLS: 2.1.TC1a] Đọc và ghi nhận dữ liệu chính xác từ màn hình hiển thị số của đồng hồ đo thời gian hiện số.\n• [Mã AI: 7.C1.1] Tìm hiểu nguyên lý hoạt động của súng bắn tốc độ tự động tích hợp cảm biến laser và camera AI.",
+        dc: "• [Mã NLS: 2.2.TC1c] Đọc và ghi nhận dữ liệu chính xác từ màn hình hiển thị số của đồng hồ đo thời gian hiện số.\n• [Mã AI: 7.C1.1] Tìm hiểu nguyên lý hoạt động của súng bắn tốc độ tự động tích hợp cảm biến laser và camera AI.",
         notes: ""
       },
       {
@@ -1067,9 +1067,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Đánh giá mức độ đạt chuẩn kiến thức, kĩ năng môn KHTN 7 từ Tuần 1 đến Tuần 8 theo ma trận đề chuẩn Bộ GD&ĐT (thời gian làm bài 90 phút).\n- Đánh giá năng lực tìm hiểu tự nhiên, tư duy thực nghiệm khoa học và tính trung thực trong kiểm tra.",
         equipment: "Đề kiểm tra giữa kỳ 1 chuẩn ma trận, bảng đặc tả và hướng dẫn chấm",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC1a",
+        nlsCode: "4.3.TC1a",
         aiCode: "7.A3.3",
-        dc: "• [Mã NLS: 4.1.TC1a] Thực hiện bài kiểm tra nghiêm túc, tuân thủ quy chế an toàn số và bảo mật thông tin phòng thi.\n• [Mã AI: 7.A3.3] Tìm hiểu hệ thống chấm thi tự động và phân tích phổ điểm kiểm tra bằng AI.",
+        dc: "• [Mã NLS: 4.3.TC1a] Thực hiện bài kiểm tra nghiêm túc, tuân thủ quy chế an toàn số và bảo mật thông tin phòng thi.\n• [Mã AI: 7.A3.3] Tìm hiểu hệ thống chấm thi tự động và phân tích phổ điểm kiểm tra bằng AI.",
         notes: "Kiểm tra giữa kỳ"
       },
       {
@@ -1093,9 +1093,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được mối liên hệ giữa tần số dao động (Hz) và độ cao của âm (tần số càng lớn âm càng bổng; tần số càng nhỏ âm càng trầm).\n- Nêu được mối liên hệ giữa biên độ dao động và độ to của âm (biên độ càng lớn âm càng to); đơn vị đo độ to là đêxiben (dB).",
         equipment: "Bộ nguồn âm tần số, loa, dao động kí điện tử (hoặc phần mềm oscilloscope trên máy tính), thước lá thép mỏng đàn hồi",
         location: "Phòng thực hành KHTN",
-        nlsCode: "2.1.TC1a",
+        nlsCode: "2.1.TC1b",
         aiCode: "7.C2.1",
-        dc: "• [Mã NLS: 2.1.TC1a] Cài đặt ứng dụng đo độ ồn Sound Meter trên điện thoại để khảo sát độ to âm thanh trong lớp học.\n• [Mã AI: 7.C2.1] Tìm hiểu cách AI nhận diện giọng nói (Voice Recognition) phân tích đặc trưng độ cao và âm sắc riêng của từng người.",
+        dc: "• [Mã NLS: 2.1.TC1b] Cài đặt ứng dụng đo độ ồn Sound Meter trên điện thoại để khảo sát độ to âm thanh trong lớp học.\n• [Mã AI: 7.C2.1] Tìm hiểu cách AI nhận diện giọng nói (Voice Recognition) phân tích đặc trưng độ cao và âm sắc riêng của từng người.",
         notes: ""
       },
       {
@@ -1106,9 +1106,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được khái niệm sự phản xạ âm và tiếng vang (khi âm phản xạ đến tai cách âm trực tiếp ít nhất 1/15 giây).\n- Phân biệt vật phản xạ âm tốt (vật cứng, bề mặt nhẵn) và vật phản xạ âm kém/hấp thụ âm tốt (vật mềm xốp, gồ ghề); đề xuất biện pháp chống ô nhiễm tiếng ồn.",
         equipment: "Tấm xốp cách âm, tấm rèm nhung, tấm gỗ nhẵn, mô hình phòng thu cách âm",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "4.1.TC1a",
+        nlsCode: "4.1.TC1c",
         aiCode: "7.D1.1",
-        dc: "• [Mã NLS: 4.1.TC1a] Tìm kiếm và tham khảo các giải pháp vật liệu cách âm thông minh trong kiến trúc xây dựng hiện đại.\n• [Mã AI: 7.D1.1] Khám phá công nghệ tai nghe chống ồn chủ động (ANC) sử dụng chip xử lý AI triệt tiêu tiếng ồn môi trường.",
+        dc: "• [Mã NLS: 4.1.TC1c] Tìm kiếm và tham khảo các giải pháp vật liệu cách âm thông minh trong kiến trúc xây dựng hiện đại.\n• [Mã AI: 7.D1.1] Khám phá công nghệ tai nghe chống ồn chủ động (ANC) sử dụng chip xử lý AI triệt tiêu tiếng ồn môi trường.",
         notes: ""
       },
       {
@@ -1132,9 +1132,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nhận biết được hiện tượng phản xạ ánh sáng; phân biệt được phản xạ gương (trên bề mặt nhẵn bóng) và phản xạ khuếch tán (trên bề mặt gồ ghề).\n- Phát biểu và thực nghiệm kiểm chứng được định luật phản xạ ánh sáng: tia phản xạ nằm trong mặt phẳng tới, góc phản xạ bằng góc tới (i' = i).",
         equipment: "Gương phẳng nhỏ, bảng chia độ tròn, đèn chiếu tia sáng hẹp, giá thí nghiệm quang học",
         location: "Phòng thực hành KHTN",
-        nlsCode: "3.1.TC1a",
+        nlsCode: "3.2.TC1a",
         aiCode: "7.A1.MR1",
-        dc: "• [Mã NLS: 3.1.TC1a] Sử dụng công cụ vẽ kỹ thuật số Geogebra Optics mô phỏng chùm tia sáng phản xạ với các góc tới khác nhau.\n• [Mã AI: 7.A1.MR1] Kiểm tra tính chính xác của các hình vẽ quang học do AI tạo ra bằng định luật phản xạ ánh sáng.",
+        dc: "• [Mã NLS: 3.2.TC1a] Sử dụng công cụ vẽ kỹ thuật số Geogebra Optics mô phỏng chùm tia sáng phản xạ với các góc tới khác nhau.\n• [Mã AI: 7.A1.MR1] Kiểm tra tính chính xác của các hình vẽ quang học do AI tạo ra bằng định luật phản xạ ánh sáng.",
         notes: ""
       },
       {
@@ -1145,9 +1145,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được các tính chất của ảnh tạo bởi gương phẳng: ảnh ảo không hứng được trên màn, độ lớn bằng vật, khoảng cách từ ảnh đến gương bằng khoảng cách từ vật đến gương.\n- Dựng được ảnh của một điểm sáng và một vật sáng có hình dạng đơn giản qua gương phẳng dựa vào định luật phản xạ ánh sáng.",
         equipment: "Tấm kính trong suốt (làm gương bán mạ), hai cây nến giống hệt nhau, bật lửa, thước đo khoảng cách",
         location: "Phòng thực hành KHTN",
-        nlsCode: "2.4.TC1a",
+        nlsCode: "2.5.TC1b",
         aiCode: "7.C2.1",
-        dc: "• [Mã NLS: 2.4.TC1a] Chụp ảnh thực nghiệm đối chứng tính chất đối xứng của ảnh qua gương và chia sẻ lên album học tập trực tuyến.\n• [Mã AI: 7.C2.1] Khám phá ứng dụng gương trang điểm thông minh (Smart Mirror) tích hợp AI quét khuôn mặt gợi ý chăm sóc da.",
+        dc: "• [Mã NLS: 2.5.TC1b] Chụp ảnh thực nghiệm đối chứng tính chất đối xứng của ảnh qua gương và chia sẻ lên album học tập trực tuyến.\n• [Mã AI: 7.C2.1] Khám phá ứng dụng gương trang điểm thông minh (Smart Mirror) tích hợp AI quét khuôn mặt gợi ý chăm sóc da.",
         notes: ""
       },
       {
@@ -1158,9 +1158,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nhận biết được đặc tính của nam châm: hút sắt, niken, coban; mỗi nam châm luôn có hai cực: cực Bắc (N) và cực Nam (S).\n- Trình bày được sự tương tác giữa hai nam châm: các cực cùng tên đẩy nhau, khác tên hút nhau; nêu nguyên lý hoạt động của la bàn.",
         equipment: "Nam châm thẳng, nam châm chữ U, kim nam châm có trục quay, la bàn bỏ túi, hộp mạt sắt, các mẫu kim loại",
         location: "Phòng thực hành KHTN",
-        nlsCode: "1.2.TC1a",
+        nlsCode: "1.1.TC1b",
         aiCode: "7.C1.1",
-        dc: "• [Mã NLS: 1.2.TC1a] Sử dụng ứng dụng La bàn số (Digital Compass) trên điện thoại thông minh xác định phương hướng thực tế.\n• [Mã AI: 7.C1.1] Khám phá cách cảm biến từ trường kỹ thuật số và thuật toán AI trong điện thoại tự động bù trừ sai lệch địa từ.",
+        dc: "• [Mã NLS: 1.1.TC1b] Sử dụng ứng dụng La bàn số (Digital Compass) trên điện thoại thông minh xác định phương hướng thực tế.\n• [Mã AI: 7.C1.1] Khám phá cách cảm biến từ trường kỹ thuật số và thuật toán AI trong điện thoại tự động bù trừ sai lệch địa từ.",
         notes: ""
       },
       {
@@ -1171,9 +1171,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được khái niệm từ trường là không gian xung quanh nam châm có khả năng tác dụng lực từ lên kim nam châm đặt trong nó.\n- Quan sát và vẽ được hình ảnh từ phổ của nam châm thẳng và nam châm chữ U; quy ước chiều của đường sức từ: đi ra từ cực Bắc, đi vào cực Nam.",
         equipment: "Tấm mica trong chứa mạt sắt mịn, nam châm thẳng, nam châm chữ U, la bàn nhỏ (kim nam châm thử)",
         location: "Phòng thực hành KHTN",
-        nlsCode: "3.1.TC1a",
+        nlsCode: "3.2.TC1a",
         aiCode: "7.C2.1",
-        dc: "• [Mã NLS: 3.1.TC1a] Sử dụng phần mềm PhET Faraday's Electromagnetic Lab quan sát mô hình 3D vector từ trường xung quanh nam châm.\n• [Mã AI: 7.C2.1] Tìm hiểu cách AI xử lý dữ liệu từ trường Trái Đất để bảo vệ lưới điện quốc tế trước bão từ mặt trời.",
+        dc: "• [Mã NLS: 3.2.TC1a] Sử dụng phần mềm PhET Faraday's Electromagnetic Lab quan sát mô hình 3D vector từ trường xung quanh nam châm.\n• [Mã AI: 7.C2.1] Tìm hiểu cách AI xử lý dữ liệu từ trường Trái Đất để bảo vệ lưới điện quốc tế trước bão từ mặt trời.",
         notes: ""
       },
       {
@@ -1197,9 +1197,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Hệ thống hóa toàn diện chuẩn kiến thức, kĩ năng môn KHTN 7 trong toàn bộ Học kỳ 1; rèn luyện kĩ năng phân tích đồ thị, phương trình và xử lý số liệu thí nghiệm.",
         equipment: "Đề cương ôn tập HK1, bảng hệ thống kiến thức toàn diện",
         location: "Phòng học / Lớp học",
-        nlsCode: "3.1.TC1a",
+        nlsCode: "3.2.TC1a",
         aiCode: "7.A1.3",
-        dc: "• [Mã NLS: 3.1.TC1a] Lập sơ đồ tư duy số tổng kết toàn bộ kiến thức Học kỳ 1 trên phần mềm sơ đồ tư duy.\n• [Mã AI: 7.A1.3] Sử dụng AI để tạo đề thi thử trắc nghiệm có giải thích chi tiết giúp ôn tập hiệu quả.",
+        dc: "• [Mã NLS: 3.2.TC1a] Lập sơ đồ tư duy số tổng kết toàn bộ kiến thức Học kỳ 1 trên phần mềm sơ đồ tư duy.\n• [Mã AI: 7.A1.3] Sử dụng AI để tạo đề thi thử trắc nghiệm có giải thích chi tiết giúp ôn tập hiệu quả.",
         notes: "Ôn tập cuối kỳ 1"
       },
       {
@@ -1223,9 +1223,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nhận xét, chữa bài kiểm tra cuối HK1 chi tiết; giải thích cặn kẽ các câu hỏi khó và sửa chữa các lỗi sai thường gặp.\n- Củng cố hệ thống kiến thức và kĩ năng thực hành môn KHTN 7 trong toàn bộ Học kỳ 1.",
         equipment: "Bài làm học sinh, đáp án và bảng biểu điểm sửa sai",
         location: "Phòng học / Lớp học",
-        nlsCode: "5.2.TC1a",
+        nlsCode: "5.2.TC1b",
         aiCode: "7.A1.3",
-        dc: "• [Mã NLS: 5.2.TC1a] Nhập và đối chiếu kết quả bài làm trên hệ thống học liệu số để tự đánh giá năng lực.\n• [Mã AI: 7.A1.3] Sử dụng AI gợi ý các dạng bài tập tương tự để khắc phục các phần kiến thức còn yếu.",
+        dc: "• [Mã NLS: 5.2.TC1b] Nhập và đối chiếu kết quả bài làm trên hệ thống học liệu số để tự đánh giá năng lực.\n• [Mã AI: 7.A1.3] Sử dụng AI gợi ý các dạng bài tập tương tự để khắc phục các phần kiến thức còn yếu.",
         notes: "Chữa bài kiểm tra & Ôn tập"
       },
       {
@@ -1236,9 +1236,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Sơ kết thi đua kết quả học tập môn KHTN 7 Học kỳ 1; trưng bày, báo cáo các sản phẩm thực hành/chuyên đề khoa học của học sinh.\n- Rèn luyện kĩ năng làm việc nhóm, thuyết trình khoa học và định hướng nhiệm vụ học tập Học kỳ 2.",
         equipment: "Sản phẩm tập san, video clip thực hành, slide báo cáo chuyên đề của học sinh, máy chiếu",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "2.4.TC1b",
+        nlsCode: "2.4.TC1a",
         aiCode: "7.D1.1",
-        dc: "• [Mã NLS: 2.4.TC1b] Trình chiếu báo cáo số đa phương tiện tổng kết hoạt động học tập nhóm trong HK1.\n• [Mã AI: 7.D1.1] Khám phá ứng dụng AI hỗ trợ thiết kế slide báo cáo và tổng kết dữ liệu học tập trực quan.",
+        dc: "• [Mã NLS: 2.4.TC1a] Trình chiếu báo cáo số đa phương tiện tổng kết hoạt động học tập nhóm trong HK1.\n• [Mã AI: 7.D1.1] Khám phá ứng dụng AI hỗ trợ thiết kế slide báo cáo và tổng kết dữ liệu học tập trực quan.",
         notes: "Sơ kết Học kỳ 1"
       },
       {
@@ -1249,9 +1249,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được khái niệm trao đổi chất và chuyển hóa năng lượng ở sinh vật; lấy được ví dụ chứng minh sinh vật luôn cần lấy chất dinh dưỡng và thải chất cặn bã.\n- Nêu được mối quan hệ mật thiết giữa trao đổi chất và chuyển hóa năng lượng ở cấp tế bào và cơ thể.",
         equipment: "Tranh sơ đồ trao đổi chất giữa cơ thể sinh vật và môi trường ngoài, video quá trình tiêu hóa và hô hấp",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "1.1.TC1a",
+        nlsCode: "1.2.TC1b",
         aiCode: "7.A1.1",
-        dc: "• [Mã NLS: 1.1.TC1a] Tìm kiếm và đọc các tài liệu khoa học số giải thích mối quan hệ giữa đồng hóa và dị hóa trong cơ thể.\n• [Mã AI: 7.A1.1] Đặt câu hỏi cho AI so sánh sự khác nhau giữa chuyển hóa năng lượng sinh học và phản ứng cháy thông thường.",
+        dc: "• [Mã NLS: 1.2.TC1b] Tìm kiếm và đọc các tài liệu khoa học số giải thích mối quan hệ giữa đồng hóa và dị hóa trong cơ thể.\n• [Mã AI: 7.A1.1] Đặt câu hỏi cho AI so sánh sự khác nhau giữa chuyển hóa năng lượng sinh học và phản ứng cháy thông thường.",
         notes: ""
       },
       {
@@ -1275,9 +1275,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Phân tích được ảnh hưởng của các yếu tố môi trường (cường độ ánh sáng, nồng độ CO2, nhiệt độ, nước) đến tốc độ quang hợp ở thực vật.\n- Vận dụng hiểu biết về các yếu tố ảnh hưởng đến quang hợp để giải thích các biện pháp kĩ thuật chăm sóc cây trồng trong nông nghiệp.",
         equipment: "Biểu đồ mối quan hệ giữa cường độ quang hợp và cường độ ánh sáng/nồng độ CO2, tranh nhà kính trồng trọt",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "2.1.TC1a",
+        nlsCode: "2.5.TC1b",
         aiCode: "7.C2.1",
-        dc: "• [Mã NLS: 2.1.TC1a] Tra cứu số liệu cảm biến vi khí hậu nông nghiệp thông minh tại các nông trại công nghệ cao.\n• [Mã AI: 7.C2.1] Tìm hiểu cách hệ thống nhà màng AI tự động điều tiết đèn LED quang hợp và quạt thông gió tối ưu năng suất cây trồng.",
+        dc: "• [Mã NLS: 2.5.TC1b] Tra cứu số liệu cảm biến vi khí hậu nông nghiệp thông minh tại các nông trại công nghệ cao.\n• [Mã AI: 7.C2.1] Tìm hiểu cách hệ thống nhà màng AI tự động điều tiết đèn LED quang hợp và quạt thông gió tối ưu năng suất cây trồng.",
         notes: ""
       },
       {
@@ -1288,9 +1288,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Thực hiện được thí nghiệm chứng minh tinh bột được tạo thành trong quang hợp (dùng dung dịch iodine làm chất chỉ thị).\n- Thực hiện được thí nghiệm chứng minh quang hợp giải phóng khí oxygen (bằng que đóm bùng cháy cạnh cành rong đuôi chó có bọt khí).",
         equipment: "Chậu cây khoai lang/cây dâm bụt, cành rong đuôi chó, cồn 90 độ, dung dịch iodine, đèn cồn, cốc đun cách thủy, que đóm",
         location: "Phòng thực hành KHTN",
-        nlsCode: "3.1.TC1a",
+        nlsCode: "3.2.TC1a",
         aiCode: "7.A1.MR1",
-        dc: "• [Mã NLS: 3.1.TC1a] Quay video ghi lại quá trình lá cây đổi màu khi nhỏ iodine và biên tập video báo cáo khoa học.\n• [Mã AI: 7.A1.MR1] Nhận biết và hiệu chỉnh các bước làm thí nghiệm dựa trên lời khuyên an toàn hóa chất của trợ lý AI.",
+        dc: "• [Mã NLS: 3.2.TC1a] Quay video ghi lại quá trình lá cây đổi màu khi nhỏ iodine và biên tập video báo cáo khoa học.\n• [Mã AI: 7.A1.MR1] Nhận biết và hiệu chỉnh các bước làm thí nghiệm dựa trên lời khuyên an toàn hóa chất của trợ lý AI.",
         notes: ""
       },
       {
@@ -1340,9 +1340,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Mô tả được cấu tạo và cơ chế đóng mở của khí khổng ở lá cây trong quá trình trao đổi khí.\n- Trình bày được các hình thức trao đổi khí ở động vật: qua bề mặt cơ thể (giun đất), qua hệ thống ống khí (côn trùng), qua mang (cá), qua phổi (chim, thú, người).",
         equipment: "Kính hiển vi, tiêu bản tế bào khí khổng lá thài lài tía, mô hình hệ hô hấp ở người và cá",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "1.2.TC1a",
+        nlsCode: "1.2.TC1b",
         aiCode: "7.C2.1",
-        dc: "• [Mã NLS: 1.2.TC1a] Sử dụng phần mềm giải phẫu 3D Human Anatomy Atlas khám phá cấu tạo phế nang phổi người.\n• [Mã AI: 7.C2.1] Tìm hiểu cách AI phân tích âm thanh hơi thở để hỗ trợ phát hiện sớm các bệnh lý đường hô hấp.",
+        dc: "• [Mã NLS: 1.2.TC1b] Sử dụng phần mềm giải phẫu 3D Human Anatomy Atlas khám phá cấu tạo phế nang phổi người.\n• [Mã AI: 7.C2.1] Tìm hiểu cách AI phân tích âm thanh hơi thở để hỗ trợ phát hiện sớm các bệnh lý đường hô hấp.",
         notes: ""
       },
       {
@@ -1379,9 +1379,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Mô tả được con đường thu nhận, tiêu hóa thức ăn, hấp thụ chất dinh dưỡng và thải bã ở hệ tiêu hóa động vật/người.\n- Trình bày được vai trò của hệ tuần hoàn (tim và hệ mạch) trong việc vận chuyển các chất dinh dưỡng và khí đến từng tế bào trong cơ thể.",
         equipment: "Mô hình tháo lắp hệ tiêu hóa và hệ tuần hoàn ở người, tranh sơ đồ vòng tuần hoàn máu",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "3.1.TC1a",
+        nlsCode: "3.2.TC1a",
         aiCode: "7.C2.1",
-        dc: "• [Mã NLS: 3.1.TC1a] Tương tác với mô hình 3D tim đập và dòng máu lưu thông trên phần mềm giải phẫu số Zygote Body.\n• [Mã AI: 7.C2.1] Khám phá cách đồng hồ thông minh ứng dụng thuật toán AI phân tích biến thiên nhịp tim (HRV) theo dõi sức khỏe.",
+        dc: "• [Mã NLS: 3.2.TC1a] Tương tác với mô hình 3D tim đập và dòng máu lưu thông trên phần mềm giải phẫu số Zygote Body.\n• [Mã AI: 7.C2.1] Khám phá cách đồng hồ thông minh ứng dụng thuật toán AI phân tích biến thiên nhịp tim (HRV) theo dõi sức khỏe.",
         notes: ""
       },
       {
@@ -1418,9 +1418,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Đánh giá mức độ tiếp thu các nội dung trọng tâm môn KHTN 7 từ Tuần 19 đến Tuần 25 theo ma trận chuẩn của Bộ GD&ĐT (thời gian làm bài 90 phút).\n- Giúp học sinh tự đánh giá năng lực, rèn luyện tư duy độc lập và chuẩn bị tốt cho kì kiểm tra cuối năm.",
         equipment: "Đề kiểm tra giữa kỳ 2 chuẩn ma trận, bảng đặc tả và đáp án",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC1a",
+        nlsCode: "4.3.TC1a",
         aiCode: "7.A3.3",
-        dc: "• [Mã NLS: 4.1.TC1a] Thực hiện bài kiểm tra giữa kì 2 nghiêm túc, tuân thủ kỷ luật phòng thi và bảo mật thông tin.\n• [Mã AI: 7.A3.3] Nhận biết quy trình phân tích tự động dữ liệu bài thi trắc nghiệm bằng AI.",
+        dc: "• [Mã NLS: 4.3.TC1a] Thực hiện bài kiểm tra giữa kì 2 nghiêm túc, tuân thủ kỷ luật phòng thi và bảo mật thông tin.\n• [Mã AI: 7.A3.3] Nhận biết quy trình phân tích tự động dữ liệu bài thi trắc nghiệm bằng AI.",
         notes: "Kiểm tra giữa kỳ"
       },
       {
@@ -1457,9 +1457,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Thực hiện được thí nghiệm chứng minh tính hướng sáng (cây con mọc nghiêng về phía ánh sáng) và tính hướng tiếp xúc của cây trinh nữ.\n- Quan sát và ghi nhận được phản xạ co cụm lá của cây xấu hổ khi có va chạm cơ học.",
         equipment: "Chậu cây trinh nữ tươi tốt, chậu cây đậu xanh trồng trong hộp carton có đục lỗ một bên",
         location: "Phòng thực hành KHTN",
-        nlsCode: "3.1.TC1a",
+        nlsCode: "3.2.TC1a",
         aiCode: "7.A1.3",
-        dc: "• [Mã NLS: 3.1.TC1a] Quay video time-lapse ghi lại quá trình uốn cong của ngọn cây về phía ánh sáng trong 3 ngày.\n• [Mã AI: 7.A1.3] Sử dụng AI tự động tăng tốc và ổn định khung hình video time-lapse phục vụ báo cáo.",
+        dc: "• [Mã NLS: 3.2.TC1a] Quay video time-lapse ghi lại quá trình uốn cong của ngọn cây về phía ánh sáng trong 3 ngày.\n• [Mã AI: 7.A1.3] Sử dụng AI tự động tăng tốc và ổn định khung hình video time-lapse phục vụ báo cáo.",
         notes: ""
       },
       {
@@ -1470,9 +1470,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Phân biệt được sinh trưởng (sự tăng lên về kích thước và khối lượng cơ thể) và phát triển (quá trình biến đổi chất lượng: phân hóa tế bào, phát sinh hình thái, tạo cơ quan mới).\n- Mô tả được các giai đoạn sinh trưởng và phát triển của một số loài sinh vật (cây có hoa từ hạt đến cây trưởng thành; ếch từ trứng, nòng nọc đến ếch).",
         equipment: "Tranh vòng đời biến thái của ếch đồng, vòng đời của bướm tằm, sơ đồ sinh trưởng của cây đậu",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "1.1.TC1a",
+        nlsCode: "1.1.TC1c",
         aiCode: "7.C2.1",
-        dc: "• [Mã NLS: 1.1.TC1a] Tìm kiếm đồ họa chuyển động số hóa minh họa các giai đoạn biến thái hoàn toàn và không hoàn toàn.\n• [Mã AI: 7.C2.1] Khám phá mô hình AI dự báo tốc độ tăng trưởng của cây rừng dựa trên ảnh chụp viễn thám và dữ liệu khí hậu.",
+        dc: "• [Mã NLS: 1.1.TC1c] Tìm kiếm đồ họa chuyển động số hóa minh họa các giai đoạn biến thái hoàn toàn và không hoàn toàn.\n• [Mã AI: 7.C2.1] Khám phá mô hình AI dự báo tốc độ tăng trưởng của cây rừng dựa trên ảnh chụp viễn thám và dữ liệu khí hậu.",
         notes: ""
       },
       {
@@ -1483,9 +1483,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được ảnh hưởng của các nhân tố bên ngoài (nhiệt độ, ánh sáng, nước, dinh dưỡng) và nhân tố bên trong (hormone) đến sinh trưởng và phát triển.\n- Trình bày được các ứng dụng thực tiễn: điều khiển nhiệt độ ấp trứng, sử dụng chất kích thích sinh trưởng hợp lý, bấm ngọn tỉa cành tăng năng suất.",
         equipment: "Mẫu thuốc kích thích ra rễ GA3/Auxin an toàn, tranh quy trình ấp trứng gia cầm công nghiệp",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "2.1.TC1a",
+        nlsCode: "2.2.TC1c",
         aiCode: "7.B3.1",
-        dc: "• [Mã NLS: 2.1.TC1a] Tra cứu quy định pháp luật về danh mục chất kích thích sinh trưởng được phép sử dụng trong nông nghiệp an toàn.\n• [Mã AI: 7.B3.1] Thảo luận về vấn đề đạo đức khi sử dụng chất tăng trọng nhân tạo và vai trò của AI kiểm định an toàn thực phẩm.",
+        dc: "• [Mã NLS: 2.2.TC1c] Tra cứu quy định pháp luật về danh mục chất kích thích sinh trưởng được phép sử dụng trong nông nghiệp an toàn.\n• [Mã AI: 7.B3.1] Thảo luận về vấn đề đạo đức khi sử dụng chất tăng trọng nhân tạo và vai trò của AI kiểm định an toàn thực phẩm.",
         notes: ""
       },
       {
@@ -1509,9 +1509,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Hệ thống hóa toàn diện kiến thức và kĩ năng môn KHTN Lớp 7 cả năm học; rèn luyện kĩ năng giải đề tổng hợp đạt điểm tối đa.",
         equipment: "Bộ đề ôn tập cuối năm, bảng tóm tắt kiến thức cốt lõi",
         location: "Phòng học / Lớp học",
-        nlsCode: "3.1.TC1a",
+        nlsCode: "3.2.TC1a",
         aiCode: "7.A1.3",
-        dc: "• [Mã NLS: 3.1.TC1a] Xây dựng ngân hàng câu hỏi ôn tập cá nhân trên ứng dụng ghi chú số Notion/Google Keep.\n• [Mã AI: 7.A1.3] Sử dụng AI đánh giá mức độ tự tin và đề xuất các chủ đề cần ôn tập bổ sung.",
+        dc: "• [Mã NLS: 3.2.TC1a] Xây dựng ngân hàng câu hỏi ôn tập cá nhân trên ứng dụng ghi chú số Notion/Google Keep.\n• [Mã AI: 7.A1.3] Sử dụng AI đánh giá mức độ tự tin và đề xuất các chủ đề cần ôn tập bổ sung.",
         notes: "Ôn tập cuối kỳ 2"
       },
       {
@@ -1535,9 +1535,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Chữa bài kiểm tra cuối HK2 chi tiết; phân tích ma trận điểm thi, các lỗi hay mất điểm và kĩ năng phân bổ thời gian làm bài.\n- Củng cố toàn diện các chủ đề kiến thức trọng tâm Học kỳ 2.",
         equipment: "Bài làm học sinh, đáp án và bảng phân tích thang điểm chi tiết",
         location: "Phòng học / Lớp học",
-        nlsCode: "5.2.TC1a",
+        nlsCode: "5.2.TC1b",
         aiCode: "7.A3.1",
-        dc: "• [Mã NLS: 5.2.TC1a] Tự đánh giá và lưu trữ nhật ký học tập số (Digital Learning Portfolio) của môn học.\n• [Mã AI: 7.A3.1] Sử dụng AI để tổng hợp các điểm kiến thức cần củng cố sau kì kiểm tra cuối năm.",
+        dc: "• [Mã NLS: 5.2.TC1b] Tự đánh giá và lưu trữ nhật ký học tập số (Digital Learning Portfolio) của môn học.\n• [Mã AI: 7.A3.1] Sử dụng AI để tổng hợp các điểm kiến thức cần củng cố sau kì kiểm tra cuối năm.",
         notes: "Chữa bài kiểm tra"
       },
       {
@@ -1561,9 +1561,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được khái niệm sinh sản hữu tính (có sự kết hợp giữa giao tử đực và giao tử cái qua thụ tinh tạo hợp tử).\n- Mô tả được cấu tạo của hoa lưỡng tính (đài, tràng, nhị mang hạt phấn, nhụy mang noãn); phân biệt thụ phấn và thụ tinh; phân biệt động vật đẻ trứng và đẻ con.",
         equipment: "Mô hình tháo lắp cấu tạo hoa râm bụt/hoa ly, tranh các giai đoạn thụ phấn và thụ tinh ở thực vật có hoa",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "2.4.TC1a",
+        nlsCode: "2.1.TC1b",
         aiCode: "7.C2.1",
-        dc: "• [Mã NLS: 2.4.TC1a] Phối hợp nhóm xây dựng bài thuyết trình đa phương tiện về các hình thức thụ phấn nhờ gió và nhờ côn trùng.\n• [Mã AI: 7.C2.1] Khám phá mô hình robot thụ phấn nhân tạo mini ứng dụng AI thị giác máy tính thay thế ong mật.",
+        dc: "• [Mã NLS: 2.1.TC1b] Phối hợp nhóm xây dựng bài thuyết trình đa phương tiện về các hình thức thụ phấn nhờ gió và nhờ côn trùng.\n• [Mã AI: 7.C2.1] Khám phá mô hình robot thụ phấn nhân tạo mini ứng dụng AI thị giác máy tính thay thế ong mật.",
         notes: ""
       },
       {
@@ -1574,9 +1574,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được ảnh hưởng của nhiệt độ, độ ẩm, ánh sáng và chế độ dinh dưỡng đến sinh sản ở sinh vật.\n- Trình bày được một số thành tựu điều khiển sinh sản: thụ tinh nhân tạo ở gia súc, điều khiển giới tính ở tôm cá, kích thích cây ra hoa trái vụ.",
         equipment: "Tranh ảnh quy trình thụ tinh nhân tạo ở bò sữa, hệ thống nuôi cấy ngọc trai nhân tạo, kỹ thuật ép cá sinh sản",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "3.1.TC1a",
+        nlsCode: "3.2.TC1a",
         aiCode: "7.B3.1",
-        dc: "• [Mã NLS: 3.1.TC1a] Tìm kiếm dữ liệu số về các trung tâm giống cây trồng và vật nuôi công nghệ cao tại Việt Nam.\n• [Mã AI: 7.B3.1] Thảo luận về các ranh giới đạo đức sinh học khi can thiệp công nghệ chỉnh sửa gen và AI trong phối giống vật nuôi.",
+        dc: "• [Mã NLS: 3.2.TC1a] Tìm kiếm dữ liệu số về các trung tâm giống cây trồng và vật nuôi công nghệ cao tại Việt Nam.\n• [Mã AI: 7.B3.1] Thảo luận về các ranh giới đạo đức sinh học khi can thiệp công nghệ chỉnh sửa gen và AI trong phối giống vật nuôi.",
         notes: ""
       },
       {
@@ -1621,9 +1621,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Trình bày và thực hiện được các kĩ năng tiến trình nghiên cứu môn KHTN 8: quan sát, dự đoán giả thuyết khoa học, lập kế hoạch thực nghiệm, đo đạc xử lý số liệu.\n- Sử dụng thành thạo và an toàn các dụng cụ thí nghiệm hóa chất (ống nghiệm, ống hút nhỏ giọt, đèn cồn, nhiệt kế, cân tiểu ly).",
         equipment: "Bộ dụng cụ thí nghiệm cơ bản: ống nghiệm, kẹp gỗ, giá để ống nghiệm, ống đong, pipet, đèn cồn",
         location: "Phòng thực hành KHTN",
-        nlsCode: "1.1.TC2a",
+        nlsCode: "1.1.TC2d",
         aiCode: "8.A1.1",
-        dc: "• [Mã NLS: 1.1.TC2a] Xây dựng chiến lược tìm kiếm thông tin khoa học nâng cao từ các cơ sở dữ liệu số uy tín.\n• [Mã AI: 8.A1.1] Khám phá cách AI hỗ trợ các nhà khoa học phân tích xu hướng dữ liệu lớn (Big Data) trong nghiên cứu thực nghiệm.",
+        dc: "• [Mã NLS: 1.1.TC2d] Xây dựng chiến lược tìm kiếm thông tin khoa học nâng cao từ các cơ sở dữ liệu số uy tín.\n• [Mã AI: 8.A1.1] Khám phá cách AI hỗ trợ các nhà khoa học phân tích xu hướng dữ liệu lớn (Big Data) trong nghiên cứu thực nghiệm.",
         notes: ""
       },
       {
@@ -1647,9 +1647,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được định nghĩa mol (lượng chất chứa N = 6,022.10^23 hạt vi mô); nêu được khái niệm khối lượng mol (M, g/mol) và thể tích mol của chất khí ở điều kiện chuẩn (24,79 L ở 25°C, 1 bar).\n- Vận dụng các công thức n = m/M, V = n.24,79 và tính tỉ khối của chất khí A đối với chất khí B (dA/B = MA/MB); giải thích vì sao bóng bay bơm khí H2 bay được trong không khí.",
         equipment: "Bảng số Avogadro, bảng khối lượng mol các chất thông dụng, cân điện tử, bóng bay",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "3.1.TC2a",
+        nlsCode: "3.2.TC2a",
         aiCode: "8.C2.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Lập bảng tính Excel với các hàm tự động chuyển đổi qua lại giữa số mol, khối lượng (m) và thể tích khí (V).\n• [Mã AI: 8.C2.1] Sử dụng công cụ AI Wolfram Alpha để kiểm tra giải các bài toán tỉ khối và tính toán hóa học phức tạp.",
+        dc: "• [Mã NLS: 3.2.TC2a] Lập bảng tính Excel với các hàm tự động chuyển đổi qua lại giữa số mol, khối lượng (m) và thể tích khí (V).\n• [Mã AI: 8.C2.1] Sử dụng công cụ AI Wolfram Alpha để kiểm tra giải các bài toán tỉ khối và tính toán hóa học phức tạp.",
         notes: ""
       },
       {
@@ -1686,9 +1686,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Thực hiện thành thạo các bước tính theo phương trình hóa học: tính số mol chất đã biết -> lập tỉ lệ tìm số mol chất cần tìm -> tính khối lượng hoặc thể tích chất tham gia/sản phẩm.\n- Nêu được khái niệm hiệu suất phản ứng (H%) và tính được hiệu suất phản ứng theo lượng chất lý thuyết và thực tế.",
         equipment: "Bảng quy trình các bước tính toán hóa học, phiếu bài tập rèn luyện kỹ năng tính toán mol - phương trình",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "2.4.TC2a",
+        nlsCode: "2.1.TC2b",
         aiCode: "8.C2.1",
-        dc: "• [Mã NLS: 2.4.TC2a] Phối hợp nhóm xây dựng tài liệu chia sẻ trực tuyến về các dạng bài toán tính theo phương trình hóa học.\n• [Mã AI: 8.C2.1] Sử dụng AI để tạo đề bài luyện tập tính hiệu suất phản ứng với các mức độ phân hóa khác nhau.",
+        dc: "• [Mã NLS: 2.1.TC2b] Phối hợp nhóm xây dựng tài liệu chia sẻ trực tuyến về các dạng bài toán tính theo phương trình hóa học.\n• [Mã AI: 8.C2.1] Sử dụng AI để tạo đề bài luyện tập tính hiệu suất phản ứng với các mức độ phân hóa khác nhau.",
         notes: ""
       },
       {
@@ -1699,9 +1699,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được khái niệm tốc độ phản ứng (đại lượng đặc trưng cho phản ứng diễn ra nhanh hay chậm).\n- Phân tích được các yếu tố ảnh hưởng đến tốc độ phản ứng: nồng độ, nhiệt độ, diện tích tiếp xúc, áp suất và vai trò của chất xúc tác; giải thích các ứng dụng thực tế (bảo quản trong tủ lạnh, đập nhỏ than khi đun nấu).",
         equipment: "Dung dịch HCl các nồng độ khác nhau, đá vôi hạt nhỏ và đá vôi tảng, dung dịch H2O2, bột MnO2 (chất xúc tác), đèn cồn",
         location: "Phòng thực hành KHTN",
-        nlsCode: "3.1.TC2a",
+        nlsCode: "3.2.TC2a",
         aiCode: "8.D1.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Sử dụng cảm biến đo áp suất khí thu thập số liệu tốc độ thoát khí CO2 theo thời gian vẽ đồ thị thực nghiệm.\n• [Mã AI: 8.D1.1] Khám phá cách các mô hình AI tính toán cấu trúc vật liệu nano để chế tạo chất xúc tác hiệu năng cao.",
+        dc: "• [Mã NLS: 3.2.TC2a] Sử dụng cảm biến đo áp suất khí thu thập số liệu tốc độ thoát khí CO2 theo thời gian vẽ đồ thị thực nghiệm.\n• [Mã AI: 8.D1.1] Khám phá cách các mô hình AI tính toán cấu trúc vật liệu nano để chế tạo chất xúc tác hiệu năng cao.",
         notes: ""
       },
       {
@@ -1712,9 +1712,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được khái niệm acid (phân tử gồm 1 hay nhiều nguyên tử H liên kết với gốc acid); kể tên được một số acid thông dụng (HCl, H2SO4, CH3COOH).\n- Trình bày được tính chất hóa học chung của acid: làm đổi màu quỳ tím thành đỏ, tác dụng với kim loại (trước H) giải phóng H2; nêu quy tắc an toàn khi pha loãng H2SO4 đặc.",
         equipment: "Dung dịch HCl, H2SO4 loãng, giấy quỳ tím, đinh sắt, viên kẽm, ống nghiệm, kẹp ống nghiệm",
         location: "Phòng thực hành KHTN",
-        nlsCode: "4.1.TC2a",
+        nlsCode: "4.4.TC2a",
         aiCode: "8.A1.1",
-        dc: "• [Mã NLS: 4.1.TC2a] Tra cứu phiếu an toàn hóa chất (MSDS - Material Safety Data Sheet) của acid sunfuric trên cổng thông tin số.\n• [Mã AI: 8.A1.1] Thảo luận về việc ứng dụng robot AI xử lý sự cố tràn đổ acid độc hại trong các khu công nghiệp.",
+        dc: "• [Mã NLS: 4.4.TC2a] Tra cứu phiếu an toàn hóa chất (MSDS - Material Safety Data Sheet) của acid sunfuric trên cổng thông tin số.\n• [Mã AI: 8.A1.1] Thảo luận về việc ứng dụng robot AI xử lý sự cố tràn đổ acid độc hại trong các khu công nghiệp.",
         notes: ""
       },
       {
@@ -1725,9 +1725,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được khái niệm base (nguyên tử kim loại liên kết với một hay nhiều nhóm hydroxide -OH); phân biệt được base tan (kiềm: NaOH, KOH, Ba(OH)2, Ca(OH)2) và base không tan (Cu(OH)2, Fe(OH)3).\n- Trình bày tính chất hóa học của base; nêu ý nghĩa của thang pH (0-14); sử dụng giấy chỉ thị màu và bút đo pH để đo pH dung dịch đất, nước sinh hoạt.",
         equipment: "Dung dịch NaOH, Ca(OH)2, Cu(OH)2 kết tủa, giấy chỉ thị vạn năng pH, bút đo pH điện tử, mẫu nước máy, nước mưa, nước chanh",
         location: "Phòng thực hành KHTN",
-        nlsCode: "2.1.TC2a",
+        nlsCode: "2.1.TC2b",
         aiCode: "8.C2.1",
-        dc: "• [Mã NLS: 2.1.TC2a] Sử dụng bút đo pH kỹ thuật số ghi nhận giá trị pH chính xác của các mẫu nước tại địa phương.\n• [Mã AI: 8.C2.1] Khám phá hệ thống AI phân tích độ pH của đất canh tác từ ảnh chụp quang phổ vệ tinh để đề xuất lượng vôi khử chua.",
+        dc: "• [Mã NLS: 2.1.TC2b] Sử dụng bút đo pH kỹ thuật số ghi nhận giá trị pH chính xác của các mẫu nước tại địa phương.\n• [Mã AI: 8.C2.1] Khám phá hệ thống AI phân tích độ pH của đất canh tác từ ảnh chụp quang phổ vệ tinh để đề xuất lượng vôi khử chua.",
         notes: ""
       },
       {
@@ -1738,9 +1738,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được khái niệm oxide (hợp chất của 2 nguyên tố, trong đó có một nguyên tố là oxygen).\n- Phân loại được các oxide: oxide base (Na2O, CaO, BaO...), oxide acid (CO2, SO2, P2O5...), oxide lưỡng tính (Al2O3, ZnO) và oxide trung tính (CO, NO); viết phương trình hóa học minh họa tính chất của oxide.",
         equipment: "Mẫu vôi sống CaO, muỗng sắt đốt phosphorus đỏ trong bình oxygen, nước cất, quỳ tím",
         location: "Phòng thực hành KHTN",
-        nlsCode: "1.2.TC2a",
+        nlsCode: "1.1.TC2b",
         aiCode: "8.C1.1",
-        dc: "• [Mã NLS: 1.2.TC2a] Truy cập kho bài giảng số tương tác để ôn tập và phân loại các hợp chất oxide theo tính chất hóa học.\n• [Mã AI: 8.C1.1] Khám phá cách các mô hình AI mô phỏng hiện tượng hiệu ứng nhà kính do oxide acid CO2 và SO2 gây ra.",
+        dc: "• [Mã NLS: 1.1.TC2b] Truy cập kho bài giảng số tương tác để ôn tập và phân loại các hợp chất oxide theo tính chất hóa học.\n• [Mã AI: 8.C1.1] Khám phá cách các mô hình AI mô phỏng hiện tượng hiệu ứng nhà kính do oxide acid CO2 và SO2 gây ra.",
         notes: ""
       },
       {
@@ -1751,9 +1751,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được khái niệm muối (hợp chất gồm cation kim loại hoặc NH4+ liên kết với anion gốc acid); kể tên và viết CTHH một số muối thường gặp (NaCl, CaCO3, CuSO4, KNO3).\n- Trình bày được các tính chất hóa học của muối (tác dụng với kim loại, acid, base, muối khác); tra cứu bảng tính tan để dự đoán điều kiện xảy ra phản ứng trao đổi trong dung dịch.",
         equipment: "Bảng tính tan trong nước của các acid - base - muối, dung dịch AgNO3, NaCl, CuSO4, NaOH, BaCl2, Na2SO4",
         location: "Phòng thực hành KHTN",
-        nlsCode: "3.1.TC2a",
+        nlsCode: "3.2.TC2a",
         aiCode: "8.A3.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Khai thác phần mềm tra cứu tính tan và phương trình ion rút gọn trên điện thoại thông minh.\n• [Mã AI: 8.A3.1] Sử dụng chatbot AI giải thích cơ chế trao đổi ion trong dung dịch và kiểm chứng lại bằng thực nghiệm phòng thí nghiệm.",
+        dc: "• [Mã NLS: 3.2.TC2a] Khai thác phần mềm tra cứu tính tan và phương trình ion rút gọn trên điện thoại thông minh.\n• [Mã AI: 8.A3.1] Sử dụng chatbot AI giải thích cơ chế trao đổi ion trong dung dịch và kiểm chứng lại bằng thực nghiệm phòng thí nghiệm.",
         notes: ""
       },
       {
@@ -1790,9 +1790,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Đánh giá mức độ đạt chuẩn kiến thức, kĩ năng môn KHTN 8 từ Tuần 1 đến Tuần 8 theo ma trận đề chuẩn Bộ GD&ĐT (thời gian làm bài 90 phút).\n- Đánh giá năng lực tìm hiểu tự nhiên, tư duy thực nghiệm khoa học và tính trung thực trong kiểm tra.",
         equipment: "Đề kiểm tra giữa kỳ 1 chuẩn ma trận, bảng đặc tả và hướng dẫn chấm",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC2a",
+        nlsCode: "4.1.TC2c",
         aiCode: "8.A3.3",
-        dc: "• [Mã NLS: 4.1.TC2a] Thực hiện bài kiểm tra nghiêm túc, tuân thủ quy chế an toàn số và bảo mật thông tin phòng thi.\n• [Mã AI: 8.A3.3] Tìm hiểu hệ thống chấm thi tự động và phân tích phổ điểm kiểm tra bằng AI.",
+        dc: "• [Mã NLS: 4.1.TC2c] Thực hiện bài kiểm tra nghiêm túc, tuân thủ quy chế an toàn số và bảo mật thông tin phòng thi.\n• [Mã AI: 8.A3.3] Tìm hiểu hệ thống chấm thi tự động và phân tích phổ điểm kiểm tra bằng AI.",
         notes: "Kiểm tra giữa kỳ"
       },
       {
@@ -1803,9 +1803,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được định nghĩa khối lượng riêng của một chất là khối lượng của một đơn vị thể tích chất đó: D = m/V; đơn vị chuẩn là kg/m3 hoặc g/cm3.\n- Giải thích được ý nghĩa số liệu khối lượng riêng của các chất trong bảng tra cứu; vận dụng công thức tính m, V khi biết D.",
         equipment: "Cân điện tử, các khối kim loại đồng, sắt, nhôm có cùng thể tích, bảng khối lượng riêng của các chất",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "1.1.TC2a",
+        nlsCode: "1.2.TC2b",
         aiCode: "8.C2.1",
-        dc: "• [Mã NLS: 1.1.TC2a] Tìm kiếm bảng tra cứu khối lượng riêng của các vật liệu hợp kim công nghiệp trên cổng dữ liệu kỹ thuật.\n• [Mã AI: 8.C2.1] Khám phá cách thuật toán AI tự động tính toán tỷ trọng và độ bền vật liệu trong thiết kế kỹ thuật cơ khí.",
+        dc: "• [Mã NLS: 1.2.TC2b] Tìm kiếm bảng tra cứu khối lượng riêng của các vật liệu hợp kim công nghiệp trên cổng dữ liệu kỹ thuật.\n• [Mã AI: 8.C2.1] Khám phá cách thuật toán AI tự động tính toán tỷ trọng và độ bền vật liệu trong thiết kế kỹ thuật cơ khí.",
         notes: ""
       },
       {
@@ -1816,9 +1816,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Thực hành xác định được khối lượng riêng của một vật rắn có hình dạng hình học đối xứng (đo kích thước bằng thước) và vật rắn có hình dạng bất kì không thấm nước (bằng bình chia độ).\n- Xử lý được sai số phép đo và viết báo cáo thực hành khoa học đúng quy chuẩn.",
         equipment: "Cân điện tử, ống đong (bình chia độ) 100ml, hòn sỏi nhỏ, khối kim loại hình hộp chữ nhật, chỉ buộc",
         location: "Phòng thực hành KHTN",
-        nlsCode: "3.1.TC2a",
+        nlsCode: "3.2.TC2a",
         aiCode: "8.A1.MR1",
-        dc: "• [Mã NLS: 3.1.TC2a] Nhập kết quả đo vào bảng tính Google Sheets để tự động tính thể tích dịch chuyển và khối lượng riêng.\n• [Mã AI: 8.A1.MR1] Đánh giá sai số phép đo thực nghiệm dưới sự gợi ý phân tích nguyên nhân từ trợ lý AI.",
+        dc: "• [Mã NLS: 3.2.TC2a] Nhập kết quả đo vào bảng tính Google Sheets để tự động tính thể tích dịch chuyển và khối lượng riêng.\n• [Mã AI: 8.A1.MR1] Đánh giá sai số phép đo thực nghiệm dưới sự gợi ý phân tích nguyên nhân từ trợ lý AI.",
         notes: ""
       },
       {
@@ -1829,9 +1829,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được định nghĩa áp lực (lực ép vuông góc với mặt bị ép) và áp suất (áp lực trên một đơn vị diện tích bị ép): p = F/S; đơn vị là paxcan (1 Pa = 1 N/m2).\n- Giải thích được tác dụng của việc tăng, giảm diện tích tiếp xúc trong thực tế (lưỡi dao sắc mài mỏng, xe xích đi trên cát bùn, đệm nằm êm).",
         equipment: "Khay đựng cát mịn hoặc xốp, các khối kim loại hình hộp chữ nhật có các mặt diện tích khác nhau",
         location: "Phòng thực hành KHTN",
-        nlsCode: "2.1.TC2a",
+        nlsCode: "2.5.TC2b",
         aiCode: "8.C1.1",
-        dc: "• [Mã NLS: 2.1.TC2a] Sử dụng phần mềm mô phỏng áp suất của PhET Colorado khảo sát mối liên hệ giữa lực ép và diện tích.\n• [Mã AI: 8.C1.1] Tìm hiểu cách cảm biến áp suất thông minh AI trong đệm ngủ y tế tự động điều chỉnh hơi giảm loét cho bệnh nhân.",
+        dc: "• [Mã NLS: 2.5.TC2b] Sử dụng phần mềm mô phỏng áp suất của PhET Colorado khảo sát mối liên hệ giữa lực ép và diện tích.\n• [Mã AI: 8.C1.1] Tìm hiểu cách cảm biến áp suất thông minh AI trong đệm ngủ y tế tự động điều chỉnh hơi giảm loét cho bệnh nhân.",
         notes: ""
       },
       {
@@ -1842,9 +1842,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Trình bày được chất lỏng gây áp suất theo mọi phương lên đáy bình, thành bình và các vật trong lòng nó; công thức tính áp suất chất lỏng p = d.h.\n- Chứng minh được sự tồn tại của áp suất khí quyển; giải thích được nguyên lý bình thông nhau, máy nén thủy lực và hiện tượng giác hơi, ống hút cắm vào hộp sữa.",
         equipment: "Bình hình trụ có màng cao su ở đáy và thành, thiết bị bình thông nhau, áp kế chữ U, cốc thủy tinh, tấm bìa cứng không thấm nước",
         location: "Phòng thực hành KHTN",
-        nlsCode: "1.2.TC2a",
+        nlsCode: "1.2.TC2b",
         aiCode: "8.C2.1",
-        dc: "• [Mã NLS: 1.2.TC2a] Tra cứu số liệu áp suất khí quyển đo được ở các độ cao khác nhau trên trang khí tượng trực tuyến.\n• [Mã AI: 8.C2.1] Khám phá mô hình AI dự báo thời tiết dựa trên sự thay đổi áp suất khí quyển và hoàn lưu gió bão.",
+        dc: "• [Mã NLS: 1.2.TC2b] Tra cứu số liệu áp suất khí quyển đo được ở các độ cao khác nhau trên trang khí tượng trực tuyến.\n• [Mã AI: 8.C2.1] Khám phá mô hình AI dự báo thời tiết dựa trên sự thay đổi áp suất khí quyển và hoàn lưu gió bão.",
         notes: ""
       },
       {
@@ -1881,9 +1881,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nhận biết được 3 điểm đặc trưng của đòn bẩy: điểm tựa (O), điểm đặt của lực tác dụng (O1) và điểm đặt của lực cản (O2); phân biệt đòn bẩy loại 1, loại 2, loại 3.\n- Giải thích được nguyên lý hoạt động của các dụng cụ đòn bẩy trong đời sống (kéo cắt giấy, kìm nhổ đinh, bập bênh, xe cút kít, xà beng); nêu các ứng dụng lợi về lực.",
         equipment: "Mô hình đòn bẩy thí nghiệm có vạch chia, bộ quả cân, kéo cắt kim loại, kéo cắt giấy, kìm búa nhổ đinh",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "2.4.TC2a",
+        nlsCode: "2.5.TC2b",
         aiCode: "8.D1.1",
-        dc: "• [Mã NLS: 2.4.TC2a] Phối hợp nhóm thiết kế bài thuyết trình đa phương tiện về các loại đòn bẩy trong cơ thể người (khớp khuỷu tay, cổ chân).\n• [Mã AI: 8.D1.1] Tìm hiểu các bộ xương ngoài trợ lực (Exoskeleton) ứng dụng AI điều khiển đòn bẩy hỗ trợ người lao động vác nặng.",
+        dc: "• [Mã NLS: 2.5.TC2b] Phối hợp nhóm thiết kế bài thuyết trình đa phương tiện về các loại đòn bẩy trong cơ thể người (khớp khuỷu tay, cổ chân).\n• [Mã AI: 8.D1.1] Tìm hiểu các bộ xương ngoài trợ lực (Exoskeleton) ứng dụng AI điều khiển đòn bẩy hỗ trợ người lao động vác nặng.",
         notes: ""
       },
       {
@@ -1907,9 +1907,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được dòng điện là dòng các điện tích dịch chuyển có hướng; phân biệt được vật liệu dẫn điện (kim loại, nước muối) và vật liệu cách điện (nhựa, cao su, thủy tinh, gỗ khô).\n- Nêu được vai trò của nguồn điện là tạo ra và duy trì dòng điện; nhận biết hai cực (+ và -) của các nguồn điện thông dụng (pin tiểu, pin nút, ắc quy).",
         equipment: "Mạch thử tính dẫn điện: nguồn pin 3V, bóng đèn LED, dây dẫn, các mẫu vật liệu dẫn điện và cách điện",
         location: "Phòng thực hành KHTN",
-        nlsCode: "1.1.TC2a",
+        nlsCode: "1.1.TC2c",
         aiCode: "8.A1.1",
-        dc: "• [Mã NLS: 1.1.TC2a] Tìm kiếm và lưu trữ thông tin về các công nghệ pin hiện đại (pin Lithium-ion, pin thể rắn) trên không gian số.\n• [Mã AI: 8.A1.1] Đặt câu hỏi cho AI so sánh hiệu suất và tuổi thọ giữa pin hóa học truyền thống và ắc quy điện thông minh.",
+        dc: "• [Mã NLS: 1.1.TC2c] Tìm kiếm và lưu trữ thông tin về các công nghệ pin hiện đại (pin Lithium-ion, pin thể rắn) trên không gian số.\n• [Mã AI: 8.A1.1] Đặt câu hỏi cho AI so sánh hiệu suất và tuổi thọ giữa pin hóa học truyền thống và ắc quy điện thông minh.",
         notes: ""
       },
       {
@@ -1920,9 +1920,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Hệ thống hóa toàn diện chuẩn kiến thức, kĩ năng môn KHTN 8 trong toàn bộ Học kỳ 1; rèn luyện kĩ năng phân tích đồ thị, phương trình và xử lý số liệu thí nghiệm.",
         equipment: "Đề cương ôn tập HK1, bảng hệ thống kiến thức toàn diện",
         location: "Phòng học / Lớp học",
-        nlsCode: "3.1.TC2a",
+        nlsCode: "3.2.TC2a",
         aiCode: "8.A1.3",
-        dc: "• [Mã NLS: 3.1.TC2a] Lập sơ đồ tư duy số tổng kết toàn bộ kiến thức Học kỳ 1 trên phần mềm sơ đồ tư duy.\n• [Mã AI: 8.A1.3] Sử dụng AI để tạo đề thi thử trắc nghiệm có giải thích chi tiết giúp ôn tập hiệu quả.",
+        dc: "• [Mã NLS: 3.2.TC2a] Lập sơ đồ tư duy số tổng kết toàn bộ kiến thức Học kỳ 1 trên phần mềm sơ đồ tư duy.\n• [Mã AI: 8.A1.3] Sử dụng AI để tạo đề thi thử trắc nghiệm có giải thích chi tiết giúp ôn tập hiệu quả.",
         notes: "Ôn tập cuối kỳ 1"
       },
       {
@@ -1946,9 +1946,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nhận xét, chữa bài kiểm tra cuối HK1 chi tiết; giải thích cặn kẽ các câu hỏi khó và sửa chữa các lỗi sai thường gặp.\n- Củng cố hệ thống kiến thức và kĩ năng thực hành môn KHTN 8 trong toàn bộ Học kỳ 1.",
         equipment: "Bài làm học sinh, đáp án và bảng biểu điểm sửa sai",
         location: "Phòng học / Lớp học",
-        nlsCode: "5.2.TC2a",
+        nlsCode: "5.2.TC2b",
         aiCode: "8.A1.3",
-        dc: "• [Mã NLS: 5.2.TC2a] Nhập và đối chiếu kết quả bài làm trên hệ thống học liệu số để tự đánh giá năng lực.\n• [Mã AI: 8.A1.3] Sử dụng AI gợi ý các dạng bài tập tương tự để khắc phục các phần kiến thức còn yếu.",
+        dc: "• [Mã NLS: 5.2.TC2b] Nhập và đối chiếu kết quả bài làm trên hệ thống học liệu số để tự đánh giá năng lực.\n• [Mã AI: 8.A1.3] Sử dụng AI gợi ý các dạng bài tập tương tự để khắc phục các phần kiến thức còn yếu.",
         notes: "Chữa bài kiểm tra & Ôn tập"
       },
       {
@@ -1959,9 +1959,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Sơ kết thi đua kết quả học tập môn KHTN 8 Học kỳ 1; trưng bày, báo cáo các sản phẩm thực hành/chuyên đề khoa học của học sinh.\n- Rèn luyện kĩ năng làm việc nhóm, thuyết trình khoa học và định hướng nhiệm vụ học tập Học kỳ 2.",
         equipment: "Sản phẩm tập san, video clip thực hành, slide báo cáo chuyên đề của học sinh, máy chiếu",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "2.4.TC2b",
+        nlsCode: "2.4.TC2a",
         aiCode: "8.D1.1",
-        dc: "• [Mã NLS: 2.4.TC2b] Trình chiếu báo cáo số đa phương tiện tổng kết hoạt động học tập nhóm trong HK1.\n• [Mã AI: 8.D1.1] Khám phá ứng dụng AI hỗ trợ thiết kế slide báo cáo và tổng kết dữ liệu học tập trực quan.",
+        dc: "• [Mã NLS: 2.4.TC2a] Trình chiếu báo cáo số đa phương tiện tổng kết hoạt động học tập nhóm trong HK1.\n• [Mã AI: 8.D1.1] Khám phá ứng dụng AI hỗ trợ thiết kế slide báo cáo và tổng kết dữ liệu học tập trực quan.",
         notes: "Sơ kết Học kỳ 1"
       },
       {
@@ -1972,9 +1972,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nhận biết được các kí hiệu của các bộ phận mạch điện trên sơ đồ (nguồn điện, bóng đèn, công tắc mở/đóng, điện trở, dây dẫn).\n- Vẽ được sơ đồ mạch điện đơn giản và mắc được mạch điện kín theo đúng sơ đồ đã vẽ; phát hiện và sửa chữa các sự cố hở mạch, ngắn mạch đơn giản.",
         equipment: "Bộ lắp ráp mạch điện: đế pin 2 pin AA, bóng đèn đui xoáy 2.5V, công tắc gạt, dây nối có chốt cắm",
         location: "Phòng thực hành KHTN",
-        nlsCode: "3.1.TC2a",
+        nlsCode: "3.2.TC2a",
         aiCode: "8.C1.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Thiết kế và kiểm thử mạch điện ảo trên trang web Tinkercad Circuits trước khi lắp ráp trên thiết bị thật.\n• [Mã AI: 8.C1.1] Khám phá phần mềm AI tự động rà soát lỗi ngắn mạch và tối ưu hóa đường đi dây trên bo mạch in điện tử (PCB).",
+        dc: "• [Mã NLS: 3.2.TC2a] Thiết kế và kiểm thử mạch điện ảo trên trang web Tinkercad Circuits trước khi lắp ráp trên thiết bị thật.\n• [Mã AI: 8.C1.1] Khám phá phần mềm AI tự động rà soát lỗi ngắn mạch và tối ưu hóa đường đi dây trên bo mạch in điện tử (PCB).",
         notes: ""
       },
       {
@@ -1985,9 +1985,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu và lấy được ví dụ thực tế về 5 tác dụng chính của dòng điện: tác dụng nhiệt (bàn là, nồi cơm), tác dụng phát sáng (bóng đèn), tác dụng từ (nam châm điện, quạt), tác dụng hóa học (mạ điện), tác dụng sinh lý (châm cứu, giật điện).\n- Nắm vững các quy tắc an toàn khi sử dụng điện gia đình để phòng tránh tai nạn điện giật và hỏa hoạn.",
         equipment: "Dây mayso đốt nóng, chuông điện, bóng đèn LED, bình điện phân mạ đồng dung dịch CuSO4",
         location: "Phòng thực hành KHTN",
-        nlsCode: "4.1.TC2a",
+        nlsCode: "4.3.TC2b",
         aiCode: "8.A3.1",
-        dc: "• [Mã NLS: 4.1.TC2a] Tra cứu các hướng dẫn an toàn phòng chống chập cháy điện trên cổng thông tin Cục Phòng cháy chữa cháy.\n• [Mã AI: 8.A3.1] Tìm hiểu hệ thống Aptomat thông minh tích hợp AI tự động ngắt điện khi phát hiện rò rỉ điện hoặc quá tải.",
+        dc: "• [Mã NLS: 4.3.TC2b] Tra cứu các hướng dẫn an toàn phòng chống chập cháy điện trên cổng thông tin Cục Phòng cháy chữa cháy.\n• [Mã AI: 8.A3.1] Tìm hiểu hệ thống Aptomat thông minh tích hợp AI tự động ngắt điện khi phát hiện rò rỉ điện hoặc quá tải.",
         notes: ""
       },
       {
@@ -1998,9 +1998,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được khái niệm cường độ dòng điện đặc trưng cho tác dụng mạnh hay yếu của dòng điện (kí hiệu I, đơn vị ampe A); nêu khái niệm hiệu điện thế giữa hai cực của nguồn điện (kí hiệu U, đơn vị vôn V).\n- Nhận biết ampe kế và vôn kế; nêu quy tắc mắc ampe kế nối tiếp và vôn kế song song vào mạch điện.",
         equipment: "Ampe kế một chiều, vôn kế một chiều, nguồn pin, biến trở, bóng đèn, dây nối",
         location: "Phòng thực hành KHTN",
-        nlsCode: "2.1.TC2a",
+        nlsCode: "2.2.TC2c",
         aiCode: "8.C2.1",
-        dc: "• [Mã NLS: 2.1.TC2a] Sử dụng đồng hồ vạn năng hiện số (DMM) đo chính xác điện áp và dòng điện trên bảng mạch thực hành.\n• [Mã AI: 8.C2.1] Khám phá cách thuật toán AI trong xe ô tô điện Tesla giám sát liên tục điện áp và dòng nạp từng cell pin.",
+        dc: "• [Mã NLS: 2.2.TC2c] Sử dụng đồng hồ vạn năng hiện số (DMM) đo chính xác điện áp và dòng điện trên bảng mạch thực hành.\n• [Mã AI: 8.C2.1] Khám phá cách thuật toán AI trong xe ô tô điện Tesla giám sát liên tục điện áp và dòng nạp từng cell pin.",
         notes: ""
       },
       {
@@ -2011,9 +2011,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Thực hành mắc được mạch điện gồm nguồn pin, công tắc, bóng đèn, ampe kế và vôn kế đúng cực tính.\n- Đo và đọc đúng giá trị cường độ dòng điện chạy qua bóng đèn và hiệu điện thế giữa hai đầu bóng đèn; hoàn thành báo cáo thực hành.",
         equipment: "Bảng lắp mạch, nguồn pin 3V-6V, bóng đèn LED/sợi đốt, đồng hồ vạn năng hiện số hoặc ampe kế/vôn kế kim, dây cắm",
         location: "Phòng thực hành KHTN",
-        nlsCode: "3.1.TC2a",
+        nlsCode: "3.2.TC2a",
         aiCode: "8.A1.MR1",
-        dc: "• [Mã NLS: 3.1.TC2a] Nhập kết quả đo đạc I và U vào biểu mẫu Google Forms báo cáo số của lớp.\n• [Mã AI: 8.A1.MR1] Đối chiếu kết quả đo thực nghiệm với định luật Ohm bằng công cụ AI để phát hiện sai sót trong thao tác mắc mạch.",
+        dc: "• [Mã NLS: 3.2.TC2a] Nhập kết quả đo đạc I và U vào biểu mẫu Google Forms báo cáo số của lớp.\n• [Mã AI: 8.A1.MR1] Đối chiếu kết quả đo thực nghiệm với định luật Ohm bằng công cụ AI để phát hiện sai sót trong thao tác mắc mạch.",
         notes: ""
       },
       {
@@ -2024,9 +2024,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được các nguyên tử, phân tử cấu tạo nên vật chuyển động không ngừng; nhiệt năng của một vật là tổng động năng của các phân tử cấu tạo nên vật.\n- Nêu được mối liên hệ giữa nhiệt độ và chuyển động phân tử (nhiệt độ càng cao, các phân tử chuyển động càng nhanh, nhiệt năng càng lớn); phân biệt nhiệt năng và nhiệt lượng.",
         equipment: "Hai cốc nước (một cốc nước lạnh, một cốc nước nóng), phẩm màu, ống nhỏ giọt",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "1.2.TC2a",
+        nlsCode: "1.1.TC2b",
         aiCode: "8.C1.1",
-        dc: "• [Mã NLS: 1.2.TC2a] Xem video mô phỏng chuyển động Brown của các phân tử ở các mức nhiệt độ khác nhau.\n• [Mã AI: 8.C1.1] Khám phá mô phỏng động lực học phân tử (Molecular Dynamics) ứng dụng AI trong nghiên cứu vật liệu mới.",
+        dc: "• [Mã NLS: 1.1.TC2b] Xem video mô phỏng chuyển động Brown của các phân tử ở các mức nhiệt độ khác nhau.\n• [Mã AI: 8.C1.1] Khám phá mô phỏng động lực học phân tử (Molecular Dynamics) ứng dụng AI trong nghiên cứu vật liệu mới.",
         notes: ""
       },
       {
@@ -2076,9 +2076,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được cấu tạo chung của cơ thể người gồm 3 phần: đầu, thân, các chi; kể tên được các hệ cơ quan chính (vận động, tuần hoàn, hô hấp, tiêu hóa, bài tiết, thần kinh, nội tiết, sinh sản).\n- Trình bày được mối quan hệ phối hợp nhịp nhàng giữa các hệ cơ quan dưới sự điều hòa của hệ thần kinh và hệ nội tiết.",
         equipment: "Mô hình tháo lắp cơ thể người tỉ lệ 1:1, tranh toàn cảnh các hệ cơ quan",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "1.1.TC2a",
+        nlsCode: "1.2.TC2b",
         aiCode: "8.C2.1",
-        dc: "• [Mã NLS: 1.1.TC2a] Khám phá ứng dụng giải phẫu học 3D Complete Anatomy trên máy tính bảng tương tác.\n• [Mã AI: 8.C2.1] Khám phá mô hình \"Bản sao kỹ thuật số\" (Digital Twin) của cơ thể người được cá nhân hóa bằng AI trong y học.",
+        dc: "• [Mã NLS: 1.2.TC2b] Khám phá ứng dụng giải phẫu học 3D Complete Anatomy trên máy tính bảng tương tác.\n• [Mã AI: 8.C2.1] Khám phá mô hình \"Bản sao kỹ thuật số\" (Digital Twin) của cơ thể người được cá nhân hóa bằng AI trong y học.",
         notes: ""
       },
       {
@@ -2089,9 +2089,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Mô tả được cấu tạo và chức năng của bộ xương (xương đầu, xương thân, xương chi; các khớp xương: khớp động, bán động, bất động) và hệ cơ.\n- Phân tích được nguyên nhân gây cong vẹo cột sống, loãng xương; thực hiện được các thao tác sơ cứu gãy xương cẳng tay và băng bó cố định.",
         equipment: "Mô hình bộ xương người, nẹp y tế sơ cứu, băng cuộn gạc, tranh tư thế ngồi học đúng quy cách",
         location: "Phòng thực hành KHTN",
-        nlsCode: "3.1.TC2a",
+        nlsCode: "3.2.TC2a",
         aiCode: "8.D1.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Quay video hướng dẫn thực hành sơ cứu băng nẹp cố định gãy xương cẳng tay chia sẻ trong nhóm học tập.\n• [Mã AI: 8.D1.1] Khám phá camera AI phát hiện sai tư thế ngồi học thời gian thực và phát âm thanh cảnh báo gù lưng.",
+        dc: "• [Mã NLS: 3.2.TC2a] Quay video hướng dẫn thực hành sơ cứu băng nẹp cố định gãy xương cẳng tay chia sẻ trong nhóm học tập.\n• [Mã AI: 8.D1.1] Khám phá camera AI phát hiện sai tư thế ngồi học thời gian thực và phát âm thanh cảnh báo gù lưng.",
         notes: ""
       },
       {
@@ -2115,9 +2115,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được các thành phần của máu (huyết tương, hồng cầu, bạch cầu, tiểu cầu); phân biệt được 4 nhóm máu hệ ABO (A, B, AB, O) và nguyên tắc truyền máu an toàn.\n- Mô tả cấu tạo tim và hệ mạch (động mạch, mao mạch, tĩnh mạch); đo được huyết áp và nhịp tim; thực hành sơ cứu cầm máu khi bị thương đứt mạch máu.",
         equipment: "Huyết áp kế điện tử, ống nghe y tế, bông băng y tế, mô hình tim người tháo lắp 4 ngăn, tranh sơ đồ truyền máu",
         location: "Phòng thực hành KHTN",
-        nlsCode: "2.1.TC2a",
+        nlsCode: "2.1.TC2b",
         aiCode: "8.A1.MR1",
-        dc: "• [Mã NLS: 2.1.TC2a] Sử dụng máy đo huyết áp điện tử ghi nhận và theo dõi các chỉ số huyết áp tâm thu/tâm trương trên ứng dụng sức khỏe.\n• [Mã AI: 8.A1.MR1] Tìm hiểu cách AI phân tích biểu đồ điện tâm đồ (ECG) phát hiện sớm rối loạn nhịp tim.",
+        dc: "• [Mã NLS: 2.1.TC2b] Sử dụng máy đo huyết áp điện tử ghi nhận và theo dõi các chỉ số huyết áp tâm thu/tâm trương trên ứng dụng sức khỏe.\n• [Mã AI: 8.A1.MR1] Tìm hiểu cách AI phân tích biểu đồ điện tâm đồ (ECG) phát hiện sớm rối loạn nhịp tim.",
         notes: ""
       },
       {
@@ -2128,9 +2128,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Mô tả được cấu tạo của đường dẫn khí (mũi, họng, thanh quản, khí quản, phế quản) và hai lá phổi (các phế nang); trình bày được cơ chế thông khí ở phổi (hít vào - thở ra).\n- Nêu được tác hại của khói thuốc lá, bụi mịn PM2.5 và ô nhiễm không khí đối với hệ hô hấp; đề xuất các biện pháp bảo vệ lá phổi khỏe mạnh; thực hành hô hấp nhân tạo.",
         equipment: "Mô hình tháo lắp cơ quan hô hấp người, mô hình phế nang bao quanh bởi mao mạch, mô hình lồng ngực tự chế mô phỏng hít thở",
         location: "Phòng thực hành KHTN",
-        nlsCode: "4.1.TC2a",
+        nlsCode: "4.1.TC2b",
         aiCode: "8.B3.1",
-        dc: "• [Mã NLS: 4.1.TC2a] Tìm kiếm và tải tài liệu số truyền thông về tác hại của thuốc lá điện tử đối với phổi học sinh.\n• [Mã AI: 8.B3.1] Thảo luận về việc ứng dụng AI đọc ảnh chụp X-quang phổi tầm soát bệnh lao và viêm phổi với độ chính xác cao.",
+        dc: "• [Mã NLS: 4.1.TC2b] Tìm kiếm và tải tài liệu số truyền thông về tác hại của thuốc lá điện tử đối với phổi học sinh.\n• [Mã AI: 8.B3.1] Thảo luận về việc ứng dụng AI đọc ảnh chụp X-quang phổi tầm soát bệnh lao và viêm phổi với độ chính xác cao.",
         notes: ""
       },
       {
@@ -2154,9 +2154,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Đánh giá mức độ tiếp thu các nội dung trọng tâm môn KHTN 8 từ Tuần 19 đến Tuần 25 theo ma trận chuẩn của Bộ GD&ĐT (thời gian làm bài 90 phút).\n- Giúp học sinh tự đánh giá năng lực, rèn luyện tư duy độc lập và chuẩn bị tốt cho kì kiểm tra cuối năm.",
         equipment: "Đề kiểm tra giữa kỳ 2 chuẩn ma trận, bảng đặc tả và đáp án",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC2a",
+        nlsCode: "4.2.TC2b",
         aiCode: "8.A3.3",
-        dc: "• [Mã NLS: 4.1.TC2a] Thực hiện bài kiểm tra giữa kì 2 nghiêm túc, tuân thủ kỷ luật phòng thi và bảo mật thông tin.\n• [Mã AI: 8.A3.3] Nhận biết quy trình phân tích tự động dữ liệu bài thi trắc nghiệm bằng AI.",
+        dc: "• [Mã NLS: 4.2.TC2b] Thực hiện bài kiểm tra giữa kì 2 nghiêm túc, tuân thủ kỷ luật phòng thi và bảo mật thông tin.\n• [Mã AI: 8.A3.3] Nhận biết quy trình phân tích tự động dữ liệu bài thi trắc nghiệm bằng AI.",
         notes: "Kiểm tra giữa kỳ"
       },
       {
@@ -2167,9 +2167,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Mô tả được cấu tạo của hệ bài tiết nước tiểu (thận, ống dẫn nước tiểu, bóng đái, ống đái) và cấu tạo nephron (đơn vị chức năng của thận).\n- Trình bày được quá trình tạo thành nước tiểu (lọc máu ở cầu thận, hấp thụ lại và bài tiết tiếp ở ống thận); nêu nguyên nhân và cách phòng tránh sỏi thận, suy thận.",
         equipment: "Mô hình tháo lắp thận người và nephron, tranh sơ đồ quá trình lọc máu tạo nước tiểu, máy chiếu",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "1.2.TC2a",
+        nlsCode: "1.2.TC2b",
         aiCode: "8.C2.1",
-        dc: "• [Mã NLS: 1.2.TC2a] Xem mô phỏng 3D dòng chảy của máu qua màng lọc cầu thận trên kho học liệu số y khoa.\n• [Mã AI: 8.C2.1] Khám phá công nghệ máy chạy thận nhân tạo thông minh điều khiển tự động bằng thuật toán AI.",
+        dc: "• [Mã NLS: 1.2.TC2b] Xem mô phỏng 3D dòng chảy của máu qua màng lọc cầu thận trên kho học liệu số y khoa.\n• [Mã AI: 8.C2.1] Khám phá công nghệ máy chạy thận nhân tạo thông minh điều khiển tự động bằng thuật toán AI.",
         notes: ""
       },
       {
@@ -2180,9 +2180,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được khái niệm môi trường trong cơ thể (gồm máu, dịch mô, dịch bạch huyết) và cân bằng nội môi.\n- Giải thích được vai trò của gan và thận trong việc điều hòa nồng độ đường huyết, áp suất thẩm thấu và pH máu; nêu ý nghĩa của việc xét nghiệm định kỳ chỉ số máu và nước tiểu.",
         equipment: "Sơ đồ cơ chế điều hòa đường huyết của insulin và glucagon, mẫu phiếu kết quả xét nghiệm sinh hóa máu chuẩn",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "3.1.TC2a",
+        nlsCode: "3.2.TC2a",
         aiCode: "8.A1.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Đọc hiểu và phân tích các chỉ số xét nghiệm sinh hóa máu trên sổ sức khỏe điện tử cá nhân.\n• [Mã AI: 8.A1.1] Tìm hiểu cách AI phân tích hàng triệu dữ liệu xét nghiệm lâm sàng để phát hiện sớm nguy cơ đái tháo đường.",
+        dc: "• [Mã NLS: 3.2.TC2a] Đọc hiểu và phân tích các chỉ số xét nghiệm sinh hóa máu trên sổ sức khỏe điện tử cá nhân.\n• [Mã AI: 8.A1.1] Tìm hiểu cách AI phân tích hàng triệu dữ liệu xét nghiệm lâm sàng để phát hiện sớm nguy cơ đái tháo đường.",
         notes: ""
       },
       {
@@ -2193,9 +2193,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Mô tả được cấu tạo của nơron và hệ thần kinh (não bộ, tủy sống, dây thần kinh); phân biệt hệ thần kinh vận động và hệ thần kinh sinh dưỡng.\n- Trình bày được cấu tạo và chức năng của mắt (cơ quan thị giác) và tai (cơ quan thính giác); nêu các biện pháp phòng chống tật cận thị học đường và giữ vệ sinh tai.",
         equipment: "Mô hình não người tháo lắp, mô hình cầu mắt, mô hình cấu tạo tai ngoài - tai giữa - tai trong, bảng đo thị lực học đường",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "4.1.TC2a",
+        nlsCode: "4.4.TC2a",
         aiCode: "8.C1.1",
-        dc: "• [Mã NLS: 4.1.TC2a] Cài đặt ứng dụng nhắc nhở quy tắc 20-20-20 bảo vệ mắt khi học tập trên màn hình máy tính.\n• [Mã AI: 8.C1.1] Khám phá sự tương đồng giữa mạng nơ-ron sinh học trong não người và mạng nơ-ron nhân tạo (Artificial Neural Network) của AI.",
+        dc: "• [Mã NLS: 4.4.TC2a] Cài đặt ứng dụng nhắc nhở quy tắc 20-20-20 bảo vệ mắt khi học tập trên màn hình máy tính.\n• [Mã AI: 8.C1.1] Khám phá sự tương đồng giữa mạng nơ-ron sinh học trong não người và mạng nơ-ron nhân tạo (Artificial Neural Network) của AI.",
         notes: ""
       },
       {
@@ -2206,9 +2206,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Phân biệt được tuyến nội tiết (tiết hormone ngấm thẳng vào máu) và tuyến ngoại tiết; kể tên các tuyến nội tiết chính: tuyến yên, tuyến giáp, tuyến tụy, tuyến trên thận, tuyến sinh dục.\n- Nêu được vai trò điều hòa chuyển hóa của hormone và hậu quả khi rối loạn hoạt động tuyến nội tiết (bệnh bướu cổ do thiếu iod, bệnh khổng lồ, bệnh lùn tuyến yên).",
         equipment: "Tranh sơ đồ vị trí các tuyến nội tiết trong cơ thể người, hình ảnh các bệnh lý rối loạn nội tiết",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "1.1.TC2a",
+        nlsCode: "1.1.TC2c",
         aiCode: "8.C2.1",
-        dc: "• [Mã NLS: 1.1.TC2a] Tra cứu thông tin y khoa về vai trò của muối iod trong việc phòng chống bướu cổ và phát triển trí tuệ.\n• [Mã AI: 8.C2.1] Khám phá hệ thống theo dõi đường huyết liên tục (CGM) kết hợp bơm tiêm insulin tự động điều khiển bởi AI cho bệnh nhân tiểu đường.",
+        dc: "• [Mã NLS: 1.1.TC2c] Tra cứu thông tin y khoa về vai trò của muối iod trong việc phòng chống bướu cổ và phát triển trí tuệ.\n• [Mã AI: 8.C2.1] Khám phá hệ thống theo dõi đường huyết liên tục (CGM) kết hợp bơm tiêm insulin tự động điều khiển bởi AI cho bệnh nhân tiểu đường.",
         notes: ""
       },
       {
@@ -2219,9 +2219,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Mô tả được cấu tạo của da gồm 3 lớp: lớp biểu bì, lớp bì và lớp mỡ dưới da; nêu chức năng bảo vệ, bài tiết, cảm giác và điều hòa thân nhiệt của da.\n- Giải thích được cơ chế điều hòa thân nhiệt khi trời nóng (giãn mạch máu dưới da, toát mồ hôi) và trời lạnh (co mạch, sởn gai ốc, run cơ); biết cách chăm sóc, bảo vệ da và xử lý khi bị bỏng.",
         equipment: "Mô hình cấu tạo da người 3D có tuyến mồ hôi và nang lông, hộp thuốc sơ cứu bỏng",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "2.4.TC2a",
+        nlsCode: "2.1.TC2b",
         aiCode: "8.D1.1",
-        dc: "• [Mã NLS: 2.4.TC2a] Thiết kế infographic số về các bước sơ cứu khẩn cấp khi bị bỏng nhiệt và chia sẻ trên nhóm học tập.\n• [Mã AI: 8.D1.1] Tìm hiểu ứng dụng AI da liễu quét ảnh tổn thương nốt ruồi để tầm soát sớm nguy cơ ung thư da.",
+        dc: "• [Mã NLS: 2.1.TC2b] Thiết kế infographic số về các bước sơ cứu khẩn cấp khi bị bỏng nhiệt và chia sẻ trên nhóm học tập.\n• [Mã AI: 8.D1.1] Tìm hiểu ứng dụng AI da liễu quét ảnh tổn thương nốt ruồi để tầm soát sớm nguy cơ ung thư da.",
         notes: ""
       },
       {
@@ -2245,9 +2245,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Hệ thống hóa toàn diện kiến thức và kĩ năng môn KHTN Lớp 8 cả năm học; rèn luyện kĩ năng giải đề tổng hợp đạt điểm tối đa.",
         equipment: "Bộ đề ôn tập cuối năm, bảng tóm tắt kiến thức cốt lõi",
         location: "Phòng học / Lớp học",
-        nlsCode: "3.1.TC2a",
+        nlsCode: "3.2.TC2a",
         aiCode: "8.A1.3",
-        dc: "• [Mã NLS: 3.1.TC2a] Xây dựng ngân hàng câu hỏi ôn tập cá nhân trên ứng dụng ghi chú số Notion/Google Keep.\n• [Mã AI: 8.A1.3] Sử dụng AI đánh giá mức độ tự tin và đề xuất các chủ đề cần ôn tập bổ sung.",
+        dc: "• [Mã NLS: 3.2.TC2a] Xây dựng ngân hàng câu hỏi ôn tập cá nhân trên ứng dụng ghi chú số Notion/Google Keep.\n• [Mã AI: 8.A1.3] Sử dụng AI đánh giá mức độ tự tin và đề xuất các chủ đề cần ôn tập bổ sung.",
         notes: "Ôn tập cuối kỳ 2"
       },
       {
@@ -2284,9 +2284,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được khái niệm môi trường sống của sinh vật và 4 loại môi trường chính (nước, cạn, đất, sinh vật); phân biệt được nhân tố sinh thái vô sinh và nhân tố sinh thái hữu sinh (bao gồm con người).\n- Nêu được khái niệm giới hạn sinh thái; lấy được ví dụ về giới hạn nhiệt độ của cá rô phi và cây trồng.",
         equipment: "Tranh ảnh các loại môi trường sống, sơ đồ giới hạn sinh thái của cá rô phi ở Việt Nam",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "1.2.TC2a",
+        nlsCode: "1.1.TC2d",
         aiCode: "8.C1.1",
-        dc: "• [Mã NLS: 1.2.TC2a] Tìm kiếm dữ liệu số về sự phân bố của các loài sinh vật thích nghi với môi trường sống khắc nghiệt (sa mạc, cực lạnh).\n• [Mã AI: 8.C1.1] Khám phá mô hình AI dự báo sự dịch chuyển vùng sinh thái của các loài trước tác động của biến đổi khí hậu.",
+        dc: "• [Mã NLS: 1.1.TC2d] Tìm kiếm dữ liệu số về sự phân bố của các loài sinh vật thích nghi với môi trường sống khắc nghiệt (sa mạc, cực lạnh).\n• [Mã AI: 8.C1.1] Khám phá mô hình AI dự báo sự dịch chuyển vùng sinh thái của các loài trước tác động của biến đổi khí hậu.",
         notes: ""
       },
       {
@@ -2297,9 +2297,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được khái niệm quần thể sinh vật (tập hợp các cá thể cùng loài, cùng sinh sống trong một sinh cảnh, tại một thời điểm, có khả năng giao phối sinh con).\n- Trình bày được các đặc trưng cơ bản của quần thể: tỉ lệ giới tính, nhóm tuổi, mật độ cá thể; giải thích hiện tượng tự điều chỉnh số lượng cá thể của quần thể.",
         equipment: "Tranh ảnh về đàn voi rừng Tánh Linh, đồi thông, đàn chim hải âu, biểu đồ tháp tuổi của quần thể",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "3.1.TC2a",
+        nlsCode: "3.2.TC2a",
         aiCode: "8.C2.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Vẽ tháp tuổi của quần thể sinh vật dạng đồ thị số cột đôi trên Google Sheets.\n• [Mã AI: 8.C2.1] Khám phá cách các nhà bảo tồn sử dụng camera AI đếm số lượng cá thể trong đàn động vật hoang dã tự động.",
+        dc: "• [Mã NLS: 3.2.TC2a] Vẽ tháp tuổi của quần thể sinh vật dạng đồ thị số cột đôi trên Google Sheets.\n• [Mã AI: 8.C2.1] Khám phá cách các nhà bảo tồn sử dụng camera AI đếm số lượng cá thể trong đàn động vật hoang dã tự động.",
         notes: ""
       },
       {
@@ -2310,9 +2310,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được khái niệm quần xã sinh vật; trình bày các đặc trưng cơ bản của quần xã (độ đa dạng loài, loài ưu thế, loài đặc trưng).\n- Phân tích được các mối quan hệ hỗ trợ (cộng sinh, hội sinh) và đối kháng (cạnh tranh, ký sinh, sinh vật ăn sinh vật) giữa các loài trong quần xã; nêu khái niệm khống chế sinh học.",
         equipment: "Tranh ảnh về quần xã rừng nhiệt đới Cúc Phương, rạn san hô Nha Trang, mối quan hệ cộng sinh giữa hải quỳ và cá hề",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "2.1.TC2a",
+        nlsCode: "2.5.TC2b",
         aiCode: "8.A1.1",
-        dc: "• [Mã NLS: 2.1.TC2a] Khám phá bảo tàng sinh thái trực tuyến và thư viện âm thanh sinh thái học đa loài.\n• [Mã AI: 8.A1.1] Đặt câu hỏi cho AI phân tích hiệu quả của biện pháp khống chế sinh học thay thế thuốc trừ sâu hóa học trong nông nghiệp.",
+        dc: "• [Mã NLS: 2.5.TC2b] Khám phá bảo tàng sinh thái trực tuyến và thư viện âm thanh sinh thái học đa loài.\n• [Mã AI: 8.A1.1] Đặt câu hỏi cho AI phân tích hiệu quả của biện pháp khống chế sinh học thay thế thuốc trừ sâu hóa học trong nông nghiệp.",
         notes: ""
       },
       {
@@ -2362,9 +2362,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Phân tích được các tác động tiêu cực của con người gây ô nhiễm môi trường (rác thải nhựa, khí thải công nghiệp, nước thải chưa xử lý).\n- Đề xuất và cam kết thực hiện các hành động thiết thực bảo vệ môi trường: trồng cây xanh, tiết kiệm tài nguyên, phân loại rác tại nguồn, tiêu dùng xanh.",
         equipment: "Tranh ảnh về biến đổi khí hậu, hạn mặn đồng bằng sông Cửu Long, video các chiến dịch môi trường Trái Đất",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "2.4.TC2a",
+        nlsCode: "2.5.TC2b",
         aiCode: "8.B3.1",
-        dc: "• [Mã NLS: 2.4.TC2a] Khởi xướng chiến dịch số \"Học sinh THCS nói không với rác thải nhựa\" trên các nền tảng mạng xã hội trường học.\n• [Mã AI: 8.B3.1] Thảo luận về đạo đức và trách nhiệm toàn cầu khi áp dụng công nghệ số và AI vào quản trị tài nguyên thiên nhiên.",
+        dc: "• [Mã NLS: 2.5.TC2b] Khởi xướng chiến dịch số \"Học sinh THCS nói không với rác thải nhựa\" trên các nền tảng mạng xã hội trường học.\n• [Mã AI: 8.B3.1] Thảo luận về đạo đức và trách nhiệm toàn cầu khi áp dụng công nghệ số và AI vào quản trị tài nguyên thiên nhiên.",
         notes: ""
       },
       {
@@ -2396,9 +2396,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nhận biết và sử dụng thành thạo một số dụng cụ đo lường và thiết bị phòng thí nghiệm hóa học chuyên sâu; nắm vững các nguyên tắc xử lý an toàn hóa chất độc hại.\n- Thiết kế được cấu trúc bài thuyết trình khoa học và trình bày tự tin một vấn đề khoa học tự nhiên trước tập thể.",
         equipment: "Bộ dụng cụ thí nghiệm hóa học tinh chuẩn: bình nón có nhánh, ống sinh hàn, nhiệt kế điện tử, máy chiếu thuyết trình",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "1.1.TC2a",
+        nlsCode: "1.1.TC2d",
         aiCode: "9.A1.1",
-        dc: "• [Mã NLS: 1.1.TC2a] Tìm kiếm và trích dẫn các tài liệu khoa học đáng tin cậy theo chuẩn trích dẫn số quốc tế (APA/IEEE).\n• [Mã AI: 9.A1.1] Khám phá cách các nhà khoa học sử dụng trợ lý AI tạo sinh (Generative AI) để cấu trúc dàn ý bài báo cáo khoa học.",
+        dc: "• [Mã NLS: 1.1.TC2d] Tìm kiếm và trích dẫn các tài liệu khoa học đáng tin cậy theo chuẩn trích dẫn số quốc tế (APA/IEEE).\n• [Mã AI: 9.A1.1] Khám phá cách các nhà khoa học sử dụng trợ lý AI tạo sinh (Generative AI) để cấu trúc dàn ý bài báo cáo khoa học.",
         notes: ""
       },
       {
@@ -2409,9 +2409,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được khái niệm động năng (năng lượng vật có được do chuyển động, tỉ lệ với khối lượng m và bình phương vận tốc v: Wđ = 1/2.m.v^2).\n- Nêu được khái niệm thế năng trọng trường (năng lượng vật có được do vị trí so với mặt đất: Wt = P.h = m.g.h) và thế năng đàn hồi của lò xo bị biến dạng.",
         equipment: "Máng nghiêng, các viên bi có khối lượng khác nhau, miếng gỗ cản, lò xo lá tròn",
         location: "Phòng thực hành KHTN",
-        nlsCode: "1.2.TC2a",
+        nlsCode: "1.1.TC2b",
         aiCode: "9.C1.1",
-        dc: "• [Mã NLS: 1.2.TC2a] Sử dụng phần mềm mô phỏng PhET Energy Skate Park khảo sát đồ thị động năng và thế năng thời gian thực.\n• [Mã AI: 9.C1.1] Khám phá cách AI trong xe ô tô tự lái dự đoán động năng của các phương tiện xung quanh để giữ khoảng cách phanh.",
+        dc: "• [Mã NLS: 1.1.TC2b] Sử dụng phần mềm mô phỏng PhET Energy Skate Park khảo sát đồ thị động năng và thế năng thời gian thực.\n• [Mã AI: 9.C1.1] Khám phá cách AI trong xe ô tô tự lái dự đoán động năng của các phương tiện xung quanh để giữ khoảng cách phanh.",
         notes: ""
       },
       {
@@ -2422,9 +2422,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được cơ năng của một vật là tổng động năng và thế năng của vật: W = Wđ + Wt; phát biểu được định luật bảo toàn cơ năng trong trường trọng lực.\n- Phân tích được sự chuyển hóa qua lại giữa động năng và thế năng của con lắc đơn hoặc vật rơi tự do khi bỏ qua ma sát.",
         equipment: "Mô hình con lắc đơn, con lắc Maxwell, cảm biến quang điện đo vận tốc con lắc ở các vị trí",
         location: "Phòng thực hành KHTN",
-        nlsCode: "3.1.TC2a",
+        nlsCode: "3.2.TC2a",
         aiCode: "9.C2.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Sử dụng cảm biến vị trí số hóa vẽ đồ thị biến thiên động năng và thế năng của con lắc theo chu kì dao động.\n• [Mã AI: 9.C2.1] Khám phá cách AI mô phỏng chuyển động của tàu lượn siêu tốc đảm bảo bảo toàn cơ năng và an toàn tuyệt đối.",
+        dc: "• [Mã NLS: 3.2.TC2a] Sử dụng cảm biến vị trí số hóa vẽ đồ thị biến thiên động năng và thế năng của con lắc theo chu kì dao động.\n• [Mã AI: 9.C2.1] Khám phá cách AI mô phỏng chuyển động của tàu lượn siêu tốc đảm bảo bảo toàn cơ năng và an toàn tuyệt đối.",
         notes: ""
       },
       {
@@ -2435,9 +2435,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được điều kiện có công cơ học và công thức tính công: A = F.s; đơn vị của công là jun (J).\n- Nêu được khái niệm công suất đặc trưng cho tốc độ sinh công: P = A/t; đơn vị là oát (W); tính được công suất của động cơ và người lao động.",
         equipment: "Lực kế 10N, khối gỗ trượt trên bàn, thước đo độ dài, đồng hồ bấm giây điện tử",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "2.1.TC2a",
+        nlsCode: "2.2.TC2c",
         aiCode: "9.A3.1",
-        dc: "• [Mã NLS: 2.1.TC2a] Sử dụng bảng tính số lập công thức tính công cơ học và công suất của các động cơ máy móc hiện đại.\n• [Mã AI: 9.A3.1] Tìm hiểu cách AI điều phối công suất phát của các động cơ điện trên ô tô điện nhằm tối ưu hóa quãng đường di chuyển.",
+        dc: "• [Mã NLS: 2.2.TC2c] Sử dụng bảng tính số lập công thức tính công cơ học và công suất của các động cơ máy móc hiện đại.\n• [Mã AI: 9.A3.1] Tìm hiểu cách AI điều phối công suất phát của các động cơ điện trên ô tô điện nhằm tối ưu hóa quãng đường di chuyển.",
         notes: ""
       },
       {
@@ -2474,9 +2474,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được cấu tạo của lăng kính (khối chất trong suốt hình lăng trụ tam giác); trình bày đường truyền của tia sáng đơn sắc qua lăng kính.\n- Trình bày được hiện tượng tán sắc ánh sáng trắng qua lăng kính thành dải màu cầu vồng (đỏ, cam, vàng, lục, lam, chàm, tím); giải thích sự hình thành cầu vồng sau cơn mưa.",
         equipment: "Lăng kính thủy tinh quang học, nguồn ánh sáng trắng có khe hẹp, màn hứng quang phổ màu, đèn laser đơn sắc đỏ và xanh",
         location: "Phòng thực hành KHTN",
-        nlsCode: "1.1.TC2a",
+        nlsCode: "1.1.TC2c",
         aiCode: "9.A1.1",
-        dc: "• [Mã NLS: 1.1.TC2a] Xem các clip quang phổ phát xạ số của các nguyên tố hóa học trên kính thiên văn số.\n• [Mã AI: 9.A1.1] Đặt câu hỏi cho trợ lý AI phân tích sự khác nhau giữa quang phổ liên tục của Mặt Trời và quang phổ vạch của đèn Neon.",
+        dc: "• [Mã NLS: 1.1.TC2c] Xem các clip quang phổ phát xạ số của các nguyên tố hóa học trên kính thiên văn số.\n• [Mã AI: 9.A1.1] Đặt câu hỏi cho trợ lý AI phân tích sự khác nhau giữa quang phổ liên tục của Mặt Trời và quang phổ vạch của đèn Neon.",
         notes: ""
       },
       {
@@ -2487,9 +2487,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nhận biết và phân biệt được thấu kính hội tụ (rìa mỏng) và thấu kính phân kì (rìa dày); nêu được các khái niệm: quang tâm (O), trục chính, tiêu điểm (F, F') và tiêu cự (f).\n- Vẽ được đường truyền của 3 tia sáng đặc biệt qua thấu kính hội tụ và thấu kính phân kì.",
         equipment: "Bộ thấu kính quang học: thấu kính hội tụ, thấu kính phân kì, đèn chiếu 3 chùm tia sáng song song, giá quang học",
         location: "Phòng thực hành KHTN",
-        nlsCode: "3.1.TC2a",
+        nlsCode: "3.2.TC2a",
         aiCode: "9.C1.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Sử dụng phần mềm quang học Geometric Optics mô phỏng đường truyền của các chùm tia sáng qua thấu kính.\n• [Mã AI: 9.C1.1] Khám phá hệ thống thấu kính tiềm vọng trên camera điện thoại thông minh được tinh chỉnh bởi thuật toán AI Computational Photography.",
+        dc: "• [Mã NLS: 3.2.TC2a] Sử dụng phần mềm quang học Geometric Optics mô phỏng đường truyền của các chùm tia sáng qua thấu kính.\n• [Mã AI: 9.C1.1] Khám phá hệ thống thấu kính tiềm vọng trên camera điện thoại thông minh được tinh chỉnh bởi thuật toán AI Computational Photography.",
         notes: ""
       },
       {
@@ -2526,9 +2526,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được khái niệm điện trở của vật dẫn đặc trưng cho mức độ cản trở dòng điện: R = U/I; đơn vị là ôm (Ω); khảo sát mối phụ thuộc của điện trở vào chiều dài, tiết diện và điện trở suất: R = ρ.l/S.\n- Phát biểu và viết được hệ thức định luật Ohm: Cường độ dòng điện chạy qua dây dẫn tỉ lệ thuận với hiệu điện thế giữa hai đầu dây và tỉ lệ nghịch với điện trở của dây: I = U/R.",
         equipment: "Nguồn điện 0-12V điều chỉnh được, đoạn dây dẫn điện trở, ampe kế, vôn kế, biến trở con chạy, dây nối",
         location: "Phòng thực hành KHTN",
-        nlsCode: "1.2.TC2a",
+        nlsCode: "1.2.TC2b",
         aiCode: "9.C1.1",
-        dc: "• [Mã NLS: 1.2.TC2a] Khảo sát đặc tuyến vôn - ampe dạng đồ thị đường thẳng đi qua gốc tọa độ trên phần mềm mô phỏng mạch điện.\n• [Mã AI: 9.C1.1] Khám phá cách AI phân tích biến thiên điện trở vật liệu để thiết kế các cảm biến sinh học nano siêu nhạy.",
+        dc: "• [Mã NLS: 1.2.TC2b] Khảo sát đặc tuyến vôn - ampe dạng đồ thị đường thẳng đi qua gốc tọa độ trên phần mềm mô phỏng mạch điện.\n• [Mã AI: 9.C1.1] Khám phá cách AI phân tích biến thiên điện trở vật liệu để thiết kế các cảm biến sinh học nano siêu nhạy.",
         notes: ""
       },
       {
@@ -2539,9 +2539,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững và vận dụng các công thức của đoạn mạch nối tiếp: I = I1 = I2; U = U1 + U2; Rtd = R1 + R2.\n- Nắm vững và vận dụng các công thức của đoạn mạch song song: U = U1 = U2; I = I1 + I2; 1/Rtd = 1/R1 + 1/R2; giải các bài toán mạch điện hỗn hợp đơn giản.",
         equipment: "Bộ điện trở mẫu (10Ω, 20Ω, 30Ω), nguồn pin, đồng hồ vạn năng, bảng cắm mạch điện",
         location: "Phòng thực hành KHTN",
-        nlsCode: "3.1.TC2a",
+        nlsCode: "3.2.TC2a",
         aiCode: "9.C2.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Mô phỏng và kiểm tra các thông số dòng điện, điện áp của đoạn mạch hỗn hợp trên Tinkercad Circuits.\n• [Mã AI: 9.C2.1] Khám phá phần mềm AI tự động tối ưu sơ đồ phân bố tải điện trong mạng lưới điện dân dụng tránh quá nhiệt.",
+        dc: "• [Mã NLS: 3.2.TC2a] Mô phỏng và kiểm tra các thông số dòng điện, điện áp của đoạn mạch hỗn hợp trên Tinkercad Circuits.\n• [Mã AI: 9.C2.1] Khám phá phần mềm AI tự động tối ưu sơ đồ phân bố tải điện trong mạng lưới điện dân dụng tránh quá nhiệt.",
         notes: ""
       },
       {
@@ -2578,9 +2578,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được các tác dụng của dòng điện xoay chiều: tác dụng nhiệt, quang, từ; lưu ý tác dụng từ của dòng điện xoay chiều đổi chiều khi dòng điện đổi chiều.\n- Nêu cấu tạo và nguyên tắc hoạt động của máy biến áp: U1/U2 = N1/N2; giải thích vì sao cần tăng điện áp khi truyền tải điện năng đi xa để giảm hao phí do tỏa nhiệt.",
         equipment: "Mô hình máy biến áp tháo lắp có các cuộn dây 200 vòng, 400 vòng, nguồn xoay chiều 6V-12V, vôn kế xoay chiều AC",
         location: "Phòng thực hành KHTN",
-        nlsCode: "2.1.TC2a",
+        nlsCode: "2.1.TC2b",
         aiCode: "9.D1.1",
-        dc: "• [Mã NLS: 2.1.TC2a] Tra cứu thông tin số về mạng lưới đường dây truyền tải điện siêu cao áp 500kV Bắc - Nam của Việt Nam.\n• [Mã AI: 9.D1.1] Tìm hiểu các thuật toán AI tự động phát hiện sự cố phóng điện vầng quang trên đường dây cao thế qua camera nhiệt.",
+        dc: "• [Mã NLS: 2.1.TC2b] Tra cứu thông tin số về mạng lưới đường dây truyền tải điện siêu cao áp 500kV Bắc - Nam của Việt Nam.\n• [Mã AI: 9.D1.1] Tìm hiểu các thuật toán AI tự động phát hiện sự cố phóng điện vầng quang trên đường dây cao thế qua camera nhiệt.",
         notes: ""
       },
       {
@@ -2604,9 +2604,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Đánh giá mức độ đạt chuẩn kiến thức, kĩ năng môn KHTN 9 từ Tuần 1 đến Tuần 8 theo ma trận đề chuẩn Bộ GD&ĐT (thời gian làm bài 90 phút).\n- Đánh giá năng lực tìm hiểu tự nhiên, tư duy thực nghiệm khoa học và tính trung thực trong kiểm tra.",
         equipment: "Đề kiểm tra giữa kỳ 1 chuẩn ma trận, bảng đặc tả và hướng dẫn chấm",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC2a",
+        nlsCode: "4.1.TC2c",
         aiCode: "9.A3.3",
-        dc: "• [Mã NLS: 4.1.TC2a] Thực hiện bài kiểm tra nghiêm túc, tuân thủ quy chế an toàn số và bảo mật thông tin phòng thi.\n• [Mã AI: 9.A3.3] Tìm hiểu hệ thống chấm thi tự động và phân tích phổ điểm kiểm tra bằng AI.",
+        dc: "• [Mã NLS: 4.1.TC2c] Thực hiện bài kiểm tra nghiêm túc, tuân thủ quy chế an toàn số và bảo mật thông tin phòng thi.\n• [Mã AI: 9.A3.3] Tìm hiểu hệ thống chấm thi tự động và phân tích phổ điểm kiểm tra bằng AI.",
         notes: "Kiểm tra giữa kỳ"
       },
       {
@@ -2630,9 +2630,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Trình bày được nguyên lý khai thác và ưu nhược điểm của các dạng năng lượng tái tạo: năng lượng mặt trời (quang điện, nhiệt mặt trời), năng lượng gió, năng lượng sinh khối, năng lượng địa nhiệt, năng lượng thủy triều.\n- Đề xuất được giải pháp phát triển năng lượng tái tạo phù hợp với điều kiện tự nhiên tại địa phương.",
         equipment: "Mô hình nhà máy điện gió, mô hình pin quang điện mặt trời kết nối hệ thống tích trữ ắc quy mini",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "2.4.TC2a",
+        nlsCode: "2.1.TC2b",
         aiCode: "9.A1.1",
-        dc: "• [Mã NLS: 2.4.TC2a] Phối hợp nhóm thiết kế cẩm nang số \"Năng lượng tái tạo - Chìa khóa cho tương lai xanh\" trên Canva.\n• [Mã AI: 9.A1.1] Khám phá cách các mô hình AI dự báo phụ tải và điều tiết hòa lưới năng lượng tái tạo vào hệ thống điện quốc gia.",
+        dc: "• [Mã NLS: 2.1.TC2b] Phối hợp nhóm thiết kế cẩm nang số \"Năng lượng tái tạo - Chìa khóa cho tương lai xanh\" trên Canva.\n• [Mã AI: 9.A1.1] Khám phá cách các mô hình AI dự báo phụ tải và điều tiết hòa lưới năng lượng tái tạo vào hệ thống điện quốc gia.",
         notes: ""
       },
       {
@@ -2656,9 +2656,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Xây dựng và ghi nhớ được dãy hoạt động hóa học của kim loại: K, Na, Ca, Mg, Al, Zn, Fe, Pb, (H), Cu, Ag, Au.\n- Vận dụng được ý nghĩa của dãy hoạt động hóa học: so sánh mức độ hoạt động; kim loại đứng trước Mg tác dụng với nước ở nhiệt độ thường; kim loại đứng trước H đẩy được H ra khỏi acid loãng; kim loại đứng trước đẩy được kim loại đứng sau ra khỏi dung dịch muối.",
         equipment: "Mẫu kim loại Na, Mg, Fe, Cu, Ag; dung dịch CuSO4, AgNO3, FeSO4, nước cất, quỳ tím",
         location: "Phòng thực hành KHTN",
-        nlsCode: "3.1.TC2a",
+        nlsCode: "3.2.TC2a",
         aiCode: "9.A1.MR1",
-        dc: "• [Mã NLS: 3.1.TC2a] Sử dụng sơ đồ tương tác số dãy hoạt động hóa học để dự đoán phản ứng xảy ra giữa kim loại và muối.\n• [Mã AI: 9.A1.MR1] Đặt câu hỏi cho AI tạo tình huống thử thách phản ứng kim loại và kiểm chứng lại bằng dãy điện hóa.",
+        dc: "• [Mã NLS: 3.2.TC2a] Sử dụng sơ đồ tương tác số dãy hoạt động hóa học để dự đoán phản ứng xảy ra giữa kim loại và muối.\n• [Mã AI: 9.A1.MR1] Đặt câu hỏi cho AI tạo tình huống thử thách phản ứng kim loại và kiểm chứng lại bằng dãy điện hóa.",
         notes: ""
       },
       {
@@ -2682,9 +2682,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- So sánh được các đặc điểm vật lí khác biệt giữa kim loại (dẫn điện, dẫn nhiệt tốt, dẻo, có ánh kim) và phi kim (dẫn điện kém, giòn, không ánh kim, nhiều phi kim ở thể khí).\n- So sánh tính chất hóa học: oxide của kim loại thường là oxide base, oxide của phi kim thường là oxide acid; tính phi kim đặc trưng (Cl, O, S, P, C).",
         equipment: "Mẫu phi kim lưu huỳnh, than chì (carbon), khí chlorine trong bình kín, dây đồng, bảng so sánh kim loại - phi kim",
         location: "Phòng thực hành KHTN",
-        nlsCode: "2.4.TC2a",
+        nlsCode: "2.5.TC2b",
         aiCode: "9.C2.1",
-        dc: "• [Mã NLS: 2.4.TC2a] Lập bảng so sánh số hóa toàn diện giữa kim loại và phi kim trên Google Docs chia sẻ trong nhóm.\n• [Mã AI: 9.C2.1] Sử dụng chatbot AI kiểm tra nhanh tính chất của các nguyên tố á kim (bán dẫn như Silicon, Germanium).",
+        dc: "• [Mã NLS: 2.5.TC2b] Lập bảng so sánh số hóa toàn diện giữa kim loại và phi kim trên Google Docs chia sẻ trong nhóm.\n• [Mã AI: 9.C2.1] Sử dụng chatbot AI kiểm tra nhanh tính chất của các nguyên tố á kim (bán dẫn như Silicon, Germanium).",
         notes: ""
       },
       {
@@ -2695,9 +2695,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được khái niệm hợp chất hữu cơ (hợp chất của carbon, trừ CO, CO2, H2CO3, muối carbonate...) và hóa học hữu cơ.\n- Phân loại được hợp chất hữu cơ thành hydrocarbon (chỉ chứa C và H) và dẫn xuất của hydrocarbon (chứa C, H và các nguyên tố khác như O, N, halogen...); nêu đặc điểm liên kết và cấu tạo phân tử hợp chất hữu cơ.",
         equipment: "Mẫu nến paraphin, cồn, đường mía, muối ăn, bộ lắp ráp phân tử hợp chất hữu cơ que - cầu",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "1.1.TC2a",
+        nlsCode: "1.2.TC2b",
         aiCode: "9.C1.1",
-        dc: "• [Mã NLS: 1.1.TC2a] Truy cập cơ sở dữ liệu hóa học hữu cơ ChemSpider tra cứu cấu trúc và danh pháp các hợp chất hữu cơ.\n• [Mã AI: 9.C1.1] Khám phá cách các mô hình học sâu AI tự động sinh công thức cấu tạo 3D của các phân tử hữu cơ phức tạp.",
+        dc: "• [Mã NLS: 1.2.TC2b] Truy cập cơ sở dữ liệu hóa học hữu cơ ChemSpider tra cứu cấu trúc và danh pháp các hợp chất hữu cơ.\n• [Mã AI: 9.C1.1] Khám phá cách các mô hình học sâu AI tự động sinh công thức cấu tạo 3D của các phân tử hữu cơ phức tạp.",
         notes: ""
       },
       {
@@ -2708,9 +2708,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được khái niệm alkane là hydrocarbon no, mạch hở, chỉ có liên kết đơn C-C và C-H trong phân tử; công thức chung CnH2n+2 (n >= 1).\n- Viết được công thức phân tử và công thức cấu tạo của methane (CH4); trình bày tính chất vật lí, phản ứng cháy và phản ứng thế với chlorine; nêu ứng dụng của methane làm khí đốt.",
         equipment: "Mô hình phân tử methane CH4 dạng rỗng và dạng đặc, bình thu khí methane, nước vôi trong Ca(OH)2",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "3.1.TC2a",
+        nlsCode: "3.2.TC2a",
         aiCode: "9.C2.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Sử dụng phần mềm MolView vẽ cấu trúc tứ diện đều của phân tử methane và xuất ảnh 3D.\n• [Mã AI: 9.C2.1] Khám phá cách AI phân tích rủi ro rò rỉ khí gas methane trong các hầm lò khai thác than để phát chuông báo động.",
+        dc: "• [Mã NLS: 3.2.TC2a] Sử dụng phần mềm MolView vẽ cấu trúc tứ diện đều của phân tử methane và xuất ảnh 3D.\n• [Mã AI: 9.C2.1] Khám phá cách AI phân tích rủi ro rò rỉ khí gas methane trong các hầm lò khai thác than để phát chuông báo động.",
         notes: ""
       },
       {
@@ -2747,9 +2747,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được công thức phân tử (C2H6O) và công thức cấu tạo (C2H5OH) của ethylic alcohol; nhận biết nhóm định chức hydroxyl (-OH) quyết định tính chất hóa học.\n- Trình bày tính chất vật lí (độ cồn), tính chất hóa học (phản ứng cháy, phản ứng với kim loại Na giải phóng H2); nêu tác hại của lạm dụng rượu bia đối với sức khỏe và an toàn giao thông.",
         equipment: "Cồn y tế 70 độ, cồn 96 độ, kim loại natri, ống nghiệm, diêm, nhiệt kế, cốc đo độ cồn",
         location: "Phòng thực hành KHTN",
-        nlsCode: "4.1.TC2a",
+        nlsCode: "4.3.TC2b",
         aiCode: "9.A3.1",
-        dc: "• [Mã NLS: 4.1.TC2a] Tra cứu quy định pháp luật về nồng độ cồn trong máu và khí thở khi tham gia giao thông trên cổng thông tin Chính phủ.\n• [Mã AI: 9.A3.1] Tìm hiểu hệ thống cảm biến quang học kết hợp AI phát hiện tài xế có nồng độ cồn và buồn ngủ trên các dòng xe hiện đại.",
+        dc: "• [Mã NLS: 4.3.TC2b] Tra cứu quy định pháp luật về nồng độ cồn trong máu và khí thở khi tham gia giao thông trên cổng thông tin Chính phủ.\n• [Mã AI: 9.A3.1] Tìm hiểu hệ thống cảm biến quang học kết hợp AI phát hiện tài xế có nồng độ cồn và buồn ngủ trên các dòng xe hiện đại.",
         notes: ""
       },
       {
@@ -2760,9 +2760,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được công thức phân tử (C2H4O2) và công thức cấu tạo (CH3COOH) của acetic acid; nhận biết nhóm carboxyl (-COOH).\n- Trình bày tính chất hóa học của acid yếu (làm đỏ quỳ tím, tác dụng với kim loại trước H, base, oxide base, muối carbonate) và phản ứng ester hóa với ethylic alcohol tạo ethyl acetate có mùi thơm hoa quả.",
         equipment: "Dung dịch CH3COOH (giấm ăn), quỳ tím, bột CaCO3 hoặc vỏ trứng, NaHCO3, cồn ethylic, H2SO4 đặc, đèn cồn",
         location: "Phòng thực hành KHTN",
-        nlsCode: "3.1.TC2a",
+        nlsCode: "3.2.TC2a",
         aiCode: "9.C1.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Thực hành quay video thí nghiệm giấm ăn hòa tan vỏ trứng giải phóng khí CO2 và biên tập báo cáo số.\n• [Mã AI: 9.C1.1] Khám phá mô hình AI mô phỏng quy trình lên men giấm sinh học tự động trong công nghiệp thực phẩm.",
+        dc: "• [Mã NLS: 3.2.TC2a] Thực hành quay video thí nghiệm giấm ăn hòa tan vỏ trứng giải phóng khí CO2 và biên tập báo cáo số.\n• [Mã AI: 9.C1.1] Khám phá mô hình AI mô phỏng quy trình lên men giấm sinh học tự động trong công nghiệp thực phẩm.",
         notes: ""
       },
       {
@@ -2773,9 +2773,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Hệ thống hóa toàn diện chuẩn kiến thức, kĩ năng môn KHTN 9 trong toàn bộ Học kỳ 1; rèn luyện kĩ năng phân tích đồ thị, phương trình và xử lý số liệu thí nghiệm.\n- Rèn luyện kỹ năng phân tích các câu hỏi phân hóa chuẩn ma trận đề thi tuyển sinh Lớp 10.",
         equipment: "Đề cương ôn tập HK1, bảng hệ thống kiến thức toàn diện",
         location: "Phòng học / Lớp học",
-        nlsCode: "3.1.TC2a",
+        nlsCode: "3.2.TC2a",
         aiCode: "9.A1.3",
-        dc: "• [Mã NLS: 3.1.TC2a] Lập sơ đồ tư duy số tổng kết toàn bộ kiến thức Học kỳ 1 trên phần mềm sơ đồ tư duy.\n• [Mã AI: 9.A1.3] Sử dụng AI để tạo đề thi thử trắc nghiệm có giải thích chi tiết giúp ôn tập hiệu quả.",
+        dc: "• [Mã NLS: 3.2.TC2a] Lập sơ đồ tư duy số tổng kết toàn bộ kiến thức Học kỳ 1 trên phần mềm sơ đồ tư duy.\n• [Mã AI: 9.A1.3] Sử dụng AI để tạo đề thi thử trắc nghiệm có giải thích chi tiết giúp ôn tập hiệu quả.",
         notes: "Ôn tập cuối kỳ 1"
       },
       {
@@ -2799,9 +2799,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nhận xét, chữa bài kiểm tra cuối HK1 chi tiết; giải thích cặn kẽ các câu hỏi khó và sửa chữa các lỗi sai thường gặp.\n- Củng cố hệ thống kiến thức và kĩ năng thực hành môn KHTN 9 trong toàn bộ Học kỳ 1.",
         equipment: "Bài làm học sinh, đáp án và bảng biểu điểm sửa sai",
         location: "Phòng học / Lớp học",
-        nlsCode: "5.2.TC2a",
+        nlsCode: "5.2.TC2b",
         aiCode: "9.A1.3",
-        dc: "• [Mã NLS: 5.2.TC2a] Nhập và đối chiếu kết quả bài làm trên hệ thống học liệu số để tự đánh giá năng lực.\n• [Mã AI: 9.A1.3] Sử dụng AI gợi ý các dạng bài tập tương tự để khắc phục các phần kiến thức còn yếu.",
+        dc: "• [Mã NLS: 5.2.TC2b] Nhập và đối chiếu kết quả bài làm trên hệ thống học liệu số để tự đánh giá năng lực.\n• [Mã AI: 9.A1.3] Sử dụng AI gợi ý các dạng bài tập tương tự để khắc phục các phần kiến thức còn yếu.",
         notes: "Chữa bài kiểm tra & Ôn tập"
       },
       {
@@ -2812,9 +2812,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Sơ kết thi đua kết quả học tập môn KHTN 9 Học kỳ 1; trưng bày, báo cáo các sản phẩm thực hành/chuyên đề khoa học của học sinh.\n- Rèn luyện kĩ năng làm việc nhóm, thuyết trình khoa học và định hướng nhiệm vụ học tập Học kỳ 2.",
         equipment: "Sản phẩm tập san, video clip thực hành, slide báo cáo chuyên đề của học sinh, máy chiếu",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "2.4.TC2b",
+        nlsCode: "2.4.TC2a",
         aiCode: "9.D1.1",
-        dc: "• [Mã NLS: 2.4.TC2b] Trình chiếu báo cáo số đa phương tiện tổng kết hoạt động học tập nhóm trong HK1.\n• [Mã AI: 9.D1.1] Khám phá ứng dụng AI hỗ trợ thiết kế slide báo cáo và tổng kết dữ liệu học tập trực quan.",
+        dc: "• [Mã NLS: 2.4.TC2a] Trình chiếu báo cáo số đa phương tiện tổng kết hoạt động học tập nhóm trong HK1.\n• [Mã AI: 9.D1.1] Khám phá ứng dụng AI hỗ trợ thiết kế slide báo cáo và tổng kết dữ liệu học tập trực quan.",
         notes: "Sơ kết Học kỳ 1"
       },
       {
@@ -2825,9 +2825,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được khái niệm lipid và chất béo (triglyceride là triester của glycerol với các acid béo); nêu tính chất vật lí của chất béo (nhẹ hơn nước, không tan trong nước, tan trong dung môi hữu cơ).\n- Trình bày phản ứng thủy phân chất béo trong môi trường kiềm (phản ứng xà phòng hóa) tạo xà phòng và glycerol; nêu vai trò dinh dưỡng của lipid đối với cơ thể người.",
         equipment: "Mẫu dầu ăn thực vật, mỡ lợn động vật, dung dịch NaOH, cồn, bát sứ, đèn cồn, đũa thủy tinh",
         location: "Phòng thực hành KHTN",
-        nlsCode: "1.2.TC2a",
+        nlsCode: "1.1.TC2b",
         aiCode: "9.C2.1",
-        dc: "• [Mã NLS: 1.2.TC2a] Tra cứu thông tin số về phân biệt chất béo no (chất béo bão hòa) và chất béo không no (Omega-3, Omega-6).\n• [Mã AI: 9.C2.1] Khám phá ứng dụng AI quét mã vạch thực phẩm cảnh báo hàm lượng chất béo chuyển hóa (Trans fat) có hại cho tim mạch.",
+        dc: "• [Mã NLS: 1.1.TC2b] Tra cứu thông tin số về phân biệt chất béo no (chất béo bão hòa) và chất béo không no (Omega-3, Omega-6).\n• [Mã AI: 9.C2.1] Khám phá ứng dụng AI quét mã vạch thực phẩm cảnh báo hàm lượng chất béo chuyển hóa (Trans fat) có hại cho tim mạch.",
         notes: ""
       },
       {
@@ -2838,9 +2838,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được khái niệm carbohydrate; công thức phân tử của glucose (C6H12O6) và saccharose (C12H22O11); nêu trạng thái tự nhiên của glucose (quả nho chín) và saccharose (mía, củ cải đường).\n- Trình bày tính chất hóa học: glucose có phản ứng tráng bạc (tác dụng AgNO3/NH3) và phản ứng lên men rượu; saccharose có phản ứng thủy phân tạo glucose và fructose.",
         equipment: "Dung dịch glucose, dung dịch saccharose, dung dịch AgNO3, dung dịch NH3, nước nóng, ống nghiệm",
         location: "Phòng thực hành KHTN",
-        nlsCode: "3.1.TC2a",
+        nlsCode: "3.2.TC2a",
         aiCode: "9.A1.MR1",
-        dc: "• [Mã NLS: 3.1.TC2a] Quan sát video thí nghiệm tráng bạc của glucose trên học liệu số và chèn ghi chú giải thích phản ứng.\n• [Mã AI: 9.A1.MR1] Đặt câu hỏi cho AI so sánh cấu trúc phân tử giữa glucose (monosaccharide) và saccharose (disaccharide).",
+        dc: "• [Mã NLS: 3.2.TC2a] Quan sát video thí nghiệm tráng bạc của glucose trên học liệu số và chèn ghi chú giải thích phản ứng.\n• [Mã AI: 9.A1.MR1] Đặt câu hỏi cho AI so sánh cấu trúc phân tử giữa glucose (monosaccharide) và saccharose (disaccharide).",
         notes: ""
       },
       {
@@ -2864,9 +2864,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được protein (chất đạm) là hợp chất hữu cơ cao phân tử cấu tạo từ các amino acid liên kết với nhau bằng liên kết peptide; là nền tảng cấu tạo nên tế bào và sự sống.\n- Trình bày được tính chất của protein: sự đông tụ khi đun nóng hoặc gặp acid/base; phản ứng thủy phân và phản ứng cháy có mùi khét tóc cháy đặc trưng.",
         equipment: "Mẫu lòng trắng trứng gà, cồn y tế, dung dịch acid acetic, đèn cồn, ống nghiệm, kẹp gỗ",
         location: "Phòng thực hành KHTN",
-        nlsCode: "2.1.TC2a",
+        nlsCode: "2.5.TC2b",
         aiCode: "9.C2.1",
-        dc: "• [Mã NLS: 2.1.TC2a] Xem clip 3D mô phỏng cấu trúc 4 bậc của phân tử protein hemoglobin trên thư viện y sinh số.\n• [Mã AI: 9.C2.1] Tìm hiểu thành tựu đột phá thế giới của AI AlphaFold trong việc dự đoán chính xác cấu trúc 3D của hàng triệu protein.",
+        dc: "• [Mã NLS: 2.5.TC2b] Xem clip 3D mô phỏng cấu trúc 4 bậc của phân tử protein hemoglobin trên thư viện y sinh số.\n• [Mã AI: 9.C2.1] Tìm hiểu thành tựu đột phá thế giới của AI AlphaFold trong việc dự đoán chính xác cấu trúc 3D của hàng triệu protein.",
         notes: ""
       },
       {
@@ -2890,9 +2890,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được thành phần hóa học chủ yếu của vỏ Trái Đất (oxygen, silicon, nhôm, sắt, calcium, natri, kali, magie...).\n- Nêu được các nguồn tài nguyên quý giá trong vỏ Trái Đất (khoáng sản kim loại, phi kim, nhiên liệu, nước ngầm) và sự cần thiết phải khai thác hợp lý, bảo vệ cảnh quan tự nhiên.",
         equipment: "Bảng biểu đồ thành phần phần trăm các nguyên tố trong vỏ Trái Đất, mẫu một số loại khoáng vật tự nhiên",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "1.1.TC2a",
+        nlsCode: "1.1.TC2c",
         aiCode: "9.A1.1",
-        dc: "• [Mã NLS: 1.1.TC2a] Khai thác bản đồ địa chất khoáng sản số của Tổng cục Địa chất và Khoáng sản Việt Nam.\n• [Mã AI: 9.A1.1] Tìm hiểu cách AI xử lý dữ liệu viễn thám vệ tinh đa phổ để lập bản đồ phân bố các mỏ quặng dưới lòng đất.",
+        dc: "• [Mã NLS: 1.1.TC2c] Khai thác bản đồ địa chất khoáng sản số của Tổng cục Địa chất và Khoáng sản Việt Nam.\n• [Mã AI: 9.A1.1] Tìm hiểu cách AI xử lý dữ liệu viễn thám vệ tinh đa phổ để lập bản đồ phân bố các mỏ quặng dưới lòng đất.",
         notes: ""
       },
       {
@@ -2916,9 +2916,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Mô tả được chu trình carbon trong tự nhiên (sự trao đổi carbon giữa sinh quyển, thạch quyển, thủy quyển và khí quyển).\n- Phân tích được nguyên nhân của hiện tượng hiệu ứng nhà kính và sự ấm lên toàn cầu do đốt cháy nhiên liệu hóa thạch; nêu các hành động cụ thể để giảm thiểu dấu chân carbon (Carbon Footprint).",
         equipment: "Sơ đồ chu trình carbon trong tự nhiên, biểu đồ nhiệt độ Trái Đất tăng dần theo nồng độ CO2 khí quyển",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "3.1.TC2a",
+        nlsCode: "3.2.TC2a",
         aiCode: "9.B3.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Sử dụng công cụ tính dấu chân carbon cá nhân trực tuyến (WWF Footprint Calculator) và đề xuất biện pháp cắt giảm.\n• [Mã AI: 9.B3.1] Thảo luận về việc các mô hình AI dự báo kịch bản nước biển dâng tại đồng bằng sông Cửu Long do biến đổi khí hậu.",
+        dc: "• [Mã NLS: 3.2.TC2a] Sử dụng công cụ tính dấu chân carbon cá nhân trực tuyến (WWF Footprint Calculator) và đề xuất biện pháp cắt giảm.\n• [Mã AI: 9.B3.1] Thảo luận về việc các mô hình AI dự báo kịch bản nước biển dâng tại đồng bằng sông Cửu Long do biến đổi khí hậu.",
         notes: ""
       },
       {
@@ -2929,9 +2929,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được khái niệm di truyền (sự truyền đạt các tính trạng từ bố mẹ sang con cái) và biến dị (sự xuất hiện các đặc điểm mới khác bố mẹ).\n- Kể tên được các thuật ngữ và kí hiệu cơ bản trong di truyền học (tính trạng, cặp tính trạng tương phản, gen, alen, kiểu gen, kiểu hình, thế hệ P, F1, F2).",
         equipment: "Tranh ảnh các cặp tính trạng tương phản ở cây đậu Hà Lan (hoa đỏ - hoa trắng, hạt vàng - hạt xanh, thân cao - thân thấp)",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "1.1.TC2a",
+        nlsCode: "1.2.TC2b",
         aiCode: "9.A1.1",
-        dc: "• [Mã NLS: 1.1.TC2a] Tìm kiếm và đọc tiểu sử số về cuộc đời và sự nghiệp khoa học của nhà bác học Gregor Mendel.\n• [Mã AI: 9.A1.1] Đặt câu hỏi cho trợ lý AI giải thích vì sao phương pháp lai phân tích của Mendel là bước ngoặt của sinh học hiện đại.",
+        dc: "• [Mã NLS: 1.2.TC2b] Tìm kiếm và đọc tiểu sử số về cuộc đời và sự nghiệp khoa học của nhà bác học Gregor Mendel.\n• [Mã AI: 9.A1.1] Đặt câu hỏi cho trợ lý AI giải thích vì sao phương pháp lai phân tích của Mendel là bước ngoặt của sinh học hiện đại.",
         notes: ""
       },
       {
@@ -2942,9 +2942,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Trình bày được thí nghiệm lai một cặp tính trạng của Mendel; phát biểu được quy luật phân li (F2 phân li 3 trội : 1 lặn).\n- Trình bày được thí nghiệm lai hai cặp tính trạng; phát biểu quy luật phân li độc lập (F2 phân li 9:3:3:1); viết được sơ đồ lai từ P đến F2; giải thích ý nghĩa biến dị tổ hợp.",
         equipment: "Bộ hạt đậu Hà Lan mô hình nhựa phân màu (vàng, xanh, trơn, nhăn), bảng kẻ ô Punnett lai di truyền",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "3.1.TC2a",
+        nlsCode: "3.2.TC2a",
         aiCode: "9.C1.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Lập bảng tính tự động ô Punnett trên Excel để tính nhanh tỉ lệ kiểu gen và kiểu hình của các phép lai di truyền.\n• [Mã AI: 9.C1.1] Khám phá cách thuật toán di truyền AI (Genetic Algorithm) áp dụng quy luật lai và đột biến để tìm giải pháp tối ưu trong công nghệ.",
+        dc: "• [Mã NLS: 3.2.TC2a] Lập bảng tính tự động ô Punnett trên Excel để tính nhanh tỉ lệ kiểu gen và kiểu hình của các phép lai di truyền.\n• [Mã AI: 9.C1.1] Khám phá cách thuật toán di truyền AI (Genetic Algorithm) áp dụng quy luật lai và đột biến để tìm giải pháp tối ưu trong công nghệ.",
         notes: ""
       },
       {
@@ -2955,9 +2955,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Mô tả được cấu tạo hóa học của phân tử DNA (chuỗi xoắn kép gồm 4 loại nucleotide: A, T, G, C theo nguyên tắc bổ sung A-T, G-C).\n- Nêu được khái niệm gene (đoạn phân tử DNA mang thông tin mã hóa cho một chuỗi polypeptide hoặc RNA) và chức năng lưu giữ, bảo quản, truyền đạt thông tin di truyền của DNA.",
         equipment: "Mô hình không gian xoắn kép 3D của phân tử DNA tháo lắp được, tranh cấu trúc nucleotide",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "1.2.TC2a",
+        nlsCode: "1.2.TC2b",
         aiCode: "9.C2.1",
-        dc: "• [Mã NLS: 1.2.TC2a] Khám phá mô hình cấu trúc phân tử DNA xoắn kép tương tác 3D trên trang web RCSB Protein Data Bank.\n• [Mã AI: 9.C2.1] Tìm hiểu cách AI xử lý dữ liệu chuỗi DNA khổng lồ trong dự án Bản đồ gen người (Human Genome Project).",
+        dc: "• [Mã NLS: 1.2.TC2b] Khám phá mô hình cấu trúc phân tử DNA xoắn kép tương tác 3D trên trang web RCSB Protein Data Bank.\n• [Mã AI: 9.C2.1] Tìm hiểu cách AI xử lý dữ liệu chuỗi DNA khổng lồ trong dự án Bản đồ gen người (Human Genome Project).",
         notes: ""
       },
       {
@@ -2994,9 +2994,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Đánh giá mức độ tiếp thu các nội dung trọng tâm môn KHTN 9 từ Tuần 19 đến Tuần 25 theo ma trận chuẩn của Bộ GD&ĐT (thời gian làm bài 90 phút).\n- Giúp học sinh tự đánh giá năng lực, rèn luyện tư duy độc lập và chuẩn bị tốt cho kì kiểm tra cuối năm.",
         equipment: "Đề kiểm tra giữa kỳ 2 chuẩn ma trận tuyển sinh Lớp 10 THPT",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC2a",
+        nlsCode: "4.1.TC2b",
         aiCode: "9.B2.3",
-        dc: "• [Mã NLS: 4.1.TC2a] Thực hiện bài kiểm tra giữa kì 2 nghiêm túc, tuân thủ kỷ luật phòng thi và bảo mật thông tin.\n• [Mã AI: 9.B2.3] Nhận biết quy trình phân tích tự động dữ liệu bài thi trắc nghiệm bằng AI.",
+        dc: "• [Mã NLS: 4.1.TC2b] Thực hiện bài kiểm tra giữa kì 2 nghiêm túc, tuân thủ kỷ luật phòng thi và bảo mật thông tin.\n• [Mã AI: 9.B2.3] Nhận biết quy trình phân tích tự động dữ liệu bài thi trắc nghiệm bằng AI.",
         notes: "Kiểm tra giữa kỳ"
       },
       {
@@ -3020,9 +3020,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được khái niệm đột biến gene (những biến đổi trong cấu trúc của gene liên quan đến một hoặc một số cặp nucleotide: mất, thêm, thay thế).\n- Nêu được nguyên nhân phát sinh đột biến gene (do tác nhân vật lí phóng xạ, hóa chất độc hại, virus) và ý nghĩa/tác hại của đột biến gene đối với tiến hóa, chọn giống và bệnh tật.",
         equipment: "Tranh ảnh các dạng đột biến gene ở ngô, lúa, ruồi giấm và người (bệnh bạch tạng, bệnh hồng cầu hình liềm)",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "2.1.TC2a",
+        nlsCode: "2.2.TC2c",
         aiCode: "9.D1.1",
-        dc: "• [Mã NLS: 2.1.TC2a] Tra cứu thông tin trên cơ sở dữ liệu y sinh học NCBI về các bệnh di truyền do đột biến điểm ở người.\n• [Mã AI: 9.D1.1] Tìm hiểu cách AI quét toàn bộ bộ gen để phát hiện nhanh các đột biến gene gây ung thư giai đoạn sớm.",
+        dc: "• [Mã NLS: 2.2.TC2c] Tra cứu thông tin trên cơ sở dữ liệu y sinh học NCBI về các bệnh di truyền do đột biến điểm ở người.\n• [Mã AI: 9.D1.1] Tìm hiểu cách AI quét toàn bộ bộ gen để phát hiện nhanh các đột biến gene gây ung thư giai đoạn sớm.",
         notes: ""
       },
       {
@@ -3046,9 +3046,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Trình bày được diễn biến các kì của nguyên phân (kì đầu, kì giữa, kì sau, kì cuối); ý nghĩa của nguyên phân duy trì ổn định bộ NST qua các thế hệ tế bào.\n- Trình bày được diễn biến của giảm phân tạo giao tử (giảm phân I và giảm phân II); so sánh sự khác nhau giữa nguyên phân và giảm phân; nêu ý nghĩa duy trì bộ NST loài qua thụ tinh.",
         equipment: "Kính hiển vi, bộ tiêu bản cố định tế bào rễ hành nguyên phân, tranh sơ đồ các kì nguyên phân và giảm phân",
         location: "Phòng thực hành KHTN",
-        nlsCode: "3.1.TC2a",
+        nlsCode: "3.2.TC2a",
         aiCode: "9.A1.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Quay video các giai đoạn NST phân chia dưới kính hiển vi và lồng tiếng giải thích cơ chế phân bào.\n• [Mã AI: 9.A1.1] Sử dụng AI để tạo bảng so sánh chi tiết các tiêu chí khác biệt cốt lõi giữa nguyên phân và giảm phân.",
+        dc: "• [Mã NLS: 3.2.TC2a] Quay video các giai đoạn NST phân chia dưới kính hiển vi và lồng tiếng giải thích cơ chế phân bào.\n• [Mã AI: 9.A1.1] Sử dụng AI để tạo bảng so sánh chi tiết các tiêu chí khác biệt cốt lõi giữa nguyên phân và giảm phân.",
         notes: ""
       },
       {
@@ -3085,9 +3085,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Phân biệt được đột biến cấu trúc NST (mất đoạn, lặp đoạn, đảo đoạn, chuyển đoạn) và đột biến số lượng NST (dị bội: 2n+1, 2n-1; đa bội: 3n, 4n).\n- Nêu được nguyên nhân và hậu quả của đột biến NST; nhận biết hội chứng Down (3 NST 21), Turner (XO), Klinefelter (XXY) ở người.",
         equipment: "Tranh ảnh tiêu bản NST của người mắc hội chứng Down, tranh minh họa các dạng đột biến cấu trúc NST, mẫu quả dưa hấu tam bội không hạt",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "2.4.TC2a",
+        nlsCode: "2.1.TC2b",
         aiCode: "9.D1.1",
-        dc: "• [Mã NLS: 2.4.TC2a] Thiết kế bài báo cáo số hóa về các hội chứng di truyền NST thường gặp và kỹ năng chăm sóc người khuyết tật di truyền.\n• [Mã AI: 9.D1.1] Tìm hiểu các thuật toán học máy AI phát hiện sớm nguy cơ dị tật NST thai nhi qua phương pháp sàng lọc không xâm lấn NIPT.",
+        dc: "• [Mã NLS: 2.1.TC2b] Thiết kế bài báo cáo số hóa về các hội chứng di truyền NST thường gặp và kỹ năng chăm sóc người khuyết tật di truyền.\n• [Mã AI: 9.D1.1] Tìm hiểu các thuật toán học máy AI phát hiện sớm nguy cơ dị tật NST thai nhi qua phương pháp sàng lọc không xâm lấn NIPT.",
         notes: ""
       },
       {
@@ -3098,9 +3098,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Hệ thống hóa toàn diện kiến thức và kĩ năng môn KHTN Lớp 9 cả năm học; rèn luyện kĩ năng giải đề tổng hợp đạt điểm tối đa.\n- Luyện các chuyên đề trọng tâm chuẩn bị thi vào Lớp 10 môn Khoa học tự nhiên.",
         equipment: "Bộ đề ôn tập cuối năm, bảng tóm tắt kiến thức cốt lõi",
         location: "Phòng học / Lớp học",
-        nlsCode: "3.1.TC2a",
+        nlsCode: "3.2.TC2a",
         aiCode: "9.A1.3",
-        dc: "• [Mã NLS: 3.1.TC2a] Xây dựng ngân hàng câu hỏi ôn tập cá nhân trên ứng dụng ghi chú số Notion/Google Keep.\n• [Mã AI: 9.A1.3] Sử dụng AI đánh giá mức độ tự tin và đề xuất các chủ đề cần ôn tập bổ sung.",
+        dc: "• [Mã NLS: 3.2.TC2a] Xây dựng ngân hàng câu hỏi ôn tập cá nhân trên ứng dụng ghi chú số Notion/Google Keep.\n• [Mã AI: 9.A1.3] Sử dụng AI đánh giá mức độ tự tin và đề xuất các chủ đề cần ôn tập bổ sung.",
         notes: "Ôn tập cuối kỳ 2"
       },
       {
@@ -3137,9 +3137,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được các phương pháp nghiên cứu di truyền người (phương pháp nghiên cứu phả hệ, phương pháp trẻ đồng sinh).\n- Nêu được vai trò của tư vấn di truyền trong việc phòng ngừa sinh con mắc bệnh di truyền, giải thích cơ sở khoa học của quy định hôn nhân một vợ một chồng và cấm kết hôn cận huyết.",
         equipment: "Sơ đồ phả hệ di truyền bệnh máu khó đông trong hoàng gia châu Âu, tranh ảnh cặp sinh đôi cùng trứng và khác trứng",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "2.1.TC2a",
+        nlsCode: "2.1.TC2b",
         aiCode: "9.B3.1",
-        dc: "• [Mã NLS: 2.1.TC2a] Thực hành vẽ cây phả hệ di truyền gia đình bằng công cụ vẽ trực tuyến FamilyEcho.\n• [Mã AI: 9.B3.1] Thảo luận về vấn đề đạo đức y sinh và quyền riêng tư bảo mật dữ liệu gen di truyền cá nhân trong kỷ nguyên AI.",
+        dc: "• [Mã NLS: 2.1.TC2b] Thực hành vẽ cây phả hệ di truyền gia đình bằng công cụ vẽ trực tuyến FamilyEcho.\n• [Mã AI: 9.B3.1] Thảo luận về vấn đề đạo đức y sinh và quyền riêng tư bảo mật dữ liệu gen di truyền cá nhân trong kỷ nguyên AI.",
         notes: ""
       },
       {
@@ -3163,9 +3163,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nêu được khái niệm tiến hóa là sự biến đổi của sinh vật theo thời gian dẫn đến sự hình thành các loài mới đa dạng thích nghi.\n- Phân biệt được chọn lọc nhân tạo (do con người tiến hành nhằm tạo ra các giống vật nuôi, cây trồng phục vụ nhu cầu) và chọn lọc tự nhiên (do môi trường tự nhiên chọn lọc giữ lại các cá thể thích nghi).",
         equipment: "Tranh ảnh các giống chó nhà có nguồn gốc từ chó sói (chọn lọc nhân tạo), hình ảnh chim cánh cụt thích nghi với băng giá",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "1.2.TC2a",
+        nlsCode: "1.1.TC2b",
         aiCode: "9.C1.1",
-        dc: "• [Mã NLS: 1.2.TC2a] Khám phá bảo tàng trực tuyến Darwin Online tìm hiểu hải trình vòng quanh thế giới của tàu Beagle.\n• [Mã AI: 9.C1.1] Khám phá cách thuật toán học tăng cường AI (Reinforcement Learning) mô phỏng cơ chế chọn lọc tự nhiên để tự tiến hóa chiến thuật.",
+        dc: "• [Mã NLS: 1.1.TC2b] Khám phá bảo tàng trực tuyến Darwin Online tìm hiểu hải trình vòng quanh thế giới của tàu Beagle.\n• [Mã AI: 9.C1.1] Khám phá cách thuật toán học tăng cường AI (Reinforcement Learning) mô phỏng cơ chế chọn lọc tự nhiên để tự tiến hóa chiến thuật.",
         notes: ""
       },
       {
@@ -3176,9 +3176,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Trình bày được thuyết tiến hóa của Darwin: Đấu tranh sinh tồn -> Chọn lọc tự nhiên đào thải các biến dị bất lợi, tích lũy các biến dị có lợi -> Hình thành loài mới thích nghi.\n- Nêu được quan niệm tiến hóa hiện đại về các nhân tố tiến hóa (đột biến, giao phối, di - nhập gen, các yếu tố ngẫu nhiên, chọn lọc tự nhiên).",
         equipment: "Tranh sơ đồ tiến hóa màu cánh bướm sâu đo bạch dương ở vùng công nghiệp nước Anh, mô hình cây tiến hóa",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "3.1.TC2a",
+        nlsCode: "3.2.TC2a",
         aiCode: "9.A1.MR1",
-        dc: "• [Mã NLS: 3.1.TC2a] Sử dụng phần mềm mô phỏng biến động tần số alen trong quần thể qua các thế hệ.\n• [Mã AI: 9.A1.MR1] Đặt câu hỏi cho AI phản biện các quan niệm sai lầm phổ biến về tiến hóa (tiến hóa không phải là sự tự biến đổi theo ý muốn cá thể).",
+        dc: "• [Mã NLS: 3.2.TC2a] Sử dụng phần mềm mô phỏng biến động tần số alen trong quần thể qua các thế hệ.\n• [Mã AI: 9.A1.MR1] Đặt câu hỏi cho AI phản biện các quan niệm sai lầm phổ biến về tiến hóa (tiến hóa không phải là sự tự biến đổi theo ý muốn cá thể).",
         notes: ""
       },
       {
@@ -3189,9 +3189,9 @@ export function getKhtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Trình bày được 3 giai đoạn phát sinh và phát triển sự sống: Tiến hóa hóa học (từ chất vô cơ -> chất hữu cơ đơn giản -> đại phân tử) -> Tiến hóa tiền sinh học (hình thành giọt coacervate/tế bào sơ khai) -> Tiến hóa sinh học.\n- Kể tên được các đại địa chất lớn (Thái cổ, Nguyên sinh, Cổ sinh, Trung sinh, Tân sinh); nêu hóa thạch là bằng chứng trực tiếp quan trọng nhất của tiến hóa.",
         equipment: "Mẫu hóa thạch thực tế (gỗ hóa thạch, ốc hóa thạch), tranh niên đại địa chất và sự tiến hóa của sinh giới qua các đại",
         location: "Phòng học bộ môn KHTN",
-        nlsCode: "1.1.TC2a",
+        nlsCode: "1.1.TC2c",
         aiCode: "9.C2.1",
-        dc: "• [Mã NLS: 1.1.TC2a] Tham quan bảo tàng hóa thạch ảo 3D và quan sát các mẫu hóa thạch khủng long thời Trung sinh.\n• [Mã AI: 9.C2.1] Khám phá cách AI phục dựng hình thái 3D sống động và tiếng kêu của các loài sinh vật cổ đại từ xương hóa thạch.",
+        dc: "• [Mã NLS: 1.1.TC2c] Tham quan bảo tàng hóa thạch ảo 3D và quan sát các mẫu hóa thạch khủng long thời Trung sinh.\n• [Mã AI: 9.C2.1] Khám phá cách AI phục dựng hình thái 3D sống động và tiếng kêu của các loài sinh vật cổ đại từ xương hóa thạch.",
         notes: ""
       },
       {

@@ -38,7 +38,7 @@ export function getArtSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
         t: 'Chủ đề 1: Xây dựng ý tưởng trong sáng tác mĩ thuật',
         n: 'Chủ đề 1: Xây dựng ý tưởng trong sáng tác mĩ thuật - Bài 2: Xây dựng ý tưởng trong sáng tác theo chủ đề (1 tiết)',
         y: '- Nắm vững quy trình xây dựng ý tưởng sáng tạo mĩ thuật: Quan sát thực tế -> Chọn lọc hình ảnh -> Phác thảo bố cục -> Thể hiện chất liệu.\n- Thực hành lập sơ đồ tư duy ý tưởng và phác thảo một bố cục mĩ thuật tự chọn.',
-        dc: '• [Mã NLS: 1.3.TC1a] Sử dụng phần mềm sơ đồ tư duy số (Mindmap online) để hệ thống hóa ý tưởng sáng tác.\n• [Mã AI: 6.D1.1] Trải nghiệm công cụ AI gợi ý từ khóa ý tưởng (brainstorming prompts) theo chủ đề sáng tác.'
+        dc: '• [Mã NLS: 1.3.TC1b] Sử dụng phần mềm sơ đồ tư duy số (Mindmap online) để hệ thống hóa ý tưởng sáng tác.\n• [Mã AI: 6.D1.1] Trải nghiệm công cụ AI gợi ý từ khóa ý tưởng (brainstorming prompts) theo chủ đề sáng tác.'
       },
       {
         w: 3,
@@ -52,14 +52,14 @@ export function getArtSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
         t: 'Chủ đề 2: Ngôi nhà yêu thương',
         n: 'Chủ đề 2: Ngôi nhà yêu thương - Bài 3: Tạo hình ngôi nhà (Thực hành tạo hình 2D/3D ngôi nhà) (1 tiết)',
         y: '- Thực hành vẽ tranh hoặc tạo hình mô hình 3D ngôi nhà yêu thương từ vật liệu tái chế (bìa carton, que kem, vỏ hộp).\n- Biết sắp xếp bố cục hài hòa, phối màu sắc ấm áp và thể hiện tình cảm gắn bó với gia đình.',
-        dc: '• [Mã NLS: 3.1.TC1a] Chụp ảnh sản phẩm mô hình ngôi nhà dưới góc chụp chuẩn để lưu vào hồ sơ nghệ thuật số.\n• [Mã AI: 6.A1.3] Sử dụng ứng dụng chụp ảnh tự động căn chỉnh ánh sáng và màu sắc cho sản phẩm tạo hình.'
+        dc: '• [Mã NLS: 3.2.TC1a] Chụp ảnh sản phẩm mô hình ngôi nhà dưới góc chụp chuẩn để lưu vào hồ sơ nghệ thuật số.\n• [Mã AI: 6.A1.3] Sử dụng ứng dụng chụp ảnh tự động căn chỉnh ánh sáng và màu sắc cho sản phẩm tạo hình.'
       },
       {
         w: 5,
         t: 'Chủ đề 2: Ngôi nhà yêu thương',
         n: 'Chủ đề 2: Ngôi nhà yêu thương - Bài 4: Thiết kế quà lưu niệm (Ý tưởng thiết kế từ hình ảnh ngôi nhà) (1 tiết)',
         y: '- Nắm được nguyên lý cơ bản của thiết kế quà lưu niệm ứng dụng (móc khóa, khung tranh để bàn, nam châm dán tủ lạnh, hộp đựng bút).\n- Phác thảo bản vẽ thiết kế sản phẩm quà lưu niệm lấy cảm hứng từ ngôi nhà.',
-        dc: '• [Mã NLS: 2.1.TC1a] Tham khảo các mẫu thiết kế quà lưu niệm sáng tạo trên các trang thiết kế đồ họa quốc tế.\n• [Mã AI: 6.D1.1] Khám phá tính năng AI gợi ý phối màu (Color Palette Generator) cho sản phẩm thiết kế quà tặng.'
+        dc: '• [Mã NLS: 2.1.TC1b] Tham khảo các mẫu thiết kế quà lưu niệm sáng tạo trên các trang thiết kế đồ họa quốc tế.\n• [Mã AI: 6.D1.1] Khám phá tính năng AI gợi ý phối màu (Color Palette Generator) cho sản phẩm thiết kế quà tặng.'
       },
       {
         w: 6,
@@ -73,7 +73,7 @@ export function getArtSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
         t: 'Chủ đề 3: Hoạt động trong trường học',
         n: 'Chủ đề 3: Hoạt động trong trường học - Bài 5: Tạo hình hoạt động trong nhà trường (Kí họa dáng người và hoạt động) (1 tiết)',
         y: '- Quan sát và nắm được tỉ lệ cơ thể người cơ bản, dáng vận động (chạy, nhảy, đọc sách, quét dọn, chơi thể thao) trong trường học.\n- Thực hành kí họa nhanh các dáng người trong hoạt động học tập, vui chơi.',
-        dc: '• [Mã NLS: 1.2.TC1a] Thu thập ảnh chụp các khoảnh khắc sinh hoạt trường lớp chất lượng cao làm tư liệu kí họa.\n• [Mã AI: 6.C1.1] Trải nghiệm công cụ AI nhận diện khung xương và dáng vận động người (Pose Detection AI).'
+        dc: '• [Mã NLS: 1.1.TC1b] Thu thập ảnh chụp các khoảnh khắc sinh hoạt trường lớp chất lượng cao làm tư liệu kí họa.\n• [Mã AI: 6.C1.1] Trải nghiệm công cụ AI nhận diện khung xương và dáng vận động người (Pose Detection AI).'
       },
       {
         w: 8,
@@ -87,14 +87,14 @@ export function getArtSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
         t: 'Đánh giá định kỳ',
         n: 'Kiểm tra, đánh giá giữa Học kỳ 1 môn Mĩ thuật Lớp 6',
         y: '- Đánh giá mức độ đạt chuẩn kiến thức, kĩ năng tạo hình 2D/3D, bố cục, màu sắc từ Tuần 1 đến Tuần 8.\n- Đánh giá khả năng sáng tạo độc lập, thẩm mỹ thị giác và kĩ năng sử dụng vật liệu.',
-        dc: '• [Mã NLS: 3.1.TC1a] Lưu trữ ảnh chụp tác phẩm kiểm tra vào hồ sơ học tập mĩ thuật số.\n• [Mã AI: 6.A1.3] Đối chiếu sản phẩm mĩ thuật với thang tiêu chí đánh giá số hóa minh bạch.'
+        dc: '• [Mã NLS: 3.1.TC1b] Lưu trữ ảnh chụp tác phẩm kiểm tra vào hồ sơ học tập mĩ thuật số.\n• [Mã AI: 6.A1.3] Đối chiếu sản phẩm mĩ thuật với thang tiêu chí đánh giá số hóa minh bạch.'
       },
       {
         w: 10,
         t: 'Chủ đề 3: Hoạt động trong trường học',
         n: 'Chủ đề 3: Hoạt động trong trường học - Bài 6: Thiết kế đồ chơi (Sáng tạo đồ chơi từ vật liệu sẵn có) (1 tiết)',
         y: '- Hiểu được nguyên lý thiết kế đồ chơi chuyển động hoặc đồ chơi tạo hình đơn giản từ vật liệu tái chế (nắp chai, cốc giấy, dây thừng).\n- Thực hành chế tạo một món đồ chơi giáo dục an toàn, thân thiện với môi trường.',
-        dc: '• [Mã NLS: 2.4.TC1a] Hợp tác nhóm trực tuyến để lên ý tưởng và phân công thu gom vật liệu tái chế.\n• [Mã AI: 6.D1.1] Dùng AI tìm kiếm và gợi ý các mẫu đồ chơi STEM mĩ thuật tái chế độc đáo.'
+        dc: '• [Mã NLS: 2.5.TC1b] Hợp tác nhóm trực tuyến để lên ý tưởng và phân công thu gom vật liệu tái chế.\n• [Mã AI: 6.D1.1] Dùng AI tìm kiếm và gợi ý các mẫu đồ chơi STEM mĩ thuật tái chế độc đáo.'
       },
       {
         w: 11,
@@ -122,7 +122,7 @@ export function getArtSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
         t: 'Chủ đề 4: Mĩ thuật thời kì tiền sử',
         n: 'Chủ đề 4: Mĩ thuật thời kì tiền sử - Bài 8: Mĩ thuật Việt Nam thời kì tiền sử (Thực hành mô phỏng họa tiết tiền sử) (1 tiết)',
         y: '- Thực hành mô phỏng hình khắc mặt người hang Đồng Nội hoặc hoa văn gốm tiền sử bằng phương pháp in khắc xốp / dập nổi đất sét.\n- Bộc lộ niềm tự hào về cội nguồn lịch sử và nền mĩ thuật dân tộc.',
-        dc: '• [Mã NLS: 3.1.TC1a] Chụp ảnh quy trình thực hành in khắc thủ công và xuất bản bài học chia sẻ.\n• [Mã AI: 6.C1.1] Khám phá cách AI phân tích độ tương phản và đường nét khắc đá cổ.'
+        dc: '• [Mã NLS: 3.2.TC1a] Chụp ảnh quy trình thực hành in khắc thủ công và xuất bản bài học chia sẻ.\n• [Mã AI: 6.C1.1] Khám phá cách AI phân tích độ tương phản và đường nét khắc đá cổ.'
       },
       {
         w: 15,
@@ -136,7 +136,7 @@ export function getArtSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
         t: 'Đánh giá định kỳ',
         n: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Mĩ thuật Lớp 6',
         y: '- Đánh giá tổng hợp toàn diện năng lực sáng tạo mĩ thuật, kĩ thuật tạo hình và ý thức học tập trong toàn bộ Học kỳ 1.\n- Phân hóa năng lực thẩm mỹ và kĩ năng biểu đạt ý tưởng nghệ thuật của học sinh.',
-        dc: '• [Mã NLS: 3.1.TC1a] Tải ảnh chất lượng cao của tác phẩm kiểm tra lên thư viện số của trường.\n• [Mã AI: 6.B1.1] Đảm bảo tính trung thực và quyền tác giả của sản phẩm mĩ thuật nộp đánh giá.'
+        dc: '• [Mã NLS: 3.1.TC1b] Tải ảnh chất lượng cao của tác phẩm kiểm tra lên thư viện số của trường.\n• [Mã AI: 6.B1.1] Đảm bảo tính trung thực và quyền tác giả của sản phẩm mĩ thuật nộp đánh giá.'
       },
       {
         w: 17,
@@ -166,7 +166,7 @@ export function getArtSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
         t: 'Chủ đề 5: Trò chơi dân gian',
         n: 'Chủ đề 5: Trò chơi dân gian - Bài 9: Sáng tạo mĩ thuật với trò chơi dân gian (Thực hành vẽ tranh/tạo hình) (1 tiết)',
         y: '- Thực hành hoàn thiện tranh vẽ hoặc tạo hình đất nặn 3D thể hiện trò chơi dân gian với màu sắc rực rỡ, biểu cảm sinh động.\n- Bồi dưỡng tình yêu nét đẹp văn hóa truyền thống và tinh thần đồng đội.',
-        dc: '• [Mã NLS: 3.1.TC1a] Chụp ảnh tác phẩm nhiều góc độ và lưu vào bộ sưu tập nghệ thuật số của tổ.\n• [Mã AI: 6.D1.1] Dùng AI hỗ trợ gợi ý cách phối màu tương phản làm nổi bật nhân vật chính trong tranh.'
+        dc: '• [Mã NLS: 3.2.TC1a] Chụp ảnh tác phẩm nhiều góc độ và lưu vào bộ sưu tập nghệ thuật số của tổ.\n• [Mã AI: 6.D1.1] Dùng AI hỗ trợ gợi ý cách phối màu tương phản làm nổi bật nhân vật chính trong tranh.'
       },
       {
         w: 21,
@@ -187,14 +187,14 @@ export function getArtSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
         t: 'Chủ đề 6: Sắc màu lễ hội',
         n: 'Chủ đề 6: Sắc màu lễ hội - Bài 11: Hoà sắc trong tranh chủ đề lễ hội (Thực hành sáng tạo tranh lễ hội) (1 tiết)',
         y: '- Thực hành vẽ tranh lễ hội với kỹ thuật hòa sắc ấn tượng, diễn tả được không khí đông vui, nhộn nhịp của lễ hội quê hương.\n- Thể hiện niềm tự hào về truyền thống văn hóa dân tộc.',
-        dc: '• [Mã NLS: 3.1.TC1a] Sử dụng ứng dụng chỉnh sửa ảnh số để so sánh các hiệu ứng hòa sắc khác nhau trên bức tranh.\n• [Mã AI: 6.A1.1] Khẳng định bản sắc văn hóa độc đáo của lễ hội Việt Nam do con người sáng tạo.'
+        dc: '• [Mã NLS: 3.1.TC1b] Sử dụng ứng dụng chỉnh sửa ảnh số để so sánh các hiệu ứng hòa sắc khác nhau trên bức tranh.\n• [Mã AI: 6.A1.1] Khẳng định bản sắc văn hóa độc đáo của lễ hội Việt Nam do con người sáng tạo.'
       },
       {
         w: 24,
         t: 'Chủ đề 6: Sắc màu lễ hội',
         n: 'Chủ đề 6: Sắc màu lễ hội - Bài 12: Màu sắc lễ hội trong thiết kế lịch treo tường (Lên ý tưởng bố cục lịch) (1 tiết)',
         y: '- Nắm được các thành phần chính của một tờ lịch treo tường (phần hình ảnh trang trí, phần chữ/số ngày tháng, bố cục tổng thể hài hòa).\n- Phác thảo ý tưởng thiết kế tờ lịch treo tường mang sắc màu lễ hội.',
-        dc: '• [Mã NLS: 2.1.TC1a] Tham khảo các mẫu thiết kế lịch treo tường văn hóa truyền thống trên kho thiết kế đồ họa số.\n• [Mã AI: 6.D1.1] Khám phá công cụ AI tạo lưới lịch tự động (calendar grid generator) theo năm học.'
+        dc: '• [Mã NLS: 2.2.TC1c] Tham khảo các mẫu thiết kế lịch treo tường văn hóa truyền thống trên kho thiết kế đồ họa số.\n• [Mã AI: 6.D1.1] Khám phá công cụ AI tạo lưới lịch tự động (calendar grid generator) theo năm học.'
       },
       {
         w: 25,
@@ -208,7 +208,7 @@ export function getArtSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
         t: 'Đánh giá định kỳ',
         n: 'Kiểm tra, đánh giá giữa Học kỳ 2 môn Mĩ thuật Lớp 6',
         y: '- Đánh giá mức độ đạt chuẩn kiến thức, kĩ năng tạo hình, thiết kế thiệp, lịch treo tường và hòa sắc từ Tuần 19 đến Tuần 25.\n- Đánh giá năng lực sáng tạo ứng dụng và tư duy thẩm mỹ của học sinh.',
-        dc: '• [Mã NLS: 3.1.TC1a] Chụp ảnh và tải sản phẩm bài kiểm tra lên cổng đánh giá học tập số.\n• [Mã AI: 6.A1.3] Học sinh tự đánh giá chéo theo phiếu tiêu chí số hóa chuẩn GDPT 2018.'
+        dc: '• [Mã NLS: 3.2.TC1a] Chụp ảnh và tải sản phẩm bài kiểm tra lên cổng đánh giá học tập số.\n• [Mã AI: 6.A1.3] Học sinh tự đánh giá chéo theo phiếu tiêu chí số hóa chuẩn GDPT 2018.'
       },
       {
         w: 27,
@@ -236,14 +236,14 @@ export function getArtSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
         t: 'Chủ đề 8: Mĩ thuật thời kì cổ đại',
         n: 'Chủ đề 8: Mĩ thuật thời kì cổ đại - Bài 16: Mĩ thuật Việt Nam thời kì cổ đại (Nghệ thuật Đông Sơn và hoa văn trống đồng) (1 tiết)',
         y: '- Nhận biết đỉnh cao nghệ thuật đúc đồng Đông Sơn thời các vua Hùng: Trống đồng Đông Sơn, Thạp đồng Đào Thịnh, Dao găm đồng chui cán hình người.\n- Phân tích ý nghĩa các hoa văn hình ngôi sao, chim lạc, người giã gạo, chèo thuyền trên mặt trống đồng.',
-        dc: '• [Mã NLS: 1.3.TC1a] Lưu trữ và chia sẻ kho ảnh hoa văn Trống đồng Đông Sơn số hóa độ phân giải cao.\n• [Mã AI: 6.D1.1] Khám phá cách thuật toán đồ họa vector AI tái hiện chuẩn xác từng chi tiết hoa văn Trống đồng.'
+        dc: '• [Mã NLS: 1.3.TC1b] Lưu trữ và chia sẻ kho ảnh hoa văn Trống đồng Đông Sơn số hóa độ phân giải cao.\n• [Mã AI: 6.D1.1] Khám phá cách thuật toán đồ họa vector AI tái hiện chuẩn xác từng chi tiết hoa văn Trống đồng.'
       },
       {
         w: 31,
         t: 'Đánh giá định kỳ',
         n: 'Kiểm tra, đánh giá cuối Học kỳ 2 môn Mĩ thuật Lớp 6',
         y: '- Đánh giá tổng kết mức độ hoàn thành chuẩn kiến thức, kĩ năng môn Mĩ thuật Lớp 6 cả năm học.\n- Đánh giá khả năng cảm thụ nghệ thuật cổ đại, năng lực thiết kế ứng dụng và kĩ năng tạo hình của học sinh.',
-        dc: '• [Mã NLS: 3.1.TC1a] Lưu trữ toàn bộ sản phẩm bài thi vào học bạ nghệ thuật điện tử của học sinh.\n• [Mã AI: 6.A1.3] Thực hiện đánh giá khách quan dựa trên bộ tiêu chí chuẩn hóa GDPT 2018.'
+        dc: '• [Mã NLS: 3.1.TC1b] Lưu trữ toàn bộ sản phẩm bài thi vào học bạ nghệ thuật điện tử của học sinh.\n• [Mã AI: 6.A1.3] Thực hiện đánh giá khách quan dựa trên bộ tiêu chí chuẩn hóa GDPT 2018.'
       },
       {
         w: 32,
@@ -310,7 +310,7 @@ export function getArtSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
         t: 'Chủ đề 1: Mĩ thuật thế giới thời kì trung đại',
         n: 'Chủ đề 1: Mĩ thuật thế giới thời kì trung đại - Bài 2: Mĩ thuật ứng dụng thời kì trung đại (1 tiết)',
         y: '- Nhận biết các sản phẩm mĩ thuật ứng dụng thời Trung đại: Nghệ thuật kim hoàn, trang trí thảm dệt Tapestry, chạm khắc phù điêu và đồ gốm men.\n- Thực hành mô phỏng họa tiết trang trí Trung đại trên sản phẩm ứng dụng.',
-        dc: '• [Mã NLS: 1.2.TC1a] Tra cứu tư liệu về kĩ thuật dệt thảm Tapestry thời Trung đại trên kho bảo tàng số.\n• [Mã AI: 7.D1.1] Dùng AI gợi ý cách ứng dụng hoa văn cổ điển Trung đại vào các sản phẩm thiết kế thời trang hiện đại.'
+        dc: '• [Mã NLS: 1.2.TC1b] Tra cứu tư liệu về kĩ thuật dệt thảm Tapestry thời Trung đại trên kho bảo tàng số.\n• [Mã AI: 7.D1.1] Dùng AI gợi ý cách ứng dụng hoa văn cổ điển Trung đại vào các sản phẩm thiết kế thời trang hiện đại.'
       },
       {
         w: 3,
@@ -324,14 +324,14 @@ export function getArtSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
         t: 'Chủ đề 2: Vẻ đẹp di tích',
         n: 'Chủ đề 2: Vẻ đẹp di tích - Bài 3: Hình ảnh di tích trong sáng tạo mĩ thuật (Thực hành vẽ tranh di tích) (1 tiết)',
         y: '- Thực hành hoàn thiện tranh vẽ di tích lịch sử với nét vẽ khoáng đạt, màu sắc trầm ấm, thể hiện được không gian kiến trúc và chiều sâu lịch sử.\n- Bồi dưỡng tình yêu và ý thức giữ gìn di sản văn hóa dân tộc.',
-        dc: '• [Mã NLS: 3.1.TC1a] Chụp ảnh số hóa tác phẩm vẽ di tích và chỉnh sửa độ tương phản làm nổi bật chất cổ kính.\n• [Mã AI: 7.A1.MR1] So sánh tranh vẽ tay thể hiện tình cảm của học sinh với ảnh chụp di tích bằng máy móc.'
+        dc: '• [Mã NLS: 3.2.TC1a] Chụp ảnh số hóa tác phẩm vẽ di tích và chỉnh sửa độ tương phản làm nổi bật chất cổ kính.\n• [Mã AI: 7.A1.MR1] So sánh tranh vẽ tay thể hiện tình cảm của học sinh với ảnh chụp di tích bằng máy móc.'
       },
       {
         w: 5,
         t: 'Chủ đề 2: Vẻ đẹp di tích',
         n: 'Chủ đề 2: Vẻ đẹp di tích - Bài 4: Hình ảnh di tích trong thiết kế tem bưu chính (Ý tưởng thiết kế tem) (1 tiết)',
         y: '- Nắm vững đặc trưng của tem bưu chính (khuôn khổ nhỏ, hình ảnh biểu trưng cô đọng, chữ "Việt Nam", giá cước bưu chính, đường răng cưa viền).\n- Lên ý tưởng và phác thảo mẫu tem bưu chính giới thiệu vẻ đẹp di tích quê hương.',
-        dc: '• [Mã NLS: 2.1.TC1a] Tìm hiểu bộ sưu tập tem bưu chính di sản văn hóa Việt Nam trên kho lưu trữ số của Bưu điện Việt Nam.\n• [Mã AI: 7.C4.1] Khám phá cách AI phân tích tính cô đọng của hình ảnh biểu tượng trong thiết kế đồ họa vi mô.'
+        dc: '• [Mã NLS: 2.5.TC1b] Tìm hiểu bộ sưu tập tem bưu chính di sản văn hóa Việt Nam trên kho lưu trữ số của Bưu điện Việt Nam.\n• [Mã AI: 7.C4.1] Khám phá cách AI phân tích tính cô đọng của hình ảnh biểu tượng trong thiết kế đồ họa vi mô.'
       },
       {
         w: 6,
@@ -352,14 +352,14 @@ export function getArtSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
         t: 'Chủ đề 3: Yếu tố dân tộc trong mĩ thuật',
         n: 'Chủ đề 3: Yếu tố dân tộc trong mĩ thuật - Bài 6: Thiết kế logo (Thiết kế biểu trưng ứng dụng yếu tố dân tộc) (1 tiết)',
         y: '- Nắm vững nguyên lý thiết kế logo biểu trưng (tính cô đọng, dễ nhớ, dễ nhận biết, mang ý nghĩa thông điệp sâu sắc).\n- Thực hành thiết kế logo cho một sự kiện, câu lạc bộ học đường có kết hợp hoa văn, họa tiết dân tộc.',
-        dc: '• [Mã NLS: 3.1.TC1a] Sử dụng phần mềm thiết kế vector (Inkscape / Illustrator online) để vẽ logo số.\n• [Mã AI: 7.D1.1] Trải nghiệm công cụ AI gợi ý ý tưởng logo (AI Logo Maker) và điều chỉnh lại theo bản sắc riêng.'
+        dc: '• [Mã NLS: 3.1.TC1b] Sử dụng phần mềm thiết kế vector (Inkscape / Illustrator online) để vẽ logo số.\n• [Mã AI: 7.D1.1] Trải nghiệm công cụ AI gợi ý ý tưởng logo (AI Logo Maker) và điều chỉnh lại theo bản sắc riêng.'
       },
       {
         w: 9,
         t: 'Đánh giá định kỳ',
         n: 'Kiểm tra, đánh giá giữa Học kỳ 1 môn Mĩ thuật Lớp 7',
         y: '- Đánh giá mức độ đạt chuẩn kiến thức, kĩ năng tạo hình, thiết kế tem, logo và mĩ thuật di tích từ Tuần 1 đến Tuần 8.\n- Đánh giá năng lực sáng tạo độc lập, tư duy thẩm mỹ và kĩ năng xử lý chất liệu.',
-        dc: '• [Mã NLS: 3.1.TC1a] Chụp ảnh và tải tác phẩm bài kiểm tra lên kho học liệu số của trường.\n• [Mã AI: 7.B3.1] Thực hiện nghiêm túc quy chế kiểm tra đánh giá số hóa.'
+        dc: '• [Mã NLS: 3.2.TC1a] Chụp ảnh và tải tác phẩm bài kiểm tra lên kho học liệu số của trường.\n• [Mã AI: 7.B3.1] Thực hiện nghiêm túc quy chế kiểm tra đánh giá số hóa.'
       },
       {
         w: 10,
@@ -380,7 +380,7 @@ export function getArtSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
         t: 'Chủ đề 4: Vẻ đẹp trong tác phẩm hội hoạ',
         n: 'Chủ đề 4: Vẻ đẹp trong tác phẩm hội hoạ - Bài 8: Tranh tĩnh vật (Thực hành vẽ tranh tĩnh vật màu) (1 tiết)',
         y: '- Thực hành hoàn thiện tranh tĩnh vật màu với hòa sắc hài hòa, thể hiện được khối tròn, chất cảm bề mặt đồ vật.\n- Bộc lộ cảm xúc thẩm mỹ và rèn luyện tính kiên trì, quan sát tỉ mỉ.',
-        dc: '• [Mã NLS: 3.1.TC1a] Số hóa bức tranh tĩnh vật bằng máy quét scan/máy ảnh để đưa vào bộ sưu tập nghệ thuật số.\n• [Mã AI: 7.D1.1] Nhận xét độ hòa sắc của bức tranh tĩnh vật bằng công cụ phân tích màu sắc AI.'
+        dc: '• [Mã NLS: 3.1.TC1b] Số hóa bức tranh tĩnh vật bằng máy quét scan/máy ảnh để đưa vào bộ sưu tập nghệ thuật số.\n• [Mã AI: 7.D1.1] Nhận xét độ hòa sắc của bức tranh tĩnh vật bằng công cụ phân tích màu sắc AI.'
       },
       {
         w: 13,
@@ -394,21 +394,21 @@ export function getArtSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
         t: 'Ôn tập học kì 1',
         n: 'Ôn tập học kì 1: Ôn tập kiến thức mĩ thuật tạo hình và mĩ thuật ứng dụng HK1 Lớp 7 (1 tiết)',
         y: '- Hệ thống hóa kiến thức Mĩ thuật Trung đại, vẻ đẹp di tích, yếu tố dân tộc, tranh tĩnh vật.\n- Nâng cao kĩ năng cảm thụ thẩm mỹ và đánh giá tác phẩm nghệ thuật.',
-        dc: '• [Mã NLS: 2.1.TC1a] Tham gia trò chơi trắc nghiệm kiến thức mĩ thuật trực tuyến giữa các nhóm.\n• [Mã AI: 7.C5.1] Tương tác với chatbot AI giải đáp các thắc mắc về lịch sử mĩ thuật thế giới và Việt Nam.'
+        dc: '• [Mã NLS: 2.1.TC1b] Tham gia trò chơi trắc nghiệm kiến thức mĩ thuật trực tuyến giữa các nhóm.\n• [Mã AI: 7.C5.1] Tương tác với chatbot AI giải đáp các thắc mắc về lịch sử mĩ thuật thế giới và Việt Nam.'
       },
       {
         w: 15,
         t: 'Ôn tập học kì 1',
         n: 'Hoàn thiện hồ sơ sản phẩm mĩ thuật và maket trưng bày HK1 Lớp 7 (1 tiết)',
         y: '- Hoàn thiện maket trang trí không gian trưng bày triển lãm của lớp.\n- Phân công nhiệm vụ hướng dẫn viên thuyết minh triển lãm cho các thành viên trong tổ.',
-        dc: '• [Mã NLS: 2.4.TC1a] Hợp tác lập kế hoạch phân chia sơ đồ triển lãm trên bảng làm việc nhóm trực tuyến.\n• [Mã AI: 7.D1.1] Ứng dụng AI tạo sơ đồ mặt bằng triển lãm mĩ thuật 2D/3D trực quan.'
+        dc: '• [Mã NLS: 2.1.TC1b] Hợp tác lập kế hoạch phân chia sơ đồ triển lãm trên bảng làm việc nhóm trực tuyến.\n• [Mã AI: 7.D1.1] Ứng dụng AI tạo sơ đồ mặt bằng triển lãm mĩ thuật 2D/3D trực quan.'
       },
       {
         w: 16,
         t: 'Đánh giá định kỳ',
         n: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Mĩ thuật Lớp 7',
         y: '- Đánh giá tổng hợp toàn diện năng lực sáng tạo mĩ thuật, kĩ thuật tạo hình và ý thức học tập trong toàn bộ Học kỳ 1.\n- Phân hóa năng lực biểu đạt ý tưởng nghệ thuật và tư duy thiết kế của học sinh.',
-        dc: '• [Mã NLS: 3.1.TC1a] Lưu trữ ảnh chất lượng cao của tác phẩm kiểm tra vào hồ sơ học sinh điện tử.\n• [Mã AI: 7.B3.1] Thực hiện cam kết trung thực và tôn trọng bản quyền sản phẩm nghệ thuật.'
+        dc: '• [Mã NLS: 3.2.TC1a] Lưu trữ ảnh chất lượng cao của tác phẩm kiểm tra vào hồ sơ học sinh điện tử.\n• [Mã AI: 7.B3.1] Thực hiện cam kết trung thực và tôn trọng bản quyền sản phẩm nghệ thuật.'
       },
       {
         w: 17,
@@ -438,7 +438,7 @@ export function getArtSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
         t: 'Chủ đề 5: Hiện thực cuộc sống trong sáng tạo mĩ thuật',
         n: 'Chủ đề 5: Hiện thực cuộc sống trong sáng tạo mĩ thuật - Bài 10: Thiết kế tạo mẫu trang phục (1 tiết)',
         y: '- Nắm vững nguyên lý cơ bản của thiết kế thời trang (phác thảo dáng người mẫu thời trang, tạo dáng trang phục, phối màu sắc, họa tiết trang trí).\n- Thực hành thiết kế bộ sưu tập trang phục dạo phố hoặc trang phục học đường sáng tạo.',
-        dc: '• [Mã NLS: 3.1.TC1a] Sử dụng ứng dụng thiết kế thời trang số (Digital Fashion Sketching) trên máy tính bảng.\n• [Mã AI: 7.D1.1] Trải nghiệm AI gợi ý phối màu thời trang và chất liệu vải theo xu hướng (Trend Forecast AI).'
+        dc: '• [Mã NLS: 3.1.TC1b] Sử dụng ứng dụng thiết kế thời trang số (Digital Fashion Sketching) trên máy tính bảng.\n• [Mã AI: 7.D1.1] Trải nghiệm AI gợi ý phối màu thời trang và chất liệu vải theo xu hướng (Trend Forecast AI).'
       },
       {
         w: 21,
@@ -459,7 +459,7 @@ export function getArtSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
         t: 'Chủ đề 6: Sáng tạo ngôi nhà',
         n: 'Chủ đề 6: Sáng tạo ngôi nhà - Bài 12: Tranh cổ động (Thực hành hoàn thiện tranh cổ động) (1 tiết)',
         y: '- Thực hành hoàn thiện tranh cổ động với bố cục chặt chẽ, mảng màu phẳng ấn tượng, khẩu hiệu truyền cảm hứng mạnh mẽ.\n- Thể hiện ý thức trách nhiệm công dân đối với cộng đồng và xã hội.',
-        dc: '• [Mã NLS: 3.1.TC1a] Sử dụng phần mềm đồ họa chèn typography khẩu hiệu chuẩn xác vào bức tranh cổ động.\n• [Mã AI: 7.D1.1] Sử dụng AI kiểm tra độ tương phản màu sắc và khả năng nhận diện hình ảnh từ khoảng cách xa.'
+        dc: '• [Mã NLS: 3.2.TC1a] Sử dụng phần mềm đồ họa chèn typography khẩu hiệu chuẩn xác vào bức tranh cổ động.\n• [Mã AI: 7.D1.1] Sử dụng AI kiểm tra độ tương phản màu sắc và khả năng nhận diện hình ảnh từ khoảng cách xa.'
       },
       {
         w: 24,
@@ -480,7 +480,7 @@ export function getArtSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
         t: 'Đánh giá định kỳ',
         n: 'Kiểm tra, đánh giá giữa Học kỳ 2 môn Mĩ thuật Lớp 7',
         y: '- Đánh giá mức độ đạt chuẩn kiến thức, kĩ năng tạo hình, thiết kế thời trang, tranh cổ động và khung ảnh từ Tuần 19 đến Tuần 25.\n- Đánh giá năng lực sáng tạo ứng dụng, tư duy biểu tượng và thẩm mỹ thị giác.',
-        dc: '• [Mã NLS: 3.1.TC1a] Chụp ảnh và lưu trữ bài kiểm tra vào hồ sơ đánh giá năng lực số của học sinh.\n• [Mã AI: 7.B3.1] Thực hiện nghiêm túc quy trình kiểm tra đánh giá minh bạch.'
+        dc: '• [Mã NLS: 3.1.TC1b] Chụp ảnh và lưu trữ bài kiểm tra vào hồ sơ đánh giá năng lực số của học sinh.\n• [Mã AI: 7.B3.1] Thực hiện nghiêm túc quy trình kiểm tra đánh giá minh bạch.'
       },
       {
         w: 27,
@@ -501,21 +501,21 @@ export function getArtSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
         t: 'Chủ đề 8: Mĩ thuật Việt Nam thời kì trung đại',
         n: 'Chủ đề 8: Mĩ thuật Việt Nam thời kì trung đại - Bài 16: Khai thác giá trị tạo hình truyền thống trong trang trí đồ vật (1 tiết)',
         y: '- Vận dụng hoa văn truyền thống thời Trung đại (hoa sen, hoa cúc, mây cuộn, rồng thời Lý) vào thiết kế trang trí một đồ vật hiện đại (áo phông, túi xách vải, ốp điện thoại, cốc sứ).\n- Thể hiện sự kết hợp hài hòa giữa bản sắc cổ truyền và phong cách hiện đại.',
-        dc: '• [Mã NLS: 3.1.TC1a] Vẽ phác thảo hoa văn truyền thống trên phần mềm đồ họa số và áp lên mockup sản phẩm 3D.\n• [Mã AI: 7.D1.1] Dùng AI tạo các mẫu họa tiết hoa sen cách điệu đối xứng phục vụ trang trí đồ vật.'
+        dc: '• [Mã NLS: 3.2.TC1a] Vẽ phác thảo hoa văn truyền thống trên phần mềm đồ họa số và áp lên mockup sản phẩm 3D.\n• [Mã AI: 7.D1.1] Dùng AI tạo các mẫu họa tiết hoa sen cách điệu đối xứng phục vụ trang trí đồ vật.'
       },
       {
         w: 30,
         t: 'Chủ đề 8: Mĩ thuật Việt Nam thời kì trung đại',
         n: 'Kiểm tra, trưng bày sản phẩm cuối năm môn Mĩ thuật Lớp 7 (Chuẩn bị và hoàn thiện tác phẩm) (1 tiết)',
         y: '- Rà soát, hoàn thiện và đóng khung toàn bộ các sản phẩm mĩ thuật đã sáng tạo trong cả năm học Lớp 7.\n- Lập danh mục tác phẩm và chuẩn bị không gian trưng bày triển lãm cuối năm.',
-        dc: '• [Mã NLS: 1.3.TC1a] Hoàn thiện danh mục tác phẩm nghệ thuật số (Digital Portfolio) của Lớp 7.\n• [Mã AI: 7.D1.1] Sử dụng chatbot AI hỗ trợ viết lời bình nghệ thuật cho bộ sưu tập tác phẩm.'
+        dc: '• [Mã NLS: 1.3.TC1b] Hoàn thiện danh mục tác phẩm nghệ thuật số (Digital Portfolio) của Lớp 7.\n• [Mã AI: 7.D1.1] Sử dụng chatbot AI hỗ trợ viết lời bình nghệ thuật cho bộ sưu tập tác phẩm.'
       },
       {
         w: 31,
         t: 'Đánh giá định kỳ',
         n: 'Kiểm tra, đánh giá cuối Học kỳ 2 môn Mĩ thuật Lớp 7',
         y: '- Đánh giá tổng kết mức độ hoàn thành chuẩn kiến thức, kĩ năng môn Mĩ thuật Lớp 7 cả năm học.\n- Đánh giá năng lực sáng tạo tạo hình, tư duy thiết kế ứng dụng và cảm thụ nghệ thuật truyền thống.',
-        dc: '• [Mã NLS: 3.1.TC1a] Lưu trữ toàn bộ kết quả và hình ảnh bài thi vào học bạ điện tử của học sinh.\n• [Mã AI: 7.A1.MR1] Học sinh tự đối chiếu tác phẩm với bảng rubric đánh giá chuẩn GDPT 2018.'
+        dc: '• [Mã NLS: 3.1.TC1b] Lưu trữ toàn bộ kết quả và hình ảnh bài thi vào học bạ điện tử của học sinh.\n• [Mã AI: 7.A1.MR1] Học sinh tự đối chiếu tác phẩm với bảng rubric đánh giá chuẩn GDPT 2018.'
       },
       {
         w: 32,
@@ -582,21 +582,21 @@ export function getArtSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
         t: 'Chủ đề 1: Hình tượng con người trong mĩ thuật',
         n: 'Chủ đề 1: Hình tượng con người trong mĩ thuật - Bài 2: Một số dạng bố cục trong tranh sinh hoạt (1 tiết)',
         y: '- Nhận biết và phân tích các dạng bố cục phổ biến trong tranh sinh hoạt: Bố cục hình tam giác/kim tự tháp, bố cục hình chữ nhật, bố cục đường chéo, bố cục hình tròn.\n- Thực hành sắp xếp nhóm nhân vật tạo nên bố cục sinh hoạt trường lớp hoặc gia đình cân đối, sinh động.',
-        dc: '• [Mã NLS: 1.3.TC2a] Thiết kế sơ đồ phân tích các dạng bố cục hội họa trên phần mềm đồ họa số.\n• [Mã AI: 8.D1.1] Dùng AI phân tích mắt nhìn (Heatmap / Rule of Thirds AI) để đánh giá độ tập trung của bố cục tranh.'
+        dc: '• [Mã NLS: 1.3.TC2b] Thiết kế sơ đồ phân tích các dạng bố cục hội họa trên phần mềm đồ họa số.\n• [Mã AI: 8.D1.1] Dùng AI phân tích mắt nhìn (Heatmap / Rule of Thirds AI) để đánh giá độ tập trung của bố cục tranh.'
       },
       {
         w: 3,
         t: 'Chủ đề 2: Vẻ đẹp trong nghệ thuật truyền thống',
         n: 'Chủ đề 2: Vẻ đẹp trong nghệ thuật truyền thống - Bài 3: Nghệ thuật truyền thống (Khám phá hoa văn dân tộc thiểu số) (1 tiết)',
         y: '- Tìm hiểu nét độc đáo của hoa văn thổ cẩm các dân tộc thiểu số Việt Nam (H\'Mông, Thái, Dao, Ba Na, Chăm, Khmer).\n- Phân tích ý nghĩa biểu tượng của các họa tiết hình học, hoa lá, muông thú thể hiện nhân sinh quan gắn bó với thiên nhiên.',
-        dc: '• [Mã NLS: 1.2.TC2a] Truy cập kho dữ liệu số hóa trang phục và hoa văn thổ cẩm 54 dân tộc Việt Nam.\n• [Mã AI: 8.A1.1] Nhận thức về sự tinh xảo trong nghệ thuật dệt thêu thủ công của phụ nữ vùng cao mà máy dệt công nghiệp khó sánh kịp.'
+        dc: '• [Mã NLS: 1.1.TC2b] Truy cập kho dữ liệu số hóa trang phục và hoa văn thổ cẩm 54 dân tộc Việt Nam.\n• [Mã AI: 8.A1.1] Nhận thức về sự tinh xảo trong nghệ thuật dệt thêu thủ công của phụ nữ vùng cao mà máy dệt công nghiệp khó sánh kịp.'
       },
       {
         w: 4,
         t: 'Chủ đề 2: Vẻ đẹp trong nghệ thuật truyền thống',
         n: 'Chủ đề 2: Vẻ đẹp trong nghệ thuật truyền thống - Bài 4: Thiết kế trang phục với hoa văn dân tộc thiểu số (Phác thảo ý tưởng) (1 tiết)',
         y: '- Nắm vững nguyên tắc cách điệu và ứng dụng hoa văn dân tộc vào thiết kế thời trang hiện đại (áo dài cách tân, áo khoác, váy đầm, phụ kiện).\n- Phác thảo bản vẽ mẫu thiết kế thời trang kết hợp hoa văn thổ cẩm.',
-        dc: '• [Mã NLS: 2.1.TC2a] Tham khảo các bộ sưu tập thời trang thổ cẩm của các nhà thiết kế Việt Nam nổi tiếng trên Internet.\n• [Mã AI: 8.D2.1] Khám phá công cụ AI tạo hoa văn thổ cẩm lặp vô tận (Seamless Pattern AI) để thử nghiệm lên bản vẽ.'
+        dc: '• [Mã NLS: 2.2.TC2c] Tham khảo các bộ sưu tập thời trang thổ cẩm của các nhà thiết kế Việt Nam nổi tiếng trên Internet.\n• [Mã AI: 8.D2.1] Khám phá công cụ AI tạo hoa văn thổ cẩm lặp vô tận (Seamless Pattern AI) để thử nghiệm lên bản vẽ.'
       },
       {
         w: 5,
@@ -617,21 +617,21 @@ export function getArtSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
         t: 'Chủ đề 3: Niềm vui, hạnh phúc',
         n: 'Chủ đề 3: Niềm vui, hạnh phúc - Bài 6: Thiết kế quà sinh nhật từ vật liệu sẵn có (Ý tưởng thiết kế) (1 tiết)',
         y: '- Nắm vững nguyên lý thiết kế sản phẩm quà tặng sinh nhật (hộp quà đa năng, thiệp 3D popup, đèn ngủ mini, khung ảnh trang trí).\n- Lên ý tưởng và phác thảo bản vẽ thiết kế quà sinh nhật từ vật liệu tái chế.',
-        dc: '• [Mã NLS: 2.4.TC2a] Thảo luận nhóm trực tuyến để trao đổi ý tưởng quà sinh nhật handmade độc đáo.\n• [Mã AI: 8.D1.1] Dùng AI gợi ý các mẫu thiệp 3D popup có cấu trúc gấp giấy Origami sáng tạo.'
+        dc: '• [Mã NLS: 2.5.TC2b] Thảo luận nhóm trực tuyến để trao đổi ý tưởng quà sinh nhật handmade độc đáo.\n• [Mã AI: 8.D1.1] Dùng AI gợi ý các mẫu thiệp 3D popup có cấu trúc gấp giấy Origami sáng tạo.'
       },
       {
         w: 8,
         t: 'Chủ đề 3: Niềm vui, hạnh phúc',
         n: 'Chủ đề 3: Niềm vui, hạnh phúc - Bài 6: Thiết kế quà sinh nhật từ vật liệu sẵn có (Hoàn thiện sản phẩm) (1 tiết)',
         y: '- Thực hành hoàn thiện món quà sinh nhật tỉ mỉ, đẹp mắt, có công năng sử dụng hữu ích.\n- Trưng bày món quà và chia sẻ ý nghĩa gắn kết yêu thương, tinh thần tiết kiệm và bảo vệ môi trường.',
-        dc: '• [Mã NLS: 3.1.TC2a] Chụp ảnh sản phẩm dưới góc chụp nghệ thuật và tạo mã QR liên kết đến video hướng dẫn làm quà.\n• [Mã AI: 8.A1.2] Nhận diện giá trị tinh thần thiêng liêng của món quà do chính bàn tay con người làm ra.'
+        dc: '• [Mã NLS: 3.2.TC2a] Chụp ảnh sản phẩm dưới góc chụp nghệ thuật và tạo mã QR liên kết đến video hướng dẫn làm quà.\n• [Mã AI: 8.A1.2] Nhận diện giá trị tinh thần thiêng liêng của món quà do chính bàn tay con người làm ra.'
       },
       {
         w: 9,
         t: 'Đánh giá định kỳ',
         n: 'Kiểm tra, đánh giá giữa Học kỳ 1 môn Mĩ thuật Lớp 8',
         y: '- Đánh giá mức độ đạt chuẩn kiến thức, kĩ năng hình tượng con người, bố cục, hoa văn thổ cẩm và thiết kế quà tặng từ Tuần 1 đến Tuần 8.\n- Đánh giá năng lực sáng tạo độc lập, tư duy thẩm mỹ ứng dụng và kĩ năng thủ công.',
-        dc: '• [Mã NLS: 3.1.TC2a] Lưu trữ ảnh chụp tác phẩm kiểm tra vào hồ sơ học sinh điện tử.\n• [Mã AI: 8.A3.3] Thực hiện trách nhiệm giải trình và trung thực trong quá trình kiểm tra đánh giá.'
+        dc: '• [Mã NLS: 3.1.TC2b] Lưu trữ ảnh chụp tác phẩm kiểm tra vào hồ sơ học sinh điện tử.\n• [Mã AI: 8.A3.3] Thực hiện trách nhiệm giải trình và trung thực trong quá trình kiểm tra đánh giá.'
       },
       {
         w: 10,
@@ -652,7 +652,7 @@ export function getArtSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
         t: 'Chủ đề 4: Mĩ thuật thế giới thời kì hiện đại',
         n: 'Chủ đề 4: Mĩ thuật thế giới thời kì hiện đại - Bài 8: Nghệ thuật trang trí đồ gia dụng (1 tiết)',
         y: '- Nắm vững nguyên tắc trang trí đồ gia dụng (bát đĩa, bình hoa, đèn bàn, thảm trải sàn) kết hợp yếu tố mĩ thuật hiện đại và công năng tiện ích.\n- Thực hành thiết kế trang trí hoa văn hiện đại lên một vật dụng gia đình.',
-        dc: '• [Mã NLS: 3.1.TC2a] Sử dụng phần mềm thiết kế 3D áp hoa văn trang trí lên sản phẩm gia dụng ảo.\n• [Mã AI: 8.D2.1] Dùng AI gợi ý các phong cách trang trí nội thất Bắc Âu (Scandinavian), Tối giản (Minimalism).'
+        dc: '• [Mã NLS: 3.2.TC2a] Sử dụng phần mềm thiết kế 3D áp hoa văn trang trí lên sản phẩm gia dụng ảo.\n• [Mã AI: 8.D2.1] Dùng AI gợi ý các phong cách trang trí nội thất Bắc Âu (Scandinavian), Tối giản (Minimalism).'
       },
       {
         w: 13,
@@ -666,21 +666,21 @@ export function getArtSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
         t: 'Ôn tập học kì 1',
         n: 'Ôn tập học kì 1: Ôn tập các trường phái mĩ thuật hiện đại và mĩ thuật ứng dụng HK1 Lớp 8 (1 tiết)',
         y: '- Hệ thống hóa kiến thức về hình tượng con người, bố cục, hoa văn thổ cẩm, các trường phái Ấn tượng, Dã thú, Lập thể.\n- Nâng cao năng lực phản biện nghệ thuật và cảm thụ thẩm mỹ thị giác.',
-        dc: '• [Mã NLS: 2.1.TC2a] Tham gia trò chơi thi đấu kiến thức mĩ thuật trực tuyến giữa các tổ trong lớp.\n• [Mã AI: 8.C1.1] Chatbot AI hỗ trợ ôn tập, giải đáp các câu hỏi phân biệt các trường phái mĩ thuật hiện đại.'
+        dc: '• [Mã NLS: 2.5.TC2b] Tham gia trò chơi thi đấu kiến thức mĩ thuật trực tuyến giữa các tổ trong lớp.\n• [Mã AI: 8.C1.1] Chatbot AI hỗ trợ ôn tập, giải đáp các câu hỏi phân biệt các trường phái mĩ thuật hiện đại.'
       },
       {
         w: 15,
         t: 'Ôn tập học kì 1',
         n: 'Hoàn thiện hồ sơ sản phẩm mĩ thuật và maket triển lãm HK1 Lớp 8 (1 tiết)',
         y: '- Hoàn thiện maket trang trí không gian triển lãm mĩ thuật HK1 của lớp.\n- Luyện tập kĩ năng thuyết trình, giới thiệu tác phẩm nghệ thuật trước tập thể.',
-        dc: '• [Mã NLS: 2.4.TC2a] Phân công nhiệm vụ bài trí không gian triển lãm qua bảng phân việc số.\n• [Mã AI: 8.D1.1] Dùng AI tạo sơ đồ bố trí ánh sáng và không gian trưng bày triển lãm tối ưu.'
+        dc: '• [Mã NLS: 2.1.TC2b] Phân công nhiệm vụ bài trí không gian triển lãm qua bảng phân việc số.\n• [Mã AI: 8.D1.1] Dùng AI tạo sơ đồ bố trí ánh sáng và không gian trưng bày triển lãm tối ưu.'
       },
       {
         w: 16,
         t: 'Đánh giá định kỳ',
         n: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Mĩ thuật Lớp 8',
         y: '- Đánh giá tổng hợp toàn diện năng lực sáng tạo mĩ thuật, kĩ thuật tạo hình và ý thức học tập trong toàn bộ Học kỳ 1.\n- Phân hóa năng lực biểu đạt ý tưởng nghệ thuật theo phong cách hiện đại của học sinh.',
-        dc: '• [Mã NLS: 3.1.TC2a] Lưu trữ ảnh chất lượng cao của tác phẩm kiểm tra vào hồ sơ học sinh điện tử.\n• [Mã AI: 8.A3.3] Thực hiện nghiêm túc quy chế đánh giá minh bạch, tôn trọng bản quyền.'
+        dc: '• [Mã NLS: 3.1.TC2b] Lưu trữ ảnh chất lượng cao của tác phẩm kiểm tra vào hồ sơ học sinh điện tử.\n• [Mã AI: 8.A3.3] Thực hiện nghiêm túc quy chế đánh giá minh bạch, tôn trọng bản quyền.'
       },
       {
         w: 17,
@@ -710,14 +710,14 @@ export function getArtSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
         t: 'Chủ đề 5: Vẻ đẹp trong lao động',
         n: 'Chủ đề 5: Vẻ đẹp trong lao động - Bài 10: Nghệ thuật trổ giấy trong trang trí (Khám phá nghệ thuật Kirigami / Cắt giấy dân gian) (1 tiết)',
         y: '- Tìm hiểu nghệ thuật cắt trổ giấy truyền thống (tranh cắt giấy Đông Hồ, hoa giấy Thanh Tiên, nghệ thuật Kirigami Nhật Bản).\n- Nắm vững kỹ thuật gấp giấy đối xứng và trổ hoa văn tinh xảo bằng dao trổ chuyên dụng an toàn.',
-        dc: '• [Mã NLS: 1.2.TC2a] Xem các video hướng dẫn nghệ thuật trổ giấy Kirigami bậc thầy trên Internet.\n• [Mã AI: 8.D1.1] Dùng AI tạo các mẫu hoa văn trổ giấy đối xứng phức hợp (Papercut Pattern AI).'
+        dc: '• [Mã NLS: 1.2.TC2b] Xem các video hướng dẫn nghệ thuật trổ giấy Kirigami bậc thầy trên Internet.\n• [Mã AI: 8.D1.1] Dùng AI tạo các mẫu hoa văn trổ giấy đối xứng phức hợp (Papercut Pattern AI).'
       },
       {
         w: 21,
         t: 'Chủ đề 5: Vẻ đẹp trong lao động',
         n: 'Chủ đề 5: Vẻ đẹp trong lao động - Bài 10: Nghệ thuật trổ giấy trong trang trí (Thực hành hoàn thiện sản phẩm trổ giấy) (1 tiết)',
         y: '- Thực hành hoàn thiện một sản phẩm trổ giấy trang trí (đèn lồng giấy, tranh trổ giấy nhiều lớp lightbox, thiệp trổ giấy nghệ thuật).\n- Rèn luyện tính cẩn thận, kiên nhẫn, đôi bàn tay khéo léo và óc sáng tạo tinh tế.',
-        dc: '• [Mã NLS: 3.1.TC2a] Chụp ảnh sản phẩm trổ giấy kết hợp đèn chiếu sáng nghệ thuật để lưu vào portfolio số.\n• [Mã AI: 8.A1.1] Tôn vinh sự tỉ mỉ, kiên nhẫn và bàn tay tài hoa của nghệ nhân thủ công truyền thống.'
+        dc: '• [Mã NLS: 3.2.TC2a] Chụp ảnh sản phẩm trổ giấy kết hợp đèn chiếu sáng nghệ thuật để lưu vào portfolio số.\n• [Mã AI: 8.A1.1] Tôn vinh sự tỉ mỉ, kiên nhẫn và bàn tay tài hoa của nghệ nhân thủ công truyền thống.'
       },
       {
         w: 22,
@@ -731,7 +731,7 @@ export function getArtSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
         t: 'Chủ đề 6: Giao thông công cộng trong sáng tạo mĩ thuật',
         n: 'Chủ đề 6: Giao thông công cộng trong sáng tạo mĩ thuật - Bài 12: Thiết kế, trang trí áo phông (Phác thảo mẫu thiết kế) (1 tiết)',
         y: '- Nắm vững quy trình thiết kế đồ họa ứng dụng trên trang phục (chọn vị trí in ngực áo/lưng áo, phối màu hình in hài hòa với màu nền áo, thông điệp truyền tải ngắn gọn).\n- Phác thảo mẫu thiết kế trang trí áo phông với chủ đề Giao thông xanh hoặc Học đường năng động.',
-        dc: '• [Mã NLS: 3.1.TC2a] Sử dụng phần mềm thiết kế đồ họa tạo mockup áo phông số (T-shirt Mockup Generator).\n• [Mã AI: 8.D2.1] Trải nghiệm AI gợi ý slogan và biểu tượng đồ họa ấn tượng cho áo đồng phục lớp.'
+        dc: '• [Mã NLS: 3.1.TC2b] Sử dụng phần mềm thiết kế đồ họa tạo mockup áo phông số (T-shirt Mockup Generator).\n• [Mã AI: 8.D2.1] Trải nghiệm AI gợi ý slogan và biểu tượng đồ họa ấn tượng cho áo đồng phục lớp.'
       },
       {
         w: 24,
@@ -745,21 +745,21 @@ export function getArtSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
         t: 'Chủ đề 7: Mĩ thuật Việt Nam thời kì hiện đại',
         n: 'Chủ đề 7: Mĩ thuật Việt Nam thời kì hiện đại - Bài 13: Một số tác giả, tác phẩm mĩ thuật Việt Nam thời kì hiện đại (1 tiết)',
         y: '- Tìm hiểu các thế hệ họa sĩ, nhà điêu khắc tiêu biểu thời kì kháng chiến và đổi mới (Tô Ngọc Vân, Nguyễn Sáng, Bùi Xuân Phái, Huỳnh Văn Gấm, Diệp Minh Châu).\n- Phân tích các kiệt tác nghệ thuật: Kết nạp Đảng ở Điện Biên Phủ, Phố cổ Hà Nội, Bác Hồ với thiếu nhi ba miền.',
-        dc: '• [Mã NLS: 1.2.TC2a] Tham quan bảo tàng số chiêm ngưỡng các tác phẩm Bảo vật quốc gia của Mĩ thuật hiện đại Việt Nam.\n• [Mã AI: 8.A1.1] Khẳng định giá trị lịch sử và tinh thần yêu nước quật cường gửi gắm qua từng nét vẽ của thế hệ họa sĩ tiền bối.'
+        dc: '• [Mã NLS: 1.1.TC2b] Tham quan bảo tàng số chiêm ngưỡng các tác phẩm Bảo vật quốc gia của Mĩ thuật hiện đại Việt Nam.\n• [Mã AI: 8.A1.1] Khẳng định giá trị lịch sử và tinh thần yêu nước quật cường gửi gắm qua từng nét vẽ của thế hệ họa sĩ tiền bối.'
       },
       {
         w: 26,
         t: 'Đánh giá định kỳ',
         n: 'Kiểm tra, đánh giá giữa Học kỳ 2 môn Mĩ thuật Lớp 8',
         y: '- Đánh giá mức độ đạt chuẩn kiến thức, kĩ năng tạo hình người lao động, trổ giấy, thiết kế áo phông và mĩ thuật hiện đại từ Tuần 19 đến Tuần 25.\n- Đánh giá năng lực sáng tạo ứng dụng, kĩ thuật thủ công và tư duy thẩm mỹ.',
-        dc: '• [Mã NLS: 3.1.TC2a] Chụp ảnh và lưu trữ bài kiểm tra vào hồ sơ đánh giá năng lực số của học sinh.\n• [Mã AI: 8.A3.3] Thực hiện nghiêm túc quy trình kiểm tra đánh giá minh bạch.'
+        dc: '• [Mã NLS: 3.2.TC2a] Chụp ảnh và lưu trữ bài kiểm tra vào hồ sơ đánh giá năng lực số của học sinh.\n• [Mã AI: 8.A3.3] Thực hiện nghiêm túc quy trình kiểm tra đánh giá minh bạch.'
       },
       {
         w: 27,
         t: 'Chủ đề 7: Mĩ thuật Việt Nam thời kì hiện đại',
         n: 'Chủ đề 7: Mĩ thuật Việt Nam thời kì hiện đại - Bài 14: Nghệ thuật thiết kế Việt Nam thời kì hiện đại (1 tiết)',
         y: '- Nhận biết sự phát triển của các ngành thiết kế đương đại tại Việt Nam: Thiết kế đồ họa (Graphic Design), Thiết kế nội thất (Interior Design), Thiết kế công nghiệp (Industrial Design), Thiết kế thời trang (Fashion Design).\n- Thực hành thiết kế một sản phẩm bao bì hoặc đồ họa nhận diện mang phong cách hiện đại Việt Nam.',
-        dc: '• [Mã NLS: 3.1.TC2a] Sử dụng công cụ thiết kế số để tạo mẫu bao bì sản phẩm nông sản sạch quê hương.\n• [Mã AI: 8.D1.1] Khám phá cách AI hỗ trợ các nhà thiết kế tạo mockup bao bì 3D và thử nghiệm các phương án nhận diện thương hiệu.'
+        dc: '• [Mã NLS: 3.1.TC2b] Sử dụng công cụ thiết kế số để tạo mẫu bao bì sản phẩm nông sản sạch quê hương.\n• [Mã AI: 8.D1.1] Khám phá cách AI hỗ trợ các nhà thiết kế tạo mockup bao bì 3D và thử nghiệm các phương án nhận diện thương hiệu.'
       },
       {
         w: 28,
@@ -773,7 +773,7 @@ export function getArtSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
         t: 'Chủ đề 8: Hướng nghiệp',
         n: 'Chủ đề 8: Hướng nghiệp - Bài 16: Đặc trưng của ngành, nghề liên quan đến mĩ thuật tạo hình (1 tiết)',
         y: '- Nắm vững các yêu cầu về phẩm chất (tính kiên trì, đam mê cái đẹp, óc quan sát nhạy bén) và năng lực chuyên môn (kĩ năng vẽ hình thể, cảm thụ màu sắc, tư duy không gian) của người làm nghề mĩ thuật tạo hình.\n- Xây dựng bản kế hoạch rèn luyện cá nhân để phát triển năng khiếu nghệ thuật.',
-        dc: '• [Mã NLS: 1.3.TC2a] Thiết kế bảng lộ trình phát triển kĩ năng nghệ thuật cá nhân bằng công cụ số.\n• [Mã AI: 8.D2.1] Sử dụng chatbot AI tư vấn định hướng nghề nghiệp và gợi ý các khóa học mĩ thuật trực tuyến phù hợp.'
+        dc: '• [Mã NLS: 1.3.TC2b] Thiết kế bảng lộ trình phát triển kĩ năng nghệ thuật cá nhân bằng công cụ số.\n• [Mã AI: 8.D2.1] Sử dụng chatbot AI tư vấn định hướng nghề nghiệp và gợi ý các khóa học mĩ thuật trực tuyến phù hợp.'
       },
       {
         w: 30,
@@ -787,7 +787,7 @@ export function getArtSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
         t: 'Đánh giá định kỳ',
         n: 'Kiểm tra, đánh giá cuối Học kỳ 2 môn Mĩ thuật Lớp 8',
         y: '- Đánh giá tổng kết mức độ hoàn thành chuẩn kiến thức, kĩ năng môn Mĩ thuật Lớp 8 cả năm học.\n- Đánh giá toàn diện năng lực sáng tạo tạo hình, tư duy thiết kế ứng dụng và định hướng nghề nghiệp nghệ thuật.',
-        dc: '• [Mã NLS: 3.1.TC2a] Lưu trữ toàn bộ kết quả và hình ảnh bài thi vào học bạ điện tử của học sinh.\n• [Mã AI: 8.A3.3] Tự đánh giá và đối chiếu năng lực mĩ thuật cá nhân theo chuẩn đầu ra CT GDPT 2018.'
+        dc: '• [Mã NLS: 3.2.TC2a] Lưu trữ toàn bộ kết quả và hình ảnh bài thi vào học bạ điện tử của học sinh.\n• [Mã AI: 8.A3.3] Tự đánh giá và đối chiếu năng lực mĩ thuật cá nhân theo chuẩn đầu ra CT GDPT 2018.'
       },
       {
         w: 32,
@@ -853,7 +853,7 @@ export function getArtSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
       t: 'Chủ đề 1: Cuộc sống muôn màu',
       n: 'Chủ đề 1: Cuộc sống muôn màu - Bài 2: Thiết kế phụ kiện thời trang (1 tiết)',
       y: '- Nắm vững nguyên lý thiết kế phụ kiện thời trang (túi xách, balo, mũ nón, trang sức vòng cổ/vòng tay, khăn choàng) hài hòa với trang phục và cá tính người sử dụng.\n- Thực hành thiết kế bản vẽ hoặc làm sản phẩm phụ kiện thời trang độc đáo từ vật liệu tái chế hoặc da nhân tạo, vải canvas.',
-      dc: '• [Mã NLS: 3.1.TC2a] Sử dụng phần mềm thiết kế đồ họa 2D/3D để tạo bản vẽ kỹ thuật chi tiết cho phụ kiện thời trang.\n• [Mã AI: 9.D1.1] Khám phá công cụ AI gợi ý xu hướng thời trang (Trend Forecasting AI) và phối màu phụ kiện.'
+      dc: '• [Mã NLS: 3.1.TC2b] Sử dụng phần mềm thiết kế đồ họa 2D/3D để tạo bản vẽ kỹ thuật chi tiết cho phụ kiện thời trang.\n• [Mã AI: 9.D1.1] Khám phá công cụ AI gợi ý xu hướng thời trang (Trend Forecasting AI) và phối màu phụ kiện.'
     },
     {
       w: 3,
@@ -874,14 +874,14 @@ export function getArtSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
       t: 'Chủ đề 2: Nghệ thuật đương đại thế giới',
       n: 'Chủ đề 2: Nghệ thuật đương đại thế giới - Bài 4: Thiết kế giá đỡ thiết bị công nghệ (1 tiết)',
       y: '- Nắm vững nguyên lý thiết kế công nghiệp (Industrial Design): Tính công năng (độ vững chắc, góc nghiêng thuận tiện mắt nhìn), tính thẩm mỹ và tính an toàn công thái học (Ergonomics).\n- Thực hành thiết kế và chế tạo mô hình giá đỡ điện thoại/máy tính bảng từ bìa cứng, que gỗ hoặc nhựa tái chế.',
-      dc: '• [Mã NLS: 3.1.TC2a] Vẽ bản vẽ thiết kế kỹ thuật hình chiếu đứng, hình chiếu bằng của giá đỡ thiết bị trên máy tính.\n• [Mã AI: 9.D1.1] Trải nghiệm công cụ AI tối ưu hóa hình dáng kết cấu chịu lực (Generative Design AI).'
+      dc: '• [Mã NLS: 3.2.TC2a] Vẽ bản vẽ thiết kế kỹ thuật hình chiếu đứng, hình chiếu bằng của giá đỡ thiết bị trên máy tính.\n• [Mã AI: 9.D1.1] Trải nghiệm công cụ AI tối ưu hóa hình dáng kết cấu chịu lực (Generative Design AI).'
     },
     {
       w: 6,
       t: 'Chủ đề 3: Thiết kế mĩ thuật sách',
       n: 'Chủ đề 3: Thiết kế mĩ thuật sách - Bài 5: Thiết kế bìa sách (Khám phá nghệ thuật bìa sách) (1 tiết)',
       y: '- Nắm vững các thành phần cấu tạo của một bìa sách (tên sách, tên tác giả, tên nhà xuất bản, hình ảnh minh họa biểu trưng, gáy sách, bìa sau với mã vạch và tóm tắt nội dung).\n- Lên ý tưởng và phác thảo bố cục bìa sách cho một cuốn sách văn học hoặc khoa học yêu thích.',
-      dc: '• [Mã NLS: 2.1.TC2a] Tìm kiếm và phân tích các mẫu bìa sách đẹp đoạt giải thưởng thiết kế sách quốc gia.\n• [Mã AI: 9.D1.1] Sử dụng AI gợi ý ý tưởng hình ảnh ẩn dụ (visual metaphor) phù hợp với cốt truyện cuốn sách.'
+      dc: '• [Mã NLS: 2.1.TC2b] Tìm kiếm và phân tích các mẫu bìa sách đẹp đoạt giải thưởng thiết kế sách quốc gia.\n• [Mã AI: 9.D1.1] Sử dụng AI gợi ý ý tưởng hình ảnh ẩn dụ (visual metaphor) phù hợp với cốt truyện cuốn sách.'
     },
     {
       w: 7,
@@ -895,14 +895,14 @@ export function getArtSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
       t: 'Chủ đề 3: Thiết kế mĩ thuật sách',
       n: 'Chủ đề 3: Thiết kế mĩ thuật sách - Bài 6: Tranh minh hoạ (1 tiết)',
       y: '- Hiểu vai trò của tranh minh họa trong việc làm sáng rõ nội dung câu chuyện, khơi gợi trí tưởng tượng và tạo cảm xúc thẩm mỹ cho người đọc.\n- Thực hành vẽ tranh minh họa cho một đoạn trích truyện cổ tích, tác phẩm văn học hoặc bài thơ trong chương trình Ngữ văn THCS.',
-      dc: '• [Mã NLS: 3.1.TC2a] Số hóa bức tranh minh họa và chèn vào trang sách điện tử (E-book layout).\n• [Mã AI: 9.A1.1] So sánh sự phong phú trong trí tưởng tượng và cảm xúc cá nhân của học sinh với tranh minh họa AI.'
+      dc: '• [Mã NLS: 3.1.TC2b] Số hóa bức tranh minh họa và chèn vào trang sách điện tử (E-book layout).\n• [Mã AI: 9.A1.1] So sánh sự phong phú trong trí tưởng tượng và cảm xúc cá nhân của học sinh với tranh minh họa AI.'
     },
     {
       w: 9,
       t: 'Đánh giá định kỳ',
       n: 'Kiểm tra, đánh giá giữa Học kỳ 1 môn Mĩ thuật Lớp 9',
       y: '- Đánh giá mức độ đạt chuẩn kiến thức, kĩ năng nghệ thuật đương đại, thiết kế phụ kiện, thiết kế bìa sách và tranh minh họa từ Tuần 1 đến Tuần 8.\n- Đánh giá năng lực sáng tạo độc lập, tư duy thiết kế chuyên nghiệp và kĩ thuật thể hiện.',
-      dc: '• [Mã NLS: 3.1.TC2a] Lưu trữ tác phẩm kiểm tra vào hồ sơ nghệ thuật số của học sinh.\n• [Mã AI: 9.A3.1] Thực hiện đánh giá trung thực, phát huy tinh thần tự chủ trong học tập.'
+      dc: '• [Mã NLS: 3.2.TC2a] Lưu trữ tác phẩm kiểm tra vào hồ sơ nghệ thuật số của học sinh.\n• [Mã AI: 9.A3.1] Thực hiện đánh giá trung thực, phát huy tinh thần tự chủ trong học tập.'
     },
     {
       w: 10,
@@ -916,7 +916,7 @@ export function getArtSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
       t: 'Chủ đề 4: Cảm hứng trong sáng tác mĩ thuật',
       n: 'Chủ đề 4: Cảm hứng trong sáng tác mĩ thuật - Bài 8: Thiết kế hình ảnh nhận diện thương hiệu (Khám phá hệ thống nhận diện) (1 tiết)',
       y: '- Nắm vững khái niệm và vai trò của Hệ thống nhận diện thương hiệu (Brand Identity): Logo, bảng màu thương hiệu, kiểu chữ quy chuẩn, danh thiếp (Namecard), phong bì thư, đồng phục, túi đựng sản phẩm.\n- Lên ý tưởng xây dựng bộ nhận diện thương hiệu cho một dự án khởi nghiệp học đường (ví dụ: CLB Sách, Tiệm trà xanh, Đồ handmade).',
-      dc: '• [Mã NLS: 2.1.TC2a] Khảo sát và phân tích các bộ nhận diện thương hiệu chuyên nghiệp trên các nền tảng thiết kế quốc tế (Behance, Dribbble).\n• [Mã AI: 9.C2.1] Trải nghiệm công cụ AI tạo bộ nhận diện thương hiệu tự động (Brand Identity AI Generator).'
+      dc: '• [Mã NLS: 2.2.TC2c] Khảo sát và phân tích các bộ nhận diện thương hiệu chuyên nghiệp trên các nền tảng thiết kế quốc tế (Behance, Dribbble).\n• [Mã AI: 9.C2.1] Trải nghiệm công cụ AI tạo bộ nhận diện thương hiệu tự động (Brand Identity AI Generator).'
     },
     {
       w: 12,
@@ -937,7 +937,7 @@ export function getArtSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
       t: 'Ôn tập học kì 1',
       n: 'Ôn tập học kì 1: Ôn tập kiến thức nghệ thuật đương đại và thiết kế ứng dụng HK1 Lớp 9 (1 tiết)',
       y: '- Hệ thống hóa các kiến thức trọng tâm: Pop Art, Trừu tượng, thiết kế giá đỡ, bìa sách, tranh minh họa, nhận diện thương hiệu.\n- Nâng cao tư duy phản biện nghệ thuật và năng lực thẩm mỹ chuyên sâu.',
-      dc: '• [Mã NLS: 2.1.TC2a] Tham gia đấu trường kiến thức mĩ thuật trực tuyến giữa các lớp khối 9.\n• [Mã AI: 9.C2.1] Chatbot AI hỗ trợ ôn tập, phân tích sự phát triển của thiết kế đồ họa trong kỉ nguyên số.'
+      dc: '• [Mã NLS: 2.5.TC2b] Tham gia đấu trường kiến thức mĩ thuật trực tuyến giữa các lớp khối 9.\n• [Mã AI: 9.C2.1] Chatbot AI hỗ trợ ôn tập, phân tích sự phát triển của thiết kế đồ họa trong kỉ nguyên số.'
     },
     {
       w: 15,
@@ -951,7 +951,7 @@ export function getArtSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
       t: 'Đánh giá định kỳ',
       n: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Mĩ thuật Lớp 9',
       y: '- Đánh giá tổng hợp toàn diện năng lực sáng tạo mĩ thuật, tư duy thiết kế đồ họa và ý thức học tập trong toàn bộ Học kỳ 1.\n- Phân hóa năng lực chuyên môn và phong cách nghệ thuật cá nhân của học sinh cuối cấp.',
-      dc: '• [Mã NLS: 3.1.TC2a] Lưu trữ ảnh chất lượng cao của tác phẩm kiểm tra vào hồ sơ học sinh điện tử cấp THCS.\n• [Mã AI: 9.A3.1] Thực hiện nghiêm túc quy chế đánh giá số hóa, đề cao tính liêm chính học thuật.'
+      dc: '• [Mã NLS: 3.1.TC2b] Lưu trữ ảnh chất lượng cao của tác phẩm kiểm tra vào hồ sơ học sinh điện tử cấp THCS.\n• [Mã AI: 9.A3.1] Thực hiện nghiêm túc quy chế đánh giá số hóa, đề cao tính liêm chính học thuật.'
     },
     {
       w: 17,
@@ -981,7 +981,7 @@ export function getArtSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
       t: 'Chủ đề 5: Vẻ đẹp của nguyên mẫu trong thực hành, sáng tạo',
       n: 'Chủ đề 5: Vẻ đẹp của nguyên mẫu trong thực hành, sáng tạo - Bài 10: Nguyên mẫu trong tác phẩm điêu khắc (1 tiết)',
       y: '- Tìm hiểu cách các nhà điêu khắc chắt lọc hình tượng từ nguyên mẫu con người, động vật, thiên nhiên để sáng tạo nên các tác phẩm tượng tròn và phù điêu mang tính biểu tượng cao.\n- Thực hành đắp tượng tròn hoặc nặn phù điêu từ đất sét, thạch cao hoặc xà phòng theo nguyên mẫu tự chọn.',
-      dc: '• [Mã NLS: 1.2.TC2a] Xem các video tư liệu về quá trình đục khắc tượng đá, tạc gỗ của các nghệ nhân điêu khắc.\n• [Mã AI: 9.A1.1] Nhận diện sự tinh xảo và cảm xúc chân thật trong tác phẩm điêu khắc thủ công của con người.'
+      dc: '• [Mã NLS: 1.2.TC2b] Xem các video tư liệu về quá trình đục khắc tượng đá, tạc gỗ của các nghệ nhân điêu khắc.\n• [Mã AI: 9.A1.1] Nhận diện sự tinh xảo và cảm xúc chân thật trong tác phẩm điêu khắc thủ công của con người.'
     },
     {
       w: 21,
@@ -995,21 +995,21 @@ export function getArtSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
       t: 'Chủ đề 6: Nghệ thuật múa rối',
       n: 'Chủ đề 6: Nghệ thuật múa rối - Bài 12: Tạo hình nhân vật múa rối nước (Nghệ thuật Múa rối nước Việt Nam) (1 tiết)',
       y: '- Hiểu giá trị độc nhất vô nhị của Múa rối nước - Di sản văn hóa phi vật thể đặc sắc của nền văn minh lúa nước đồng bằng Bắc Bộ.\n- Phân tích nghệ thuật tạo hình nhân vật Chú Tễu, Tiên nữ, Rồng nước, Lân ngậm ngọc đẽo từ gỗ sung, phủ sơn ta chịu nước.',
-      dc: '• [Mã NLS: 1.2.TC2a] Xem phóng sự số về phường rối nước làng Đào Thục, làng Đồng Ngư trên mạng Internet.\n• [Mã AI: 9.A1.1] Khẳng định bản sắc văn hóa độc bản của nghệ thuật Múa rối nước Việt Nam trước công chúng quốc tế.'
+      dc: '• [Mã NLS: 1.1.TC2b] Xem phóng sự số về phường rối nước làng Đào Thục, làng Đồng Ngư trên mạng Internet.\n• [Mã AI: 9.A1.1] Khẳng định bản sắc văn hóa độc bản của nghệ thuật Múa rối nước Việt Nam trước công chúng quốc tế.'
     },
     {
       w: 23,
       t: 'Chủ đề 6: Nghệ thuật múa rối',
       n: 'Chủ đề 6: Nghệ thuật múa rối - Bài 12: Tạo hình nhân vật múa rối nước (Thực hành tạo hình con rối) (1 tiết)',
       y: '- Thực hành tạo hình một nhân vật con rối (Chú Tễu, Chị Tấm, Chú Cuội...) từ đất nặn, gỗ nhẹ, xốp EVA hoặc chai lọ tái chế.\n- Thể hiện sự khéo léo, nét mặt tươi vui hóm hỉnh và tính cách đặc trưng của nhân vật.',
-      dc: '• [Mã NLS: 3.1.TC2a] Quay clip biểu diễn điều khiển con rối tự làm trên nền nhạc dân ca truyền thống.\n• [Mã AI: 9.D1.1] Dùng AI hỗ trợ viết kịch bản hoạt cảnh múa rối ngắn mang thông điệp giáo dục ý nghĩa.'
+      dc: '• [Mã NLS: 3.2.TC2a] Quay clip biểu diễn điều khiển con rối tự làm trên nền nhạc dân ca truyền thống.\n• [Mã AI: 9.D1.1] Dùng AI hỗ trợ viết kịch bản hoạt cảnh múa rối ngắn mang thông điệp giáo dục ý nghĩa.'
     },
     {
       w: 24,
       t: 'Chủ đề 7: Mĩ thuật đương đại Việt Nam',
       n: 'Chủ đề 7: Mĩ thuật đương đại Việt Nam - Bài 13: Khuynh hướng sáng tác mĩ thuật (1 tiết)',
       y: '- Nhận biết các khuynh hướng sáng tác tiêu biểu của Mĩ thuật đương đại Việt Nam: Tìm về cội nguồn di sản, Khám phá tâm lý con người trong xã hội hiện đại, Nghệ thuật sinh thái (Eco Art), Nghệ thuật thị giác kỹ thuật số (Digital Art).\n- Thực hành sáng tạo một tác phẩm mĩ thuật phản ánh suy nghĩ, trăn trở của bản thân về môi trường hoặc cuộc sống số.',
-      dc: '• [Mã NLS: 2.1.TC2a] Tìm hiểu các nghệ sĩ đương đại Việt Nam tiêu biểu và tác phẩm của họ trên không gian mạng.\n• [Mã AI: 9.A1.1] Khẳng định vai trò làm chủ công nghệ và tiếng nói nghệ thuật độc lập của người nghệ sĩ.'
+      dc: '• [Mã NLS: 2.1.TC2b] Tìm hiểu các nghệ sĩ đương đại Việt Nam tiêu biểu và tác phẩm của họ trên không gian mạng.\n• [Mã AI: 9.A1.1] Khẳng định vai trò làm chủ công nghệ và tiếng nói nghệ thuật độc lập của người nghệ sĩ.'
     },
     {
       w: 25,
@@ -1023,7 +1023,7 @@ export function getArtSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
       t: 'Đánh giá định kỳ',
       n: 'Kiểm tra, đánh giá giữa Học kỳ 2 môn Mĩ thuật Lớp 9',
       y: '- Đánh giá mức độ đạt chuẩn kiến thức, kĩ năng tạo hình nguyên mẫu, con rối, mĩ thuật đương đại và sản phẩm tái chế từ Tuần 19 đến Tuần 25.\n- Đánh giá năng lực sáng tạo ứng dụng, kĩ thuật thủ công và tư duy bảo vệ môi trường.',
-      dc: '• [Mã NLS: 3.1.TC2a] Chụp ảnh và lưu trữ bài kiểm tra vào hồ sơ đánh giá năng lực số của học sinh.\n• [Mã AI: 9.A3.1] Thực hiện tự kiểm chứng và nghiêm túc tuân thủ quy chế kiểm tra.'
+      dc: '• [Mã NLS: 3.1.TC2b] Chụp ảnh và lưu trữ bài kiểm tra vào hồ sơ đánh giá năng lực số của học sinh.\n• [Mã AI: 9.A3.1] Thực hiện tự kiểm chứng và nghiêm túc tuân thủ quy chế kiểm tra.'
     },
     {
       w: 27,
@@ -1037,7 +1037,7 @@ export function getArtSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
       t: 'Chủ đề 8: Hướng nghiệp',
       n: 'Chủ đề 8: Hướng nghiệp - Bài 16: Đặc trưng của ngành, nghề liên quan đến mĩ thuật ứng dụng (1 tiết)',
       y: '- Nắm vững các yêu cầu về năng lực cốt lõi: Tư duy thẩm mỹ, thành thạo công cụ thiết kế số, khả năng giải quyết vấn đề bằng thiết kế, kĩ năng làm việc nhóm và tư duy đổi mới sáng tạo.\n- Tự đánh giá điểm mạnh, sở thích cá nhân và xây dựng kế hoạch học tập, định hướng nghề nghiệp tương lai.',
-      dc: '• [Mã NLS: 1.3.TC2a] Thiết kế bản lộ trình nghề nghiệp cá nhân (Career Roadmap) bằng công cụ đồ họa số.\n• [Mã AI: 9.D1.1] Sử dụng AI tư vấn kế hoạch phát triển kĩ năng thiết kế số chuẩn bị cho bậc THPT.'
+      dc: '• [Mã NLS: 1.3.TC2b] Thiết kế bản lộ trình nghề nghiệp cá nhân (Career Roadmap) bằng công cụ đồ họa số.\n• [Mã AI: 9.D1.1] Sử dụng AI tư vấn kế hoạch phát triển kĩ năng thiết kế số chuẩn bị cho bậc THPT.'
     },
     {
       w: 29,
@@ -1058,7 +1058,7 @@ export function getArtSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
       t: 'Đánh giá định kỳ',
       n: 'Kiểm tra, đánh giá cuối Học kỳ 2 môn Mĩ thuật Lớp 9',
       y: '- Đánh giá tổng kết mức độ hoàn thành chuẩn đầu ra môn Mĩ thuật cấp THCS theo Chương trình GDPT 2018.\n- Đánh giá toàn diện phẩm chất, năng lực thẩm mỹ thị giác và khả năng thực hành sáng tạo nghệ thuật.',
-      dc: '• [Mã NLS: 3.1.TC2a] Lưu trữ toàn bộ hồ sơ đánh giá và ảnh chụp tác phẩm vào học bạ điện tử cấp THCS.\n• [Mã AI: 9.A3.1] Khẳng định sự trưởng thành về năng lực tự chủ và trách nhiệm sáng tạo.'
+      dc: '• [Mã NLS: 3.2.TC2a] Lưu trữ toàn bộ hồ sơ đánh giá và ảnh chụp tác phẩm vào học bạ điện tử cấp THCS.\n• [Mã AI: 9.A3.1] Khẳng định sự trưởng thành về năng lực tự chủ và trách nhiệm sáng tạo.'
     },
     {
       w: 32,
@@ -1086,7 +1086,7 @@ export function getArtSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
       t: 'Tổng kết năm học',
       n: 'Tổng kết năm học & Triển lãm Tổng kết Mĩ thuật Lớp 9 toàn trường (1 tiết)',
       y: '- Tổng kết, đánh giá xếp loại kết quả học tập và rèn luyện môn Mĩ thuật Lớp 9 và toàn khóa THCS.\n- Chúc mừng học sinh hoàn thành chương trình môn Mĩ thuật cấp THCS và sẵn sàng bước vào bậc THPT.',
-      dc: '• [Mã NLS: 2.4.TC2a] Lưu trữ và chia sẻ kỉ yếu mĩ thuật điện tử của khối 9 lên thư viện số nhà trường.\n• [Mã AI: 9.D1.1] Lan tỏa tình yêu cái đẹp và năng lực sáng tạo mĩ thuật vững vàng bước vào tương lai.'
+      dc: '• [Mã NLS: 2.5.TC2b] Lưu trữ và chia sẻ kỉ yếu mĩ thuật điện tử của khối 9 lên thư viện số nhà trường.\n• [Mã AI: 9.D1.1] Lan tỏa tình yêu cái đẹp và năng lực sáng tạo mĩ thuật vững vàng bước vào tương lai.'
     }
   ];
 

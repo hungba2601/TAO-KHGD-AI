@@ -33,9 +33,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nhận biết được tập hợp và các phần tử của tập hợp; sử dụng đúng các kí hiệu thuộc (∈), không thuộc (∉).\n- Biết cách mô tả một tập hợp bằng cách liệt kê các phần tử hoặc chỉ ra dấu hiệu đặc trưng.",
         equipment: "Phiếu học tập, bảng phụ",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.1.TC1a",
+        nlsCode: "1.1.TC1c",
         aiCode: "6.A1.1",
-        dc: "• [Mã NLS: 1.1.TC1a] Sử dụng công cụ tìm kiếm số tra cứu thông tin và thuật ngữ toán học trực tuyến.\n• [Mã AI: 6.A1.1] Nhận biết vai trò của con người trong việc kiểm tra, quyết định tính đúng đắn khi AI gợi ý lời giải toán.",
+        dc: "• [Mã NLS: 1.1.TC1c] Sử dụng công cụ tìm kiếm số tra cứu thông tin và thuật ngữ toán học trực tuyến.\n• [Mã AI: 6.A1.1] Nhận biết vai trò của con người trong việc kiểm tra, quyết định tính đúng đắn khi AI gợi ý lời giải toán.",
         notes: ""
       },
       {
@@ -46,9 +46,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Đọc và viết được các số tự nhiên trong hệ thập phân; hiểu rõ giá trị của mỗi chữ số theo vị trí.\n- Nhận biết và viết được các số tự nhiên bằng chữ số La Mã trong phạm vi 30.",
         equipment: "Phiếu học tập, bảng phụ",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.2.TC1a",
+        nlsCode: "1.1.TC1b",
         aiCode: "6.A1.3",
-        dc: "• [Mã NLS: 1.2.TC1a] Khám phá phần mềm hình học tương tác GeoGebra và máy tính khoa học số.\n• [Mã AI: 6.A1.3] Tìm hiểu cách các công cụ AI trợ lý học tập hỗ trợ giải toán và kiểm tra kết quả tính toán.",
+        dc: "• [Mã NLS: 1.1.TC1b] Khám phá phần mềm hình học tương tác GeoGebra và máy tính khoa học số.\n• [Mã AI: 6.A1.3] Tìm hiểu cách các công cụ AI trợ lý học tập hỗ trợ giải toán và kiểm tra kết quả tính toán.",
         notes: ""
       },
       {
@@ -72,9 +72,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững và vận dụng các tính chất giao hoán, kết hợp của phép cộng số tự nhiên.\n- Vận dụng các tính chất để tính nhẩm, tính nhanh và giải các bài toán thực tế đời sống.",
         equipment: "Bảng cộng trừ, phiếu bài tập",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.1.TC1a",
+        nlsCode: "2.1.TC1b",
         aiCode: "6.C1.1",
-        dc: "• [Mã NLS: 2.1.TC1a] Phối hợp nhóm trực tuyến chia sẻ cách giải và thảo luận bài tập toán.\n• [Mã AI: 6.C1.1] Khám phá cách AI phân loại số liệu và nhận diện mẫu hình học phẳng dựa trên quy tắc logic.",
+        dc: "• [Mã NLS: 2.1.TC1b] Phối hợp nhóm trực tuyến chia sẻ cách giải và thảo luận bài tập toán.\n• [Mã AI: 6.C1.1] Khám phá cách AI phân loại số liệu và nhận diện mẫu hình học phẳng dựa trên quy tắc logic.",
         notes: ""
       },
       {
@@ -85,9 +85,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Thực hiện thành thạo phép nhân, phép chia hết và chia có dư trong tập hợp số tự nhiên.\n- Vận dụng tính chất phân phối của phép nhân đối với phép cộng để tính nhanh.",
         equipment: "Phiếu học tập, bảng nhân chia",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.4.TC1a",
+        nlsCode: "2.5.TC1b",
         aiCode: "6.C2.2",
-        dc: "• [Mã NLS: 2.4.TC1a] Trình bày sơ đồ tư duy hệ thống hóa kiến thức toán học bằng công cụ vẽ số.\n• [Mã AI: 6.C2.2] Trải nghiệm phần mềm AI giải toán Photomath nhận diện bài toán từ ảnh chụp.",
+        dc: "• [Mã NLS: 2.5.TC1b] Trình bày sơ đồ tư duy hệ thống hóa kiến thức toán học bằng công cụ vẽ số.\n• [Mã AI: 6.C2.2] Trải nghiệm phần mềm AI giải toán Photomath nhận diện bài toán từ ảnh chụp.",
         notes: ""
       },
       {
@@ -98,9 +98,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Củng cố, hệ thống hóa toàn bộ kiến thức và phương pháp giải toán trọng tâm của các bài học trong chương.\n- Rèn luyện kĩ năng tính toán, tư duy logic và giải quyết các bài toán thực tiễn tổng hợp.",
         equipment: "Phiếu học tập, bảng nhân chia",
         location: "Phòng học / Lớp học",
-        nlsCode: "3.1.TC1a",
+        nlsCode: "3.2.TC1a",
         aiCode: "6.D1.1",
-        dc: "• [Mã NLS: 3.1.TC1a] Sử dụng bảng tính Excel lập công thức tính toán và vẽ biểu đồ hình học/thống kê.\n• [Mã AI: 6.D1.1] Thảo luận về ứng dụng AI trong quản lý kế hoạch học tập môn Toán cá nhân.",
+        dc: "• [Mã NLS: 3.2.TC1a] Sử dụng bảng tính Excel lập công thức tính toán và vẽ biểu đồ hình học/thống kê.\n• [Mã AI: 6.D1.1] Thảo luận về ứng dụng AI trong quản lý kế hoạch học tập môn Toán cá nhân.",
         notes: ""
       },
       {
@@ -124,9 +124,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững thứ tự thực hiện các phép tính: luỹ thừa -> nhân và chia -> cộng và trừ.\n- Thực hiện đúng thứ tự trong biểu thức có dấu ngoặc: ngoặc tròn () -> ngoặc vuông [] -> ngoặc nhọn {}.",
         equipment: "Bảng luỹ thừa cơ bản",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC1a",
+        nlsCode: "4.1.TC1c",
         aiCode: "6.A1.3",
-        dc: "• [Mã NLS: 4.1.TC1a] Tuân thủ quy chế phòng thi, bảo mật thông tin và trung thực số khi làm bài kiểm tra.\n• [Mã AI: 6.A1.3] Tìm hiểu cách các công cụ AI trợ lý học tập hỗ trợ giải toán và kiểm tra kết quả tính toán.",
+        dc: "• [Mã NLS: 4.1.TC1c] Tuân thủ quy chế phòng thi, bảo mật thông tin và trung thực số khi làm bài kiểm tra.\n• [Mã AI: 6.A1.3] Tìm hiểu cách các công cụ AI trợ lý học tập hỗ trợ giải toán và kiểm tra kết quả tính toán.",
         notes: ""
       },
       {
@@ -150,9 +150,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nhận biết quan hệ chia hết, tính chất chia hết của một tổng/hiệu.",
         equipment: "Bảng hệ thống kiến thức",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.1.TC1a",
+        nlsCode: "1.2.TC1b",
         aiCode: "6.C1.1",
-        dc: "• [Mã NLS: 1.1.TC1a] Sử dụng công cụ tìm kiếm số tra cứu thông tin và thuật ngữ toán học trực tuyến.\n• [Mã AI: 6.C1.1] Khám phá cách AI phân loại số liệu và nhận diện mẫu hình học phẳng dựa trên quy tắc logic.",
+        dc: "• [Mã NLS: 1.2.TC1b] Sử dụng công cụ tìm kiếm số tra cứu thông tin và thuật ngữ toán học trực tuyến.\n• [Mã AI: 6.C1.1] Khám phá cách AI phân loại số liệu và nhận diện mẫu hình học phẳng dựa trên quy tắc logic.",
         notes: ""
       },
       {
@@ -163,9 +163,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nhận biết và áp dụng dấu hiệu chia hết cho 2, 5, 3, 9.",
         equipment: "Bảng số nguyên tố nhỏ hơn 100",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.2.TC1a",
+        nlsCode: "1.2.TC1b",
         aiCode: "6.C2.2",
-        dc: "• [Mã NLS: 1.2.TC1a] Khám phá phần mềm hình học tương tác GeoGebra và máy tính khoa học số.\n• [Mã AI: 6.C2.2] Trải nghiệm phần mềm AI giải toán Photomath nhận diện bài toán từ ảnh chụp.",
+        dc: "• [Mã NLS: 1.2.TC1b] Khám phá phần mềm hình học tương tác GeoGebra và máy tính khoa học số.\n• [Mã AI: 6.C2.2] Trải nghiệm phần mềm AI giải toán Photomath nhận diện bài toán từ ảnh chụp.",
         notes: ""
       },
       {
@@ -189,9 +189,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Củng cố, hệ thống hóa toàn bộ kiến thức và phương pháp giải toán trọng tâm của các bài học trong chương.\n- Rèn luyện kĩ năng tính toán, tư duy logic và giải quyết các bài toán thực tiễn tổng hợp.",
         equipment: "Phiếu học tập tìm ƯCLN",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.1.TC1a",
+        nlsCode: "2.5.TC1b",
         aiCode: "6.A1.1",
-        dc: "• [Mã NLS: 2.1.TC1a] Phối hợp nhóm trực tuyến chia sẻ cách giải và thảo luận bài tập toán.\n• [Mã AI: 6.A1.1] Nhận biết vai trò của con người trong việc kiểm tra, quyết định tính đúng đắn khi AI gợi ý lời giải toán.",
+        dc: "• [Mã NLS: 2.5.TC1b] Phối hợp nhóm trực tuyến chia sẻ cách giải và thảo luận bài tập toán.\n• [Mã AI: 6.A1.1] Nhận biết vai trò của con người trong việc kiểm tra, quyết định tính đúng đắn khi AI gợi ý lời giải toán.",
         notes: ""
       },
       {
@@ -215,9 +215,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Chương II: Bài 12: Bội chung. Bội chung nhỏ nhất (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Bảng tổng kết chương II",
         location: "Phòng học / Lớp học",
-        nlsCode: "3.1.TC1a",
+        nlsCode: "3.2.TC1a",
         aiCode: "6.A3.3",
-        dc: "• [Mã NLS: 3.1.TC1a] Sử dụng bảng tính Excel lập công thức tính toán và vẽ biểu đồ hình học/thống kê.\n• [Mã AI: 6.A3.3] Nhận diện quy trình tự động hóa chấm điểm và phân tích dữ liệu bài thi bằng AI.",
+        dc: "• [Mã NLS: 3.2.TC1a] Sử dụng bảng tính Excel lập công thức tính toán và vẽ biểu đồ hình học/thống kê.\n• [Mã AI: 6.A3.3] Nhận diện quy trình tự động hóa chấm điểm và phân tích dữ liệu bài thi bằng AI.",
         notes: ""
       },
       {
@@ -254,9 +254,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Đánh giá chuẩn kiến thức, kĩ năng môn Toán Lớp 6 theo ma trận đề chuẩn Bộ GD&ĐT (thời gian làm bài 90 phút).\n- Đánh giá năng lực tư duy toán học, tính cẩn thận và tính trung thực trong kiểm tra.",
         equipment: "Đề kiểm tra chuẩn ma trận, bảng đặc tả và đáp án",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC1a",
+        nlsCode: "4.3.TC1a",
         aiCode: "6.A3.3",
-        dc: "• [Mã NLS: 4.1.TC1a] Thực hiện bài kiểm tra nghiêm túc, tuân thủ quy chế an toàn số và bảo mật thông tin phòng thi.\n• [Mã AI: 6.A3.3] Tìm hiểu quy trình chấm thi tự động và phân tích phổ điểm bằng AI.",
+        dc: "• [Mã NLS: 4.3.TC1a] Thực hiện bài kiểm tra nghiêm túc, tuân thủ quy chế an toàn số và bảo mật thông tin phòng thi.\n• [Mã AI: 6.A3.3] Tìm hiểu quy trình chấm thi tự động và phân tích phổ điểm bằng AI.",
         notes: "Kiểm tra giữa Học kỳ 1"
       },
       {
@@ -267,9 +267,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nhận biết được tập hợp và các phần tử của tập hợp; sử dụng đúng các kí hiệu thuộc (∈), không thuộc (∉).\n- Biết cách mô tả một tập hợp bằng cách liệt kê các phần tử hoặc chỉ ra dấu hiệu đặc trưng.",
         equipment: "Mô hình trục số trực quan",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.1.TC1a",
+        nlsCode: "1.1.TC1c",
         aiCode: "6.A1.1",
-        dc: "• [Mã NLS: 1.1.TC1a] Sử dụng công cụ tìm kiếm số tra cứu thông tin và thuật ngữ toán học trực tuyến.\n• [Mã AI: 6.A1.1] Nhận biết vai trò của con người trong việc kiểm tra, quyết định tính đúng đắn khi AI gợi ý lời giải toán.",
+        dc: "• [Mã NLS: 1.1.TC1c] Sử dụng công cụ tìm kiếm số tra cứu thông tin và thuật ngữ toán học trực tuyến.\n• [Mã AI: 6.A1.1] Nhận biết vai trò của con người trong việc kiểm tra, quyết định tính đúng đắn khi AI gợi ý lời giải toán.",
         notes: ""
       },
       {
@@ -306,9 +306,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Củng cố, hệ thống hóa toàn bộ kiến thức và phương pháp giải toán trọng tâm của các bài học trong chương.\n- Rèn luyện kĩ năng tính toán, tư duy logic và giải quyết các bài toán thực tiễn tổng hợp.",
         equipment: "Bảng quy tắc dấu ngoặc",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.1.TC1a",
+        nlsCode: "2.2.TC1c",
         aiCode: "6.C1.1",
-        dc: "• [Mã NLS: 2.1.TC1a] Phối hợp nhóm trực tuyến chia sẻ cách giải và thảo luận bài tập toán.\n• [Mã AI: 6.C1.1] Khám phá cách AI phân loại số liệu và nhận diện mẫu hình học phẳng dựa trên quy tắc logic.",
+        dc: "• [Mã NLS: 2.2.TC1c] Phối hợp nhóm trực tuyến chia sẻ cách giải và thảo luận bài tập toán.\n• [Mã AI: 6.C1.1] Khám phá cách AI phân loại số liệu và nhận diện mẫu hình học phẳng dựa trên quy tắc logic.",
         notes: ""
       },
       {
@@ -319,9 +319,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 16: Phép nhân số nguyên (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Bảng quy tắc nhân chia số nguyên",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.4.TC1a",
+        nlsCode: "2.1.TC1b",
         aiCode: "6.C2.2",
-        dc: "• [Mã NLS: 2.4.TC1a] Trình bày sơ đồ tư duy hệ thống hóa kiến thức toán học bằng công cụ vẽ số.\n• [Mã AI: 6.C2.2] Trải nghiệm phần mềm AI giải toán Photomath nhận diện bài toán từ ảnh chụp.",
+        dc: "• [Mã NLS: 2.1.TC1b] Trình bày sơ đồ tư duy hệ thống hóa kiến thức toán học bằng công cụ vẽ số.\n• [Mã AI: 6.C2.2] Trải nghiệm phần mềm AI giải toán Photomath nhận diện bài toán từ ảnh chụp.",
         notes: ""
       },
       {
@@ -332,9 +332,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 17: Phép chia hết. Ước và bội của một số nguyên (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Bảng quy tắc nhân chia số nguyên",
         location: "Phòng học / Lớp học",
-        nlsCode: "3.1.TC1a",
+        nlsCode: "3.2.TC1a",
         aiCode: "6.D1.1",
-        dc: "• [Mã NLS: 3.1.TC1a] Sử dụng bảng tính Excel lập công thức tính toán và vẽ biểu đồ hình học/thống kê.\n• [Mã AI: 6.D1.1] Thảo luận về ứng dụng AI trong quản lý kế hoạch học tập môn Toán cá nhân.",
+        dc: "• [Mã NLS: 3.2.TC1a] Sử dụng bảng tính Excel lập công thức tính toán và vẽ biểu đồ hình học/thống kê.\n• [Mã AI: 6.D1.1] Thảo luận về ứng dụng AI trong quản lý kế hoạch học tập môn Toán cá nhân.",
         notes: ""
       },
       {
@@ -358,9 +358,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững định nghĩa, tính chất và các dấu hiệu nhận biết hình thoi và hình vuông.\n- Vận dụng vào chứng minh tứ giác đặc biệt và tính toán độ dài, diện tích.",
         equipment: "Mô hình tam giác đều, hình vuông, lục giác đều",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC1a",
+        nlsCode: "4.1.TC1c",
         aiCode: "6.A1.3",
-        dc: "• [Mã NLS: 4.1.TC1a] Tuân thủ quy chế phòng thi, bảo mật thông tin và trung thực số khi làm bài kiểm tra.\n• [Mã AI: 6.A1.3] Tìm hiểu cách các công cụ AI trợ lý học tập hỗ trợ giải toán và kiểm tra kết quả tính toán.",
+        dc: "• [Mã NLS: 4.1.TC1c] Tuân thủ quy chế phòng thi, bảo mật thông tin và trung thực số khi làm bài kiểm tra.\n• [Mã AI: 6.A1.3] Tìm hiểu cách các công cụ AI trợ lý học tập hỗ trợ giải toán và kiểm tra kết quả tính toán.",
         notes: ""
       },
       {
@@ -371,9 +371,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nhận dạng và nêu đặc điểm của hình chữ nhật, hình thoi, hình bình hành, hình thang cân.\n- Vẽ các hình bằng thước và êke.",
         equipment: "Bộ thước compa, êke, mô hình tứ giác",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.4.TC1a",
+        nlsCode: "2.5.TC1b",
         aiCode: "6.A1.3",
-        dc: "• [Mã NLS: 2.4.TC1a] Trình bày sơ đồ tư duy hệ thống hóa kiến thức toán học bằng công cụ vẽ số.\n• [Mã AI: 6.A1.3] Tìm hiểu cách các công cụ AI trợ lý học tập hỗ trợ giải toán và kiểm tra kết quả tính toán.",
+        dc: "• [Mã NLS: 2.5.TC1b] Trình bày sơ đồ tư duy hệ thống hóa kiến thức toán học bằng công cụ vẽ số.\n• [Mã AI: 6.A1.3] Tìm hiểu cách các công cụ AI trợ lý học tập hỗ trợ giải toán và kiểm tra kết quả tính toán.",
         notes: ""
       },
       {
@@ -384,9 +384,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 21: Hình có trục đối xứng (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Tranh ảnh hình có trục/tâm đối xứng",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.2.TC1a",
+        nlsCode: "1.1.TC1b",
         aiCode: "6.C2.2",
-        dc: "• [Mã NLS: 1.2.TC1a] Khám phá phần mềm hình học tương tác GeoGebra và máy tính khoa học số.\n• [Mã AI: 6.C2.2] Trải nghiệm phần mềm AI giải toán Photomath nhận diện bài toán từ ảnh chụp.",
+        dc: "• [Mã NLS: 1.1.TC1b] Khám phá phần mềm hình học tương tác GeoGebra và máy tính khoa học số.\n• [Mã AI: 6.C2.2] Trải nghiệm phần mềm AI giải toán Photomath nhận diện bài toán từ ảnh chụp.",
         notes: ""
       },
       {
@@ -423,9 +423,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Đánh giá chuẩn kiến thức, kĩ năng môn Toán Lớp 6 theo ma trận đề chuẩn Bộ GD&ĐT (thời gian làm bài 90 phút).\n- Đánh giá năng lực tư duy toán học, tính cẩn thận và tính trung thực trong kiểm tra.",
         equipment: "Đề kiểm tra chuẩn ma trận, bảng đặc tả và đáp án",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC1a",
+        nlsCode: "4.3.TC1a",
         aiCode: "6.A3.3",
-        dc: "• [Mã NLS: 4.1.TC1a] Thực hiện bài kiểm tra nghiêm túc, tuân thủ quy chế an toàn số và bảo mật thông tin phòng thi.\n• [Mã AI: 6.A3.3] Tìm hiểu quy trình chấm thi tự động và phân tích phổ điểm bằng AI.",
+        dc: "• [Mã NLS: 4.3.TC1a] Thực hiện bài kiểm tra nghiêm túc, tuân thủ quy chế an toàn số và bảo mật thông tin phòng thi.\n• [Mã AI: 6.A3.3] Tìm hiểu quy trình chấm thi tự động và phân tích phổ điểm bằng AI.",
         notes: "Kiểm tra cuối Học kỳ 1"
       },
       {
@@ -436,9 +436,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Củng cố, hệ thống hóa toàn bộ kiến thức và phương pháp giải toán trọng tâm của các bài học trong chương.\n- Rèn luyện kĩ năng tính toán, tư duy logic và giải quyết các bài toán thực tiễn tổng hợp.",
         equipment: "Bài làm học sinh, đáp án và biểu điểm",
         location: "Phòng học / Lớp học",
-        nlsCode: "3.1.TC1a",
+        nlsCode: "3.2.TC1a",
         aiCode: "6.A3.3",
-        dc: "• [Mã NLS: 3.1.TC1a] Sử dụng bảng tính Excel lập công thức tính toán và vẽ biểu đồ hình học/thống kê.\n• [Mã AI: 6.A3.3] Nhận diện quy trình tự động hóa chấm điểm và phân tích dữ liệu bài thi bằng AI.",
+        dc: "• [Mã NLS: 3.2.TC1a] Sử dụng bảng tính Excel lập công thức tính toán và vẽ biểu đồ hình học/thống kê.\n• [Mã AI: 6.A3.3] Nhận diện quy trình tự động hóa chấm điểm và phân tích dữ liệu bài thi bằng AI.",
         notes: ""
       },
       {
@@ -462,9 +462,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Hoạt động thực hành trải nghiệm (GeoGebra, Casio) (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Máy tính Casio, thước cuộn dây",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC1a",
+        nlsCode: "4.1.TC1c",
         aiCode: "6.C2.2",
-        dc: "• [Mã NLS: 4.1.TC1a] Tuân thủ quy chế phòng thi, bảo mật thông tin và trung thực số khi làm bài kiểm tra.\n• [Mã AI: 6.C2.2] Trải nghiệm phần mềm AI giải toán Photomath nhận diện bài toán từ ảnh chụp.",
+        dc: "• [Mã NLS: 4.1.TC1c] Tuân thủ quy chế phòng thi, bảo mật thông tin và trung thực số khi làm bài kiểm tra.\n• [Mã AI: 6.C2.2] Trải nghiệm phần mềm AI giải toán Photomath nhận diện bài toán từ ảnh chụp.",
         notes: ""
       },
       {
@@ -475,9 +475,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Sơ kết Học kỳ 1 môn Toán Lớp 6 (4 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Máy tính Casio, thước cuộn dây",
         location: "Phòng học / Lớp học",
-        nlsCode: "5.1.TC1a",
+        nlsCode: "5.3.TC1a",
         aiCode: "6.D1.1",
-        dc: "• [Mã NLS: 5.1.TC1a] Vận dụng tư duy thuật toán và công cụ số giải quyết các bài toán thực tiễn.\n• [Mã AI: 6.D1.1] Thảo luận về ứng dụng AI trong quản lý kế hoạch học tập môn Toán cá nhân.",
+        dc: "• [Mã NLS: 5.3.TC1a] Vận dụng tư duy thuật toán và công cụ số giải quyết các bài toán thực tiễn.\n• [Mã AI: 6.D1.1] Thảo luận về ứng dụng AI trong quản lý kế hoạch học tập môn Toán cá nhân.",
         notes: ""
       },
       {
@@ -488,9 +488,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 23: Mở rộng khái niệm phân số. Phân số bằng nhau (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Phiếu học tập phân số",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.1.TC1a",
+        nlsCode: "1.2.TC1b",
         aiCode: "6.A1.1",
-        dc: "• [Mã NLS: 1.1.TC1a] Sử dụng công cụ tìm kiếm số tra cứu thông tin và thuật ngữ toán học trực tuyến.\n• [Mã AI: 6.A1.1] Nhận biết vai trò của con người trong việc kiểm tra, quyết định tính đúng đắn khi AI gợi ý lời giải toán.",
+        dc: "• [Mã NLS: 1.2.TC1b] Sử dụng công cụ tìm kiếm số tra cứu thông tin và thuật ngữ toán học trực tuyến.\n• [Mã AI: 6.A1.1] Nhận biết vai trò của con người trong việc kiểm tra, quyết định tính đúng đắn khi AI gợi ý lời giải toán.",
         notes: ""
       },
       {
@@ -501,9 +501,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 24: So sánh phân số. Hỗn số dương (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Phiếu học tập phân số",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.2.TC1a",
+        nlsCode: "1.2.TC1b",
         aiCode: "6.A1.3",
-        dc: "• [Mã NLS: 1.2.TC1a] Khám phá phần mềm hình học tương tác GeoGebra và máy tính khoa học số.\n• [Mã AI: 6.A1.3] Tìm hiểu cách các công cụ AI trợ lý học tập hỗ trợ giải toán và kiểm tra kết quả tính toán.",
+        dc: "• [Mã NLS: 1.2.TC1b] Khám phá phần mềm hình học tương tác GeoGebra và máy tính khoa học số.\n• [Mã AI: 6.A1.3] Tìm hiểu cách các công cụ AI trợ lý học tập hỗ trợ giải toán và kiểm tra kết quả tính toán.",
         notes: ""
       },
       {
@@ -527,9 +527,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 25: Phép cộng và phép trừ phân số (3 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Bảng phụ quy đồng mẫu",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.1.TC1a",
+        nlsCode: "2.1.TC1b",
         aiCode: "6.C1.1",
-        dc: "• [Mã NLS: 2.1.TC1a] Phối hợp nhóm trực tuyến chia sẻ cách giải và thảo luận bài tập toán.\n• [Mã AI: 6.C1.1] Khám phá cách AI phân loại số liệu và nhận diện mẫu hình học phẳng dựa trên quy tắc logic.",
+        dc: "• [Mã NLS: 2.1.TC1b] Phối hợp nhóm trực tuyến chia sẻ cách giải và thảo luận bài tập toán.\n• [Mã AI: 6.C1.1] Khám phá cách AI phân loại số liệu và nhận diện mẫu hình học phẳng dựa trên quy tắc logic.",
         notes: ""
       },
       {
@@ -553,9 +553,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 27: Hai bài toán về phân số (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Phiếu bài toán thực tế về phân số",
         location: "Phòng học / Lớp học",
-        nlsCode: "3.1.TC1a",
+        nlsCode: "3.2.TC1a",
         aiCode: "6.D1.1",
-        dc: "• [Mã NLS: 3.1.TC1a] Sử dụng bảng tính Excel lập công thức tính toán và vẽ biểu đồ hình học/thống kê.\n• [Mã AI: 6.D1.1] Thảo luận về ứng dụng AI trong quản lý kế hoạch học tập môn Toán cá nhân.",
+        dc: "• [Mã NLS: 3.2.TC1a] Sử dụng bảng tính Excel lập công thức tính toán và vẽ biểu đồ hình học/thống kê.\n• [Mã AI: 6.D1.1] Thảo luận về ứng dụng AI trong quản lý kế hoạch học tập môn Toán cá nhân.",
         notes: ""
       },
       {
@@ -579,9 +579,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nhận biết số thập phân âm, số thập phân dương, số đối của số thập phân.",
         equipment: "Bảng hệ thống phân số",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC1a",
+        nlsCode: "4.3.TC1a",
         aiCode: "6.A1.3",
-        dc: "• [Mã NLS: 4.1.TC1a] Tuân thủ quy chế phòng thi, bảo mật thông tin và trung thực số khi làm bài kiểm tra.\n• [Mã AI: 6.A1.3] Tìm hiểu cách các công cụ AI trợ lý học tập hỗ trợ giải toán và kiểm tra kết quả tính toán.",
+        dc: "• [Mã NLS: 4.3.TC1a] Tuân thủ quy chế phòng thi, bảo mật thông tin và trung thực số khi làm bài kiểm tra.\n• [Mã AI: 6.A1.3] Tìm hiểu cách các công cụ AI trợ lý học tập hỗ trợ giải toán và kiểm tra kết quả tính toán.",
         notes: ""
       },
       {
@@ -592,9 +592,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 29: Tính toán với số thập phân (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Phiếu bài tập làm tròn số",
         location: "Phòng học / Lớp học",
-        nlsCode: "5.1.TC1a",
+        nlsCode: "5.2.TC1b",
         aiCode: "6.A3.3",
-        dc: "• [Mã NLS: 5.1.TC1a] Vận dụng tư duy thuật toán và công cụ số giải quyết các bài toán thực tiễn.\n• [Mã AI: 6.A3.3] Nhận diện quy trình tự động hóa chấm điểm và phân tích dữ liệu bài thi bằng AI.",
+        dc: "• [Mã NLS: 5.2.TC1b] Vận dụng tư duy thuật toán và công cụ số giải quyết các bài toán thực tiễn.\n• [Mã AI: 6.A3.3] Nhận diện quy trình tự động hóa chấm điểm và phân tích dữ liệu bài thi bằng AI.",
         notes: ""
       },
       {
@@ -605,9 +605,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 30: Làm tròn và ước lượng (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Phiếu bài tập làm tròn số",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.1.TC1a",
+        nlsCode: "1.1.TC1c",
         aiCode: "6.C1.1",
-        dc: "• [Mã NLS: 1.1.TC1a] Sử dụng công cụ tìm kiếm số tra cứu thông tin và thuật ngữ toán học trực tuyến.\n• [Mã AI: 6.C1.1] Khám phá cách AI phân loại số liệu và nhận diện mẫu hình học phẳng dựa trên quy tắc logic.",
+        dc: "• [Mã NLS: 1.1.TC1c] Sử dụng công cụ tìm kiếm số tra cứu thông tin và thuật ngữ toán học trực tuyến.\n• [Mã AI: 6.C1.1] Khám phá cách AI phân loại số liệu và nhận diện mẫu hình học phẳng dựa trên quy tắc logic.",
         notes: ""
       },
       {
@@ -644,9 +644,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Đánh giá mức độ nắm vững kiến thức toàn bộ chương; tự kiểm tra và khắc phục các sai sót khi làm bài.\n- Nâng cao năng lực mô hình hóa toán học và giải quyết vấn đề sáng tạo.",
         equipment: "Thước thẳng, bảng phụ",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.1.TC1a",
+        nlsCode: "2.5.TC1b",
         aiCode: "6.A1.1",
-        dc: "• [Mã NLS: 2.1.TC1a] Phối hợp nhóm trực tuyến chia sẻ cách giải và thảo luận bài tập toán.\n• [Mã AI: 6.A1.1] Nhận biết vai trò của con người trong việc kiểm tra, quyết định tính đúng đắn khi AI gợi ý lời giải toán.",
+        dc: "• [Mã NLS: 2.5.TC1b] Phối hợp nhóm trực tuyến chia sẻ cách giải và thảo luận bài tập toán.\n• [Mã AI: 6.A1.1] Nhận biết vai trò của con người trong việc kiểm tra, quyết định tính đúng đắn khi AI gợi ý lời giải toán.",
         notes: ""
       },
       {
@@ -657,9 +657,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 32: Điểm và đường thẳng (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Thước thẳng, bảng phụ",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.4.TC1a",
+        nlsCode: "2.1.TC1b",
         aiCode: "6.A1.3",
-        dc: "• [Mã NLS: 2.4.TC1a] Trình bày sơ đồ tư duy hệ thống hóa kiến thức toán học bằng công cụ vẽ số.\n• [Mã AI: 6.A1.3] Tìm hiểu cách các công cụ AI trợ lý học tập hỗ trợ giải toán và kiểm tra kết quả tính toán.",
+        dc: "• [Mã NLS: 2.1.TC1b] Trình bày sơ đồ tư duy hệ thống hóa kiến thức toán học bằng công cụ vẽ số.\n• [Mã AI: 6.A1.3] Tìm hiểu cách các công cụ AI trợ lý học tập hỗ trợ giải toán và kiểm tra kết quả tính toán.",
         notes: ""
       },
       {
@@ -683,9 +683,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Đánh giá chuẩn kiến thức, kĩ năng môn Toán Lớp 6 theo ma trận đề chuẩn Bộ GD&ĐT (thời gian làm bài 90 phút).\n- Đánh giá năng lực tư duy toán học, tính cẩn thận và tính trung thực trong kiểm tra.",
         equipment: "Đề kiểm tra chuẩn ma trận, bảng đặc tả và đáp án",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC1a",
+        nlsCode: "4.1.TC1c",
         aiCode: "6.A3.3",
-        dc: "• [Mã NLS: 4.1.TC1a] Thực hiện bài kiểm tra nghiêm túc, tuân thủ quy chế an toàn số và bảo mật thông tin phòng thi.\n• [Mã AI: 6.A3.3] Tìm hiểu quy trình chấm thi tự động và phân tích phổ điểm bằng AI.",
+        dc: "• [Mã NLS: 4.1.TC1c] Thực hiện bài kiểm tra nghiêm túc, tuân thủ quy chế an toàn số và bảo mật thông tin phòng thi.\n• [Mã AI: 6.A3.3] Tìm hiểu quy trình chấm thi tự động và phân tích phổ điểm bằng AI.",
         notes: "Kiểm tra giữa Học kỳ 2"
       },
       {
@@ -696,9 +696,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 33: Điểm nằm giữa hai điểm. Tia (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Thước chia khoảng mm",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC1a",
+        nlsCode: "4.3.TC1a",
         aiCode: "6.C2.2",
-        dc: "• [Mã NLS: 4.1.TC1a] Tuân thủ quy chế phòng thi, bảo mật thông tin và trung thực số khi làm bài kiểm tra.\n• [Mã AI: 6.C2.2] Trải nghiệm phần mềm AI giải toán Photomath nhận diện bài toán từ ảnh chụp.",
+        dc: "• [Mã NLS: 4.3.TC1a] Tuân thủ quy chế phòng thi, bảo mật thông tin và trung thực số khi làm bài kiểm tra.\n• [Mã AI: 6.C2.2] Trải nghiệm phần mềm AI giải toán Photomath nhận diện bài toán từ ảnh chụp.",
         notes: ""
       },
       {
@@ -722,9 +722,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Chương VIII: Bài 35: Trung điểm của đoạn thẳng (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Thước thẳng, compa",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.1.TC1a",
+        nlsCode: "1.2.TC1b",
         aiCode: "6.A1.1",
-        dc: "• [Mã NLS: 1.1.TC1a] Sử dụng công cụ tìm kiếm số tra cứu thông tin và thuật ngữ toán học trực tuyến.\n• [Mã AI: 6.A1.1] Nhận biết vai trò của con người trong việc kiểm tra, quyết định tính đúng đắn khi AI gợi ý lời giải toán.",
+        dc: "• [Mã NLS: 1.2.TC1b] Sử dụng công cụ tìm kiếm số tra cứu thông tin và thuật ngữ toán học trực tuyến.\n• [Mã AI: 6.A1.1] Nhận biết vai trò của con người trong việc kiểm tra, quyết định tính đúng đắn khi AI gợi ý lời giải toán.",
         notes: ""
       },
       {
@@ -735,9 +735,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Củng cố, hệ thống hóa toàn bộ kiến thức và phương pháp giải toán trọng tâm của các bài học trong chương.\n- Rèn luyện kĩ năng tính toán, tư duy logic và giải quyết các bài toán thực tiễn tổng hợp.",
         equipment: "Thước thẳng, compa",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.2.TC1a",
+        nlsCode: "1.1.TC1b",
         aiCode: "6.A1.3",
-        dc: "• [Mã NLS: 1.2.TC1a] Khám phá phần mềm hình học tương tác GeoGebra và máy tính khoa học số.\n• [Mã AI: 6.A1.3] Tìm hiểu cách các công cụ AI trợ lý học tập hỗ trợ giải toán và kiểm tra kết quả tính toán.",
+        dc: "• [Mã NLS: 1.1.TC1b] Khám phá phần mềm hình học tương tác GeoGebra và máy tính khoa học số.\n• [Mã AI: 6.A1.3] Tìm hiểu cách các công cụ AI trợ lý học tập hỗ trợ giải toán và kiểm tra kết quả tính toán.",
         notes: ""
       },
       {
@@ -761,9 +761,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 37: Số đo góc (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Thước đo góc (độ)",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.1.TC1a",
+        nlsCode: "2.2.TC1c",
         aiCode: "6.C1.1",
-        dc: "• [Mã NLS: 2.1.TC1a] Phối hợp nhóm trực tuyến chia sẻ cách giải và thảo luận bài tập toán.\n• [Mã AI: 6.C1.1] Khám phá cách AI phân loại số liệu và nhận diện mẫu hình học phẳng dựa trên quy tắc logic.",
+        dc: "• [Mã NLS: 2.2.TC1c] Phối hợp nhóm trực tuyến chia sẻ cách giải và thảo luận bài tập toán.\n• [Mã AI: 6.C1.1] Khám phá cách AI phân loại số liệu và nhận diện mẫu hình học phẳng dựa trên quy tắc logic.",
         notes: ""
       },
       {
@@ -774,9 +774,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Củng cố, hệ thống hóa toàn bộ kiến thức và phương pháp giải toán trọng tâm của các bài học trong chương.\n- Rèn luyện kĩ năng tính toán, tư duy logic và giải quyết các bài toán thực tiễn tổng hợp.",
         equipment: "Bảng hỏi thu thập dữ liệu",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.4.TC1a",
+        nlsCode: "2.5.TC1b",
         aiCode: "6.C2.2",
-        dc: "• [Mã NLS: 2.4.TC1a] Trình bày sơ đồ tư duy hệ thống hóa kiến thức toán học bằng công cụ vẽ số.\n• [Mã AI: 6.C2.2] Trải nghiệm phần mềm AI giải toán Photomath nhận diện bài toán từ ảnh chụp.",
+        dc: "• [Mã NLS: 2.5.TC1b] Trình bày sơ đồ tư duy hệ thống hóa kiến thức toán học bằng công cụ vẽ số.\n• [Mã AI: 6.C2.2] Trải nghiệm phần mềm AI giải toán Photomath nhận diện bài toán từ ảnh chụp.",
         notes: ""
       },
       {
@@ -787,9 +787,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Thu thập, phân loại và tổ chức dữ liệu theo các tiêu chí cho trước.",
         equipment: "Bảng hỏi thu thập dữ liệu",
         location: "Phòng học / Lớp học",
-        nlsCode: "3.1.TC1a",
+        nlsCode: "3.2.TC1a",
         aiCode: "6.D1.1",
-        dc: "• [Mã NLS: 3.1.TC1a] Sử dụng bảng tính Excel lập công thức tính toán và vẽ biểu đồ hình học/thống kê.\n• [Mã AI: 6.D1.1] Thảo luận về ứng dụng AI trong quản lý kế hoạch học tập môn Toán cá nhân.",
+        dc: "• [Mã NLS: 3.2.TC1a] Sử dụng bảng tính Excel lập công thức tính toán và vẽ biểu đồ hình học/thống kê.\n• [Mã AI: 6.D1.1] Thảo luận về ứng dụng AI trong quản lý kế hoạch học tập môn Toán cá nhân.",
         notes: ""
       },
       {
@@ -813,9 +813,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Đánh giá chuẩn kiến thức, kĩ năng môn Toán Lớp 6 theo ma trận đề chuẩn Bộ GD&ĐT (thời gian làm bài 90 phút).\n- Đánh giá năng lực tư duy toán học, tính cẩn thận và tính trung thực trong kiểm tra.",
         equipment: "Đề kiểm tra chuẩn ma trận, bảng đặc tả và đáp án",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC1a",
+        nlsCode: "4.1.TC1c",
         aiCode: "6.A3.3",
-        dc: "• [Mã NLS: 4.1.TC1a] Thực hiện bài kiểm tra nghiêm túc, tuân thủ quy chế an toàn số và bảo mật thông tin phòng thi.\n• [Mã AI: 6.A3.3] Tìm hiểu quy trình chấm thi tự động và phân tích phổ điểm bằng AI.",
+        dc: "• [Mã NLS: 4.1.TC1c] Thực hiện bài kiểm tra nghiêm túc, tuân thủ quy chế an toàn số và bảo mật thông tin phòng thi.\n• [Mã AI: 6.A3.3] Tìm hiểu quy trình chấm thi tự động và phân tích phổ điểm bằng AI.",
         notes: "Kiểm tra cuối Học kỳ 2"
       },
       {
@@ -826,9 +826,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Chữa bài kiểm tra cuối HK2.",
         equipment: "Phần mềm Excel, biểu đồ số liệu thực tế",
         location: "Phòng học / Lớp học",
-        nlsCode: "5.1.TC1a",
+        nlsCode: "5.3.TC1a",
         aiCode: "6.A3.3",
-        dc: "• [Mã NLS: 5.1.TC1a] Vận dụng tư duy thuật toán và công cụ số giải quyết các bài toán thực tiễn.\n• [Mã AI: 6.A3.3] Nhận diện quy trình tự động hóa chấm điểm và phân tích dữ liệu bài thi bằng AI.",
+        dc: "• [Mã NLS: 5.3.TC1a] Vận dụng tư duy thuật toán và công cụ số giải quyết các bài toán thực tiễn.\n• [Mã AI: 6.A3.3] Nhận diện quy trình tự động hóa chấm điểm và phân tích dữ liệu bài thi bằng AI.",
         notes: ""
       },
       {
@@ -839,9 +839,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Đọc và vẽ bảng thống kê, biểu đồ tranh, biểu đồ cột, biểu đồ cột kép; rút ra nhận xét số liệu thực tế.",
         equipment: "Phần mềm Excel, biểu đồ số liệu thực tế",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.1.TC1a",
+        nlsCode: "1.1.TC1d",
         aiCode: "6.C1.1",
-        dc: "• [Mã NLS: 1.1.TC1a] Sử dụng công cụ tìm kiếm số tra cứu thông tin và thuật ngữ toán học trực tuyến.\n• [Mã AI: 6.C1.1] Khám phá cách AI phân loại số liệu và nhận diện mẫu hình học phẳng dựa trên quy tắc logic.",
+        dc: "• [Mã NLS: 1.1.TC1d] Sử dụng công cụ tìm kiếm số tra cứu thông tin và thuật ngữ toán học trực tuyến.\n• [Mã AI: 6.C1.1] Khám phá cách AI phân loại số liệu và nhận diện mẫu hình học phẳng dựa trên quy tắc logic.",
         notes: ""
       },
       {
@@ -852,9 +852,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Dự án STEM Toán 6: \"Mô hình Hình học Trực quan (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Vật liệu tái chế, giấy A0, bút màu, máy chiếu",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.2.TC1a",
+        nlsCode: "1.2.TC1b",
         aiCode: "6.C2.2",
-        dc: "• [Mã NLS: 1.2.TC1a] Khám phá phần mềm hình học tương tác GeoGebra và máy tính khoa học số.\n• [Mã AI: 6.C2.2] Trải nghiệm phần mềm AI giải toán Photomath nhận diện bài toán từ ảnh chụp.",
+        dc: "• [Mã NLS: 1.2.TC1b] Khám phá phần mềm hình học tương tác GeoGebra và máy tính khoa học số.\n• [Mã AI: 6.C2.2] Trải nghiệm phần mềm AI giải toán Photomath nhận diện bài toán từ ảnh chụp.",
         notes: ""
       },
       {
@@ -878,9 +878,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Chương IX: Bài 42: Kết quả có thể và sự kiện trong trò chơi (1 tiết) & Bài 43: Xác suất thực nghiệm (1 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Xúc xắc, đồng xu thí nghiệm, hệ thống đề ôn tập",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.1.TC1a",
+        nlsCode: "2.1.TC1b",
         aiCode: "6.A1.1",
-        dc: "• [Mã NLS: 2.1.TC1a] Phối hợp nhóm trực tuyến chia sẻ cách giải và thảo luận bài tập toán.\n• [Mã AI: 6.A1.1] Nhận biết vai trò của con người trong việc kiểm tra, quyết định tính đúng đắn khi AI gợi ý lời giải toán.",
+        dc: "• [Mã NLS: 2.1.TC1b] Phối hợp nhóm trực tuyến chia sẻ cách giải và thảo luận bài tập toán.\n• [Mã AI: 6.A1.1] Nhận biết vai trò của con người trong việc kiểm tra, quyết định tính đúng đắn khi AI gợi ý lời giải toán.",
         notes: ""
       },
       {
@@ -925,9 +925,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nhận biết được tập hợp và các phần tử của tập hợp; sử dụng đúng các kí hiệu thuộc (∈), không thuộc (∉).\n- Biết cách mô tả một tập hợp bằng cách liệt kê các phần tử hoặc chỉ ra dấu hiệu đặc trưng.",
         equipment: "Mô hình trục số, phiếu học tập số hữu tỉ",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.1.TC1a",
+        nlsCode: "1.1.TC1d",
         aiCode: "7.A1.1",
-        dc: "• [Mã NLS: 1.1.TC1a] Sử dụng công cụ tìm kiếm số tra cứu thông tin và thuật ngữ toán học trực tuyến.\n• [Mã AI: 7.A1.1] Hiểu rằng các mô hình AI tính toán dựa trên các thuật toán số học do con người lập trình.",
+        dc: "• [Mã NLS: 1.1.TC1d] Sử dụng công cụ tìm kiếm số tra cứu thông tin và thuật ngữ toán học trực tuyến.\n• [Mã AI: 7.A1.1] Hiểu rằng các mô hình AI tính toán dựa trên các thuật toán số học do con người lập trình.",
         notes: ""
       },
       {
@@ -964,9 +964,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Củng cố, hệ thống hóa toàn bộ kiến thức và phương pháp giải toán trọng tâm của các bài học trong chương.\n- Rèn luyện kĩ năng tính toán, tư duy logic và giải quyết các bài toán thực tiễn tổng hợp.",
         equipment: "Bảng phụ tính chất phép toán",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.1.TC1a",
+        nlsCode: "2.5.TC1b",
         aiCode: "7.C1.1",
-        dc: "• [Mã NLS: 2.1.TC1a] Phối hợp nhóm trực tuyến chia sẻ cách giải và thảo luận bài tập toán.\n• [Mã AI: 7.C1.1] Tìm hiểu cách AI dựng hình 3D và tính toán các yếu tố hình học trong không gian ảo.",
+        dc: "• [Mã NLS: 2.5.TC1b] Phối hợp nhóm trực tuyến chia sẻ cách giải và thảo luận bài tập toán.\n• [Mã AI: 7.C1.1] Tìm hiểu cách AI dựng hình 3D và tính toán các yếu tố hình học trong không gian ảo.",
         notes: ""
       },
       {
@@ -1003,9 +1003,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 4: Quy tắc dấu ngoặc và quy tắc chuyển vế (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Phiếu bài tập tìm x quy tắc chuyển vế",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC1a",
+        nlsCode: "4.3.TC1a",
         aiCode: "7.A1.MR1",
-        dc: "• [Mã NLS: 4.1.TC1a] Tuân thủ quy chế phòng thi, bảo mật thông tin và trung thực số khi làm bài kiểm tra.\n• [Mã AI: 7.A1.MR1] Đối chiếu và phản biện các bước giải toán do trợ lý AI đưa ra với quy tắc toán học trong SGK.",
+        dc: "• [Mã NLS: 4.3.TC1a] Tuân thủ quy chế phòng thi, bảo mật thông tin và trung thực số khi làm bài kiểm tra.\n• [Mã AI: 7.A1.MR1] Đối chiếu và phản biện các bước giải toán do trợ lý AI đưa ra với quy tắc toán học trong SGK.",
         notes: ""
       },
       {
@@ -1016,9 +1016,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Củng cố, hệ thống hóa toàn bộ kiến thức và phương pháp giải toán trọng tâm của các bài học trong chương.\n- Rèn luyện kĩ năng tính toán, tư duy logic và giải quyết các bài toán thực tiễn tổng hợp.",
         equipment: "Sơ đồ tư duy chương I",
         location: "Phòng học / Lớp học",
-        nlsCode: "5.1.TC1a",
+        nlsCode: "5.2.TC1b",
         aiCode: "7.A3.1",
-        dc: "• [Mã NLS: 5.1.TC1a] Vận dụng tư duy thuật toán và công cụ số giải quyết các bài toán thực tiễn.\n• [Mã AI: 7.A3.1] Khám phá cách thuật toán AI học máy nhận diện quy luật dãy số và tỉ lệ thức.",
+        dc: "• [Mã NLS: 5.2.TC1b] Vận dụng tư duy thuật toán và công cụ số giải quyết các bài toán thực tiễn.\n• [Mã AI: 7.A3.1] Khám phá cách thuật toán AI học máy nhận diện quy luật dãy số và tỉ lệ thức.",
         notes: ""
       },
       {
@@ -1029,9 +1029,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Đánh giá mức độ nắm vững kiến thức toàn bộ chương; tự kiểm tra và khắc phục các sai sót khi làm bài.\n- Nâng cao năng lực mô hình hóa toán học và giải quyết vấn đề sáng tạo.",
         equipment: "Sơ đồ tư duy chương I",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.1.TC1a",
+        nlsCode: "1.1.TC1c",
         aiCode: "7.C1.1",
-        dc: "• [Mã NLS: 1.1.TC1a] Sử dụng công cụ tìm kiếm số tra cứu thông tin và thuật ngữ toán học trực tuyến.\n• [Mã AI: 7.C1.1] Tìm hiểu cách AI dựng hình 3D và tính toán các yếu tố hình học trong không gian ảo.",
+        dc: "• [Mã NLS: 1.1.TC1c] Sử dụng công cụ tìm kiếm số tra cứu thông tin và thuật ngữ toán học trực tuyến.\n• [Mã AI: 7.C1.1] Tìm hiểu cách AI dựng hình 3D và tính toán các yếu tố hình học trong không gian ảo.",
         notes: ""
       },
       {
@@ -1042,9 +1042,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 5: Làm quen với số thập phân vô hạn tuần hoàn (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Bảng biểu diễn số thập phân tuần hoàn, máy tính Casio",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.2.TC1a",
+        nlsCode: "1.1.TC1b",
         aiCode: "7.C2.1",
-        dc: "• [Mã NLS: 1.2.TC1a] Khám phá phần mềm hình học tương tác GeoGebra và máy tính khoa học số.\n• [Mã AI: 7.C2.1] Sử dụng AI phân tích xác suất của các biến cố trong trò chơi và mô phỏng thực tế.",
+        dc: "• [Mã NLS: 1.1.TC1b] Khám phá phần mềm hình học tương tác GeoGebra và máy tính khoa học số.\n• [Mã AI: 7.C2.1] Sử dụng AI phân tích xác suất của các biến cố trong trò chơi và mô phỏng thực tế.",
         notes: ""
       },
       {
@@ -1068,9 +1068,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nhận biết được tập hợp và các phần tử của tập hợp; sử dụng đúng các kí hiệu thuộc (∈), không thuộc (∉).\n- Biết cách mô tả một tập hợp bằng cách liệt kê các phần tử hoặc chỉ ra dấu hiệu đặc trưng.",
         equipment: "Trục số thực trực quan",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.1.TC1a",
+        nlsCode: "2.2.TC1c",
         aiCode: "7.A1.1",
-        dc: "• [Mã NLS: 2.1.TC1a] Phối hợp nhóm trực tuyến chia sẻ cách giải và thảo luận bài tập toán.\n• [Mã AI: 7.A1.1] Hiểu rằng các mô hình AI tính toán dựa trên các thuật toán số học do con người lập trình.",
+        dc: "• [Mã NLS: 2.2.TC1c] Phối hợp nhóm trực tuyến chia sẻ cách giải và thảo luận bài tập toán.\n• [Mã AI: 7.A1.1] Hiểu rằng các mô hình AI tính toán dựa trên các thuật toán số học do con người lập trình.",
         notes: ""
       },
       {
@@ -1081,9 +1081,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Củng cố, hệ thống hóa toàn bộ kiến thức và phương pháp giải toán trọng tâm của các bài học trong chương.\n- Rèn luyện kĩ năng tính toán, tư duy logic và giải quyết các bài toán thực tiễn tổng hợp.",
         equipment: "Trục số thực trực quan",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.4.TC1a",
+        nlsCode: "2.1.TC1b",
         aiCode: "7.A1.MR1",
-        dc: "• [Mã NLS: 2.4.TC1a] Trình bày sơ đồ tư duy hệ thống hóa kiến thức toán học bằng công cụ vẽ số.\n• [Mã AI: 7.A1.MR1] Đối chiếu và phản biện các bước giải toán do trợ lý AI đưa ra với quy tắc toán học trong SGK.",
+        dc: "• [Mã NLS: 2.1.TC1b] Trình bày sơ đồ tư duy hệ thống hóa kiến thức toán học bằng công cụ vẽ số.\n• [Mã AI: 7.A1.MR1] Đối chiếu và phản biện các bước giải toán do trợ lý AI đưa ra với quy tắc toán học trong SGK.",
         notes: ""
       },
       {
@@ -1094,9 +1094,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Đánh giá mức độ nắm vững kiến thức toàn bộ chương; tự kiểm tra và khắc phục các sai sót khi làm bài.\n- Nâng cao năng lực mô hình hóa toán học và giải quyết vấn đề sáng tạo.",
         equipment: "Phần mềm GeoGebra, phòng máy tính",
         location: "Phòng học / Lớp học",
-        nlsCode: "3.1.TC1a",
+        nlsCode: "3.2.TC1a",
         aiCode: "7.A3.1",
-        dc: "• [Mã NLS: 3.1.TC1a] Sử dụng bảng tính Excel lập công thức tính toán và vẽ biểu đồ hình học/thống kê.\n• [Mã AI: 7.A3.1] Khám phá cách thuật toán AI học máy nhận diện quy luật dãy số và tỉ lệ thức.",
+        dc: "• [Mã NLS: 3.2.TC1a] Sử dụng bảng tính Excel lập công thức tính toán và vẽ biểu đồ hình học/thống kê.\n• [Mã AI: 7.A3.1] Khám phá cách thuật toán AI học máy nhận diện quy luật dãy số và tỉ lệ thức.",
         notes: ""
       },
       {
@@ -1133,9 +1133,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Đánh giá chuẩn kiến thức, kĩ năng môn Toán Lớp 7 theo ma trận đề chuẩn Bộ GD&ĐT (thời gian làm bài 90 phút).\n- Đánh giá năng lực tư duy toán học, tính cẩn thận và tính trung thực trong kiểm tra.",
         equipment: "Đề kiểm tra chuẩn ma trận, bảng đặc tả và đáp án",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC1a",
+        nlsCode: "4.1.TC1c",
         aiCode: "7.A3.3",
-        dc: "• [Mã NLS: 4.1.TC1a] Thực hiện bài kiểm tra nghiêm túc, tuân thủ quy chế an toàn số và bảo mật thông tin phòng thi.\n• [Mã AI: 7.A3.3] Tìm hiểu quy trình chấm thi tự động và phân tích phổ điểm bằng AI.",
+        dc: "• [Mã NLS: 4.1.TC1c] Thực hiện bài kiểm tra nghiêm túc, tuân thủ quy chế an toàn số và bảo mật thông tin phòng thi.\n• [Mã AI: 7.A3.3] Tìm hiểu quy trình chấm thi tự động và phân tích phổ điểm bằng AI.",
         notes: "Kiểm tra giữa Học kỳ 1"
       },
       {
@@ -1146,9 +1146,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nhận biết hai góc kề bù, hai góc đối đỉnh và tính chất; định nghĩa và cách vẽ tia phân giác của một góc bằng thước và compa.",
         equipment: "Thước đo góc, compa, thước thẳng",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.1.TC1a",
+        nlsCode: "1.2.TC1b",
         aiCode: "7.C1.1",
-        dc: "• [Mã NLS: 1.1.TC1a] Sử dụng công cụ tìm kiếm số tra cứu thông tin và thuật ngữ toán học trực tuyến.\n• [Mã AI: 7.C1.1] Tìm hiểu cách AI dựng hình 3D và tính toán các yếu tố hình học trong không gian ảo.",
+        dc: "• [Mã NLS: 1.2.TC1b] Sử dụng công cụ tìm kiếm số tra cứu thông tin và thuật ngữ toán học trực tuyến.\n• [Mã AI: 7.C1.1] Tìm hiểu cách AI dựng hình 3D và tính toán các yếu tố hình học trong không gian ảo.",
         notes: ""
       },
       {
@@ -1172,9 +1172,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 9: Hai đường thẳng song song và dấu hiệu nhận biết (3 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Êke, thước kẻ",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.1.TC1a",
+        nlsCode: "2.1.TC1b",
         aiCode: "7.C1.1",
-        dc: "• [Mã NLS: 2.1.TC1a] Phối hợp nhóm trực tuyến chia sẻ cách giải và thảo luận bài tập toán.\n• [Mã AI: 7.C1.1] Tìm hiểu cách AI dựng hình 3D và tính toán các yếu tố hình học trong không gian ảo.",
+        dc: "• [Mã NLS: 2.1.TC1b] Phối hợp nhóm trực tuyến chia sẻ cách giải và thảo luận bài tập toán.\n• [Mã AI: 7.C1.1] Tìm hiểu cách AI dựng hình 3D và tính toán các yếu tố hình học trong không gian ảo.",
         notes: ""
       },
       {
@@ -1185,9 +1185,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Củng cố, hệ thống hóa toàn bộ kiến thức và phương pháp giải toán trọng tâm của các bài học trong chương.\n- Rèn luyện kĩ năng tính toán, tư duy logic và giải quyết các bài toán thực tiễn tổng hợp.",
         equipment: "Bảng phụ minh hoạ tiên đề Euclid",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.4.TC1a",
+        nlsCode: "2.5.TC1b",
         aiCode: "7.C2.1",
-        dc: "• [Mã NLS: 2.4.TC1a] Trình bày sơ đồ tư duy hệ thống hóa kiến thức toán học bằng công cụ vẽ số.\n• [Mã AI: 7.C2.1] Sử dụng AI phân tích xác suất của các biến cố trong trò chơi và mô phỏng thực tế.",
+        dc: "• [Mã NLS: 2.5.TC1b] Trình bày sơ đồ tư duy hệ thống hóa kiến thức toán học bằng công cụ vẽ số.\n• [Mã AI: 7.C2.1] Sử dụng AI phân tích xác suất của các biến cố trong trò chơi và mô phỏng thực tế.",
         notes: ""
       },
       {
@@ -1198,9 +1198,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 10: Tiên đề Euclid. Tính chất của hai đường thẳng song song (3 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Bảng phụ minh hoạ tiên đề Euclid",
         location: "Phòng học / Lớp học",
-        nlsCode: "3.1.TC1a",
+        nlsCode: "3.2.TC1a",
         aiCode: "7.D1.1",
-        dc: "• [Mã NLS: 3.1.TC1a] Sử dụng bảng tính Excel lập công thức tính toán và vẽ biểu đồ hình học/thống kê.\n• [Mã AI: 7.D1.1] Thảo luận về trách nhiệm đạo đức khi sử dụng công cụ AI trong học tập và thi cử.",
+        dc: "• [Mã NLS: 3.2.TC1a] Sử dụng bảng tính Excel lập công thức tính toán và vẽ biểu đồ hình học/thống kê.\n• [Mã AI: 7.D1.1] Thảo luận về trách nhiệm đạo đức khi sử dụng công cụ AI trong học tập và thi cử.",
         notes: ""
       },
       {
@@ -1224,9 +1224,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Củng cố, hệ thống hóa toàn bộ kiến thức và phương pháp giải toán trọng tâm của các bài học trong chương.\n- Rèn luyện kĩ năng tính toán, tư duy logic và giải quyết các bài toán thực tiễn tổng hợp.",
         equipment: "Phiếu học tập chứng minh định lí",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC1a",
+        nlsCode: "4.3.TC1a",
         aiCode: "7.A1.MR1",
-        dc: "• [Mã NLS: 4.1.TC1a] Tuân thủ quy chế phòng thi, bảo mật thông tin và trung thực số khi làm bài kiểm tra.\n• [Mã AI: 7.A1.MR1] Đối chiếu và phản biện các bước giải toán do trợ lý AI đưa ra với quy tắc toán học trong SGK.",
+        dc: "• [Mã NLS: 4.3.TC1a] Tuân thủ quy chế phòng thi, bảo mật thông tin và trung thực số khi làm bài kiểm tra.\n• [Mã AI: 7.A1.MR1] Đối chiếu và phản biện các bước giải toán do trợ lý AI đưa ra với quy tắc toán học trong SGK.",
         notes: ""
       },
       {
@@ -1250,9 +1250,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 13: Hai tam giác bằng nhau. Trường hợp bằng nhau thứ nhất c-c-c (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Bộ mô hình tam giác ghép hình",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.1.TC1a",
+        nlsCode: "1.1.TC1c",
         aiCode: "7.C1.1",
-        dc: "• [Mã NLS: 1.1.TC1a] Sử dụng công cụ tìm kiếm số tra cứu thông tin và thuật ngữ toán học trực tuyến.\n• [Mã AI: 7.C1.1] Tìm hiểu cách AI dựng hình 3D và tính toán các yếu tố hình học trong không gian ảo.",
+        dc: "• [Mã NLS: 1.1.TC1c] Sử dụng công cụ tìm kiếm số tra cứu thông tin và thuật ngữ toán học trực tuyến.\n• [Mã AI: 7.C1.1] Tìm hiểu cách AI dựng hình 3D và tính toán các yếu tố hình học trong không gian ảo.",
         notes: ""
       },
       {
@@ -1263,9 +1263,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 14: Trường hợp bằng nhau thứ hai c-g-c (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Thước đo độ, compa, thước kẻ",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.2.TC1a",
+        nlsCode: "1.2.TC1b",
         aiCode: "7.C2.1",
-        dc: "• [Mã NLS: 1.2.TC1a] Khám phá phần mềm hình học tương tác GeoGebra và máy tính khoa học số.\n• [Mã AI: 7.C2.1] Sử dụng AI phân tích xác suất của các biến cố trong trò chơi và mô phỏng thực tế.",
+        dc: "• [Mã NLS: 1.2.TC1b] Khám phá phần mềm hình học tương tác GeoGebra và máy tính khoa học số.\n• [Mã AI: 7.C2.1] Sử dụng AI phân tích xác suất của các biến cố trong trò chơi và mô phỏng thực tế.",
         notes: ""
       },
       {
@@ -1302,9 +1302,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Đánh giá chuẩn kiến thức, kĩ năng môn Toán Lớp 7 theo ma trận đề chuẩn Bộ GD&ĐT (thời gian làm bài 90 phút).\n- Đánh giá năng lực tư duy toán học, tính cẩn thận và tính trung thực trong kiểm tra.",
         equipment: "Đề kiểm tra chuẩn ma trận, bảng đặc tả và đáp án",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC1a",
+        nlsCode: "4.1.TC1c",
         aiCode: "7.A3.3",
-        dc: "• [Mã NLS: 4.1.TC1a] Thực hiện bài kiểm tra nghiêm túc, tuân thủ quy chế an toàn số và bảo mật thông tin phòng thi.\n• [Mã AI: 7.A3.3] Tìm hiểu quy trình chấm thi tự động và phân tích phổ điểm bằng AI.",
+        dc: "• [Mã NLS: 4.1.TC1c] Thực hiện bài kiểm tra nghiêm túc, tuân thủ quy chế an toàn số và bảo mật thông tin phòng thi.\n• [Mã AI: 7.A3.3] Tìm hiểu quy trình chấm thi tự động và phân tích phổ điểm bằng AI.",
         notes: "Kiểm tra cuối Học kỳ 1"
       },
       {
@@ -1315,9 +1315,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Củng cố, hệ thống hóa toàn bộ kiến thức và phương pháp giải toán trọng tâm của các bài học trong chương.\n- Rèn luyện kĩ năng tính toán, tư duy logic và giải quyết các bài toán thực tiễn tổng hợp.",
         equipment: "Bài làm học sinh, đáp án và biểu điểm",
         location: "Phòng học / Lớp học",
-        nlsCode: "3.1.TC1a",
+        nlsCode: "3.2.TC1a",
         aiCode: "7.A3.1",
-        dc: "• [Mã NLS: 3.1.TC1a] Sử dụng bảng tính Excel lập công thức tính toán và vẽ biểu đồ hình học/thống kê.\n• [Mã AI: 7.A3.1] Khám phá cách thuật toán AI học máy nhận diện quy luật dãy số và tỉ lệ thức.",
+        dc: "• [Mã NLS: 3.2.TC1a] Sử dụng bảng tính Excel lập công thức tính toán và vẽ biểu đồ hình học/thống kê.\n• [Mã AI: 7.A3.1] Khám phá cách thuật toán AI học máy nhận diện quy luật dãy số và tỉ lệ thức.",
         notes: ""
       },
       {
@@ -1341,9 +1341,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Hoạt động thực hành trải nghiệm (GeoGebra, Casio) (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Máy chiếu, phần mềm GeoGebra",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC1a",
+        nlsCode: "4.3.TC1a",
         aiCode: "7.C2.1",
-        dc: "• [Mã NLS: 4.1.TC1a] Tuân thủ quy chế phòng thi, bảo mật thông tin và trung thực số khi làm bài kiểm tra.\n• [Mã AI: 7.C2.1] Sử dụng AI phân tích xác suất của các biến cố trong trò chơi và mô phỏng thực tế.",
+        dc: "• [Mã NLS: 4.3.TC1a] Tuân thủ quy chế phòng thi, bảo mật thông tin và trung thực số khi làm bài kiểm tra.\n• [Mã AI: 7.C2.1] Sử dụng AI phân tích xác suất của các biến cố trong trò chơi và mô phỏng thực tế.",
         notes: ""
       },
       {
@@ -1354,9 +1354,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Sơ kết Học kỳ 1 môn Toán Lớp 7 (4 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Máy chiếu, phần mềm GeoGebra",
         location: "Phòng học / Lớp học",
-        nlsCode: "5.1.TC1a",
+        nlsCode: "5.3.TC1a",
         aiCode: "7.D1.1",
-        dc: "• [Mã NLS: 5.1.TC1a] Vận dụng tư duy thuật toán và công cụ số giải quyết các bài toán thực tiễn.\n• [Mã AI: 7.D1.1] Thảo luận về trách nhiệm đạo đức khi sử dụng công cụ AI trong học tập và thi cử.",
+        dc: "• [Mã NLS: 5.3.TC1a] Vận dụng tư duy thuật toán và công cụ số giải quyết các bài toán thực tiễn.\n• [Mã AI: 7.D1.1] Thảo luận về trách nhiệm đạo đức khi sử dụng công cụ AI trong học tập và thi cử.",
         notes: ""
       },
       {
@@ -1367,9 +1367,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Chương IV: Bài 16: Tam giác cân. Đường trung trực của đoạn thẳng (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Thước thẳng, compa, bảng dữ liệu",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.1.TC1a",
+        nlsCode: "1.2.TC1b",
         aiCode: "7.A1.1",
-        dc: "• [Mã NLS: 1.1.TC1a] Sử dụng công cụ tìm kiếm số tra cứu thông tin và thuật ngữ toán học trực tuyến.\n• [Mã AI: 7.A1.1] Hiểu rằng các mô hình AI tính toán dựa trên các thuật toán số học do con người lập trình.",
+        dc: "• [Mã NLS: 1.2.TC1b] Sử dụng công cụ tìm kiếm số tra cứu thông tin và thuật ngữ toán học trực tuyến.\n• [Mã AI: 7.A1.1] Hiểu rằng các mô hình AI tính toán dựa trên các thuật toán số học do con người lập trình.",
         notes: ""
       },
       {
@@ -1380,9 +1380,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Chương V: Bài 17: Thu thập và phân loại dữ liệu (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Thước thẳng, compa, bảng dữ liệu",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.2.TC1a",
+        nlsCode: "1.1.TC1d",
         aiCode: "7.A1.MR1",
-        dc: "• [Mã NLS: 1.2.TC1a] Khám phá phần mềm hình học tương tác GeoGebra và máy tính khoa học số.\n• [Mã AI: 7.A1.MR1] Đối chiếu và phản biện các bước giải toán do trợ lý AI đưa ra với quy tắc toán học trong SGK.",
+        dc: "• [Mã NLS: 1.1.TC1d] Khám phá phần mềm hình học tương tác GeoGebra và máy tính khoa học số.\n• [Mã AI: 7.A1.MR1] Đối chiếu và phản biện các bước giải toán do trợ lý AI đưa ra với quy tắc toán học trong SGK.",
         notes: ""
       },
       {
@@ -1406,9 +1406,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 19: Biểu đồ đoạn thẳng (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Thước đo góc, phần mềm Excel vẽ biểu đồ",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.1.TC1a",
+        nlsCode: "2.5.TC1b",
         aiCode: "7.C1.1",
-        dc: "• [Mã NLS: 2.1.TC1a] Phối hợp nhóm trực tuyến chia sẻ cách giải và thảo luận bài tập toán.\n• [Mã AI: 7.C1.1] Tìm hiểu cách AI dựng hình 3D và tính toán các yếu tố hình học trong không gian ảo.",
+        dc: "• [Mã NLS: 2.5.TC1b] Phối hợp nhóm trực tuyến chia sẻ cách giải và thảo luận bài tập toán.\n• [Mã AI: 7.C1.1] Tìm hiểu cách AI dựng hình 3D và tính toán các yếu tố hình học trong không gian ảo.",
         notes: ""
       },
       {
@@ -1432,9 +1432,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nhận biết tỉ lệ thức; vận dụng tính chất cơ bản của tỉ lệ thức để tìm số hạng chưa biết.",
         equipment: "Phiếu học tập tỉ lệ thức",
         location: "Phòng học / Lớp học",
-        nlsCode: "3.1.TC1a",
+        nlsCode: "3.2.TC1a",
         aiCode: "7.D1.1",
-        dc: "• [Mã NLS: 3.1.TC1a] Sử dụng bảng tính Excel lập công thức tính toán và vẽ biểu đồ hình học/thống kê.\n• [Mã AI: 7.D1.1] Thảo luận về trách nhiệm đạo đức khi sử dụng công cụ AI trong học tập và thi cử.",
+        dc: "• [Mã NLS: 3.2.TC1a] Sử dụng bảng tính Excel lập công thức tính toán và vẽ biểu đồ hình học/thống kê.\n• [Mã AI: 7.D1.1] Thảo luận về trách nhiệm đạo đức khi sử dụng công cụ AI trong học tập và thi cử.",
         notes: ""
       },
       {
@@ -1458,9 +1458,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Củng cố, hệ thống hóa toàn bộ kiến thức và phương pháp giải toán trọng tâm của các bài học trong chương.\n- Rèn luyện kĩ năng tính toán, tư duy logic và giải quyết các bài toán thực tiễn tổng hợp.",
         equipment: "Bảng phụ công thức dãy tỉ số bằng nhau",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC1a",
+        nlsCode: "4.1.TC1c",
         aiCode: "7.A1.MR1",
-        dc: "• [Mã NLS: 4.1.TC1a] Tuân thủ quy chế phòng thi, bảo mật thông tin và trung thực số khi làm bài kiểm tra.\n• [Mã AI: 7.A1.MR1] Đối chiếu và phản biện các bước giải toán do trợ lý AI đưa ra với quy tắc toán học trong SGK.",
+        dc: "• [Mã NLS: 4.1.TC1c] Tuân thủ quy chế phòng thi, bảo mật thông tin và trung thực số khi làm bài kiểm tra.\n• [Mã AI: 7.A1.MR1] Đối chiếu và phản biện các bước giải toán do trợ lý AI đưa ra với quy tắc toán học trong SGK.",
         notes: ""
       },
       {
@@ -1471,9 +1471,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Chương VI: Bài 22: Đại lượng tỉ lệ thuận (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Phiếu bài toán tỉ lệ thuận, tỉ lệ nghịch",
         location: "Phòng học / Lớp học",
-        nlsCode: "5.1.TC1a",
+        nlsCode: "5.2.TC1b",
         aiCode: "7.A3.1",
-        dc: "• [Mã NLS: 5.1.TC1a] Vận dụng tư duy thuật toán và công cụ số giải quyết các bài toán thực tiễn.\n• [Mã AI: 7.A3.1] Khám phá cách thuật toán AI học máy nhận diện quy luật dãy số và tỉ lệ thức.",
+        dc: "• [Mã NLS: 5.2.TC1b] Vận dụng tư duy thuật toán và công cụ số giải quyết các bài toán thực tiễn.\n• [Mã AI: 7.A3.1] Khám phá cách thuật toán AI học máy nhận diện quy luật dãy số và tỉ lệ thức.",
         notes: ""
       },
       {
@@ -1484,9 +1484,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 23: Đại lượng tỉ lệ nghịch (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Phiếu bài toán tỉ lệ thuận, tỉ lệ nghịch",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.1.TC1a",
+        nlsCode: "1.1.TC1d",
         aiCode: "7.C1.1",
-        dc: "• [Mã NLS: 1.1.TC1a] Sử dụng công cụ tìm kiếm số tra cứu thông tin và thuật ngữ toán học trực tuyến.\n• [Mã AI: 7.C1.1] Tìm hiểu cách AI dựng hình 3D và tính toán các yếu tố hình học trong không gian ảo.",
+        dc: "• [Mã NLS: 1.1.TC1d] Sử dụng công cụ tìm kiếm số tra cứu thông tin và thuật ngữ toán học trực tuyến.\n• [Mã AI: 7.C1.1] Tìm hiểu cách AI dựng hình 3D và tính toán các yếu tố hình học trong không gian ảo.",
         notes: ""
       },
       {
@@ -1497,9 +1497,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Củng cố, hệ thống hóa toàn bộ kiến thức và phương pháp giải toán trọng tâm của các bài học trong chương.\n- Rèn luyện kĩ năng tính toán, tư duy logic và giải quyết các bài toán thực tiễn tổng hợp.",
         equipment: "Bảng tổng kết chương VI",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.2.TC1a",
+        nlsCode: "1.1.TC1b",
         aiCode: "7.C2.1",
-        dc: "• [Mã NLS: 1.2.TC1a] Khám phá phần mềm hình học tương tác GeoGebra và máy tính khoa học số.\n• [Mã AI: 7.C2.1] Sử dụng AI phân tích xác suất của các biến cố trong trò chơi và mô phỏng thực tế.",
+        dc: "• [Mã NLS: 1.1.TC1b] Khám phá phần mềm hình học tương tác GeoGebra và máy tính khoa học số.\n• [Mã AI: 7.C2.1] Sử dụng AI phân tích xác suất của các biến cố trong trò chơi và mô phỏng thực tế.",
         notes: ""
       },
       {
@@ -1523,9 +1523,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nhận biết được khái niệm đa thức nhiều biến, các hạng tử của đa thức và xác định được bậc của đa thức.\n- Thu gọn đa thức nhiều biến và tính giá trị của đa thức tại các giá trị cho trước của biến.",
         equipment: "Phiếu bài tập cộng trừ đa thức",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.1.TC1a",
+        nlsCode: "2.2.TC1c",
         aiCode: "7.A1.1",
-        dc: "• [Mã NLS: 2.1.TC1a] Phối hợp nhóm trực tuyến chia sẻ cách giải và thảo luận bài tập toán.\n• [Mã AI: 7.A1.1] Hiểu rằng các mô hình AI tính toán dựa trên các thuật toán số học do con người lập trình.",
+        dc: "• [Mã NLS: 2.2.TC1c] Phối hợp nhóm trực tuyến chia sẻ cách giải và thảo luận bài tập toán.\n• [Mã AI: 7.A1.1] Hiểu rằng các mô hình AI tính toán dựa trên các thuật toán số học do con người lập trình.",
         notes: ""
       },
       {
@@ -1536,9 +1536,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững quy tắc cộng, trừ hai hay nhiều đa thức nhiều biến.\n- Thực hiện thành thạo bỏ ngoặc, nhóm các hạng tử đồng dạng và rút gọn đa thức.",
         equipment: "Phiếu bài tập cộng trừ đa thức",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.4.TC1a",
+        nlsCode: "2.1.TC1b",
         aiCode: "7.A1.MR1",
-        dc: "• [Mã NLS: 2.4.TC1a] Trình bày sơ đồ tư duy hệ thống hóa kiến thức toán học bằng công cụ vẽ số.\n• [Mã AI: 7.A1.MR1] Đối chiếu và phản biện các bước giải toán do trợ lý AI đưa ra với quy tắc toán học trong SGK.",
+        dc: "• [Mã NLS: 2.1.TC1b] Trình bày sơ đồ tư duy hệ thống hóa kiến thức toán học bằng công cụ vẽ số.\n• [Mã AI: 7.A1.MR1] Đối chiếu và phản biện các bước giải toán do trợ lý AI đưa ra với quy tắc toán học trong SGK.",
         notes: ""
       },
       {
@@ -1562,9 +1562,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Đánh giá chuẩn kiến thức, kĩ năng môn Toán Lớp 7 theo ma trận đề chuẩn Bộ GD&ĐT (thời gian làm bài 90 phút).\n- Đánh giá năng lực tư duy toán học, tính cẩn thận và tính trung thực trong kiểm tra.",
         equipment: "Đề kiểm tra chuẩn ma trận, bảng đặc tả và đáp án",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC1a",
+        nlsCode: "4.3.TC1a",
         aiCode: "7.A3.3",
-        dc: "• [Mã NLS: 4.1.TC1a] Thực hiện bài kiểm tra nghiêm túc, tuân thủ quy chế an toàn số và bảo mật thông tin phòng thi.\n• [Mã AI: 7.A3.3] Tìm hiểu quy trình chấm thi tự động và phân tích phổ điểm bằng AI.",
+        dc: "• [Mã NLS: 4.3.TC1a] Thực hiện bài kiểm tra nghiêm túc, tuân thủ quy chế an toàn số và bảo mật thông tin phòng thi.\n• [Mã AI: 7.A3.3] Tìm hiểu quy trình chấm thi tự động và phân tích phổ điểm bằng AI.",
         notes: "Kiểm tra giữa Học kỳ 2"
       },
       {
@@ -1575,9 +1575,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Thực hiện thành thạo phép nhân đơn thức với đa thức: A(B + C) = AB + AC.\n- Thực hiện thành thạo phép nhân đa thức với đa thức: (A + B)(C + D) = AC + AD + BC + BD.",
         equipment: "Bảng quy tắc nhân chia đa thức",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC1a",
+        nlsCode: "4.1.TC1c",
         aiCode: "7.C2.1",
-        dc: "• [Mã NLS: 4.1.TC1a] Tuân thủ quy chế phòng thi, bảo mật thông tin và trung thực số khi làm bài kiểm tra.\n• [Mã AI: 7.C2.1] Sử dụng AI phân tích xác suất của các biến cố trong trò chơi và mô phỏng thực tế.",
+        dc: "• [Mã NLS: 4.1.TC1c] Tuân thủ quy chế phòng thi, bảo mật thông tin và trung thực số khi làm bài kiểm tra.\n• [Mã AI: 7.C2.1] Sử dụng AI phân tích xác suất của các biến cố trong trò chơi và mô phỏng thực tế.",
         notes: ""
       },
       {
@@ -1601,9 +1601,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Củng cố, hệ thống hóa toàn bộ kiến thức và phương pháp giải toán trọng tâm của các bài học trong chương.\n- Rèn luyện kĩ năng tính toán, tư duy logic và giải quyết các bài toán thực tiễn tổng hợp.",
         equipment: "Xúc xắc, đồng xu thí nghiệm",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.1.TC1a",
+        nlsCode: "1.2.TC1b",
         aiCode: "7.A1.1",
-        dc: "• [Mã NLS: 1.1.TC1a] Sử dụng công cụ tìm kiếm số tra cứu thông tin và thuật ngữ toán học trực tuyến.\n• [Mã AI: 7.A1.1] Hiểu rằng các mô hình AI tính toán dựa trên các thuật toán số học do con người lập trình.",
+        dc: "• [Mã NLS: 1.2.TC1b] Sử dụng công cụ tìm kiếm số tra cứu thông tin và thuật ngữ toán học trực tuyến.\n• [Mã AI: 7.A1.1] Hiểu rằng các mô hình AI tính toán dựa trên các thuật toán số học do con người lập trình.",
         notes: ""
       },
       {
@@ -1614,9 +1614,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nhận biết biến cố chắc chắn, biến cố không thể và biến cố ngẫu nhiên.",
         equipment: "Xúc xắc, đồng xu thí nghiệm",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.2.TC1a",
+        nlsCode: "1.2.TC1b",
         aiCode: "7.A1.MR1",
-        dc: "• [Mã NLS: 1.2.TC1a] Khám phá phần mềm hình học tương tác GeoGebra và máy tính khoa học số.\n• [Mã AI: 7.A1.MR1] Đối chiếu và phản biện các bước giải toán do trợ lý AI đưa ra với quy tắc toán học trong SGK.",
+        dc: "• [Mã NLS: 1.2.TC1b] Khám phá phần mềm hình học tương tác GeoGebra và máy tính khoa học số.\n• [Mã AI: 7.A1.MR1] Đối chiếu và phản biện các bước giải toán do trợ lý AI đưa ra với quy tắc toán học trong SGK.",
         notes: ""
       },
       {
@@ -1640,9 +1640,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Củng cố, hệ thống hóa toàn bộ kiến thức và phương pháp giải toán trọng tâm của các bài học trong chương.\n- Rèn luyện kĩ năng tính toán, tư duy logic và giải quyết các bài toán thực tiễn tổng hợp.",
         equipment: "Vòng quay may mắn, hộp thẻ số",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.1.TC1a",
+        nlsCode: "2.1.TC1b",
         aiCode: "7.C1.1",
-        dc: "• [Mã NLS: 2.1.TC1a] Phối hợp nhóm trực tuyến chia sẻ cách giải và thảo luận bài tập toán.\n• [Mã AI: 7.C1.1] Tìm hiểu cách AI dựng hình 3D và tính toán các yếu tố hình học trong không gian ảo.",
+        dc: "• [Mã NLS: 2.1.TC1b] Phối hợp nhóm trực tuyến chia sẻ cách giải và thảo luận bài tập toán.\n• [Mã AI: 7.C1.1] Tìm hiểu cách AI dựng hình 3D và tính toán các yếu tố hình học trong không gian ảo.",
         notes: ""
       },
       {
@@ -1653,9 +1653,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 31: Quan hệ giữa góc và cạnh đối diện trong một tam giác (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Bộ thước compa, êke",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.4.TC1a",
+        nlsCode: "2.5.TC1b",
         aiCode: "7.C2.1",
-        dc: "• [Mã NLS: 2.4.TC1a] Trình bày sơ đồ tư duy hệ thống hóa kiến thức toán học bằng công cụ vẽ số.\n• [Mã AI: 7.C2.1] Sử dụng AI phân tích xác suất của các biến cố trong trò chơi và mô phỏng thực tế.",
+        dc: "• [Mã NLS: 2.5.TC1b] Trình bày sơ đồ tư duy hệ thống hóa kiến thức toán học bằng công cụ vẽ số.\n• [Mã AI: 7.C2.1] Sử dụng AI phân tích xác suất của các biến cố trong trò chơi và mô phỏng thực tế.",
         notes: ""
       },
       {
@@ -1666,9 +1666,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 32: Quan hệ giữa đường vuông góc và đường xiên (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Bộ thước compa, êke",
         location: "Phòng học / Lớp học",
-        nlsCode: "3.1.TC1a",
+        nlsCode: "3.2.TC1a",
         aiCode: "7.D1.1",
-        dc: "• [Mã NLS: 3.1.TC1a] Sử dụng bảng tính Excel lập công thức tính toán và vẽ biểu đồ hình học/thống kê.\n• [Mã AI: 7.D1.1] Thảo luận về trách nhiệm đạo đức khi sử dụng công cụ AI trong học tập và thi cử.",
+        dc: "• [Mã NLS: 3.2.TC1a] Sử dụng bảng tính Excel lập công thức tính toán và vẽ biểu đồ hình học/thống kê.\n• [Mã AI: 7.D1.1] Thảo luận về trách nhiệm đạo đức khi sử dụng công cụ AI trong học tập và thi cử.",
         notes: ""
       },
       {
@@ -1692,9 +1692,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Đánh giá chuẩn kiến thức, kĩ năng môn Toán Lớp 7 theo ma trận đề chuẩn Bộ GD&ĐT (thời gian làm bài 90 phút).\n- Đánh giá năng lực tư duy toán học, tính cẩn thận và tính trung thực trong kiểm tra.",
         equipment: "Đề kiểm tra chuẩn ma trận, bảng đặc tả và đáp án",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC1a",
+        nlsCode: "4.3.TC1a",
         aiCode: "7.A3.3",
-        dc: "• [Mã NLS: 4.1.TC1a] Thực hiện bài kiểm tra nghiêm túc, tuân thủ quy chế an toàn số và bảo mật thông tin phòng thi.\n• [Mã AI: 7.A3.3] Tìm hiểu quy trình chấm thi tự động và phân tích phổ điểm bằng AI.",
+        dc: "• [Mã NLS: 4.3.TC1a] Thực hiện bài kiểm tra nghiêm túc, tuân thủ quy chế an toàn số và bảo mật thông tin phòng thi.\n• [Mã AI: 7.A3.3] Tìm hiểu quy trình chấm thi tự động và phân tích phổ điểm bằng AI.",
         notes: "Kiểm tra cuối Học kỳ 2"
       },
       {
@@ -1705,9 +1705,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Chữa bài kiểm tra cuối HK2.",
         equipment: "Mô hình tam giác cắt bằng bìa cứng",
         location: "Phòng học / Lớp học",
-        nlsCode: "5.1.TC1a",
+        nlsCode: "5.3.TC1a",
         aiCode: "7.A3.1",
-        dc: "• [Mã NLS: 5.1.TC1a] Vận dụng tư duy thuật toán và công cụ số giải quyết các bài toán thực tiễn.\n• [Mã AI: 7.A3.1] Khám phá cách thuật toán AI học máy nhận diện quy luật dãy số và tỉ lệ thức.",
+        dc: "• [Mã NLS: 5.3.TC1a] Vận dụng tư duy thuật toán và công cụ số giải quyết các bài toán thực tiễn.\n• [Mã AI: 7.A3.1] Khám phá cách thuật toán AI học máy nhận diện quy luật dãy số và tỉ lệ thức.",
         notes: ""
       },
       {
@@ -1718,9 +1718,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững tính chất đường phân giác của tam giác (chia cạnh đối diện thành hai đoạn thẳng tỉ lệ với hai cạnh kề).\n- Vận dụng tính độ dài các đoạn thẳng trong tam giác.",
         equipment: "Mô hình tam giác cắt bằng bìa cứng",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.1.TC1a",
+        nlsCode: "1.1.TC1c",
         aiCode: "7.C1.1",
-        dc: "• [Mã NLS: 1.1.TC1a] Sử dụng công cụ tìm kiếm số tra cứu thông tin và thuật ngữ toán học trực tuyến.\n• [Mã AI: 7.C1.1] Tìm hiểu cách AI dựng hình 3D và tính toán các yếu tố hình học trong không gian ảo.",
+        dc: "• [Mã NLS: 1.1.TC1c] Sử dụng công cụ tìm kiếm số tra cứu thông tin và thuật ngữ toán học trực tuyến.\n• [Mã AI: 7.C1.1] Tìm hiểu cách AI dựng hình 3D và tính toán các yếu tố hình học trong không gian ảo.",
         notes: ""
       },
       {
@@ -1757,9 +1757,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Chương IX: Bài 35: Sự đồng quy của ba đường trung trực, ba đường cao trong tam giác (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Hệ thống đề ôn tập chuẩn ma trận",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.1.TC1a",
+        nlsCode: "2.5.TC1b",
         aiCode: "7.A1.1",
-        dc: "• [Mã NLS: 2.1.TC1a] Phối hợp nhóm trực tuyến chia sẻ cách giải và thảo luận bài tập toán.\n• [Mã AI: 7.A1.1] Hiểu rằng các mô hình AI tính toán dựa trên các thuật toán số học do con người lập trình.",
+        dc: "• [Mã NLS: 2.5.TC1b] Phối hợp nhóm trực tuyến chia sẻ cách giải và thảo luận bài tập toán.\n• [Mã AI: 7.A1.1] Hiểu rằng các mô hình AI tính toán dựa trên các thuật toán số học do con người lập trình.",
         notes: ""
       },
       {
@@ -1804,9 +1804,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nhận biết được đơn thức, đơn thức thu gọn, hệ số và phần biến của đơn thức; xác định được bậc của đơn thức nhiều biến.\n- Nhận biết các đơn thức đồng dạng và thực hiện thành thạo phép cộng, trừ các đơn thức đồng dạng.",
         equipment: "Phiếu học tập, bảng phụ nhóm",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.1.TC2a",
+        nlsCode: "1.1.TC2d",
         aiCode: "8.A1.1",
-        dc: "• [Mã NLS: 1.1.TC2a] Khai thác kho học liệu số và cơ sở dữ liệu toán học trực tuyến nâng cao.\n• [Mã AI: 8.A1.1] Nhận thức giới hạn của mô hình ngôn ngữ AI khi xử lý các phép biến đổi đại số phức tạp.",
+        dc: "• [Mã NLS: 1.1.TC2d] Khai thác kho học liệu số và cơ sở dữ liệu toán học trực tuyến nâng cao.\n• [Mã AI: 8.A1.1] Nhận thức giới hạn của mô hình ngôn ngữ AI khi xử lý các phép biến đổi đại số phức tạp.",
         notes: ""
       },
       {
@@ -1817,9 +1817,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nhận biết được khái niệm đa thức nhiều biến, các hạng tử của đa thức và xác định được bậc của đa thức.\n- Thu gọn đa thức nhiều biến và tính giá trị của đa thức tại các giá trị cho trước của biến.",
         equipment: "Phiếu học tập, bảng phụ nhóm",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.2.TC2a",
+        nlsCode: "1.2.TC2b",
         aiCode: "8.A3.1",
-        dc: "• [Mã NLS: 1.2.TC2a] Sử dụng phần mềm GeoGebra khảo sát đồ thị hàm số và hình học không gian 3D.\n• [Mã AI: 8.A3.1] Khám phá cách hệ thống AI sử dụng ma trận và biểu thức đại số để phân tích dữ liệu.",
+        dc: "• [Mã NLS: 1.2.TC2b] Sử dụng phần mềm GeoGebra khảo sát đồ thị hàm số và hình học không gian 3D.\n• [Mã AI: 8.A3.1] Khám phá cách hệ thống AI sử dụng ma trận và biểu thức đại số để phân tích dữ liệu.",
         notes: ""
       },
       {
@@ -1843,9 +1843,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Củng cố, hệ thống hóa toàn bộ kiến thức và phương pháp giải toán trọng tâm của các bài học trong chương.\n- Rèn luyện kĩ năng tính toán, tư duy logic và giải quyết các bài toán thực tiễn tổng hợp.",
         equipment: "Máy tính Casio FX-580VNX, bảng phụ",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.1.TC2a",
+        nlsCode: "2.5.TC2b",
         aiCode: "8.C2.1",
-        dc: "• [Mã NLS: 2.1.TC2a] Làm việc nhóm trên nền tảng đám mây giải quyết các bài toán dự án thực tế.\n• [Mã AI: 8.C2.1] Sử dụng AI Wolfram Alpha kiểm tra tính toán đa thức, hằng đẳng thức và định lí Thalès.",
+        dc: "• [Mã NLS: 2.5.TC2b] Làm việc nhóm trên nền tảng đám mây giải quyết các bài toán dự án thực tế.\n• [Mã AI: 8.C2.1] Sử dụng AI Wolfram Alpha kiểm tra tính toán đa thức, hằng đẳng thức và định lí Thalès.",
         notes: ""
       },
       {
@@ -1869,9 +1869,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững quy tắc chia đơn thức cho đơn thức và chia đa thức cho đơn thức (trường hợp chia hết).\n- Thực hiện thành thạo phép chia từng hạng tử của đa thức cho đơn thức rồi cộng các kết quả lại với nhau.",
         equipment: "Phiếu bài tập thực hành",
         location: "Phòng học / Lớp học",
-        nlsCode: "3.1.TC2a",
+        nlsCode: "3.2.TC2a",
         aiCode: "8.A1.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Xây dựng thuật toán và mô hình hóa bài toán thực tế trên bảng tính điện tử.\n• [Mã AI: 8.A1.1] Nhận thức giới hạn của mô hình ngôn ngữ AI khi xử lý các phép biến đổi đại số phức tạp.",
+        dc: "• [Mã NLS: 3.2.TC2a] Xây dựng thuật toán và mô hình hóa bài toán thực tế trên bảng tính điện tử.\n• [Mã AI: 8.A1.1] Nhận thức giới hạn của mô hình ngôn ngữ AI khi xử lý các phép biến đổi đại số phức tạp.",
         notes: ""
       },
       {
@@ -1895,9 +1895,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững và vận dụng 3 hằng đẳng thức: a² - b² = (a - b)(a + b); (a + b)² = a² + 2ab + b²; (a - b)² = a² - 2ab + b².\n- Vận dụng hằng đẳng thức vào tính nhanh, rút gọn biểu thức và giải toán thực tiễn.",
         equipment: "Bảng công thức 7 hằng đẳng thức, phiếu bài tập",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC2a",
+        nlsCode: "4.3.TC2b",
         aiCode: "8.C1.1",
-        dc: "• [Mã NLS: 4.1.TC2a] Tuân thủ đạo đức số và bảo vệ an toàn thông tin cá nhân trong môi trường số.\n• [Mã AI: 8.C1.1] Khám phá cách AI thị giác máy tính nhận diện các hình tứ giác và đa giác trong ảnh.",
+        dc: "• [Mã NLS: 4.3.TC2b] Tuân thủ đạo đức số và bảo vệ an toàn thông tin cá nhân trong môi trường số.\n• [Mã AI: 8.C1.1] Khám phá cách AI thị giác máy tính nhận diện các hình tứ giác và đa giác trong ảnh.",
         notes: ""
       },
       {
@@ -1908,9 +1908,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững và vận dụng 2 hằng đẳng thức: (a + b)³ = a³ + 3a²b + 3ab² + b³ và (a - b)³ = a³ - 3a²b + 3ab² - b³.\n- Vận dụng vào khai triển và rút gọn các biểu thức đại số bậc ba.",
         equipment: "Mô hình khối lập phương minh họa hình học",
         location: "Phòng học / Lớp học",
-        nlsCode: "5.1.TC2a",
+        nlsCode: "5.2.TC2b",
         aiCode: "8.C2.1",
-        dc: "• [Mã NLS: 5.1.TC2a] Vận dụng tư duy mô hình hóa toán học giải quyết các bài toán tối ưu thực tiễn.\n• [Mã AI: 8.C2.1] Sử dụng AI Wolfram Alpha kiểm tra tính toán đa thức, hằng đẳng thức và định lí Thalès.",
+        dc: "• [Mã NLS: 5.2.TC2b] Vận dụng tư duy mô hình hóa toán học giải quyết các bài toán tối ưu thực tiễn.\n• [Mã AI: 8.C2.1] Sử dụng AI Wolfram Alpha kiểm tra tính toán đa thức, hằng đẳng thức và định lí Thalès.",
         notes: ""
       },
       {
@@ -1921,9 +1921,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững và vận dụng 2 hằng đẳng thức: a³ + b³ = (a + b)(a² - ab + b²) và a³ - b³ = (a - b)(a² + ab + b²).\n- Phân biệt bình phương thiếu của một tổng và bình phương thiếu của một hiệu.",
         equipment: "Mô hình khối lập phương minh họa hình học",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.1.TC2a",
+        nlsCode: "1.2.TC2b",
         aiCode: "8.D1.1",
-        dc: "• [Mã NLS: 1.1.TC2a] Khai thác kho học liệu số và cơ sở dữ liệu toán học trực tuyến nâng cao.\n• [Mã AI: 8.D1.1] Tìm hiểu ứng dụng AI trong phân tích dữ liệu lớn (Big Data) và biểu diễn biểu đồ số.",
+        dc: "• [Mã NLS: 1.2.TC2b] Khai thác kho học liệu số và cơ sở dữ liệu toán học trực tuyến nâng cao.\n• [Mã AI: 8.D1.1] Tìm hiểu ứng dụng AI trong phân tích dữ liệu lớn (Big Data) và biểu diễn biểu đồ số.",
         notes: ""
       },
       {
@@ -1960,9 +1960,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Củng cố, hệ thống hóa toàn bộ kiến thức và phương pháp giải toán trọng tâm của các bài học trong chương.\n- Rèn luyện kĩ năng tính toán, tư duy logic và giải quyết các bài toán thực tiễn tổng hợp.",
         equipment: "Thước đo góc, bảng phụ vẽ tứ giác",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.1.TC2a",
+        nlsCode: "2.2.TC2c",
         aiCode: "8.C1.1",
-        dc: "• [Mã NLS: 2.1.TC2a] Làm việc nhóm trên nền tảng đám mây giải quyết các bài toán dự án thực tế.\n• [Mã AI: 8.C1.1] Khám phá cách AI thị giác máy tính nhận diện các hình tứ giác và đa giác trong ảnh.",
+        dc: "• [Mã NLS: 2.2.TC2c] Làm việc nhóm trên nền tảng đám mây giải quyết các bài toán dự án thực tế.\n• [Mã AI: 8.C1.1] Khám phá cách AI thị giác máy tính nhận diện các hình tứ giác và đa giác trong ảnh.",
         notes: ""
       },
       {
@@ -1973,9 +1973,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững định nghĩa tứ giác lồi và định lí tổng các góc trong một tứ giác bằng 360°.\n- Vận dụng định lí tính số đo góc chưa biết của một tứ giác lồi trong bài toán thực tế.",
         equipment: "Thước đo góc, bảng phụ vẽ tứ giác",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.4.TC2a",
+        nlsCode: "2.1.TC2b",
         aiCode: "8.C2.1",
-        dc: "• [Mã NLS: 2.4.TC2a] Thiết kế bài thuyết trình đa phương tiện báo cáo kết quả nghiên cứu toán học.\n• [Mã AI: 8.C2.1] Sử dụng AI Wolfram Alpha kiểm tra tính toán đa thức, hằng đẳng thức và định lí Thalès.",
+        dc: "• [Mã NLS: 2.1.TC2b] Thiết kế bài thuyết trình đa phương tiện báo cáo kết quả nghiên cứu toán học.\n• [Mã AI: 8.C2.1] Sử dụng AI Wolfram Alpha kiểm tra tính toán đa thức, hằng đẳng thức và định lí Thalès.",
         notes: ""
       },
       {
@@ -1986,9 +1986,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững định nghĩa, tính chất (hai cạnh bên bằng nhau, hai đường chéo bằng nhau) và dấu hiệu nhận biết hình thang cân.\n- Vận dụng vào chứng minh hình thang cân và tính số đo các góc, độ dài đoạn thẳng.",
         equipment: "Bộ thước kẻ, ê ke, compa",
         location: "Phòng học / Lớp học",
-        nlsCode: "3.1.TC2a",
+        nlsCode: "3.2.TC2a",
         aiCode: "8.D1.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Xây dựng thuật toán và mô hình hóa bài toán thực tế trên bảng tính điện tử.\n• [Mã AI: 8.D1.1] Tìm hiểu ứng dụng AI trong phân tích dữ liệu lớn (Big Data) và biểu diễn biểu đồ số.",
+        dc: "• [Mã NLS: 3.2.TC2a] Xây dựng thuật toán và mô hình hóa bài toán thực tế trên bảng tính điện tử.\n• [Mã AI: 8.D1.1] Tìm hiểu ứng dụng AI trong phân tích dữ liệu lớn (Big Data) và biểu diễn biểu đồ số.",
         notes: ""
       },
       {
@@ -2025,9 +2025,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Đánh giá chuẩn kiến thức, kĩ năng môn Toán Lớp 8 theo ma trận đề chuẩn Bộ GD&ĐT (thời gian làm bài 90 phút).\n- Đánh giá năng lực tư duy toán học, tính cẩn thận và tính trung thực trong kiểm tra.",
         equipment: "Đề kiểm tra chuẩn ma trận, bảng đặc tả và đáp án",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC2a",
+        nlsCode: "4.1.TC2b",
         aiCode: "8.A3.3",
-        dc: "• [Mã NLS: 4.1.TC2a] Thực hiện bài kiểm tra nghiêm túc, tuân thủ quy chế an toàn số và bảo mật thông tin phòng thi.\n• [Mã AI: 8.A3.3] Tìm hiểu quy trình chấm thi tự động và phân tích phổ điểm bằng AI.",
+        dc: "• [Mã NLS: 4.1.TC2b] Thực hiện bài kiểm tra nghiêm túc, tuân thủ quy chế an toàn số và bảo mật thông tin phòng thi.\n• [Mã AI: 8.A3.3] Tìm hiểu quy trình chấm thi tự động và phân tích phổ điểm bằng AI.",
         notes: "Kiểm tra giữa Học kỳ 1"
       },
       {
@@ -2038,9 +2038,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững định nghĩa, các tính chất (cạnh đối song song và bằng nhau, góc đối bằng nhau, hai đường chéo cắt nhau tại trung điểm) và dấu hiệu nhận biết hình bình hành.\n- Vận dụng chứng minh tứ giác là hình bình hành.",
         equipment: "Bộ khung hình học phẳng biến đổi",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.1.TC2a",
+        nlsCode: "1.1.TC2c",
         aiCode: "8.C2.1",
-        dc: "• [Mã NLS: 1.1.TC2a] Khai thác kho học liệu số và cơ sở dữ liệu toán học trực tuyến nâng cao.\n• [Mã AI: 8.C2.1] Sử dụng AI Wolfram Alpha kiểm tra tính toán đa thức, hằng đẳng thức và định lí Thalès.",
+        dc: "• [Mã NLS: 1.1.TC2c] Khai thác kho học liệu số và cơ sở dữ liệu toán học trực tuyến nâng cao.\n• [Mã AI: 8.C2.1] Sử dụng AI Wolfram Alpha kiểm tra tính toán đa thức, hằng đẳng thức và định lí Thalès.",
         notes: ""
       },
       {
@@ -2051,9 +2051,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững định nghĩa, tính chất và các dấu hiệu nhận biết hình chữ nhật.\n- Vận dụng tính chất đường trung tuyến ứng với cạnh huyền của tam giác vuông.",
         equipment: "Bộ khung hình học phẳng biến đổi",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.2.TC2a",
+        nlsCode: "1.1.TC2b",
         aiCode: "8.D1.1",
-        dc: "• [Mã NLS: 1.2.TC2a] Sử dụng phần mềm GeoGebra khảo sát đồ thị hàm số và hình học không gian 3D.\n• [Mã AI: 8.D1.1] Tìm hiểu ứng dụng AI trong phân tích dữ liệu lớn (Big Data) và biểu diễn biểu đồ số.",
+        dc: "• [Mã NLS: 1.1.TC2b] Sử dụng phần mềm GeoGebra khảo sát đồ thị hàm số và hình học không gian 3D.\n• [Mã AI: 8.D1.1] Tìm hiểu ứng dụng AI trong phân tích dữ liệu lớn (Big Data) và biểu diễn biểu đồ số.",
         notes: ""
       },
       {
@@ -2077,9 +2077,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững định lí Thalès thuận, đảo và hệ quả của định lí Thalès trong tam giác.\n- Vận dụng tính tỉ số đoạn thẳng và tính độ dài đoạn thẳng trong tam giác.",
         equipment: "Mô hình thước đo tỉ lệ, phiếu bài tập",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.1.TC2a",
+        nlsCode: "2.1.TC2b",
         aiCode: "8.A3.1",
-        dc: "• [Mã NLS: 2.1.TC2a] Làm việc nhóm trên nền tảng đám mây giải quyết các bài toán dự án thực tế.\n• [Mã AI: 8.A3.1] Khám phá cách hệ thống AI sử dụng ma trận và biểu thức đại số để phân tích dữ liệu.",
+        dc: "• [Mã NLS: 2.1.TC2b] Làm việc nhóm trên nền tảng đám mây giải quyết các bài toán dự án thực tế.\n• [Mã AI: 8.A3.1] Khám phá cách hệ thống AI sử dụng ma trận và biểu thức đại số để phân tích dữ liệu.",
         notes: ""
       },
       {
@@ -2090,9 +2090,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững định nghĩa và tính chất đường trung bình của tam giác (song song với cạnh thứ ba và bằng nửa cạnh đó).\n- Vận dụng chứng minh song song và tính độ dài đoạn thẳng.",
         equipment: "Thước kẻ chia vạch, compa",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.4.TC2a",
+        nlsCode: "2.5.TC2b",
         aiCode: "8.C1.1",
-        dc: "• [Mã NLS: 2.4.TC2a] Thiết kế bài thuyết trình đa phương tiện báo cáo kết quả nghiên cứu toán học.\n• [Mã AI: 8.C1.1] Khám phá cách AI thị giác máy tính nhận diện các hình tứ giác và đa giác trong ảnh.",
+        dc: "• [Mã NLS: 2.5.TC2b] Thiết kế bài thuyết trình đa phương tiện báo cáo kết quả nghiên cứu toán học.\n• [Mã AI: 8.C1.1] Khám phá cách AI thị giác máy tính nhận diện các hình tứ giác và đa giác trong ảnh.",
         notes: ""
       },
       {
@@ -2103,9 +2103,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững tính chất đường phân giác của tam giác (chia cạnh đối diện thành hai đoạn thẳng tỉ lệ với hai cạnh kề).\n- Vận dụng tính độ dài các đoạn thẳng trong tam giác.",
         equipment: "Thước kẻ chia vạch, compa",
         location: "Phòng học / Lớp học",
-        nlsCode: "3.1.TC2a",
+        nlsCode: "3.2.TC2a",
         aiCode: "8.C2.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Xây dựng thuật toán và mô hình hóa bài toán thực tế trên bảng tính điện tử.\n• [Mã AI: 8.C2.1] Sử dụng AI Wolfram Alpha kiểm tra tính toán đa thức, hằng đẳng thức và định lí Thalès.",
+        dc: "• [Mã NLS: 3.2.TC2a] Xây dựng thuật toán và mô hình hóa bài toán thực tế trên bảng tính điện tử.\n• [Mã AI: 8.C2.1] Sử dụng AI Wolfram Alpha kiểm tra tính toán đa thức, hằng đẳng thức và định lí Thalès.",
         notes: ""
       },
       {
@@ -2129,9 +2129,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Đánh giá mức độ nắm vững kiến thức toàn bộ chương; tự kiểm tra và khắc phục các sai sót khi làm bài.\n- Nâng cao năng lực mô hình hóa toán học và giải quyết vấn đề sáng tạo.",
         equipment: "Thước giác kế đo đạc, phiếu thực địa",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC2a",
+        nlsCode: "4.2.TC2b",
         aiCode: "8.A1.1",
-        dc: "• [Mã NLS: 4.1.TC2a] Tuân thủ đạo đức số và bảo vệ an toàn thông tin cá nhân trong môi trường số.\n• [Mã AI: 8.A1.1] Nhận thức giới hạn của mô hình ngôn ngữ AI khi xử lý các phép biến đổi đại số phức tạp.",
+        dc: "• [Mã NLS: 4.2.TC2b] Tuân thủ đạo đức số và bảo vệ an toàn thông tin cá nhân trong môi trường số.\n• [Mã AI: 8.A1.1] Nhận thức giới hạn của mô hình ngôn ngữ AI khi xử lý các phép biến đổi đại số phức tạp.",
         notes: ""
       },
       {
@@ -2142,9 +2142,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 18: Thu thập và phân loại dữ liệu (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Phần mềm Excel, biểu đồ số liệu",
         location: "Phòng học / Lớp học",
-        nlsCode: "5.1.TC2a",
+        nlsCode: "5.1.TC2b",
         aiCode: "8.A3.1",
-        dc: "• [Mã NLS: 5.1.TC2a] Vận dụng tư duy mô hình hóa toán học giải quyết các bài toán tối ưu thực tiễn.\n• [Mã AI: 8.A3.1] Khám phá cách hệ thống AI sử dụng ma trận và biểu thức đại số để phân tích dữ liệu.",
+        dc: "• [Mã NLS: 5.1.TC2b] Vận dụng tư duy mô hình hóa toán học giải quyết các bài toán tối ưu thực tiễn.\n• [Mã AI: 8.A3.1] Khám phá cách hệ thống AI sử dụng ma trận và biểu thức đại số để phân tích dữ liệu.",
         notes: ""
       },
       {
@@ -2155,9 +2155,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 19: Biểu diễn dữ liệu bằng bảng, biểu đồ (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Phần mềm Excel, biểu đồ số liệu",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.1.TC2a",
+        nlsCode: "1.1.TC2d",
         aiCode: "8.C1.1",
-        dc: "• [Mã NLS: 1.1.TC2a] Khai thác kho học liệu số và cơ sở dữ liệu toán học trực tuyến nâng cao.\n• [Mã AI: 8.C1.1] Khám phá cách AI thị giác máy tính nhận diện các hình tứ giác và đa giác trong ảnh.",
+        dc: "• [Mã NLS: 1.1.TC2d] Khai thác kho học liệu số và cơ sở dữ liệu toán học trực tuyến nâng cao.\n• [Mã AI: 8.C1.1] Khám phá cách AI thị giác máy tính nhận diện các hình tứ giác và đa giác trong ảnh.",
         notes: ""
       },
       {
@@ -2168,9 +2168,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Chương V: Bài 20: Phân tích số liệu thống kê dựa vào biểu đồ (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Bảng số liệu kinh tế - xã hội",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.2.TC2a",
+        nlsCode: "1.1.TC2d",
         aiCode: "8.C2.1",
-        dc: "• [Mã NLS: 1.2.TC2a] Sử dụng phần mềm GeoGebra khảo sát đồ thị hàm số và hình học không gian 3D.\n• [Mã AI: 8.C2.1] Sử dụng AI Wolfram Alpha kiểm tra tính toán đa thức, hằng đẳng thức và định lí Thalès.",
+        dc: "• [Mã NLS: 1.1.TC2d] Sử dụng phần mềm GeoGebra khảo sát đồ thị hàm số và hình học không gian 3D.\n• [Mã AI: 8.C2.1] Sử dụng AI Wolfram Alpha kiểm tra tính toán đa thức, hằng đẳng thức và định lí Thalès.",
         notes: ""
       },
       {
@@ -2207,9 +2207,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Đánh giá chuẩn kiến thức, kĩ năng môn Toán Lớp 8 theo ma trận đề chuẩn Bộ GD&ĐT (thời gian làm bài 90 phút).\n- Đánh giá năng lực tư duy toán học, tính cẩn thận và tính trung thực trong kiểm tra.",
         equipment: "Đề kiểm tra chuẩn ma trận, bảng đặc tả và đáp án",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC2a",
+        nlsCode: "4.4.TC2a",
         aiCode: "8.A3.3",
-        dc: "• [Mã NLS: 4.1.TC2a] Thực hiện bài kiểm tra nghiêm túc, tuân thủ quy chế an toàn số và bảo mật thông tin phòng thi.\n• [Mã AI: 8.A3.3] Tìm hiểu quy trình chấm thi tự động và phân tích phổ điểm bằng AI.",
+        dc: "• [Mã NLS: 4.4.TC2a] Thực hiện bài kiểm tra nghiêm túc, tuân thủ quy chế an toàn số và bảo mật thông tin phòng thi.\n• [Mã AI: 8.A3.3] Tìm hiểu quy trình chấm thi tự động và phân tích phổ điểm bằng AI.",
         notes: "Kiểm tra cuối Học kỳ 1"
       },
       {
@@ -2220,9 +2220,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nhận biết được khái niệm đa thức nhiều biến, các hạng tử của đa thức và xác định được bậc của đa thức.\n- Thu gọn đa thức nhiều biến và tính giá trị của đa thức tại các giá trị cho trước của biến.",
         equipment: "Phần mềm GeoGebra, máy tính Casio FX-580VNX",
         location: "Phòng học / Lớp học",
-        nlsCode: "3.1.TC2a",
+        nlsCode: "3.2.TC2a",
         aiCode: "8.C1.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Xây dựng thuật toán và mô hình hóa bài toán thực tế trên bảng tính điện tử.\n• [Mã AI: 8.C1.1] Khám phá cách AI thị giác máy tính nhận diện các hình tứ giác và đa giác trong ảnh.",
+        dc: "• [Mã NLS: 3.2.TC2a] Xây dựng thuật toán và mô hình hóa bài toán thực tế trên bảng tính điện tử.\n• [Mã AI: 8.C1.1] Khám phá cách AI thị giác máy tính nhận diện các hình tứ giác và đa giác trong ảnh.",
         notes: ""
       },
       {
@@ -2246,9 +2246,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Hoạt động thực hành trải nghiệm: Phân tích đặc điểm khí hậu Việt Nam (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Atlas Địa lí, bảng tổng kết kết quả học tập HK1",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC2a",
+        nlsCode: "4.1.TC2c",
         aiCode: "8.D1.1",
-        dc: "• [Mã NLS: 4.1.TC2a] Tuân thủ đạo đức số và bảo vệ an toàn thông tin cá nhân trong môi trường số.\n• [Mã AI: 8.D1.1] Tìm hiểu ứng dụng AI trong phân tích dữ liệu lớn (Big Data) và biểu diễn biểu đồ số.",
+        dc: "• [Mã NLS: 4.1.TC2c] Tuân thủ đạo đức số và bảo vệ an toàn thông tin cá nhân trong môi trường số.\n• [Mã AI: 8.D1.1] Tìm hiểu ứng dụng AI trong phân tích dữ liệu lớn (Big Data) và biểu diễn biểu đồ số.",
         notes: ""
       },
       {
@@ -2259,9 +2259,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Sơ kết Học kỳ 1 môn Toán Lớp 8 (4 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Atlas Địa lí, bảng tổng kết kết quả học tập HK1",
         location: "Phòng học / Lớp học",
-        nlsCode: "5.1.TC2a",
+        nlsCode: "5.3.TC2b",
         aiCode: "8.A1.1",
-        dc: "• [Mã NLS: 5.1.TC2a] Vận dụng tư duy mô hình hóa toán học giải quyết các bài toán tối ưu thực tiễn.\n• [Mã AI: 8.A1.1] Nhận thức giới hạn của mô hình ngôn ngữ AI khi xử lý các phép biến đổi đại số phức tạp.",
+        dc: "• [Mã NLS: 5.3.TC2b] Vận dụng tư duy mô hình hóa toán học giải quyết các bài toán tối ưu thực tiễn.\n• [Mã AI: 8.A1.1] Nhận thức giới hạn của mô hình ngôn ngữ AI khi xử lý các phép biến đổi đại số phức tạp.",
         notes: ""
       },
       {
@@ -2272,9 +2272,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 21: Phân thức đại số (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Phiếu học tập quy đồng mẫu thức",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.1.TC2a",
+        nlsCode: "1.1.TC2c",
         aiCode: "8.A3.1",
-        dc: "• [Mã NLS: 1.1.TC2a] Khai thác kho học liệu số và cơ sở dữ liệu toán học trực tuyến nâng cao.\n• [Mã AI: 8.A3.1] Khám phá cách hệ thống AI sử dụng ma trận và biểu thức đại số để phân tích dữ liệu.",
+        dc: "• [Mã NLS: 1.1.TC2c] Khai thác kho học liệu số và cơ sở dữ liệu toán học trực tuyến nâng cao.\n• [Mã AI: 8.A3.1] Khám phá cách hệ thống AI sử dụng ma trận và biểu thức đại số để phân tích dữ liệu.",
         notes: ""
       },
       {
@@ -2311,9 +2311,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 23: Phép cộng và phép trừ phân thức đại số (3 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Bảng phụ, phiếu học tập nhóm",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.1.TC2a",
+        nlsCode: "2.5.TC2b",
         aiCode: "8.D1.1",
-        dc: "• [Mã NLS: 2.1.TC2a] Làm việc nhóm trên nền tảng đám mây giải quyết các bài toán dự án thực tế.\n• [Mã AI: 8.D1.1] Tìm hiểu ứng dụng AI trong phân tích dữ liệu lớn (Big Data) và biểu diễn biểu đồ số.",
+        dc: "• [Mã NLS: 2.5.TC2b] Làm việc nhóm trên nền tảng đám mây giải quyết các bài toán dự án thực tế.\n• [Mã AI: 8.D1.1] Tìm hiểu ứng dụng AI trong phân tích dữ liệu lớn (Big Data) và biểu diễn biểu đồ số.",
         notes: ""
       },
       {
@@ -2337,9 +2337,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Củng cố, hệ thống hóa toàn bộ kiến thức và phương pháp giải toán trọng tâm của các bài học trong chương.\n- Rèn luyện kĩ năng tính toán, tư duy logic và giải quyết các bài toán thực tiễn tổng hợp.",
         equipment: "Phiếu bài tập rút gọn biểu thức",
         location: "Phòng học / Lớp học",
-        nlsCode: "3.1.TC2a",
+        nlsCode: "3.2.TC2a",
         aiCode: "8.A3.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Xây dựng thuật toán và mô hình hóa bài toán thực tế trên bảng tính điện tử.\n• [Mã AI: 8.A3.1] Khám phá cách hệ thống AI sử dụng ma trận và biểu thức đại số để phân tích dữ liệu.",
+        dc: "• [Mã NLS: 3.2.TC2a] Xây dựng thuật toán và mô hình hóa bài toán thực tế trên bảng tính điện tử.\n• [Mã AI: 8.A3.1] Khám phá cách hệ thống AI sử dụng ma trận và biểu thức đại số để phân tích dữ liệu.",
         notes: ""
       },
       {
@@ -2363,9 +2363,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 26: Giải bài toán bằng cách lập phương trình (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Phiếu bài toán thực tế chuyển động, năng suất",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC2a",
+        nlsCode: "4.3.TC2b",
         aiCode: "8.C2.1",
-        dc: "• [Mã NLS: 4.1.TC2a] Tuân thủ đạo đức số và bảo vệ an toàn thông tin cá nhân trong môi trường số.\n• [Mã AI: 8.C2.1] Sử dụng AI Wolfram Alpha kiểm tra tính toán đa thức, hằng đẳng thức và định lí Thalès.",
+        dc: "• [Mã NLS: 4.3.TC2b] Tuân thủ đạo đức số và bảo vệ an toàn thông tin cá nhân trong môi trường số.\n• [Mã AI: 8.C2.1] Sử dụng AI Wolfram Alpha kiểm tra tính toán đa thức, hằng đẳng thức và định lí Thalès.",
         notes: ""
       },
       {
@@ -2376,9 +2376,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Củng cố, hệ thống hóa toàn bộ kiến thức và phương pháp giải toán trọng tâm của các bài học trong chương.\n- Rèn luyện kĩ năng tính toán, tư duy logic và giải quyết các bài toán thực tiễn tổng hợp.",
         equipment: "Mặt phẳng tọa độ Oxy trực quan, giấy kẻ ô li",
         location: "Phòng học / Lớp học",
-        nlsCode: "5.1.TC2a",
+        nlsCode: "5.2.TC2b",
         aiCode: "8.D1.1",
-        dc: "• [Mã NLS: 5.1.TC2a] Vận dụng tư duy mô hình hóa toán học giải quyết các bài toán tối ưu thực tiễn.\n• [Mã AI: 8.D1.1] Tìm hiểu ứng dụng AI trong phân tích dữ liệu lớn (Big Data) và biểu diễn biểu đồ số.",
+        dc: "• [Mã NLS: 5.2.TC2b] Vận dụng tư duy mô hình hóa toán học giải quyết các bài toán tối ưu thực tiễn.\n• [Mã AI: 8.D1.1] Tìm hiểu ứng dụng AI trong phân tích dữ liệu lớn (Big Data) và biểu diễn biểu đồ số.",
         notes: ""
       },
       {
@@ -2389,9 +2389,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 27: Khái niệm hàm số và đồ thị của hàm số (3 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Mặt phẳng tọa độ Oxy trực quan, giấy kẻ ô li",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.1.TC2a",
+        nlsCode: "1.2.TC2b",
         aiCode: "8.A1.1",
-        dc: "• [Mã NLS: 1.1.TC2a] Khai thác kho học liệu số và cơ sở dữ liệu toán học trực tuyến nâng cao.\n• [Mã AI: 8.A1.1] Nhận thức giới hạn của mô hình ngôn ngữ AI khi xử lý các phép biến đổi đại số phức tạp.",
+        dc: "• [Mã NLS: 1.2.TC2b] Khai thác kho học liệu số và cơ sở dữ liệu toán học trực tuyến nâng cao.\n• [Mã AI: 8.A1.1] Nhận thức giới hạn của mô hình ngôn ngữ AI khi xử lý các phép biến đổi đại số phức tạp.",
         notes: ""
       },
       {
@@ -2402,9 +2402,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Chương VII: Bài 28: Hàm số bậc nhất và đồ thị của hàm số bậc nhất y = ax + b (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Phần mềm GeoGebra vẽ đồ thị",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.2.TC2a",
+        nlsCode: "1.1.TC2b",
         aiCode: "8.A3.1",
-        dc: "• [Mã NLS: 1.2.TC2a] Sử dụng phần mềm GeoGebra khảo sát đồ thị hàm số và hình học không gian 3D.\n• [Mã AI: 8.A3.1] Khám phá cách hệ thống AI sử dụng ma trận và biểu thức đại số để phân tích dữ liệu.",
+        dc: "• [Mã NLS: 1.1.TC2b] Sử dụng phần mềm GeoGebra khảo sát đồ thị hàm số và hình học không gian 3D.\n• [Mã AI: 8.A3.1] Khám phá cách hệ thống AI sử dụng ma trận và biểu thức đại số để phân tích dữ liệu.",
         notes: ""
       },
       {
@@ -2428,9 +2428,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Củng cố, hệ thống hóa toàn bộ kiến thức và phương pháp giải toán trọng tâm của các bài học trong chương.\n- Rèn luyện kĩ năng tính toán, tư duy logic và giải quyết các bài toán thực tiễn tổng hợp.",
         equipment: "Xúc xắc, hộp chứa thẻ số",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.1.TC2a",
+        nlsCode: "2.2.TC2c",
         aiCode: "8.C2.1",
-        dc: "• [Mã NLS: 2.1.TC2a] Làm việc nhóm trên nền tảng đám mây giải quyết các bài toán dự án thực tế.\n• [Mã AI: 8.C2.1] Sử dụng AI Wolfram Alpha kiểm tra tính toán đa thức, hằng đẳng thức và định lí Thalès.",
+        dc: "• [Mã NLS: 2.2.TC2c] Làm việc nhóm trên nền tảng đám mây giải quyết các bài toán dự án thực tế.\n• [Mã AI: 8.C2.1] Sử dụng AI Wolfram Alpha kiểm tra tính toán đa thức, hằng đẳng thức và định lí Thalès.",
         notes: ""
       },
       {
@@ -2441,9 +2441,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 30: Kết quả có thể và kết quả thuận lợi (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Xúc xắc, hộp chứa thẻ số",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.4.TC2a",
+        nlsCode: "2.1.TC2b",
         aiCode: "8.D1.1",
-        dc: "• [Mã NLS: 2.4.TC2a] Thiết kế bài thuyết trình đa phương tiện báo cáo kết quả nghiên cứu toán học.\n• [Mã AI: 8.D1.1] Tìm hiểu ứng dụng AI trong phân tích dữ liệu lớn (Big Data) và biểu diễn biểu đồ số.",
+        dc: "• [Mã NLS: 2.1.TC2b] Thiết kế bài thuyết trình đa phương tiện báo cáo kết quả nghiên cứu toán học.\n• [Mã AI: 8.D1.1] Tìm hiểu ứng dụng AI trong phân tích dữ liệu lớn (Big Data) và biểu diễn biểu đồ số.",
         notes: ""
       },
       {
@@ -2467,9 +2467,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Đánh giá chuẩn kiến thức, kĩ năng môn Toán Lớp 8 theo ma trận đề chuẩn Bộ GD&ĐT (thời gian làm bài 90 phút).\n- Đánh giá năng lực tư duy toán học, tính cẩn thận và tính trung thực trong kiểm tra.",
         equipment: "Đề kiểm tra chuẩn ma trận, bảng đặc tả và đáp án",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC2a",
+        nlsCode: "4.1.TC2b",
         aiCode: "8.A3.3",
-        dc: "• [Mã NLS: 4.1.TC2a] Thực hiện bài kiểm tra nghiêm túc, tuân thủ quy chế an toàn số và bảo mật thông tin phòng thi.\n• [Mã AI: 8.A3.3] Tìm hiểu quy trình chấm thi tự động và phân tích phổ điểm bằng AI.",
+        dc: "• [Mã NLS: 4.1.TC2b] Thực hiện bài kiểm tra nghiêm túc, tuân thủ quy chế an toàn số và bảo mật thông tin phòng thi.\n• [Mã AI: 8.A3.3] Tìm hiểu quy trình chấm thi tự động và phân tích phổ điểm bằng AI.",
         notes: "Kiểm tra giữa Học kỳ 2"
       },
       {
@@ -2480,9 +2480,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Chương VIII: Bài 31: Cách tính xác suất của biến cố bằng tỉ số (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Bảng tính Excel mô phỏng xác suất",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC2a",
+        nlsCode: "4.2.TC2b",
         aiCode: "8.C1.1",
-        dc: "• [Mã NLS: 4.1.TC2a] Tuân thủ đạo đức số và bảo vệ an toàn thông tin cá nhân trong môi trường số.\n• [Mã AI: 8.C1.1] Khám phá cách AI thị giác máy tính nhận diện các hình tứ giác và đa giác trong ảnh.",
+        dc: "• [Mã NLS: 4.2.TC2b] Tuân thủ đạo đức số và bảo vệ an toàn thông tin cá nhân trong môi trường số.\n• [Mã AI: 8.C1.1] Khám phá cách AI thị giác máy tính nhận diện các hình tứ giác và đa giác trong ảnh.",
         notes: ""
       },
       {
@@ -2493,9 +2493,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 32: Mối liên hệ giữa xác suất thực nghiệm với xác suất và ứng dụng (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Bảng tính Excel mô phỏng xác suất",
         location: "Phòng học / Lớp học",
-        nlsCode: "5.1.TC2a",
+        nlsCode: "5.1.TC2b",
         aiCode: "8.C2.1",
-        dc: "• [Mã NLS: 5.1.TC2a] Vận dụng tư duy mô hình hóa toán học giải quyết các bài toán tối ưu thực tiễn.\n• [Mã AI: 8.C2.1] Sử dụng AI Wolfram Alpha kiểm tra tính toán đa thức, hằng đẳng thức và định lí Thalès.",
+        dc: "• [Mã NLS: 5.1.TC2b] Vận dụng tư duy mô hình hóa toán học giải quyết các bài toán tối ưu thực tiễn.\n• [Mã AI: 8.C2.1] Sử dụng AI Wolfram Alpha kiểm tra tính toán đa thức, hằng đẳng thức và định lí Thalès.",
         notes: ""
       },
       {
@@ -2506,9 +2506,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 33: Hai tam giác đồng dạng (1.5 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Bộ hình đồng dạng trực quan, thước, compa",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.1.TC2a",
+        nlsCode: "1.1.TC2c",
         aiCode: "8.D1.1",
-        dc: "• [Mã NLS: 1.1.TC2a] Khai thác kho học liệu số và cơ sở dữ liệu toán học trực tuyến nâng cao.\n• [Mã AI: 8.D1.1] Tìm hiểu ứng dụng AI trong phân tích dữ liệu lớn (Big Data) và biểu diễn biểu đồ số.",
+        dc: "• [Mã NLS: 1.1.TC2c] Khai thác kho học liệu số và cơ sở dữ liệu toán học trực tuyến nâng cao.\n• [Mã AI: 8.D1.1] Tìm hiểu ứng dụng AI trong phân tích dữ liệu lớn (Big Data) và biểu diễn biểu đồ số.",
         notes: ""
       },
       {
@@ -2519,9 +2519,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 34: Ba trường hợp đồng dạng của hai tam giác (1.5 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Bộ hình đồng dạng trực quan, thước, compa",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.2.TC2a",
+        nlsCode: "1.2.TC2b",
         aiCode: "8.A1.1",
-        dc: "• [Mã NLS: 1.2.TC2a] Sử dụng phần mềm GeoGebra khảo sát đồ thị hàm số và hình học không gian 3D.\n• [Mã AI: 8.A1.1] Nhận thức giới hạn của mô hình ngôn ngữ AI khi xử lý các phép biến đổi đại số phức tạp.",
+        dc: "• [Mã NLS: 1.2.TC2b] Sử dụng phần mềm GeoGebra khảo sát đồ thị hàm số và hình học không gian 3D.\n• [Mã AI: 8.A1.1] Nhận thức giới hạn của mô hình ngôn ngữ AI khi xử lý các phép biến đổi đại số phức tạp.",
         notes: ""
       },
       {
@@ -2545,9 +2545,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 35: Định lí Pythagore và ứng dụng (3 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Mô hình xếp hình chứng minh định lí Pythagore",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.1.TC2a",
+        nlsCode: "2.1.TC2b",
         aiCode: "8.C1.1",
-        dc: "• [Mã NLS: 2.1.TC2a] Làm việc nhóm trên nền tảng đám mây giải quyết các bài toán dự án thực tế.\n• [Mã AI: 8.C1.1] Khám phá cách AI thị giác máy tính nhận diện các hình tứ giác và đa giác trong ảnh.",
+        dc: "• [Mã NLS: 2.1.TC2b] Làm việc nhóm trên nền tảng đám mây giải quyết các bài toán dự án thực tế.\n• [Mã AI: 8.C1.1] Khám phá cách AI thị giác máy tính nhận diện các hình tứ giác và đa giác trong ảnh.",
         notes: ""
       },
       {
@@ -2558,9 +2558,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Chương IX: Bài 36: Các trường hợp đồng dạng của hai tam giác vuông (2 tiết) & Bài 37: Hình đồng dạng\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Tranh ảnh các công trình thu nhỏ, bản đồ tỉ lệ",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.4.TC2a",
+        nlsCode: "2.5.TC2b",
         aiCode: "8.C2.1",
-        dc: "• [Mã NLS: 2.4.TC2a] Thiết kế bài thuyết trình đa phương tiện báo cáo kết quả nghiên cứu toán học.\n• [Mã AI: 8.C2.1] Sử dụng AI Wolfram Alpha kiểm tra tính toán đa thức, hằng đẳng thức và định lí Thalès.",
+        dc: "• [Mã NLS: 2.5.TC2b] Thiết kế bài thuyết trình đa phương tiện báo cáo kết quả nghiên cứu toán học.\n• [Mã AI: 8.C2.1] Sử dụng AI Wolfram Alpha kiểm tra tính toán đa thức, hằng đẳng thức và định lí Thalès.",
         notes: ""
       },
       {
@@ -2571,9 +2571,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Củng cố, hệ thống hóa toàn bộ kiến thức và phương pháp giải toán trọng tâm của các bài học trong chương.\n- Rèn luyện kĩ năng tính toán, tư duy logic và giải quyết các bài toán thực tiễn tổng hợp.",
         equipment: "Tranh ảnh các công trình thu nhỏ, bản đồ tỉ lệ",
         location: "Phòng học / Lớp học",
-        nlsCode: "3.1.TC2a",
+        nlsCode: "3.2.TC2a",
         aiCode: "8.D1.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Xây dựng thuật toán và mô hình hóa bài toán thực tế trên bảng tính điện tử.\n• [Mã AI: 8.D1.1] Tìm hiểu ứng dụng AI trong phân tích dữ liệu lớn (Big Data) và biểu diễn biểu đồ số.",
+        dc: "• [Mã NLS: 3.2.TC2a] Xây dựng thuật toán và mô hình hóa bài toán thực tế trên bảng tính điện tử.\n• [Mã AI: 8.D1.1] Tìm hiểu ứng dụng AI trong phân tích dữ liệu lớn (Big Data) và biểu diễn biểu đồ số.",
         notes: ""
       },
       {
@@ -2597,9 +2597,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Đánh giá chuẩn kiến thức, kĩ năng môn Toán Lớp 8 theo ma trận đề chuẩn Bộ GD&ĐT (thời gian làm bài 90 phút).\n- Đánh giá năng lực tư duy toán học, tính cẩn thận và tính trung thực trong kiểm tra.",
         equipment: "Đề kiểm tra chuẩn ma trận, bảng đặc tả và đáp án",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC2a",
+        nlsCode: "4.4.TC2a",
         aiCode: "8.A3.3",
-        dc: "• [Mã NLS: 4.1.TC2a] Thực hiện bài kiểm tra nghiêm túc, tuân thủ quy chế an toàn số và bảo mật thông tin phòng thi.\n• [Mã AI: 8.A3.3] Tìm hiểu quy trình chấm thi tự động và phân tích phổ điểm bằng AI.",
+        dc: "• [Mã NLS: 4.4.TC2a] Thực hiện bài kiểm tra nghiêm túc, tuân thủ quy chế an toàn số và bảo mật thông tin phòng thi.\n• [Mã AI: 8.A3.3] Tìm hiểu quy trình chấm thi tự động và phân tích phổ điểm bằng AI.",
         notes: "Kiểm tra cuối Học kỳ 2"
       },
       {
@@ -2610,9 +2610,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững định nghĩa tứ giác lồi và định lí tổng các góc trong một tứ giác bằng 360°.\n- Vận dụng định lí tính số đo góc chưa biết của một tứ giác lồi trong bài toán thực tế.",
         equipment: "Mô hình hình chóp tam giác đều, tứ giác đều khai triển",
         location: "Phòng học / Lớp học",
-        nlsCode: "5.1.TC2a",
+        nlsCode: "5.3.TC2b",
         aiCode: "8.C1.1",
-        dc: "• [Mã NLS: 5.1.TC2a] Vận dụng tư duy mô hình hóa toán học giải quyết các bài toán tối ưu thực tiễn.\n• [Mã AI: 8.C1.1] Khám phá cách AI thị giác máy tính nhận diện các hình tứ giác và đa giác trong ảnh.",
+        dc: "• [Mã NLS: 5.3.TC2b] Vận dụng tư duy mô hình hóa toán học giải quyết các bài toán tối ưu thực tiễn.\n• [Mã AI: 8.C1.1] Khám phá cách AI thị giác máy tính nhận diện các hình tứ giác và đa giác trong ảnh.",
         notes: ""
       },
       {
@@ -2623,9 +2623,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Chữa bài kiểm tra cuối HK2 (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Mô hình hình chóp tam giác đều, tứ giác đều khai triển",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.1.TC2a",
+        nlsCode: "1.2.TC2b",
         aiCode: "8.C2.1",
-        dc: "• [Mã NLS: 1.1.TC2a] Khai thác kho học liệu số và cơ sở dữ liệu toán học trực tuyến nâng cao.\n• [Mã AI: 8.C2.1] Sử dụng AI Wolfram Alpha kiểm tra tính toán đa thức, hằng đẳng thức và định lí Thalès.",
+        dc: "• [Mã NLS: 1.2.TC2b] Khai thác kho học liệu số và cơ sở dữ liệu toán học trực tuyến nâng cao.\n• [Mã AI: 8.C2.1] Sử dụng AI Wolfram Alpha kiểm tra tính toán đa thức, hằng đẳng thức và định lí Thalès.",
         notes: ""
       },
       {
@@ -2662,9 +2662,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Hoạt động thực hành trải nghiệm: Mô tả thí nghiệm ngẫu nhiên với phần mềm Excel (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Phần mềm Excel, hệ thống đề ôn tập tổng hợp",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.1.TC2a",
+        nlsCode: "2.5.TC2b",
         aiCode: "8.A3.1",
-        dc: "• [Mã NLS: 2.1.TC2a] Làm việc nhóm trên nền tảng đám mây giải quyết các bài toán dự án thực tế.\n• [Mã AI: 8.A3.1] Khám phá cách hệ thống AI sử dụng ma trận và biểu thức đại số để phân tích dữ liệu.",
+        dc: "• [Mã NLS: 2.5.TC2b] Làm việc nhóm trên nền tảng đám mây giải quyết các bài toán dự án thực tế.\n• [Mã AI: 8.A3.1] Khám phá cách hệ thống AI sử dụng ma trận và biểu thức đại số để phân tích dữ liệu.",
         notes: ""
       },
       {
@@ -2709,9 +2709,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 1: Khái niệm phương trình và hệ hai phương trình bậc nhất hai ẩn (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Bảng phụ, phiếu học tập giải hệ phương trình",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.1.TC2a",
+        nlsCode: "1.1.TC2c",
         aiCode: "9.A1.1",
-        dc: "• [Mã NLS: 1.1.TC2a] Khai thác kho học liệu số và cơ sở dữ liệu toán học trực tuyến nâng cao.\n• [Mã AI: 9.A1.1] Nhận thức vai trò con người giữ quyền quyết định cuối cùng khi AI mô hình hóa bài toán.",
+        dc: "• [Mã NLS: 1.1.TC2c] Khai thác kho học liệu số và cơ sở dữ liệu toán học trực tuyến nâng cao.\n• [Mã AI: 9.A1.1] Nhận thức vai trò con người giữ quyền quyết định cuối cùng khi AI mô hình hóa bài toán.",
         notes: ""
       },
       {
@@ -2722,9 +2722,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 2: Giải hệ hai phương trình bậc nhất hai ẩn (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Bảng phụ, phiếu học tập giải hệ phương trình",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.2.TC2a",
+        nlsCode: "1.1.TC2b",
         aiCode: "9.A3.1",
-        dc: "• [Mã NLS: 1.2.TC2a] Sử dụng phần mềm GeoGebra khảo sát đồ thị hàm số và hình học không gian 3D.\n• [Mã AI: 9.A3.1] Khám phá cách AI tối ưu hóa hàm số mục tiêu trong các bài toán quy hoạch thực tế.",
+        dc: "• [Mã NLS: 1.1.TC2b] Sử dụng phần mềm GeoGebra khảo sát đồ thị hàm số và hình học không gian 3D.\n• [Mã AI: 9.A3.1] Khám phá cách AI tối ưu hóa hàm số mục tiêu trong các bài toán quy hoạch thực tế.",
         notes: ""
       },
       {
@@ -2748,9 +2748,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Củng cố, hệ thống hóa toàn bộ kiến thức và phương pháp giải toán trọng tâm của các bài học trong chương.\n- Rèn luyện kĩ năng tính toán, tư duy logic và giải quyết các bài toán thực tiễn tổng hợp.",
         equipment: "Phiếu bài tập phân dạng toán thực tế",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.1.TC2a",
+        nlsCode: "2.2.TC2c",
         aiCode: "9.C2.1",
-        dc: "• [Mã NLS: 2.1.TC2a] Làm việc nhóm trên nền tảng đám mây giải quyết các bài toán dự án thực tế.\n• [Mã AI: 9.C2.1] Trải nghiệm công cụ AI mô phỏng quỹ đạo Parabol và giải hệ phương trình hai ẩn.",
+        dc: "• [Mã NLS: 2.2.TC2c] Làm việc nhóm trên nền tảng đám mây giải quyết các bài toán dự án thực tế.\n• [Mã AI: 9.C2.1] Trải nghiệm công cụ AI mô phỏng quỹ đạo Parabol và giải hệ phương trình hai ẩn.",
         notes: ""
       },
       {
@@ -2761,9 +2761,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Củng cố, hệ thống hóa toàn bộ kiến thức và phương pháp giải toán trọng tâm của các bài học trong chương.\n- Rèn luyện kĩ năng tính toán, tư duy logic và giải quyết các bài toán thực tiễn tổng hợp.",
         equipment: "Máy tính Casio FX-580VNX, bảng phụ",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.4.TC2a",
+        nlsCode: "2.1.TC2b",
         aiCode: "9.D1.1",
-        dc: "• [Mã NLS: 2.4.TC2a] Thiết kế bài thuyết trình đa phương tiện báo cáo kết quả nghiên cứu toán học.\n• [Mã AI: 9.D1.1] Thảo luận về đạo đức AI và ranh giới tự động hóa trong các bài toán kinh tế - xã hội.",
+        dc: "• [Mã NLS: 2.1.TC2b] Thiết kế bài thuyết trình đa phương tiện báo cáo kết quả nghiên cứu toán học.\n• [Mã AI: 9.D1.1] Thảo luận về đạo đức AI và ranh giới tự động hóa trong các bài toán kinh tế - xã hội.",
         notes: ""
       },
       {
@@ -2774,9 +2774,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 4: Bất đẳng thức (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Máy tính Casio FX-580VNX, bảng phụ",
         location: "Phòng học / Lớp học",
-        nlsCode: "3.1.TC2a",
+        nlsCode: "3.2.TC2a",
         aiCode: "9.A1.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Xây dựng thuật toán và mô hình hóa bài toán thực tế trên bảng tính điện tử.\n• [Mã AI: 9.A1.1] Nhận thức vai trò con người giữ quyền quyết định cuối cùng khi AI mô hình hóa bài toán.",
+        dc: "• [Mã NLS: 3.2.TC2a] Xây dựng thuật toán và mô hình hóa bài toán thực tế trên bảng tính điện tử.\n• [Mã AI: 9.A1.1] Nhận thức vai trò con người giữ quyền quyết định cuối cùng khi AI mô hình hóa bài toán.",
         notes: ""
       },
       {
@@ -2800,9 +2800,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Củng cố, hệ thống hóa toàn bộ kiến thức và phương pháp giải toán trọng tâm của các bài học trong chương.\n- Rèn luyện kĩ năng tính toán, tư duy logic và giải quyết các bài toán thực tiễn tổng hợp.",
         equipment: "Trục số trực quan, phiếu bài tập",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC2a",
+        nlsCode: "4.1.TC2c",
         aiCode: "9.C1.1",
-        dc: "• [Mã NLS: 4.1.TC2a] Tuân thủ đạo đức số và bảo vệ an toàn thông tin cá nhân trong môi trường số.\n• [Mã AI: 9.C1.1] Tìm hiểu cách mạng nơ-ron nhân tạo sử dụng đồ thị hàm số và đạo hàm để huấn luyện mô hình.",
+        dc: "• [Mã NLS: 4.1.TC2c] Tuân thủ đạo đức số và bảo vệ an toàn thông tin cá nhân trong môi trường số.\n• [Mã AI: 9.C1.1] Tìm hiểu cách mạng nơ-ron nhân tạo sử dụng đồ thị hàm số và đạo hàm để huấn luyện mô hình.",
         notes: ""
       },
       {
@@ -2813,9 +2813,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 6: Căn bậc hai và căn thức bậc hai (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Bảng công thức căn thức bậc hai",
         location: "Phòng học / Lớp học",
-        nlsCode: "5.1.TC2a",
+        nlsCode: "5.2.TC2b",
         aiCode: "9.C2.1",
-        dc: "• [Mã NLS: 5.1.TC2a] Vận dụng tư duy mô hình hóa toán học giải quyết các bài toán tối ưu thực tiễn.\n• [Mã AI: 9.C2.1] Trải nghiệm công cụ AI mô phỏng quỹ đạo Parabol và giải hệ phương trình hai ẩn.",
+        dc: "• [Mã NLS: 5.2.TC2b] Vận dụng tư duy mô hình hóa toán học giải quyết các bài toán tối ưu thực tiễn.\n• [Mã AI: 9.C2.1] Trải nghiệm công cụ AI mô phỏng quỹ đạo Parabol và giải hệ phương trình hai ẩn.",
         notes: ""
       },
       {
@@ -2826,9 +2826,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 7: Khai căn bậc hai với phép nhân và phép chia (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Bảng công thức căn thức bậc hai",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.1.TC2a",
+        nlsCode: "1.2.TC2b",
         aiCode: "9.D1.1",
-        dc: "• [Mã NLS: 1.1.TC2a] Khai thác kho học liệu số và cơ sở dữ liệu toán học trực tuyến nâng cao.\n• [Mã AI: 9.D1.1] Thảo luận về đạo đức AI và ranh giới tự động hóa trong các bài toán kinh tế - xã hội.",
+        dc: "• [Mã NLS: 1.2.TC2b] Khai thác kho học liệu số và cơ sở dữ liệu toán học trực tuyến nâng cao.\n• [Mã AI: 9.D1.1] Thảo luận về đạo đức AI và ranh giới tự động hóa trong các bài toán kinh tế - xã hội.",
         notes: ""
       },
       {
@@ -2839,9 +2839,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Củng cố, hệ thống hóa toàn bộ kiến thức và phương pháp giải toán trọng tâm của các bài học trong chương.\n- Rèn luyện kĩ năng tính toán, tư duy logic và giải quyết các bài toán thực tiễn tổng hợp.",
         equipment: "Máy tính Casio hỗ trợ rút gọn",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.2.TC2a",
+        nlsCode: "1.2.TC2b",
         aiCode: "9.A1.1",
-        dc: "• [Mã NLS: 1.2.TC2a] Sử dụng phần mềm GeoGebra khảo sát đồ thị hàm số và hình học không gian 3D.\n• [Mã AI: 9.A1.1] Nhận thức vai trò con người giữ quyền quyết định cuối cùng khi AI mô hình hóa bài toán.",
+        dc: "• [Mã NLS: 1.2.TC2b] Sử dụng phần mềm GeoGebra khảo sát đồ thị hàm số và hình học không gian 3D.\n• [Mã AI: 9.A1.1] Nhận thức vai trò con người giữ quyền quyết định cuối cùng khi AI mô hình hóa bài toán.",
         notes: ""
       },
       {
@@ -2865,9 +2865,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Chương III: Bài 9: Căn bậc ba và căn thức bậc ba (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Phiếu bài tập rút gọn biểu thức chứa căn",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.1.TC2a",
+        nlsCode: "2.1.TC2b",
         aiCode: "9.C1.1",
-        dc: "• [Mã NLS: 2.1.TC2a] Làm việc nhóm trên nền tảng đám mây giải quyết các bài toán dự án thực tế.\n• [Mã AI: 9.C1.1] Tìm hiểu cách mạng nơ-ron nhân tạo sử dụng đồ thị hàm số và đạo hàm để huấn luyện mô hình.",
+        dc: "• [Mã NLS: 2.1.TC2b] Làm việc nhóm trên nền tảng đám mây giải quyết các bài toán dự án thực tế.\n• [Mã AI: 9.C1.1] Tìm hiểu cách mạng nơ-ron nhân tạo sử dụng đồ thị hàm số và đạo hàm để huấn luyện mô hình.",
         notes: ""
       },
       {
@@ -2878,9 +2878,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Củng cố, hệ thống hóa toàn bộ kiến thức và phương pháp giải toán trọng tâm của các bài học trong chương.\n- Rèn luyện kĩ năng tính toán, tư duy logic và giải quyết các bài toán thực tiễn tổng hợp.",
         equipment: "Phiếu bài tập rút gọn biểu thức chứa căn",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.4.TC2a",
+        nlsCode: "2.5.TC2b",
         aiCode: "9.C2.1",
-        dc: "• [Mã NLS: 2.4.TC2a] Thiết kế bài thuyết trình đa phương tiện báo cáo kết quả nghiên cứu toán học.\n• [Mã AI: 9.C2.1] Trải nghiệm công cụ AI mô phỏng quỹ đạo Parabol và giải hệ phương trình hai ẩn.",
+        dc: "• [Mã NLS: 2.5.TC2b] Thiết kế bài thuyết trình đa phương tiện báo cáo kết quả nghiên cứu toán học.\n• [Mã AI: 9.C2.1] Trải nghiệm công cụ AI mô phỏng quỹ đạo Parabol và giải hệ phương trình hai ẩn.",
         notes: ""
       },
       {
@@ -2891,9 +2891,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 10: Tỉ số lượng giác của góc nhọn (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Máy tính Casio FX-580VNX, ê ke, giác kế",
         location: "Phòng học / Lớp học",
-        nlsCode: "3.1.TC2a",
+        nlsCode: "3.2.TC2a",
         aiCode: "9.D1.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Xây dựng thuật toán và mô hình hóa bài toán thực tế trên bảng tính điện tử.\n• [Mã AI: 9.D1.1] Thảo luận về đạo đức AI và ranh giới tự động hóa trong các bài toán kinh tế - xã hội.",
+        dc: "• [Mã NLS: 3.2.TC2a] Xây dựng thuật toán và mô hình hóa bài toán thực tế trên bảng tính điện tử.\n• [Mã AI: 9.D1.1] Thảo luận về đạo đức AI và ranh giới tự động hóa trong các bài toán kinh tế - xã hội.",
         notes: ""
       },
       {
@@ -2930,9 +2930,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Đánh giá chuẩn kiến thức, kĩ năng môn Toán Lớp 9 theo ma trận đề chuẩn Bộ GD&ĐT (thời gian làm bài 90 phút).\n- Đánh giá năng lực tư duy toán học, tính cẩn thận và tính trung thực trong kiểm tra.",
         equipment: "Đề kiểm tra chuẩn ma trận, bảng đặc tả và đáp án",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC2a",
+        nlsCode: "4.3.TC2b",
         aiCode: "9.A3.3",
-        dc: "• [Mã NLS: 4.1.TC2a] Thực hiện bài kiểm tra nghiêm túc, tuân thủ quy chế an toàn số và bảo mật thông tin phòng thi.\n• [Mã AI: 9.A3.3] Tìm hiểu quy trình chấm thi tự động và phân tích phổ điểm bằng AI.",
+        dc: "• [Mã NLS: 4.3.TC2b] Thực hiện bài kiểm tra nghiêm túc, tuân thủ quy chế an toàn số và bảo mật thông tin phòng thi.\n• [Mã AI: 9.A3.3] Tìm hiểu quy trình chấm thi tự động và phân tích phổ điểm bằng AI.",
         notes: "Kiểm tra giữa Học kỳ 1"
       },
       {
@@ -2943,9 +2943,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Củng cố, hệ thống hóa toàn bộ kiến thức và phương pháp giải toán trọng tâm của các bài học trong chương.\n- Rèn luyện kĩ năng tính toán, tư duy logic và giải quyết các bài toán thực tiễn tổng hợp.",
         equipment: "Compa, thước kẻ, mô hình đường tròn",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.1.TC2a",
+        nlsCode: "1.1.TC2c",
         aiCode: "9.C2.1",
-        dc: "• [Mã NLS: 1.1.TC2a] Khai thác kho học liệu số và cơ sở dữ liệu toán học trực tuyến nâng cao.\n• [Mã AI: 9.C2.1] Trải nghiệm công cụ AI mô phỏng quỹ đạo Parabol và giải hệ phương trình hai ẩn.",
+        dc: "• [Mã NLS: 1.1.TC2c] Khai thác kho học liệu số và cơ sở dữ liệu toán học trực tuyến nâng cao.\n• [Mã AI: 9.C2.1] Trải nghiệm công cụ AI mô phỏng quỹ đạo Parabol và giải hệ phương trình hai ẩn.",
         notes: ""
       },
       {
@@ -2982,9 +2982,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 14: Độ dài cung tròn, diện tích hình quạt (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Compa, bảng công thức hình tròn",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.1.TC2a",
+        nlsCode: "2.5.TC2b",
         aiCode: "9.A3.1",
-        dc: "• [Mã NLS: 2.1.TC2a] Làm việc nhóm trên nền tảng đám mây giải quyết các bài toán dự án thực tế.\n• [Mã AI: 9.A3.1] Khám phá cách AI tối ưu hóa hàm số mục tiêu trong các bài toán quy hoạch thực tế.",
+        dc: "• [Mã NLS: 2.5.TC2b] Làm việc nhóm trên nền tảng đám mây giải quyết các bài toán dự án thực tế.\n• [Mã AI: 9.A3.1] Khám phá cách AI tối ưu hóa hàm số mục tiêu trong các bài toán quy hoạch thực tế.",
         notes: ""
       },
       {
@@ -3008,9 +3008,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 15: Vị trí tương đối đường thẳng và đường tròn (3 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Ê ke, compa, thước thẳng",
         location: "Phòng học / Lớp học",
-        nlsCode: "3.1.TC2a",
+        nlsCode: "3.2.TC2a",
         aiCode: "9.C2.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Xây dựng thuật toán và mô hình hóa bài toán thực tế trên bảng tính điện tử.\n• [Mã AI: 9.C2.1] Trải nghiệm công cụ AI mô phỏng quỹ đạo Parabol và giải hệ phương trình hai ẩn.",
+        dc: "• [Mã NLS: 3.2.TC2a] Xây dựng thuật toán và mô hình hóa bài toán thực tế trên bảng tính điện tử.\n• [Mã AI: 9.C2.1] Trải nghiệm công cụ AI mô phỏng quỹ đạo Parabol và giải hệ phương trình hai ẩn.",
         notes: ""
       },
       {
@@ -3034,9 +3034,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Củng cố, hệ thống hóa toàn bộ kiến thức và phương pháp giải toán trọng tâm của các bài học trong chương.\n- Rèn luyện kĩ năng tính toán, tư duy logic và giải quyết các bài toán thực tiễn tổng hợp.",
         equipment: "Compa, phiếu bài tập hình học",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC2a",
+        nlsCode: "4.1.TC2b",
         aiCode: "9.A1.1",
-        dc: "• [Mã NLS: 4.1.TC2a] Tuân thủ đạo đức số và bảo vệ an toàn thông tin cá nhân trong môi trường số.\n• [Mã AI: 9.A1.1] Nhận thức vai trò con người giữ quyền quyết định cuối cùng khi AI mô hình hóa bài toán.",
+        dc: "• [Mã NLS: 4.1.TC2b] Tuân thủ đạo đức số và bảo vệ an toàn thông tin cá nhân trong môi trường số.\n• [Mã AI: 9.A1.1] Nhận thức vai trò con người giữ quyền quyết định cuối cùng khi AI mô hình hóa bài toán.",
         notes: ""
       },
       {
@@ -3047,9 +3047,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Đánh giá mức độ nắm vững kiến thức toàn bộ chương; tự kiểm tra và khắc phục các sai sót khi làm bài.\n- Nâng cao năng lực mô hình hóa toán học và giải quyết vấn đề sáng tạo.",
         equipment: "Sơ đồ tư duy chương V, phiếu thí nghiệm",
         location: "Phòng học / Lớp học",
-        nlsCode: "5.1.TC2a",
+        nlsCode: "5.1.TC2b",
         aiCode: "9.A3.1",
-        dc: "• [Mã NLS: 5.1.TC2a] Vận dụng tư duy mô hình hóa toán học giải quyết các bài toán tối ưu thực tiễn.\n• [Mã AI: 9.A3.1] Khám phá cách AI tối ưu hóa hàm số mục tiêu trong các bài toán quy hoạch thực tế.",
+        dc: "• [Mã NLS: 5.1.TC2b] Vận dụng tư duy mô hình hóa toán học giải quyết các bài toán tối ưu thực tiễn.\n• [Mã AI: 9.A3.1] Khám phá cách AI tối ưu hóa hàm số mục tiêu trong các bài toán quy hoạch thực tế.",
         notes: ""
       },
       {
@@ -3060,9 +3060,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Hoạt động thực hành: Pha chế dung dịch theo nồng độ (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Sơ đồ tư duy chương V, phiếu thí nghiệm",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.1.TC2a",
+        nlsCode: "1.2.TC2b",
         aiCode: "9.C1.1",
-        dc: "• [Mã NLS: 1.1.TC2a] Khai thác kho học liệu số và cơ sở dữ liệu toán học trực tuyến nâng cao.\n• [Mã AI: 9.C1.1] Tìm hiểu cách mạng nơ-ron nhân tạo sử dụng đồ thị hàm số và đạo hàm để huấn luyện mô hình.",
+        dc: "• [Mã NLS: 1.2.TC2b] Khai thác kho học liệu số và cơ sở dữ liệu toán học trực tuyến nâng cao.\n• [Mã AI: 9.C1.1] Tìm hiểu cách mạng nơ-ron nhân tạo sử dụng đồ thị hàm số và đạo hàm để huấn luyện mô hình.",
         notes: ""
       },
       {
@@ -3073,9 +3073,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Hoạt động thực hành trải nghiệm: Tính chiều cao và xác định khoảng cách (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Giác kế đo góc ngoài trời, thước dây",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.2.TC2a",
+        nlsCode: "1.1.TC2b",
         aiCode: "9.C2.1",
-        dc: "• [Mã NLS: 1.2.TC2a] Sử dụng phần mềm GeoGebra khảo sát đồ thị hàm số và hình học không gian 3D.\n• [Mã AI: 9.C2.1] Trải nghiệm công cụ AI mô phỏng quỹ đạo Parabol và giải hệ phương trình hai ẩn.",
+        dc: "• [Mã NLS: 1.1.TC2b] Sử dụng phần mềm GeoGebra khảo sát đồ thị hàm số và hình học không gian 3D.\n• [Mã AI: 9.C2.1] Trải nghiệm công cụ AI mô phỏng quỹ đạo Parabol và giải hệ phương trình hai ẩn.",
         notes: ""
       },
       {
@@ -3112,9 +3112,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Đánh giá chuẩn kiến thức, kĩ năng môn Toán Lớp 9 theo ma trận đề chuẩn Bộ GD&ĐT (thời gian làm bài 90 phút).\n- Đánh giá năng lực tư duy toán học, tính cẩn thận và tính trung thực trong kiểm tra.",
         equipment: "Đề kiểm tra chuẩn ma trận, bảng đặc tả và đáp án",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC2a",
+        nlsCode: "4.2.TC2b",
         aiCode: "9.A3.3",
-        dc: "• [Mã NLS: 4.1.TC2a] Thực hiện bài kiểm tra nghiêm túc, tuân thủ quy chế an toàn số và bảo mật thông tin phòng thi.\n• [Mã AI: 9.A3.3] Tìm hiểu quy trình chấm thi tự động và phân tích phổ điểm bằng AI.",
+        dc: "• [Mã NLS: 4.2.TC2b] Thực hiện bài kiểm tra nghiêm túc, tuân thủ quy chế an toàn số và bảo mật thông tin phòng thi.\n• [Mã AI: 9.A3.3] Tìm hiểu quy trình chấm thi tự động và phân tích phổ điểm bằng AI.",
         notes: "Kiểm tra cuối Học kỳ 1"
       },
       {
@@ -3125,9 +3125,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Chữa bài kiểm tra cuối HK1 (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Hệ thống đề ôn tập chuyên đề Đại số",
         location: "Phòng học / Lớp học",
-        nlsCode: "3.1.TC2a",
+        nlsCode: "3.2.TC2a",
         aiCode: "9.C1.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Xây dựng thuật toán và mô hình hóa bài toán thực tế trên bảng tính điện tử.\n• [Mã AI: 9.C1.1] Tìm hiểu cách mạng nơ-ron nhân tạo sử dụng đồ thị hàm số và đạo hàm để huấn luyện mô hình.",
+        dc: "• [Mã NLS: 3.2.TC2a] Xây dựng thuật toán và mô hình hóa bài toán thực tế trên bảng tính điện tử.\n• [Mã AI: 9.C1.1] Tìm hiểu cách mạng nơ-ron nhân tạo sử dụng đồ thị hàm số và đạo hàm để huấn luyện mô hình.",
         notes: ""
       },
       {
@@ -3151,9 +3151,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Ôn tập chuyên đề Hình học: Hệ thức lượng tam giác vuông (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Bảng tổng kết kết quả học tập HK1",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC2a",
+        nlsCode: "4.4.TC2a",
         aiCode: "9.D1.1",
-        dc: "• [Mã NLS: 4.1.TC2a] Tuân thủ đạo đức số và bảo vệ an toàn thông tin cá nhân trong môi trường số.\n• [Mã AI: 9.D1.1] Thảo luận về đạo đức AI và ranh giới tự động hóa trong các bài toán kinh tế - xã hội.",
+        dc: "• [Mã NLS: 4.4.TC2a] Tuân thủ đạo đức số và bảo vệ an toàn thông tin cá nhân trong môi trường số.\n• [Mã AI: 9.D1.1] Thảo luận về đạo đức AI và ranh giới tự động hóa trong các bài toán kinh tế - xã hội.",
         notes: ""
       },
       {
@@ -3164,9 +3164,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Sơ kết Học kỳ 1 môn Toán Lớp 9 (4 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Bảng tổng kết kết quả học tập HK1",
         location: "Phòng học / Lớp học",
-        nlsCode: "5.1.TC2a",
+        nlsCode: "5.3.TC2b",
         aiCode: "9.A1.1",
-        dc: "• [Mã NLS: 5.1.TC2a] Vận dụng tư duy mô hình hóa toán học giải quyết các bài toán tối ưu thực tiễn.\n• [Mã AI: 9.A1.1] Nhận thức vai trò con người giữ quyền quyết định cuối cùng khi AI mô hình hóa bài toán.",
+        dc: "• [Mã NLS: 5.3.TC2b] Vận dụng tư duy mô hình hóa toán học giải quyết các bài toán tối ưu thực tiễn.\n• [Mã AI: 9.A1.1] Nhận thức vai trò con người giữ quyền quyết định cuối cùng khi AI mô hình hóa bài toán.",
         notes: ""
       },
       {
@@ -3177,9 +3177,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 18: Hàm số y = ax² (a ≠ 0) (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Thước vẽ Parabol, máy tính Casio FX-580VNX",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.1.TC2a",
+        nlsCode: "1.1.TC2c",
         aiCode: "9.A3.1",
-        dc: "• [Mã NLS: 1.1.TC2a] Khai thác kho học liệu số và cơ sở dữ liệu toán học trực tuyến nâng cao.\n• [Mã AI: 9.A3.1] Khám phá cách AI tối ưu hóa hàm số mục tiêu trong các bài toán quy hoạch thực tế.",
+        dc: "• [Mã NLS: 1.1.TC2c] Khai thác kho học liệu số và cơ sở dữ liệu toán học trực tuyến nâng cao.\n• [Mã AI: 9.A3.1] Khám phá cách AI tối ưu hóa hàm số mục tiêu trong các bài toán quy hoạch thực tế.",
         notes: ""
       },
       {
@@ -3190,9 +3190,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 19: Phương trình bậc hai một ẩn (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Thước vẽ Parabol, máy tính Casio FX-580VNX",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.2.TC2a",
+        nlsCode: "1.2.TC2b",
         aiCode: "9.C1.1",
-        dc: "• [Mã NLS: 1.2.TC2a] Sử dụng phần mềm GeoGebra khảo sát đồ thị hàm số và hình học không gian 3D.\n• [Mã AI: 9.C1.1] Tìm hiểu cách mạng nơ-ron nhân tạo sử dụng đồ thị hàm số và đạo hàm để huấn luyện mô hình.",
+        dc: "• [Mã NLS: 1.2.TC2b] Sử dụng phần mềm GeoGebra khảo sát đồ thị hàm số và hình học không gian 3D.\n• [Mã AI: 9.C1.1] Tìm hiểu cách mạng nơ-ron nhân tạo sử dụng đồ thị hàm số và đạo hàm để huấn luyện mô hình.",
         notes: ""
       },
       {
@@ -3216,9 +3216,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 20: Định lí Viète và ứng dụng (3 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Bảng công thức Viète, phiếu bài tập nâng cao",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.1.TC2a",
+        nlsCode: "2.2.TC2c",
         aiCode: "9.D1.1",
-        dc: "• [Mã NLS: 2.1.TC2a] Làm việc nhóm trên nền tảng đám mây giải quyết các bài toán dự án thực tế.\n• [Mã AI: 9.D1.1] Thảo luận về đạo đức AI và ranh giới tự động hóa trong các bài toán kinh tế - xã hội.",
+        dc: "• [Mã NLS: 2.2.TC2c] Làm việc nhóm trên nền tảng đám mây giải quyết các bài toán dự án thực tế.\n• [Mã AI: 9.D1.1] Thảo luận về đạo đức AI và ranh giới tự động hóa trong các bài toán kinh tế - xã hội.",
         notes: ""
       },
       {
@@ -3229,9 +3229,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Chương VI: Bài 21: Giải bài toán bằng cách lập phương trình (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Phiếu bài tập giải toán bằng cách lập PT bậc hai",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.4.TC2a",
+        nlsCode: "2.1.TC2b",
         aiCode: "9.A1.1",
-        dc: "• [Mã NLS: 2.4.TC2a] Thiết kế bài thuyết trình đa phương tiện báo cáo kết quả nghiên cứu toán học.\n• [Mã AI: 9.A1.1] Nhận thức vai trò con người giữ quyền quyết định cuối cùng khi AI mô hình hóa bài toán.",
+        dc: "• [Mã NLS: 2.1.TC2b] Thiết kế bài thuyết trình đa phương tiện báo cáo kết quả nghiên cứu toán học.\n• [Mã AI: 9.A1.1] Nhận thức vai trò con người giữ quyền quyết định cuối cùng khi AI mô hình hóa bài toán.",
         notes: ""
       },
       {
@@ -3242,9 +3242,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Củng cố, hệ thống hóa toàn bộ kiến thức và phương pháp giải toán trọng tâm của các bài học trong chương.\n- Rèn luyện kĩ năng tính toán, tư duy logic và giải quyết các bài toán thực tiễn tổng hợp.",
         equipment: "Phiếu bài tập giải toán bằng cách lập PT bậc hai",
         location: "Phòng học / Lớp học",
-        nlsCode: "3.1.TC2a",
+        nlsCode: "3.2.TC2a",
         aiCode: "9.A3.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Xây dựng thuật toán và mô hình hóa bài toán thực tế trên bảng tính điện tử.\n• [Mã AI: 9.A3.1] Khám phá cách AI tối ưu hóa hàm số mục tiêu trong các bài toán quy hoạch thực tế.",
+        dc: "• [Mã NLS: 3.2.TC2a] Xây dựng thuật toán và mô hình hóa bài toán thực tế trên bảng tính điện tử.\n• [Mã AI: 9.A3.1] Khám phá cách AI tối ưu hóa hàm số mục tiêu trong các bài toán quy hoạch thực tế.",
         notes: ""
       },
       {
@@ -3268,9 +3268,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 23: Bảng tần số tương đối và biểu đồ tần số tương đối (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Phần mềm Excel, biểu đồ số liệu",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC2a",
+        nlsCode: "4.1.TC2c",
         aiCode: "9.C2.1",
-        dc: "• [Mã NLS: 4.1.TC2a] Tuân thủ đạo đức số và bảo vệ an toàn thông tin cá nhân trong môi trường số.\n• [Mã AI: 9.C2.1] Trải nghiệm công cụ AI mô phỏng quỹ đạo Parabol và giải hệ phương trình hai ẩn.",
+        dc: "• [Mã NLS: 4.1.TC2c] Tuân thủ đạo đức số và bảo vệ an toàn thông tin cá nhân trong môi trường số.\n• [Mã AI: 9.C2.1] Trải nghiệm công cụ AI mô phỏng quỹ đạo Parabol và giải hệ phương trình hai ẩn.",
         notes: ""
       },
       {
@@ -3281,9 +3281,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Củng cố, hệ thống hóa toàn bộ kiến thức và phương pháp giải toán trọng tâm của các bài học trong chương.\n- Rèn luyện kĩ năng tính toán, tư duy logic và giải quyết các bài toán thực tiễn tổng hợp.",
         equipment: "Bảng số liệu thống kê ghép nhóm thực tế",
         location: "Phòng học / Lớp học",
-        nlsCode: "5.1.TC2a",
+        nlsCode: "5.2.TC2b",
         aiCode: "9.D1.1",
-        dc: "• [Mã NLS: 5.1.TC2a] Vận dụng tư duy mô hình hóa toán học giải quyết các bài toán tối ưu thực tiễn.\n• [Mã AI: 9.D1.1] Thảo luận về đạo đức AI và ranh giới tự động hóa trong các bài toán kinh tế - xã hội.",
+        dc: "• [Mã NLS: 5.2.TC2b] Vận dụng tư duy mô hình hóa toán học giải quyết các bài toán tối ưu thực tiễn.\n• [Mã AI: 9.D1.1] Thảo luận về đạo đức AI và ranh giới tự động hóa trong các bài toán kinh tế - xã hội.",
         notes: ""
       },
       {
@@ -3294,9 +3294,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Đánh giá mức độ nắm vững kiến thức toàn bộ chương; tự kiểm tra và khắc phục các sai sót khi làm bài.\n- Nâng cao năng lực mô hình hóa toán học và giải quyết vấn đề sáng tạo.",
         equipment: "Bảng số liệu thống kê ghép nhóm thực tế",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.1.TC2a",
+        nlsCode: "1.1.TC2d",
         aiCode: "9.A1.1",
-        dc: "• [Mã NLS: 1.1.TC2a] Khai thác kho học liệu số và cơ sở dữ liệu toán học trực tuyến nâng cao.\n• [Mã AI: 9.A1.1] Nhận thức vai trò con người giữ quyền quyết định cuối cùng khi AI mô hình hóa bài toán.",
+        dc: "• [Mã NLS: 1.1.TC2d] Khai thác kho học liệu số và cơ sở dữ liệu toán học trực tuyến nâng cao.\n• [Mã AI: 9.A1.1] Nhận thức vai trò con người giữ quyền quyết định cuối cùng khi AI mô hình hóa bài toán.",
         notes: ""
       },
       {
@@ -3333,9 +3333,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Củng cố, hệ thống hóa toàn bộ kiến thức và phương pháp giải toán trọng tâm của các bài học trong chương.\n- Rèn luyện kĩ năng tính toán, tư duy logic và giải quyết các bài toán thực tiễn tổng hợp.",
         equipment: "Compa, mô hình góc nội tiếp trực quan",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.1.TC2a",
+        nlsCode: "2.1.TC2b",
         aiCode: "9.C2.1",
-        dc: "• [Mã NLS: 2.1.TC2a] Làm việc nhóm trên nền tảng đám mây giải quyết các bài toán dự án thực tế.\n• [Mã AI: 9.C2.1] Trải nghiệm công cụ AI mô phỏng quỹ đạo Parabol và giải hệ phương trình hai ẩn.",
+        dc: "• [Mã NLS: 2.1.TC2b] Làm việc nhóm trên nền tảng đám mây giải quyết các bài toán dự án thực tế.\n• [Mã AI: 9.C2.1] Trải nghiệm công cụ AI mô phỏng quỹ đạo Parabol và giải hệ phương trình hai ẩn.",
         notes: ""
       },
       {
@@ -3346,9 +3346,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 27: Góc nội tiếp (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Compa, mô hình góc nội tiếp trực quan",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.4.TC2a",
+        nlsCode: "2.5.TC2b",
         aiCode: "9.D1.1",
-        dc: "• [Mã NLS: 2.4.TC2a] Thiết kế bài thuyết trình đa phương tiện báo cáo kết quả nghiên cứu toán học.\n• [Mã AI: 9.D1.1] Thảo luận về đạo đức AI và ranh giới tự động hóa trong các bài toán kinh tế - xã hội.",
+        dc: "• [Mã NLS: 2.5.TC2b] Thiết kế bài thuyết trình đa phương tiện báo cáo kết quả nghiên cứu toán học.\n• [Mã AI: 9.D1.1] Thảo luận về đạo đức AI và ranh giới tự động hóa trong các bài toán kinh tế - xã hội.",
         notes: ""
       },
       {
@@ -3372,9 +3372,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Đánh giá chuẩn kiến thức, kĩ năng môn Toán Lớp 9 theo ma trận đề chuẩn Bộ GD&ĐT (thời gian làm bài 90 phút).\n- Đánh giá năng lực tư duy toán học, tính cẩn thận và tính trung thực trong kiểm tra.",
         equipment: "Đề kiểm tra chuẩn ma trận, bảng đặc tả và đáp án",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC2a",
+        nlsCode: "4.3.TC2b",
         aiCode: "9.A3.3",
-        dc: "• [Mã NLS: 4.1.TC2a] Thực hiện bài kiểm tra nghiêm túc, tuân thủ quy chế an toàn số và bảo mật thông tin phòng thi.\n• [Mã AI: 9.A3.3] Tìm hiểu quy trình chấm thi tự động và phân tích phổ điểm bằng AI.",
+        dc: "• [Mã NLS: 4.3.TC2b] Thực hiện bài kiểm tra nghiêm túc, tuân thủ quy chế an toàn số và bảo mật thông tin phòng thi.\n• [Mã AI: 9.A3.3] Tìm hiểu quy trình chấm thi tự động và phân tích phổ điểm bằng AI.",
         notes: "Kiểm tra giữa Học kỳ 2"
       },
       {
@@ -3385,9 +3385,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Củng cố, hệ thống hóa toàn bộ kiến thức và phương pháp giải toán trọng tâm của các bài học trong chương.\n- Rèn luyện kĩ năng tính toán, tư duy logic và giải quyết các bài toán thực tiễn tổng hợp.",
         equipment: "Compa, thước kẻ, bảng các dấu hiệu tứ giác nội tiếp",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC2a",
+        nlsCode: "4.1.TC2b",
         aiCode: "9.C1.1",
-        dc: "• [Mã NLS: 4.1.TC2a] Tuân thủ đạo đức số và bảo vệ an toàn thông tin cá nhân trong môi trường số.\n• [Mã AI: 9.C1.1] Tìm hiểu cách mạng nơ-ron nhân tạo sử dụng đồ thị hàm số và đạo hàm để huấn luyện mô hình.",
+        dc: "• [Mã NLS: 4.1.TC2b] Tuân thủ đạo đức số và bảo vệ an toàn thông tin cá nhân trong môi trường số.\n• [Mã AI: 9.C1.1] Tìm hiểu cách mạng nơ-ron nhân tạo sử dụng đồ thị hàm số và đạo hàm để huấn luyện mô hình.",
         notes: ""
       },
       {
@@ -3398,9 +3398,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững định nghĩa tứ giác lồi và định lí tổng các góc trong một tứ giác bằng 360°.\n- Vận dụng định lí tính số đo góc chưa biết của một tứ giác lồi trong bài toán thực tế.",
         equipment: "Compa, thước kẻ, bảng các dấu hiệu tứ giác nội tiếp",
         location: "Phòng học / Lớp học",
-        nlsCode: "5.1.TC2a",
+        nlsCode: "5.1.TC2b",
         aiCode: "9.C2.1",
-        dc: "• [Mã NLS: 5.1.TC2a] Vận dụng tư duy mô hình hóa toán học giải quyết các bài toán tối ưu thực tiễn.\n• [Mã AI: 9.C2.1] Trải nghiệm công cụ AI mô phỏng quỹ đạo Parabol và giải hệ phương trình hai ẩn.",
+        dc: "• [Mã NLS: 5.1.TC2b] Vận dụng tư duy mô hình hóa toán học giải quyết các bài toán tối ưu thực tiễn.\n• [Mã AI: 9.C2.1] Trải nghiệm công cụ AI mô phỏng quỹ đạo Parabol và giải hệ phương trình hai ẩn.",
         notes: ""
       },
       {
@@ -3411,9 +3411,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Chương IX: Bài 30: Đa giác đều (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Compa, thước chia vạch, sơ đồ tư duy chương IX",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.1.TC2a",
+        nlsCode: "1.1.TC2c",
         aiCode: "9.D1.1",
-        dc: "• [Mã NLS: 1.1.TC2a] Khai thác kho học liệu số và cơ sở dữ liệu toán học trực tuyến nâng cao.\n• [Mã AI: 9.D1.1] Thảo luận về đạo đức AI và ranh giới tự động hóa trong các bài toán kinh tế - xã hội.",
+        dc: "• [Mã NLS: 1.1.TC2c] Khai thác kho học liệu số và cơ sở dữ liệu toán học trực tuyến nâng cao.\n• [Mã AI: 9.D1.1] Thảo luận về đạo đức AI và ranh giới tự động hóa trong các bài toán kinh tế - xã hội.",
         notes: ""
       },
       {
@@ -3424,9 +3424,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Củng cố, hệ thống hóa toàn bộ kiến thức và phương pháp giải toán trọng tâm của các bài học trong chương.\n- Rèn luyện kĩ năng tính toán, tư duy logic và giải quyết các bài toán thực tiễn tổng hợp.",
         equipment: "Compa, thước chia vạch, sơ đồ tư duy chương IX",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.2.TC2a",
+        nlsCode: "1.1.TC2b",
         aiCode: "9.A1.1",
-        dc: "• [Mã NLS: 1.2.TC2a] Sử dụng phần mềm GeoGebra khảo sát đồ thị hàm số và hình học không gian 3D.\n• [Mã AI: 9.A1.1] Nhận thức vai trò con người giữ quyền quyết định cuối cùng khi AI mô hình hóa bài toán.",
+        dc: "• [Mã NLS: 1.1.TC2b] Sử dụng phần mềm GeoGebra khảo sát đồ thị hàm số và hình học không gian 3D.\n• [Mã AI: 9.A1.1] Nhận thức vai trò con người giữ quyền quyết định cuối cùng khi AI mô hình hóa bài toán.",
         notes: ""
       },
       {
@@ -3450,9 +3450,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Bài 32: Hình cầu (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Mô hình hình trụ, hình nón, quả cầu",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.1.TC2a",
+        nlsCode: "2.5.TC2b",
         aiCode: "9.C1.1",
-        dc: "• [Mã NLS: 2.1.TC2a] Làm việc nhóm trên nền tảng đám mây giải quyết các bài toán dự án thực tế.\n• [Mã AI: 9.C1.1] Tìm hiểu cách mạng nơ-ron nhân tạo sử dụng đồ thị hàm số và đạo hàm để huấn luyện mô hình.",
+        dc: "• [Mã NLS: 2.5.TC2b] Làm việc nhóm trên nền tảng đám mây giải quyết các bài toán dự án thực tế.\n• [Mã AI: 9.C1.1] Tìm hiểu cách mạng nơ-ron nhân tạo sử dụng đồ thị hàm số và đạo hàm để huấn luyện mô hình.",
         notes: ""
       },
       {
@@ -3476,9 +3476,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Hoạt động thực hành trải nghiệm: Giải phương trình, hệ phương trình và vẽ đồ thị với GeoGebra (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Phần mềm GeoGebra, máy tính cá nhân",
         location: "Phòng học / Lớp học",
-        nlsCode: "3.1.TC2a",
+        nlsCode: "3.2.TC2a",
         aiCode: "9.D1.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Xây dựng thuật toán và mô hình hóa bài toán thực tế trên bảng tính điện tử.\n• [Mã AI: 9.D1.1] Thảo luận về đạo đức AI và ranh giới tự động hóa trong các bài toán kinh tế - xã hội.",
+        dc: "• [Mã NLS: 3.2.TC2a] Xây dựng thuật toán và mô hình hóa bài toán thực tế trên bảng tính điện tử.\n• [Mã AI: 9.D1.1] Thảo luận về đạo đức AI và ranh giới tự động hóa trong các bài toán kinh tế - xã hội.",
         notes: ""
       },
       {
@@ -3502,9 +3502,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Đánh giá chuẩn kiến thức, kĩ năng môn Toán Lớp 9 theo ma trận đề chuẩn Bộ GD&ĐT (thời gian làm bài 90 phút).\n- Đánh giá năng lực tư duy toán học, tính cẩn thận và tính trung thực trong kiểm tra.",
         equipment: "Đề kiểm tra chuẩn ma trận, bảng đặc tả và đáp án",
         location: "Phòng học / Lớp học",
-        nlsCode: "4.1.TC2a",
+        nlsCode: "4.2.TC2b",
         aiCode: "9.A3.3",
-        dc: "• [Mã NLS: 4.1.TC2a] Thực hiện bài kiểm tra nghiêm túc, tuân thủ quy chế an toàn số và bảo mật thông tin phòng thi.\n• [Mã AI: 9.A3.3] Tìm hiểu quy trình chấm thi tự động và phân tích phổ điểm bằng AI.",
+        dc: "• [Mã NLS: 4.2.TC2b] Thực hiện bài kiểm tra nghiêm túc, tuân thủ quy chế an toàn số và bảo mật thông tin phòng thi.\n• [Mã AI: 9.A3.3] Tìm hiểu quy trình chấm thi tự động và phân tích phổ điểm bằng AI.",
         notes: "Kiểm tra cuối Học kỳ 2"
       },
       {
@@ -3515,9 +3515,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Chữa bài kiểm tra cuối HK2 (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Phần mềm Excel, dữ liệu thực nghiệm di truyền học",
         location: "Phòng học / Lớp học",
-        nlsCode: "5.1.TC2a",
+        nlsCode: "5.3.TC2b",
         aiCode: "9.C1.1",
-        dc: "• [Mã NLS: 5.1.TC2a] Vận dụng tư duy mô hình hóa toán học giải quyết các bài toán tối ưu thực tiễn.\n• [Mã AI: 9.C1.1] Tìm hiểu cách mạng nơ-ron nhân tạo sử dụng đồ thị hàm số và đạo hàm để huấn luyện mô hình.",
+        dc: "• [Mã NLS: 5.3.TC2b] Vận dụng tư duy mô hình hóa toán học giải quyết các bài toán tối ưu thực tiễn.\n• [Mã AI: 9.C1.1] Tìm hiểu cách mạng nơ-ron nhân tạo sử dụng đồ thị hàm số và đạo hàm để huấn luyện mô hình.",
         notes: ""
       },
       {
@@ -3528,9 +3528,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Hoạt động thực hành trải nghiệm: Xác định tần số, vẽ biểu đồ Excel (4 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Phần mềm Excel, dữ liệu thực nghiệm di truyền học",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.1.TC2a",
+        nlsCode: "1.1.TC2d",
         aiCode: "9.C2.1",
-        dc: "• [Mã NLS: 1.1.TC2a] Khai thác kho học liệu số và cơ sở dữ liệu toán học trực tuyến nâng cao.\n• [Mã AI: 9.C2.1] Trải nghiệm công cụ AI mô phỏng quỹ đạo Parabol và giải hệ phương trình hai ẩn.",
+        dc: "• [Mã NLS: 1.1.TC2d] Khai thác kho học liệu số và cơ sở dữ liệu toán học trực tuyến nâng cao.\n• [Mã AI: 9.C2.1] Trải nghiệm công cụ AI mô phỏng quỹ đạo Parabol và giải hệ phương trình hai ẩn.",
         notes: ""
       },
       {
@@ -3541,9 +3541,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Dự án STEM Toán 9: \"Mô hình Cầu treo Parabol (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Vật liệu tái chế, giấy A0, kéo, máy chiếu",
         location: "Phòng học / Lớp học",
-        nlsCode: "1.2.TC2a",
+        nlsCode: "1.2.TC2b",
         aiCode: "9.D1.1",
-        dc: "• [Mã NLS: 1.2.TC2a] Sử dụng phần mềm GeoGebra khảo sát đồ thị hàm số và hình học không gian 3D.\n• [Mã AI: 9.D1.1] Thảo luận về đạo đức AI và ranh giới tự động hóa trong các bài toán kinh tế - xã hội.",
+        dc: "• [Mã NLS: 1.2.TC2b] Sử dụng phần mềm GeoGebra khảo sát đồ thị hàm số và hình học không gian 3D.\n• [Mã AI: 9.D1.1] Thảo luận về đạo đức AI và ranh giới tự động hóa trong các bài toán kinh tế - xã hội.",
         notes: ""
       },
       {
@@ -3567,9 +3567,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Luyện giải bộ đề thi tuyển sinh vào Lớp 10 THPT môn Toán (Chuyên đề Rút gọn biểu thức, Hệ PT, Parabol, PT bậc hai (2 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Bộ đề thi tuyển sinh vào Lớp 10 THPT chính thức các năm",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.1.TC2a",
+        nlsCode: "2.2.TC2c",
         aiCode: "9.A3.1",
-        dc: "• [Mã NLS: 2.1.TC2a] Làm việc nhóm trên nền tảng đám mây giải quyết các bài toán dự án thực tế.\n• [Mã AI: 9.A3.1] Khám phá cách AI tối ưu hóa hàm số mục tiêu trong các bài toán quy hoạch thực tế.",
+        dc: "• [Mã NLS: 2.2.TC2c] Làm việc nhóm trên nền tảng đám mây giải quyết các bài toán dự án thực tế.\n• [Mã AI: 9.A3.1] Khám phá cách AI tối ưu hóa hàm số mục tiêu trong các bài toán quy hoạch thực tế.",
         notes: ""
       },
       {
@@ -3580,9 +3580,9 @@ export function getMathSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "- Nắm vững chuẩn kiến thức, kĩ năng cốt lõi của bài học: \"Hình học tổng hợp) (4 tiết)\".\n- Rèn luyện năng lực tư duy toán học, kĩ năng tính toán và vận dụng vào giải quyết vấn đề thực tế.",
         equipment: "Bộ đề thi tuyển sinh vào Lớp 10 THPT chính thức các năm",
         location: "Phòng học / Lớp học",
-        nlsCode: "2.4.TC2a",
+        nlsCode: "2.1.TC2b",
         aiCode: "9.C1.1",
-        dc: "• [Mã NLS: 2.4.TC2a] Thiết kế bài thuyết trình đa phương tiện báo cáo kết quả nghiên cứu toán học.\n• [Mã AI: 9.C1.1] Tìm hiểu cách mạng nơ-ron nhân tạo sử dụng đồ thị hàm số và đạo hàm để huấn luyện mô hình.",
+        dc: "• [Mã NLS: 2.1.TC2b] Thiết kế bài thuyết trình đa phương tiện báo cáo kết quả nghiên cứu toán học.\n• [Mã AI: 9.C1.1] Tìm hiểu cách mạng nơ-ron nhân tạo sử dụng đồ thị hàm số và đạo hàm để huấn luyện mô hình.",
         notes: ""
       },
       {

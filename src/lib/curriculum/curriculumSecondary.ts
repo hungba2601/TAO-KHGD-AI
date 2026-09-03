@@ -5,6 +5,7 @@ import { getNlsCodeForEnglishLesson } from '../constants/nlsGuidesEn';
 import { getAiCodeForEnglishLesson } from '../constants/aiGuidesEn';
 import { getTechnologySecondaryCurriculum } from './curriculumSecondaryTechnology';
 import { getKhtnSecondaryCurriculum } from './curriculumSecondaryScience';
+import { getGdcdSecondaryCurriculum } from './curriculumSecondaryGdcd';
 
 export interface RawSecondaryLesson {
   week: number | string;
@@ -418,60 +419,7 @@ export function getGeneralSecondaryCurriculum(grade: string, subject: string): R
 
   // 6.4. MÔN GIÁO DỤC CÔNG DÂN THCS (1 tiết/tuần x 35 tuần = 35 tiết)
   if (s.includes('công dân') || s.includes('gdcd') || s.includes('đạo đức')) {
-    const gdcdTopics = [
-      { t: 'Chủ đề 1: Tự hào truyền thống gia đình', n: `Bài 1: Tự hào về truyền thống gia đình, dòng họ (Lớp ${g})` },
-      { t: 'Chủ đề 1: Tự hào truyền thống gia đình', n: `Bài 2: Tôn trọng sự đa dạng của các dân tộc và bản sắc văn hóa` },
-      { t: 'Chủ đề 2: Yêu thương con người', n: `Bài 3: Quan tâm, cảm thông và chia sẻ với mọi người xung quanh` },
-      { t: 'Chủ đề 2: Yêu thương con người', n: `Bài 4: Giữ chữ tín trong học tập, quan hệ bạn bè và cuộc sống` },
-      { t: 'Chủ đề 2: Yêu thương con người', n: `Bài 5: Yêu thương con người và lan tỏa lòng nhân ái` },
-      { t: 'Chủ đề 3: Tự giác và trách nhiệm', n: `Bài 6: Tự giác, tích cực trong hoạt động tập thể và hoạt động xã hội` },
-      { t: 'Chủ đề 3: Tự giác và trách nhiệm', n: `Bài 7: Bảo tồn di sản văn hóa vật thể và phi vật thể của dân tộc` },
-      { t: 'Chủ đề 4: Quản lý tài chính cá nhân', n: `Bài 8: Quản lý tiền hiệu quả và xây dựng thói quen tiết kiệm` },
-      { t: 'Đánh giá định kỳ', n: `Kiểm tra, đánh giá giữa Học kỳ 1 môn Giáo dục công dân Lớp ${g}` },
-      { t: 'Chủ đề 5: Kỹ năng sống học đường', n: `Bài 9: Phòng chống bạo lực học đường và xây dựng tình bạn trong sáng` },
-      { t: 'Chủ đề 5: Kỹ năng sống học đường', n: `Bài 10: Xây dựng nền nếp gia đình hòa thuận, hạnh phúc` },
-      { t: 'Chủ đề 5: Kỹ năng sống học đường', n: `Bài 11: Phòng chống tai nạn thương tích và tệ nạn xã hội` },
-      { t: 'Chủ đề 6: Quyền và nghĩa vụ công dân', n: `Bài 12: Quyền và nghĩa vụ của công dân trong gia đình` },
-      { t: 'Chủ đề 6: Quyền và nghĩa vụ công dân', n: `Bài 13: Phòng chống thiên tai và ứng phó với biến đổi khí hậu` },
-      { t: 'Chủ đề 6: Quyền và nghĩa vụ công dân', n: `Bài 14: Kỹ năng kiểm soát cảm xúc tiêu cực và vượt qua áp lực` },
-      { t: 'Đánh giá định kỳ', n: `Kiểm tra, đánh giá cuối Học kỳ 1 môn Giáo dục công dân Lớp ${g}` },
-      { t: 'Chữa bài & Ôn tập', n: `Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức GDCD ${g} HK1` },
-      { t: 'Sơ kết Học kỳ 1', n: `Sơ kết Học kỳ 1 môn Giáo dục công dân Lớp ${g}` },
-      { t: 'Chủ đề 7: Nhà nước và Pháp luật', n: `Bài 16: Nhà nước Cộng hòa xã hội chủ nghĩa Việt Nam và Bộ máy nhà nước` },
-      { t: 'Chủ đề 7: Nhà nước và Pháp luật', n: `Bài 17: Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam` },
-      { t: 'Chủ đề 7: Nhà nước và Pháp luật', n: `Bài 18: Pháp luật và kỷ luật trong đời sống xã hội` },
-      { t: 'Chủ đề 8: Quyền tự do cơ bản', n: `Bài 19: Quyền bình đẳng của công dân trước pháp luật` },
-      { t: 'Chủ đề 8: Quyền tự do cơ bản', n: `Bài 20: Quyền được bảo đảm an toàn và bí mật thư tín, điện thoại, điện tín` },
-      { t: 'Chủ đề 8: Quyền tự do cơ bản', n: `Bài 21: Quyền bất khả xâm phạm về chỗ ở và thân thể của công dân` },
-      { t: 'Chủ đề 8: Quyền tự do cơ bản', n: `Bài 22: Quyền tự do ngôn luận và tiếp cận thông tin đúng pháp luật` },
-      { t: 'Đánh giá định kỳ', n: `Kiểm tra, đánh giá giữa Học kỳ 2 môn Giáo dục công dân Lớp ${g}` },
-      { t: 'Chủ đề 9: Quyền học tập và lao động', n: `Bài 23: Quyền và nghĩa vụ học tập của công dân` },
-      { t: 'Chủ đề 9: Quyền học tập và lao động', n: `Bài 24: Quyền và nghĩa vụ lao động của công dân` },
-      { t: 'Chủ đề 10: Tham gia quản lý nhà nước', n: `Bài 25: Quyền tham gia quản lý nhà nước và xã hội của công dân` },
-      { t: 'Chủ đề 10: Tham gia quản lý nhà nước', n: `Bài 26: Quyền khiếu nại, tố cáo của công dân và nghĩa vụ tôn trọng pháp luật` },
-      { t: 'Đánh giá định kỳ', n: `Kiểm tra, đánh giá cuối Học kỳ 2 môn Giáo dục công dân Lớp ${g}` },
-      { t: 'Chữa bài & Ôn tập', n: `Chữa bài kiểm tra cuối HK2 & Ôn tập củng cố kiến thức GDCD ${g} HK2` },
-      { t: 'Dự án GDCD', n: `Dự án GDCD: "Phiên tòa Giả định Tuyên truyền Pháp luật Học đường & Phòng chống Bạo lực"` },
-      { t: 'Chủ đề: Ôn tập cuối năm', n: `Bài 29: Ôn tập toàn diện chuẩn bị tổng kết năm học môn GDCD ${g}` },
-      { t: 'Tổng kết năm học', n: `Tổng kết năm học & Đánh giá xếp loại môn GDCD ${g} cả năm` }
-    ];
-
-    gdcdTopics.forEach((item, idx) => {
-      const w = idx + 1;
-      if (w > 35) return;
-      list.push({
-        week: w,
-        topic: item.t,
-        name: item.n,
-        periods: 1,
-        yccd: `- Nhận biết và thực hiện đúng chuẩn mực đạo đức, kỹ năng sống và pháp luật của ${item.n} (SGK GDCD ${g} Kết nối tri thức).\n- Phân tích và xử lý các tình huống đạo đức, pháp lý thực tế một cách chuẩn mực, nhân văn.\n- Nâng cao ý thức thượng tôn pháp luật, tinh thần trách nhiệm công dân và lòng tự hào dân tộc.`,
-        equipment: 'Hiến pháp 2013, Luật Trẻ em, video tình huống đạo đức và pháp luật, máy chiếu',
-        location: 'Phòng học / Lớp học',
-        notes: w === 9 || w === 26 ? 'Kiểm tra giữa kỳ' : w === 16 || w === 31 ? 'Kiểm tra cuối kỳ' : w === 33 ? 'Phiên tòa Giả định' : ''
-      });
-    });
-
-    return list;
+    return getGdcdSecondaryCurriculum(String(g));
   }
 
   // 6.5. ÂM NHẠC THCS (1 tiết/tuần x 35 tuần = 35 tiết)

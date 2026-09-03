@@ -284,18 +284,26 @@ export function getNlsCodeForSubjectLesson(
     };
   }
 
-  // Helper to find item by code prefix (e.g. "3.4.", "1.3.", "4.2.")
-  const findByCodePrefix = (prefix: string): { code: string; requirement: string } | null => {
-    const found = items.find((it) => it.code.startsWith(prefix));
-    if (found) return { code: found.code, requirement: found.requirement };
+  // Helper to find item by code prefix and distribute intelligently among a, b, c, d
+  const findByCodePrefix = (prefix: string, preferredLetter?: string): { code: string; requirement: string } | null => {
+    if (preferredLetter) {
+      const specific = items.find((it) => it.code.startsWith(prefix) && it.code.endsWith(preferredLetter));
+      if (specific) return { code: specific.code, requirement: specific.requirement };
+    }
+    const matched = items.filter((it) => it.code.startsWith(prefix));
+    if (matched.length > 0) {
+      const picked = matched[lessonIdx % matched.length];
+      return { code: picked.code, requirement: picked.requirement };
+    }
     return null;
   };
 
-  // Helper to find item by domain (e.g. "3.", "4.")
+  // Helper to find item by domain and distribute among a, b, c, d
   const findByDomain = (domainDigit: string): { code: string; requirement: string } | null => {
     const matched = items.filter((it) => it.code.startsWith(`${domainDigit}.`));
     if (matched.length > 0) {
-      return { code: matched[0].code, requirement: matched[0].requirement };
+      const picked = matched[lessonIdx % matched.length];
+      return { code: picked.code, requirement: picked.requirement };
     }
     return null;
   };
@@ -552,10 +560,16 @@ export function getNlsCodeForSubjectLesson(
     if (res) return { ...res, level };
   }
 
-  // 10. Fallback thông minh: Phân bổ luân phiên theo loại hoạt động sư phạm thay vì tăng dần đơn điệu
-  const domainSequence = ['1.1.', '2.1.', '3.1.', '1.2.', '2.4.', '5.2.', '4.1.', '3.2.', '5.3.', '6.2.', '2.5.', '4.2.'];
-  const targetPrefix = domainSequence[lessonIdx % domainSequence.length];
-  const matchedItem = items.find((it) => it.code.startsWith(targetPrefix)) || items[lessonIdx % items.length];
+  // 10. Fallback thông minh: Phân bổ luân phiên đa dạng đầy đủ các chỉ báo a, b, c, d
+  const domainSequenceTC1 = ['1.1.TC1b', '2.1.TC1b', '3.1.TC1b', '1.2.TC1b', '2.2.TC1c', '1.3.TC1b', '4.1.TC1b', '3.2.TC1a', '5.2.TC1b', '2.5.TC1b', '4.2.TC1b', '4.3.TC1a', '5.1.TC1a', '5.4.TC1a'];
+  const domainSequenceTC2 = ['1.1.TC2b', '2.1.TC2b', '3.1.TC2b', '1.2.TC2b', '2.2.TC2c', '1.3.TC2b', '4.1.TC2b', '3.2.TC2a', '5.2.TC2b', '2.5.TC2b', '4.2.TC2b', '4.3.TC2b', '5.1.TC2b', '5.3.TC2b', '5.4.TC2a'];
+  const domainSequenceCB1 = ['1.1.CB1b', '1.1.CB1c', '1.2.CB1a', '1.3.CB1b', '2.1.CB1b', '2.2.CB1a', '2.4.CB1a', '3.1.CB1b', '3.2.CB1a', '4.1.CB1b', '4.1.CB1c', '4.2.CB1a', '4.3.CB1a', '5.1.CB1a', '5.2.CB1b'];
+  const domainSequenceCB2 = ['1.1.CB2b', '1.1.CB2c', '1.1.CB2d', '1.2.CB2a', '1.3.CB2b', '2.1.CB2b', '2.2.CB2b', '2.4.CB2a', '3.1.CB2a', '3.2.CB2a', '4.1.CB2a', '4.1.CB2c', '4.2.CB2a', '4.3.CB2a', '5.1.CB2a', '5.2.CB2b'];
+  const domainSequenceNC1 = ['1.1.NC1b', '1.1.NC1c', '1.1.NC1d', '1.2.NC1b', '1.3.NC1b', '2.1.NC1b', '2.2.NC1b', '2.2.NC1c', '2.4.NC1a', '2.5.NC1b', '2.6.NC1b', '3.1.NC1b', '3.2.NC1a', '4.1.NC1a', '4.2.NC1a', '5.1.NC1a', '5.2.NC1b', '5.3.NC1a'];
+
+  const chosenSeq = level === 'TC1' ? domainSequenceTC1 : level === 'TC2' ? domainSequenceTC2 : level === 'CB1' ? domainSequenceCB1 : level === 'CB2' ? domainSequenceCB2 : domainSequenceNC1;
+  const targetCode = chosenSeq[lessonIdx % chosenSeq.length];
+  const matchedItem = items.find((it) => it.code.toLowerCase() === targetCode.toLowerCase()) || items[lessonIdx % items.length];
 
   return {
     code: matchedItem.code,

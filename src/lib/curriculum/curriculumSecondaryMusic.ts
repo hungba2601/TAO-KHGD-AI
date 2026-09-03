@@ -38,14 +38,14 @@ export function getMusicSecondaryCurriculum(grade: string): RawSecondaryLesson[]
         t: 'Chủ đề 1: Tuổi học trò',
         n: 'Chủ đề 1: Tuổi học trò - Nghe nhạc: Tháng năm học trò & TTAN: Giới thiệu đàn piano (1 tiết)',
         y: '- Cảm nhận được giai điệu trong sáng, tình cảm của bài hát Tháng năm học trò.\n- Nắm được nguồn gốc, cấu tạo cơ bản, âm vực và vai trò của đàn piano trong nền âm nhạc thế giới.',
-        dc: '• [Mã NLS: 1.2.TC1a] Tra cứu thông tin và xem clip nghệ sĩ biểu diễn đàn piano trên nguồn dữ liệu số uy tín.\n• [Mã AI: 6.A1.1] Nhận biết sự khác biệt giữa âm thanh biểu diễn piano trực tiếp của nghệ sĩ và âm thanh nhạc cụ ảo do AI tạo ra.'
+        dc: '• [Mã NLS: 1.1.TC1b] Tra cứu thông tin và xem clip nghệ sĩ biểu diễn đàn piano trên nguồn dữ liệu số uy tín.\n• [Mã AI: 6.A1.1] Nhận biết sự khác biệt giữa âm thanh biểu diễn piano trực tiếp của nghệ sĩ và âm thanh nhạc cụ ảo do AI tạo ra.'
       },
       {
         w: 3,
         t: 'Chủ đề 1: Tuổi học trò',
         n: 'Chủ đề 1: Tuổi học trò - Đọc nhạc: Bài đọc nhạc số 1 & Vận dụng – Sáng tạo (1 tiết)',
         y: '- Đọc đúng cao độ các nốt Đô - Rê - Mi - Son - La và trường độ nốt đen, nốt trắng trong Bài đọc nhạc số 1.\n- Biết gõ đệm theo phách, nhịp và thực hiện hoạt động Vận dụng - Sáng tạo theo nhóm.',
-        dc: '• [Mã NLS: 3.1.TC1a] Sử dụng ứng dụng phím đàn ảo / máy đập nhịp số (Metronome online) để luyện đọc nhạc đúng phách.\n• [Mã AI: 6.C1.1] Làm quen với phần mềm nhận diện cao độ giọng hát thời gian thực bằng thuật toán phân tích tần số âm thanh.'
+        dc: '• [Mã NLS: 3.2.TC1a] Sử dụng ứng dụng phím đàn ảo / máy đập nhịp số (Metronome online) để luyện đọc nhạc đúng phách.\n• [Mã AI: 6.C1.1] Làm quen với phần mềm nhận diện cao độ giọng hát thời gian thực bằng thuật toán phân tích tần số âm thanh.'
       },
       {
         w: 4,
@@ -59,7 +59,7 @@ export function getMusicSecondaryCurriculum(grade: string): RawSecondaryLesson[]
         t: 'Chủ đề 2: Cuộc sống tươi đẹp',
         n: 'Chủ đề 2: Cuộc sống tươi đẹp - Nghe nhạc: Tác phẩm The Blue Danube (Dòng sông Đa-nuýp xanh) (1 tiết)',
         y: '- Cảm nhận được vẻ đẹp êm đềm, nhịp điệu valse duyên dáng của kiệt tác The Blue Danube (Johann Strauss II).\n- Bộc lộ cảm xúc thẩm mỹ và vận động cơ thể nhịp nhàng theo giai điệu bản nhạc.',
-        dc: '• [Mã NLS: 2.1.TC1a] Tương tác nghe nhạc chất lượng cao trên các nền tảng số hóa di sản âm nhạc cổ điển.\n• [Mã AI: 6.B1.1] Thảo luận về việc AI đề xuất danh sách phát nhạc cổ điển tự động dựa trên sở thích người nghe.'
+        dc: '• [Mã NLS: 2.1.TC1b] Tương tác nghe nhạc chất lượng cao trên các nền tảng số hóa di sản âm nhạc cổ điển.\n• [Mã AI: 6.B1.1] Thảo luận về việc AI đề xuất danh sách phát nhạc cổ điển tự động dựa trên sở thích người nghe.'
       },
       {
         w: 6,
@@ -87,14 +87,14 @@ export function getMusicSecondaryCurriculum(grade: string): RawSecondaryLesson[]
         t: 'Đánh giá định kỳ',
         n: 'Kiểm tra, đánh giá giữa Học kỳ 1 môn Âm nhạc Lớp 6',
         y: '- Đánh giá mức độ đạt chuẩn kiến thức, kĩ năng Hát, Đọc nhạc, Nhạc cụ và Nhạc lí từ Tuần 1 đến Tuần 8.\n- Rèn luyện phong thái biểu diễn tự tin, tính trung thực và tinh thần cố gắng học tập.',
-        dc: '• [Mã NLS: 3.1.TC1a] Sử dụng thiết bị ghi hình/thu âm số trong quá trình kiểm tra thực hành biểu diễn.\n• [Mã AI: 6.A1.3] Đối chiếu kết quả biểu diễn cá nhân với thang đo tiêu chí đánh giá số hóa.'
+        dc: '• [Mã NLS: 3.1.TC1b] Sử dụng thiết bị ghi hình/thu âm số trong quá trình kiểm tra thực hành biểu diễn.\n• [Mã AI: 6.A1.3] Đối chiếu kết quả biểu diễn cá nhân với thang đo tiêu chí đánh giá số hóa.'
       },
       {
         w: 10,
         t: 'Chủ đề 3: Nhớ ơn thầy cô',
         n: 'Chủ đề 3: Nhớ ơn thầy cô - TTAN: Giới thiệu hình thức hát bè & Vận dụng – Sáng tạo (1 tiết)',
         y: '- Hiểu được khái niệm hát bè (bè đuổi, bè hòa âm), tác dụng tạo nên sự phong phú, nhiều tầng âm sắc của hát bè.\n- Thực hành hát bè đuổi đơn giản theo nhóm và sáng tạo động tác phụ họa.',
-        dc: '• [Mã NLS: 2.4.TC1a] Hợp tác nhóm trên nền tảng số để phân chia bè và chia sẻ tệp âm thanh luyện bè.\n• [Mã AI: 6.C1.1] Trải nghiệm công cụ tách bè âm thanh bằng AI để nghe riêng từng bè mẫu khi tự tập.'
+        dc: '• [Mã NLS: 2.5.TC1b] Hợp tác nhóm trên nền tảng số để phân chia bè và chia sẻ tệp âm thanh luyện bè.\n• [Mã AI: 6.C1.1] Trải nghiệm công cụ tách bè âm thanh bằng AI để nghe riêng từng bè mẫu khi tự tập.'
       },
       {
         w: 11,
@@ -122,21 +122,21 @@ export function getMusicSecondaryCurriculum(grade: string): RawSecondaryLesson[]
         t: 'Ôn tập học kì 1',
         n: 'Ôn tập học kì 1: Ôn tập các bài hát, bài đọc nhạc và nhạc cụ Chủ đề 1 & Chủ đề 2 (1 tiết)',
         y: '- Củng cố kĩ năng hát đúng cao độ, truyền cảm các bài hát Chủ đề 1, 2.\n- Đọc thuần thục Bài đọc nhạc số 1 và thực hành nhạc cụ Recorder / kèn phím nhịp nhàng.',
-        dc: '• [Mã NLS: 1.3.TC1a] Tự tổng hợp danh mục các bài hát, bài đọc nhạc HK1 vào bảng theo dõi tiến độ học tập số.\n• [Mã AI: 6.A1.3] Dùng ứng dụng AI rà soát lỗi phát âm và nhịp phách trong các bài đã học.'
+        dc: '• [Mã NLS: 1.3.TC1b] Tự tổng hợp danh mục các bài hát, bài đọc nhạc HK1 vào bảng theo dõi tiến độ học tập số.\n• [Mã AI: 6.A1.3] Dùng ứng dụng AI rà soát lỗi phát âm và nhịp phách trong các bài đã học.'
       },
       {
         w: 15,
         t: 'Ôn tập học kì 1',
         n: 'Ôn tập học kì 1: Ôn tập các bài hát, bài đọc nhạc và nhạc lí Chủ đề 3 & Chủ đề 4 (1 tiết)',
         y: '- Ôn luyện thuần thục bài hát Thầy cô là tất cả, Những ước mơ; Bài đọc nhạc số 2.\n- Nắm vững lí thuyết nhịp 4/4, hình thức hát bè và hoàn thiện các bài tập Vận dụng - Sáng tạo.',
-        dc: '• [Mã NLS: 2.1.TC1a] Tham gia trò chơi trắc nghiệm tương tác trực tuyến (Kahoot/Quizizz) ôn tập nhạc lí HK1.\n• [Mã AI: 6.C2.2] Tương tác với chatbot AI giải đáp các câu hỏi thắc mắc về nhạc lí và quy tắc đọc nhạc.'
+        dc: '• [Mã NLS: 2.2.TC1c] Tham gia trò chơi trắc nghiệm tương tác trực tuyến (Kahoot/Quizizz) ôn tập nhạc lí HK1.\n• [Mã AI: 6.C2.2] Tương tác với chatbot AI giải đáp các câu hỏi thắc mắc về nhạc lí và quy tắc đọc nhạc.'
       },
       {
         w: 16,
         t: 'Đánh giá định kỳ',
         n: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Âm nhạc Lớp 6',
         y: '- Đánh giá tổng hợp toàn diện các nội dung Hát, Đọc nhạc, Nhạc cụ và Nhạc lí trong toàn bộ Học kỳ 1.\n- Thể hiện sự tiến bộ về năng lực cảm thụ âm nhạc, kĩ năng biểu diễn và tinh thần trách nhiệm.',
-        dc: '• [Mã NLS: 3.1.TC1a] Lưu trữ video bài thi thực hành vào hồ sơ học tập số cá nhân.\n• [Mã AI: 6.B1.1] Ý thức về việc bảo mật hình ảnh và video cá nhân khi tham gia đánh giá trực tuyến.'
+        dc: '• [Mã NLS: 3.2.TC1a] Lưu trữ video bài thi thực hành vào hồ sơ học tập số cá nhân.\n• [Mã AI: 6.B1.1] Ý thức về việc bảo mật hình ảnh và video cá nhân khi tham gia đánh giá trực tuyến.'
       },
       {
         w: 17,
@@ -166,14 +166,14 @@ export function getMusicSecondaryCurriculum(grade: string): RawSecondaryLesson[]
         t: 'Chủ đề 5: Giai điệu quê hương',
         n: 'Chủ đề 5: Giai điệu quê hương - Nghe nhạc: Hoà tấu Mừng hội hoa bông & TTAN: Giới thiệu kèn và sáo trúc (1 tiết)',
         y: '- Cảm nhận không khí vui tươi, rộn rã qua bản hoà tấu nhạc cụ dân tộc Mừng hội hoa bông.\n- Nhận biết hình dáng, cấu tạo, âm sắc và cách phát âm đặc trưng của kèn và sáo trúc Việt Nam.',
-        dc: '• [Mã NLS: 1.2.TC1a] Xem các clip biểu diễn sáo trúc và kèn dân tộc của các nghệ sĩ ưu tú trên Internet.\n• [Mã AI: 6.A1.2] Nhận diện sự độc đáo trong âm sắc sáo trúc truyền thống mà nhạc cụ điện tử khó mô phỏng trọn vẹn.'
+        dc: '• [Mã NLS: 1.2.TC1b] Xem các clip biểu diễn sáo trúc và kèn dân tộc của các nghệ sĩ ưu tú trên Internet.\n• [Mã AI: 6.A1.2] Nhận diện sự độc đáo trong âm sắc sáo trúc truyền thống mà nhạc cụ điện tử khó mô phỏng trọn vẹn.'
       },
       {
         w: 21,
         t: 'Chủ đề 5: Giai điệu quê hương',
         n: 'Chủ đề 5: Giai điệu quê hương - Đọc nhạc: Bài đọc nhạc số 3 & Vận dụng – Sáng tạo (1 tiết)',
         y: '- Đọc đúng cao độ và trường độ Bài đọc nhạc số 3 viết ở nhịp 2/4 với các nốt Đô - Rê - Mi - Son - La.\n- Thực hiện hoạt động Vận dụng - Sáng tạo: Sáng tác lời ca mới hoặc gõ đệm tiết tấu cho bài đọc nhạc.',
-        dc: '• [Mã NLS: 3.1.TC1a] Sử dụng phần mềm chép nhạc số (MuseScore/Flat.io) để nhập và nghe thử Bài đọc nhạc số 3.\n• [Mã AI: 6.D1.1] Trải nghiệm AI gợi ý lời ca theo vần điệu cho giai điệu dân gian ngắn.'
+        dc: '• [Mã NLS: 3.1.TC1b] Sử dụng phần mềm chép nhạc số (MuseScore/Flat.io) để nhập và nghe thử Bài đọc nhạc số 3.\n• [Mã AI: 6.D1.1] Trải nghiệm AI gợi ý lời ca theo vần điệu cho giai điệu dân gian ngắn.'
       },
       {
         w: 22,
@@ -208,14 +208,14 @@ export function getMusicSecondaryCurriculum(grade: string): RawSecondaryLesson[]
         t: 'Đánh giá định kỳ',
         n: 'Kiểm tra, đánh giá giữa Học kỳ 2 môn Âm nhạc Lớp 6',
         y: '- Đánh giá mức độ đạt chuẩn kiến thức, kĩ năng Hát, Đọc nhạc, Nhạc cụ và Nhạc lí từ Tuần 19 đến Tuần 25.\n- Khuyến khích sự sáng tạo, tinh thần tự giác và khả năng trình diễn nhóm.',
-        dc: '• [Mã NLS: 3.1.TC1a] Sử dụng thiết bị thu âm số để thực hiện phần kiểm tra đánh giá định kì.\n• [Mã AI: 6.A1.3] Đối chiếu bài kiểm tra với biểu điểm số hóa để nâng cao tính khách quan.'
+        dc: '• [Mã NLS: 3.2.TC1a] Sử dụng thiết bị thu âm số để thực hiện phần kiểm tra đánh giá định kì.\n• [Mã AI: 6.A1.3] Đối chiếu bài kiểm tra với biểu điểm số hóa để nâng cao tính khách quan.'
       },
       {
         w: 27,
         t: 'Chủ đề 7: Âm nhạc nước ngoài',
         n: 'Chủ đề 7: Âm nhạc nước ngoài - Nghe nhạc: Auld Lang Syne & Đọc nhạc: Bài đọc nhạc số 5 & Vận dụng – Sáng tạo (1 tiết)',
         y: '- Cảm nhận vẻ đẹp giai điệu tha thiết của bài dân ca Scotland Auld Lang Syne (Bài ca tạm biệt).\n- Đọc đúng cao độ có dấu hoá trong Bài đọc nhạc số 5; hoàn thành hoạt động Vận dụng - Sáng tạo.',
-        dc: '• [Mã NLS: 2.1.TC1a] Nghe và tìm hiểu lịch sử lan tỏa toàn cầu của bài hát Auld Lang Syne qua tài liệu đa phương tiện.\n• [Mã AI: 6.C2.2] Sử dụng AI dịch nghĩa lời gốc tiếng Anh/Scotland của bài hát sang tiếng Việt.'
+        dc: '• [Mã NLS: 2.5.TC1b] Nghe và tìm hiểu lịch sử lan tỏa toàn cầu của bài hát Auld Lang Syne qua tài liệu đa phương tiện.\n• [Mã AI: 6.C2.2] Sử dụng AI dịch nghĩa lời gốc tiếng Anh/Scotland của bài hát sang tiếng Việt.'
       },
       {
         w: 28,
@@ -243,14 +243,14 @@ export function getMusicSecondaryCurriculum(grade: string): RawSecondaryLesson[]
         t: 'Đánh giá định kỳ',
         n: 'Kiểm tra, đánh giá cuối Học kỳ 2 môn Âm nhạc Lớp 6',
         y: '- Đánh giá tổng kết mức độ hoàn thành chuẩn kiến thức, kĩ năng môn Âm nhạc Lớp 6 cả năm học.\n- Đánh giá sự trưởng thành về thị hiếu thẩm mỹ, sự tự tin và năng lực thực hành âm nhạc.',
-        dc: '• [Mã NLS: 3.1.TC1a] Ghi hình bài kiểm tra thực hành cuối năm phục vụ lưu trữ học bạ số.\n• [Mã AI: 6.A1.3] Tự đánh giá mức độ đạt được theo các tiêu chí chuẩn đầu ra GDPT 2018.'
+        dc: '• [Mã NLS: 3.1.TC1b] Ghi hình bài kiểm tra thực hành cuối năm phục vụ lưu trữ học bạ số.\n• [Mã AI: 6.A1.3] Tự đánh giá mức độ đạt được theo các tiêu chí chuẩn đầu ra GDPT 2018.'
       },
       {
         w: 32,
         t: 'Chữa bài & Giao lưu',
         n: 'Chữa bài kiểm tra cuối HK2 & Giao lưu âm nhạc học đường Lớp 6 (1 tiết)',
         y: '- Nhận xét, đánh giá kết quả kiểm tra cuối năm; biểu dương tinh thần nỗ lực của học sinh.\n- Tổ chức giao lưu văn nghệ học đường, khuyến khích học sinh biểu diễn tự tin các bài hát yêu thích.',
-        dc: '• [Mã NLS: 2.1.TC1a] Trình chiếu hình ảnh, video hoạt động học tập âm nhạc trong suốt năm học.\n• [Mã AI: 6.C2.2] Trải nghiệm trò chơi âm nhạc tương tác có ứng dụng AI nhận diện giai điệu.'
+        dc: '• [Mã NLS: 2.1.TC1b] Trình chiếu hình ảnh, video hoạt động học tập âm nhạc trong suốt năm học.\n• [Mã AI: 6.C2.2] Trải nghiệm trò chơi âm nhạc tương tác có ứng dụng AI nhận diện giai điệu.'
       },
       {
         w: 33,
@@ -317,14 +317,14 @@ export function getMusicSecondaryCurriculum(grade: string): RawSecondaryLesson[]
         t: 'Chủ đề 1: Ngày khai trường',
         n: 'Chủ đề 1: Ngày khai trường - Vận dụng – Sáng tạo (Gõ đệm & Biểu diễn) (1 tiết)',
         y: '- Vận dụng gõ đệm bằng nhạc cụ gõ cơ thể (body percussion) hoặc Recorder / kèn phím cho bài hát Khai trường.\n- Tự tin biểu diễn kết hợp động tác phụ họa theo hình thức tam ca, tốp ca.',
-        dc: '• [Mã NLS: 3.1.TC1a] Sử dụng smartphone ghi lại clip biểu diễn của nhóm để chia sẻ và nhận xét chéo.\n• [Mã AI: 7.D1.1] Dùng phần mềm AI hỗ trợ phân tích độ đồng đều nhịp phách của các thành viên trong nhóm.'
+        dc: '• [Mã NLS: 3.2.TC1a] Sử dụng smartphone ghi lại clip biểu diễn của nhóm để chia sẻ và nhận xét chéo.\n• [Mã AI: 7.D1.1] Dùng phần mềm AI hỗ trợ phân tích độ đồng đều nhịp phách của các thành viên trong nhóm.'
       },
       {
         w: 4,
         t: 'Chủ đề 2: Môi trường xanh',
         n: 'Chủ đề 2: Môi trường xanh - Hát: Bài hát Vì cuộc sống tươi đẹp & Nghe nhạc: Tác phẩm Alouette (Tiếng chim sơn ca) (1 tiết)',
         y: '- Hát đúng cao độ, giai điệu trong sáng bài Vì cuộc sống tươi đẹp, thể hiện ý thức bảo vệ môi trường.\n- Lắng nghe và cảm thụ vẻ đẹp tươi vui, ríu rít của bài dân ca Pháp Alouette.',
-        dc: '• [Mã NLS: 2.1.TC1a] Tìm hiểu thông điệp bảo vệ Trái Đất qua các tác phẩm âm nhạc thế giới trên Internet.\n• [Mã AI: 7.C4.1] Khám phá cách AI phân loại các bài hát thiếu nhi theo chủ đề thiên nhiên và môi trường.'
+        dc: '• [Mã NLS: 2.2.TC1c] Tìm hiểu thông điệp bảo vệ Trái Đất qua các tác phẩm âm nhạc thế giới trên Internet.\n• [Mã AI: 7.C4.1] Khám phá cách AI phân loại các bài hát thiếu nhi theo chủ đề thiên nhiên và môi trường.'
       },
       {
         w: 5,
@@ -345,7 +345,7 @@ export function getMusicSecondaryCurriculum(grade: string): RawSecondaryLesson[]
         t: 'Chủ đề 3: Thầy cô và mái trường',
         n: 'Chủ đề 3: Thầy cô và mái trường - Hát: Bài hát Nhớ ơn thầy cô & LTAN: Dấu nhắc lại, dấu quay lại, khung thay đổi (1 tiết)',
         y: '- Hát chuẩn xác giai điệu, tình cảm tha thiết của bài hát Nhớ ơn thầy cô (Phong Nhã).\n- Nhận biết và hiểu đúng quy tắc thực hiện bản nhạc khi gặp Dấu nhắc lại, Dấu quay lại (D.C., D.S., Coda, Fine) và Khung thay đổi 1, 2.',
-        dc: '• [Mã NLS: 1.3.TC1a] Sử dụng sơ đồ số trực quan để ghi nhớ quy trình di chuyển của mắt khi đọc bản nhạc có dấu nhắc lại.\n• [Mã AI: 7.A3.1] Trải nghiệm công cụ AI tự động đọc và cuộn bản nhạc số theo đúng cấu trúc dấu quay lại.'
+        dc: '• [Mã NLS: 1.3.TC1b] Sử dụng sơ đồ số trực quan để ghi nhớ quy trình di chuyển của mắt khi đọc bản nhạc có dấu nhắc lại.\n• [Mã AI: 7.A3.1] Trải nghiệm công cụ AI tự động đọc và cuộn bản nhạc số theo đúng cấu trúc dấu quay lại.'
       },
       {
         w: 8,
@@ -359,7 +359,7 @@ export function getMusicSecondaryCurriculum(grade: string): RawSecondaryLesson[]
         t: 'Đánh giá định kỳ',
         n: 'Kiểm tra, đánh giá giữa Học kỳ 1 môn Âm nhạc Lớp 7',
         y: '- Đánh giá mức độ đạt chuẩn kiến thức, kĩ năng Hát, Đọc nhạc, Nhạc cụ và Nhạc lí từ Tuần 1 đến Tuần 8.\n- Rèn luyện phong thái tự tin, khả năng làm chủ sân khấu và tính trung thực trong học tập.',
-        dc: '• [Mã NLS: 3.1.TC1a] Sử dụng thiết bị thu âm số ghi lại phần kiểm tra đánh giá cá nhân.\n• [Mã AI: 7.B3.1] Thực hiện cam kết trung thực học đường trong quá trình kiểm tra thực hành.'
+        dc: '• [Mã NLS: 3.1.TC1b] Sử dụng thiết bị thu âm số ghi lại phần kiểm tra đánh giá cá nhân.\n• [Mã AI: 7.B3.1] Thực hiện cam kết trung thực học đường trong quá trình kiểm tra thực hành.'
       },
       {
         w: 10,
@@ -387,7 +387,7 @@ export function getMusicSecondaryCurriculum(grade: string): RawSecondaryLesson[]
         t: 'Chủ đề 4: Giai điệu quê hương',
         n: 'Chủ đề 4: Giai điệu quê hương - Nhạc cụ: Recorder hoặc kèn phím & Vận dụng – Sáng tạo (1 tiết)',
         y: '- Luyện tập hòa tấu giai điệu bài Lí kéo chài trên sáo Recorder hoặc kèn phím.\n- Sáng tạo động tác chèo thuyền, kéo lưới phụ họa cho bài biểu diễn.',
-        dc: '• [Mã NLS: 3.1.TC1a] Ghi lại video hòa tấu nhạc cụ kết hợp phụ họa của nhóm.\n• [Mã AI: 7.D1.1] Sử dụng AI gợi ý các mẫu đệm trống gõ dân tộc phù hợp với nhịp điệu điệu Lí.'
+        dc: '• [Mã NLS: 3.2.TC1a] Ghi lại video hòa tấu nhạc cụ kết hợp phụ họa của nhóm.\n• [Mã AI: 7.D1.1] Sử dụng AI gợi ý các mẫu đệm trống gõ dân tộc phù hợp với nhịp điệu điệu Lí.'
       },
       {
         w: 14,
@@ -401,14 +401,14 @@ export function getMusicSecondaryCurriculum(grade: string): RawSecondaryLesson[]
         t: 'Ôn tập học kì 1',
         n: 'Ôn tập học kì 1: Ôn tập các bài hát, bài đọc nhạc và nhạc lí Chủ đề 3 & Chủ đề 4 (1 tiết)',
         y: '- Ôn luyện bài hát Nhớ ơn thầy cô, Lí kéo chài; Bài đọc nhạc số 2, 3.\n- Củng cố kiến thức về nhịp lấy đà, dấu nhắc lại, khung thay đổi và các thể loại ca khúc.',
-        dc: '• [Mã NLS: 2.1.TC1a] Tham gia thi đấu trắc nghiệm kiến thức âm nhạc trực tuyến giữa các tổ trong lớp.\n• [Mã AI: 7.C5.1] Tương tác với hệ thống AI kiểm tra kiến thức đọc nhạc theo thời gian thực.'
+        dc: '• [Mã NLS: 2.5.TC1b] Tham gia thi đấu trắc nghiệm kiến thức âm nhạc trực tuyến giữa các tổ trong lớp.\n• [Mã AI: 7.C5.1] Tương tác với hệ thống AI kiểm tra kiến thức đọc nhạc theo thời gian thực.'
       },
       {
         w: 16,
         t: 'Đánh giá định kỳ',
         n: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Âm nhạc Lớp 7',
         y: '- Đánh giá tổng hợp toàn diện kết quả học tập môn Âm nhạc Lớp 7 trong toàn bộ Học kỳ 1.\n- Phân hóa năng lực thực hành và cảm thụ âm nhạc của học sinh.',
-        dc: '• [Mã NLS: 3.1.TC1a] Lưu trữ kết quả kiểm tra vào hồ sơ học tập số của học sinh.\n• [Mã AI: 7.B3.1] Thực hiện văn hóa thi cử nghiêm túc và tôn trọng kết quả đánh giá số hóa.'
+        dc: '• [Mã NLS: 3.1.TC1b] Lưu trữ kết quả kiểm tra vào hồ sơ học tập số của học sinh.\n• [Mã AI: 7.B3.1] Thực hiện văn hóa thi cử nghiêm túc và tôn trọng kết quả đánh giá số hóa.'
       },
       {
         w: 17,
@@ -445,14 +445,14 @@ export function getMusicSecondaryCurriculum(grade: string): RawSecondaryLesson[]
         t: 'Chủ đề 5: Nhịp điệu mùa xuân',
         n: 'Chủ đề 5: Nhịp điệu mùa xuân - LTAN: Các kí hiệu tăng trường độ & Đọc nhạc: Bài đọc nhạc số 4 (1 tiết)',
         y: '- Nhận biết và hiểu cách sử dụng các kí hiệu tăng trường độ: Dấu chấm dôi, Dấu nối, Dấu lưu không (dấu ngân tự do).\n- Đọc chuẩn xác Bài đọc nhạc số 4 có nốt móc đơn chấm dôi và dấu nối.',
-        dc: '• [Mã NLS: 1.3.TC1a] Sử dụng phần mềm chép nhạc số mô phỏng sự tăng giảm trường độ của dấu chấm dôi.\n• [Mã AI: 7.C4.1] Khám phá thuật toán AI nhận diện trường độ nốt nhạc trong bản phổ số.'
+        dc: '• [Mã NLS: 1.3.TC1b] Sử dụng phần mềm chép nhạc số mô phỏng sự tăng giảm trường độ của dấu chấm dôi.\n• [Mã AI: 7.C4.1] Khám phá thuật toán AI nhận diện trường độ nốt nhạc trong bản phổ số.'
       },
       {
         w: 22,
         t: 'Chủ đề 5: Nhịp điệu mùa xuân',
         n: 'Chủ đề 5: Nhịp điệu mùa xuân - Vận dụng – Sáng tạo (Hòa tấu & Trình diễn mùa xuân) (1 tiết)',
         y: '- Thực hành gõ đệm tiết tấu hoặc hòa tấu nhạc cụ cho bài hát Mùa xuân ơi.\n- Tự tin biểu diễn kết hợp múa phụ họa mang âm hưởng lễ hội mùa xuân.',
-        dc: '• [Mã NLS: 3.1.TC1a] Ghi hình bài trình diễn nhóm và tạo mã QR để chia sẻ trong triển lãm học tập của trường.\n• [Mã AI: 7.D1.1] Ứng dụng AI tạo phông nền ảo sân khấu mùa xuân cho video biểu diễn.'
+        dc: '• [Mã NLS: 3.2.TC1a] Ghi hình bài trình diễn nhóm và tạo mã QR để chia sẻ trong triển lãm học tập của trường.\n• [Mã AI: 7.D1.1] Ứng dụng AI tạo phông nền ảo sân khấu mùa xuân cho video biểu diễn.'
       },
       {
         w: 23,
@@ -466,7 +466,7 @@ export function getMusicSecondaryCurriculum(grade: string): RawSecondaryLesson[]
         t: 'Chủ đề 6: Âm nhạc nước ngoài',
         n: 'Chủ đề 6: Âm nhạc nước ngoài - Nhạc cụ: Recorder hoặc kèn phím & TTAN: Đàn cello và contrabass (1 tiết)',
         y: '- Luyện tập hòa tấu giai điệu bài Santa Lucia trên Recorder hoặc kèn phím.\n- Nhận biết hình dáng, kích thước lớn, âm sắc trầm ấm của đàn Cello và âm sắc cực trầm của Contrabass trong dàn nhạc giao hưởng.',
-        dc: '• [Mã NLS: 1.2.TC1a] Xem clip so sánh âm vực của 4 cây đàn thuộc họ vĩ cầm (Violin, Viola, Cello, Contrabass).\n• [Mã AI: 7.C5.1] Trải nghiệm AI nhận diện âm sắc nhạc cụ trong bản hòa tấu giao hưởng.'
+        dc: '• [Mã NLS: 1.1.TC1b] Xem clip so sánh âm vực của 4 cây đàn thuộc họ vĩ cầm (Violin, Viola, Cello, Contrabass).\n• [Mã AI: 7.C5.1] Trải nghiệm AI nhận diện âm sắc nhạc cụ trong bản hòa tấu giao hưởng.'
       },
       {
         w: 25,
@@ -480,7 +480,7 @@ export function getMusicSecondaryCurriculum(grade: string): RawSecondaryLesson[]
         t: 'Đánh giá định kỳ',
         n: 'Kiểm tra, đánh giá giữa Học kỳ 2 môn Âm nhạc Lớp 7',
         y: '- Đánh giá mức độ đạt chuẩn kiến thức, kĩ năng Hát, Đọc nhạc, Nhạc cụ và Nhạc lí từ Tuần 19 đến Tuần 25.\n- Đánh giá khả năng cảm thụ nhịp độ, sắc thái và kĩ năng diễn tấu.',
-        dc: '• [Mã NLS: 3.1.TC1a] Ghi âm bài thi thực hành lưu vào kho học liệu đánh giá số của nhà trường.\n• [Mã AI: 7.B3.1] Nêu cao tinh thần tự giác, trung thực trong thực hiện bài kiểm tra.'
+        dc: '• [Mã NLS: 3.1.TC1b] Ghi âm bài thi thực hành lưu vào kho học liệu đánh giá số của nhà trường.\n• [Mã AI: 7.B3.1] Nêu cao tinh thần tự giác, trung thực trong thực hiện bài kiểm tra.'
       },
       {
         w: 27,
@@ -501,7 +501,7 @@ export function getMusicSecondaryCurriculum(grade: string): RawSecondaryLesson[]
         t: 'Chủ đề 8: Mùa hè của em',
         n: 'Chủ đề 8: Mùa hè của em - Hát: Bài hát Mưa hè & Nghe nhạc: Ca khúc Hè về (1 tiết)',
         y: '- Hát đúng giai điệu, tiết tấu bài hát Mưa hè (Lê Quốc Thắng) với cảm xúc háo hức đón hè.\n- Lắng nghe và cảm thụ không khí rộn rã của bài hát Hè về (Hùng Lân).',
-        dc: '• [Mã NLS: 2.1.TC1a] Tìm kiếm các ca khúc chủ đề mùa hè và tuổi học trò trên nền tảng âm nhạc số.\n• [Mã AI: 7.C2.1] Khám phá cách AI gợi ý các bài hát có cùng tâm trạng và giai điệu mùa hè.'
+        dc: '• [Mã NLS: 2.1.TC1b] Tìm kiếm các ca khúc chủ đề mùa hè và tuổi học trò trên nền tảng âm nhạc số.\n• [Mã AI: 7.C2.1] Khám phá cách AI gợi ý các bài hát có cùng tâm trạng và giai điệu mùa hè.'
       },
       {
         w: 30,
@@ -515,7 +515,7 @@ export function getMusicSecondaryCurriculum(grade: string): RawSecondaryLesson[]
         t: 'Đánh giá định kỳ',
         n: 'Kiểm tra, đánh giá cuối Học kỳ 2 môn Âm nhạc Lớp 7',
         y: '- Đánh giá tổng kết mức độ hoàn thành chuẩn kiến thức, kĩ năng môn Âm nhạc Lớp 7 cả năm học.\n- Đánh giá sự tiến bộ về thẩm mỹ âm nhạc, kĩ năng biểu diễn và tinh thần hợp tác.',
-        dc: '• [Mã NLS: 3.1.TC1a] Ghi hình bài kiểm tra thực hành cuối năm phục vụ lưu trữ học bạ số.\n• [Mã AI: 7.A1.MR1] Học sinh tự đối chiếu phần trình diễn với bảng rubric tiêu chí đánh giá.'
+        dc: '• [Mã NLS: 3.2.TC1a] Ghi hình bài kiểm tra thực hành cuối năm phục vụ lưu trữ học bạ số.\n• [Mã AI: 7.A1.MR1] Học sinh tự đối chiếu phần trình diễn với bảng rubric tiêu chí đánh giá.'
       },
       {
         w: 32,
@@ -543,7 +543,7 @@ export function getMusicSecondaryCurriculum(grade: string): RawSecondaryLesson[]
         t: 'Tổng kết năm học',
         n: 'Tổng kết năm học & Đánh giá xếp loại môn Âm nhạc Lớp 7 cả năm (1 tiết)',
         y: '- Tổng kết, đánh giá xếp loại kết quả học tập và rèn luyện môn Âm nhạc Lớp 7 cả năm học.\n- Biểu dương thành tích xuất sắc và khuyến khích học sinh duy trì thói quen thưởng thức âm nhạc lành mạnh.',
-        dc: '• [Mã NLS: 2.4.TC1a] Đóng góp ý kiến khảo sát trực tuyến về chất lượng hoạt động âm nhạc trong năm học.\n• [Mã AI: 7.A1.1] Khẳng định vai trò làm chủ công nghệ và tình yêu nghệ thuật đích thực của con người trong kỉ nguyên số.'
+        dc: '• [Mã NLS: 2.1.TC1b] Đóng góp ý kiến khảo sát trực tuyến về chất lượng hoạt động âm nhạc trong năm học.\n• [Mã AI: 7.A1.1] Khẳng định vai trò làm chủ công nghệ và tình yêu nghệ thuật đích thực của con người trong kỉ nguyên số.'
       }
     ];
 
@@ -589,14 +589,14 @@ export function getMusicSecondaryCurriculum(grade: string): RawSecondaryLesson[]
         t: 'Chủ đề 1: Chào năm học mới',
         n: 'Chủ đề 1: Chào năm học mới - Vận dụng – Sáng tạo (Biểu diễn & Gõ đệm bài hát) (1 tiết)',
         y: '- Thực hành gõ đệm bằng nhạc cụ gõ cơ thể (body percussion) phức hợp hoặc hòa tấu kèn phím/recorder cho bài hát Chào năm học mới.\n- Biểu diễn tự tin theo nhóm kết hợp đội hình di chuyển linh hoạt.',
-        dc: '• [Mã NLS: 3.1.TC2a] Ghi lại video biểu diễn nhóm và chỉnh sửa hiệu ứng âm thanh chuyên nghiệp.\n• [Mã AI: 8.D2.1] Sử dụng AI tạo kịch bản phân công bè phối và vũ đạo phụ họa phù hợp với bài hát.'
+        dc: '• [Mã NLS: 3.2.TC2a] Ghi lại video biểu diễn nhóm và chỉnh sửa hiệu ứng âm thanh chuyên nghiệp.\n• [Mã AI: 8.D2.1] Sử dụng AI tạo kịch bản phân công bè phối và vũ đạo phụ họa phù hợp với bài hát.'
       },
       {
         w: 4,
         t: 'Chủ đề 2: Tôi yêu Việt Nam',
         n: 'Chủ đề 2: Tôi yêu Việt Nam - Bài 3: Hát Việt Nam ơi & Nghe nhạc Ngàn ước mơ Việt Nam (1 tiết)',
         y: '- Hát với cảm xúc tự hào, hào hùng, tràn đầy năng lượng bài hát Việt Nam ơi (Minh Beta).\n- Cảm nhận được khát vọng vươn lên và niềm tin yêu Tổ quốc qua ca khúc Ngàn ước mơ Việt Nam (Nguyễn Hồng Thuận).',
-        dc: '• [Mã NLS: 2.1.TC2a] Tìm kiếm và phân tích các video cổ động yêu nước có sử dụng ca khúc Việt Nam ơi.\n• [Mã AI: 8.B1.1] Thảo luận về việc bảo vệ quyền tác giả âm nhạc kỹ thuật số khi lan tỏa các ca khúc nổi tiếng.'
+        dc: '• [Mã NLS: 2.2.TC2c] Tìm kiếm và phân tích các video cổ động yêu nước có sử dụng ca khúc Việt Nam ơi.\n• [Mã AI: 8.B1.1] Thảo luận về việc bảo vệ quyền tác giả âm nhạc kỹ thuật số khi lan tỏa các ca khúc nổi tiếng.'
       },
       {
         w: 5,
@@ -610,7 +610,7 @@ export function getMusicSecondaryCurriculum(grade: string): RawSecondaryLesson[]
         t: 'Chủ đề 2: Tôi yêu Việt Nam',
         n: 'Chủ đề 2: Tôi yêu Việt Nam - Bài 4: TTAN: Dân ca Quan họ Bắc Ninh & Vận dụng – Sáng tạo (1 tiết)',
         y: '- Hiểu được nguồn gốc, lề lối ca hát và giá trị nhân văn của Dân ca Quan họ Bắc Ninh (Di sản văn hóa phi vật thể đại diện của nhân loại).\n- Thực hiện hoạt động Vận dụng - Sáng tạo mang đậm nét văn hóa Quan họ.',
-        dc: '• [Mã NLS: 1.2.TC2a] Truy cập kho tư liệu số hóa di sản văn hóa Quan họ của Viện Âm nhạc Việt Nam.\n• [Mã AI: 8.A1.1] Nhận thức về sự tinh tế trong lối hát "vang, rền, nền, nảy" độc nhất của con người mà công nghệ không thể thay thế.'
+        dc: '• [Mã NLS: 1.1.TC2b] Truy cập kho tư liệu số hóa di sản văn hóa Quan họ của Viện Âm nhạc Việt Nam.\n• [Mã AI: 8.A1.1] Nhận thức về sự tinh tế trong lối hát "vang, rền, nền, nảy" độc nhất của con người mà công nghệ không thể thay thế.'
       },
       {
         w: 7,
@@ -624,14 +624,14 @@ export function getMusicSecondaryCurriculum(grade: string): RawSecondaryLesson[]
         t: 'Chủ đề 3: Hoà ca',
         n: 'Chủ đề 3: Hoà ca - Bài 6: LTAN: Nhịp 3/8 & Đọc nhạc: Bài đọc nhạc số 2 (1 tiết)',
         y: '- Nắm vững định nghĩa nhịp 3/8 (mỗi ô nhịp có 3 phách, mỗi phách có giá trị bằng một nốt móc đơn).\n- Đọc chuẩn xác cao độ và trường độ Bài đọc nhạc số 2 viết ở nhịp 3/8.',
-        dc: '• [Mã NLS: 1.3.TC2a] Sử dụng phần mềm tạo nhịp số mô phỏng sự khác biệt giữa nhịp 3/4 và nhịp 3/8.\n• [Mã AI: 8.D1.1] Sử dụng AI tự động tạo các bài tập luyện đọc nốt ở nhịp 3/8 theo cấp độ từ dễ đến nâng cao.'
+        dc: '• [Mã NLS: 1.3.TC2b] Sử dụng phần mềm tạo nhịp số mô phỏng sự khác biệt giữa nhịp 3/4 và nhịp 3/8.\n• [Mã AI: 8.D1.1] Sử dụng AI tự động tạo các bài tập luyện đọc nốt ở nhịp 3/8 theo cấp độ từ dễ đến nâng cao.'
       },
       {
         w: 9,
         t: 'Đánh giá định kỳ',
         n: 'Kiểm tra, đánh giá giữa Học kỳ 1 môn Âm nhạc Lớp 8',
         y: '- Đánh giá mức độ đạt chuẩn kiến thức, kĩ năng Hát, Đọc nhạc, Nhạc cụ và Nhạc lí từ Tuần 1 đến Tuần 8.\n- Đánh giá khả năng cảm thụ nhịp 3/8, gam trưởng và kĩ năng diễn tấu nhạc cụ.',
-        dc: '• [Mã NLS: 3.1.TC2a] Ghi hình bài kiểm tra thực hành lưu vào hồ sơ đánh giá năng lực số của học sinh.\n• [Mã AI: 8.A3.3] Thực hiện trách nhiệm giải trình và tính trung thực trong quá trình đánh giá kết quả học tập.'
+        dc: '• [Mã NLS: 3.1.TC2b] Ghi hình bài kiểm tra thực hành lưu vào hồ sơ đánh giá năng lực số của học sinh.\n• [Mã AI: 8.A3.3] Thực hiện trách nhiệm giải trình và tính trung thực trong quá trình đánh giá kết quả học tập.'
       },
       {
         w: 10,
@@ -673,14 +673,14 @@ export function getMusicSecondaryCurriculum(grade: string): RawSecondaryLesson[]
         t: 'Ôn tập học kì 1',
         n: 'Ôn tập học kì 1: Ôn tập các bài hát, bài đọc nhạc và nhạc lí Chủ đề 3 & Chủ đề 4 (1 tiết)',
         y: '- Ôn luyện bài hát Ngàn ước mơ Việt Nam, Nơi ấy Trường Sa; Bài đọc nhạc số 2.\n- Củng cố lí thuyết gam trưởng, nhịp 3/8, thể loại hợp xướng và kiến thức về guitar, ukulele.',
-        dc: '• [Mã NLS: 2.1.TC2a] Tham gia ôn tập nhạc lí qua trò chơi trắc nghiệm trực tuyến nhiều người chơi.\n• [Mã AI: 8.D1.1] Chatbot AI hỗ trợ ôn tập tổng kết và giải đáp nhanh các bài tập nhạc lí nâng cao.'
+        dc: '• [Mã NLS: 2.5.TC2b] Tham gia ôn tập nhạc lí qua trò chơi trắc nghiệm trực tuyến nhiều người chơi.\n• [Mã AI: 8.D1.1] Chatbot AI hỗ trợ ôn tập tổng kết và giải đáp nhanh các bài tập nhạc lí nâng cao.'
       },
       {
         w: 16,
         t: 'Đánh giá định kỳ',
         n: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Âm nhạc Lớp 8',
         y: '- Đánh giá tổng hợp toàn diện kết quả học tập môn Âm nhạc Lớp 8 trong toàn bộ Học kỳ 1.\n- Phân hóa năng lực biểu diễn, nhạc lí và thẩm mỹ âm nhạc của học sinh.',
-        dc: '• [Mã NLS: 3.1.TC2a] Thu âm và lưu trữ bài kiểm tra vào học bạ số của học sinh.\n• [Mã AI: 8.A3.3] Thực hiện nghiêm túc quy chế kiểm tra đánh giá số hóa.'
+        dc: '• [Mã NLS: 3.2.TC2a] Thu âm và lưu trữ bài kiểm tra vào học bạ số của học sinh.\n• [Mã AI: 8.A3.3] Thực hiện nghiêm túc quy chế kiểm tra đánh giá số hóa.'
       },
       {
         w: 17,
@@ -710,14 +710,14 @@ export function getMusicSecondaryCurriculum(grade: string): RawSecondaryLesson[]
         t: 'Chủ đề 5: Chào xuân',
         n: 'Chủ đề 5: Chào xuân - Bài 10: LTAN: Nhịp 6/8 & Đọc nhạc: Bài đọc nhạc số 3 (1 tiết)',
         y: '- Nắm vững định nghĩa nhịp 6/8 (mỗi ô nhịp có 6 phách móc đơn, chia làm 2 phách chính mạnh - nhẹ, mang tính chất đu đưa nhịp nhàng).\n- Đọc chuẩn xác Bài đọc nhạc số 3 ở nhịp 6/8.',
-        dc: '• [Mã NLS: 1.3.TC2a] Sử dụng ứng dụng metronome số để luyện tập phân biệt phách chính và phách phụ trong nhịp 6/8.\n• [Mã AI: 8.D1.1] Dùng AI phân tích độ ổn định nhịp điệu khi đọc bài đọc nhạc số 3.'
+        dc: '• [Mã NLS: 1.3.TC2b] Sử dụng ứng dụng metronome số để luyện tập phân biệt phách chính và phách phụ trong nhịp 6/8.\n• [Mã AI: 8.D1.1] Dùng AI phân tích độ ổn định nhịp điệu khi đọc bài đọc nhạc số 3.'
       },
       {
         w: 21,
         t: 'Chủ đề 5: Chào xuân',
         n: 'Chủ đề 5: Chào xuân - Vận dụng – Sáng tạo (Biểu diễn & Gõ đệm mùa xuân) (1 tiết)',
         y: '- Vận dụng gõ đệm theo nhịp 6/8 hoặc hòa tấu nhạc cụ cho bài hát Ngày Tết quê em.\n- Sáng tạo động tác múa quạt, múa lụa mang đậm không khí Tết truyền thống.',
-        dc: '• [Mã NLS: 3.1.TC2a] Quay clip biểu diễn chúc Tết của nhóm và chia sẻ lên trang mạng học đường.\n• [Mã AI: 8.D2.1] Sử dụng AI gợi ý kịch bản lời chúc Tết gắn liền với giai điệu bài hát.'
+        dc: '• [Mã NLS: 3.1.TC2b] Quay clip biểu diễn chúc Tết của nhóm và chia sẻ lên trang mạng học đường.\n• [Mã AI: 8.D2.1] Sử dụng AI gợi ý kịch bản lời chúc Tết gắn liền với giai điệu bài hát.'
       },
       {
         w: 22,
@@ -745,21 +745,21 @@ export function getMusicSecondaryCurriculum(grade: string): RawSecondaryLesson[]
         t: 'Chủ đề 7: Giai điệu quê hương',
         n: 'Chủ đề 7: Giai điệu quê hương - Bài 13: Hát Soi bóng bên hồ & TTAN: Đàn nguyệt và đàn tính (1 tiết)',
         y: '- Hát đúng cao độ, giai điệu trong sáng mang âm hưởng dân ca miền núi phía Bắc bài Soi bóng bên hồ (Lê Minh Châu).\n- Nhận biết cấu tạo, âm sắc vang giòn của Đàn Nguyệt (đàn Kìm) và âm sắc ấm áp của Đàn Tính (đàn Then dân tộc Tày, Nùng).',
-        dc: '• [Mã NLS: 1.2.TC2a] Xem clip biểu diễn hát Then đàn Tính và độc tấu Đàn Nguyệt trong nghệ thuật Chèo, Chầu Văn.\n• [Mã AI: 8.A1.1] Tôn vinh tài năng chế tác đàn tính từ quả bầu khô của nghệ nhân truyền thống.'
+        dc: '• [Mã NLS: 1.2.TC2b] Xem clip biểu diễn hát Then đàn Tính và độc tấu Đàn Nguyệt trong nghệ thuật Chèo, Chầu Văn.\n• [Mã AI: 8.A1.1] Tôn vinh tài năng chế tác đàn tính từ quả bầu khô của nghệ nhân truyền thống.'
       },
       {
         w: 26,
         t: 'Đánh giá định kỳ',
         n: 'Kiểm tra, đánh giá giữa Học kỳ 2 môn Âm nhạc Lớp 8',
         y: '- Đánh giá mức độ đạt chuẩn kiến thức, kĩ năng Hát, Đọc nhạc, Nhạc cụ và Nhạc lí từ Tuần 19 đến Tuần 25.\n- Đánh giá khả năng phân biệt giọng trưởng - giọng thứ, nhịp 6/8 và nhạc cụ dân tộc.',
-        dc: '• [Mã NLS: 3.1.TC2a] Ghi âm và lưu trữ bài kiểm tra thực hành vào hồ sơ học sinh số.\n• [Mã AI: 8.A3.3] Thực hiện nghiêm túc quy trình kiểm tra đánh giá số hóa.'
+        dc: '• [Mã NLS: 3.2.TC2a] Ghi âm và lưu trữ bài kiểm tra thực hành vào hồ sơ học sinh số.\n• [Mã AI: 8.A3.3] Thực hiện nghiêm túc quy trình kiểm tra đánh giá số hóa.'
       },
       {
         w: 27,
         t: 'Chủ đề 7: Giai điệu quê hương',
         n: 'Chủ đề 7: Giai điệu quê hương - Bài 14: LTAN: Đảo phách & Đọc nhạc: Bài đọc nhạc số 5 & Vận dụng – Sáng tạo (1 tiết)',
         y: '- Hiểu rõ khái niệm đảo phách (âm nhấn xuất hiện ở phách nhẹ hoặc phần nhẹ của phách và kéo dài sang phách mạnh tiếp theo).\n- Đọc đúng cao độ và tiết tấu đảo phách trong Bài đọc nhạc số 5; thực hiện hoạt động Vận dụng - Sáng tạo.',
-        dc: '• [Mã NLS: 1.3.TC2a] Sử dụng phần mềm chép nhạc mô phỏng trực quan hiện tượng đảo phách trong ô nhịp.\n• [Mã AI: 8.C5.1] Trải nghiệm AI nhận diện các tiết tấu syncopation (đảo phách) trong các bản nhạc hiện đại.'
+        dc: '• [Mã NLS: 1.3.TC2b] Sử dụng phần mềm chép nhạc mô phỏng trực quan hiện tượng đảo phách trong ô nhịp.\n• [Mã AI: 8.C5.1] Trải nghiệm AI nhận diện các tiết tấu syncopation (đảo phách) trong các bản nhạc hiện đại.'
       },
       {
         w: 28,
@@ -787,7 +787,7 @@ export function getMusicSecondaryCurriculum(grade: string): RawSecondaryLesson[]
         t: 'Đánh giá định kỳ',
         n: 'Kiểm tra, đánh giá cuối Học kỳ 2 môn Âm nhạc Lớp 8',
         y: '- Đánh giá tổng kết mức độ hoàn thành chuẩn kiến thức, kĩ năng môn Âm nhạc Lớp 8 cả năm học.\n- Đánh giá năng lực thực hành nhạc cụ, đọc nhạc và thẩm mỹ âm nhạc của học sinh.',
-        dc: '• [Mã NLS: 3.1.TC2a] Ghi hình bài kiểm tra thực hành cuối năm phục vụ lưu trữ học bạ số.\n• [Mã AI: 8.A3.3] Tự đánh giá và đối chiếu năng lực âm nhạc cá nhân theo chuẩn đầu ra CT GDPT 2018.'
+        dc: '• [Mã NLS: 3.1.TC2b] Ghi hình bài kiểm tra thực hành cuối năm phục vụ lưu trữ học bạ số.\n• [Mã AI: 8.A3.3] Tự đánh giá và đối chiếu năng lực âm nhạc cá nhân theo chuẩn đầu ra CT GDPT 2018.'
       },
       {
         w: 32,
@@ -815,7 +815,7 @@ export function getMusicSecondaryCurriculum(grade: string): RawSecondaryLesson[]
         t: 'Tổng kết năm học',
         n: 'Tổng kết năm học & Đánh giá xếp loại môn Âm nhạc Lớp 8 cả năm (1 tiết)',
         y: '- Tổng kết, đánh giá xếp loại kết quả học tập và rèn luyện môn Âm nhạc Lớp 8.\n- Định hướng phát triển năng khiếu âm nhạc và nuôi dưỡng thẩm mỹ nghệ thuật lành mạnh.',
-        dc: '• [Mã NLS: 2.4.TC2a] Tham gia bình chọn và đóng góp ý kiến nâng cao chất lượng dạy học âm nhạc qua biểu mẫu số.\n• [Mã AI: 8.B2.1] Ý thức về việc tôn trọng bản quyền và văn hóa ứng xử văn minh trong không gian âm nhạc số.'
+        dc: '• [Mã NLS: 2.5.TC2b] Tham gia bình chọn và đóng góp ý kiến nâng cao chất lượng dạy học âm nhạc qua biểu mẫu số.\n• [Mã AI: 8.B2.1] Ý thức về việc tôn trọng bản quyền và văn hóa ứng xử văn minh trong không gian âm nhạc số.'
       }
     ];
 
@@ -853,28 +853,28 @@ export function getMusicSecondaryCurriculum(grade: string): RawSecondaryLesson[]
       t: 'Chủ đề 1: Nối vòng tay lớn',
       n: 'Chủ đề 1: Nối vòng tay lớn - Bài 2: LTAN: Sơ lược về quãng & TTAN: Nhạc sĩ Huy Du và ca khúc Đường chúng ta đi (1 tiết)',
       y: '- Hiểu định nghĩa quãng (khoảng cách cao độ giữa hai âm thanh), cách xác định tên quãng và tính chất quãng (quãng đúng, quãng trưởng, quãng thứ, quãng tăng, quãng giảm).\n- Nắm được cuộc đời, sự nghiệp của Nhạc sĩ Huy Du và giá trị hào hùng của ca khúc bất hủ Đường chúng ta đi.',
-      dc: '• [Mã NLS: 1.3.TC2a] Sử dụng phần mềm chép nhạc số để xây dựng và nghe thử các loại quãng khác nhau.\n• [Mã AI: 9.D1.1] Khám phá công cụ AI nhận diện và luyện tập nghe các loại quãng âm thanh (Ear Training AI).'
+      dc: '• [Mã NLS: 1.3.TC2b] Sử dụng phần mềm chép nhạc số để xây dựng và nghe thử các loại quãng khác nhau.\n• [Mã AI: 9.D1.1] Khám phá công cụ AI nhận diện và luyện tập nghe các loại quãng âm thanh (Ear Training AI).'
     },
     {
       w: 3,
       t: 'Chủ đề 1: Nối vòng tay lớn',
       n: 'Chủ đề 1: Nối vòng tay lớn - Vận dụng – Sáng tạo (1 tiết)',
       y: '- Thực hành biểu diễn bài hát Nối vòng tay lớn kết hợp hòa âm, phụ họa theo nhóm.\n- Tự tin thể hiện sự gắn kết và tinh thần đoàn kết học đường.',
-      dc: '• [Mã NLS: 3.1.TC2a] Ghi lại video biểu diễn nhóm và biên tập clip ngắn có chèn hiệu ứng âm nhạc chuyên nghiệp.\n• [Mã AI: 9.D1.1] Sử dụng AI hỗ trợ phối ghép âm thanh và cân bằng âm lượng tự động.'
+      dc: '• [Mã NLS: 3.2.TC2a] Ghi lại video biểu diễn nhóm và biên tập clip ngắn có chèn hiệu ứng âm nhạc chuyên nghiệp.\n• [Mã AI: 9.D1.1] Sử dụng AI hỗ trợ phối ghép âm thanh và cân bằng âm lượng tự động.'
     },
     {
       w: 4,
       t: 'Chủ đề 2: Khát vọng tuổi trẻ',
       n: 'Chủ đề 2: Khát vọng tuổi trẻ - Bài 3: Hát Bảy sắc cầu vồng & Nghe nhạc Thời thanh niên sôi nổi (1 tiết)',
       y: '- Hát với cảm xúc trong sáng, tươi vui bài Bảy sắc cầu vồng (Nhạc: Hoàng Vân; Lời: Phỏng thơ Như Mai).\n- Lắng nghe và cảm thụ khí thế hào hùng, tràn đầy nhiệt huyết tuổi trẻ của ca khúc nước Nga Thời thanh niên sôi nổi.',
-      dc: '• [Mã NLS: 2.1.TC2a] Tìm hiểu hoàn cảnh sáng tác và các bản hòa tấu giao hưởng bài Thời thanh niên sôi nổi.\n• [Mã AI: 9.A1.1] Thảo luận về việc gìn giữ tinh thần nhiệt huyết của con người trong kỉ nguyên số và tự động hóa.'
+      dc: '• [Mã NLS: 2.1.TC2b] Tìm hiểu hoàn cảnh sáng tác và các bản hòa tấu giao hưởng bài Thời thanh niên sôi nổi.\n• [Mã AI: 9.A1.1] Thảo luận về việc gìn giữ tinh thần nhiệt huyết của con người trong kỉ nguyên số và tự động hóa.'
     },
     {
       w: 5,
       t: 'Chủ đề 2: Khát vọng tuổi trẻ',
       n: 'Chủ đề 2: Khát vọng tuổi trẻ - Bài 4: Nhạc cụ: Recorder hoặc kèn phím & TTAN: Kèn oboe và kèn cor (1 tiết)',
       y: '- Luyện tập hòa tấu giai điệu bài Bảy sắc cầu vồng trên Recorder hoặc kèn phím.\n- Nhận biết hình dáng, âm sắc đượm buồn da diết của kèn Oboe (nhạc cụ hơi gỗ) và âm sắc dũng mãnh, ấm áp của kèn Cor (kèn săn, kèn hơi đồng) trong dàn nhạc giao hưởng.',
-      dc: '• [Mã NLS: 1.2.TC2a] Xem clip so sánh âm sắc các loại kèn trong dàn nhạc giao hưởng quốc tế.\n• [Mã AI: 9.C2.1] Trải nghiệm AI mô phỏng âm thanh kèn Oboe và Cor trong phần mềm sáng tác nhạc.'
+      dc: '• [Mã NLS: 1.1.TC2b] Xem clip so sánh âm sắc các loại kèn trong dàn nhạc giao hưởng quốc tế.\n• [Mã AI: 9.C2.1] Trải nghiệm AI mô phỏng âm thanh kèn Oboe và Cor trong phần mềm sáng tác nhạc.'
     },
     {
       w: 6,
@@ -902,7 +902,7 @@ export function getMusicSecondaryCurriculum(grade: string): RawSecondaryLesson[]
       t: 'Đánh giá định kỳ',
       n: 'Kiểm tra, đánh giá giữa Học kỳ 1 môn Âm nhạc Lớp 9',
       y: '- Đánh giá mức độ đạt chuẩn kiến thức, kĩ năng Hát, Đọc nhạc, Nhạc cụ và Nhạc lí từ Tuần 1 đến Tuần 8.\n- Đánh giá năng lực nhạc lí nâng cao (quãng, dịch giọng, nhạc đàn) và kĩ năng biểu diễn.',
-      dc: '• [Mã NLS: 3.1.TC2a] Ghi hình bài kiểm tra thực hành lưu vào học bạ số của học sinh.\n• [Mã AI: 9.A3.1] Thực hiện đánh giá trung thực, phát huy tinh thần tự học và tự hoàn thiện bản thân.'
+      dc: '• [Mã NLS: 3.1.TC2b] Ghi hình bài kiểm tra thực hành lưu vào học bạ số của học sinh.\n• [Mã AI: 9.A3.1] Thực hiện đánh giá trung thực, phát huy tinh thần tự học và tự hoàn thiện bản thân.'
     },
     {
       w: 10,
@@ -930,28 +930,28 @@ export function getMusicSecondaryCurriculum(grade: string): RawSecondaryLesson[]
       t: 'Chủ đề 4: Giai điệu quê hương',
       n: 'Chủ đề 4: Giai điệu quê hương - Bài 8: Nhạc cụ: Recorder hoặc kèn phím & Vận dụng – Sáng tạo (1 tiết)',
       y: '- Luyện tập hòa tấu giai điệu bài Lí ngựa ô trên Recorder hoặc kèn phím kết hợp gõ đệm phách.\n- Hoàn thành hoạt động Vận dụng - Sáng tạo mang đậm nét văn hóa truyền thống.',
-      dc: '• [Mã NLS: 3.1.TC2a] Thu âm và biên tập clip hòa tấu nhạc cụ dân gian của nhóm.\n• [Mã AI: 9.D1.1] Ứng dụng AI tạo hiệu ứng âm thanh tiếng vó ngựa gõ đệm sinh động cho bài biểu diễn.'
+      dc: '• [Mã NLS: 3.2.TC2a] Thu âm và biên tập clip hòa tấu nhạc cụ dân gian của nhóm.\n• [Mã AI: 9.D1.1] Ứng dụng AI tạo hiệu ứng âm thanh tiếng vó ngựa gõ đệm sinh động cho bài biểu diễn.'
     },
     {
       w: 14,
       t: 'Ôn tập học kì 1',
       n: 'Ôn tập học kì 1: Ôn tập các bài hát, bài đọc nhạc và nhạc cụ Chủ đề 1 & Chủ đề 2 (1 tiết)',
       y: '- Củng cố kĩ năng biểu diễn bài Nối vòng tay lớn, Bảy sắc cầu vồng.\n- Đọc thuần thục Bài đọc nhạc số 1 và hòa tấu nhạc cụ nhuần nhuyễn.',
-      dc: '• [Mã NLS: 1.3.TC2a] Tổ chức kho tài liệu học tập âm nhạc HK1 trên ổ đĩa trực tuyến cá nhân.\n• [Mã AI: 9.A2.2] Đánh giá khách quan chất lượng các bản thu cá nhân bằng phần mềm phân tích giọng hát.'
+      dc: '• [Mã NLS: 1.3.TC2b] Tổ chức kho tài liệu học tập âm nhạc HK1 trên ổ đĩa trực tuyến cá nhân.\n• [Mã AI: 9.A2.2] Đánh giá khách quan chất lượng các bản thu cá nhân bằng phần mềm phân tích giọng hát.'
     },
     {
       w: 15,
       t: 'Ôn tập học kì 1',
       n: 'Ôn tập học kì 1: Ôn tập các bài hát, bài đọc nhạc và nhạc lí Chủ đề 3 & Chủ đề 4 (1 tiết)',
       y: '- Ôn luyện bài hát Tháng năm học trò, Lí ngựa ô; Bài đọc nhạc số 2.\n- Củng cố kiến thức về quãng, dịch giọng, các thể loại nhạc đàn và Nhã nhạc Cung đình Huế.',
-      dc: '• [Mã NLS: 2.1.TC2a] Tham gia đấu trường tri thức âm nhạc trực tuyến giữa các lớp khối 9.\n• [Mã AI: 9.D1.1] Tương tác với chatbot AI giải đáp các câu hỏi hóc búa về nhạc lí nâng cao.'
+      dc: '• [Mã NLS: 2.2.TC2c] Tham gia đấu trường tri thức âm nhạc trực tuyến giữa các lớp khối 9.\n• [Mã AI: 9.D1.1] Tương tác với chatbot AI giải đáp các câu hỏi hóc búa về nhạc lí nâng cao.'
     },
     {
       w: 16,
       t: 'Đánh giá định kỳ',
       n: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Âm nhạc Lớp 9',
       y: '- Đánh giá tổng hợp toàn diện kết quả học tập môn Âm nhạc Lớp 9 trong toàn bộ Học kỳ 1.\n- Phân hóa năng lực nhạc lí, kĩ năng biểu diễn và cảm thụ nghệ thuật của học sinh cuối cấp.',
-      dc: '• [Mã NLS: 3.1.TC2a] Ghi hình và lưu trữ bài kiểm tra vào hồ sơ học sinh THCS.\n• [Mã AI: 9.A3.1] Nâng cao ý thức trách nhiệm và tính tự giác trung thực trong đánh giá.'
+      dc: '• [Mã NLS: 3.1.TC2b] Ghi hình và lưu trữ bài kiểm tra vào hồ sơ học sinh THCS.\n• [Mã AI: 9.A3.1] Nâng cao ý thức trách nhiệm và tính tự giác trung thực trong đánh giá.'
     },
     {
       w: 17,
@@ -988,7 +988,7 @@ export function getMusicSecondaryCurriculum(grade: string): RawSecondaryLesson[]
       t: 'Chủ đề 5: Trái đất xanh',
       n: 'Chủ đề 5: Trái đất xanh - Vận dụng – Sáng tạo (Biểu diễn bảo vệ hành tinh xanh) (1 tiết)',
       y: '- Biểu diễn bài hát Ngôi nhà của chúng ta kết hợp hòa tấu nhạc cụ và thuyết trình thông điệp bảo vệ môi trường.\n- Nâng cao ý thức công dân toàn cầu gìn giữ hành tinh xanh.',
-      dc: '• [Mã NLS: 3.1.TC2a] Ghi hình bài biểu diễn và biên tập video tuyên truyền môi trường trên mạng xã hội học đường.\n• [Mã AI: 9.D1.1] Dùng AI tạo các slide thuyết trình trực quan về biến đổi khí hậu lồng ghép vào tiết mục.'
+      dc: '• [Mã NLS: 3.2.TC2a] Ghi hình bài biểu diễn và biên tập video tuyên truyền môi trường trên mạng xã hội học đường.\n• [Mã AI: 9.D1.1] Dùng AI tạo các slide thuyết trình trực quan về biến đổi khí hậu lồng ghép vào tiết mục.'
     },
     {
       w: 22,
@@ -1002,7 +1002,7 @@ export function getMusicSecondaryCurriculum(grade: string): RawSecondaryLesson[]
       t: 'Chủ đề 6: Tiếng hát hoà bình',
       n: 'Chủ đề 6: Tiếng hát hoà bình - Bài 12: Nhạc cụ: Recorder hoặc kèn phím & TTAN: Đàn đá và đàn đáy (1 tiết)',
       y: '- Luyện tập hòa tấu giai điệu bài Nụ cười trên Recorder hoặc kèn phím.\n- Nhận biết cấu tạo, nguồn gốc tiền sử và âm sắc nguyên sơ, vang vọng của Đàn Đá; nắm được cấu tạo 3 dây độc đáo và vai trò của Đàn Đáy trong nghệ thuật Ca Trù.',
-      dc: '• [Mã NLS: 1.2.TC2a] Xem clip nghệ nhân biểu diễn Đàn Đá Tây Nguyên và nghệ nhân Ca Trù gảy Đàn Đáy.\n• [Mã AI: 9.A1.1] Khẳng định giá trị độc bản của Đàn Đá và Đàn Đáy Việt Nam trong kho tàng nhạc khí nhân loại.'
+      dc: '• [Mã NLS: 1.2.TC2b] Xem clip nghệ nhân biểu diễn Đàn Đá Tây Nguyên và nghệ nhân Ca Trù gảy Đàn Đáy.\n• [Mã AI: 9.A1.1] Khẳng định giá trị độc bản của Đàn Đá và Đàn Đáy Việt Nam trong kho tàng nhạc khí nhân loại.'
     },
     {
       w: 24,
@@ -1023,21 +1023,21 @@ export function getMusicSecondaryCurriculum(grade: string): RawSecondaryLesson[]
       t: 'Đánh giá định kỳ',
       n: 'Kiểm tra, đánh giá giữa Học kỳ 2 môn Âm nhạc Lớp 9',
       y: '- Đánh giá mức độ đạt chuẩn kiến thức, kĩ năng Hát, Đọc nhạc, Nhạc cụ và Nhạc lí từ Tuần 19 đến Tuần 25.\n- Đánh giá khả năng cảm thụ hợp âm, nhạc cụ dân tộc và năng lực biểu diễn ca khúc nước ngoài.',
-      dc: '• [Mã NLS: 3.1.TC2a] Ghi âm và lưu trữ bài kiểm tra vào hồ sơ đánh giá năng lực số của học sinh.\n• [Mã AI: 9.A3.1] Thực hiện tự kiểm chứng và nghiêm túc tuân thủ quy chế kiểm tra.'
+      dc: '• [Mã NLS: 3.1.TC2b] Ghi âm và lưu trữ bài kiểm tra vào hồ sơ đánh giá năng lực số của học sinh.\n• [Mã AI: 9.A3.1] Thực hiện tự kiểm chứng và nghiêm túc tuân thủ quy chế kiểm tra.'
     },
     {
       w: 27,
       t: 'Chủ đề 7: Âm nhạc nước ngoài',
       n: 'Chủ đề 7: Âm nhạc nước ngoài - Bài 14: LTAN: Một số hợp âm của giọng Đô trưởng và giọng La thứ & Đọc nhạc: Bài đọc nhạc số 4 (1 tiết)',
       y: '- Nhận biết và bấm được các hợp âm cơ bản của giọng Đô trưởng (C, Dm, Em, F, G, Am) và giọng La thứ (Am, Bdim, C, Dm, Em, F, G/E7) trên đàn phím hoặc đàn guitar.\n- Đọc chuẩn xác Bài đọc nhạc số 4 có ứng dụng hợp âm đệm.',
-      dc: '• [Mã NLS: 1.3.TC2a] Sử dụng phần mềm chép nhạc để lập bảng tra cứu thế bấm hợp âm giọng Đô trưởng và La thứ.\n• [Mã AI: 9.D1.1] Trải nghiệm AI tự động bắt hợp âm cho file âm thanh bài hát bất kỳ.'
+      dc: '• [Mã NLS: 1.3.TC2b] Sử dụng phần mềm chép nhạc để lập bảng tra cứu thế bấm hợp âm giọng Đô trưởng và La thứ.\n• [Mã AI: 9.D1.1] Trải nghiệm AI tự động bắt hợp âm cho file âm thanh bài hát bất kỳ.'
     },
     {
       w: 28,
       t: 'Chủ đề 8: Một thời để nhớ',
       n: 'Chủ đề 8: Một thời để nhớ - Bài 15: Hát Một thời để nhớ & Nghe nhạc Khi tóc thầy bạc trắng (1 tiết)',
       y: '- Hát với cảm xúc bồi hồi, tha thiết, khắc sâu tình bạn bài hát Một thời để nhớ (Nguyễn Văn Hiên).\n- Lắng nghe và cảm nhận lòng tri ân sâu nặng với thầy cô qua ca khúc Khi tóc thầy bạc trắng (Trần Đức).',
-      dc: '• [Mã NLS: 2.1.TC2a] Tìm kiếm và sưu tầm các tác phẩm âm nhạc về thời học sinh cuối cấp trên kho tư liệu số.\n• [Mã AI: 9.A1.1] Khẳng định cảm xúc thiêng liêng về tình thầy trò của con người là giá trị nhân văn cốt lõi không thể thay thế.'
+      dc: '• [Mã NLS: 2.5.TC2b] Tìm kiếm và sưu tầm các tác phẩm âm nhạc về thời học sinh cuối cấp trên kho tư liệu số.\n• [Mã AI: 9.A1.1] Khẳng định cảm xúc thiêng liêng về tình thầy trò của con người là giá trị nhân văn cốt lõi không thể thay thế.'
     },
     {
       w: 29,
@@ -1058,7 +1058,7 @@ export function getMusicSecondaryCurriculum(grade: string): RawSecondaryLesson[]
       t: 'Đánh giá định kỳ',
       n: 'Kiểm tra, đánh giá cuối Học kỳ 2 môn Âm nhạc Lớp 9',
       y: '- Đánh giá tổng kết mức độ hoàn thành chuẩn đầu ra môn Âm nhạc cấp THCS theo Chương trình GDPT 2018.\n- Đánh giá toàn diện phẩm chất, năng lực thẩm mỹ âm nhạc và khả năng thực hành nghệ thuật.',
-      dc: '• [Mã NLS: 3.1.TC2a] Lưu trữ toàn bộ hồ sơ đánh giá và video thi thực hành vào học bạ điện tử cấp THCS.\n• [Mã AI: 9.A3.1] Khẳng định sự trưởng thành về năng lực tự chủ và trách nhiệm trong học tập.'
+      dc: '• [Mã NLS: 3.2.TC2a] Lưu trữ toàn bộ hồ sơ đánh giá và video thi thực hành vào học bạ điện tử cấp THCS.\n• [Mã AI: 9.A3.1] Khẳng định sự trưởng thành về năng lực tự chủ và trách nhiệm trong học tập.'
     },
     {
       w: 32,
@@ -1086,7 +1086,7 @@ export function getMusicSecondaryCurriculum(grade: string): RawSecondaryLesson[]
       t: 'Tổng kết năm học',
       n: 'Tổng kết năm học & Đánh giá xếp loại môn Âm nhạc Lớp 9 cả năm (1 tiết)',
       y: '- Tổng kết, đánh giá xếp loại kết quả học tập và rèn luyện môn Âm nhạc Lớp 9 và toàn khóa THCS.\n- Chúc mừng học sinh hoàn thành chương trình môn Âm nhạc cấp THCS và sẵn sàng bước vào bậc THPT.',
-      dc: '• [Mã NLS: 2.4.TC2a] Lưu trữ và chia sẻ kỉ yếu âm nhạc điện tử của khối 9 lên thư viện số nhà trường.\n• [Mã AI: 9.D1.1] Lan tỏa tình yêu âm nhạc và năng lực số vững vàng bước vào tương lai.'
+      dc: '• [Mã NLS: 2.1.TC2b] Lưu trữ và chia sẻ kỉ yếu âm nhạc điện tử của khối 9 lên thư viện số nhà trường.\n• [Mã AI: 9.D1.1] Lan tỏa tình yêu âm nhạc và năng lực số vững vàng bước vào tương lai.'
     }
   ];
 

@@ -31,7 +31,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         n: 'Bài 1: Tôi và các bạn - Đọc: Bài học đường đời đầu tiên (Tô Hoài) & Thực hành tiếng Việt: Từ đơn và từ phức (4 tiết)',
         y: '- Đọc hiểu văn bản truyện: nhận biết cốt truyện, nhân vật Dế Mèn, Dế Choắt; bài học về thói hung hăng, kiêu ngạo.\n- Nhận diện và phân biệt từ đơn, từ phức (từ ghép, từ láy) và hiểu tác dụng của chúng trong diễn đạt.',
         eq: 'Tranh ảnh minh họa truyện Dế Mèn phiêu lưu ký, phiếu học tập',
-        nlsCode: '1.1.TC1a',
+        nlsCode: '1.1.TC1c',
         aiCode: '6.A1.1'
       },
       {
@@ -40,7 +40,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         n: 'Bài 1: Tôi và các bạn - Đọc: Nếu cậu muốn có một người bạn... (Trích Hoàng tử bé) & Bắt nạt (Nguyễn Thế Hoàng Linh) & Thực hành tiếng Việt (4 tiết)',
         y: '- Hiểu ý nghĩa tình bạn, sự gắn kết và tinh thần trách nhiệm trong đoạn trích Hoàng tử bé.\n- Phân tích thái độ phê phán hành vi bắt nạt học đường trong bài thơ Bắt nạt; mở rộng vốn từ về tình bạn.',
         eq: 'Video/Audio đọc thơ Bắt nạt, trích đoạn Hoàng tử bé, máy chiếu',
-        nlsCode: '2.1.TC1a',
+        nlsCode: '2.2.TC1c',
         aiCode: '6.C2.2'
       },
       {
@@ -49,7 +49,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         n: 'Bài 1: Viết bài văn kể lại một trải nghiệm của em & Nói và nghe & Thực hành đọc: Những người bạn (Nguyễn Nhật Ánh) & Bài 2: Gõ cửa trái tim (4 tiết)',
         y: '- Nắm vững quy trình viết bài văn tự sự kể lại trải nghiệm của bản thân bằng ngôi thứ nhất.\n- Trình bày bài nói tự tin; đọc mở rộng tác phẩm Những người bạn và bắt đầu làm quen chủ đề Gõ cửa trái tim.',
         eq: 'Phiếu hướng dẫn lập dàn ý, bảng tiêu chí đánh giá bài nói',
-        nlsCode: '3.1.TC1a',
+        nlsCode: '3.2.TC1a',
         aiCode: '6.A1.3'
       },
       {
@@ -94,7 +94,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         n: 'Bài 3: Yêu thương và chia sẻ - Đọc: Gió lạnh đầu mùa (Thạch Lam) & Con chào mào (Mai Văn Phấn) & Thực hành tiếng Việt (4 tiết)',
         y: '- Cảm nhận tình người ấm áp, sự sẻ chia của những đứa trẻ nghèo trong truyện ngắn Thạch Lam.\n- Thưởng thức vẻ đẹp thiên nhiên và tình yêu tự do trong bài thơ Con chào mào; thực hành cụm động từ, cụm tính từ.',
         eq: 'Văn bản Gió lạnh đầu mùa, phiếu học tập so sánh nhân vật',
-        nlsCode: '2.4.TC1a',
+        nlsCode: '2.5.TC1b',
         aiCode: '6.A1.3'
       },
       {
@@ -114,7 +114,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         p: 2,
         y: '- Đánh giá chuẩn năng lực đọc hiểu và kĩ năng viết đoạn văn/bài văn môn Ngữ văn 6 theo ma trận đề Bộ GD&ĐT (thời gian làm bài 90 phút).\n- Đánh giá khả năng cảm thụ văn học, tư duy độc lập và tính trung thực trong kiểm tra.',
         eq: 'Đề kiểm tra giữa kỳ 1 chuẩn, ma trận và hướng dẫn chấm',
-        nlsCode: '4.1.TC1a',
+        nlsCode: '4.1.TC1c',
         aiCode: '6.A3.3'
       },
       {
@@ -150,7 +150,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         n: 'Bài 4: Tập làm một bài thơ lục bát; Viết đoạn văn thể hiện cảm xúc về một bài thơ lục bát & Nói và nghe & Bài 5: Những nẻo đường xứ sở (4 tiết)',
         y: '- Thực hành tập làm thơ lục bát đúng luật; viết đoạn văn biểu cảm về bài thơ lục bát; thuyết trình về tình yêu quê hương.\n- Đọc mở rộng Hành trình của bầy ong; bắt đầu chủ đề Những nẻo đường xứ sở.',
         eq: 'Phiếu sáng tác thơ lục bát, tiêu chí đánh giá bài thuyết trình',
-        nlsCode: '3.1.TC1a',
+        nlsCode: '3.1.TC1b',
         aiCode: '6.D1.1'
       },
       {
@@ -159,7 +159,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         n: 'Bài 5: Những nẻo đường xứ sở - Đọc: Cô Tô (Nguyễn Tuân) & Thực hành tiếng Việt: Nghệ thuật miêu tả, so sánh (4 tiết)',
         y: '- Thưởng thức cảnh sắc biển đảo Cô Tô tuyệt đẹp, trong trẻo qua ngòi bút tài hoa, độc đáo của Nguyễn Tuân.\n- Nhận diện và phân tích nghệ thuật dùng từ ngữ gợi cảm, hình ảnh so sánh đặc sắc trong bài ký.',
         eq: 'Hình ảnh, video phóng sự về đảo Cô Tô, bản đồ địa lí Quảng Ninh',
-        nlsCode: '1.3.TC1a',
+        nlsCode: '1.3.TC1b',
         aiCode: '6.C2.2'
       },
       {
@@ -178,7 +178,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         p: 2,
         y: '- Hệ thống hóa toàn diện kiến thức đọc hiểu thể loại, tiếng Việt và phương pháp viết các kiểu văn bản trong toàn bộ Học kỳ 1.\n- Rèn luyện kĩ năng viết bài văn hoàn chỉnh có cảm xúc và sáng tạo.',
         eq: 'Đề cương ôn tập cuối HK1, bảng hệ thống thể loại',
-        nlsCode: '3.1.TC1a',
+        nlsCode: '3.2.TC1a',
         aiCode: '6.A1.3'
       },
       {
@@ -197,7 +197,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         n: 'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức Ngữ văn 6 HK1 (4 tiết)',
         y: '- Nhận xét, chữa bài kiểm tra cuối HK1; chỉ ra ưu điểm và khắc phục các lỗi diễn đạt, chính tả, ngữ pháp.\n- Hệ thống hóa các kiến thức đọc hiểu, tiếng Việt và phương pháp viết các kiểu bài trong HK1.',
         eq: 'Bài làm học sinh, bảng tổng hợp lỗi sai, sơ đồ tư duy ôn tập',
-        nlsCode: '5.2.TC1a',
+        nlsCode: '5.2.TC1b',
         aiCode: '6.D1.1'
       },
       {
@@ -206,7 +206,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         n: 'Sơ kết Học kỳ 1 & Báo cáo sản phẩm Đọc hiểu văn học Lớp 6 (4 tiết)',
         y: '- Sơ kết kết quả học tập môn Ngữ văn HK1; trình bày các sản phẩm sáng tạo (tập san, tranh vẽ, poster giới thiệu sách).\n- Rèn luyện kỹ năng làm việc nhóm, tự đánh giá và xây dựng mục tiêu phấn đấu trong HK2.',
         eq: 'Sản phẩm tập san, video giới thiệu sách của học sinh',
-        nlsCode: '2.4.TC1b',
+        nlsCode: '2.4.TC1a',
         aiCode: '6.C2.2'
       },
 
@@ -217,7 +217,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         n: 'Bài 6: Chuyện kể về những người anh hùng - Đọc: Thánh Gióng & Sơn Tinh, Thuỷ Tinh & Thực hành tiếng Việt (4 tiết)',
         y: '- Nắm vững đặc trưng thể loại truyền thuyết: nhân vật anh hùng, chi tiết kì ảo, cốt lõi lịch sử.\n- Tự hào về tinh thần chống giặc cứu nước và khát vọng chế ngự thiên tai; thực hành dấu chấm phẩy, dấu ngoặc kép.',
         eq: 'Tranh minh họa Thánh Gióng, Sơn Tinh Thủy Tinh, phiếu học tập',
-        nlsCode: '1.1.TC1a',
+        nlsCode: '1.1.TC1d',
         aiCode: '6.A1.1'
       },
       {
@@ -226,7 +226,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         n: 'Bài 6: Chuyện kể về những người anh hùng - Đọc: Ai ơi mồng 9 tháng 4 & Viết: Bài văn thuyết minh thuật lại một sự kiện & Kể lại một truyền thuyết (4 tiết)',
         y: '- Hiểu nét đẹp văn hóa lễ hội Gióng; nắm cấu trúc và viết bài văn thuyết minh thuật lại một sự kiện sinh hoạt văn hóa.\n- Nói và nghe: tự tin kể lại một truyện truyền thuyết bằng giọng điệu truyền cảm; đọc mở rộng Bánh chưng, bánh giầy.',
         eq: 'Video tư liệu Lễ hội Gióng Đền Phù Đổng, phiếu dàn ý bài thuyết minh',
-        nlsCode: '3.1.TC1a',
+        nlsCode: '3.1.TC1b',
         aiCode: '6.C2.2'
       },
       {
@@ -235,7 +235,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         n: 'Bài 7: Thế giới cổ tích - Đọc: Thạch Sanh & Cây khế & Thực hành tiếng Việt: Trạng ngữ (4 tiết)',
         y: '- Nhận biết đặc trưng truyện cổ tích: xung đột thiện - ác, nhân vật dũng sĩ/bất hạnh, yếu tố thần kì và ước mơ công lý.\n- Nhận diện các loại trạng ngữ (thời gian, nơi chốn, nguyên nhân, mục đích) và tác dụng liên kết câu.',
         eq: 'Bộ tranh truyện cổ tích Thạch Sanh, Cây khế, phiếu bài tập trạng ngữ',
-        nlsCode: '1.2.TC1a',
+        nlsCode: '1.2.TC1b',
         aiCode: '6.B1.1'
       },
       {
@@ -271,7 +271,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         n: 'Bài 8: Nói và nghe: Trình bày ý kiến về một hiện tượng đời sống & Bài 9: Trái Đất - ngôi nhà chung - Đọc: Trái Đất - cái nôi của sự sống (4 tiết)',
         y: '- Thuyết trình tự tin về vấn đề tôn trọng sự khác biệt trong học đường; đọc hiểu văn bản thông tin Trái Đất - cái nôi của sự sống.\n- Đọc mở rộng Tiếng cười không muốn nghe; nhận biết các yếu tố sa-pô, đề mục, hình ảnh trong văn bản thông tin.',
         eq: 'Hình ảnh Trái Đất nhìn từ vũ trụ, bảng tiêu chí tranh biện nói - nghe',
-        nlsCode: '2.1.TC1a',
+        nlsCode: '2.5.TC1b',
         aiCode: '6.A1.1'
       },
       {
@@ -291,7 +291,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         p: 2,
         y: '- Đánh giá chuẩn kiến thức, kĩ năng môn Ngữ văn 6 từ Tuần 19 đến Tuần 25 theo ma trận chuẩn Bộ GD&ĐT (thời gian làm bài 90 phút).\n- Đánh giá năng lực tiếp nhận văn học và năng lực tạo lập văn bản.',
         eq: 'Đề kiểm tra giữa kỳ 2 chuẩn, ma trận và hướng dẫn chấm',
-        nlsCode: '4.1.TC1a',
+        nlsCode: '4.2.TC1b',
         aiCode: '6.A3.3'
       },
       {
@@ -309,7 +309,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         n: 'Bài 9: Trái Đất - ngôi nhà chung - Viết: Biên bản cuộc họp, cuộc thảo luận; Tóm tắt bằng sơ đồ & Thảo luận môi trường (4 tiết)',
         y: '- Nắm vững thể thức và viết đúng quy chuẩn một biên bản cuộc họp/thảo luận; biết tóm tắt văn bản bằng sơ đồ trực quan.\n- Nói và nghe: Thảo luận về các giải pháp thiết thực khắc phục ô nhiễm môi trường và giảm thiểu rác thải nhựa.',
         eq: 'Mẫu văn bản biên bản chuẩn, phần mềm vẽ sơ đồ tư duy Canva/Mindmap',
-        nlsCode: '3.1.TC1a',
+        nlsCode: '3.2.TC1a',
         aiCode: '6.C2.2'
       },
       {
@@ -337,7 +337,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         p: 2,
         y: '- Ôn tập hệ thống hóa toàn bộ kiến thức môn Ngữ văn 6 cả năm học: Đọc hiểu thể loại, Tiếng Việt, Viết, Nói và nghe.\n- Rèn luyện kỹ năng phân tích văn bản ngoài sách giáo khoa.',
         eq: 'Đề cương ôn tập cuối năm môn Ngữ văn',
-        nlsCode: '3.1.TC1a',
+        nlsCode: '3.1.TC1b',
         aiCode: '6.A1.3'
       },
       {
@@ -365,7 +365,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         n: 'Dự án Ngữ văn 6: "Tuyển tập Tác phẩm Văn học Thiếu nhi & Sân khấu hóa Truyện cổ tích" (4 tiết)',
         y: '- Thực hiện dự án sân khấu hóa một truyện truyền thuyết/cổ tích hoặc triển lãm tuyển tập truyện ngắn tự sáng tác.\n- Phát triển năng lực biểu đạt thẩm mỹ, làm việc nhóm và ứng dụng công nghệ số làm tư liệu sân khấu.',
         eq: 'Kịch bản sân khấu hóa, đạo cụ, video ghi hình tiết mục',
-        nlsCode: '2.4.TC1b',
+        nlsCode: '2.4.TC1a',
         aiCode: '6.C2.2'
       },
       {
@@ -419,7 +419,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         n: 'Bài 1: Bầu trời tuổi thơ - Đọc: Bầy chim chìa vôi (Nguyễn Quang Thiều) & Thực hành tiếng Việt: Mở rộng trạng ngữ (4 tiết)',
         y: '- Đọc hiểu truyện ngắn: cảm nhận tình cảm yêu thương động vật trong sáng và lòng nhân hậu của hai anh em Mên, Mon.\n- Nhận diện và thực hành mở rộng trạng ngữ của câu bằng cụm từ nhằm bổ sung thông tin chi tiết.',
         eq: 'Tranh minh họa đàn chim chìa vôi cất cánh trên bãi sông, phiếu bài tập',
-        nlsCode: '1.1.TC1a',
+        nlsCode: '1.2.TC1b',
         aiCode: '7.A1.1'
       },
       {
@@ -428,7 +428,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         n: 'Bài 1: Bầu trời tuổi thơ - Đọc: Đi lấy mật (Đoàn Giỏi) & Ngàn sao làm việc (Võ Quảng) & Thực hành tiếng Việt (4 tiết)',
         y: '- Cảm nhận vẻ đẹp thiên nhiên rừng tràm U Minh hoang sơ, trù phú và tính cách nhân vật An, Cò, tía nuôi.\n- Thưởng thức bức tranh lao động vũ trụ lung linh trong thơ Võ Quảng; nhận biết tác dụng của trạng ngữ.',
         eq: 'Video/Hình ảnh rừng tràm U Minh phương Nam, phiếu phân tích nhân vật',
-        nlsCode: '2.1.TC1a',
+        nlsCode: '2.1.TC1b',
         aiCode: '7.C5.1'
       },
       {
@@ -437,7 +437,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         n: 'Bài 1: Tóm tắt văn bản theo yêu cầu khác nhau về độ dài & Nói và nghe & Đọc: Ngôi nhà trên cây & Bài 2: Khúc nhạc tâm hồn (4 tiết)',
         y: '- Nắm vững quy trình tóm tắt văn bản tự sự theo các mức độ ngắn, vừa; trao đổi ý kiến về tình bạn tuổi thơ.\n- Đọc mở rộng Ngôi nhà trên cây (Tốt-tô-chan); làm quen chủ đề thơ bốn chữ, năm chữ trong Khúc nhạc tâm hồn.',
         eq: 'Sách Tốt-tô-chan bên cửa sổ, phiếu hướng dẫn tóm tắt văn bản',
-        nlsCode: '3.1.TC1a',
+        nlsCode: '3.2.TC1a',
         aiCode: '7.A1.MR1'
       },
       {
@@ -446,7 +446,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         n: 'Bài 2: Khúc nhạc tâm hồn - Đọc: Đồng dao mùa xuân (Nguyễn Khoa Điềm) & Thực hành tiếng Việt: Biện pháp tu từ nói giảm nói tránh (4 tiết)',
         y: '- Cảm nhận hình tượng người lính trẻ kiên cường, bất tử giữa mùa xuân đại ngàn qua thể thơ bốn chữ sâu lắng.\n- Nhận biết và hiểu tác dụng biểu đạt tế nhị, nhân văn của biện pháp tu từ nói giảm nói tránh.',
         eq: 'Audio ngâm thơ Đồng dao mùa xuân, hình ảnh người lính Trường Sơn',
-        nlsCode: '1.2.TC1a',
+        nlsCode: '1.1.TC1b',
         aiCode: '7.B3.1'
       },
       {
@@ -482,7 +482,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         n: 'Bài 3: Cội nguồn yêu thương - Đọc: Người thầy đầu tiên (Ch. Aitmatov) & Quê hương (Tế Hanh) & Thực hành tiếng Việt (4 tiết)',
         y: '- Khắc sâu lòng biết ơn người thầy Đuy-sen tận tụy thắp sáng ước mơ cho cô bé An-tư-nai nghèo khó.\n- Cảm nhận bức tranh làng chài rực rỡ sức sống và tình yêu quê hương nồng nàn trong thơ Tế Hanh.',
         eq: 'Chân dung Ch. Aitmatov, tranh làng chài miền biển, phiếu học tập nhân vật',
-        nlsCode: '2.4.TC1a',
+        nlsCode: '2.1.TC1b',
         aiCode: '7.C5.1'
       },
       {
@@ -492,7 +492,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         p: 2,
         y: '- Củng cố, hệ thống hóa kiến thức đọc hiểu văn bản, kiến thức tiếng Việt và kĩ năng viết từ Tuần 1 đến Tuần 8.\n- Rèn luyện kĩ năng phân tích đề thi và cách trình bày bài làm đạt chuẩn.',
         eq: 'Đề cương ôn tập giữa kì 1, phiếu bài tập',
-        nlsCode: '1.3.TC1a',
+        nlsCode: '1.3.TC1b',
         aiCode: '7.A1.1'
       },
       {
@@ -502,7 +502,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         p: 2,
         y: '- Đánh giá chuẩn năng lực đọc hiểu và kĩ năng viết đoạn văn/bài văn môn Ngữ văn 7 theo ma trận đề Bộ GD&ĐT (thời gian làm bài 90 phút).\n- Đánh giá khả năng cảm thụ văn học, tư duy độc lập và tính trung thực trong kiểm tra.',
         eq: 'Đề kiểm tra giữa kỳ 1 chuẩn, ma trận và hướng dẫn chấm',
-        nlsCode: '4.1.TC1a',
+        nlsCode: '4.3.TC1a',
         aiCode: '7.A3.1'
       },
       {
@@ -538,7 +538,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         n: 'Bài 4: Viết bài văn biểu cảm về con người hoặc sự việc & Nói và nghe: Hoạt động thiện nguyện & Đọc: Chiều biên giới & Bài 5: Màu sắc trăm miền (4 tiết)',
         y: '- Nắm vững kĩ năng viết bài văn biểu cảm về con người hoặc sự việc; thuyết trình về hoạt động thiện nguyện vì cộng đồng.\n- Đọc mở rộng Chiều biên giới (Lò Ngân Sủn); tìm hiểu nét đẹp văn hóa các vùng miền.',
         eq: 'Phiếu tiêu chí viết văn biểu cảm, tư liệu hoạt động tình nguyện học đường',
-        nlsCode: '3.1.TC1a',
+        nlsCode: '3.1.TC1b',
         aiCode: '7.D1.1'
       },
       {
@@ -566,7 +566,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         p: 2,
         y: '- Hệ thống hóa toàn diện kiến thức đọc hiểu thể loại, tiếng Việt và phương pháp viết các kiểu văn bản trong toàn bộ Học kỳ 1.\n- Rèn luyện kĩ năng viết bài văn hoàn chỉnh có cảm xúc và sáng tạo.',
         eq: 'Đề cương ôn tập cuối HK1, bảng hệ thống thể loại',
-        nlsCode: '3.1.TC1a',
+        nlsCode: '3.2.TC1a',
         aiCode: '7.A1.3'
       },
       {
@@ -585,7 +585,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         n: 'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức Ngữ văn 7 HK1 (4 tiết)',
         y: '- Nhận xét, phân tích kĩ lưỡng bài kiểm tra cuối HK1; chữa lỗi chính tả, ngữ pháp và lập luận.\n- Củng cố hệ thống các thể loại văn học và kiến thức tiếng Việt đã học trong HK1.',
         eq: 'Bài làm học sinh, bảng tổng hợp kết quả và đáp án chi tiết',
-        nlsCode: '5.2.TC1a',
+        nlsCode: '5.2.TC1b',
         aiCode: '7.A1.MR1'
       },
       {
@@ -594,7 +594,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         n: 'Sơ kết Học kỳ 1 & Báo cáo sản phẩm Đọc hiểu văn học Lớp 7 (4 tiết)',
         y: '- Sơ kết thi đua môn Ngữ văn HK1; trình bày các sản phẩm sáng tạo (tập san tản văn, video ngâm thơ, sổ tay đọc sách).\n- Rèn luyện kỹ năng thuyết trình, hợp tác nhóm và định hướng học tập HK2.',
         eq: 'Sản phẩm tập san, video clip của học sinh, máy chiếu',
-        nlsCode: '2.4.TC1b',
+        nlsCode: '2.4.TC1a',
         aiCode: '7.D1.1'
       },
 
@@ -605,7 +605,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         n: 'Bài 6: Bài học cuộc sống - Đọc: Đẽo cày giữa đường & Ếch ngồi đáy giếng & Con mối và con kiến & Thực hành tiếng Việt (4 tiết)',
         y: '- Nhận biết đặc trưng truyện ngụ ngôn: tình huống, nhân vật, mượn chuyện loài vật để khuyên răn con người bài học sâu sắc.\n- Nhận diện và phân tích tác dụng của biện pháp tu từ nói quá trong ngụ ngôn.',
         eq: 'Tranh minh họa truyện ngụ ngôn Việt Nam, phiếu học tập phân tích bài học',
-        nlsCode: '1.1.TC1a',
+        nlsCode: '1.1.TC1b',
         aiCode: '7.A1.1'
       },
       {
@@ -614,7 +614,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         n: 'Bài 6: Bài học cuộc sống - Đọc: Một số câu tục ngữ Việt Nam & Con hổ có nghĩa (Vũ Trinh) & Viết bài văn nghị luận xã hội (4 tiết)',
         y: '- Hiểu ý nghĩa triết lý, kinh nghiệm sống trong tục ngữ và lòng biết ơn, nghĩa tình trong truyện Con hổ có nghĩa.\n- Nắm vững kĩ năng viết bài văn nghị luận bày tỏ ý kiến tán thành về một vấn đề đời sống.',
         eq: 'Phiếu học tập phân loại tục ngữ, dàn ý bài văn nghị luận xã hội',
-        nlsCode: '3.1.TC1a',
+        nlsCode: '3.1.TC1b',
         aiCode: '7.C4.1'
       },
       {
@@ -659,7 +659,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         n: 'Bài 8: Thực hành đọc: Câu chuyện về con đường & Bài 9: Hòa điệu với tự nhiên - Đọc: Thủy tiên tháng Một (T.L. Friedman) (4 tiết)',
         y: '- Đọc hiểu Câu chuyện về con đường (Đoàn Công Lê Huy); khám phá thông điệp về biến đổi khí hậu trong Thủy tiên tháng Một.\n- Nhận biết đặc điểm văn bản nghị luận xã hội về mối quan hệ giữa con người và thiên nhiên.',
         eq: 'Infographic biến đổi khí hậu toàn cầu, tư liệu Thủy tiên tháng Một',
-        nlsCode: '1.3.TC1a',
+        nlsCode: '1.3.TC1b',
         aiCode: '7.A1.MR1'
       },
       {
@@ -679,7 +679,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         p: 2,
         y: '- Đánh giá chuẩn kiến thức, kĩ năng môn Ngữ văn 7 từ Tuần 19 đến Tuần 25 theo ma trận chuẩn Bộ GD&ĐT (thời gian làm bài 90 phút).\n- Đánh giá năng lực tiếp nhận văn học và năng lực tạo lập văn bản.',
         eq: 'Đề kiểm tra giữa kỳ 2 chuẩn, ma trận và hướng dẫn chấm',
-        nlsCode: '4.1.TC1a',
+        nlsCode: '4.1.TC1b',
         aiCode: '7.A3.1'
       },
       {
@@ -697,7 +697,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         n: 'Bài 9: Hòa điệu với tự nhiên - Viết bài văn thuyết minh về quy tắc hoặc luật lệ trong trò chơi hay hoạt động & Thuyết minh (4 tiết)',
         y: '- Nắm vững bố cục và quy trình viết bài văn thuyết minh giải thích quy tắc, luật lệ của một trò chơi dân gian hoặc hoạt động tập thể.\n- Nói và nghe: Giải thích rõ ràng, sinh động quy tắc luật lệ trò chơi trước tập thể; đọc Thân thiện với môi trường.',
         eq: 'Video minh họa các trò chơi dân gian (Kéo co, Ô ăn quan), phiếu dàn ý',
-        nlsCode: '3.1.TC1a',
+        nlsCode: '3.2.TC1a',
         aiCode: '7.C4.1'
       },
       {
@@ -725,7 +725,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         p: 2,
         y: '- Ôn tập hệ thống hóa toàn bộ kiến thức môn Ngữ văn 7 cả năm học: Đọc hiểu thể loại, Tiếng Việt, Viết, Nói và nghe.\n- Rèn luyện kỹ năng phân tích văn bản ngoài sách giáo khoa.',
         eq: 'Đề cương ôn tập cuối năm môn Ngữ văn',
-        nlsCode: '3.1.TC1a',
+        nlsCode: '3.1.TC1b',
         aiCode: '7.A1.3'
       },
       {
@@ -753,7 +753,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         n: 'Dự án Ngữ văn 7: "Tuyển tập Tản văn Quê hương & Sân khấu Diễn xướng Thơ ca" (4 tiết)',
         y: '- Thực hiện dự án diễn xướng thơ ca, ngâm thơ hoặc biên soạn tập san tản văn về danh lam thắng cảnh quê hương.\n- Ứng dụng công nghệ thông tin trong thiết kế ấn phẩm số và trình diễn nghệ thuật.',
         eq: 'Tập san số, bản ghi âm diễn xướng thơ, máy chiếu',
-        nlsCode: '2.4.TC1b',
+        nlsCode: '2.4.TC1a',
         aiCode: '7.C5.1'
       },
       {
@@ -807,7 +807,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         n: 'Bài 1: Câu chuyện của lịch sử - Đọc: Lá cờ thêu sáu chữ vàng (Nguyễn Huy Tưởng) & Thực hành tiếng Việt: Biệt ngữ xã hội (4 tiết)',
         y: '- Nắm vững đặc trưng truyện lịch sử: bối cảnh, nhân vật lịch sử, lòng yêu nước sục sôi của người anh hùng trẻ tuổi Trần Quốc Toản.\n- Nhận diện và phân tích tác dụng của biệt ngữ xã hội, từ ngữ lịch sử trong việc tái hiện không khí thời đại.',
         eq: 'Tranh ảnh minh họa truyện Lá cờ thêu sáu chữ vàng, bản đồ trận chiến Bạch Đằng',
-        nlsCode: '1.1.TC2a',
+        nlsCode: '1.1.TC2c',
         aiCode: '8.A1.1'
       },
       {
@@ -816,7 +816,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         n: 'Bài 1: Câu chuyện của lịch sử - Đọc: Quang Trung đại phá quân Thanh (Hoàng Lê nhất thống chí) & Ta đi tới (Tố Hữu) & Thực hành tiếng Việt (4 tiết)',
         y: '- Cảm phục tài trí quân sự và khí phách lẫm liệt của vua Quang Trung; hào khí cách mạng trong trường ca Tố Hữu.\n- Thực hành tiếng Việt: từ ngữ toàn dân và từ ngữ địa phương, biệt ngữ xã hội.',
         eq: 'Tượng đài Quang Trung - Nguyễn Huệ, lược đồ chiến dịch Ngọc Hồi - Đống Đa',
-        nlsCode: '2.1.TC2a',
+        nlsCode: '2.5.TC2b',
         aiCode: '8.C1.1'
       },
       {
@@ -825,7 +825,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         n: 'Bài 1: Viết bài văn kể lại một chuyến đi (di tích lịch sử, văn hóa) & Nói và nghe & Đọc: Minh sư & Bài 2: Vẻ đẹp cổ điển (4 tiết)',
         y: '- Nắm vững quy trình viết bài văn tự sự kể lại một chuyến tham quan di tích lịch sử, văn hóa; giới thiệu cuốn sách lịch sử.\n- Đọc mở rộng trích đoạn Minh sư (Thái Bá Lợi); bước đầu tìm hiểu thơ Đường luật trong Vẻ đẹp cổ điển.',
         eq: 'Hình ảnh các di tích lịch sử nổi tiếng (Cố đô Hoa Lư, Hoàng thành Thăng Long)',
-        nlsCode: '3.1.TC2a',
+        nlsCode: '3.2.TC2a',
         aiCode: '8.A1.2'
       },
       {
@@ -890,7 +890,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         p: 2,
         y: '- Đánh giá chuẩn năng lực đọc hiểu và kĩ năng viết đoạn văn/bài văn môn Ngữ văn 8 theo ma trận đề Bộ GD&ĐT (thời gian làm bài 90 phút).\n- Đánh giá khả năng cảm thụ văn học, tư duy độc lập và tính trung thực trong kiểm tra.',
         eq: 'Đề kiểm tra giữa kỳ 1 chuẩn, ma trận và hướng dẫn chấm',
-        nlsCode: '4.1.TC2a',
+        nlsCode: '4.1.TC2b',
         aiCode: '8.A3.3'
       },
       {
@@ -926,7 +926,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         n: 'Bài 4: Viết bài văn phân tích một tác phẩm thơ trào phúng & Nói và nghe & Đọc: Vịnh cây vông & Bài 5: Những câu chuyện hài (4 tiết)',
         y: '- Nắm vững kĩ năng viết bài văn phân tích nghệ thuật trào phúng trong tác phẩm thơ; trình bày suy nghĩ về ý nghĩa của tiếng cười.\n- Đọc mở rộng Vịnh cây vông (Nguyễn Công Trứ); khám phá thể loại kịch hài và truyện cười.',
         eq: 'Phiếu tiêu chí đánh giá bài phân tích thơ trào phúng, tranh truyện hài hước',
-        nlsCode: '3.1.TC2a',
+        nlsCode: '3.1.TC2b',
         aiCode: '8.D1.1'
       },
       {
@@ -935,7 +935,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         n: 'Bài 5: Những câu chuyện hài - Đọc: Trưởng giả học làm sang (Molière) & Thực hành tiếng Việt: Trợ từ, Thán từ (4 tiết)',
         y: '- Nhận biết đặc trưng kịch hài: xung đột kịch, hành động kịch, nghệ thuật gây cười qua nhân vật ông Giuốc-đanh ngớ ngẩn.\n- Nhận diện trợ từ, thán từ và hiểu giá trị biểu cảm, nhấn mạnh của chúng trong hội thoại kịch.',
         eq: 'Trích đoạn kịch Trưởng giả học làm sang, phiếu bài tập trợ từ, thán từ',
-        nlsCode: '1.3.TC2a',
+        nlsCode: '1.3.TC2b',
         aiCode: '8.A1.2'
       },
       {
@@ -954,7 +954,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         p: 2,
         y: '- Hệ thống hóa toàn diện kiến thức đọc hiểu thể loại, tiếng Việt và phương pháp viết các kiểu văn bản trong toàn bộ Học kỳ 1.\n- Rèn luyện kĩ năng viết bài văn hoàn chỉnh có cảm xúc và sáng tạo.',
         eq: 'Đề cương ôn tập cuối HK1, bảng hệ thống thể loại',
-        nlsCode: '3.1.TC2a',
+        nlsCode: '3.2.TC2a',
         aiCode: '8.A1.3'
       },
       {
@@ -973,7 +973,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         n: 'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức Ngữ văn 8 HK1 (4 tiết)',
         y: '- Nhận xét, chữa bài kiểm tra cuối HK1 chi tiết; phân tích nguyên nhân lỗi sai và biểu dương các bài viết xuất sắc.\n- Củng cố hệ thống thể loại văn học và kiến thức tiếng Việt học trong HK1.',
         eq: 'Bài làm học sinh, đáp án và bảng thống kê kết quả',
-        nlsCode: '5.2.TC2a',
+        nlsCode: '5.2.TC2b',
         aiCode: '8.A1.2'
       },
       {
@@ -982,7 +982,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         n: 'Sơ kết Học kỳ 1 & Báo cáo sản phẩm Đọc hiểu văn học Lớp 8 (4 tiết)',
         y: '- Sơ kết thi đua môn Ngữ văn HK1; trình bày các sản phẩm sáng tạo (video kịch ngắn, sơ đồ tư duy phân tích tác phẩm, tuyển tập thơ).\n- Đánh giá mức độ hoàn thành nhiệm vụ học tập và lập kế hoạch rèn luyện HK2.',
         eq: 'Sản phẩm tập san, video trích đoạn kịch của học sinh, máy chiếu',
-        nlsCode: '2.4.TC2b',
+        nlsCode: '2.4.TC2a',
         aiCode: '8.D2.1'
       },
 
@@ -993,7 +993,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         n: 'Bài 6: Chân dung cuộc sống - Đọc: Mắt sói (Daniel Pennac) & Thực hành tiếng Việt: Câu đơn và câu ghép (4 tiết)',
         y: '- Đọc hiểu truyện hiện đại: cảm nhận tình bạn kì diệu giữa cậu bé Phi-chơ và con sói Lam qua ánh mắt thấu cảm.\n- Nhận diện câu đơn và câu ghép; phân tích các mối quan hệ ngữ nghĩa giữa các vế trong câu ghép.',
         eq: 'Tranh ảnh tiểu thuyết Mắt sói, phiếu bài tập nhận diện câu ghép',
-        nlsCode: '1.1.TC2a',
+        nlsCode: '1.1.TC2d',
         aiCode: '8.A1.1'
       },
       {
@@ -1002,7 +1002,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         n: 'Bài 6: Chân dung cuộc sống - Đọc: Lặng lẽ Sa Pa (Nguyễn Thành Long) & Bếp lửa (Bằng Việt) & Viết: Phân tích truyện ngắn (4 tiết)',
         y: '- Cảm phục vẻ đẹp lý tưởng sống cống hiến thầm lặng của anh thanh niên Sa Pa và tình bà cháu thiêng liêng trong thơ Bằng Việt.\n- Nắm vững phương pháp và viết bài văn nghị luận phân tích một tác phẩm truyện ngắn; đọc Chiếc lá cuối cùng.',
         eq: 'Hình ảnh trạm khí tượng Sa Pa, audio bài thơ Bếp lửa, phiếu dàn ý phân tích truyện',
-        nlsCode: '3.1.TC2a',
+        nlsCode: '3.1.TC2b',
         aiCode: '8.C1.1'
       },
       {
@@ -1011,7 +1011,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         n: 'Bài 7: Tin yêu và ước vọng - Đọc: Đồng chí (Chính Hữu) & Thực hành tiếng Việt: Thành phần biệt lập tình thái, cảm thán (4 tiết)',
         y: '- Cảm nhận vẻ đẹp chân thực, mộc mạc và cao cả của tình đồng chí, đồng đội keo sơn gắn bó trong kháng chiến chống Pháp.\n- Nhận diện thành phần tình thái và cảm thán; hiểu chức năng bộc lộ cảm xúc và thái độ của người nói.',
         eq: 'Audio bài hát Tình đồng chí (nhạc Minh Quốc), tranh ảnh người lính Vệ quốc quân',
-        nlsCode: '1.2.TC2a',
+        nlsCode: '1.2.TC2b',
         aiCode: '8.B1.1'
       },
       {
@@ -1020,7 +1020,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         n: 'Bài 7: Tin yêu và ước vọng - Đọc: Lá đỏ (Nguyễn Đình Thi) & Những ngôi sao xa xôi (Lê Minh Khuê) & Thực hành tiếng Việt (4 tiết)',
         y: '- Cảm nhận khí thế hành quân ra trận trên dãy Trường Sơn và tinh thần dũng cảm, lạc quan của ba nữ trinh sát mặt đường.\n- Thực hành tiếng Việt: thành phần gọi - đáp và thành phần phụ chú trong câu.',
         eq: 'Video/Hình ảnh ngã ba Đồng Lộc, đường Trường Sơn, phiếu phân tích nhân vật',
-        nlsCode: '2.1.TC2a',
+        nlsCode: '2.1.TC2b',
         aiCode: '8.C5.1'
       },
       {
@@ -1067,7 +1067,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         p: 2,
         y: '- Đánh giá chuẩn kiến thức, kĩ năng môn Ngữ văn 8 từ Tuần 19 đến Tuần 25 theo ma trận chuẩn Bộ GD&ĐT (thời gian làm bài 90 phút).\n- Đánh giá năng lực tiếp nhận văn học và năng lực tạo lập văn bản.',
         eq: 'Đề kiểm tra giữa kỳ 2 chuẩn, ma trận và hướng dẫn chấm',
-        nlsCode: '4.1.TC2a',
+        nlsCode: '4.1.TC2c',
         aiCode: '8.A3.3'
       },
       {
@@ -1076,7 +1076,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         n: 'Bài 9: Hôm nay và ngày mai - Đọc: Miền châu thổ sông Cửu Long cần chuyển đổi từ sống chung sang chào đón lũ & Choáng ngợp... (4 tiết)',
         y: '- Nắm vững đặc trưng văn bản thông tin giải thích hiện tượng tự nhiên và cảnh báo hiểm họa sinh thái toàn cầu từ loạt phim Hành tinh của chúng ta.\n- Thực hành tiếng Việt: câu đơn và câu ghép trong văn bản thông tin.',
         eq: 'Video trích đoạn phim tài liệu Our Planet, bản đồ đồng bằng sông Cửu Long',
-        nlsCode: '1.3.TC2a',
+        nlsCode: '1.3.TC2b',
         aiCode: '8.B1.1'
       },
       {
@@ -1085,7 +1085,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         n: 'Bài 9: Hôm nay và ngày mai - Đọc: Diễn từ ứng khẩu của thủ lĩnh da đỏ Xi-át-tơn & Viết văn bản thuyết minh hiện tượng tự nhiên & Kiến nghị (4 tiết)',
         y: '- Thấm thía bức thông điệp thiêng liêng về đất đai và môi trường trong diễn từ của thủ lĩnh da đỏ Xi-át-tơn.\n- Nắm vững kĩ năng viết bài văn thuyết minh giải thích một hiện tượng tự nhiên và viết văn bản kiến nghị về vấn đề đời sống.',
         eq: 'Chân dung thủ lĩnh Xi-át-tơn, mẫu văn bản kiến nghị chuẩn',
-        nlsCode: '3.1.TC2a',
+        nlsCode: '3.2.TC2a',
         aiCode: '8.C1.1'
       },
       {
@@ -1113,7 +1113,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         p: 2,
         y: '- Ôn tập hệ thống hóa toàn bộ kiến thức môn Ngữ văn 8 cả năm học: Đọc hiểu thể loại, Tiếng Việt, Viết, Nói và nghe.\n- Rèn luyện kỹ năng phân tích văn bản ngoài sách giáo khoa.',
         eq: 'Đề cương ôn tập cuối năm môn Ngữ văn',
-        nlsCode: '3.1.TC2a',
+        nlsCode: '3.1.TC2b',
         aiCode: '8.A1.3'
       },
       {
@@ -1141,7 +1141,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         n: 'Dự án Ngữ văn 8: "Sáng tác Truyện ngắn & Diễn đàn Đọc sách Học đường THCS" (4 tiết)',
         y: '- Thực hiện dự án sáng tác truyện ngắn học đường hoặc tổ chức Diễn đàn truyền thông văn hóa đọc sách trực tuyến.\n- Ứng dụng công nghệ số làm kỷ yếu điện tử, thiết kế bìa sách và ấn phẩm văn học số.',
         eq: 'Tuyển tập truyện ngắn điện tử (E-book/PDF) của lớp, máy chiếu',
-        nlsCode: '2.4.TC2b',
+        nlsCode: '2.4.TC2a',
         aiCode: '8.D2.1'
       },
       {
@@ -1194,7 +1194,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
       n: 'Bài 1: Thế giới kì ảo - Đọc: Chuyện người con gái Nam Xương (Nguyễn Dữ) & Thực hành tiếng Việt: Điển tích, điển cố (4 tiết)',
       y: '- Nắm vững đặc trưng thể loại truyền kì mạn lục: yếu tố kì ảo kết hợp hiện thực; cảm thương sâu sắc số phận oan khuất của Vũ Nương và ca ngợi phẩm hạnh đoan trang.\n- Nhận biết và hiểu tác dụng biểu đạt hàm súc, trang nhã của điển tích, điển cố trong văn học trung đại.',
       eq: 'Tranh minh họa Chuyện người con gái Nam Xương, phiếu tra cứu điển cố',
-      nlsCode: '1.1.TC2a',
+      nlsCode: '1.2.TC2b',
       aiCode: '9.A1.1'
     },
     {
@@ -1203,7 +1203,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
       n: 'Bài 1: Thế giới kì ảo - Đọc: Dế chọi (Bồ Tùng Linh) & Sơn Tinh – Thuỷ Tinh (Nguyễn Nhược Pháp) & Thực hành tiếng Việt (4 tiết)',
       y: '- Thấy được tính chất phê phán hiện thực sâu sắc qua ngòi bút kì ảo của Bồ Tùng Linh và vẻ đẹp thơ mộng, hóm hỉnh trong thơ Nguyễn Nhược Pháp.\n- Thực hành tiếng Việt: phân tích tác dụng của điển tích và các biện pháp tu từ trong văn bản truyền kì.',
       eq: 'Văn bản Liêu trai chí dị, audio ngâm thơ Sơn Tinh - Thủy Tinh',
-      nlsCode: '2.1.TC2a',
+      nlsCode: '2.2.TC2c',
       aiCode: '9.C2.1'
     },
     {
@@ -1212,7 +1212,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
       n: 'Bài 1: Viết bài văn nghị luận về một vấn đề cần giải quyết (con người với tự nhiên) & Nói và nghe & Đọc: Ngọc nữ về tay chân chủ & Bài 2 (4 tiết)',
       y: '- Nắm vững phương pháp và viết bài văn nghị luận xã hội đề xuất giải pháp giải quyết mối quan hệ con người - tự nhiên; thuyết trình tự tin.\n- Đọc mở rộng Ngọc nữ về tay chân chủ; bắt đầu chủ đề Những cung bậc tâm trạng.',
       eq: 'Phiếu tiêu chí bài văn nghị luận giải quyết vấn đề, tranh phong cảnh',
-      nlsCode: '3.1.TC2a',
+      nlsCode: '3.2.TC2a',
       aiCode: '9.A3.1'
     },
     {
@@ -1221,7 +1221,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
       n: 'Bài 2: Những cung bậc tâm trạng - Đọc: Nỗi niềm chinh phụ (Chinh phụ ngâm) & Thực hành tiếng Việt: Biện pháp tu từ chơi chữ, điệp thanh (4 tiết)',
       y: '- Cảm nhận nỗi cô đơn, sầu muộn và khát vọng hạnh phúc lứa đôi tha thiết của người chinh phụ qua thể ngâm song thất lục bát.\n- Nhận diện và phân tích tác dụng nhạc điệu, biểu cảm của phép chơi chữ, điệp thanh, điệp vần.',
       eq: 'Audio ngâm khúc Chinh phụ ngâm, bảng quy luật vần nhịp song thất lục bát',
-      nlsCode: '1.2.TC2a',
+      nlsCode: '1.1.TC2b',
       aiCode: '9.A2.2'
     },
     {
@@ -1257,7 +1257,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
       n: 'Bài 3: Hồn nước nằm trong tiếng mẹ cha - Đọc: Lục Vân Tiên đánh cướp, cứu Kiều Nguyệt Nga & Tự tình (bài 2) (Hồ Xuân Hương) (4 tiết)',
       y: '- Khắc sâu hình tượng Lục Vân Tiên trượng nghĩa, vị tha và bản lĩnh người phụ nữ khát khao hạnh phúc, vượt lên nghịch cảnh trong thơ Hồ Xuân Hương.\n- Thực hành tiếng Việt: từ ngữ Hán Việt và nghệ thuật xây dựng ngôn ngữ nhân vật.',
       eq: 'Chân dung Nguyễn Đình Chiểu, Hồ Xuân Hương, tranh minh họa Lục Vân Tiên',
-      nlsCode: '2.4.TC2a',
+      nlsCode: '2.5.TC2b',
       aiCode: '9.C2.1'
     },
     {
@@ -1277,7 +1277,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         p: 2,
         y: '- Đánh giá chuẩn năng lực đọc hiểu và kĩ năng viết đoạn văn/bài văn môn Ngữ văn 9 theo ma trận đề Bộ GD&ĐT (thời gian làm bài 90 phút).\n- Đánh giá khả năng cảm thụ văn học, tư duy độc lập và tính trung thực trong kiểm tra.',
         eq: 'Đề kiểm tra giữa kỳ 1 chuẩn, ma trận và hướng dẫn chấm',
-        nlsCode: '4.1.TC2a',
+        nlsCode: '4.2.TC2b',
         aiCode: '9.B2.3'
       },
     {
@@ -1313,7 +1313,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
       n: 'Bài 4: Viết bài văn nghị luận phân tích một tác phẩm truyện & Thảo luận: Làm thế nào để học tốt môn Ngữ văn? & Đọc: Hoàng Hạc lâu... & Bài 5 (4 tiết)',
       y: '- Viết bài văn nghị luận phân tích tác phẩm truyện hoàn chỉnh; trao đổi phương pháp đọc hiểu và học giỏi môn Ngữ văn.\n- Đọc Hoàng Hạc lâu tống Mạnh Hạo Nhiên chi Quảng Lăng (Nguyễn Khắc Phi); làm quen chủ đề Đối diện với nỗi đau.',
       eq: 'Phiếu tiêu chí phân tích tác phẩm truyện, tranh minh họa lầu Hoàng Hạc',
-      nlsCode: '3.1.TC2a',
+      nlsCode: '3.1.TC2b',
       aiCode: '9.D1.1'
     },
     {
@@ -1322,7 +1322,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
       n: 'Bài 5: Đối diện với nỗi đau - Đọc: Rô-mê-ô và Giu-li-ét (W. Shakespeare) & Thực hành tiếng Việt: Sự phát triển của từ vựng (4 tiết)',
       y: '- Nhận biết đặc trưng bi kịch cổ điển: xung đột giữa tình yêu say đắm và mối thù hằn dòng họ; ca ngợi tình yêu chân chính bất diệt.\n- Nhận diện các phương thức phát triển từ vựng tiếng Việt (tạo từ ngữ mới, mượn từ nước ngoài, biến đổi nghĩa).',
       eq: 'Chân dung Shakespeare, trích đoạn vở kịch Romeo và Juliet',
-      nlsCode: '1.3.TC2a',
+      nlsCode: '1.3.TC2b',
       aiCode: '9.A2.2'
     },
     {
@@ -1341,7 +1341,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         p: 2,
         y: '- Hệ thống hóa toàn diện kiến thức đọc hiểu thể loại, tiếng Việt và phương pháp viết các kiểu văn bản trong toàn bộ Học kỳ 1.\n- Rèn luyện kĩ năng viết bài văn hoàn chỉnh có cảm xúc và sáng tạo.',
         eq: 'Đề cương ôn tập cuối HK1, bảng hệ thống thể loại',
-        nlsCode: '3.1.TC2a',
+        nlsCode: '3.2.TC2a',
         aiCode: '9.A1.3'
       },
       {
@@ -1360,7 +1360,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
       n: 'Chữa bài kiểm tra cuối HK1 & Ôn tập củng cố kiến thức Ngữ văn 9 HK1 (4 tiết)',
       y: '- Nhận xét, chữa bài kiểm tra cuối HK1 chi tiết; phân tích ma trận điểm thi và định hướng phương pháp ôn thi vào lớp 10.\n- Củng cố hệ thống tác phẩm văn học trung đại và kiến thức tiếng Việt HK1.',
       eq: 'Bài làm học sinh, đáp án và bảng thống kê lỗi sai',
-      nlsCode: '5.2.TC2a',
+      nlsCode: '5.2.TC2b',
       aiCode: '9.A3.1'
     },
     {
@@ -1369,7 +1369,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
       n: 'Sơ kết Học kỳ 1 & Báo cáo chuyên đề Văn học Lớp 9 (4 tiết)',
       y: '- Sơ kết thi đua môn Ngữ văn HK1; báo cáo chuyên đề nghiên cứu văn học (hình tượng người phụ nữ trong văn học trung đại, vẻ đẹp Truyện Kiều).\n- Rèn luyện kĩ năng thuyết trình báo cáo khoa học và tinh thần làm việc nhóm.',
       eq: 'Slide báo cáo chuyên đề của các nhóm học sinh, máy chiếu',
-      nlsCode: '2.4.TC2b',
+      nlsCode: '2.4.TC2a',
       aiCode: '9.D1.1'
     },
 
@@ -1380,7 +1380,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
       n: 'Bài 6: Giải mã những bí mật - Đọc: Ba chàng sinh viên (A. Conan Doyle) & Thực hành tiếng Việt: Nghĩa của từ trong ngữ cảnh (4 tiết)',
       y: '- Nhận biết đặc trưng truyện trinh thám: tình huống li kì, nghệ thuật suy luận logic sắc bén của thám tử đại tài Sherlock Holmes.\n- Nhận diện và giải thích nghĩa của từ ngữ trong ngữ cảnh văn bản truyện trinh thám.',
       eq: 'Chân dung Conan Doyle, tranh minh họa thám tử Sherlock Holmes',
-      nlsCode: '1.1.TC2a',
+      nlsCode: '1.1.TC2b',
       aiCode: '9.A1.1'
     },
     {
@@ -1389,7 +1389,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
       n: 'Bài 6: Giải mã những bí mật - Đọc: Bài hát đồng sáu xu (Agatha Christie) & Phạm Xuân Ẩn – tên người như cuộc đời & Viết truyện sáng tạo (4 tiết)',
       y: '- Thưởng thức nghệ thuật điều tra tâm lý của thám tử Poirot và lòng yêu nước mưu trí của nhà tình báo huyền thoại Phạm Xuân Ẩn.\n- Nắm vững kĩ năng viết một truyện kể sáng tạo (xây dựng cốt truyện bất ngờ, nhân vật, ngôi kể); đọc Ba viên ngọc bích.',
       eq: 'Chân dung Thiếu tướng Phạm Xuân Ẩn, sách Điệp viên hoàn hảo, phiếu sáng tác',
-      nlsCode: '3.1.TC2a',
+      nlsCode: '3.1.TC2b',
       aiCode: '9.C2.1'
     },
     {
@@ -1407,7 +1407,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
       n: 'Bài 7: Hồn thơ muôn điệu - Đọc: Mưa xuân (Nguyễn Bính) & Một kiểu phát biểu luận đề độc đáo của Xuân Diệu ở bài thơ “Vội vàng” (4 tiết)',
       y: '- Cảm nhận không khí hội xuân làng quê Bắc Bộ và tâm trạng bổi hổi của cô thôn nữ trong thơ Nguyễn Bính; hiểu cách phân tích luận đề của Xuân Diệu.\n- Thực hành tiếng Việt: nghệ thuật dùng từ ngữ tượng hình, nhạc điệu trong thơ tám chữ.',
       eq: 'Tranh mùa xuân làng quê Bắc Bộ, văn bản phân tích bài thơ Vội vàng',
-      nlsCode: '2.1.TC2a',
+      nlsCode: '2.5.TC2b',
       aiCode: '9.C4.1'
     },
     {
@@ -1454,7 +1454,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         p: 2,
         y: '- Đánh giá chuẩn kiến thức, kĩ năng môn Ngữ văn 9 từ Tuần 19 đến Tuần 25 theo ma trận chuẩn Bộ GD&ĐT (thời gian làm bài 90 phút).\n- Đánh giá năng lực tiếp nhận văn học và năng lực tạo lập văn bản.',
         eq: 'Đề kiểm tra giữa kỳ 2 chuẩn, ma trận và hướng dẫn chấm',
-        nlsCode: '4.1.TC2a',
+        nlsCode: '4.3.TC2b',
         aiCode: '9.B2.3'
       },
     {
@@ -1463,7 +1463,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
       n: 'Bài 9: Đi và suy ngẫm - Đọc: Yên Tử, núi thiêng (Thi Sảnh) & Văn hoá hoa – cây cảnh (Trần Quốc Vượng) & Thực hành tiếng Việt (4 tiết)',
       y: '- Cảm nhận vẻ đẹp linh thiêng, cổ kính của danh thắng Yên Tử và nét đẹp thanh tao trong nghệ thuật chơi hoa cây cảnh của người Việt.\n- Thực hành tiếng Việt: nhận diện và sử dụng phương tiện phi ngôn ngữ (hình ảnh, bản đồ du lịch) trong văn bản thông tin.',
       eq: 'Video/Hình ảnh non thiêng Yên Tử, chùa Đồng, chậu cây thế nghệ thuật',
-      nlsCode: '1.3.TC2a',
+      nlsCode: '1.3.TC2b',
       aiCode: '9.A2.2'
     },
     {
@@ -1472,7 +1472,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
       n: 'Bài 9: Đi và suy ngẫm - Đọc: Tình sông núi (Trần Mai Ninh) & Viết: Bài thuyết minh về danh lam thắng cảnh hay di tích lịch sử & Thuyết minh (4 tiết)',
       y: '- Cảm nhận tình yêu non sông tha thiết, sôi nổi trong bài thơ Tình sông núi; đọc Khu trung tâm Hoàng thành Thăng Long.\n- Nắm vững kĩ năng viết bài văn thuyết minh kết hợp miêu tả và biểu cảm về một danh lam thắng cảnh hay di tích lịch sử.',
       eq: 'Hình ảnh Hoàng thành Thăng Long, phiếu dàn ý bài thuyết minh di tích',
-      nlsCode: '3.1.TC2a',
+      nlsCode: '3.2.TC2a',
       aiCode: '9.C4.1'
     },
     {
@@ -1500,7 +1500,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         p: 2,
         y: '- Ôn tập hệ thống hóa toàn bộ kiến thức môn Ngữ văn 9 cả năm học: Đọc hiểu thể loại, Tiếng Việt, Viết, Nói và nghe.\n- Rèn luyện kỹ năng phân tích văn bản ngoài sách giáo khoa.',
         eq: 'Đề cương ôn tập cuối năm môn Ngữ văn',
-        nlsCode: '3.1.TC2a',
+        nlsCode: '3.1.TC2b',
         aiCode: '9.A1.3'
       },
       {
@@ -1528,7 +1528,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
       n: 'Dự án Ngữ văn 9: "Tuyển tập Tản văn Kỷ yếu Khóa học THCS & Sân khấu Diễn xướng Tác phẩm Lớp 9" (4 tiết)',
       y: '- Thực hiện dự án kỷ yếu số lưu giữ ký ức 4 năm học THCS hoặc sân khấu hóa các trích đoạn văn học kinh điển Lớp 9.\n- Rèn luyện kỹ năng làm việc nhóm, sáng tạo nghệ thuật số và nuôi dưỡng tình cảm thầy trò, bè bạn.',
       eq: 'Kỷ yếu điện tử, video tư liệu kỷ niệm 4 năm học THCS, trang phục sân khấu',
-      nlsCode: '2.4.TC2b',
+      nlsCode: '2.4.TC2a',
       aiCode: '9.D1.1'
     },
     {
