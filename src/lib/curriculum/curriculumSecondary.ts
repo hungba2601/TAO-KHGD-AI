@@ -7,7 +7,7 @@ import { getTechnologySecondaryCurriculum } from './curriculumSecondaryTechnolog
 import { getKhtnSecondaryCurriculum } from './curriculumSecondaryScience';
 
 export interface RawSecondaryLesson {
-  week: number;
+  week: number | string;
   topic: string;
   name: string;
   periods: number;
@@ -629,13 +629,19 @@ export function buildSecondaryCurriculum(
       ? (nls.code || ai.code ? `• [NLS Code: ${nls.code}] ${nls.requirement}\n• [AI Code: ${ai.code}] ${ai.requirement}` : '')
       : `• [Mã NLS: ${nls.code}] ${nls.requirement}\n• [Mã AI: ${ai.code}] ${ai.requirement}`);
 
+    const formattedWeek = typeof item.week === 'number'
+      ? (isEnglish ? `Week ${item.week}` : `Tuần ${item.week}`)
+      : (isEnglish
+          ? (String(item.week).startsWith('Week') ? String(item.week) : `Week ${item.week}`)
+          : (String(item.week).startsWith('Tuần') ? String(item.week) : `Tuần ${item.week}`));
+
     return {
       id: `curr-sec-${g}-${idx + 1}`,
       stt: idx + 1,
       topic: item.topic,
       lessonName: item.name,
       periods: item.periods,
-      week: isEnglish ? `Week ${item.week}` : `Tuần ${item.week}`,
+      week: formattedWeek,
       yccd: customYccd,
       equipment: item.equipment,
       location: item.location,

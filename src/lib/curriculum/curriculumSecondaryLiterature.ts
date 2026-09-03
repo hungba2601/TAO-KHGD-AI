@@ -7,10 +7,10 @@ import { RawSecondaryLesson } from './curriculumSecondary';
  * Tích hợp chuẩn Khung Năng lực số (CV 3456/BGDĐT-GDPT) & Khung Năng lực AI (QĐ 2422/QĐ-BGDĐT)
  *
  * Các tuần kiểm tra, đánh giá định kỳ chuẩn hóa:
- * - Tuần 9: Kiểm tra, đánh giá giữa Học kỳ 1 (4 tiết)
- * - Tuần 16: Kiểm tra, đánh giá cuối Học kỳ 1 (4 tiết)
- * - Tuần 26: Kiểm tra, đánh giá giữa Học kỳ 2 (4 tiết)
- * - Tuần 31: Kiểm tra, đánh giá cuối Học kỳ 2 (4 tiết)
+ * - Tuần 9: Kiểm tra, đánh giá giữa Học kỳ 1 (2 tiết) & Ôn tập (2 tiết)
+ * - Tuần 16: Kiểm tra, đánh giá cuối Học kỳ 1 (2 tiết) & Ôn tập (2 tiết)
+ * - Tuần 26: Kiểm tra, đánh giá giữa Học kỳ 2 (2 tiết) & Ôn tập (2 tiết)
+ * - Tuần 31: Kiểm tra, đánh giá cuối Học kỳ 2 (2 tiết) & Ôn tập (2 tiết)
  * - Tuần 35: Tổng kết năm học & Đánh giá xếp loại môn Ngữ văn cả năm (4 tiết)
  */
 
@@ -99,9 +99,20 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
       },
       {
         w: 9,
+        t: 'Ôn tập đánh giá định kỳ',
+        n: 'Ôn tập chuẩn bị kiểm tra, đánh giá giữa Học kỳ 1 môn Ngữ văn 6 (2 tiết)',
+        p: 2,
+        y: '- Củng cố, hệ thống hóa kiến thức đọc hiểu văn bản, kiến thức tiếng Việt và kĩ năng viết từ Tuần 1 đến Tuần 8.\n- Rèn luyện kĩ năng phân tích đề thi và cách trình bày bài làm đạt chuẩn.',
+        eq: 'Đề cương ôn tập giữa kì 1, phiếu bài tập',
+        nlsCode: '1.3.TC1a',
+        aiCode: '6.A1.1'
+      },
+      {
+        w: 9,
         t: 'Đánh giá định kỳ',
-        n: 'Kiểm tra, đánh giá giữa Học kỳ 1 môn Ngữ văn 6 (4 tiết)',
-        y: '- Đánh giá năng lực đọc hiểu văn bản văn học (truyện, thơ) và năng lực viết bài văn tự sự kể lại trải nghiệm theo ma trận đề Bộ GD&ĐT.\n- Rèn luyện kỹ năng phân tích đề, tư duy sáng tạo và tính trung thực trong kiểm tra.',
+        n: 'Kiểm tra, đánh giá giữa Học kỳ 1 môn Ngữ văn 6 (2 tiết)',
+        p: 2,
+        y: '- Đánh giá chuẩn năng lực đọc hiểu và kĩ năng viết đoạn văn/bài văn môn Ngữ văn 6 theo ma trận đề Bộ GD&ĐT (thời gian làm bài 90 phút).\n- Đánh giá khả năng cảm thụ văn học, tư duy độc lập và tính trung thực trong kiểm tra.',
         eq: 'Đề kiểm tra giữa kỳ 1 chuẩn, ma trận và hướng dẫn chấm',
         nlsCode: '4.1.TC1a',
         aiCode: '6.A3.3'
@@ -162,10 +173,21 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
       },
       {
         w: 16,
+        t: 'Ôn tập đánh giá định kỳ',
+        n: 'Ôn tập chuẩn bị kiểm tra, đánh giá cuối Học kỳ 1 môn Ngữ văn 6 (2 tiết)',
+        p: 2,
+        y: '- Hệ thống hóa toàn diện kiến thức đọc hiểu thể loại, tiếng Việt và phương pháp viết các kiểu văn bản trong toàn bộ Học kỳ 1.\n- Rèn luyện kĩ năng viết bài văn hoàn chỉnh có cảm xúc và sáng tạo.',
+        eq: 'Đề cương ôn tập cuối HK1, bảng hệ thống thể loại',
+        nlsCode: '3.1.TC1a',
+        aiCode: '6.A1.3'
+      },
+      {
+        w: 16,
         t: 'Đánh giá định kỳ',
-        n: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Ngữ văn 6 (4 tiết)',
-        y: '- Đánh giá tổng hợp năng lực đọc hiểu văn bản (thơ lục bát, văn ký/miêu tả) và năng lực viết bài văn miêu tả/tự sự theo chuẩn CT GDPT 2018.\n- Phân hóa năng lực học sinh làm căn cứ định hướng kế hoạch giáo dục Học kỳ 2.',
-        eq: 'Đề kiểm tra cuối kỳ 1 chuẩn, ma trận và đáp án chính thức',
+        n: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Ngữ văn 6 (2 tiết)',
+        p: 2,
+        y: '- Đánh giá tổng hợp toàn diện kết quả học tập môn Ngữ văn 6 toàn bộ Học kỳ 1 theo chuẩn CT GDPT 2018 (thời gian làm bài 90 phút).\n- Phân hóa năng lực học sinh làm căn cứ điều chỉnh phương pháp dạy học Học kỳ 2.',
+        eq: 'Đề kiểm tra cuối kỳ 1 chuẩn, ma trận và hướng dẫn chấm',
         nlsCode: '4.1.TC1b',
         aiCode: '6.A3.3'
       },
@@ -254,10 +276,21 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
       },
       {
         w: 26,
+        t: 'Ôn tập đánh giá định kỳ',
+        n: 'Ôn tập chuẩn bị kiểm tra, đánh giá giữa Học kỳ 2 môn Ngữ văn 6 (2 tiết)',
+        p: 2,
+        y: '- Ôn tập củng cố các chủ đề đọc hiểu văn bản và kĩ năng viết văn từ Tuần 19 đến Tuần 25 môn Ngữ văn 6.\n- Hướng dẫn kĩ năng triển khai luận điểm và lập luận chặt chẽ.',
+        eq: 'Phiếu học tập ôn tập giữa HK2',
+        nlsCode: '1.3.TC1a',
+        aiCode: '6.A1.1'
+      },
+      {
+        w: 26,
         t: 'Đánh giá định kỳ',
-        n: 'Kiểm tra, đánh giá giữa Học kỳ 2 môn Ngữ văn 6 (4 tiết)',
-        y: '- Đánh giá mức độ đạt chuẩn năng lực đọc hiểu (truyền thuyết, cổ tích, văn bản nghị luận) và năng lực viết bài văn đóng vai nhân vật/nghị luận.\n- Đánh giá khả năng vận dụng ngữ pháp tiếng Việt và tư duy phản biện.',
-        eq: 'Đề kiểm tra giữa kỳ 2 chuẩn ma trận Bộ GD&ĐT',
+        n: 'Kiểm tra, đánh giá giữa Học kỳ 2 môn Ngữ văn 6 (2 tiết)',
+        p: 2,
+        y: '- Đánh giá chuẩn kiến thức, kĩ năng môn Ngữ văn 6 từ Tuần 19 đến Tuần 25 theo ma trận chuẩn Bộ GD&ĐT (thời gian làm bài 90 phút).\n- Đánh giá năng lực tiếp nhận văn học và năng lực tạo lập văn bản.',
+        eq: 'Đề kiểm tra giữa kỳ 2 chuẩn, ma trận và hướng dẫn chấm',
         nlsCode: '4.1.TC1a',
         aiCode: '6.A3.3'
       },
@@ -299,10 +332,21 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
       },
       {
         w: 31,
+        t: 'Ôn tập đánh giá định kỳ',
+        n: 'Ôn tập chuẩn bị kiểm tra, đánh giá cuối Học kỳ 2 môn Ngữ văn 6 (2 tiết)',
+        p: 2,
+        y: '- Ôn tập hệ thống hóa toàn bộ kiến thức môn Ngữ văn 6 cả năm học: Đọc hiểu thể loại, Tiếng Việt, Viết, Nói và nghe.\n- Rèn luyện kỹ năng phân tích văn bản ngoài sách giáo khoa.',
+        eq: 'Đề cương ôn tập cuối năm môn Ngữ văn',
+        nlsCode: '3.1.TC1a',
+        aiCode: '6.A1.3'
+      },
+      {
+        w: 31,
         t: 'Đánh giá định kỳ',
-        n: 'Kiểm tra, đánh giá cuối Học kỳ 2 môn Ngữ văn 6 (4 tiết)',
-        y: '- Đánh giá toàn diện năng lực đọc hiểu văn bản thông tin, nghị luận xã hội và năng lực viết văn bản hoàn chỉnh cả năm.\n- Đánh giá sự tiến bộ về phẩm chất nhân ái, trung thực, trách nhiệm và tình yêu quê hương đất nước.',
-        eq: 'Đề kiểm tra cuối kỳ 2 chuẩn, ma trận và thang điểm',
+        n: 'Kiểm tra, đánh giá cuối Học kỳ 2 môn Ngữ văn 6 (2 tiết)',
+        p: 2,
+        y: '- Đánh giá tổng kết toàn diện mức độ đạt chuẩn môn Ngữ văn 6 cả năm học theo Thông tư 22/2021/TT-BGDĐT (thời gian làm bài 90 phút).\n- Đánh giá sự tiến bộ về phẩm chất nhân văn và năng lực ngôn ngữ, văn học.',
+        eq: 'Đề kiểm tra cuối kỳ 2 chuẩn, ma trận và hướng dẫn chấm',
         nlsCode: '4.1.TC1b',
         aiCode: '6.A3.3'
       },
@@ -349,7 +393,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         week: item.w,
         topic: item.t,
         name: item.n,
-        periods: 4,
+        periods: (item as any).p || 4,
         yccd: item.y,
         equipment: item.eq,
         location: 'Phòng học / Thư viện trường',
@@ -443,10 +487,21 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
       },
       {
         w: 9,
+        t: 'Ôn tập đánh giá định kỳ',
+        n: 'Ôn tập chuẩn bị kiểm tra, đánh giá giữa Học kỳ 1 môn Ngữ văn 7 (2 tiết)',
+        p: 2,
+        y: '- Củng cố, hệ thống hóa kiến thức đọc hiểu văn bản, kiến thức tiếng Việt và kĩ năng viết từ Tuần 1 đến Tuần 8.\n- Rèn luyện kĩ năng phân tích đề thi và cách trình bày bài làm đạt chuẩn.',
+        eq: 'Đề cương ôn tập giữa kì 1, phiếu bài tập',
+        nlsCode: '1.3.TC1a',
+        aiCode: '7.A1.1'
+      },
+      {
+        w: 9,
         t: 'Đánh giá định kỳ',
-        n: 'Kiểm tra, đánh giá giữa Học kỳ 1 môn Ngữ văn 7 (4 tiết)',
-        y: '- Đánh giá năng lực đọc hiểu văn bản thơ bốn chữ, năm chữ, truyện ngắn và năng lực viết bài văn biểu cảm/phân tích nhân vật.\n- Đánh giá kiến thức tiếng Việt (trạng ngữ, thuật ngữ, nói giảm nói tránh) theo chuẩn ma trận Bộ GD&ĐT.',
-        eq: 'Đề kiểm tra giữa kỳ 1 chuẩn, ma trận và đáp án chính thức',
+        n: 'Kiểm tra, đánh giá giữa Học kỳ 1 môn Ngữ văn 7 (2 tiết)',
+        p: 2,
+        y: '- Đánh giá chuẩn năng lực đọc hiểu và kĩ năng viết đoạn văn/bài văn môn Ngữ văn 7 theo ma trận đề Bộ GD&ĐT (thời gian làm bài 90 phút).\n- Đánh giá khả năng cảm thụ văn học, tư duy độc lập và tính trung thực trong kiểm tra.',
+        eq: 'Đề kiểm tra giữa kỳ 1 chuẩn, ma trận và hướng dẫn chấm',
         nlsCode: '4.1.TC1a',
         aiCode: '7.A3.1'
       },
@@ -506,10 +561,21 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
       },
       {
         w: 16,
+        t: 'Ôn tập đánh giá định kỳ',
+        n: 'Ôn tập chuẩn bị kiểm tra, đánh giá cuối Học kỳ 1 môn Ngữ văn 7 (2 tiết)',
+        p: 2,
+        y: '- Hệ thống hóa toàn diện kiến thức đọc hiểu thể loại, tiếng Việt và phương pháp viết các kiểu văn bản trong toàn bộ Học kỳ 1.\n- Rèn luyện kĩ năng viết bài văn hoàn chỉnh có cảm xúc và sáng tạo.',
+        eq: 'Đề cương ôn tập cuối HK1, bảng hệ thống thể loại',
+        nlsCode: '3.1.TC1a',
+        aiCode: '7.A1.3'
+      },
+      {
+        w: 16,
         t: 'Đánh giá định kỳ',
-        n: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Ngữ văn 7 (4 tiết)',
-        y: '- Đánh giá toàn diện kết quả học tập môn Ngữ văn HK1: đọc hiểu văn bản (thơ, truyện, tùy bút/tản văn) và viết bài văn phân tích/biểu cảm.\n- Đánh giá năng lực tiếng Việt và cảm thụ văn học theo chuẩn CT GDPT 2018.',
-        eq: 'Đề kiểm tra cuối kỳ 1 chuẩn, ma trận và biểu điểm',
+        n: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Ngữ văn 7 (2 tiết)',
+        p: 2,
+        y: '- Đánh giá tổng hợp toàn diện kết quả học tập môn Ngữ văn 7 toàn bộ Học kỳ 1 theo chuẩn CT GDPT 2018 (thời gian làm bài 90 phút).\n- Phân hóa năng lực học sinh làm căn cứ điều chỉnh phương pháp dạy học Học kỳ 2.',
+        eq: 'Đề kiểm tra cuối kỳ 1 chuẩn, ma trận và hướng dẫn chấm',
         nlsCode: '4.1.TC1b',
         aiCode: '7.A3.1'
       },
@@ -598,10 +664,21 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
       },
       {
         w: 26,
+        t: 'Ôn tập đánh giá định kỳ',
+        n: 'Ôn tập chuẩn bị kiểm tra, đánh giá giữa Học kỳ 2 môn Ngữ văn 7 (2 tiết)',
+        p: 2,
+        y: '- Ôn tập củng cố các chủ đề đọc hiểu văn bản và kĩ năng viết văn từ Tuần 19 đến Tuần 25 môn Ngữ văn 7.\n- Hướng dẫn kĩ năng triển khai luận điểm và lập luận chặt chẽ.',
+        eq: 'Phiếu học tập ôn tập giữa HK2',
+        nlsCode: '1.3.TC1a',
+        aiCode: '7.A1.1'
+      },
+      {
+        w: 26,
         t: 'Đánh giá định kỳ',
-        n: 'Kiểm tra, đánh giá giữa Học kỳ 2 môn Ngữ văn 7 (4 tiết)',
-        y: '- Đánh giá năng lực đọc hiểu (truyện ngụ ngôn, truyện viễn tưởng, văn bản nghị luận) và năng lực viết bài văn nghị luận xã hội.\n- Đánh giá kiến thức tiếng Việt và tư duy phản biện theo chuẩn ma trận Bộ GD&ĐT.',
-        eq: 'Đề kiểm tra giữa kỳ 2 chuẩn, ma trận và đáp án',
+        n: 'Kiểm tra, đánh giá giữa Học kỳ 2 môn Ngữ văn 7 (2 tiết)',
+        p: 2,
+        y: '- Đánh giá chuẩn kiến thức, kĩ năng môn Ngữ văn 7 từ Tuần 19 đến Tuần 25 theo ma trận chuẩn Bộ GD&ĐT (thời gian làm bài 90 phút).\n- Đánh giá năng lực tiếp nhận văn học và năng lực tạo lập văn bản.',
+        eq: 'Đề kiểm tra giữa kỳ 2 chuẩn, ma trận và hướng dẫn chấm',
         nlsCode: '4.1.TC1a',
         aiCode: '7.A3.1'
       },
@@ -643,10 +720,21 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
       },
       {
         w: 31,
+        t: 'Ôn tập đánh giá định kỳ',
+        n: 'Ôn tập chuẩn bị kiểm tra, đánh giá cuối Học kỳ 2 môn Ngữ văn 7 (2 tiết)',
+        p: 2,
+        y: '- Ôn tập hệ thống hóa toàn bộ kiến thức môn Ngữ văn 7 cả năm học: Đọc hiểu thể loại, Tiếng Việt, Viết, Nói và nghe.\n- Rèn luyện kỹ năng phân tích văn bản ngoài sách giáo khoa.',
+        eq: 'Đề cương ôn tập cuối năm môn Ngữ văn',
+        nlsCode: '3.1.TC1a',
+        aiCode: '7.A1.3'
+      },
+      {
+        w: 31,
         t: 'Đánh giá định kỳ',
-        n: 'Kiểm tra, đánh giá cuối Học kỳ 2 môn Ngữ văn 7 (4 tiết)',
-        y: '- Đánh giá tổng hợp năng lực đọc hiểu văn bản thông tin, nghị luận xã hội và năng lực viết văn bản thuyết minh/nghị luận cả năm.\n- Đánh giá phẩm chất tự chủ, trách nhiệm công dân và năng lực thẩm mỹ văn học.',
-        eq: 'Đề kiểm tra cuối kỳ 2 chuẩn, ma trận và thang điểm',
+        n: 'Kiểm tra, đánh giá cuối Học kỳ 2 môn Ngữ văn 7 (2 tiết)',
+        p: 2,
+        y: '- Đánh giá tổng kết toàn diện mức độ đạt chuẩn môn Ngữ văn 7 cả năm học theo Thông tư 22/2021/TT-BGDĐT (thời gian làm bài 90 phút).\n- Đánh giá sự tiến bộ về phẩm chất nhân văn và năng lực ngôn ngữ, văn học.',
+        eq: 'Đề kiểm tra cuối kỳ 2 chuẩn, ma trận và hướng dẫn chấm',
         nlsCode: '4.1.TC1b',
         aiCode: '7.A3.1'
       },
@@ -693,7 +781,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         week: item.w,
         topic: item.t,
         name: item.n,
-        periods: 4,
+        periods: (item as any).p || 4,
         yccd: item.y,
         equipment: item.eq,
         location: 'Phòng học / Thư viện trường',
@@ -787,10 +875,21 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
       },
       {
         w: 9,
+        t: 'Ôn tập đánh giá định kỳ',
+        n: 'Ôn tập chuẩn bị kiểm tra, đánh giá giữa Học kỳ 1 môn Ngữ văn 8 (2 tiết)',
+        p: 2,
+        y: '- Củng cố, hệ thống hóa kiến thức đọc hiểu văn bản, kiến thức tiếng Việt và kĩ năng viết từ Tuần 1 đến Tuần 8.\n- Rèn luyện kĩ năng phân tích đề thi và cách trình bày bài làm đạt chuẩn.',
+        eq: 'Đề cương ôn tập giữa kì 1, phiếu bài tập',
+        nlsCode: '1.3.TC2a',
+        aiCode: '8.A1.1'
+      },
+      {
+        w: 9,
         t: 'Đánh giá định kỳ',
-        n: 'Kiểm tra, đánh giá giữa Học kỳ 1 môn Ngữ văn 8 (4 tiết)',
-        y: '- Đánh giá năng lực đọc hiểu văn bản thơ Đường luật, văn chính luận lịch sử và năng lực viết bài văn phân tích thơ Đường luật/nghị luận xã hội.\n- Đánh giá kiến thức tiếng Việt (từ Hán Việt, đoạn văn diễn dịch/quy nạp) theo ma trận đề chuẩn Bộ GD&ĐT.',
-        eq: 'Đề kiểm tra giữa kỳ 1 chuẩn, ma trận và thang điểm chính thức',
+        n: 'Kiểm tra, đánh giá giữa Học kỳ 1 môn Ngữ văn 8 (2 tiết)',
+        p: 2,
+        y: '- Đánh giá chuẩn năng lực đọc hiểu và kĩ năng viết đoạn văn/bài văn môn Ngữ văn 8 theo ma trận đề Bộ GD&ĐT (thời gian làm bài 90 phút).\n- Đánh giá khả năng cảm thụ văn học, tư duy độc lập và tính trung thực trong kiểm tra.',
+        eq: 'Đề kiểm tra giữa kỳ 1 chuẩn, ma trận và hướng dẫn chấm',
         nlsCode: '4.1.TC2a',
         aiCode: '8.A3.3'
       },
@@ -850,10 +949,21 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
       },
       {
         w: 16,
+        t: 'Ôn tập đánh giá định kỳ',
+        n: 'Ôn tập chuẩn bị kiểm tra, đánh giá cuối Học kỳ 1 môn Ngữ văn 8 (2 tiết)',
+        p: 2,
+        y: '- Hệ thống hóa toàn diện kiến thức đọc hiểu thể loại, tiếng Việt và phương pháp viết các kiểu văn bản trong toàn bộ Học kỳ 1.\n- Rèn luyện kĩ năng viết bài văn hoàn chỉnh có cảm xúc và sáng tạo.',
+        eq: 'Đề cương ôn tập cuối HK1, bảng hệ thống thể loại',
+        nlsCode: '3.1.TC2a',
+        aiCode: '8.A1.3'
+      },
+      {
+        w: 16,
         t: 'Đánh giá định kỳ',
-        n: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Ngữ văn 8 (4 tiết)',
-        y: '- Đánh giá tổng hợp năng lực đọc hiểu văn bản (thơ trào phúng, truyện ngụ ngôn/kịch hài, văn chính luận) và năng lực viết bài văn phân tích/nghị luận.\n- Đánh giá năng lực sử dụng tiếng Việt và tư duy phản biện văn học theo chuẩn CT GDPT 2018.',
-        eq: 'Đề kiểm tra cuối kỳ 1 chuẩn, ma trận và thang điểm chi tiết',
+        n: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Ngữ văn 8 (2 tiết)',
+        p: 2,
+        y: '- Đánh giá tổng hợp toàn diện kết quả học tập môn Ngữ văn 8 toàn bộ Học kỳ 1 theo chuẩn CT GDPT 2018 (thời gian làm bài 90 phút).\n- Phân hóa năng lực học sinh làm căn cứ điều chỉnh phương pháp dạy học Học kỳ 2.',
+        eq: 'Đề kiểm tra cuối kỳ 1 chuẩn, ma trận và hướng dẫn chấm',
         nlsCode: '4.1.TC2b',
         aiCode: '8.A3.3'
       },
@@ -942,9 +1052,20 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
       },
       {
         w: 26,
+        t: 'Ôn tập đánh giá định kỳ',
+        n: 'Ôn tập chuẩn bị kiểm tra, đánh giá giữa Học kỳ 2 môn Ngữ văn 8 (2 tiết)',
+        p: 2,
+        y: '- Ôn tập củng cố các chủ đề đọc hiểu văn bản và kĩ năng viết văn từ Tuần 19 đến Tuần 25 môn Ngữ văn 8.\n- Hướng dẫn kĩ năng triển khai luận điểm và lập luận chặt chẽ.',
+        eq: 'Phiếu học tập ôn tập giữa HK2',
+        nlsCode: '1.3.TC2a',
+        aiCode: '8.A1.1'
+      },
+      {
+        w: 26,
         t: 'Đánh giá định kỳ',
-        n: 'Kiểm tra, đánh giá giữa Học kỳ 2 môn Ngữ văn 8 (4 tiết)',
-        y: '- Đánh giá năng lực đọc hiểu văn bản (thơ hiện đại, truyện ngắn, nghị luận văn học) và năng lực viết bài văn phân tích tác phẩm văn học.\n- Đánh giá kiến thức tiếng Việt (câu ghép, thành phần biệt lập, khởi ngữ) theo ma trận chuẩn Bộ GD&ĐT.',
+        n: 'Kiểm tra, đánh giá giữa Học kỳ 2 môn Ngữ văn 8 (2 tiết)',
+        p: 2,
+        y: '- Đánh giá chuẩn kiến thức, kĩ năng môn Ngữ văn 8 từ Tuần 19 đến Tuần 25 theo ma trận chuẩn Bộ GD&ĐT (thời gian làm bài 90 phút).\n- Đánh giá năng lực tiếp nhận văn học và năng lực tạo lập văn bản.',
         eq: 'Đề kiểm tra giữa kỳ 2 chuẩn, ma trận và hướng dẫn chấm',
         nlsCode: '4.1.TC2a',
         aiCode: '8.A3.3'
@@ -987,10 +1108,21 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
       },
       {
         w: 31,
+        t: 'Ôn tập đánh giá định kỳ',
+        n: 'Ôn tập chuẩn bị kiểm tra, đánh giá cuối Học kỳ 2 môn Ngữ văn 8 (2 tiết)',
+        p: 2,
+        y: '- Ôn tập hệ thống hóa toàn bộ kiến thức môn Ngữ văn 8 cả năm học: Đọc hiểu thể loại, Tiếng Việt, Viết, Nói và nghe.\n- Rèn luyện kỹ năng phân tích văn bản ngoài sách giáo khoa.',
+        eq: 'Đề cương ôn tập cuối năm môn Ngữ văn',
+        nlsCode: '3.1.TC2a',
+        aiCode: '8.A1.3'
+      },
+      {
+        w: 31,
         t: 'Đánh giá định kỳ',
-        n: 'Kiểm tra, đánh giá cuối Học kỳ 2 môn Ngữ văn 8 (4 tiết)',
-        y: '- Đánh giá tổng hợp toàn diện năng lực đọc hiểu (văn bản thông tin, nghị luận, thơ, truyện) và năng lực viết văn bản hoàn chỉnh cả năm.\n- Đánh giá năng lực tự học, tư duy phản biện và phẩm chất đạo đức theo chuẩn CT GDPT 2018.',
-        eq: 'Đề kiểm tra cuối kỳ 2 chuẩn, ma trận và thang điểm chi tiết',
+        n: 'Kiểm tra, đánh giá cuối Học kỳ 2 môn Ngữ văn 8 (2 tiết)',
+        p: 2,
+        y: '- Đánh giá tổng kết toàn diện mức độ đạt chuẩn môn Ngữ văn 8 cả năm học theo Thông tư 22/2021/TT-BGDĐT (thời gian làm bài 90 phút).\n- Đánh giá sự tiến bộ về phẩm chất nhân văn và năng lực ngôn ngữ, văn học.',
+        eq: 'Đề kiểm tra cuối kỳ 2 chuẩn, ma trận và hướng dẫn chấm',
         nlsCode: '4.1.TC2b',
         aiCode: '8.A3.3'
       },
@@ -1037,7 +1169,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
         week: item.w,
         topic: item.t,
         name: item.n,
-        periods: 4,
+        periods: (item as any).p || 4,
         yccd: item.y,
         equipment: item.eq,
         location: 'Phòng học / Thư viện trường',
@@ -1129,14 +1261,25 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
       aiCode: '9.C2.1'
     },
     {
-      w: 9,
-      t: 'Đánh giá định kỳ',
-      n: 'Kiểm tra, đánh giá giữa Học kỳ 1 môn Ngữ văn 9 (4 tiết)',
-      y: '- Đánh giá năng lực đọc hiểu văn bản truyện truyền kì, thơ song thất lục bát, truyện thơ Nôm và năng lực viết bài văn nghị luận phân tích tác phẩm văn học.\n- Đánh giá kiến thức tiếng Việt và tư duy thẩm mỹ theo ma trận chuẩn thi tuyển sinh Lớp 10.',
-      eq: 'Đề kiểm tra giữa kỳ 1 chuẩn ma trận Bộ GD&ĐT',
-      nlsCode: '4.1.TC2a',
-      aiCode: '9.B2.3'
-    },
+        w: 9,
+        t: 'Ôn tập đánh giá định kỳ',
+        n: 'Ôn tập chuẩn bị kiểm tra, đánh giá giữa Học kỳ 1 môn Ngữ văn 9 (2 tiết)',
+        p: 2,
+        y: '- Củng cố, hệ thống hóa kiến thức đọc hiểu văn bản, kiến thức tiếng Việt và kĩ năng viết từ Tuần 1 đến Tuần 8.\n- Rèn luyện kĩ năng phân tích đề thi và cách trình bày bài làm đạt chuẩn.',
+        eq: 'Đề cương ôn tập giữa kì 1, phiếu bài tập',
+        nlsCode: '1.3.TC2a',
+        aiCode: '9.A1.1'
+      },
+      {
+        w: 9,
+        t: 'Đánh giá định kỳ',
+        n: 'Kiểm tra, đánh giá giữa Học kỳ 1 môn Ngữ văn 9 (2 tiết)',
+        p: 2,
+        y: '- Đánh giá chuẩn năng lực đọc hiểu và kĩ năng viết đoạn văn/bài văn môn Ngữ văn 9 theo ma trận đề Bộ GD&ĐT (thời gian làm bài 90 phút).\n- Đánh giá khả năng cảm thụ văn học, tư duy độc lập và tính trung thực trong kiểm tra.',
+        eq: 'Đề kiểm tra giữa kỳ 1 chuẩn, ma trận và hướng dẫn chấm',
+        nlsCode: '4.1.TC2a',
+        aiCode: '9.B2.3'
+      },
     {
       w: 10,
       t: 'Bài 3 & Bài 4',
@@ -1192,14 +1335,25 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
       aiCode: '9.C2.1'
     },
     {
-      w: 16,
-      t: 'Đánh giá định kỳ',
-      n: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Ngữ văn 9 (4 tiết)',
-      y: '- Đánh giá tổng hợp năng lực đọc hiểu văn bản (truyền kì, truyện thơ Nôm, bi kịch, nghị luận) và năng lực viết bài văn nghị luận văn học/xã hội.\n- Đánh giá kiến thức tiếng Việt và rèn luyện kỹ năng làm bài thi vào Lớp 10 THPT.',
-      eq: 'Đề kiểm tra cuối kỳ 1 chuẩn ma trận tuyển sinh Lớp 10',
-      nlsCode: '4.1.TC2b',
-      aiCode: '9.B2.3'
-    },
+        w: 16,
+        t: 'Ôn tập đánh giá định kỳ',
+        n: 'Ôn tập chuẩn bị kiểm tra, đánh giá cuối Học kỳ 1 môn Ngữ văn 9 (2 tiết)',
+        p: 2,
+        y: '- Hệ thống hóa toàn diện kiến thức đọc hiểu thể loại, tiếng Việt và phương pháp viết các kiểu văn bản trong toàn bộ Học kỳ 1.\n- Rèn luyện kĩ năng viết bài văn hoàn chỉnh có cảm xúc và sáng tạo.',
+        eq: 'Đề cương ôn tập cuối HK1, bảng hệ thống thể loại',
+        nlsCode: '3.1.TC2a',
+        aiCode: '9.A1.3'
+      },
+      {
+        w: 16,
+        t: 'Đánh giá định kỳ',
+        n: 'Kiểm tra, đánh giá cuối Học kỳ 1 môn Ngữ văn 9 (2 tiết)',
+        p: 2,
+        y: '- Đánh giá tổng hợp toàn diện kết quả học tập môn Ngữ văn 9 toàn bộ Học kỳ 1 theo chuẩn CT GDPT 2018 (thời gian làm bài 90 phút).\n- Phân hóa năng lực học sinh làm căn cứ điều chỉnh phương pháp dạy học Học kỳ 2.',
+        eq: 'Đề kiểm tra cuối kỳ 1 chuẩn, ma trận và hướng dẫn chấm',
+        nlsCode: '4.1.TC2b',
+        aiCode: '9.B2.3'
+      },
     {
       w: 17,
       t: 'Ôn tập & Đánh giá định kỳ',
@@ -1284,14 +1438,25 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
       aiCode: '9.C2.1'
     },
     {
-      w: 26,
-      t: 'Đánh giá định kỳ',
-      n: 'Kiểm tra, đánh giá giữa Học kỳ 2 môn Ngữ văn 9 (4 tiết)',
-      y: '- Đánh giá năng lực đọc hiểu văn bản (truyện trinh thám, thơ tám chữ, văn bản nghị luận xã hội) và năng lực viết bài văn nghị luận xã hội/văn học.\n- Đánh giá kiến thức tiếng Việt và rèn luyện kỹ năng làm bài thi thử tuyển sinh Lớp 10.',
-      eq: 'Đề kiểm tra giữa kỳ 2 chuẩn ma trận tuyển sinh Lớp 10 THPT',
-      nlsCode: '4.1.TC2a',
-      aiCode: '9.B2.3'
-    },
+        w: 26,
+        t: 'Ôn tập đánh giá định kỳ',
+        n: 'Ôn tập chuẩn bị kiểm tra, đánh giá giữa Học kỳ 2 môn Ngữ văn 9 (2 tiết)',
+        p: 2,
+        y: '- Ôn tập củng cố các chủ đề đọc hiểu văn bản và kĩ năng viết văn từ Tuần 19 đến Tuần 25 môn Ngữ văn 9.\n- Hướng dẫn kĩ năng triển khai luận điểm và lập luận chặt chẽ.',
+        eq: 'Phiếu học tập ôn tập giữa HK2',
+        nlsCode: '1.3.TC2a',
+        aiCode: '9.A1.1'
+      },
+      {
+        w: 26,
+        t: 'Đánh giá định kỳ',
+        n: 'Kiểm tra, đánh giá giữa Học kỳ 2 môn Ngữ văn 9 (2 tiết)',
+        p: 2,
+        y: '- Đánh giá chuẩn kiến thức, kĩ năng môn Ngữ văn 9 từ Tuần 19 đến Tuần 25 theo ma trận chuẩn Bộ GD&ĐT (thời gian làm bài 90 phút).\n- Đánh giá năng lực tiếp nhận văn học và năng lực tạo lập văn bản.',
+        eq: 'Đề kiểm tra giữa kỳ 2 chuẩn, ma trận và hướng dẫn chấm',
+        nlsCode: '4.1.TC2a',
+        aiCode: '9.B2.3'
+      },
     {
       w: 27,
       t: 'Bài 9: Đi và suy ngẫm',
@@ -1329,14 +1494,25 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
       aiCode: '9.D1.1'
     },
     {
-      w: 31,
-      t: 'Đánh giá định kỳ',
-      n: 'Kiểm tra, đánh giá cuối Học kỳ 2 môn Ngữ văn 9 (4 tiết)',
-      y: '- Đánh giá tổng kết toàn diện kết quả học tập môn Ngữ văn Lớp 9 cả năm và chuẩn bị cho kì thi tuyển sinh vào Lớp 10 THPT.\n- Đánh giá năng lực đọc hiểu đa dạng thể loại và năng lực tạo lập văn bản hoàn chỉnh theo chuẩn CT GDPT 2018.',
-      eq: 'Đề kiểm tra cuối kỳ 2 chuẩn ma trận tuyển sinh Lớp 10 của Sở GD&ĐT',
-      nlsCode: '4.1.TC2b',
-      aiCode: '9.B2.3'
-    },
+        w: 31,
+        t: 'Ôn tập đánh giá định kỳ',
+        n: 'Ôn tập chuẩn bị kiểm tra, đánh giá cuối Học kỳ 2 môn Ngữ văn 9 (2 tiết)',
+        p: 2,
+        y: '- Ôn tập hệ thống hóa toàn bộ kiến thức môn Ngữ văn 9 cả năm học: Đọc hiểu thể loại, Tiếng Việt, Viết, Nói và nghe.\n- Rèn luyện kỹ năng phân tích văn bản ngoài sách giáo khoa.',
+        eq: 'Đề cương ôn tập cuối năm môn Ngữ văn',
+        nlsCode: '3.1.TC2a',
+        aiCode: '9.A1.3'
+      },
+      {
+        w: 31,
+        t: 'Đánh giá định kỳ',
+        n: 'Kiểm tra, đánh giá cuối Học kỳ 2 môn Ngữ văn 9 (2 tiết)',
+        p: 2,
+        y: '- Đánh giá tổng kết toàn diện mức độ đạt chuẩn môn Ngữ văn 9 cả năm học theo Thông tư 22/2021/TT-BGDĐT (thời gian làm bài 90 phút).\n- Đánh giá sự tiến bộ về phẩm chất nhân văn và năng lực ngôn ngữ, văn học.',
+        eq: 'Đề kiểm tra cuối kỳ 2 chuẩn, ma trận và hướng dẫn chấm',
+        nlsCode: '4.1.TC2b',
+        aiCode: '9.B2.3'
+      },
     {
       w: 32,
       t: 'Ôn tập & Đánh giá định kỳ',
@@ -1380,7 +1556,7 @@ export function getNguVanSecondaryCurriculum(grade: string): RawSecondaryLesson[
       week: item.w,
       topic: item.t,
       name: item.n,
-      periods: 4,
+      periods: (item as any).p || 4,
       yccd: item.y,
       equipment: item.eq,
       location: 'Phòng học / Thư viện trường',

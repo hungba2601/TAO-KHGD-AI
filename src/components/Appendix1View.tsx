@@ -38,13 +38,14 @@ export const Appendix1View: React.FC<Appendix1ViewProps> = ({ planData, onUpdate
   const formatWeekDisplay = (week: string | number) => {
     if (!week) return isEn ? 'Week 1' : 'Tuần 1';
     const str = String(week).trim();
-    const numMatch = str.match(/\d+/);
     if (isEn) {
-      if (numMatch) return `Week ${numMatch[0]}`;
-      return str.replace(/tuần/i, 'Week');
+      if (str.toLowerCase().startsWith('week')) return str;
+      if (str.toLowerCase().startsWith('tuần')) return str.replace(/tuần/i, 'Week');
+      return `Week ${str}`;
     } else {
-      if (numMatch) return `Tuần ${numMatch[0]}`;
-      return str.replace(/week/i, 'Tuần');
+      if (str.toLowerCase().startsWith('tuần')) return str;
+      if (str.toLowerCase().startsWith('week')) return str.replace(/week/i, 'Tuần');
+      return `Tuần ${str}`;
     }
   };
 

@@ -458,6 +458,43 @@ export function getDefaultEquipments(
     ];
   }
 
+  if (s.includes('khoa học tự nhiên') || s.includes('khtn')) {
+    return [
+      {
+        id: 'eq-1',
+        stt: 1,
+        equipmentName: `Hệ thống kính hiển vi quang học một mắt/hai mắt độ phóng đại 400x - 1000x, kính lúp cầm tay và bộ tiêu bản vi sinh vật mẫu Lớp ${g}`,
+        quantity: '08 bộ/phòng',
+        experiments: 'Thực hành quan sát tế bào thực vật, động vật, vi khuẩn, nấm, cấu trúc mô giải phẫu',
+        notes: 'TT 38/2021/TT-BGDĐT'
+      },
+      {
+        id: 'eq-2',
+        stt: 2,
+        equipmentName: 'Bộ thiết bị thí nghiệm Hóa học chuyên dụng: Ống nghiệm chịu nhiệt, giá ống nghiệm, đèn cồn, bình tam giác, cốc đun chia vạch, phễu lọc, bộ hóa chất vô cơ và hữu cơ chuẩn',
+        quantity: '08 bộ/phòng',
+        experiments: 'Thực hành phản ứng hóa học, pha chế dung dịch, đo pH, tách chất, thí nghiệm acid - base - muối',
+        notes: 'Tiêu chuẩn an toàn lab'
+      },
+      {
+        id: 'eq-3',
+        stt: 3,
+        equipmentName: 'Bộ thiết bị thực hành Vật lý & Đo lường số: Lực kế lò xo, máng nghiêng, cổng quang điện và đồng hồ đo thời gian hiện số, bộ thấu kính - lăng kính quang học, nguồn điện và vạn năng kế',
+        quantity: '08 bộ/phòng',
+        experiments: 'Đo tốc độ, khảo sát lực và moment lực, khúc xạ ánh sáng, đo tiêu cự thấu kính, định luật Ohm',
+        notes: 'Thiết bị chuẩn hóa'
+      },
+      {
+        id: 'eq-4',
+        stt: 4,
+        equipmentName: 'Bộ mô hình 3D sinh học tháo lắp (cơ thể người, tế bào, phân tử DNA, hệ Mặt Trời) & Phần mềm thí nghiệm ảo KHTN tích hợp AI',
+        quantity: '04 bộ/môn',
+        experiments: 'Minh họa trực quan các hệ cơ quan, cấu trúc phân tử vi mô và mô phỏng hiện tượng tự nhiên',
+        notes: 'Thiết bị số & trực quan'
+      }
+    ];
+  }
+
   // General default
   return [
     {
