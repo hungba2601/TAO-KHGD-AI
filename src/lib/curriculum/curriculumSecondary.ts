@@ -574,8 +574,14 @@ export function buildSecondaryCurriculum(
       : isBlankTest
       ? ''
       : (isEnglish
-      ? (nls.code || ai.code ? `• [NLS Code: ${nls.code}] ${nls.requirement}\n• [AI Code: ${ai.code}] ${ai.requirement}` : '')
-      : `• [Mã NLS: ${nls.code}] ${nls.requirement}\n• [Mã AI: ${ai.code}] ${ai.requirement}`);
+      ? [
+          nls.code ? `• [NLS Code: ${nls.code}] ${nls.requirement}` : '',
+          ai.code ? `• [AI Code: ${ai.code}] ${ai.requirement}` : ''
+        ].filter(Boolean).join('\n')
+      : [
+          nls.code ? `• [Mã NLS: ${nls.code}] ${nls.requirement}` : '',
+          ai.code ? `• [Mã AI: ${ai.code}] ${ai.requirement}` : ''
+        ].filter(Boolean).join('\n'));
 
     const formattedWeek = typeof item.week === 'number'
       ? (isEnglish ? `Week ${item.week}` : `Tuần ${item.week}`)
