@@ -546,14 +546,45 @@ export function buildSecondaryCurriculum(
       lessonIndex: idx
     };
 
-    const isBlankTest = isEnglish && customYccd === '';
+    const topicUpper = (item.topic || '').toUpperCase();
+    const nameLower = (item.name || '').toLowerCase();
+    const isAssessment =
+      topicUpper.includes('ĐG') ||
+      topicUpper.includes('KT') ||
+      topicUpper.includes('ĐÁNH GIÁ') ||
+      topicUpper.includes('KIỂM TRA') ||
+      topicUpper.includes('ASSESSMENT') ||
+      topicUpper.includes('TEST') ||
+      nameLower.includes('đánh giá giữa') ||
+      nameLower.includes('đánh giá cuối') ||
+      nameLower.includes('kiểm tra giữa') ||
+      nameLower.includes('kiểm tra cuối') ||
+      nameLower.includes('kiểm tra, đánh giá') ||
+      nameLower.includes('kiểm tra định kỳ');
+
+    const isBlankTest = (isEnglish && customYccd === '') || isAssessment;
 
     const nlsMatch = (item.digitalCompetency || item.dc || '').match(/\[(?:Mã NLS|NLS Code):\s*([^\]]+)\]/i);
     const aiMatch = (item.digitalCompetency || item.dc || '').match(/\[(?:Mã AI|AI Code):\s*([^\]]+)\]/i);
     const extractedNlsCode = item.nlsCode !== undefined ? item.nlsCode : (nlsMatch ? nlsMatch[1].trim() : undefined);
     const extractedAiCode = item.aiCode !== undefined ? item.aiCode : (aiMatch ? aiMatch[1].trim() : undefined);
 
-    const nls = extractedNlsCode !== undefined
+    const isHdtn =
+      s.includes('trải nghiệm') ||
+      s.includes('hđtn') ||
+      s.includes('hdtn') ||
+      s.includes('hướng nghiệp');
+
+    const isHdtn89 =
+      isHdtn &&
+      (topicUpper.includes('CHỦ ĐỀ 8') ||
+        topicUpper.includes('CHỦ ĐỀ 9') ||
+        topicUpper.includes('KHÁM PHÁ THẾ GIỚI NGHỀ NGHIỆP') ||
+        topicUpper.includes('HIỂU BẢN THÂN'));
+
+    const nls = isAssessment
+      ? { code: '', requirement: '' }
+      : extractedNlsCode !== undefined
       ? { code: extractedNlsCode, requirement: lookupNlsRequirement(extractedNlsCode) || '' }
       : isBlankTest
       ? { code: '', requirement: '' }
@@ -561,7 +592,9 @@ export function buildSecondaryCurriculum(
       ? getNlsCodeForEnglishLesson(g, schoolType, lessonCtx)
       : getNlsCodeForSubjectLesson(g, schoolType, lessonCtx);
 
-    const ai = extractedAiCode !== undefined
+    const ai = isAssessment || (isHdtn && !isHdtn89)
+      ? { code: '', requirement: '' }
+      : extractedAiCode !== undefined
       ? { code: extractedAiCode, requirement: lookupAiRequirement(extractedAiCode)?.requirement || '' }
       : isBlankTest
       ? { code: '', requirement: '' }
@@ -569,7 +602,9 @@ export function buildSecondaryCurriculum(
       ? getAiCodeForEnglishLesson(g, lessonCtx)
       : getAiCodeForSubjectLesson(g, lessonCtx);
 
-    const digitalComp = (item.digitalCompetency !== undefined ? item.digitalCompetency : item.dc) !== undefined
+    const digitalComp = isAssessment
+      ? ''
+      : (item.digitalCompetency !== undefined ? item.digitalCompetency : item.dc) !== undefined
       ? (item.digitalCompetency ?? item.dc)
       : isBlankTest
       ? ''

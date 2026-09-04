@@ -10,7 +10,10 @@ import { RawSecondaryLesson } from './curriculumSecondary';
  * - Yêu cầu cần đạt (YCCĐ) chuẩn Chương trình GDPT 2018 môn HĐTN, HN (Bộ sách Kết nối tri thức với cuộc sống)
  * - Khung Năng lực số (NLS) theo Thông tư 02/2025 và Công văn 3456/BGDĐT-GDPT (Lớp 6, 7: Mức TC1; Lớp 8, 9: Mức TC2)
  * - Khung Năng lực AI theo Quyết định 2422/QĐ-BGDĐT
- * - ĐẶC BIỆT: Riêng Chủ đề 8 và Chủ đề 9 ở tất cả các khối lớp (Lớp 6, 7, 8, 9) CHỈ TÍCH HỢP NĂNG LỰC SỐ (NLS), HOÀN TOÀN KHÔNG TÍCH HỢP AI.
+ * - ĐẶC BIỆT: Khung Năng lực số (NLS) được tích hợp 100% ở TẤT CẢ các chủ đề (Chủ đề 1 đến 9).
+ *   Riêng Khung Năng lực AI (QĐ 2422/QĐ-BGDĐT) CHỈ ĐƯỢC TÍCH HỢP Ở CHỦ ĐỀ 8 VÀ CHỦ ĐỀ 9 (các chủ đề hướng nghiệp và thế giới nghề nghiệp),
+ *   còn các chủ đề khác (Chủ đề 1 đến 7) HOÀN TOÀN KHÔNG TÍCH HỢP AI.
+ *   CÁC TIẾT KIỂM TRA, ĐÁNH GIÁ ĐỊNH KÌ (Giữa HK, Cuối HK) HOÀN TOÀN KHÔNG TÍCH HỢP NLS VÀ AI.
  */
 
 export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] {
@@ -30,8 +33,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Máy chiếu, video/hình ảnh về ngày khai trường và môi trường học đường thân thiện, loa micro",
         location: "Sân trường / Hội trường",
         nlsCode: "2.1.TC1a",
-        aiCode: "6.A1.1",
-        dc: "• [Mã NLS: 2.1.TC1a] Sử dụng thiết bị số để tiếp nhận thông tin và tham gia kênh tương tác số của nhà trường.\n• [Mã AI: 6.A1.1] Nhận biết ứng dụng AI trong quản lý thông tin trường học thông minh.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.1.TC1a] Sử dụng thiết bị số để tiếp nhận thông tin và tham gia kênh tương tác số của nhà trường.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -43,8 +46,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Phiếu khảo sát, giấy A0, bút dạ, bảng phụ nhóm",
         location: "Phòng học",
         nlsCode: "2.5.TC1a",
-        aiCode: "6.A1.3",
-        dc: "• [Mã NLS: 2.5.TC1a] Nhận biết các chuẩn mực ứng xử văn hóa trong giao tiếp trực tiếp và trên không gian mạng.\n• [Mã AI: 6.A1.3] Phân biệt sự tương tác cảm xúc giữa người với người và tương tác với trợ lý ảo AI.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.5.TC1a] Nhận biết các chuẩn mực ứng xử văn hóa trong giao tiếp trực tiếp và trên không gian mạng.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -56,8 +59,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Thẻ tình huống, slide minh họa tình huống giao tiếp",
         location: "Phòng học",
         nlsCode: "2.4.TC1a",
-        aiCode: "6.B1.1",
-        dc: "• [Mã NLS: 2.4.TC1a] Sử dụng công cụ số để thảo luận nhóm, giải quyết tình huống giao tiếp học đường.\n• [Mã AI: 6.B1.1] Đánh giá tác động tích cực và tiêu cực khi sử dụng công nghệ số và AI trong duy trì tình bạn.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.4.TC1a] Sử dụng công cụ số để thảo luận nhóm, giải quyết tình huống giao tiếp học đường.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -69,8 +72,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video tư liệu lịch sử nhà trường, máy chiếu, bảng tin số",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC1b",
-        aiCode: "6.C2.2",
-        dc: "• [Mã NLS: 1.1.TC1b] Tìm kiếm và chọn lọc tư liệu số, hình ảnh lịch sử truyền thống nhà trường trên website trường.\n• [Mã AI: 6.C2.2] Tìm hiểu các công cụ số và trợ lý ảo hỗ trợ tra cứu thông tin trường học.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.1.TC1b] Tìm kiếm và chọn lọc tư liệu số, hình ảnh lịch sử truyền thống nhà trường trên website trường.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -82,8 +85,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Phiếu học tập khám phá phòng truyền thống, thiết bị quét mã QR tra cứu tư liệu",
         location: "Phòng truyền thống / Phòng học",
         nlsCode: "1.3.TC1a",
-        aiCode: "6.C1.1",
-        dc: "• [Mã NLS: 1.3.TC1a] Tổ chức và lưu trữ hình ảnh, tư liệu thu thập được từ phòng truyền thống vào thư mục số.\n• [Mã AI: 6.C1.1] Nhận biết cách hệ thống số lưu trữ và phân loại dữ liệu hình ảnh, hiện vật.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.3.TC1a] Tổ chức và lưu trữ hình ảnh, tư liệu thu thập được từ phòng truyền thống vào thư mục số.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -95,8 +98,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Giấy A4/A3, bút màu, máy tính/máy tính bảng kết nối Internet",
         location: "Phòng học / Phòng Tin học",
         nlsCode: "3.1.TC1b",
-        aiCode: "6.D1.1",
-        dc: "• [Mã NLS: 3.1.TC1b] Sử dụng phần mềm đồ họa/Canva thiết kế bưu thiếp, poster số giới thiệu về ngôi trường thân yêu.\n• [Mã AI: 6.D1.1] Ứng dụng công cụ AI gợi ý ý tưởng thiết kế khẩu hiệu và hình ảnh xây dựng truyền thống trường.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC1b] Sử dụng phần mềm đồ họa/Canva thiết kế bưu thiếp, poster số giới thiệu về ngôi trường thân yêu.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -108,8 +111,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Kế hoạch hoạt động Đội năm học, máy chiếu, micro, loa",
         location: "Sân trường / Hội trường",
         nlsCode: "2.3.TC1a",
-        aiCode: "6.A1.1",
-        dc: "• [Mã NLS: 2.3.TC1a] Tiếp cận kế hoạch và phong trào Đội trên bảng tin điện tử hoặc website liên đội.\n• [Mã AI: 6.A1.1] Nhận diện vai trò của công nghệ và hệ thống truyền thông số trong phát động phong trào Đội.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.3.TC1a] Tiếp cận kế hoạch và phong trào Đội trên bảng tin điện tử hoặc website liên đội.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -121,8 +124,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng đăng ký hoạt động phong trào Đội, phiếu khảo sát nguyện vọng",
         location: "Phòng học",
         nlsCode: "1.2.TC1b",
-        aiCode: "6.A3.3",
-        dc: "• [Mã NLS: 1.2.TC1b] Đánh giá, chọn lọc các hoạt động ngoại khóa phù hợp với sở trường qua cổng thông tin học sinh.\n• [Mã AI: 6.A3.3] Bảo vệ thông tin cá nhân khi đăng ký tham gia các câu lạc bộ và hoạt động Đội trực tuyến.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.2.TC1b] Đánh giá, chọn lọc các hoạt động ngoại khóa phù hợp với sở trường qua cổng thông tin học sinh.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -134,8 +137,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng cam kết thi đua của chi đội, sổ theo dõi hoạt động",
         location: "Phòng học",
         nlsCode: "2.2.TC1a",
-        aiCode: "6.B1.1",
-        dc: "• [Mã NLS: 2.2.TC1a] Chia sẻ sản phẩm, hình ảnh ghi lại hoạt động Đội trên kênh thông tin lớp học an toàn.\n• [Mã AI: 6.B1.1] Nhận thức về việc sử dụng hình ảnh tập thể có văn hóa, tôn trọng quyền riêng tư bạn bè.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.2.TC1a] Chia sẻ sản phẩm, hình ảnh ghi lại hoạt động Đội trên kênh thông tin lớp học an toàn.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -147,8 +150,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video phóng sự tuổi dậy thì, máy chiếu, micro",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC1a",
-        aiCode: "6.A1.1",
-        dc: "• [Mã NLS: 1.1.TC1a] Tiếp nhận thông tin khoa học về sự phát triển tâm sinh lý lứa tuổi dậy thì từ nguồn học liệu số chuẩn.\n• [Mã AI: 6.A1.1] Khẳng định bản thân là chủ thể tư duy, nhận thức rõ cảm xúc chân thật của con người so với máy móc.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.1.TC1a] Tiếp nhận thông tin khoa học về sự phát triển tâm sinh lý lứa tuổi dậy thì từ nguồn học liệu số chuẩn.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -160,8 +163,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Phiếu tự đánh giá bản thân, biểu đồ theo dõi chiều cao cân nặng",
         location: "Phòng học",
         nlsCode: "1.3.TC1b",
-        aiCode: "6.C1.1",
-        dc: "• [Mã NLS: 1.3.TC1b] Tạo bảng biểu số theo dõi các chỉ số phát triển chiều cao, cân nặng và thói quen học tập.\n• [Mã AI: 6.C1.1] Hiểu cách thức ứng dụng công nghệ thu thập dữ liệu thể chất để đưa ra khuyến nghị dinh dưỡng.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.3.TC1b] Tạo bảng biểu số theo dõi các chỉ số phát triển chiều cao, cân nặng và thói quen học tập.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -173,8 +176,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Hộp thư điều ước, giấy ghi chú, cây mục tiêu rèn luyện",
         location: "Phòng học",
         nlsCode: "3.1.TC1b",
-        aiCode: "6.D1.1",
-        dc: "• [Mã NLS: 3.1.TC1b] Thiết kế sơ đồ tư duy số (mindmap) thể hiện những thay đổi tích cực của bản thân.\n• [Mã AI: 6.D1.1] Tham khảo gợi ý từ công cụ AI để xây dựng kế hoạch rèn luyện thói quen học tập mới.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC1b] Thiết kế sơ đồ tư duy số (mindmap) thể hiện những thay đổi tích cực của bản thân.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -186,8 +189,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video gương học sinh tiêu biểu, máy chiếu, micro",
         location: "Sân trường / Hội trường",
         nlsCode: "2.1.TC1a",
-        aiCode: "6.A1.3",
-        dc: "• [Mã NLS: 2.1.TC1a] Theo dõi và bình chọn các gương mặt học sinh chăm ngoan tiêu biểu qua ứng dụng học đường.\n• [Mã AI: 6.A1.3] Phân tích sự trung thực và tự giác của con người trong các tình huống ứng xử.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.1.TC1a] Theo dõi và bình chọn các gương mặt học sinh chăm ngoan tiêu biểu qua ứng dụng học đường.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -199,8 +202,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bông hoa phẩm chất, phiếu trắc nghiệm tính cách, giấy màu",
         location: "Phòng học",
         nlsCode: "3.1.TC1a",
-        aiCode: "6.C2.2",
-        dc: "• [Mã NLS: 3.1.TC1a] Tạo slide trình chiếu ngắn giới thiệu về đức tính nổi bật và câu chuyện đáng nhớ của em.\n• [Mã AI: 6.C2.2] Nhận diện các ứng dụng trắc nghiệm tâm lý có tích hợp thuật toán phân tích tính cách.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC1a] Tạo slide trình chiếu ngắn giới thiệu về đức tính nổi bật và câu chuyện đáng nhớ của em.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -212,8 +215,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Phiếu đóng góp ý kiến nhóm, bảng tổng hợp phản hồi",
         location: "Phòng học",
         nlsCode: "2.5.TC1b",
-        aiCode: "6.B1.1",
-        dc: "• [Mã NLS: 2.5.TC1b] Gửi và nhận phản hồi mang tính xây dựng, tôn trọng bạn bè qua bảng tương tác số Padlet.\n• [Mã AI: 6.B1.1] Thảo luận về việc tiếp nhận nhận xét khách quan, tránh phụ thuộc vào các đánh giá tự động.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.5.TC1b] Gửi và nhận phản hồi mang tính xây dựng, tôn trọng bạn bè qua bảng tương tác số Padlet.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -225,8 +228,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Sân khấu biểu diễn, gian hàng trưng bày sản phẩm sở thích, âm thanh",
         location: "Sân trường / Hội trường",
         nlsCode: "3.1.TC1b",
-        aiCode: "6.A1.1",
-        dc: "• [Mã NLS: 3.1.TC1b] Quay video clip ngắn hoặc chụp ảnh ghi lại các màn biểu diễn tài năng trong ngày hội.\n• [Mã AI: 6.A1.1] Khẳng định năng khiếu sáng tạo nghệ thuật độc đáo là thế mạnh riêng biệt của con người.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC1b] Quay video clip ngắn hoặc chụp ảnh ghi lại các màn biểu diễn tài năng trong ngày hội.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -238,8 +241,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bộ thử thách trải nghiệm (khéo tay, giải đố logic, hùng biện), đồng hồ bấm giờ",
         location: "Phòng học / Phòng đa năng",
         nlsCode: "5.2.TC1b",
-        aiCode: "6.D1.1",
-        dc: "• [Mã NLS: 5.2.TC1b] Sử dụng ứng dụng trò chơi trí tuệ trực tuyến để thử thách tư duy phản xạ và logic.\n• [Mã AI: 6.D1.1] Khám phá cách các bài toán giải đố AI gợi mở hướng giải quyết vấn đề sáng tạo.",
+        aiCode: "",
+        dc: "• [Mã NLS: 5.2.TC1b] Sử dụng ứng dụng trò chơi trí tuệ trực tuyến để thử thách tư duy phản xạ và logic.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -251,8 +254,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Tranh ảnh, sản phẩm sở thích cá nhân (vẽ, đan móc, sưu tập, mô hình)",
         location: "Phòng học",
         nlsCode: "2.2.TC1a",
-        aiCode: "6.C2.2",
-        dc: "• [Mã NLS: 2.2.TC1a] Thiết kế portfolio số (hồ sơ học tập điện tử) lưu giữ hình ảnh các sản phẩm tự làm.\n• [Mã AI: 6.C2.2] Sử dụng công cụ số hỗ trợ sắp xếp và dàn trang hồ sơ sở thích cá nhân khoa học.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.2.TC1a] Thiết kế portfolio số (hồ sơ học tập điện tử) lưu giữ hình ảnh các sản phẩm tự làm.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -264,8 +267,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Máy chiếu, micro, video truyền cảm hứng về giá trị sống",
         location: "Sân trường / Hội trường",
         nlsCode: "2.1.TC1b",
-        aiCode: "6.A1.1",
-        dc: "• [Mã NLS: 2.1.TC1b] Tham gia khảo sát nhanh trực tuyến về thang giá trị cốt lõi (yêu thương, trung thực, trách nhiệm).\n• [Mã AI: 6.A1.1] Nhận biết giá trị nhân văn mà AI không thể tự có nếu không được con người định hướng.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.1.TC1b] Tham gia khảo sát nhanh trực tuyến về thang giá trị cốt lõi (yêu thương, trung thực, trách nhiệm).",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -277,8 +280,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Cây giá trị, thẻ ghi giá trị sống, bút màu",
         location: "Phòng học",
         nlsCode: "1.2.TC1a",
-        aiCode: "6.B1.1",
-        dc: "• [Mã NLS: 1.2.TC1a] Phân tích và chọn lọc các thông tin, câu chuyện truyền cảm hứng về lối sống đẹp trên mạng.\n• [Mã AI: 6.B1.1] Phân biệt giữa hành vi chân thực trong đời thực và các hình mẫu ảo trên mạng xã hội.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.2.TC1a] Phân tích và chọn lọc các thông tin, câu chuyện truyền cảm hứng về lối sống đẹp trên mạng.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -290,8 +293,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Sân khấu mini trong lớp, micro, bảng cảm xúc",
         location: "Phòng học",
         nlsCode: "3.1.TC1b",
-        aiCode: "6.D1.1",
-        dc: "• [Mã NLS: 3.1.TC1b] Tạo thông điệp truyền cảm hứng tự tin bằng hình ảnh số (poster, infographic mini).\n• [Mã AI: 6.D1.1] Sử dụng AI hỗ trợ tạo bài thuyết trình sinh động thể hiện sự tự tin trước đám đông.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC1b] Tạo thông điệp truyền cảm hứng tự tin bằng hình ảnh số (poster, infographic mini).",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -302,9 +305,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Đánh giá mức độ đạt yêu cầu cần đạt của Chủ đề 1 (Em với nhà trường) và Chủ đề 2 (Khám phá bản thân).",
         equipment: "Bảng trưng bày sản phẩm trải nghiệm, hồ sơ rèn luyện cá nhân/nhóm, máy chiếu",
         location: "Phòng học",
-        nlsCode: "3.1.TC1a",
-        aiCode: "6.C2.2",
-        dc: "• [Mã NLS: 3.1.TC1a] Trình bày bài báo cáo hoặc tập san số tổng hợp kết quả hoạt động chủ đề 1 và 2.\n• [Mã AI: 6.C2.2] Sử dụng công cụ trình chiếu số có hỗ trợ thiết kế trực quan để giới thiệu sản phẩm.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra giữa kỳ"
       },
       {
@@ -315,9 +318,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Đánh giá mức độ tự tin, năng lực hợp tác và khả năng tự hoàn thiện của học sinh qua bảng tiêu chí cụ thể.",
         equipment: "Phiếu rubric đánh giá, bảng kiểm tiêu chí đánh giá giữa kỳ",
         location: "Phòng học",
-        nlsCode: "1.2.TC1b",
-        aiCode: "6.A1.3",
-        dc: "• [Mã NLS: 1.2.TC1b] Phân tích bảng điểm đánh giá số và đối chiếu các tiêu chí chất lượng sản phẩm.\n• [Mã AI: 6.A1.3] Thực hiện tự đánh giá trung thực, kết hợp nhận xét khách quan không phụ thuộc vào công cụ tính điểm tự động.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra giữa kỳ"
       },
       {
@@ -328,9 +331,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Rút ra bài học kinh nghiệm, xác định mục tiêu và điều chỉnh kế hoạch rèn luyện nửa cuối Học kỳ I.",
         equipment: "Sổ tay rèn luyện, phiếu điều chỉnh kế hoạch cá nhân",
         location: "Phòng học",
-        nlsCode: "1.3.TC1a",
-        aiCode: "6.D1.1",
-        dc: "• [Mã NLS: 1.3.TC1a] Cập nhật và lưu trữ kế hoạch rèn luyện số vào hồ sơ học tập cá nhân trực tuyến.\n• [Mã AI: 6.D1.1] Ứng dụng trợ lý AI lập thời gian biểu thông minh tối ưu hóa việc học tập và nghỉ ngơi.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra giữa kỳ"
       },
       {
@@ -342,8 +345,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video phóng sự về dinh dưỡng và lối sống lành mạnh, máy chiếu, micro",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC1c",
-        aiCode: "6.A1.1",
-        dc: "• [Mã NLS: 1.1.TC1c] Tìm kiếm cẩm nang y tế điện tử hướng dẫn chế độ dinh dưỡng và vận động lứa tuổi THCS.\n• [Mã AI: 6.A1.1] Nhận thức tầm quan trọng của việc chủ động chăm sóc sức khỏe thể chất mà công nghệ không thể thay thế.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.1.TC1c] Tìm kiếm cẩm nang y tế điện tử hướng dẫn chế độ dinh dưỡng và vận động lứa tuổi THCS.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -355,8 +358,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng đồng hồ 24 giờ, mẫu thời gian biểu sinh hoạt, bút màu",
         location: "Phòng học",
         nlsCode: "1.3.TC1b",
-        aiCode: "6.C2.2",
-        dc: "• [Mã NLS: 1.3.TC1b] Thiết lập bảng lịch biểu số (Google Calendar/ứng dụng nhắc việc) cân bằng học và chơi.\n• [Mã AI: 6.C2.2] Sử dụng tính năng nhắc nhở thông minh của thiết bị số để duy trì thói quen ngủ đúng giờ.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.3.TC1b] Thiết lập bảng lịch biểu số (Google Calendar/ứng dụng nhắc việc) cân bằng học và chơi.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -368,8 +371,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Sổ theo dõi thói quen (habit tracker), giấy note",
         location: "Phòng học",
         nlsCode: "5.3.TC1a",
-        aiCode: "6.D1.1",
-        dc: "• [Mã NLS: 5.3.TC1a] Sử dụng bảng theo dõi thói quen số để tích dấu hoàn thành nhiệm vụ tự chăm sóc mỗi ngày.\n• [Mã AI: 6.D1.1] Khám phá các công cụ theo dõi sức khỏe học đường ứng dụng công nghệ trí tuệ nhân tạo.",
+        aiCode: "",
+        dc: "• [Mã NLS: 5.3.TC1a] Sử dụng bảng theo dõi thói quen số để tích dấu hoàn thành nhiệm vụ tự chăm sóc mỗi ngày.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -381,8 +384,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Máy chiếu, micro, diễn đàn chia sẻ kinh nghiệm thích nghi lớp 6",
         location: "Sân trường / Hội trường",
         nlsCode: "2.1.TC1b",
-        aiCode: "6.A1.1",
-        dc: "• [Mã NLS: 2.1.TC1b] Tham gia diễn đàn thảo luận trực tuyến của khối lớp 6 về kinh nghiệm học nhiều môn mới.\n• [Mã AI: 6.A1.1] Nhận thức con người có khả năng thích nghi linh hoạt, vượt trội trong các hoàn cảnh mới.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.1.TC1b] Tham gia diễn đàn thảo luận trực tuyến của khối lớp 6 về kinh nghiệm học nhiều môn mới.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -394,8 +397,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Kịch bản sắm vai các tình huống ứng xử (với thầy cô, bạn bè mới, gia đình)",
         location: "Phòng học",
         nlsCode: "2.5.TC1a",
-        aiCode: "6.B1.1",
-        dc: "• [Mã NLS: 2.5.TC1a] Nhận diện nguyên tắc giao tiếp lịch sự, văn minh trên các nhóm chat học tập trực tuyến.\n• [Mã AI: 6.B1.1] Phân tích hậu quả của ngôn ngữ thiếu chuẩn mực và hành vi bắt nạt trên không gian mạng.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.5.TC1a] Nhận diện nguyên tắc giao tiếp lịch sự, văn minh trên các nhóm chat học tập trực tuyến.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -407,8 +410,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng hoa tiến bộ của lớp, giấy ghi thành tích cá nhân",
         location: "Phòng học",
         nlsCode: "2.2.TC1a",
-        aiCode: "6.A1.3",
-        dc: "• [Mã NLS: 2.2.TC1a] Chia sẻ bài học kinh nghiệm tự điều chỉnh bản thân qua nhóm liên lạc số của lớp.\n• [Mã AI: 6.A1.3] Khẳng định tinh thần tự chủ trong việc ra quyết định thay đổi hành vi tích cực.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.2.TC1a] Chia sẻ bài học kinh nghiệm tự điều chỉnh bản thân qua nhóm liên lạc số của lớp.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -420,8 +423,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video tư liệu bão lũ, động đất, sét đánh; bản đồ khí tượng",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC1b",
-        aiCode: "6.C1.1",
-        dc: "• [Mã NLS: 1.1.TC1b] Tra cứu dữ liệu thời tiết và cảnh báo thiên tai từ Cổng thông tin Khí tượng thủy văn quốc gia.\n• [Mã AI: 6.C1.1] Tìm hiểu ứng dụng AI và vệ tinh trong dự báo sớm đường đi của bão và áp thấp nhiệt đới.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.1.TC1b] Tra cứu dữ liệu thời tiết và cảnh báo thiên tai từ Cổng thông tin Khí tượng thủy văn quốc gia.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -433,8 +436,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bộ thẻ quy tắc vàng ứng phó bão, lũ quét, giông sét, sạt lở",
         location: "Phòng học",
         nlsCode: "4.1.TC1c",
-        aiCode: "6.D1.1",
-        dc: "• [Mã NLS: 4.1.TC1c] Lưu lại danh bạ các số điện thoại cứu hộ khẩn cấp (112, 114, 115) vào điện thoại cá nhân.\n• [Mã AI: 6.D1.1] Khám phá hệ thống tin nhắn cảnh báo khẩn cấp tự động điều phối bằng công nghệ thông minh.",
+        aiCode: "",
+        dc: "• [Mã NLS: 4.1.TC1c] Lưu lại danh bạ các số điện thoại cứu hộ khẩn cấp (112, 114, 115) vào điện thoại cá nhân.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -446,8 +449,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Hộp sơ cứu mini, còi báo động, khăn ướt, bản đồ thoát hiểm",
         location: "Phòng học / Hành lang",
         nlsCode: "4.3.TC1a",
-        aiCode: "6.A1.1",
-        dc: "• [Mã NLS: 4.3.TC1a] Tắt và ngắt kết nối các thiết bị điện tử, mạng wifi khi có mưa giông sấm sét nguy hiểm.\n• [Mã AI: 6.A1.1] Nhận thức con người cần giữ bình tĩnh và tuân thủ quy tắc an toàn thoát hiểm thực tế.",
+        aiCode: "",
+        dc: "• [Mã NLS: 4.3.TC1a] Tắt và ngắt kết nối các thiết bị điện tử, mạng wifi khi có mưa giông sấm sét nguy hiểm.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -459,8 +462,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Poster tuyên truyền phòng chống thiên tai, khẩu hiệu, loa micro",
         location: "Sân trường / Hội trường",
         nlsCode: "2.3.TC1a",
-        aiCode: "6.C2.2",
-        dc: "• [Mã NLS: 2.3.TC1a] Sử dụng các phương tiện truyền thông số lan tỏa thông điệp phòng tránh thiên tai đến cộng đồng.\n• [Mã AI: 6.C2.2] Tìm hiểu các ứng dụng bản đồ số chỉ dẫn sơ tán an toàn khi có thảm họa.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.3.TC1a] Sử dụng các phương tiện truyền thông số lan tỏa thông điệp phòng tránh thiên tai đến cộng đồng.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -472,8 +475,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Mẫu kế hoạch sơ tán gia đình, danh mục vật dụng khẩn cấp",
         location: "Phòng học",
         nlsCode: "3.1.TC1a",
-        aiCode: "6.D1.1",
-        dc: "• [Mã NLS: 3.1.TC1a] Thiết lập danh sách kiểm tra số (checklist) các vật dụng khẩn cấp cần mang theo khi sơ tán.\n• [Mã AI: 6.D1.1] Nhận trợ giúp từ AI trong việc phân loại thứ tự ưu tiên các đồ dùng y tế, thực phẩm dự trữ.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC1a] Thiết lập danh sách kiểm tra số (checklist) các vật dụng khẩn cấp cần mang theo khi sơ tán.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -485,8 +488,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Cẩm nang mini phòng chống thiên tai tự vẽ/làm, bảng đánh giá kỹ năng",
         location: "Phòng học",
         nlsCode: "3.2.TC1a",
-        aiCode: "6.B1.1",
-        dc: "• [Mã NLS: 3.2.TC1a] Tổng hợp các mẹo sinh tồn thành cẩm nang điện tử (e-handbook) chia sẻ cho gia đình.\n• [Mã AI: 6.B1.1] Kiểm chứng độ chính xác của các thông tin phòng chống thiên tai trên mạng trước khi áp dụng.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.2.TC1a] Tổng hợp các mẹo sinh tồn thành cẩm nang điện tử (e-handbook) chia sẻ cho gia đình.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -498,8 +501,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Hình ảnh góc học tập kiểu mẫu, video phát động phong trào, máy chiếu",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC1b",
-        aiCode: "6.A1.1",
-        dc: "• [Mã NLS: 1.1.TC1b] Khám phá các mẫu góc học tập khoa học, thẩm mỹ thông qua các trang học tập uy tín.\n• [Mã AI: 6.A1.1] Nhận thức việc tạo không gian học tập ngăn nắp kích thích sự tập trung tư duy của con người.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.1.TC1b] Khám phá các mẫu góc học tập khoa học, thẩm mỹ thông qua các trang học tập uy tín.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -511,8 +514,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Mô hình bàn học thu nhỏ, khay đựng tài liệu, hộp đựng bút handmade",
         location: "Phòng học",
         nlsCode: "1.3.TC1b",
-        aiCode: "6.C1.1",
-        dc: "• [Mã NLS: 1.3.TC1b] Áp dụng nguyên tắc phân loại và sắp xếp dữ liệu máy tính tương tự như sắp xếp sách vở thực tế.\n• [Mã AI: 6.C1.1] Hiểu cách sắp xếp cây thư mục khoa học trên máy tính để tra cứu tài liệu nhanh nhất.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.3.TC1b] Áp dụng nguyên tắc phân loại và sắp xếp dữ liệu máy tính tương tự như sắp xếp sách vở thực tế.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -524,8 +527,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Ảnh chụp góc học tập của học sinh, bảng triển lãm góc học tập lớp",
         location: "Phòng học",
         nlsCode: "2.2.TC1a",
-        aiCode: "6.C2.2",
-        dc: "• [Mã NLS: 2.2.TC1a] Chụp ảnh và gửi hình ảnh góc học tập gọn gàng lên album ảnh số của lớp.\n• [Mã AI: 6.C2.2] Sử dụng tính năng chỉnh sửa hình ảnh cơ bản trên điện thoại để làm nổi bật sản phẩm.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.2.TC1a] Chụp ảnh và gửi hình ảnh góc học tập gọn gàng lên album ảnh số của lớp.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -537,8 +540,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video phóng sự về kỹ năng dọn dẹp nhà cửa kiểu Nhật (5S), máy chiếu",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC1a",
-        aiCode: "6.A1.1",
-        dc: "• [Mã NLS: 1.1.TC1a] Tiếp thu các phương pháp tổ chức cuộc sống ngăn nắp (phương pháp 5S) qua tài liệu số.\n• [Mã AI: 6.A1.1] Khẳng định thói quen ngăn nắp giúp con người tiết kiệm thời gian và nâng cao hiệu suất làm việc.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.1.TC1a] Tiếp thu các phương pháp tổ chức cuộc sống ngăn nắp (phương pháp 5S) qua tài liệu số.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -550,8 +553,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Khăn, quần áo mẫu để gấp, hộp phân loại đồ dùng",
         location: "Phòng học / Phòng trải nghiệm",
         nlsCode: "3.4.TC1a",
-        aiCode: "6.D1.1",
-        dc: "• [Mã NLS: 3.4.TC1a] Thiết lập quy trình từng bước (thuật toán tuần tự) dọn dẹp phòng ở cá nhân sạch sẽ.\n• [Mã AI: 6.D1.1] Nhận diện nguyên lý vận hành tự động của robot hút bụi và thiết bị gia dụng thông minh.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.4.TC1a] Thiết lập quy trình từng bước (thuật toán tuần tự) dọn dẹp phòng ở cá nhân sạch sẽ.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -563,8 +566,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng theo dõi việc nhà hàng tuần, phiếu tự chấm điểm",
         location: "Phòng học",
         nlsCode: "5.3.TC1a",
-        aiCode: "6.A1.3",
-        dc: "• [Mã NLS: 5.3.TC1a] Sử dụng ứng dụng quản lý nhiệm vụ để tích lũy điểm thưởng khi hoàn thành việc nhà.\n• [Mã AI: 6.A1.3] Rèn luyện tính tự giác, không cần phụ thuộc vào sự đôn đốc hay nhắc nhở liên tục.",
+        aiCode: "",
+        dc: "• [Mã NLS: 5.3.TC1a] Sử dụng ứng dụng quản lý nhiệm vụ để tích lũy điểm thưởng khi hoàn thành việc nhà.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -576,8 +579,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video gương học sinh tiêu biểu giữ gìn vệ sinh chung, máy chiếu, micro",
         location: "Sân trường / Hội trường",
         nlsCode: "2.1.TC1a",
-        aiCode: "6.A1.1",
-        dc: "• [Mã NLS: 2.1.TC1a] Xem hình ảnh mô hình lớp học xanh - sạch - đẹp được số hóa của các trường bạn.\n• [Mã AI: 6.A1.1] Nhận thức tầm quan trọng của ý thức kỷ luật tự giác của mỗi cá nhân trong môi trường tập thể.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.1.TC1a] Xem hình ảnh mô hình lớp học xanh - sạch - đẹp được số hóa của các trường bạn.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -589,8 +592,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng kiểm tra chéo (checklist) góc học tập, thước đo ánh sáng bàn học",
         location: "Phòng học",
         nlsCode: "1.2.TC1b",
-        aiCode: "6.C2.2",
-        dc: "• [Mã NLS: 1.2.TC1b] Sử dụng ứng dụng điện thoại kiểm tra độ sáng phù hợp tại bàn học tránh tật khúc xạ.\n• [Mã AI: 6.C2.2] Khám phá các cảm biến thông minh tự động điều chỉnh ánh sáng và nhắc nhở ngồi đúng tư thế.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.2.TC1b] Sử dụng ứng dụng điện thoại kiểm tra độ sáng phù hợp tại bàn học tránh tật khúc xạ.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -602,8 +605,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Phiếu tổng kết phong trào góc học tập, giấy khen/sticker khen thưởng",
         location: "Phòng học",
         nlsCode: "3.1.TC1b",
-        aiCode: "6.B1.1",
-        dc: "• [Mã NLS: 3.1.TC1b] Trình bày bài học cá nhân về sự kiên trì duy trì nếp sống gọn gàng qua slide ảnh.\n• [Mã AI: 6.B1.1] Nhận thức giá trị lao động chân chính và sự trung thực khi báo cáo kết quả rèn luyện.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC1b] Trình bày bài học cá nhân về sự kiên trì duy trì nếp sống gọn gàng qua slide ảnh.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -615,8 +618,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video tiểu phẩm chi tiêu lãng phí và bài học tiết kiệm, máy chiếu",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC1a",
-        aiCode: "6.A1.1",
-        dc: "• [Mã NLS: 1.1.TC1a] Tìm hiểu khái niệm \"Cần\" và \"Muốn\" qua các video tài chính thông minh cho tuổi teen.\n• [Mã AI: 6.A1.1] Khẳng định con người nắm quyền kiểm soát và quyết định tài chính cá nhân, không để quảng cáo chi phối.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.1.TC1a] Tìm hiểu khái niệm \"Cần\" và \"Muốn\" qua các video tài chính thông minh cho tuổi teen.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -628,8 +631,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Thẻ ngân sách giả định, bảng danh mục chi tiêu, tiền đồ chơi mô phỏng",
         location: "Phòng học",
         nlsCode: "1.3.TC1a",
-        aiCode: "6.C1.1",
-        dc: "• [Mã NLS: 1.3.TC1a] Sử dụng bảng tính số (Excel/Google Sheets) phân loại các khoản chi theo thứ tự ưu tiên.\n• [Mã AI: 6.C1.1] Hiểu cách máy tính thực hiện các phép tính tính toán tổng chi và số dư ngân sách tự động.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.3.TC1a] Sử dụng bảng tính số (Excel/Google Sheets) phân loại các khoản chi theo thứ tự ưu tiên.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -641,8 +644,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Các tình huống chi tiêu thực tế (mua quà sinh nhật bạn, mua đồ dùng học tập, ăn vặt)",
         location: "Phòng học",
         nlsCode: "2.4.TC1a",
-        aiCode: "6.D1.1",
-        dc: "• [Mã NLS: 2.4.TC1a] Thảo luận nhóm trực tuyến đưa ra giải pháp cân đối tài chính tối ưu cho tình huống.\n• [Mã AI: 6.D1.1] Tham khảo gợi ý từ ứng dụng trợ lý quản lý chi tiêu cá nhân để học cách tiết kiệm hiệu quả.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.4.TC1a] Thảo luận nhóm trực tuyến đưa ra giải pháp cân đối tài chính tối ưu cho tình huống.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -653,9 +656,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Đánh giá tổng hợp việc thực hiện các hoạt động trải nghiệm chủ đề 1 đến 4 qua hồ sơ minh chứng.",
         equipment: "Hồ sơ trải nghiệm (Portfolio) cá nhân và nhóm, máy chiếu, bảng trưng bày",
         location: "Phòng học",
-        nlsCode: "3.1.TC1a",
-        aiCode: "6.C2.2",
-        dc: "• [Mã NLS: 3.1.TC1a] Báo cáo sản phẩm trải nghiệm cuối kỳ I dưới dạng video clip hoặc bài thuyết trình điện tử.\n• [Mã AI: 6.C2.2] Sử dụng công cụ số hỗ trợ chuyển đổi tài liệu giấy thành hồ sơ số tiện lợi.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra cuối kỳ"
       },
       {
@@ -666,9 +669,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Đánh giá khả năng vận dụng kiến thức, kỹ năng giải quyết tình huống thực tế của học sinh.",
         equipment: "Đề bài đánh giá tình huống, phiếu trả lời của học sinh",
         location: "Phòng học",
-        nlsCode: "1.2.TC1b",
-        aiCode: "6.A1.3",
-        dc: "• [Mã NLS: 1.2.TC1b] Phân tích và xử lý câu hỏi tình huống thực tiễn có tích hợp thông tin số hóa.\n• [Mã AI: 6.A1.3] Thể hiện năng lực tư duy độc lập và trung thực trong quá trình thực hiện bài đánh giá.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra cuối kỳ"
       },
       {
@@ -679,9 +682,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Đánh giá mức độ hoàn thành mục tiêu rèn luyện cá nhân trong 4 chủ đề của Học kỳ I.",
         equipment: "Bảng tiêu chuẩn đánh giá xếp loại học kỳ I môn HĐTN, HN",
         location: "Phòng học",
-        nlsCode: "1.3.TC1b",
-        aiCode: "6.B1.1",
-        dc: "• [Mã NLS: 1.3.TC1b] Tổng hợp điểm số và minh chứng rèn luyện vào phần mềm quản lý hồ sơ học sinh.\n• [Mã AI: 6.B1.1] Nhận thức về tính công bằng, minh bạch trong đánh giá quá trình học tập.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra cuối kỳ"
       },
       {
@@ -692,9 +695,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Hoàn thiện và đóng gói hồ sơ trải nghiệm, sổ tay rèn luyện và các sản phẩm sáng tạo Học kỳ I.",
         equipment: "Túi hồ sơ học tập, thiết bị số lưu trữ dữ liệu",
         location: "Phòng học",
-        nlsCode: "1.3.TC1a",
-        aiCode: "6.C1.1",
-        dc: "• [Mã NLS: 1.3.TC1a] Lưu trữ và sao lưu an toàn toàn bộ hồ sơ số học kỳ I lên đám mây (Google Drive/OneDrive).\n• [Mã AI: 6.C1.1] Hiểu khái niệm lưu trữ dữ liệu trên đám mây và tính bảo mật của tài khoản cá nhân.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Đánh giá cuối kỳ I"
       },
       {
@@ -705,9 +708,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Rèn luyện kỹ năng tự đánh giá và nhận xét góp ý chân thành cho bạn bè để cùng tiến bộ.",
         equipment: "Phiếu đánh giá đồng đẳng, bảng khảo sát mức độ hài lòng",
         location: "Phòng học",
-        nlsCode: "2.4.TC1a",
-        aiCode: "6.A1.3",
-        dc: "• [Mã NLS: 2.4.TC1a] Tham gia bình chọn và gửi nhận xét động viên bạn bè qua biểu mẫu trực tuyến an toàn.\n• [Mã AI: 6.A1.3] Khẳng định vai trò của sự thấu cảm và tình cảm chân thành giữa các thành viên trong lớp.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Đánh giá cuối kỳ I"
       },
       {
@@ -718,9 +721,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Tuyên dương khen thưởng các cá nhân và tập thể xuất sắc; định hướng nhiệm vụ trọng tâm Học kỳ II.",
         equipment: "Giấy khen, video clip tổng kết các khoảnh khắc hoạt động nổi bật HK I",
         location: "Phòng học / Hội trường",
-        nlsCode: "2.2.TC1a",
-        aiCode: "6.A1.1",
-        dc: "• [Mã NLS: 2.2.TC1a] Trình chiếu video clip kỷ niệm hành trình học kỳ I của tập thể lớp.\n• [Mã AI: 6.A1.1] Cùng chia sẻ niềm vui và xây dựng tinh thần đoàn kết vững mạnh cho năm học mới.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Sơ kết Học kỳ I"
       },
       {
@@ -732,8 +735,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Tranh ảnh gia đình, video bài hát về gia đình, âm thanh, micro",
         location: "Sân trường / Hội trường",
         nlsCode: "2.1.TC1a",
-        aiCode: "6.A1.1",
-        dc: "• [Mã NLS: 2.1.TC1a] Tiếp cận các tác phẩm văn học nghệ thuật số ca ngợi tình cảm gia đình thiêng liêng.\n• [Mã AI: 6.A1.1] Nhận ra tình yêu thương gia đình là giá trị cảm xúc thuần khiết của con người mà AI không thể có.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.1.TC1a] Tiếp cận các tác phẩm văn học nghệ thuật số ca ngợi tình cảm gia đình thiêng liêng.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -745,8 +748,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Thẻ tình huống người thân gặp chuyện buồn, ốm mệt, mệt mỏi sau ngày làm việc",
         location: "Phòng học",
         nlsCode: "2.1.TC1b",
-        aiCode: "6.A1.2",
-        dc: "• [Mã NLS: 2.1.TC1b] Sử dụng tin nhắn thoại hoặc cuộc gọi video gửi lời hỏi thăm ấm áp tới ông bà, cha mẹ.\n• [Mã AI: 6.A1.2] Nhận biết AI có thể gợi ý mẫu câu chúc nhưng tình cảm xuất phát từ trái tim người gửi.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.1.TC1b] Sử dụng tin nhắn thoại hoặc cuộc gọi video gửi lời hỏi thăm ấm áp tới ông bà, cha mẹ.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -758,8 +761,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Tranh vẽ, ảnh chụp khoảnh khắc chăm sóc gia đình",
         location: "Phòng học",
         nlsCode: "3.1.TC1b",
-        aiCode: "6.C2.2",
-        dc: "• [Mã NLS: 3.1.TC1b] Tạo bưu thiếp điện tử tri ân cha mẹ nhân các dịp kỷ niệm đặc biệt.\n• [Mã AI: 6.C2.2] Sử dụng công cụ số để lồng ghép ảnh và nhạc tạo thành video ngắn tặng người thân.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC1b] Tạo bưu thiếp điện tử tri ân cha mẹ nhân các dịp kỷ niệm đặc biệt.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -771,8 +774,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video tình huống mâu thuẫn bất đồng thế hệ trong gia đình, máy chiếu",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC1a",
-        aiCode: "6.A1.1",
-        dc: "• [Mã NLS: 1.1.TC1a] Tìm hiểu các kỹ năng lắng nghe tích cực và giao tiếp thấu cảm trong gia đình qua tài liệu số.\n• [Mã AI: 6.A1.1] Khẳng định tầm quan trọng của đối thoại trực tiếp giữa các thành viên gia đình thay vì gián tiếp qua mạng.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.1.TC1a] Tìm hiểu các kỹ năng lắng nghe tích cực và giao tiếp thấu cảm trong gia đình qua tài liệu số.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -784,8 +787,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Kịch bản sắm vai các tình huống mâu thuẫn giữa anh chị em, giữa cha mẹ và con cái",
         location: "Phòng học",
         nlsCode: "2.4.TC1a",
-        aiCode: "6.B1.1",
-        dc: "• [Mã NLS: 2.4.TC1a] Thảo luận trực tuyến trong nhóm tìm phương án hòa giải các mâu thuẫn gia đình.\n• [Mã AI: 6.B1.1] Nhận diện tác động của việc nghiện mạng xã hội, game online đến sự rạn nứt tình cảm gia đình.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.4.TC1a] Thảo luận trực tuyến trong nhóm tìm phương án hòa giải các mâu thuẫn gia đình.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -797,8 +800,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng quy tắc ứng xử gia đình, giấy note cam kết",
         location: "Phòng học",
         nlsCode: "2.5.TC1a",
-        aiCode: "6.D1.1",
-        dc: "• [Mã NLS: 2.5.TC1a] Thống nhất quy tắc \"bữa ăn không điện thoại\" để tạo không gian gắn kết gia đình ấm cúng.\n• [Mã AI: 6.D1.1] Gợi ý các giải pháp công nghệ hỗ trợ quản lý thời gian sử dụng màn hình (screen time).",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.5.TC1a] Thống nhất quy tắc \"bữa ăn không điện thoại\" để tạo không gian gắn kết gia đình ấm cúng.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -810,8 +813,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video gương thiếu nhi tích cực phụ giúp cha mẹ việc nhà, máy chiếu",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC1b",
-        aiCode: "6.A1.1",
-        dc: "• [Mã NLS: 1.1.TC1b] Tiếp cận danh mục các kỹ năng làm việc nhà phù hợp lứa tuổi từ cẩm nang số Đội TNTP.\n• [Mã AI: 6.A1.1] Tự giác lao động giúp đỡ cha mẹ với tinh thần trách nhiệm và lòng hiếu thảo.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.1.TC1b] Tiếp cận danh mục các kỹ năng làm việc nhà phù hợp lứa tuổi từ cẩm nang số Đội TNTP.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -823,8 +826,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng phân công việc nhà, mẫu thực đơn bữa cơm gia đình đơn giản",
         location: "Phòng học",
         nlsCode: "1.3.TC1b",
-        aiCode: "6.C2.2",
-        dc: "• [Mã NLS: 1.3.TC1b] Lập bảng phân công công việc nhà trong tuần cho bản thân trên bảng tính điện tử.\n• [Mã AI: 6.C2.2] Sử dụng trợ lý ảo tìm kiếm công thức nấu các món ăn đơn giản, bổ dưỡng cho gia đình.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.3.TC1b] Lập bảng phân công công việc nhà trong tuần cho bản thân trên bảng tính điện tử.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -836,8 +839,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Ảnh/video học sinh làm việc nhà, phiếu nhận xét của cha mẹ",
         location: "Phòng học",
         nlsCode: "2.2.TC1a",
-        aiCode: "6.A1.3",
-        dc: "• [Mã NLS: 2.2.TC1a] Đăng tải nhật ký ảnh \"Bữa cơm em nấu\" hoặc \"Góc bếp sạch bong\" lên nhóm lớp.\n• [Mã AI: 6.A1.3] Nhận phản hồi tích cực từ thầy cô và cha mẹ để hoàn thiện bản thân mỗi ngày.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.2.TC1a] Đăng tải nhật ký ảnh \"Bữa cơm em nấu\" hoặc \"Góc bếp sạch bong\" lên nhóm lớp.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -849,8 +852,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video về các hoạt động thiện nguyện vì cộng đồng, máy chiếu, micro",
         location: "Sân trường / Hội trường",
         nlsCode: "2.1.TC1a",
-        aiCode: "6.A1.1",
-        dc: "• [Mã NLS: 2.1.TC1a] Tìm hiểu thông tin về các tổ chức xã hội, câu lạc bộ thiện nguyện địa phương qua Internet.\n• [Mã AI: 6.A1.1] Nhận thức ý nghĩa của lòng nhân ái và sự kết nối giữa người với người trong xã hội.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.1.TC1a] Tìm hiểu thông tin về các tổ chức xã hội, câu lạc bộ thiện nguyện địa phương qua Internet.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -862,8 +865,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Phiếu đóng vai tình huống giúp đỡ người khuyết tật, người già, trẻ em nghèo",
         location: "Phòng học",
         nlsCode: "2.4.TC1a",
-        aiCode: "6.B1.1",
-        dc: "• [Mã NLS: 2.4.TC1a] Sử dụng công cụ số lập danh sách hỗ trợ các địa chỉ nhân đạo cần giúp đỡ.\n• [Mã AI: 6.B1.1] Nâng cao ý thức bảo vệ danh dự, sự riêng tư của người nhận hỗ trợ khi truyền thông từ thiện.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.4.TC1a] Sử dụng công cụ số lập danh sách hỗ trợ các địa chỉ nhân đạo cần giúp đỡ.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -875,8 +878,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Tranh ảnh các hành vi ứng xử văn minh nơi công cộng (xe buýt, công viên, rạp phim)",
         location: "Phòng học",
         nlsCode: "2.5.TC1a",
-        aiCode: "6.A3.3",
-        dc: "• [Mã NLS: 2.5.TC1a] Nhận biết quy tắc ứng xử văn minh khi tham gia mạng xã hội và các diễn đàn cộng đồng.\n• [Mã AI: 6.A3.3] Tránh chia sẻ thông tin thất thiệt hoặc lan truyền nội dung độc hại trên không gian mạng.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.5.TC1a] Nhận biết quy tắc ứng xử văn minh khi tham gia mạng xã hội và các diễn đàn cộng đồng.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -888,8 +891,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Thùng quyên góp heo đất, sách vở tặng bạn vùng xa, loa micro",
         location: "Sân trường / Hội trường",
         nlsCode: "2.3.TC1a",
-        aiCode: "6.A1.1",
-        dc: "• [Mã NLS: 2.3.TC1a] Lan tỏa lời kêu gọi tham gia phong trào kế hoạch nhỏ, thiện nguyện qua kênh truyền thông trường.\n• [Mã AI: 6.A1.1] Nhận biết vai trò của công nghệ thông tin trong việc kết nối các tấm lòng hảo tâm.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.3.TC1a] Lan tỏa lời kêu gọi tham gia phong trào kế hoạch nhỏ, thiện nguyện qua kênh truyền thông trường.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -901,8 +904,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Mẫu kế hoạch hoạt động thiện nguyện, bảng phân công nhiệm vụ",
         location: "Phòng học",
         nlsCode: "3.1.TC1a",
-        aiCode: "6.D1.1",
-        dc: "• [Mã NLS: 3.1.TC1a] Thiết kế thư ngỏ số hoặc áp phích điện tử vận động quyên góp sách vở, quần áo ấm.\n• [Mã AI: 6.D1.1] Sử dụng AI gợi ý khẩu hiệu tuyên truyền thu hút và văn phong trang trọng cho kế hoạch.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC1a] Thiết kế thư ngỏ số hoặc áp phích điện tử vận động quyên góp sách vở, quần áo ấm.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -914,8 +917,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng tổng hợp số lượng hiện vật quyên góp, ảnh kỷ niệm hoạt động",
         location: "Phòng học",
         nlsCode: "1.3.TC1b",
-        aiCode: "6.B1.1",
-        dc: "• [Mã NLS: 1.3.TC1b] Lập bảng thống kê công khai, minh bạch các khoản quyên góp trên bảng tin số của lớp.\n• [Mã AI: 6.B1.1] Giáo dục tính trung thực, minh bạch trong các hoạt động tài chính nhân đạo.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.3.TC1b] Lập bảng thống kê công khai, minh bạch các khoản quyên góp trên bảng tin số của lớp.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -927,8 +930,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Trang phục truyền thống, video lễ hội truyền thống địa phương, máy chiếu",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC1b",
-        aiCode: "6.A1.1",
-        dc: "• [Mã NLS: 1.1.TC1b] Khám phá các di sản văn hóa phi vật thể và lễ hội truyền thống quê hương trên bảo tàng số.\n• [Mã AI: 6.A1.1] Bồi dưỡng niềm tự hào về bản sắc văn hóa dân tộc trong kỷ nguyên hội nhập số.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.1.TC1b] Khám phá các di sản văn hóa phi vật thể và lễ hội truyền thống quê hương trên bảo tàng số.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -940,8 +943,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Tư liệu lễ hội làng, bài ca dao, hình ảnh di tích lịch sử",
         location: "Phòng học",
         nlsCode: "3.1.TC1b",
-        aiCode: "6.C2.2",
-        dc: "• [Mã NLS: 3.1.TC1b] Xây dựng bài thuyết trình đa phương tiện giới thiệu một lễ hội hoặc làng nghề quê hương.\n• [Mã AI: 6.C2.2] Dùng công cụ số tạo phụ đề hoặc thuyết minh tự động cho video quảng bá truyền thống quê em.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC1b] Xây dựng bài thuyết trình đa phương tiện giới thiệu một lễ hội hoặc làng nghề quê hương.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -953,8 +956,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng trưng bày sản phẩm (tranh vẽ di tích, mô hình làng nghề, cẩm nang du lịch)",
         location: "Phòng học",
         nlsCode: "2.2.TC1a",
-        aiCode: "6.D1.1",
-        dc: "• [Mã NLS: 2.2.TC1a] Tạo mã QR liên kết đến bài thuyết minh và video giới thiệu sản phẩm để người xem quét xem.\n• [Mã AI: 6.D1.1] Trải nghiệm công nghệ thực tế ảo tham quan không gian di tích văn hóa số.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.2.TC1a] Tạo mã QR liên kết đến bài thuyết minh và video giới thiệu sản phẩm để người xem quét xem.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -965,9 +968,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Đánh giá mức độ đạt yêu cầu cần đạt của Chủ đề 5 (Em với gia đình) và Chủ đề 6 (Em với cộng đồng).",
         equipment: "Hồ sơ minh chứng hoạt động gia đình và cộng đồng, máy chiếu",
         location: "Phòng học",
-        nlsCode: "3.1.TC1a",
-        aiCode: "6.C2.2",
-        dc: "• [Mã NLS: 3.1.TC1a] Trình bày báo cáo số về quá trình thực hiện việc nhà và hoạt động thiện nguyện.\n• [Mã AI: 6.C2.2] Sử dụng phần mềm trình chiếu chuyên nghiệp làm nổi bật các dẫn chứng thực tế.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra giữa kỳ"
       },
       {
@@ -978,9 +981,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Đánh giá năng lực giải quyết vấn đề, ứng xử văn hóa và tinh thần trách nhiệm xã hội.",
         equipment: "Đề tình huống ứng xử gia đình và cộng đồng, phiếu tự đánh giá",
         location: "Phòng học",
-        nlsCode: "1.2.TC1b",
-        aiCode: "6.A1.3",
-        dc: "• [Mã NLS: 1.2.TC1b] Phân tích tình huống ứng xử trong gia đình/cộng đồng qua video minh họa.\n• [Mã AI: 6.A1.3] Tự đánh giá hành vi theo chuẩn mực đạo đức, khẳng định bản lĩnh cá nhân.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra giữa kỳ"
       },
       {
@@ -991,9 +994,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Đúc rút kinh nghiệm, hoàn thiện các cam kết rèn luyện chuẩn bị cho các chủ đề tiếp theo.",
         equipment: "Bảng theo dõi kế hoạch rèn luyện, sổ tay học sinh",
         location: "Phòng học",
-        nlsCode: "1.3.TC1a",
-        aiCode: "6.D1.1",
-        dc: "• [Mã NLS: 1.3.TC1a] Cập nhật kết quả đánh giá giữa kỳ II vào tệp theo dõi cá nhân điện tử.\n• [Mã AI: 6.D1.1] Nhận gợi ý từ công cụ học tập thông minh để nâng cao kỹ năng giao tiếp xã hội.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra giữa kỳ"
       },
       {
@@ -1005,8 +1008,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video phóng sự cảnh đẹp thiên nhiên Việt Nam, nhạc cụ, máy chiếu",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC1b",
-        aiCode: "6.A1.1",
-        dc: "• [Mã NLS: 1.1.TC1b] Chiêm ngưỡng các danh lam thắng cảnh đất nước qua các tour du lịch ảo 360 độ.\n• [Mã AI: 6.A1.1] Bồi dưỡng cảm xúc thẩm mỹ và tình yêu thiên nhiên qua góc nhìn chân thực của con người.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.1.TC1b] Chiêm ngưỡng các danh lam thắng cảnh đất nước qua các tour du lịch ảo 360 độ.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -1018,8 +1021,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Ảnh tư liệu rừng cây, sông ngòi, công viên, phiếu quan sát thiên nhiên",
         location: "Vườn trường / Phòng học",
         nlsCode: "1.3.TC1a",
-        aiCode: "6.C1.1",
-        dc: "• [Mã NLS: 1.3.TC1a] Thu thập và số hóa các mẫu vật thực vật, hình ảnh thiên nhiên chụp được bằng điện thoại.\n• [Mã AI: 6.C1.1] Sử dụng ứng dụng AI nhận diện tên gọi các loài cây hoa và sinh vật quanh em.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.3.TC1a] Thu thập và số hóa các mẫu vật thực vật, hình ảnh thiên nhiên chụp được bằng điện thoại.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -1031,8 +1034,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Giấy vẽ, màu nước, lá khô làm tranh, kéo keo dán",
         location: "Phòng học / Phòng Mỹ thuật",
         nlsCode: "3.1.TC1b",
-        aiCode: "6.D1.1",
-        dc: "• [Mã NLS: 3.1.TC1b] Thiết kế tranh ảnh số hoặc thiệp nghệ thuật từ vật liệu tái chế thể hiện vẻ đẹp thiên nhiên.\n• [Mã AI: 6.D1.1] Khám phá cách AI tạo hình ảnh nghệ thuật để lấy cảm hứng phối màu và bố cục.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC1b] Thiết kế tranh ảnh số hoặc thiệp nghệ thuật từ vật liệu tái chế thể hiện vẻ đẹp thiên nhiên.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -1044,8 +1047,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Cây giống, chậu hoa, khẩu hiệu bảo vệ môi trường, loa micro",
         location: "Sân trường / Hội trường",
         nlsCode: "2.3.TC1a",
-        aiCode: "6.A1.1",
-        dc: "• [Mã NLS: 2.3.TC1a] Đăng ký cam kết trồng và chăm sóc cây xanh qua cổng thông tin Đội trực tuyến.\n• [Mã AI: 6.A1.1] Nâng cao trách nhiệm của công dân đối với bảo tồn đa dạng sinh học và môi trường sống.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.3.TC1a] Đăng ký cam kết trồng và chăm sóc cây xanh qua cổng thông tin Đội trực tuyến.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -1057,8 +1060,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Dụng cụ chăm sóc cây (bình tưới, cuốc xới mini), găng tay, túi phân loại rác",
         location: "Khuôn viên trường học",
         nlsCode: "4.4.TC1a",
-        aiCode: "6.C2.2",
-        dc: "• [Mã NLS: 4.4.TC1a] Phân loại rác thải tại nguồn và đánh giá tác động của rác thải nhựa đối với đất và nước.\n• [Mã AI: 6.C2.2] Tìm hiểu mô hình thùng rác thông minh tự động phân loại rác bằng camera AI.",
+        aiCode: "",
+        dc: "• [Mã NLS: 4.4.TC1a] Phân loại rác thải tại nguồn và đánh giá tác động của rác thải nhựa đối với đất và nước.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -1070,8 +1073,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Hình ảnh góc xanh lớp học, sản phẩm tái chế từ rác thải",
         location: "Phòng học",
         nlsCode: "2.2.TC1a",
-        aiCode: "6.B1.1",
-        dc: "• [Mã NLS: 2.2.TC1a] Đăng tải hình ảnh chăm sóc bồn hoa, cây cảnh lên bảng tin xanh của lớp.\n• [Mã AI: 6.B1.1] Thảo luận trách nhiệm đạo đức trong việc bảo vệ môi trường sống cho tương lai.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.2.TC1a] Đăng tải hình ảnh chăm sóc bồn hoa, cây cảnh lên bảng tin xanh của lớp.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -1083,8 +1086,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video tư liệu về nắng nóng cực đoan, ô nhiễm không khí, dịch bệnh do khí hậu",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC1a",
-        aiCode: "6.A1.1",
-        dc: "• [Mã NLS: 1.1.TC1a] Tra cứu số liệu về chỉ số chất lượng không khí (AQI) và nhiệt độ môi trường trên ứng dụng số.\n• [Mã AI: 6.A1.1] Hiểu cách thức biến đổi khí hậu đe dọa sức khỏe con người và sự sống toàn cầu.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.1.TC1a] Tra cứu số liệu về chỉ số chất lượng không khí (AQI) và nhiệt độ môi trường trên ứng dụng số.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -1096,8 +1099,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng ý tưởng xanh, giấy bút màu, tài liệu giảm phát thải carbon",
         location: "Phòng học",
         nlsCode: "3.1.TC1b",
-        aiCode: "6.D1.1",
-        dc: "• [Mã NLS: 3.1.TC1b] Thiết kế infographic thông điệp \"Tắt điện khi rời phòng\", \"Đi bộ và đi xe đạp\" bằng Canva.\n• [Mã AI: 6.D1.1] Sử dụng AI sáng tạo các câu slogan ngắn gọn, ấn tượng về tiết kiệm năng lượng.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC1b] Thiết kế infographic thông điệp \"Tắt điện khi rời phòng\", \"Đi bộ và đi xe đạp\" bằng Canva.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -1109,8 +1112,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Poster tuyên truyền đã hoàn thiện, bài phát biểu ngắn",
         location: "Phòng học",
         nlsCode: "2.1.TC1b",
-        aiCode: "6.C2.2",
-        dc: "• [Mã NLS: 2.1.TC1b] Gửi thông điệp hành động xanh đến người thân qua nhóm chat gia đình.\n• [Mã AI: 6.C2.2] Sử dụng công cụ số tạo podcast âm thanh mini về bảo vệ khí hậu phát thanh học đường.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.1.TC1b] Gửi thông điệp hành động xanh đến người thân qua nhóm chat gia đình.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -1122,8 +1125,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video về nạn săn bắt động vật hoang dã, hình ảnh các loài trong Sách Đỏ Việt Nam",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC1b",
-        aiCode: "6.A1.1",
-        dc: "• [Mã NLS: 1.1.TC1b] Tìm kiếm danh lục các loài động vật hoang dã nguy cấp cần bảo vệ trên trang web IUCN và WWF.\n• [Mã AI: 6.A1.1] Nhận thức vai trò của công nghệ camera thông minh trong giám sát bảo tồn động vật hoang dã.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.1.TC1b] Tìm kiếm danh lục các loài động vật hoang dã nguy cấp cần bảo vệ trên trang web IUCN và WWF.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -1135,8 +1138,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Giấy A3, bút màu, hình ảnh động vật hoang dã",
         location: "Phòng học",
         nlsCode: "3.1.TC1a",
-        aiCode: "6.D1.1",
-        dc: "• [Mã NLS: 3.1.TC1a] Thiết kế ấn phẩm số kêu gọi: \"Nói không với sừng tê giác, ngà voi và cao hổ cốt\".\n• [Mã AI: 6.D1.1] Tạo hình ảnh minh họa bảo vệ thú quý bằng công cụ AI hỗ trợ đồ họa.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC1a] Thiết kế ấn phẩm số kêu gọi: \"Nói không với sừng tê giác, ngà voi và cao hổ cốt\".",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -1148,8 +1151,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Phiếu cam kết chữ ký bảo vệ động vật quý hiếm từ gia đình",
         location: "Phòng học",
         nlsCode: "2.2.TC1a",
-        aiCode: "6.B1.1",
-        dc: "• [Mã NLS: 2.2.TC1a] Thu thập chữ ký điện tử hoặc cam kết số từ người thân ủng hộ bảo tồn động vật quý hiếm.\n• [Mã AI: 6.B1.1] Lên án các hành vi buôn bán động vật hoang dã trái phép trên mạng Internet.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.2.TC1a] Thu thập chữ ký điện tử hoặc cam kết số từ người thân ủng hộ bảo tồn động vật quý hiếm.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -1161,8 +1164,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video phóng sự về các làng nghề truyền thống nổi tiếng ở Việt Nam, máy chiếu",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC1b",
-        aiCode: "",
-        dc: "• [Mã NLS: 1.1.TC1b] Tìm kiếm và tra cứu thông tin, hình ảnh về các làng nghề truyền thống (làm gốm Bát Tràng, lụa Vạn Phúc, nón chuông...) trên Internet.",
+        aiCode: "6.C2.2",
+        dc: "• [Mã NLS: 1.1.TC1b] Tìm kiếm và tra cứu thông tin, hình ảnh về các làng nghề truyền thống (làm gốm Bát Tràng, lụa Vạn Phúc, nón chuông...) trên Internet.\n• [Mã AI: 6.C2.2] Sử dụng trợ lý ảo AI để tìm hiểu các nghề nghiệp quanh ta và sự xuất hiện của các ngành nghề mới.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -1174,8 +1177,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Tranh ảnh công cụ lao động nghề truyền thống (bàn xoay, khung dệt, cưa, đục)",
         location: "Phòng học",
         nlsCode: "1.3.TC1b",
-        aiCode: "",
-        dc: "• [Mã NLS: 1.3.TC1b] Phân loại và lập danh mục số về trang thiết bị, dụng cụ và công đoạn sản xuất đặc trưng của nghề truyền thống.",
+        aiCode: "6.C1.1",
+        dc: "• [Mã NLS: 1.3.TC1b] Phân loại và lập danh mục số về trang thiết bị, dụng cụ và công đoạn sản xuất đặc trưng của nghề truyền thống.\n• [Mã AI: 6.C1.1] Nhận biết cách hệ thống AI phân loại hình ảnh các dụng cụ lao động và sản phẩm nghề truyền thống.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -1187,8 +1190,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Phiếu phỏng vấn người thân về nghề nghiệp, sơ đồ nghề địa phương",
         location: "Phòng học",
         nlsCode: "2.2.TC1a",
-        aiCode: "",
-        dc: "• [Mã NLS: 2.2.TC1a] Trình bày bài chia sẻ về nghề nghiệp của người thân bằng slide ảnh hoặc tài liệu kỹ thuật số.",
+        aiCode: "6.A1.1",
+        dc: "• [Mã NLS: 2.2.TC1a] Trình bày bài chia sẻ về nghề nghiệp của người thân bằng slide ảnh hoặc tài liệu kỹ thuật số.\n• [Mã AI: 6.A1.1] Nhận diện vai trò con người trong điều khiển công nghệ, AI chỉ đóng vai trò hỗ trợ thông tin nghề nghiệp.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -1200,8 +1203,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Sản phẩm làng nghề thủ công mẫu, video nghệ nhân làm nghề, micro",
         location: "Sân trường / Hội trường",
         nlsCode: "2.1.TC1a",
-        aiCode: "",
-        dc: "• [Mã NLS: 2.1.TC1a] Tiếp cận câu chuyện làm nghề của các nghệ nhân qua kênh truyền thông số học đường.",
+        aiCode: "6.C2.2",
+        dc: "• [Mã NLS: 2.1.TC1a] Tiếp cận câu chuyện làm nghề của các nghệ nhân qua kênh truyền thông số học đường.\n• [Mã AI: 6.C2.2] Sử dụng công cụ số và trợ lý ảo để tra cứu tư liệu lịch sử phát triển các làng nghề truyền thống Việt Nam.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -1213,8 +1216,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bộ đồ bảo hộ mẫu, bảng quy tắc an toàn lao động nghề thủ công",
         location: "Phòng học",
         nlsCode: "4.1.TC1c",
-        aiCode: "",
-        dc: "• [Mã NLS: 4.1.TC1c] Nhận biết các biển báo cảnh báo an toàn lao động và tra cứu quy chuẩn an toàn số trong nghề truyền thống.",
+        aiCode: "6.B1.1",
+        dc: "• [Mã NLS: 4.1.TC1c] Nhận biết các biển báo cảnh báo an toàn lao động và tra cứu quy chuẩn an toàn số trong nghề truyền thống.\n• [Mã AI: 6.B1.1] Thảo luận về việc gìn giữ giá trị văn hóa thủ công truyền thống trước làn sóng tự động hóa và AI.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -1226,8 +1229,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Phiếu câu hỏi phỏng vấn, máy ghi âm/điện thoại thông minh",
         location: "Phòng học",
         nlsCode: "1.2.TC1a",
-        aiCode: "",
-        dc: "• [Mã NLS: 1.2.TC1a] Ghi âm và lưu giữ dữ liệu phỏng vấn người làm nghề truyền thống phục vụ học tập.",
+        aiCode: "6.A3.3",
+        dc: "• [Mã NLS: 1.2.TC1a] Ghi âm và lưu giữ dữ liệu phỏng vấn người làm nghề truyền thống phục vụ học tập.\n• [Mã AI: 6.A3.3] Bảo vệ thông tin cá nhân và dữ liệu ghi âm, ghi hình người làm nghề khi thu thập tư liệu trên môi trường số.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -1239,8 +1242,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video minh họa thao tác an toàn với máy móc, dao tiện, lò nung, hóa chất nhuộm",
         location: "Phòng học / Phòng thực hành",
         nlsCode: "4.1.TC1a",
-        aiCode: "",
-        dc: "• [Mã NLS: 4.1.TC1a] Hệ thống hóa các quy tắc bảo vệ an toàn thân thể và sử dụng đồ bảo hộ khi lao động qua sơ đồ số.",
+        aiCode: "6.A1.3",
+        dc: "• [Mã NLS: 4.1.TC1a] Hệ thống hóa các quy tắc bảo vệ an toàn thân thể và sử dụng đồ bảo hộ khi lao động qua sơ đồ số.\n• [Mã AI: 6.A1.3] Kiểm tra, đối chiếu các hướng dẫn an toàn lao động do AI cung cấp với quy định thực tế của xưởng nghề.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -1252,8 +1255,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Tranh ảnh các nghề nghiệp lao động bình dị trong xã hội (lao công, bác nông dân, thợ may)",
         location: "Phòng học",
         nlsCode: "2.5.TC1a",
-        aiCode: "",
-        dc: "• [Mã NLS: 2.5.TC1a] Thể hiện thái độ tôn trọng và tôn vinh người lao động thuộc mọi ngành nghề trên mạng xã hội.",
+        aiCode: "6.B1.1",
+        dc: "• [Mã NLS: 2.5.TC1a] Thể hiện thái độ tôn trọng và tôn vinh người lao động thuộc mọi ngành nghề trên mạng xã hội.\n• [Mã AI: 6.B1.1] Nhận thức về giá trị sức lao động sáng tạo của con người mà trí tuệ nhân tạo không thể thay thế.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -1265,8 +1268,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Tập san, poster infographic giới thiệu làng nghề truyền thống",
         location: "Phòng học",
         nlsCode: "3.1.TC1b",
-        aiCode: "",
-        dc: "• [Mã NLS: 3.1.TC1b] Thiết kế infographic kỹ thuật số giới thiệu quy trình sản xuất và an toàn của một làng nghề truyền thống.",
+        aiCode: "6.D1.1",
+        dc: "• [Mã NLS: 3.1.TC1b] Thiết kế infographic kỹ thuật số giới thiệu quy trình sản xuất và an toàn của một làng nghề truyền thống.\n• [Mã AI: 6.D1.1] Ứng dụng công cụ AI gợi ý ý tưởng xây dựng bố cục infographic giới thiệu nghề truyền thống.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -1278,8 +1281,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video gương người trẻ tiếp nối nghề gia truyền thành công, máy chiếu",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC1a",
-        aiCode: "",
-        dc: "• [Mã NLS: 1.1.TC1a] Tra cứu các bài viết, tư liệu số về yêu cầu phẩm chất và thể lực của thợ thủ công truyền thống.",
+        aiCode: "6.A1.1",
+        dc: "• [Mã NLS: 1.1.TC1a] Tra cứu các bài viết, tư liệu số về yêu cầu phẩm chất và thể lực của thợ thủ công truyền thống.\n• [Mã AI: 6.A1.1] Hiểu rằng AI có thể gợi ý thông tin nhưng bản thân em mới là người hiểu rõ sở thích và năng lực của mình.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -1291,8 +1294,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Phiếu tự trắc nghiệm phẩm chất cá nhân (sự khéo léo, kiên nhẫn, tính cẩn thận)",
         location: "Phòng học",
         nlsCode: "1.3.TC1b",
-        aiCode: "",
-        dc: "• [Mã NLS: 1.3.TC1b] Lập bảng đối sánh số giữa các phẩm chất cá nhân nổi bật với đặc trưng công việc của nghề truyền thống.",
+        aiCode: "6.A1.3",
+        dc: "• [Mã NLS: 1.3.TC1b] Lập bảng đối sánh số giữa các phẩm chất cá nhân nổi bật với đặc trưng công việc của nghề truyền thống.\n• [Mã AI: 6.A1.3] Nhận thức rằng các kết quả phân tích sở thích từ ứng dụng số chỉ mang tính tham khảo, cần kiểm chứng thực tế.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -1304,8 +1307,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng phân tích độ tương thích nghề nghiệp, bút màu",
         location: "Phòng học",
         nlsCode: "1.2.TC1b",
-        aiCode: "",
-        dc: "• [Mã NLS: 1.2.TC1b] Đánh giá mức độ phù hợp của bản thân đối với các công việc đòi hỏi sự tỉ mỉ, khéo tay qua biểu mẫu số.",
+        aiCode: "6.D1.1",
+        dc: "• [Mã NLS: 1.2.TC1b] Đánh giá mức độ phù hợp của bản thân đối với các công việc đòi hỏi sự tỉ mỉ, khéo tay qua biểu mẫu số.\n• [Mã AI: 6.D1.1] Lựa chọn sử dụng công cụ số phù hợp để lập bảng đối chiếu đặc điểm bản thân với yêu cầu nghề nghiệp.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -1317,8 +1320,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Gian hàng tư vấn hướng nghiệp, cẩm nang nghề nghiệp số, micro",
         location: "Sân trường / Hội trường",
         nlsCode: "2.3.TC1a",
-        aiCode: "",
-        dc: "• [Mã NLS: 2.3.TC1a] Tham gia tương tác, đặt câu hỏi tại diễn đàn hướng nghiệp trực tuyến dành cho học sinh THCS.",
+        aiCode: "6.C2.2",
+        dc: "• [Mã NLS: 2.3.TC1a] Tham gia tương tác, đặt câu hỏi tại diễn đàn hướng nghiệp trực tuyến dành cho học sinh THCS.\n• [Mã AI: 6.C2.2] Trải nghiệm công cụ chatbot/trợ lý ảo trả lời câu hỏi hướng nghiệp trong ngày hội nghề nghiệp.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -1330,8 +1333,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Phiếu định hướng rèn luyện cá nhân, sơ đồ cây nghề nghiệp",
         location: "Phòng học",
         nlsCode: "3.1.TC1a",
-        aiCode: "",
-        dc: "• [Mã NLS: 3.1.TC1a] Thiết kế sơ đồ tự rèn luyện các kỹ năng còn thiếu (tập trung, kiên trì, tỉ mỉ) trên phần mềm sơ đồ tư duy.",
+        aiCode: "6.A1.1",
+        dc: "• [Mã NLS: 3.1.TC1a] Thiết kế sơ đồ tự rèn luyện các kỹ năng còn thiếu (tập trung, kiên trì, tỉ mỉ) trên phần mềm sơ đồ tư duy.\n• [Mã AI: 6.A1.1] Khẳng định tính chủ động của con người trong việc lập kế hoạch tự rèn luyện và khắc phục điểm yếu.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -1343,8 +1346,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Slide thuyết trình cá nhân, bài viết chia sẻ cảm nghĩ",
         location: "Phòng học",
         nlsCode: "2.2.TC1a",
-        aiCode: "",
-        dc: "• [Mã NLS: 2.2.TC1a] Trình bày bài thu hoạch hướng nghiệp cá nhân dưới dạng video hoặc bài thuyết trình điện tử.",
+        aiCode: "6.D1.1",
+        dc: "• [Mã NLS: 2.2.TC1a] Trình bày bài thu hoạch hướng nghiệp cá nhân dưới dạng video hoặc bài thuyết trình điện tử.\n• [Mã AI: 6.D1.1] Ứng dụng công nghệ hỗ trợ trình bày sản phẩm tự nhận thức bản thân một cách sinh động, tự tin.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -1355,9 +1358,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Đánh giá toàn diện hồ sơ năng lực và các sản phẩm trải nghiệm, hướng nghiệp trong suốt năm học lớp 6.",
         equipment: "Hồ sơ học tập trải nghiệm cả năm, sản phẩm sáng tạo, máy chiếu",
         location: "Phòng học",
-        nlsCode: "3.1.TC1a",
-        aiCode: "6.C2.2",
-        dc: "• [Mã NLS: 3.1.TC1a] Tổng hợp trọn bộ sản phẩm trải nghiệm lớp 6 thành Portfolio số hoàn chỉnh.\n• [Mã AI: 6.C2.2] Sử dụng công cụ số tối ưu hóa cách trình bày hồ sơ năng lực cá nhân đẹp mắt.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra cuối kỳ"
       },
       {
@@ -1368,9 +1371,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Đánh giá mức độ trưởng thành về phẩm chất, kỹ năng sống và năng lực thích ứng của học sinh.",
         equipment: "Bảng kiểm rubric đánh giá năng lực cuối năm, phiếu tự đánh giá",
         location: "Phòng học",
-        nlsCode: "1.2.TC1b",
-        aiCode: "6.A1.3",
-        dc: "• [Mã NLS: 1.2.TC1b] Thực hiện đánh giá trực tuyến trên phần mềm quản lý học tập học đường.\n• [Mã AI: 6.A1.3] Khẳng định tính tự giác, trung thực trong tự nhìn nhận và đánh giá sự tiến bộ bản thân.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra cuối kỳ"
       },
       {
@@ -1381,9 +1384,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Tổng kết đánh giá kết quả môn học cả năm; tuyên dương học sinh tiến bộ và lập kế hoạch rèn luyện trong dịp hè.",
         equipment: "Giấy khen, video phóng sự tổng kết năm học lớp 6, loa micro",
         location: "Phòng học / Hội trường",
-        nlsCode: "2.2.TC1a",
-        aiCode: "6.A1.1",
-        dc: "• [Mã NLS: 2.2.TC1a] Chia sẻ kỷ yếu ảnh số của lớp và gửi lời chúc hè đến thầy cô và bạn bè.\n• [Mã AI: 6.A1.1] Tự hào về sự trưởng thành của bản thân sau năm học đầu tiên tại cấp THCS.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Tổng kết năm học"
       }
     ];
@@ -1403,8 +1406,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Kế hoạch năm học, cờ Đội, video phóng sự khai giảng, loa micro",
         location: "Sân trường / Hội trường",
         nlsCode: "2.1.TC1a",
-        aiCode: "7.A1.1",
-        dc: "• [Mã NLS: 2.1.TC1a] Sử dụng thiết bị số để cập nhật các thông báo và phong trào thi đua năm học mới của nhà trường.\n• [Mã AI: 7.A1.1] Nhận thức vai trò chủ động của học sinh trong việc lập kế hoạch học tập có sự hỗ trợ của công nghệ.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.1.TC1a] Sử dụng thiết bị số để cập nhật các thông báo và phong trào thi đua năm học mới của nhà trường.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -1416,8 +1419,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Phiếu học tập, giấy A0, bút dạ, sơ đồ mạng lưới quan hệ",
         location: "Phòng học",
         nlsCode: "2.5.TC1a",
-        aiCode: "7.B3.1",
-        dc: "• [Mã NLS: 2.5.TC1a] Xác định các chuẩn mực giao tiếp tôn trọng, thân thiện với thầy cô và bạn bè trên không gian mạng.\n• [Mã AI: 7.B3.1] Thể hiện trách nhiệm và đạo đức số khi bình luận, tương tác trong các nhóm học tập.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.5.TC1a] Xác định các chuẩn mực giao tiếp tôn trọng, thân thiện với thầy cô và bạn bè trên không gian mạng.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -1429,8 +1432,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Thẻ tình huống giao tiếp, bảng quy tắc ứng xử lớp học",
         location: "Phòng học",
         nlsCode: "2.4.TC1a",
-        aiCode: "7.A3.1",
-        dc: "• [Mã NLS: 2.4.TC1a] Sử dụng công cụ số hợp tác nhóm để giải quyết các tình huống gắn kết tình bạn.\n• [Mã AI: 7.A3.1] Phân biệt sự tương tác cảm xúc con người với các phản hồi tự động hóa của công nghệ.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.4.TC1a] Sử dụng công cụ số hợp tác nhóm để giải quyết các tình huống gắn kết tình bạn.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -1442,8 +1445,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Tình huống bất đồng nhóm, phiếu phân công nhiệm vụ",
         location: "Phòng học",
         nlsCode: "2.4.TC1a",
-        aiCode: "7.D1.1",
-        dc: "• [Mã NLS: 2.4.TC1a] Phối hợp làm việc nhóm trên tài liệu trực tuyến (Google Docs/Sheets) để hoàn thành nhiệm vụ chung.\n• [Mã AI: 7.D1.1] Khám phá các công cụ số hỗ trợ điều phối công việc nhóm hiệu quả.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.4.TC1a] Phối hợp làm việc nhóm trên tài liệu trực tuyến (Google Docs/Sheets) để hoàn thành nhiệm vụ chung.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -1455,8 +1458,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Cây mục tiêu, giấy ghi ý kiến, video về mô hình trường học hạnh phúc",
         location: "Phòng học",
         nlsCode: "3.1.TC1a",
-        aiCode: "7.A1.MR1",
-        dc: "• [Mã NLS: 3.1.TC1a] Sử dụng bảng tương tác số (Padlet/Jamboard) thu thập các tiêu chí xây dựng lớp học hạnh phúc.\n• [Mã AI: 7.A1.MR1] Xác thực và chọn lọc các ý tưởng tích cực, nhân văn để tạo dựng môi trường lớp học yêu thương.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC1a] Sử dụng bảng tương tác số (Padlet/Jamboard) thu thập các tiêu chí xây dựng lớp học hạnh phúc.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -1468,8 +1471,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bản cam kết thi đua, sổ tay rèn luyện học sinh lớp 7",
         location: "Phòng học",
         nlsCode: "5.3.TC1a",
-        aiCode: "7.C5.1",
-        dc: "• [Mã NLS: 5.3.TC1a] Thiết kế bảng cam kết số cá nhân về việc duy trì nền nếp và thái độ hòa nhã với bạn bè.\n• [Mã AI: 7.C5.1] Hiểu cách thức hệ thống số thu thập và phản hồi dữ liệu cam kết rèn luyện.",
+        aiCode: "",
+        dc: "• [Mã NLS: 5.3.TC1a] Thiết kế bảng cam kết số cá nhân về việc duy trì nền nếp và thái độ hòa nhã với bạn bè.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -1481,8 +1484,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Tư liệu lịch sử trường, video truyền thống các thế hệ thầy trò, máy chiếu",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC1b",
-        aiCode: "7.A1.1",
-        dc: "• [Mã NLS: 1.1.TC1b] Tìm kiếm và chọn lọc thông tin, thành tích nổi bật của trường trên cổng thông tin điện tử.\n• [Mã AI: 7.A1.1] Bồi dưỡng lòng tự hào và ý thức giữ gìn truyền thống tốt đẹp của nhà trường.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.1.TC1b] Tìm kiếm và chọn lọc thông tin, thành tích nổi bật của trường trên cổng thông tin điện tử.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -1494,8 +1497,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Hình ảnh góc trường đẹp, thành tích thể thao/văn hóa của học sinh",
         location: "Phòng học",
         nlsCode: "3.1.TC1b",
-        aiCode: "7.C5.1",
-        dc: "• [Mã NLS: 3.1.TC1b] Thiết kế bài trình chiếu hoặc video clip ngắn giới thiệu về thầy cô, bạn bè và cảnh quan trường.\n• [Mã AI: 7.C5.1] Sử dụng các công cụ biên tập video tự động để nâng cao chất lượng sản phẩm truyền thông.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC1b] Thiết kế bài trình chiếu hoặc video clip ngắn giới thiệu về thầy cô, bạn bè và cảnh quan trường.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -1507,8 +1510,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng trưng bày tập san, tranh vẽ, poster giới thiệu trường",
         location: "Phòng học / Hành lang",
         nlsCode: "2.2.TC1a",
-        aiCode: "7.D1.1",
-        dc: "• [Mã NLS: 2.2.TC1a] Số hóa sản phẩm triển lãm và tạo mã QR trưng bày tại góc truyền thống lớp học.\n• [Mã AI: 7.D1.1] Đề xuất ý tưởng ứng dụng bảo tàng ảo để lưu giữ và quảng bá truyền thống trường học.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.2.TC1a] Số hóa sản phẩm triển lãm và tạo mã QR trưng bày tại góc truyền thống lớp học.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -1520,8 +1523,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video tư liệu về danh nhân (Chủ tịch Hồ Chí Minh, thầy Chu Văn An, Marie Curie...)",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC1c",
-        aiCode: "7.A1.1",
-        dc: "• [Mã NLS: 1.1.TC1c] Tra cứu thông tin, bài học vượt khó và tự học của các danh nhân từ nguồn bách khoa toàn thư số.\n• [Mã AI: 7.A1.1] Khẳng định ý chí tự lực tự cường và nghị lực của con người là yếu tố quyết định thành công.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.1.TC1c] Tra cứu thông tin, bài học vượt khó và tự học của các danh nhân từ nguồn bách khoa toàn thư số.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -1533,8 +1536,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Phiếu phân tích SWOT cá nhân (Điểm mạnh - Điểm yếu - Cơ hội - Thách thức)",
         location: "Phòng học",
         nlsCode: "1.3.TC1b",
-        aiCode: "7.C4.1",
-        dc: "• [Mã NLS: 1.3.TC1b] Thiết lập ma trận SWOT cá nhân trên biểu mẫu số để phân tích ưu - nhược điểm của mình.\n• [Mã AI: 7.C4.1] Nhận diện cách thức phân tích dữ liệu tự đánh giá để đưa ra định hướng rèn luyện khách quan.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.3.TC1b] Thiết lập ma trận SWOT cá nhân trên biểu mẫu số để phân tích ưu - nhược điểm của mình.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -1546,8 +1549,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Chủ đề tranh luận, bảng tính điểm tranh biện",
         location: "Phòng học",
         nlsCode: "2.1.TC1b",
-        aiCode: "7.B3.1",
-        dc: "• [Mã NLS: 2.1.TC1b] Sử dụng dữ liệu và luận cứ khoa học từ Internet để xây dựng bài lập luận tranh biện sắc bén.\n• [Mã AI: 7.B3.1] Thực hiện tranh biện văn minh, tôn trọng ý kiến khác biệt và bảo đảm đạo đức giao tiếp.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.1.TC1b] Sử dụng dữ liệu và luận cứ khoa học từ Internet để xây dựng bài lập luận tranh biện sắc bén.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -1559,8 +1562,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Sân khấu biểu diễn tài năng (hát, múa, ảo thuật, lập trình, thuyết trình), âm thanh",
         location: "Sân trường / Hội trường",
         nlsCode: "3.1.TC1b",
-        aiCode: "7.A1.1",
-        dc: "• [Mã NLS: 3.1.TC1b] Ghi hình, dựng video các tiết mục tài năng và tạo kênh giới thiệu tài năng học sinh.\n• [Mã AI: 7.A1.1] Tôn vinh tính độc bản và sự sáng tạo không giới hạn của tài năng con người.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC1b] Ghi hình, dựng video các tiết mục tài năng và tạo kênh giới thiệu tài năng học sinh.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -1572,8 +1575,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Mẫu kế hoạch hành động SMART cá nhân, bút dạ, giấy màu",
         location: "Phòng học",
         nlsCode: "5.3.TC1a",
-        aiCode: "7.D1.1",
-        dc: "• [Mã NLS: 5.3.TC1a] Sử dụng phần mềm quản lý mục tiêu số (Notion/Trello) để theo dõi tiến độ khắc phục điểm yếu.\n• [Mã AI: 7.D1.1] Ứng dụng trợ lý ảo nhắc việc và lập lộ trình tự học khoa học.",
+        aiCode: "",
+        dc: "• [Mã NLS: 5.3.TC1a] Sử dụng phần mềm quản lý mục tiêu số (Notion/Trello) để theo dõi tiến độ khắc phục điểm yếu.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -1585,8 +1588,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Biểu đồ tiến bộ cá nhân, phiếu nhận xét của bạn bè",
         location: "Phòng học",
         nlsCode: "2.2.TC1a",
-        aiCode: "7.A1.MR1",
-        dc: "• [Mã NLS: 2.2.TC1a] Chia sẻ báo cáo tiến bộ số với các minh chứng cụ thể (điểm số cải thiện, thói quen tốt).\n• [Mã AI: 7.A1.MR1] Đánh giá trung thực kết quả đạt được, đối chiếu với mục tiêu ban đầu.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.2.TC1a] Chia sẻ báo cáo tiến bộ số với các minh chứng cụ thể (điểm số cải thiện, thói quen tốt).",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -1598,8 +1601,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video phóng sự về quản lý cảm xúc tuổi dậy thì, máy chiếu, micro",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC1a",
-        aiCode: "7.A1.1",
-        dc: "• [Mã NLS: 1.1.TC1a] Tiếp cận kiến thức tâm lý học đường qua tài liệu chuyên gia và bài giảng số trực tuyến.\n• [Mã AI: 7.A1.1] Hiểu rằng AI có thể nhận dạng biểu cảm khuôn mặt nhưng con người làm chủ cảm xúc thật.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.1.TC1a] Tiếp cận kiến thức tâm lý học đường qua tài liệu chuyên gia và bài giảng số trực tuyến.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -1611,8 +1614,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bộ thẻ cảm xúc (vui, giận, lo lắng, sợ hãi), hướng dẫn kỹ thuật thở sâu",
         location: "Phòng học",
         nlsCode: "4.3.TC1a",
-        aiCode: "7.C5.1",
-        dc: "• [Mã NLS: 4.3.TC1a] Sử dụng các ứng dụng số hướng dẫn thiền buông thư và giải tỏa căng thẳng lành mạnh.\n• [Mã AI: 7.C5.1] Tìm hiểu cách các ứng dụng thông minh theo dõi nhịp tim và mức độ stress của người dùng.",
+        aiCode: "",
+        dc: "• [Mã NLS: 4.3.TC1a] Sử dụng các ứng dụng số hướng dẫn thiền buông thư và giải tỏa căng thẳng lành mạnh.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -1624,8 +1627,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng ý tưởng nhóm, giấy note màu",
         location: "Phòng học",
         nlsCode: "2.4.TC1a",
-        aiCode: "7.B3.1",
-        dc: "• [Mã NLS: 2.4.TC1a] Tổng hợp các mẹo kiểm soát cơn giận thành infographic số chia sẻ cho tập thể lớp.\n• [Mã AI: 7.B3.1] Tránh trút giận hay đăng tải cảm xúc tiêu cực, xúc phạm người khác lên mạng xã hội.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.4.TC1a] Tổng hợp các mẹo kiểm soát cơn giận thành infographic số chia sẻ cho tập thể lớp.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -1637,8 +1640,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Sổ nhật ký cảm xúc (mood tracker), mẫu thang đo cảm xúc",
         location: "Phòng học",
         nlsCode: "1.3.TC1a",
-        aiCode: "7.D1.1",
-        dc: "• [Mã NLS: 1.3.TC1a] Theo dõi và ghi chép diễn biến tâm trạng hàng ngày trên ứng dụng nhật ký số bảo mật.\n• [Mã AI: 7.D1.1] Khám phá các công cụ chatbot tâm lý học đường hỗ trợ lắng nghe và đưa ra lời khuyên tích cực.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.3.TC1a] Theo dõi và ghi chép diễn biến tâm trạng hàng ngày trên ứng dụng nhật ký số bảo mật.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -1650,8 +1653,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Kịch bản xử lý tình huống bị bạn hiểu lầm, bị điểm kém, bị trêu chọc",
         location: "Phòng học",
         nlsCode: "2.5.TC1b",
-        aiCode: "7.A3.1",
-        dc: "• [Mã NLS: 2.5.TC1b] Phân tích cách ứng xử bình tĩnh trước các bình luận ác ý hoặc công kích trên mạng.\n• [Mã AI: 7.A3.1] Tự chủ cảm xúc, không để thuật toán mạng xã hội thao túng tâm lý và gây kích động.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.5.TC1b] Phân tích cách ứng xử bình tĩnh trước các bình luận ác ý hoặc công kích trên mạng.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -1663,8 +1666,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng tổng kết cảm xúc của lớp, phiếu cảm nhận",
         location: "Phòng học",
         nlsCode: "2.2.TC1a",
-        aiCode: "7.A1.MR1",
-        dc: "• [Mã NLS: 2.2.TC1a] Chia sẻ bài học làm chủ cảm xúc qua bài viết ngắn hoặc video truyền cảm hứng.\n• [Mã AI: 7.A1.MR1] Đánh giá sự tiến bộ về khả năng giữ bình tĩnh và giải quyết mâu thuẫn một cách hòa bình.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.2.TC1a] Chia sẻ bài học làm chủ cảm xúc qua bài viết ngắn hoặc video truyền cảm hứng.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -1675,9 +1678,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Đánh giá mức độ đạt yêu cầu cần đạt của Chủ đề 1 (Em với nhà trường) và Chủ đề 2 (Khám phá bản thân).",
         equipment: "Hồ sơ rèn luyện cá nhân, sản phẩm lớp học hạnh phúc, máy chiếu",
         location: "Phòng học",
-        nlsCode: "3.1.TC1a",
-        aiCode: "7.C5.1",
-        dc: "• [Mã NLS: 3.1.TC1a] Báo cáo sản phẩm số tổng hợp kết quả hoạt động trải nghiệm chủ đề 1 và 2.\n• [Mã AI: 7.C5.1] Ứng dụng công nghệ đa phương tiện để trực quan hóa dữ liệu rèn luyện.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra giữa kỳ"
       },
       {
@@ -1688,9 +1691,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Đánh giá mức độ tự nhận thức, khả năng làm chủ cảm xúc và kỹ năng hợp tác của học sinh.",
         equipment: "Bảng tiêu chí đánh giá giữa kỳ, phiếu đánh giá chéo",
         location: "Phòng học",
-        nlsCode: "1.2.TC1b",
-        aiCode: "7.A1.MR1",
-        dc: "• [Mã NLS: 1.2.TC1b] Đối chiếu và đánh giá minh chứng rèn luyện qua bảng tiêu chí điện tử.\n• [Mã AI: 7.A1.MR1] Xác thực thông tin đánh giá trung thực, khách quan, không gian lận học thuật.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra giữa kỳ"
       },
       {
@@ -1701,9 +1704,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Điều chỉnh kế hoạch rèn luyện cá nhân cho nửa sau Học kỳ I dựa trên kết quả đánh giá giữa kỳ.",
         equipment: "Sổ tay rèn luyện học sinh, phiếu cam kết rèn luyện mới",
         location: "Phòng học",
-        nlsCode: "1.3.TC1a",
-        aiCode: "7.D1.1",
-        dc: "• [Mã NLS: 1.3.TC1a] Cập nhật mục tiêu và kế hoạch phát triển cá nhân lên hệ sinh thái học tập số.\n• [Mã AI: 7.D1.1] Nhận gợi ý từ các công cụ số để nâng cao tính kiên trì trong học tập.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra giữa kỳ"
       },
       {
@@ -1715,8 +1718,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video phóng sự tấm gương thầy Nguyễn Ngọc Ký, Nick Vujicic, máy chiếu",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC1c",
-        aiCode: "7.A1.1",
-        dc: "• [Mã NLS: 1.1.TC1c] Tìm kiếm và tổng hợp tư liệu số về các tấm gương giàu ý chí vượt khó vươn lên.\n• [Mã AI: 7.A1.1] Khẳng định ý chí kiên định và nghị lực của con người là sức mạnh vượt qua mọi nghịch cảnh.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.1.TC1c] Tìm kiếm và tổng hợp tư liệu số về các tấm gương giàu ý chí vượt khó vươn lên.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -1728,8 +1731,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Cây khó khăn, thẻ ghi trở ngại trong học tập (áp lực bài vở, điểm số, lười biếng)",
         location: "Phòng học",
         nlsCode: "2.4.TC1a",
-        aiCode: "7.D1.1",
-        dc: "• [Mã NLS: 2.4.TC1a] Thảo luận nhóm trên diễn đàn số về các biện pháp khắc phục sự trì hoãn trong học tập.\n• [Mã AI: 7.D1.1] Ứng dụng kỹ thuật Pomodoro và ứng dụng quản lý thời gian để tập trung cao độ.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.4.TC1a] Thảo luận nhóm trên diễn đàn số về các biện pháp khắc phục sự trì hoãn trong học tập.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -1741,8 +1744,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Mẫu kế hoạch vượt khó cá nhân, bảng mục tiêu rèn luyện",
         location: "Phòng học",
         nlsCode: "5.3.TC1a",
-        aiCode: "7.C5.1",
-        dc: "• [Mã NLS: 5.3.TC1a] Xây dựng kế hoạch vượt khó cá nhân trên phần mềm sơ đồ tư duy hoặc bảng tính số.\n• [Mã AI: 7.C5.1] Sử dụng các trợ lý học tập AI giải thích các bài tập khó khi tự học ở nhà.",
+        aiCode: "",
+        dc: "• [Mã NLS: 5.3.TC1a] Xây dựng kế hoạch vượt khó cá nhân trên phần mềm sơ đồ tư duy hoặc bảng tính số.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -1754,8 +1757,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Sách hay về kỹ năng sống, câu chuyện truyền cảm hứng, micro",
         location: "Sân trường / Thư viện",
         nlsCode: "1.1.TC1b",
-        aiCode: "7.A1.1",
-        dc: "• [Mã NLS: 1.1.TC1b] Khai thác kho sách điện tử (e-book) và audio book trên thư viện số của trường.\n• [Mã AI: 7.A1.1] Bồi đắp tâm hồn nhân văn và tư duy phản biện qua việc đọc sách mỗi ngày.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.1.TC1b] Khai thác kho sách điện tử (e-book) và audio book trên thư viện số của trường.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -1767,8 +1770,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Tranh ảnh, câu danh ngôn về ý chí và nghị lực sống",
         location: "Phòng học",
         nlsCode: "1.2.TC1a",
-        aiCode: "7.B3.1",
-        dc: "• [Mã NLS: 1.2.TC1a] Phân tích giá trị các câu chuyện ý chí trên mạng, sàng lọc những nội dung tích cực thực tế.\n• [Mã AI: 7.B3.1] Tránh tâm lý hoang mang trước những nội dung độc hại, tiêu cực lan truyền trên mạng.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.2.TC1a] Phân tích giá trị các câu chuyện ý chí trên mạng, sàng lọc những nội dung tích cực thực tế.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -1780,8 +1783,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Hộp thư tiến bộ, phiếu chia sẻ câu chuyện thành công nhỏ của em",
         location: "Phòng học",
         nlsCode: "2.2.TC1a",
-        aiCode: "7.A1.MR1",
-        dc: "• [Mã NLS: 2.2.TC1a] Trình bày bài học vượt khó cá nhân qua bài viết số hoặc podcast học đường.\n• [Mã AI: 7.A1.MR1] Đánh giá sự trưởng thành của bản thân trong việc kiên trì theo đuổi mục tiêu.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.2.TC1a] Trình bày bài học vượt khó cá nhân qua bài viết số hoặc podcast học đường.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -1793,8 +1796,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video phóng sự tác hại của nghiện game online, số liệu thống kê y tế",
         location: "Sân trường / Hội trường",
         nlsCode: "4.3.TC1a",
-        aiCode: "7.A3.1",
-        dc: "• [Mã NLS: 4.3.TC1a] Nhận diện dấu hiệu nghiện game và tác hại đối với sức khỏe thể chất, thị lực và tâm lý.\n• [Mã AI: 7.A3.1] Hiểu cách thức các thuật toán game giữ chân người dùng và biết cách thiết lập giới hạn chơi game.",
+        aiCode: "",
+        dc: "• [Mã NLS: 4.3.TC1a] Nhận diện dấu hiệu nghiện game và tác hại đối với sức khỏe thể chất, thị lực và tâm lý.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -1806,8 +1809,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Thẻ tình huống gặp người lạ khả nghi, bị đe dọa, lạc đường, quấy rối",
         location: "Phòng học",
         nlsCode: "4.1.TC1c",
-        aiCode: "7.D1.1",
-        dc: "• [Mã NLS: 4.1.TC1c] Cài đặt tính năng định vị an toàn và kích hoạt cuộc gọi khẩn cấp SOS trên điện thoại.\n• [Mã AI: 7.D1.1] Tìm hiểu các ứng dụng AI cảnh báo khu vực mất an toàn và hướng dẫn tìm người hỗ trợ.",
+        aiCode: "",
+        dc: "• [Mã NLS: 4.1.TC1c] Cài đặt tính năng định vị an toàn và kích hoạt cuộc gọi khẩn cấp SOS trên điện thoại.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -1819,8 +1822,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Cẩm nang số an toàn bản thân, sơ đồ các số điện thoại khẩn cấp",
         location: "Phòng học",
         nlsCode: "4.2.TC1b",
-        aiCode: "7.B3.1",
-        dc: "• [Mã NLS: 4.2.TC1b] Nắm vững nguyên tắc không chia sẻ địa chỉ nhà, vị trí trực tiếp (check-in) cho người lạ trên mạng.\n• [Mã AI: 7.B3.1] Cảnh giác trước các chiêu trò lừa đảo qua mạng và bảo vệ thông tin nhận dạng cá nhân.",
+        aiCode: "",
+        dc: "• [Mã NLS: 4.2.TC1b] Nắm vững nguyên tắc không chia sẻ địa chỉ nhà, vị trí trực tiếp (check-in) cho người lạ trên mạng.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -1832,8 +1835,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Quy tắc 5 ngón tay, video hướng dẫn phòng chống xâm hại tình dục trẻ em",
         location: "Sân trường / Hội trường",
         nlsCode: "4.3.TC1a",
-        aiCode: "7.A1.1",
-        dc: "• [Mã NLS: 4.3.TC1a] Nhận diện các hành vi xâm hại thân thể trong đời thực và các hành vi gạ gẫm trực tuyến.\n• [Mã AI: 7.A1.1] Khẳng định quyền bất khả xâm phạm về thân thể của trẻ em và sự cần thiết phải lên tiếng tố cáo.",
+        aiCode: "",
+        dc: "• [Mã NLS: 4.3.TC1a] Nhận diện các hành vi xâm hại thân thể trong đời thực và các hành vi gạ gẫm trực tuyến.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -1845,8 +1848,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bản đồ giao thông quanh trường, hình ảnh điểm đen tai nạn hoặc nơi vắng vẻ",
         location: "Phòng học",
         nlsCode: "1.2.TC1a",
-        aiCode: "7.C5.1",
-        dc: "• [Mã NLS: 1.2.TC1a] Sử dụng Google Maps xác định các tuyến đường đi học an toàn, sáng sủa, tránh đoạn vắng.\n• [Mã AI: 7.C5.1] Khám phá cách hệ thống camera giao thông thông minh ghi nhận và cảnh báo nguy cơ tai nạn.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.2.TC1a] Sử dụng Google Maps xác định các tuyến đường đi học an toàn, sáng sủa, tránh đoạn vắng.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -1858,8 +1861,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Sổ tay bỏ túi an toàn cá nhân, bảng tổng kết của lớp",
         location: "Phòng học",
         nlsCode: "3.1.TC1b",
-        aiCode: "7.D1.1",
-        dc: "• [Mã NLS: 3.1.TC1b] Thiết kế infographic mini \"10 nguyên tắc an toàn cho học sinh THCS\" bằng công cụ thiết kế số.\n• [Mã AI: 7.D1.1] Tham khảo ý tưởng thiết kế ấn phẩm số từ các công cụ AI hỗ trợ sáng tạo.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC1b] Thiết kế infographic mini \"10 nguyên tắc an toàn cho học sinh THCS\" bằng công cụ thiết kế số.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -1871,8 +1874,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Khẩu hiệu phong trào, video mô hình trường lớp xanh sạch đẹp, loa micro",
         location: "Sân trường / Hội trường",
         nlsCode: "2.1.TC1a",
-        aiCode: "7.A1.1",
-        dc: "• [Mã NLS: 2.1.TC1a] Tiếp nhận các tiêu chí thi đua trường lớp xanh - gọn - đẹp qua trang thông tin liên đội.\n• [Mã AI: 7.A1.1] Xây dựng ý thức tự giác giữ gìn vệ sinh và văn hóa xếp hàng, ngăn nắp tại trường học.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.1.TC1a] Tiếp nhận các tiêu chí thi đua trường lớp xanh - gọn - đẹp qua trang thông tin liên đội.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -1884,8 +1887,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bộ dụng cụ vệ sinh lớp học, sơ đồ phân công trực nhật lớp",
         location: "Phòng học",
         nlsCode: "1.3.TC1b",
-        aiCode: "7.C5.1",
-        dc: "• [Mã NLS: 1.3.TC1b] Áp dụng phương pháp phân loại ngăn nắp vào việc quản lý dữ liệu học tập trên máy tính.\n• [Mã AI: 7.C5.1] Sử dụng tính năng tự động sắp xếp và dọn dẹp bộ nhớ thiết bị điện tử định kỳ.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.3.TC1b] Áp dụng phương pháp phân loại ngăn nắp vào việc quản lý dữ liệu học tập trên máy tính.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -1897,8 +1900,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng theo dõi hành vi tích cực của lớp, phiếu tự kiểm điểm",
         location: "Phòng học",
         nlsCode: "2.2.TC1a",
-        aiCode: "7.A1.MR1",
-        dc: "• [Mã NLS: 2.2.TC1a] Đăng tải hình ảnh \"Trước và Sau khi dọn dẹp\" lên góc ảnh trải nghiệm số của lớp.\n• [Mã AI: 7.A1.MR1] Tự nhận diện các hành vi bừa bãi và quyết tâm thay đổi bằng hành động cụ thể.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.2.TC1a] Đăng tải hình ảnh \"Trước và Sau khi dọn dẹp\" lên góc ảnh trải nghiệm số của lớp.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -1910,8 +1913,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video gương người thành công nhờ kiên trì rèn luyện, máy chiếu, micro",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC1a",
-        aiCode: "7.A1.1",
-        dc: "• [Mã NLS: 1.1.TC1a] Tra cứu và đọc các bài học truyền cảm hứng về đức tính kiên trì trên các trang giáo dục.\n• [Mã AI: 7.A1.1] Hiểu rằng thành công bền vững của con người đến từ sự chăm chỉ, kiên định chứ không có đường tắt.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.1.TC1a] Tra cứu và đọc các bài học truyền cảm hứng về đức tính kiên trì trên các trang giáo dục.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -1923,8 +1926,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Thử thách 21 ngày hình thành thói quen tốt, sổ nhật ký rèn luyện",
         location: "Phòng học",
         nlsCode: "5.3.TC1a",
-        aiCode: "7.D1.1",
-        dc: "• [Mã NLS: 5.3.TC1a] Sử dụng ứng dụng theo dõi thói quen 21 ngày trên điện thoại để nhắc nhở rèn luyện mỗi ngày.\n• [Mã AI: 7.D1.1] Khám phá cơ chế phần thưởng số (gamification) trong các ứng dụng rèn luyện tính kiên trì.",
+        aiCode: "",
+        dc: "• [Mã NLS: 5.3.TC1a] Sử dụng ứng dụng theo dõi thói quen 21 ngày trên điện thoại để nhắc nhở rèn luyện mỗi ngày.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -1936,8 +1939,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng theo dõi tiến độ thử thách 21 ngày, sticker ngôi sao chăm ngoan",
         location: "Phòng học",
         nlsCode: "2.2.TC1a",
-        aiCode: "7.A1.MR1",
-        dc: "• [Mã NLS: 2.2.TC1a] Chia sẻ chặng đường vượt qua sự lười biếng qua bài cảm nhận số gửi tập thể lớp.\n• [Mã AI: 7.A1.MR1] Đánh giá sự chuyển biến tích cực trong thái độ học tập và giúp đỡ việc nhà.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.2.TC1a] Chia sẻ chặng đường vượt qua sự lười biếng qua bài cảm nhận số gửi tập thể lớp.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -1949,8 +1952,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Mẫu heo đất/hộp tiết kiệm tự làm, video phát động phong trào tiết kiệm vì bạn nghèo",
         location: "Sân trường / Hội trường",
         nlsCode: "2.1.TC1a",
-        aiCode: "7.A1.1",
-        dc: "• [Mã NLS: 2.1.TC1a] Theo dõi kế hoạch nuôi heo đất tiết kiệm của chi đội qua bảng tin số.\n• [Mã AI: 7.A1.1] Nhận thức giá trị của từng đồng tiền do cha mẹ lao động vất vả làm ra.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.1.TC1a] Theo dõi kế hoạch nuôi heo đất tiết kiệm của chi đội qua bảng tin số.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -1962,8 +1965,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Mẫu sổ thu chi cá nhân, bài tập tình huống mua sắm khi có số tiền nhất định",
         location: "Phòng học",
         nlsCode: "1.3.TC1b",
-        aiCode: "7.C5.1",
-        dc: "• [Mã NLS: 1.3.TC1b] Sử dụng bảng tính Excel lập kế hoạch quản lý tiền tiêu vặt và ghi chép nhật ký thu chi.\n• [Mã AI: 7.C5.1] Tìm hiểu các công cụ số tính toán tỷ lệ tiết kiệm thông minh (quy tắc 6 chiếc lọ).",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.3.TC1b] Sử dụng bảng tính Excel lập kế hoạch quản lý tiền tiêu vặt và ghi chép nhật ký thu chi.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -1975,8 +1978,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Hộp heo đất tiết kiệm cá nhân, sổ ghi chép chi tiêu",
         location: "Phòng học",
         nlsCode: "2.4.TC1a",
-        aiCode: "7.B3.1",
-        dc: "• [Mã NLS: 2.4.TC1a] Trao đổi kinh nghiệm mua sắm thông thái, tránh chi tiêu bốc đồng trong nhóm học tập.\n• [Mã AI: 7.B3.1] Nhận diện các bẫy quảng cáo trực tuyến và chiêu trò kích thích mua sắm trên mạng.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.4.TC1a] Trao đổi kinh nghiệm mua sắm thông thái, tránh chi tiêu bốc đồng trong nhóm học tập.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -1988,8 +1991,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Số liệu tổng kết nuôi heo đất của các chi đội, giấy khen tuyên dương",
         location: "Sân trường / Hội trường",
         nlsCode: "1.3.TC1b",
-        aiCode: "7.A1.1",
-        dc: "• [Mã NLS: 1.3.TC1b] Tổng hợp số liệu đóng góp tiết kiệm của các lớp trên bảng tin điện tử liên đội.\n• [Mã AI: 7.A1.1] Lan tỏa ý nghĩa nhân văn của phong trào tiết kiệm giúp đỡ các bạn học sinh nghèo vượt khó.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.3.TC1b] Tổng hợp số liệu đóng góp tiết kiệm của các lớp trên bảng tin điện tử liên đội.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -2001,8 +2004,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng dự toán chi phí sự kiện (sinh nhật thành viên, bữa cơm tất niên, ngày kỷ niệm gia đình)",
         location: "Phòng học",
         nlsCode: "3.1.TC1a",
-        aiCode: "7.D1.1",
-        dc: "• [Mã NLS: 3.1.TC1a] Lập bảng dự toán ngân sách chi tiết cho sự kiện gia đình bằng ứng dụng bảng tính số.\n• [Mã AI: 7.D1.1] Tham khảo gợi ý từ AI trong việc lên danh đơn thực đơn và so sánh giá cả thực phẩm hợp lý.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC1a] Lập bảng dự toán ngân sách chi tiết cho sự kiện gia đình bằng ứng dụng bảng tính số.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -2014,8 +2017,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Ảnh chụp sự kiện gia đình em tổ chức, phiếu phản hồi của bố mẹ",
         location: "Phòng học",
         nlsCode: "2.2.TC1a",
-        aiCode: "7.A1.MR1",
-        dc: "• [Mã NLS: 2.2.TC1a] Trình chiếu hình ảnh bữa tiệc gia đình ấm cúng do chính em lập kế hoạch chi tiêu.\n• [Mã AI: 7.A1.MR1] Đánh giá hiệu quả việc chi tiêu đúng ngân sách dự kiến, không bị phát sinh lãng phí.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.2.TC1a] Trình chiếu hình ảnh bữa tiệc gia đình ấm cúng do chính em lập kế hoạch chi tiêu.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -2026,9 +2029,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Đánh giá kết quả học tập, rèn luyện chủ đề 1 đến 4 qua hồ sơ minh chứng trải nghiệm học kỳ I.",
         equipment: "Hồ sơ trải nghiệm (Portfolio) số và giấy, máy chiếu",
         location: "Phòng học",
-        nlsCode: "3.1.TC1a",
-        aiCode: "7.C5.1",
-        dc: "• [Mã NLS: 3.1.TC1a] Báo cáo sản phẩm trải nghiệm HK I dưới dạng slide điện tử hoặc video tổng kết.\n• [Mã AI: 7.C5.1] Sử dụng công cụ số hỗ trợ thuyết trình chuyên nghiệp.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra cuối kỳ"
       },
       {
@@ -2039,9 +2042,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Đánh giá năng lực tự chủ, giải quyết vấn đề và quản lý tài chính cá nhân.",
         equipment: "Đề kiểm tra đánh giá tình huống, phiếu trả lời của học sinh",
         location: "Phòng học",
-        nlsCode: "1.2.TC1b",
-        aiCode: "7.A1.MR1",
-        dc: "• [Mã NLS: 1.2.TC1b] Xử lý câu hỏi tình huống thực tế có số liệu trên biểu mẫu đánh giá số.\n• [Mã AI: 7.A1.MR1] Thực hiện bài làm với tinh thần trung thực, độc lập suy nghĩ.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra cuối kỳ"
       },
       {
@@ -2052,9 +2055,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Đánh giá tổng hợp sự tiến bộ về phẩm chất và năng lực của học sinh trong toàn bộ Học kỳ I.",
         equipment: "Bảng tổng hợp kết quả đánh giá học kỳ I môn HĐTN, HN 7",
         location: "Phòng học",
-        nlsCode: "1.3.TC1b",
-        aiCode: "7.B3.1",
-        dc: "• [Mã NLS: 1.3.TC1b] Lưu trữ kết quả rèn luyện học kỳ I vào cơ sở dữ liệu học tập cá nhân.\n• [Mã AI: 7.B3.1] Nhận thức tính công bằng, minh bạch trong đánh giá quá trình rèn luyện.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra cuối kỳ"
       },
       {
@@ -2065,9 +2068,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Hoàn tất việc sắp xếp, bổ sung minh chứng và lưu trữ hồ sơ học tập trải nghiệm kỳ I.",
         equipment: "Tệp lưu trữ hồ sơ, thiết bị lưu trữ số",
         location: "Phòng học",
-        nlsCode: "1.3.TC1a",
-        aiCode: "7.C4.1",
-        dc: "• [Mã NLS: 1.3.TC1a] Sao lưu toàn bộ hồ sơ trải nghiệm kỳ I lên hệ thống đám mây học đường an toàn.\n• [Mã AI: 7.C4.1] Tìm hiểu cách thức bảo mật và phân quyền truy cập dữ liệu cá nhân trên Internet.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Đánh giá cuối kỳ I"
       },
       {
@@ -2078,9 +2081,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Tự đánh giá mức độ đạt được so với mục tiêu và tiếp nhận ý kiến đóng góp từ bạn bè trong lớp.",
         equipment: "Phiếu nhận xét đồng đẳng, bảng khảo sát tự đánh giá",
         location: "Phòng học",
-        nlsCode: "2.4.TC1a",
-        aiCode: "7.A1.MR1",
-        dc: "• [Mã NLS: 2.4.TC1a] Đóng góp ý kiến nhận xét mang tính xây dựng cho bạn bè qua ứng dụng tương tác số.\n• [Mã AI: 7.A1.MR1] Nhìn nhận khách quan điểm mạnh và điểm cần hoàn thiện của bản thân.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Đánh giá cuối kỳ I"
       },
       {
@@ -2091,9 +2094,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Biểu dương các học sinh tiêu biểu có nhiều tiến bộ; định hướng nhiệm vụ học tập Học kỳ II.",
         equipment: "Giấy khen, video clip tổng hợp hoạt động học kỳ I của lớp 7",
         location: "Phòng học / Hội trường",
-        nlsCode: "2.2.TC1a",
-        aiCode: "7.A1.1",
-        dc: "• [Mã NLS: 2.2.TC1a] Trình chiếu video phóng sự sơ kết học kỳ I và tuyên dương các tấm gương sáng.\n• [Mã AI: 7.A1.1] Cùng xây dựng tinh thần đoàn kết, sẵn sàng bước vào học kỳ mới với nhiều thành công.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Sơ kết Học kỳ I"
       },
       {
@@ -2105,8 +2108,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Nhạc cụ, micro, bài hát/tiểu phẩm về sự hiếu thảo và tình yêu thương gia đình",
         location: "Sân trường / Hội trường",
         nlsCode: "2.1.TC1a",
-        aiCode: "7.A1.1",
-        dc: "• [Mã NLS: 2.1.TC1a] Sử dụng thiết bị âm thanh, trình chiếu số phục vụ các tiết mục văn nghệ gia đình.\n• [Mã AI: 7.A1.1] Cảm nhận sâu sắc giá trị tình mẫu tử, phụ tử qua các tác phẩm nghệ thuật do con người sáng tạo.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.1.TC1a] Sử dụng thiết bị âm thanh, trình chiếu số phục vụ các tiết mục văn nghệ gia đình.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -2118,8 +2121,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Nhiệt kế y tế, khăn chườm, túi chườm ấm, thuốc thông thường",
         location: "Phòng học / Phòng y tế",
         nlsCode: "1.1.TC1b",
-        aiCode: "7.C5.1",
-        dc: "• [Mã NLS: 1.1.TC1b] Tra cứu hướng dẫn sơ cứu cơ bản và cách nấu cháo dinh dưỡng cho người ốm trên cẩm nang y tế điện tử.\n• [Mã AI: 7.C5.1] Tìm hiểu các ứng dụng y tế số hỗ trợ theo dõi nhiệt độ và lịch uống thuốc của người bệnh.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.1.TC1b] Tra cứu hướng dẫn sơ cứu cơ bản và cách nấu cháo dinh dưỡng cho người ốm trên cẩm nang y tế điện tử.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -2131,8 +2134,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Nhật ký chăm sóc người thân, tranh ảnh minh họa",
         location: "Phòng học",
         nlsCode: "2.2.TC1a",
-        aiCode: "7.A1.MR1",
-        dc: "• [Mã NLS: 2.2.TC1a] Chia sẻ cảm xúc khi tự tay chăm sóc bố mẹ, ông bà bị ốm qua bài viết số.\n• [Mã AI: 7.A1.MR1] Nhận thức sự ân cần, chu đáo xuất phát từ tình thương chân thành của con cái.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.2.TC1a] Chia sẻ cảm xúc khi tự tay chăm sóc bố mẹ, ông bà bị ốm qua bài viết số.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -2144,8 +2147,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video phóng sự đạo hiếu của con cái, máy chiếu, micro",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC1a",
-        aiCode: "7.A1.1",
-        dc: "• [Mã NLS: 1.1.TC1a] Tiếp thu các giá trị đạo đức truyền thống về chữ Hiếu trong gia đình Việt Nam qua học liệu số.\n• [Mã AI: 7.A1.1] Khẳng định bổn phận và trách nhiệm thiêng liêng của con cái đối với gia đình.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.1.TC1a] Tiếp thu các giá trị đạo đức truyền thống về chữ Hiếu trong gia đình Việt Nam qua học liệu số.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -2157,8 +2160,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Mẫu kế hoạch dọn dẹp vệ sinh nhà cửa, chăm sóc cây cảnh, nấu ăn",
         location: "Phòng học",
         nlsCode: "1.3.TC1b",
-        aiCode: "7.D1.1",
-        dc: "• [Mã NLS: 1.3.TC1b] Thiết lập bảng phân công việc nhà số cho các thành viên trong gia đình hợp lý.\n• [Mã AI: 7.D1.1] Ứng dụng trợ lý AI lập kế hoạch dọn dẹp nhà cửa khoa học vào dịp cuối tuần.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.3.TC1b] Thiết lập bảng phân công việc nhà số cho các thành viên trong gia đình hợp lý.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -2170,8 +2173,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Ảnh chụp việc nhà đã làm, phiếu nhận xét đánh giá của phụ huynh",
         location: "Phòng học",
         nlsCode: "2.2.TC1a",
-        aiCode: "7.C5.1",
-        dc: "• [Mã NLS: 2.2.TC1a] Đăng tải album ảnh \"Em chăm làm việc nhà\" lên bảng tin lớp học trực tuyến.\n• [Mã AI: 7.C5.1] Sử dụng ứng dụng số để theo dõi mức độ hoàn thành các công việc gia đình.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.2.TC1a] Đăng tải album ảnh \"Em chăm làm việc nhà\" lên bảng tin lớp học trực tuyến.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -2183,8 +2186,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video chuyên gia tâm lý chia sẻ kỹ năng lắng nghe giữa cha mẹ và con cái",
         location: "Sân trường / Hội trường",
         nlsCode: "2.5.TC1a",
-        aiCode: "7.A1.1",
-        dc: "• [Mã NLS: 2.5.TC1a] Nhận biết các nguyên tắc giao tiếp tôn trọng, không ngắt lời khi nói chuyện với người lớn.\n• [Mã AI: 7.A1.1] Nhận thức tầm quan trọng của việc lắng nghe bằng cả trái tim và sự thấu cảm của con người.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.5.TC1a] Nhận biết các nguyên tắc giao tiếp tôn trọng, không ngắt lời khi nói chuyện với người lớn.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -2196,8 +2199,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Tình huống sắm vai cha mẹ góp ý về việc học tập, sử dụng điện thoại",
         location: "Phòng học",
         nlsCode: "2.5.TC1b",
-        aiCode: "7.B3.1",
-        dc: "• [Mã NLS: 2.5.TC1b] Rèn luyện thái độ cầu thị khi tiếp nhận phản hồi từ người thân, tránh phản ứng bốc đồng.\n• [Mã AI: 7.B3.1] Tránh việc trốn tránh giao tiếp thực tế bằng cách lạm dụng thiết bị số trong gia đình.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.5.TC1b] Rèn luyện thái độ cầu thị khi tiếp nhận phản hồi từ người thân, tránh phản ứng bốc đồng.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -2209,8 +2212,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Cây yêu thương gia đình, giấy ghi lời xin lỗi và cảm ơn cha mẹ",
         location: "Phòng học",
         nlsCode: "3.1.TC1b",
-        aiCode: "7.A1.MR1",
-        dc: "• [Mã NLS: 3.1.TC1b] Thiết kế tấm thiệp số gửi lời cảm ơn và xin lỗi chân thành đến cha mẹ.\n• [Mã AI: 7.A1.MR1] Đánh giá sự chuyển biến tích cực trong không khí hòa thuận gia đình.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC1b] Thiết kế tấm thiệp số gửi lời cảm ơn và xin lỗi chân thành đến cha mẹ.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -2222,8 +2225,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video tiểu phẩm văn hóa ứng xử nơi công cộng, máy chiếu, micro",
         location: "Sân trường / Hội trường",
         nlsCode: "2.5.TC1a",
-        aiCode: "7.A1.1",
-        dc: "• [Mã NLS: 2.5.TC1a] Nhận diện các chuẩn mực văn hóa ứng xử nơi công cộng và trên không gian mạng.\n• [Mã AI: 7.A1.1] Xây dựng hình ảnh người học sinh THCS văn minh, thanh lịch trong thời đại số.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.5.TC1a] Nhận diện các chuẩn mực văn hóa ứng xử nơi công cộng và trên không gian mạng.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -2235,8 +2238,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Thẻ tình huống ứng xử với người khác biệt về hoàn cảnh, vùng miền, ngoại hình",
         location: "Phòng học",
         nlsCode: "2.5.TC1b",
-        aiCode: "7.B3.1",
-        dc: "• [Mã NLS: 2.5.TC1b] Thể hiện thái độ tôn trọng sự đa dạng văn hóa, kiên quyết phản đối kỳ thị trên mạng xã hội.\n• [Mã AI: 7.B3.1] Nhận thức về các thiên kiến (bias) trên không gian số và học cách nhìn nhận bình đẳng.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.5.TC1b] Thể hiện thái độ tôn trọng sự đa dạng văn hóa, kiên quyết phản đối kỳ thị trên mạng xã hội.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -2248,8 +2251,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng quy ước văn hóa ứng xử của lớp, phiếu tự đánh giá",
         location: "Phòng học",
         nlsCode: "2.4.TC1a",
-        aiCode: "7.A3.1",
-        dc: "• [Mã NLS: 2.4.TC1a] Cùng xây dựng \"Bộ quy tắc ứng xử trên mạng xã hội\" cho tập thể lớp trên tài liệu số chia sẻ.\n• [Mã AI: 7.A3.1] Rèn luyện kỹ năng nhận diện và báo cáo các hành vi xúc phạm, bắt nạt trực tuyến.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.4.TC1a] Cùng xây dựng \"Bộ quy tắc ứng xử trên mạng xã hội\" cho tập thể lớp trên tài liệu số chia sẻ.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -2261,8 +2264,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video về hoạt động tình nguyện vùng cao, thùng quyên góp, loa micro",
         location: "Sân trường / Hội trường",
         nlsCode: "2.3.TC1a",
-        aiCode: "7.A1.1",
-        dc: "• [Mã NLS: 2.3.TC1a] Tiếp cận và tham gia các chiến dịch thiện nguyện thanh thiếu nhi trên các nền tảng số uy tín.\n• [Mã AI: 7.A1.1] Lan tỏa tinh thần tương thân tương ái, sẻ chia vì cộng đồng trong học sinh.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.3.TC1a] Tiếp cận và tham gia các chiến dịch thiện nguyện thanh thiếu nhi trên các nền tảng số uy tín.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -2274,8 +2277,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Mẫu thư ngỏ vận động ủng hộ, kế hoạch quyên góp sách vở",
         location: "Phòng học",
         nlsCode: "3.1.TC1a",
-        aiCode: "7.D1.1",
-        dc: "• [Mã NLS: 3.1.TC1a] Thiết kế poster số tuyên truyền chiến dịch \"Tủ sách cho em\" hoặc \"Áo ấm mùa đông\".\n• [Mã AI: 7.D1.1] Sử dụng AI gợi ý thông điệp nhân văn để kêu gọi người thân cùng chung tay ủng hộ.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC1a] Thiết kế poster số tuyên truyền chiến dịch \"Tủ sách cho em\" hoặc \"Áo ấm mùa đông\".",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -2287,8 +2290,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng sao kê hiện vật quyên góp, ảnh kỷ niệm buổi trao quà từ thiện",
         location: "Phòng học",
         nlsCode: "1.3.TC1b",
-        aiCode: "7.B3.1",
-        dc: "• [Mã NLS: 1.3.TC1b] Công khai danh sách đóng góp minh bạch trên bảng thông tin điện tử của chi đội.\n• [Mã AI: 7.B3.1] Đề cao tính trung thực và trách nhiệm giải trình trong hoạt động từ thiện.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.3.TC1b] Công khai danh sách đóng góp minh bạch trên bảng thông tin điện tử của chi đội.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -2300,8 +2303,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Tư liệu di tích lịch sử địa phương, video về danh nhân quê hương, máy chiếu",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC1b",
-        aiCode: "7.A1.1",
-        dc: "• [Mã NLS: 1.1.TC1b] Khai thác tư liệu lịch sử quê hương trên cổng thông tin di sản văn hóa số quốc gia.\n• [Mã AI: 7.A1.1] Bồi dưỡng lòng tự hào về truyền thống yêu nước và hiếu học của quê hương.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.1.TC1b] Khai thác tư liệu lịch sử quê hương trên cổng thông tin di sản văn hóa số quốc gia.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -2313,8 +2316,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Tranh ảnh làng nghề, lễ hội truyền thống, mô hình di tích lịch sử",
         location: "Phòng học",
         nlsCode: "3.1.TC1b",
-        aiCode: "7.C5.1",
-        dc: "• [Mã NLS: 3.1.TC1b] Dựng video thuyết trình đa phương tiện giới thiệu một di tích lịch sử hoặc lễ hội quê hương.\n• [Mã AI: 7.C5.1] Sử dụng công cụ số tạo phụ đề tiếng Anh cho video để quảng bá văn hóa địa phương.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC1b] Dựng video thuyết trình đa phương tiện giới thiệu một di tích lịch sử hoặc lễ hội quê hương.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -2326,8 +2329,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Gian hàng trưng bày sản phẩm văn hóa quê hương, cẩm nang du lịch mini",
         location: "Phòng học / Hành lang",
         nlsCode: "2.2.TC1a",
-        aiCode: "7.D1.1",
-        dc: "• [Mã NLS: 2.2.TC1a] Tạo mã QR để khách tham quan quét xem toàn bộ hình ảnh và bài viết giới thiệu di tích.\n• [Mã AI: 7.D1.1] Trải nghiệm công nghệ thực tế ảo tham quan không gian di sản địa phương.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.2.TC1a] Tạo mã QR để khách tham quan quét xem toàn bộ hình ảnh và bài viết giới thiệu di tích.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -2338,9 +2341,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Đánh giá mức độ đạt yêu cầu cần đạt của Chủ đề 5 (Em với gia đình) và Chủ đề 6 (Em với cộng đồng).",
         equipment: "Hồ sơ minh chứng hoạt động gia đình, sản phẩm truyền thông văn hóa quê hương",
         location: "Phòng học",
-        nlsCode: "3.1.TC1a",
-        aiCode: "7.C5.1",
-        dc: "• [Mã NLS: 3.1.TC1a] Báo cáo sản phẩm số tổng kết các hoạt động chăm sóc gia đình và thiện nguyện cộng đồng.\n• [Mã AI: 7.C5.1] Sử dụng phần mềm trình chiếu tối ưu hóa đồ họa để thuyết trình.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra giữa kỳ"
       },
       {
@@ -2351,9 +2354,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Đánh giá năng lực giải quyết vấn đề, ứng xử văn hóa và tinh thần trách nhiệm xã hội của học sinh.",
         equipment: "Đề bài tình huống ứng xử gia đình và cộng đồng, phiếu tự chấm điểm",
         location: "Phòng học",
-        nlsCode: "1.2.TC1b",
-        aiCode: "7.A1.MR1",
-        dc: "• [Mã NLS: 1.2.TC1b] Phân tích tình huống ứng xử văn hóa trong đời sống thực tế qua video bài tập.\n• [Mã AI: 7.A1.MR1] Đánh giá trung thực, thể hiện bản lĩnh ứng xử nhân văn của học sinh lớp 7.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra giữa kỳ"
       },
       {
@@ -2364,9 +2367,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Rút ra bài học kinh nghiệm, điều chỉnh kế hoạch hoạt động chuẩn bị cho các chủ đề môi trường và hướng nghiệp.",
         equipment: "Sổ tay rèn luyện, bảng mục tiêu rèn luyện nửa cuối học kỳ II",
         location: "Phòng học",
-        nlsCode: "1.3.TC1a",
-        aiCode: "7.D1.1",
-        dc: "• [Mã NLS: 1.3.TC1a] Lưu trữ và cập nhật kết quả đánh giá giữa kỳ II vào hồ sơ học sinh điện tử.\n• [Mã AI: 7.D1.1] Lập kế hoạch hành động xanh cho các chủ đề môi trường sắp tới.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra giữa kỳ"
       },
       {
@@ -2378,8 +2381,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video cảnh đẹp non sông Việt Nam, nhạc cụ, máy chiếu",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC1b",
-        aiCode: "7.A1.1",
-        dc: "• [Mã NLS: 1.1.TC1b] Chiêm ngưỡng các kỳ quan thiên nhiên thế giới tại Việt Nam (vịnh Hạ Long, Phong Nha) qua video số.\n• [Mã AI: 7.A1.1] Bồi dưỡng lòng tự hào và tình yêu tha thiết với thiên nhiên gấm vóc non sông.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.1.TC1b] Chiêm ngưỡng các kỳ quan thiên nhiên thế giới tại Việt Nam (vịnh Hạ Long, Phong Nha) qua video số.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -2391,8 +2394,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Giấy A3, bút màu, ảnh chụp chuyến đi tham quan di tích, thiên nhiên",
         location: "Phòng học",
         nlsCode: "3.1.TC1b",
-        aiCode: "7.D1.1",
-        dc: "• [Mã NLS: 3.1.TC1b] Sử dụng Canva thiết kế bưu thiếp số hoặc brochure quảng bá vẻ đẹp thiên nhiên quê hương.\n• [Mã AI: 7.D1.1] Tham khảo ý tưởng bố cục và phong cách thiết kế từ các công cụ sáng tạo AI.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC1b] Sử dụng Canva thiết kế bưu thiếp số hoặc brochure quảng bá vẻ đẹp thiên nhiên quê hương.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -2404,8 +2407,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Tranh ảnh các điểm đến du lịch sinh thái địa phương, bản đồ địa lý",
         location: "Phòng học",
         nlsCode: "2.2.TC1a",
-        aiCode: "7.C5.1",
-        dc: "• [Mã NLS: 2.2.TC1a] Trình bày bài thuyết minh cảnh quan quê hương bằng bài trình chiếu đa phương tiện.\n• [Mã AI: 7.C5.1] Sử dụng bản đồ số tương tác đánh dấu các điểm danh lam thắng cảnh tiêu biểu.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.2.TC1a] Trình bày bài thuyết minh cảnh quan quê hương bằng bài trình chiếu đa phương tiện.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -2417,8 +2420,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng triển lãm sản phẩm nghệ thuật, ảnh chụp, bài viết cảm nhận",
         location: "Sân trường / Hành lang",
         nlsCode: "2.2.TC1a",
-        aiCode: "7.A1.1",
-        dc: "• [Mã NLS: 2.2.TC1a] Số hóa phòng trưng bày tranh ảnh thiên nhiên qua triển lãm ảnh ảo 3D trực tuyến.\n• [Mã AI: 7.A1.1] Lan tỏa vẻ đẹp thiên nhiên và truyền cảm hứng bảo vệ môi trường tới toàn trường.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.2.TC1a] Số hóa phòng trưng bày tranh ảnh thiên nhiên qua triển lãm ảnh ảo 3D trực tuyến.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -2430,8 +2433,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng quy tắc ứng xử khi đi du lịch: không vứt rác, không viết vẽ bậy lên di tích",
         location: "Phòng học",
         nlsCode: "4.4.TC1a",
-        aiCode: "7.B3.1",
-        dc: "• [Mã NLS: 4.4.TC1a] Tuyên truyền bảo vệ môi trường di tích qua thông điệp: \"Không lấy đi gì ngoài những bức ảnh, không để lại gì ngoài những dấu chân\".\n• [Mã AI: 7.B3.1] Lên án các hành vi phá hoại di tích lịch sử và cảnh quan thiên nhiên trên mạng.",
+        aiCode: "",
+        dc: "• [Mã NLS: 4.4.TC1a] Tuyên truyền bảo vệ môi trường di tích qua thông điệp: \"Không lấy đi gì ngoài những bức ảnh, không để lại gì ngoài những dấu chân\".",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -2443,8 +2446,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Hình ảnh việc làm xanh bảo vệ di tích, phiếu cam kết du lịch có trách nhiệm",
         location: "Phòng học",
         nlsCode: "3.1.TC1a",
-        aiCode: "7.D1.1",
-        dc: "• [Mã NLS: 3.1.TC1a] Tạo bảng tin số tổng hợp các hành động đẹp bảo vệ di sản của học sinh lớp 7.\n• [Mã AI: 7.D1.1] Đề xuất sáng kiến ứng dụng công nghệ giám sát và bảo tồn di tích thông minh.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC1a] Tạo bảng tin số tổng hợp các hành động đẹp bảo vệ di sản của học sinh lớp 7.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -2456,8 +2459,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video tư liệu về Trái Đất nóng lên, băng tan ở hai cực, ô nhiễm rác thải đại dương",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC1a",
-        aiCode: "7.A1.1",
-        dc: "• [Mã NLS: 1.1.TC1a] Cập nhật các báo cáo khoa học số của Liên Hợp Quốc (IPCC) về biến đổi khí hậu toàn cầu.\n• [Mã AI: 7.A1.1] Nhận thức tính cấp bách của việc giảm phát thải khí nhà kính bảo vệ hành tinh xanh.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.1.TC1a] Cập nhật các báo cáo khoa học số của Liên Hợp Quốc (IPCC) về biến đổi khí hậu toàn cầu.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -2469,8 +2472,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Máy tính kết nối mạng, phiếu thu thập thông tin về khí thải carbon",
         location: "Phòng Tin học / Phòng học",
         nlsCode: "1.1.TC1b",
-        aiCode: "7.C4.1",
-        dc: "• [Mã NLS: 1.1.TC1b] Sử dụng công cụ tìm kiếm số để thu thập số liệu và biểu đồ nhiệt độ Trái Đất qua các thập kỷ.\n• [Mã AI: 7.C4.1] Đánh giá độ tin cậy của dữ liệu môi trường và phân tích nguyên nhân gây hiệu ứng nhà kính.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.1.TC1b] Sử dụng công cụ tìm kiếm số để thu thập số liệu và biểu đồ nhiệt độ Trái Đất qua các thập kỷ.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -2482,8 +2485,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Slide thuyết trình nhóm, mô hình Trái Đất mô phỏng hiệu ứng nhà kính",
         location: "Phòng học",
         nlsCode: "3.1.TC1a",
-        aiCode: "7.C5.1",
-        dc: "• [Mã NLS: 3.1.TC1a] Báo cáo chuyên đề môi trường bằng bài trình bày tương tác có lồng ghép video và biểu đồ số.\n• [Mã AI: 7.C5.1] Khám phá ứng dụng mô phỏng khí hậu toàn cầu bằng các mô hình tính toán AI.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC1a] Báo cáo chuyên đề môi trường bằng bài trình bày tương tác có lồng ghép video và biểu đồ số.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -2495,8 +2498,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bàn tròn tọa đàm, micro, băng rôn chiến dịch sống xanh",
         location: "Sân trường / Hội trường",
         nlsCode: "2.3.TC1a",
-        aiCode: "7.A1.1",
-        dc: "• [Mã NLS: 2.3.TC1a] Phát trực tiếp (livestream) hoặc ghi hình buổi talkshow chia sẻ lên kênh truyền thông của trường.\n• [Mã AI: 7.A1.1] Khẳng định tiếng nói và trách nhiệm của thế hệ trẻ đối với tương lai môi trường Trái Đất.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.3.TC1a] Phát trực tiếp (livestream) hoặc ghi hình buổi talkshow chia sẻ lên kênh truyền thông của trường.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -2508,8 +2511,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Mẫu sản phẩm truyền thông (tờ rơi, video ngắn, bài viết mạng xã hội)",
         location: "Phòng học",
         nlsCode: "3.1.TC1b",
-        aiCode: "7.D1.1",
-        dc: "• [Mã NLS: 3.1.TC1b] Thiết kế chuỗi poster số tuyên truyền \"Giờ Trái Đất\" và thói quen tiêu dùng xanh.\n• [Mã AI: 7.D1.1] Sử dụng AI viết nội dung thông điệp truyền thông ngắn gọn, giàu sức lan tỏa.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC1b] Thiết kế chuỗi poster số tuyên truyền \"Giờ Trái Đất\" và thói quen tiêu dùng xanh.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -2521,8 +2524,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng thống kê số lượt tiếp cận thông điệp truyền thông, ảnh hưởng thực tế",
         location: "Phòng học",
         nlsCode: "2.2.TC1a",
-        aiCode: "7.B3.1",
-        dc: "• [Mã NLS: 2.2.TC1a] Thống kê số lượng học sinh cam kết thực hiện hành động xanh qua biểu mẫu trực tuyến.\n• [Mã AI: 7.B3.1] Nhận thức về việc sử dụng công nghệ số một cách tiết kiệm điện năng để giảm dấu chân carbon.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.2.TC1a] Thống kê số lượng học sinh cam kết thực hiện hành động xanh qua biểu mẫu trực tuyến.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -2534,8 +2537,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video phóng sự các ngành nghề nổi bật tại địa phương (nông nghiệp công nghệ cao, du lịch, dịch vụ, tiểu thủ công nghiệp)",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC1b",
-        aiCode: "",
-        dc: "• [Mã NLS: 1.1.TC1b] Tìm kiếm và tra cứu dữ liệu số về các ngành nghề kinh tế trọng điểm đang phát triển tại địa phương.",
+        aiCode: "7.C4.1",
+        dc: "• [Mã NLS: 1.1.TC1b] Tìm kiếm và tra cứu dữ liệu số về các ngành nghề kinh tế trọng điểm đang phát triển tại địa phương.\n• [Mã AI: 7.C4.1] Nhận biết tầm quan trọng của nguồn dữ liệu địa phương đáng tin cậy khi tra cứu cơ cấu ngành nghề.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -2547,8 +2550,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Tranh ảnh, tài liệu về dụng cụ, môi trường làm việc của từng nghề địa phương",
         location: "Phòng học",
         nlsCode: "1.3.TC1b",
-        aiCode: "",
-        dc: "• [Mã NLS: 1.3.TC1b] Tổ chức bảng dữ liệu số phân loại các nghề địa phương theo đặc điểm lao động, công cụ và sản phẩm.",
+        aiCode: "7.C5.1",
+        dc: "• [Mã NLS: 1.3.TC1b] Tổ chức bảng dữ liệu số phân loại các nghề địa phương theo đặc điểm lao động, công cụ và sản phẩm.\n• [Mã AI: 7.C5.1] Tìm hiểu cách hệ thống AI phân loại và gắn nhãn dữ liệu đặc trưng các ngành nghề sản xuất.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -2560,8 +2563,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bài thuyết trình nhóm, phiếu phỏng vấn người lao động địa phương",
         location: "Phòng học",
         nlsCode: "2.2.TC1a",
-        aiCode: "",
-        dc: "• [Mã NLS: 2.2.TC1a] Trình bày kết quả điều tra nghề địa phương bằng slide trình chiếu số có hình ảnh và số liệu thực tế.",
+        aiCode: "7.B3.1",
+        dc: "• [Mã NLS: 2.2.TC1a] Trình bày kết quả điều tra nghề địa phương bằng slide trình chiếu số có hình ảnh và số liệu thực tế.\n• [Mã AI: 7.B3.1] Cam kết sử dụng thông tin trung thực, trích dẫn nguồn khi chia sẻ dữ liệu nghề nghiệp địa phương.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -2573,8 +2576,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng phân tích yêu cầu nghề nghiệp (sức khỏe, tính cẩn thận, chuyên môn, giao tiếp)",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC1a",
-        aiCode: "",
-        dc: "• [Mã NLS: 1.1.TC1a] Tra cứu bản mô tả công việc (Job Description) số của các vị trí việc làm phổ biến tại địa phương.",
+        aiCode: "7.A1.1",
+        dc: "• [Mã NLS: 1.1.TC1a] Tra cứu bản mô tả công việc (Job Description) số của các vị trí việc làm phổ biến tại địa phương.\n• [Mã AI: 7.A1.1] Phân tích những năng lực con người giữ quyền quyết định mà AI chỉ đóng vai trò công cụ hỗ trợ.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -2586,8 +2589,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video về tai nạn lao động và các biện pháp bảo hộ lao động (nón bảo hộ, kính, găng tay)",
         location: "Phòng học",
         nlsCode: "4.1.TC1c",
-        aiCode: "",
-        dc: "• [Mã NLS: 4.1.TC1c] Tìm hiểu các quy chuẩn kỹ thuật an toàn lao động và cách sơ cấp cứu tai nạn lao động qua video số.",
+        aiCode: "7.A1.MR1",
+        dc: "• [Mã NLS: 4.1.TC1c] Tìm hiểu các quy chuẩn kỹ thuật an toàn lao động và cách sơ cấp cứu tai nạn lao động qua video số.\n• [Mã AI: 7.A1.MR1] Kiểm chứng các biện pháp phòng ngừa rủi ro nghề nghiệp từ AI với hướng dẫn an toàn lao động thực tế.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -2599,8 +2602,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Kế hoạch dự án nghề nghiệp, phiếu phân công nhóm học sinh",
         location: "Phòng học",
         nlsCode: "2.4.TC1a",
-        aiCode: "",
-        dc: "• [Mã NLS: 2.4.TC1a] Sử dụng công cụ số để hợp tác phân công nhiệm vụ nhóm và theo dõi tiến độ dự án nghề nghiệp.",
+        aiCode: "7.D1.1",
+        dc: "• [Mã NLS: 2.4.TC1a] Sử dụng công cụ số để hợp tác phân công nhiệm vụ nhóm và theo dõi tiến độ dự án nghề nghiệp.\n• [Mã AI: 7.D1.1] Đề xuất ý tưởng ứng dụng công cụ AI hỗ trợ phân công nhiệm vụ và xây dựng kế hoạch dự án nghề nghiệp.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -2612,8 +2615,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Thiết bị chụp ảnh/ghi âm, phiếu thu thập thông tin phỏng vấn thực địa",
         location: "Địa bàn địa phương / Phòng học",
         nlsCode: "1.2.TC1a",
-        aiCode: "",
-        dc: "• [Mã NLS: 1.2.TC1a] Thu thập, phân loại và số hóa hình ảnh, video phỏng vấn thực địa người lao động địa phương.",
+        aiCode: "7.A3.1",
+        dc: "• [Mã NLS: 1.2.TC1a] Thu thập, phân loại và số hóa hình ảnh, video phỏng vấn thực địa người lao động địa phương.\n• [Mã AI: 7.A3.1] Phân biệt rõ vai trò tự động hóa của công cụ số với sự chủ động điều phối, phỏng vấn thực địa của nhóm học sinh.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -2625,8 +2628,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Mô hình, tranh vẽ, poster \"Bức tranh về nghề\", máy chiếu",
         location: "Phòng học",
         nlsCode: "3.1.TC1b",
-        aiCode: "",
-        dc: "• [Mã NLS: 3.1.TC1b] Thiết kế infographic kỹ thuật số hoặc cẩm nang số \"Bức tranh nghề nghiệp địa phương em\".",
+        aiCode: "7.D1.1",
+        dc: "• [Mã NLS: 3.1.TC1b] Thiết kế infographic kỹ thuật số hoặc cẩm nang số \"Bức tranh nghề nghiệp địa phương em\".\n• [Mã AI: 7.D1.1] Ứng dụng công cụ AI tạo hình ảnh hoặc gợi ý ý tưởng thiết kế sản phẩm truyền thông 'Bức tranh về nghề'.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -2638,8 +2641,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng kiểm rubric đánh giá dự án, phiếu nhận xét của giáo viên và học sinh",
         location: "Phòng học",
         nlsCode: "1.3.TC1b",
-        aiCode: "",
-        dc: "• [Mã NLS: 1.3.TC1b] Tổng kết và lưu trữ sản phẩm dự án nghề nghiệp vào thư viện học liệu số của trường.",
+        aiCode: "7.B3.1",
+        dc: "• [Mã NLS: 1.3.TC1b] Tổng kết và lưu trữ sản phẩm dự án nghề nghiệp vào thư viện học liệu số của trường.\n• [Mã AI: 7.B3.1] Đánh giá trách nhiệm đạo đức và tính minh bạch trong việc sử dụng công nghệ khi hoàn thành dự án.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -2651,8 +2654,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video chuyên gia tư vấn hướng nghiệp tuổi thiếu niên, máy chiếu, micro",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC1a",
-        aiCode: "",
-        dc: "• [Mã NLS: 1.1.TC1a] Tìm hiểu lý thuyết chọn nghề và các công cụ trắc nghiệm định hướng nghề nghiệp trực tuyến.",
+        aiCode: "7.A1.1",
+        dc: "• [Mã NLS: 1.1.TC1a] Tìm hiểu lý thuyết chọn nghề và các công cụ trắc nghiệm định hướng nghề nghiệp trực tuyến.\n• [Mã AI: 7.A1.1] Khẳng định con người luôn giữ quyền ra quyết định tối cao trong việc lựa chọn con đường nghề nghiệp tương lai.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -2664,8 +2667,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Phiếu trắc nghiệm Holland, bảng đối chiếu phẩm chất bản thân với nghề nghiệp",
         location: "Phòng học",
         nlsCode: "1.3.TC1b",
-        aiCode: "",
-        dc: "• [Mã NLS: 1.3.TC1b] Thực hiện bài trắc nghiệm sở thích nghề nghiệp trực tuyến và xuất biểu đồ kết quả phân tích cá nhân.",
+        aiCode: "7.A1.MR1",
+        dc: "• [Mã NLS: 1.3.TC1b] Thực hiện bài trắc nghiệm sở thích nghề nghiệp trực tuyến và xuất biểu đồ kết quả phân tích cá nhân.\n• [Mã AI: 7.A1.MR1] Kiểm chứng lại kết quả bài test phân tích sự phù hợp nghề nghiệp của AI bằng đánh giá thực tế từ thầy cô và gia đình.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -2677,8 +2680,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Phiếu khảo sát nguyện vọng nghề nghiệp, biểu mẫu khảo sát trực tuyến",
         location: "Phòng học",
         nlsCode: "1.2.TC1b",
-        aiCode: "",
-        dc: "• [Mã NLS: 1.2.TC1b] Tạo biểu mẫu khảo sát trực tuyến (Google Forms) thu thập và phân tích xu hướng chọn nghề của lớp.",
+        aiCode: "7.C4.1",
+        dc: "• [Mã NLS: 1.2.TC1b] Tạo biểu mẫu khảo sát trực tuyến (Google Forms) thu thập và phân tích xu hướng chọn nghề của lớp.\n• [Mã AI: 7.C4.1] Nhận diện vấn đề thiên vị dữ liệu khi mẫu khảo sát sở thích nghề nghiệp trong lớp còn hạn hẹp.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -2690,8 +2693,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video gương thanh niên khởi nghiệp tại địa phương (nông nghiệp sạch, dịch vụ du lịch, thương mại điện tử)",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC1c",
-        aiCode: "",
-        dc: "• [Mã NLS: 1.1.TC1c] Tra cứu các mô hình thanh niên khởi nghiệp thành công ứng dụng chuyển đổi số tại địa phương.",
+        aiCode: "7.A3.1",
+        dc: "• [Mã NLS: 1.1.TC1c] Tra cứu các mô hình thanh niên khởi nghiệp thành công ứng dụng chuyển đổi số tại địa phương.\n• [Mã AI: 7.A3.1] Tìm hiểu các gương khởi nghiệp ứng dụng AI và chuyển đổi số để nâng cao năng suất lao động.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -2703,8 +2706,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Mẫu kế hoạch rèn luyện năng lực hướng nghiệp cho học sinh lớp 7",
         location: "Phòng học",
         nlsCode: "3.1.TC1a",
-        aiCode: "",
-        dc: "• [Mã NLS: 3.1.TC1a] Lập kế hoạch rèn luyện năng lực số và các kỹ năng bổ trợ cho nghề nghiệp tương lai trên bảng biểu điện tử.",
+        aiCode: "7.D1.1",
+        dc: "• [Mã NLS: 3.1.TC1a] Lập kế hoạch rèn luyện năng lực số và các kỹ năng bổ trợ cho nghề nghiệp tương lai trên bảng biểu điện tử.\n• [Mã AI: 7.D1.1] Vận dụng trợ lý AI gợi ý khung lộ trình rèn luyện kỹ năng mềm và kỹ năng số cần thiết cho nghề mơ ước.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -2716,8 +2719,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Sổ tay hướng nghiệp cá nhân, slide bài thuyết trình",
         location: "Phòng học",
         nlsCode: "2.2.TC1a",
-        aiCode: "",
-        dc: "• [Mã NLS: 2.2.TC1a] Trình bày bài báo cáo thu hoạch hướng nghiệp cá nhân dưới dạng bài thuyết trình điện tử.",
+        aiCode: "7.B3.1",
+        dc: "• [Mã NLS: 2.2.TC1a] Trình bày bài báo cáo thu hoạch hướng nghiệp cá nhân dưới dạng bài thuyết trình điện tử.\n• [Mã AI: 7.B3.1] Tự giác đánh giá trung thực tiến độ rèn luyện bản thân và cam kết giữ vững mục tiêu nghề nghiệp.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -2728,9 +2731,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Đánh giá toàn diện hồ sơ học tập trải nghiệm và các sản phẩm sáng tạo, hướng nghiệp trong cả năm học lớp 7.",
         equipment: "Portfolio học tập trải nghiệm cả năm, sản phẩm dự án nghề nghiệp, máy chiếu",
         location: "Phòng học",
-        nlsCode: "3.1.TC1a",
-        aiCode: "7.C5.1",
-        dc: "• [Mã NLS: 3.1.TC1a] Trình bày trọn bộ Portfolio trải nghiệm số lớp 7 tổng kết chặng đường rèn luyện cả năm.\n• [Mã AI: 7.C5.1] Tối ưu hóa định dạng hồ sơ năng lực số phục vụ lưu trữ lâu dài.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra cuối kỳ"
       },
       {
@@ -2741,9 +2744,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Đánh giá mức độ trưởng thành về phẩm chất, kỹ năng sống và năng lực định hướng nghề nghiệp của học sinh.",
         equipment: "Bảng kiểm rubric đánh giá cuối năm, phiếu tự đánh giá năng lực",
         location: "Phòng học",
-        nlsCode: "1.2.TC1b",
-        aiCode: "7.A1.MR1",
-        dc: "• [Mã NLS: 1.2.TC1b] Thực hiện bài tự đánh giá cuối năm trên hệ thống học tập số của nhà trường.\n• [Mã AI: 7.A1.MR1] Đánh giá trung thực, khách quan về sự nỗ lực rèn luyện của bản thân trong năm học.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra cuối kỳ"
       },
       {
@@ -2754,9 +2757,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Tổng kết đánh giá kết quả rèn luyện cả năm học lớp 7; tuyên dương học sinh xuất sắc và định hướng hè.",
         equipment: "Giấy khen, video phóng sự tổng kết năm học lớp 7 của trường, loa micro",
         location: "Phòng học / Hội trường",
-        nlsCode: "2.2.TC1a",
-        aiCode: "7.A1.1",
-        dc: "• [Mã NLS: 2.2.TC1a] Chia sẻ video kỷ yếu số của tập thể lớp 7 và gửi thông điệp yêu thương tới thầy cô, bạn bè.\n• [Mã AI: 7.A1.1] Tự hào về sự trưởng thành của bản thân, sẵn sàng tâm thế bước vào lớp 8.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Tổng kết năm học"
       }
     ];
@@ -2776,8 +2779,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Kế hoạch năm học mới, cờ Đoàn/Đội, video phóng sự truyền thống, loa micro",
         location: "Sân trường / Hội trường",
         nlsCode: "2.3.TC2a",
-        aiCode: "8.A1.1",
-        dc: "• [Mã NLS: 2.3.TC2a] Tiếp cận và tham gia các hoạt động phong trào Đoàn, Đội trên các cổng thông tin và dịch vụ số thanh niên.\n• [Mã AI: 8.A1.1] Khẳng định tinh thần xung kích, tính chủ động và năng lực sáng tạo của con người trong các hoạt động phong trào.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.3.TC2a] Tiếp cận và tham gia các hoạt động phong trào Đoàn, Đội trên các cổng thông tin và dịch vụ số thanh niên.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -2789,8 +2792,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Phiếu học tập, giấy A0, bút dạ, sơ đồ phân tích các yếu tố duy trì tình bạn",
         location: "Phòng học",
         nlsCode: "2.5.TC2a",
-        aiCode: "8.B1.1",
-        dc: "• [Mã NLS: 2.5.TC2a] Nhận diện và thực hành các chuẩn mực giao tiếp văn minh, tôn trọng lẫn nhau trong các nhóm chat học sinh.\n• [Mã AI: 8.B1.1] Phân tích các nguy cơ rạn nứt tình cảm do hiểu lầm thông tin hoặc bị ảnh hưởng bởi tin giả trên mạng.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.5.TC2a] Nhận diện và thực hành các chuẩn mực giao tiếp văn minh, tôn trọng lẫn nhau trong các nhóm chat học sinh.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -2802,8 +2805,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Thẻ tình huống giải quyết bất đồng trong tình bạn, biểu bảng nhóm",
         location: "Phòng học",
         nlsCode: "2.4.TC2a",
-        aiCode: "8.A3.3",
-        dc: "• [Mã NLS: 2.4.TC2a] Sử dụng các công cụ cộng tác trực tuyến để cùng bạn bè lập kế hoạch học tập nhóm và chia sẻ tài liệu số.\n• [Mã AI: 8.A3.3] Thể hiện trách nhiệm giải trình và sự tôn trọng đối với quyền riêng tư của bạn bè trên môi trường số.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.4.TC2a] Sử dụng các công cụ cộng tác trực tuyến để cùng bạn bè lập kế hoạch học tập nhóm và chia sẻ tài liệu số.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -2815,8 +2818,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video tư liệu về bạo lực và bắt nạt học đường, máy chiếu, micro",
         location: "Sân trường / Hội trường",
         nlsCode: "4.3.TC2a",
-        aiCode: "8.A1.2",
-        dc: "• [Mã NLS: 4.3.TC2a] Nhận diện các hình thức bắt nạt trực tuyến (Cyberbullying) và hậu quả tâm lý nghiêm trọng đối với lứa tuổi học sinh.\n• [Mã AI: 8.A1.2] Cảnh báo nguy cơ lạm dụng công nghệ số và công cụ AI để tạo nội dung bôi nhọ, chế giễu bạn bè.",
+        aiCode: "",
+        dc: "• [Mã NLS: 4.3.TC2a] Nhận diện các hình thức bắt nạt trực tuyến (Cyberbullying) và hậu quả tâm lý nghiêm trọng đối với lứa tuổi học sinh.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -2828,8 +2831,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bộ phiếu nhận diện dấu hiệu bắt nạt thể xác, lời nói, tinh thần và trên mạng",
         location: "Phòng học",
         nlsCode: "4.1.TC2b",
-        aiCode: "8.B2.1",
-        dc: "• [Mã NLS: 4.1.TC2b] Nắm vững các bước lưu giữ bằng chứng số (chụp màn hình, ghi lại đường link) khi bị đe dọa hoặc bắt nạt trực tuyến.\n• [Mã AI: 8.B2.1] Thiết lập các biện pháp chặn tài khoản xấu, bảo vệ dữ liệu cá nhân và báo cáo hành vi vi phạm cho người có thẩm quyền.",
+        aiCode: "",
+        dc: "• [Mã NLS: 4.1.TC2b] Nắm vững các bước lưu giữ bằng chứng số (chụp màn hình, ghi lại đường link) khi bị đe dọa hoặc bắt nạt trực tuyến.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -2841,8 +2844,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Kịch bản sắm vai can thiệp khi thấy bạn bị bắt nạt, bảng cam kết lớp",
         location: "Phòng học",
         nlsCode: "3.1.TC2a",
-        aiCode: "8.D1.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Thiết kế poster kỹ thuật số hoặc infographic truyền thông điệp \"Nói không với bạo lực học đường\".\n• [Mã AI: 8.D1.1] Sử dụng công cụ AI hỗ trợ tạo kịch bản video ngắn tuyên truyền phòng chống bắt nạt học đường.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC2a] Thiết kế poster kỹ thuật số hoặc infographic truyền thông điệp \"Nói không với bạo lực học đường\".",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -2854,8 +2857,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Thể lệ cuộc thi sáng tạo sản phẩm, video giới thiệu các thế hệ cựu học sinh",
         location: "Sân trường / Hội trường",
         nlsCode: "2.1.TC2a",
-        aiCode: "8.A1.1",
-        dc: "• [Mã NLS: 2.1.TC2a] Khai thác các kênh thông tin truyền thông của trường để tiếp nhận thể lệ và nộp sản phẩm dự thi trực tuyến.\n• [Mã AI: 8.A1.1] Phát huy niềm tự hào và ý thức tự giác đóng góp xây dựng thương hiệu nhà trường.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.1.TC2a] Khai thác các kênh thông tin truyền thông của trường để tiếp nhận thể lệ và nộp sản phẩm dự thi trực tuyến.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -2867,8 +2870,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Mẫu kế hoạch dự án lớp (trang trí bảng tin số, chăm sóc công trình măng non, giữ gìn danh dự học sinh)",
         location: "Phòng học",
         nlsCode: "5.3.TC2a",
-        aiCode: "8.D2.1",
-        dc: "• [Mã NLS: 5.3.TC2a] Lập kế hoạch dự án số và phân công nhiệm vụ nhóm trên nền tảng số (Trello/Google Sheets).\n• [Mã AI: 8.D2.1] Ứng dụng công nghệ để thiết lập hệ thống theo dõi tiến độ công việc một cách tự động.",
+        aiCode: "",
+        dc: "• [Mã NLS: 5.3.TC2a] Lập kế hoạch dự án số và phân công nhiệm vụ nhóm trên nền tảng số (Trello/Google Sheets).",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -2880,8 +2883,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Sản phẩm hoàn thiện (video clip, tập san số, mô hình), máy chiếu",
         location: "Phòng học",
         nlsCode: "3.1.TC2a",
-        aiCode: "8.C1.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Trình bày bài thuyết trình đa phương tiện báo cáo sản phẩm đóng góp cho nhà trường.\n• [Mã AI: 8.C1.1] Sử dụng công nghệ xử lý âm thanh, hình ảnh nâng cao chất lượng bài trình bày.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC2a] Trình bày bài thuyết trình đa phương tiện báo cáo sản phẩm đóng góp cho nhà trường.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -2893,8 +2896,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video phóng sự tâm lý lứa tuổi dậy thì lớp 8, máy chiếu, micro",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC2a",
-        aiCode: "8.A1.1",
-        dc: "• [Mã NLS: 1.1.TC2a] Tra cứu tài liệu tâm lý học đường số về sự định hình bản sắc cá nhân tuổi thiếu niên.\n• [Mã AI: 8.A1.1] Khẳng định bản sắc độc đáo và nhân cách riêng biệt của mỗi cá nhân mà không thuật toán nào có thể thay thế.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.1.TC2a] Tra cứu tài liệu tâm lý học đường số về sự định hình bản sắc cá nhân tuổi thiếu niên.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -2906,8 +2909,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng trắc nghiệm tính cách MBTI/Big Five rút gọn, phiếu tự đánh giá",
         location: "Phòng học",
         nlsCode: "1.2.TC2a",
-        aiCode: "8.C1.1",
-        dc: "• [Mã NLS: 1.2.TC2a] Thực hiện bài trắc nghiệm tâm lý trực tuyến, so sánh và đánh giá khách quan kết quả thu được.\n• [Mã AI: 8.C1.1] Hiểu cách AI phân tích hành vi và dữ liệu phản hồi của người dùng trong các bài kiểm tra tâm lý.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.2.TC2a] Thực hiện bài trắc nghiệm tâm lý trực tuyến, so sánh và đánh giá khách quan kết quả thu được.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -2919,8 +2922,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bản đồ tính cách cá nhân, giấy vẽ, hình ảnh biểu trưng",
         location: "Phòng học",
         nlsCode: "3.1.TC2a",
-        aiCode: "8.D1.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Tạo hồ sơ số cá nhân (Digital Profile) giới thiệu tính cách, sở thích và phương châm sống.\n• [Mã AI: 8.D1.1] Tham khảo công cụ AI để thiết kế avatar và hình tượng đại diện cá nhân độc đáo.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC2a] Tạo hồ sơ số cá nhân (Digital Profile) giới thiệu tính cách, sở thích và phương châm sống.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -2932,8 +2935,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Máy chiếu, micro, diễn đàn chia sẻ về áp lực học tập và thay đổi tâm lý",
         location: "Sân trường / Hội trường",
         nlsCode: "2.1.TC2b",
-        aiCode: "8.A1.2",
-        dc: "• [Mã NLS: 2.1.TC2b] Tương tác trong diễn đàn trực tuyến của trường chia sẻ những băn khoăn về cảm xúc tuổi dậy thì.\n• [Mã AI: 8.A1.2] Cảnh báo nguy cơ để mạng xã hội hoặc trợ lý ảo trở thành nơi duy nhất giải tỏa cảm xúc thay vì chia sẻ với cha mẹ, thầy cô.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.1.TC2b] Tương tác trong diễn đàn trực tuyến của trường chia sẻ những băn khoăn về cảm xúc tuổi dậy thì.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -2945,8 +2948,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Sơ đồ cây nguyên nhân - kết quả của cảm xúc tiêu cực, bảng phân tích",
         location: "Phòng học",
         nlsCode: "1.3.TC2a",
-        aiCode: "8.C5.1",
-        dc: "• [Mã NLS: 1.3.TC2a] Sử dụng bảng biểu điện tử ghi nhận và phân loại các nguyên nhân kích hoạt cơn giận hoặc lo lắng.\n• [Mã AI: 8.C5.1] Khám phá cách thức các công nghệ AI phân tích cảm xúc qua giọng nói và nét mặt (Emotion AI).",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.3.TC2a] Sử dụng bảng biểu điện tử ghi nhận và phân loại các nguyên nhân kích hoạt cơn giận hoặc lo lắng.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -2958,8 +2961,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Kỹ thuật thư giãn cơ bắp, bài tập hít thở 4-7-8, thẻ chuyển hóa suy nghĩ tiêu cực",
         location: "Phòng học",
         nlsCode: "4.3.TC2a",
-        aiCode: "8.B2.1",
-        dc: "• [Mã NLS: 4.3.TC2a] Thực hành ngắt kết nối số (Digital Detox) để giải tỏa căng thẳng và lấy lại cân bằng tinh thần.\n• [Mã AI: 8.B2.1] Xây dựng ranh giới lành mạnh giữa thế giới thực và môi trường trực tuyến.",
+        aiCode: "",
+        dc: "• [Mã NLS: 4.3.TC2a] Thực hành ngắt kết nối số (Digital Detox) để giải tỏa căng thẳng và lấy lại cân bằng tinh thần.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -2971,8 +2974,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Luật thi đấu tranh biện Karl Popper/WSDC, video trận tranh biện mẫu, loa micro",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC2b",
-        aiCode: "8.A1.1",
-        dc: "• [Mã NLS: 1.1.TC2b] Khai thác các cơ sở dữ liệu số và cổng thông tin học thuật phục vụ tìm kiếm luận cứ tranh biện.\n• [Mã AI: 8.A1.1] Tôn vinh năng lực tư duy phản biện độc lập của con người khi đối diện với các vấn đề xã hội phức tạp.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.1.TC2b] Khai thác các cơ sở dữ liệu số và cổng thông tin học thuật phục vụ tìm kiếm luận cứ tranh biện.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -2984,8 +2987,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Mô hình lập luận AREI (Khẳng định - Lý lẽ - Dẫn chứng - Ý nghĩa)",
         location: "Phòng học",
         nlsCode: "1.2.TC2a",
-        aiCode: "8.A3.3",
-        dc: "• [Mã NLS: 1.2.TC2a] Phân tích, so sánh các nguồn số liệu thống kê để chọn lọc bằng chứng xác thực cho bài tranh biện.\n• [Mã AI: 8.A3.3] Thực hiện kiểm chứng tính xác thực của thông tin số, chống ngụy biện và tin sai lệch.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.2.TC2a] Phân tích, so sánh các nguồn số liệu thống kê để chọn lọc bằng chứng xác thực cho bài tranh biện.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -2997,8 +3000,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Đồng hồ bấm giờ tranh biện, bảng điểm giám khảo",
         location: "Phòng học",
         nlsCode: "2.5.TC2a",
-        aiCode: "8.B1.1",
-        dc: "• [Mã NLS: 2.5.TC2a] Thực hành văn hóa tranh luận văn minh, tôn trọng người phản biện trên môi trường trực tiếp và diễn đàn số.\n• [Mã AI: 8.B1.1] Nhận biết các hiện tượng phân cực quan điểm do thuật toán mạng xã hội tạo ra (Echo Chamber).",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.5.TC2a] Thực hành văn hóa tranh luận văn minh, tôn trọng người phản biện trên môi trường trực tiếp và diễn đàn số.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -3010,8 +3013,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video về kỹ năng đàm phán thương thuyết thành công, máy chiếu",
         location: "Sân trường / Hội trường",
         nlsCode: "2.1.TC2b",
-        aiCode: "8.A1.1",
-        dc: "• [Mã NLS: 2.1.TC2b] Tìm hiểu các tình huống đàm phán Win - Win (Đôi bên cùng có lợi) qua học liệu số.\n• [Mã AI: 8.A1.1] Khẳng định nghệ thuật giao tiếp và thấu cảm tâm lý là năng lực độc quyền của con người.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.1.TC2b] Tìm hiểu các tình huống đàm phán Win - Win (Đôi bên cùng có lợi) qua học liệu số.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -3023,8 +3026,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Tình huống thương thuyết (xin phép bố mẹ tham gia dã ngoại, đàm phán phân công việc nhóm)",
         location: "Phòng học",
         nlsCode: "2.4.TC2a",
-        aiCode: "8.D2.1",
-        dc: "• [Mã NLS: 2.4.TC2a] Sử dụng văn bản số ghi lại biên bản thỏa thuận thương thuyết rõ ràng giữa các bên.\n• [Mã AI: 8.D2.1] Khám phá cách thức AI có thể gợi ý các phương án thỏa hiệp tối ưu trong đàm phán.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.4.TC2a] Sử dụng văn bản số ghi lại biên bản thỏa thuận thương thuyết rõ ràng giữa các bên.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -3036,8 +3039,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Phiếu tự đánh giá năng lực ngôn ngữ và phản biện, kế hoạch rèn luyện cá nhân",
         location: "Phòng học",
         nlsCode: "5.4.TC2a",
-        aiCode: "8.A1.2",
-        dc: "• [Mã NLS: 5.4.TC2a] Tự đánh giá năng lực số và kỹ năng tranh luận của bản thân qua bảng kiểm điện tử.\n• [Mã AI: 8.A1.2] Tránh phụ thuộc vào câu trả lời tạo sinh của AI khi rèn luyện tư duy phản biện độc lập.",
+        aiCode: "",
+        dc: "• [Mã NLS: 5.4.TC2a] Tự đánh giá năng lực số và kỹ năng tranh luận của bản thân qua bảng kiểm điện tử.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -3048,9 +3051,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Đánh giá mức độ đạt yêu cầu cần đạt của Chủ đề 1 (Em với nhà trường) và Chủ đề 2 (Khám phá bản thân).",
         equipment: "Hồ sơ rèn luyện cá nhân, video clip bài tranh biện, máy chiếu",
         location: "Phòng học",
-        nlsCode: "3.1.TC2a",
-        aiCode: "8.C1.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Báo cáo sản phẩm số tổng hợp các hoạt động tranh biện và sản phẩm truyền thống trường.\n• [Mã AI: 8.C1.1] Ứng dụng công nghệ trình chiếu đa phương tiện để tối ưu hóa hiệu quả thuyết trình.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra giữa kỳ"
       },
       {
@@ -3061,9 +3064,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Đánh giá năng lực tư duy phản biện, kỹ năng làm chủ cảm xúc và tinh thần hợp tác của học sinh.",
         equipment: "Bảng tiêu chí rubric đánh giá giữa kỳ môn HĐTN 8, đề bài đánh giá",
         location: "Phòng học",
-        nlsCode: "1.2.TC2a",
-        aiCode: "8.A3.3",
-        dc: "• [Mã NLS: 1.2.TC2a] Phân tích và chấm điểm chéo các sản phẩm trên hệ sinh thái học tập số.\n• [Mã AI: 8.A3.3] Thực hiện trách nhiệm giải trình và bảo đảm tính trung thực học thuật tuyệt đối.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra giữa kỳ"
       },
       {
@@ -3074,9 +3077,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Nhìn nhận sự tiến bộ cá nhân, rút kinh nghiệm và điều chỉnh kế hoạch rèn luyện nửa sau Học kỳ I.",
         equipment: "Sổ tay rèn luyện, bảng theo dõi mục tiêu học tập lớp 8",
         location: "Phòng học",
-        nlsCode: "1.3.TC2a",
-        aiCode: "8.D1.1",
-        dc: "• [Mã NLS: 1.3.TC2a] Cập nhật kết quả đánh giá giữa kỳ vào hồ sơ điện tử và điều chỉnh lộ trình rèn luyện cá nhân.\n• [Mã AI: 8.D1.1] Nhận đề xuất từ các công cụ số để nâng cao kỹ năng kiểm soát căng thẳng và tranh biện.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra giữa kỳ"
       },
       {
@@ -3088,8 +3091,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video gương học sinh sống có trách nhiệm, máy chiếu, micro",
         location: "Sân trường / Hội trường",
         nlsCode: "2.1.TC2a",
-        aiCode: "8.A1.1",
-        dc: "• [Mã NLS: 2.1.TC2a] Tìm hiểu các tấm gương thanh thiếu niên sống đẹp, có trách nhiệm với xã hội trên Internet.\n• [Mã AI: 8.A1.1] Khẳng định trách nhiệm đạo đức là yếu tố cốt lõi xây dựng uy tín và nhân cách con người.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.1.TC2a] Tìm hiểu các tấm gương thanh thiếu niên sống đẹp, có trách nhiệm với xã hội trên Internet.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -3101,8 +3104,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng kiểm hành vi trách nhiệm (đúng giờ, giữ lời hứa, tự chịu trách nhiệm)",
         location: "Phòng học",
         nlsCode: "1.3.TC2a",
-        aiCode: "8.A3.3",
-        dc: "• [Mã NLS: 1.3.TC2a] Lập danh sách kiểm tra số (checklist) các thói quen trách nhiệm cần thực hiện mỗi ngày.\n• [Mã AI: 8.A3.3] Thực hiện trách nhiệm cá nhân đối với mọi hành vi và phát ngôn trên không gian mạng.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.3.TC2a] Lập danh sách kiểm tra số (checklist) các thói quen trách nhiệm cần thực hiện mỗi ngày.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -3114,8 +3117,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Kịch bản xử lý tình huống nhóm bạn trốn học, làm hỏng đồ chung nhưng giấu giếm",
         location: "Phòng học",
         nlsCode: "2.4.TC2a",
-        aiCode: "8.B1.1",
-        dc: "• [Mã NLS: 2.4.TC2a] Thảo luận nhóm giải quyết tình huống trên diễn đàn số, rèn luyện tinh thần dám làm dám chịu.\n• [Mã AI: 8.B1.1] Nhận diện trách nhiệm đạo đức khi phát hiện lỗi sai, không đổ lỗi cho hệ thống hoặc người khác.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.4.TC2a] Thảo luận nhóm giải quyết tình huống trên diễn đàn số, rèn luyện tinh thần dám làm dám chịu.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -3127,8 +3130,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Khẩu hiệu phong trào \"Nói đi đôi với làm\", bảng cam kết hành động của chi đội",
         location: "Sân trường / Hội trường",
         nlsCode: "2.3.TC2a",
-        aiCode: "8.A1.1",
-        dc: "• [Mã NLS: 2.3.TC2a] Đăng ký cam kết thi đua thực hiện lời hứa trên cổng thông tin Đội trực tuyến.\n• [Mã AI: 8.A1.1] Rèn luyện thói quen trung thực, biến lời nói thành hành động cụ thể trong học tập.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.3.TC2a] Đăng ký cam kết thi đua thực hiện lời hứa trên cổng thông tin Đội trực tuyến.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -3140,8 +3143,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Mẫu kế hoạch cam kết (hoàn thành đúng hạn bài tập, giúp đỡ bạn tiến bộ)",
         location: "Phòng học",
         nlsCode: "5.3.TC2a",
-        aiCode: "8.D1.1",
-        dc: "• [Mã NLS: 5.3.TC2a] Thiết lập bảng theo dõi tiến độ cam kết (Kanban board) trên phần mềm quản lý số.\n• [Mã AI: 8.D1.1] Tận dụng công cụ thông minh nhắc lịch tự động để không bỏ lỡ các cam kết đã hứa.",
+        aiCode: "",
+        dc: "• [Mã NLS: 5.3.TC2a] Thiết lập bảng theo dõi tiến độ cam kết (Kanban board) trên phần mềm quản lý số.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -3153,8 +3156,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng theo dõi giữ lời hứa của lớp, phiếu đánh giá chéo",
         location: "Phòng học",
         nlsCode: "2.2.TC2a",
-        aiCode: "8.A3.3",
-        dc: "• [Mã NLS: 2.2.TC2a] Báo cáo kết quả thực hiện cam kết cá nhân trên nhóm học tập số của lớp.\n• [Mã AI: 8.A3.3] Thể hiện sự dũng cảm thừa nhận thiếu sót và nỗ lực khắc phục khi chưa hoàn thành cam kết.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.2.TC2a] Báo cáo kết quả thực hiện cam kết cá nhân trên nhóm học tập số của lớp.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -3166,8 +3169,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video phóng sự về cám dỗ tệ nạn xã hội, thuốc lá điện tử, rủ rê đua xe, trộm cắp",
         location: "Sân trường / Hội trường",
         nlsCode: "4.1.TC2b",
-        aiCode: "8.A2.1",
-        dc: "• [Mã NLS: 4.1.TC2b] Nhận diện các bẫy lừa đảo và chiêu trò lôi kéo nguy hiểm qua tin nhắn, mạng xã hội.\n• [Mã AI: 8.A2.1] Hiểu cách thức các đối tượng xấu sử dụng dữ liệu cá nhân để thao túng tâm lý và lôi kéo học sinh.",
+        aiCode: "",
+        dc: "• [Mã NLS: 4.1.TC2b] Nhận diện các bẫy lừa đảo và chiêu trò lôi kéo nguy hiểm qua tin nhắn, mạng xã hội.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -3179,8 +3182,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Quy trình 4 bước từ chối kiên quyết (Lắng nghe - Nêu lý do - Từ chối dứt khoát - Đề xuất giải pháp khác)",
         location: "Phòng học",
         nlsCode: "1.2.TC2a",
-        aiCode: "8.B1.1",
-        dc: "• [Mã NLS: 1.2.TC2a] Phân tích tình huống có nguy cơ gây hại qua các bài viết và video cảnh giác trên báo điện tử uy tín.\n• [Mã AI: 8.B1.1] Nhận diện các mối đe dọa trực tuyến và xác lập ranh giới an toàn cho bản thân.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.2.TC2a] Phân tích tình huống có nguy cơ gây hại qua các bài viết và video cảnh giác trên báo điện tử uy tín.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -3192,8 +3195,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Kịch bản sắm vai từ chối hút thuốc lá điện tử, từ chối tham gia cá độ bóng đá, từ chối đi chơi khuya",
         location: "Phòng học",
         nlsCode: "2.5.TC2a",
-        aiCode: "8.A1.1",
-        dc: "• [Mã NLS: 2.5.TC2a] Thể hiện bản lĩnh từ chối dứt khoát trước áp lực từ bạn bè (peer pressure) cả ngoài đời và trên mạng.\n• [Mã AI: 8.A1.1] Khẳng định bản lĩnh làm chủ cuộc sống của người có chính kiến vững vàng.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.5.TC2a] Thể hiện bản lĩnh từ chối dứt khoát trước áp lực từ bạn bè (peer pressure) cả ngoài đời và trên mạng.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -3205,8 +3208,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video tình huống từ chối khéo léo nhưng cương quyết, máy chiếu, micro",
         location: "Sân trường / Hội trường",
         nlsCode: "2.1.TC2b",
-        aiCode: "8.A1.1",
-        dc: "• [Mã NLS: 2.1.TC2b] Chia sẻ các tình huống từ chối văn minh qua diễn đàn số của học sinh THCS.\n• [Mã AI: 8.A1.1] Nhận thức rằng biết từ chối đúng lúc là biểu hiện của người có trí tuệ cảm xúc và tự trọng.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.1.TC2b] Chia sẻ các tình huống từ chối văn minh qua diễn đàn số của học sinh THCS.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -3218,8 +3221,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Thẻ bài tập từ chối lời mời vào hội nhóm kín độc hại, từ chối chia sẻ link lạ, từ chối cung cấp mật khẩu",
         location: "Phòng học",
         nlsCode: "4.2.TC2a",
-        aiCode: "8.B2.1",
-        dc: "• [Mã NLS: 4.2.TC2a] Thực hành từ chối tham gia các thử thách độc hại (online challenges) và chặn kẻ quấy rối trên mạng.\n• [Mã AI: 8.B2.1] Bảo vệ tài khoản và dữ liệu cá nhân, kiên quyết từ chối cấp quyền truy cập trái phép cho ứng dụng lạ.",
+        aiCode: "",
+        dc: "• [Mã NLS: 4.2.TC2a] Thực hành từ chối tham gia các thử thách độc hại (online challenges) và chặn kẻ quấy rối trên mạng.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -3231,8 +3234,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Sổ tay bỏ túi \"Kỹ năng từ chối thông minh\", bảng tổng kết lớp",
         location: "Phòng học",
         nlsCode: "3.1.TC2a",
-        aiCode: "8.D1.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Thiết kế cẩm nang số \"Bí kíp nói KHÔNG an toàn\" để chia sẻ cho các bạn cùng khối.\n• [Mã AI: 8.D1.1] Sử dụng AI gợi ý các câu từ chối khéo léo, giữ được hòa khí mà không bị thiệt thòi.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC2a] Thiết kế cẩm nang số \"Bí kíp nói KHÔNG an toàn\" để chia sẻ cho các bạn cùng khối.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -3244,8 +3247,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video clip các chiêu trò quảng cáo tiếp thị hấp dẫn trên mạng xã hội (Tiktok, Facebook)",
         location: "Sân trường / Hội trường",
         nlsCode: "1.2.TC2a",
-        aiCode: "8.A2.1",
-        dc: "• [Mã NLS: 1.2.TC2a] Nhận diện và phân tích cách các nhà tiếp thị số sử dụng hình ảnh, âm thanh bắt mắt để kích cầu mua sắm.\n• [Mã AI: 8.A2.1] Hiểu cách AI và thuật toán phân tích hành vi người dùng để gửi quảng cáo cá nhân hóa theo thói quen.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.2.TC2a] Nhận diện và phân tích cách các nhà tiếp thị số sử dụng hình ảnh, âm thanh bắt mắt để kích cầu mua sắm.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -3257,8 +3260,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Mẫu sản phẩm có bao bì hấp dẫn so với chất lượng thực tế, phiếu so sánh",
         location: "Phòng học",
         nlsCode: "1.2.TC2a",
-        aiCode: "8.B1.1",
-        dc: "• [Mã NLS: 1.2.TC2a] Tra cứu đánh giá (review) thực tế của người dùng trên các diễn đàn tiêu dùng uy tín để đối chiếu quảng cáo.\n• [Mã AI: 8.B1.1] Cảnh giác trước các đánh giá giả mạo (fake review) do bot tự động tạo ra trên các sàn thương mại điện tử.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.2.TC2a] Tra cứu đánh giá (review) thực tế của người dùng trên các diễn đàn tiêu dùng uy tín để đối chiếu quảng cáo.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -3270,8 +3273,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Tình huống mua sắm khi có giảm giá sốc, flash sale; bảng phân tích lợi - hại",
         location: "Phòng học",
         nlsCode: "4.2.TC2a",
-        aiCode: "8.A1.1",
-        dc: "• [Mã NLS: 4.2.TC2a] Thực hành quy tắc \"chờ 24 giờ\" trước khi bấm mua hàng trực tuyến để tránh chi tiêu bốc đồng.\n• [Mã AI: 8.A1.1] Giữ quyền làm chủ quyết định chi tiêu tài chính, không để áp lực giảm giá ảo chi phối.",
+        aiCode: "",
+        dc: "• [Mã NLS: 4.2.TC2a] Thực hành quy tắc \"chờ 24 giờ\" trước khi bấm mua hàng trực tuyến để tránh chi tiêu bốc đồng.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -3283,8 +3286,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Gian hàng giới thiệu ý tưởng khởi nghiệp tuổi teen (đồ handmade, cây cảnh mini, sách cũ)",
         location: "Sân trường / Hội trường",
         nlsCode: "3.1.TC2a",
-        aiCode: "8.A1.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Xây dựng gian hàng ảo hoặc catalog số giới thiệu các sản phẩm kinh doanh nhỏ của học sinh.\n• [Mã AI: 8.A1.1] Tôn vinh tinh thần khởi nghiệp sáng tạo và ý thức tự lập của lứa tuổi học sinh THCS.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC2a] Xây dựng gian hàng ảo hoặc catalog số giới thiệu các sản phẩm kinh doanh nhỏ của học sinh.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -3296,8 +3299,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Mẫu bản kế hoạch kinh doanh Canvas đơn giản (Khách hàng - Sản phẩm - Doanh thu - Chi phí)",
         location: "Phòng học",
         nlsCode: "1.3.TC2a",
-        aiCode: "8.C1.1",
-        dc: "• [Mã NLS: 1.3.TC2a] Thiết kế bảng dự toán chi phí sản xuất, giá bán và lợi nhuận trên bảng tính Excel.\n• [Mã AI: 8.C1.1] Sử dụng các công thức tính toán tự động trong bảng tính để phân tích điểm hòa vốn.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.3.TC2a] Thiết kế bảng dự toán chi phí sản xuất, giá bán và lợi nhuận trên bảng tính Excel.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -3309,8 +3312,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Slide thuyết trình dự án kinh doanh, sản phẩm mẫu",
         location: "Phòng học",
         nlsCode: "3.1.TC2a",
-        aiCode: "8.D1.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Thiết kế bộ slide thuyết trình dự án kinh doanh chuyên nghiệp bằng Canva hoặc PowerPoint.\n• [Mã AI: 8.D1.1] Tham khảo AI gợi ý chiến lược tiếp thị nội dung (content marketing) độc đáo cho dự án.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC2a] Thiết kế bộ slide thuyết trình dự án kinh doanh chuyên nghiệp bằng Canva hoặc PowerPoint.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -3322,8 +3325,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video chuyên đề về tình bạn khác giới tuổi học trò, ứng xử trên không gian mạng",
         location: "Sân trường / Hội trường",
         nlsCode: "2.5.TC2a",
-        aiCode: "8.A1.1",
-        dc: "• [Mã NLS: 2.5.TC2a] Nhận biết các chuẩn mực ứng xử đúng mực trong các mối quan hệ bạn bè trực tiếp và trực tuyến.\n• [Mã AI: 8.A1.1] Khẳng định bản lĩnh tự chủ, không để bị thao túng hoặc lệ thuộc vào các mối quan hệ ảo.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.5.TC2a] Nhận biết các chuẩn mực ứng xử đúng mực trong các mối quan hệ bạn bè trực tiếp và trực tuyến.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -3335,8 +3338,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Thẻ tình huống bị bạn rủ rê vi phạm nội quy, bị ép tham gia hội nhóm kín tiêu cực",
         location: "Phòng học",
         nlsCode: "4.1.TC2b",
-        aiCode: "8.A2.1",
-        dc: "• [Mã NLS: 4.1.TC2b] Phân tích nguy cơ bị rò rỉ dữ liệu cá nhân, tống tiền hoặc lừa đảo tình cảm qua mạng xã hội.\n• [Mã AI: 8.A2.1] Hiểu cách thức thông tin cá nhân của người dùng bị thu thập và khai thác trái phép.",
+        aiCode: "",
+        dc: "• [Mã NLS: 4.1.TC2b] Phân tích nguy cơ bị rò rỉ dữ liệu cá nhân, tống tiền hoặc lừa đảo tình cảm qua mạng xã hội.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -3348,8 +3351,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng thiết lập cài đặt bảo mật mạng xã hội (Facebook, Zalo, Instagram)",
         location: "Phòng học / Phòng Tin học",
         nlsCode: "4.2.TC2a",
-        aiCode: "8.B2.1",
-        dc: "• [Mã NLS: 4.2.TC2a] Cài đặt bảo mật 2 lớp, khóa danh sách bạn bè và kiểm soát quyền riêng tư bài đăng trên mạng xã hội.\n• [Mã AI: 8.B2.1] Nâng cao ý thức tôn trọng bản quyền hình ảnh và bảo mật dữ liệu định danh cá nhân.",
+        aiCode: "",
+        dc: "• [Mã NLS: 4.2.TC2a] Cài đặt bảo mật 2 lớp, khóa danh sách bạn bè và kiểm soát quyền riêng tư bài đăng trên mạng xã hội.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -3361,8 +3364,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video phóng sự về văn hóa kinh doanh trung thực và tiêu dùng bền vững",
         location: "Sân trường / Hội trường",
         nlsCode: "2.3.TC2a",
-        aiCode: "8.A1.1",
-        dc: "• [Mã NLS: 2.3.TC2a] Tiếp cận các sáng kiến thương mại công bằng và tiêu dùng xanh qua các diễn đàn kinh tế số.\n• [Mã AI: 8.A1.1] Nhận thức trách nhiệm đạo đức của người sản xuất kinh doanh đối với cộng đồng và môi trường.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.3.TC2a] Tiếp cận các sáng kiến thương mại công bằng và tiêu dùng xanh qua các diễn đàn kinh tế số.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -3374,8 +3377,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bản kế hoạch kinh doanh đã được gia đình đóng góp ý kiến",
         location: "Phòng học",
         nlsCode: "3.1.TC2a",
-        aiCode: "8.D1.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Hoàn thiện bản kế hoạch kinh doanh số, bổ sung phân tích rủi ro và các giải pháp thực hiện.\n• [Mã AI: 8.D1.1] Sử dụng AI rà soát các lỗ hổng về chi phí và tính khả thi của dự án kinh doanh.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC2a] Hoàn thiện bản kế hoạch kinh doanh số, bổ sung phân tích rủi ro và các giải pháp thực hiện.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -3387,8 +3390,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng kiểm đánh giá mức độ tự chủ cá nhân, sổ tay học sinh",
         location: "Phòng học",
         nlsCode: "5.4.TC2a",
-        aiCode: "8.A3.3",
-        dc: "• [Mã NLS: 5.4.TC2a] Tự đánh giá mức độ độc lập và tự chủ trong việc ra quyết định tài chính và ứng xử trên mạng.\n• [Mã AI: 8.A3.3] Khẳng định bản lĩnh tự chịu trách nhiệm về lối sống và hình ảnh số của chính mình.",
+        aiCode: "",
+        dc: "• [Mã NLS: 5.4.TC2a] Tự đánh giá mức độ độc lập và tự chủ trong việc ra quyết định tài chính và ứng xử trên mạng.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -3399,9 +3402,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Đánh giá tổng hợp kết quả học tập và rèn luyện các chủ đề 1 đến 4 qua hồ sơ minh chứng trải nghiệm học kỳ I.",
         equipment: "Portfolio học tập điện tử, dự án kinh doanh nhỏ, máy chiếu",
         location: "Phòng học",
-        nlsCode: "3.1.TC2a",
-        aiCode: "8.C1.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Báo cáo sản phẩm số tổng kết kết quả học tập và rèn luyện kỹ năng HK I của học sinh.\n• [Mã AI: 8.C1.1] Ứng dụng các công cụ biên tập số để hoàn thiện hồ sơ học tập đa phương tiện.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra cuối kỳ"
       },
       {
@@ -3412,9 +3415,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Đánh giá năng lực tự chủ, kỹ năng từ chối, giải quyết vấn đề và trách nhiệm công dân của học sinh.",
         equipment: "Đề bài tình huống đánh giá năng lực, phiếu trả lời của học sinh",
         location: "Phòng học",
-        nlsCode: "1.2.TC2a",
-        aiCode: "8.A3.3",
-        dc: "• [Mã NLS: 1.2.TC2a] Phân tích tình huống thực tế và đưa ra lập luận chặt chẽ trên bài kiểm tra số.\n• [Mã AI: 8.A3.3] Thực hiện bài làm nghiêm túc, đề cao tính trung thực học thuật.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra cuối kỳ"
       },
       {
@@ -3425,9 +3428,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Tổng kết đánh giá mức độ đạt chuẩn yêu cầu cần đạt của các chủ đề trong học kỳ I môn HĐTN 8.",
         equipment: "Bảng tổng hợp điểm quá trình và xếp loại học kỳ I môn HĐTN, HN 8",
         location: "Phòng học",
-        nlsCode: "1.3.TC2a",
-        aiCode: "8.B1.1",
-        dc: "• [Mã NLS: 1.3.TC2a] Quản lý và lưu trữ dữ liệu điểm đánh giá học kỳ I vào hệ thống quản lý học sinh.\n• [Mã AI: 8.B1.1] Bảo đảm tính khách quan, công bằng và bảo mật thông tin kết quả đánh giá.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra cuối kỳ"
       },
       {
@@ -3438,9 +3441,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Đóng gói, hoàn tất và số hóa toàn bộ hồ sơ minh chứng trải nghiệm học kỳ I.",
         equipment: "Tệp hồ sơ học tập, thiết bị lưu trữ số",
         location: "Phòng học",
-        nlsCode: "1.3.TC2b",
-        aiCode: "8.C1.1",
-        dc: "• [Mã NLS: 1.3.TC2b] Tổ chức lưu trữ an toàn các tệp minh chứng số (ảnh, video, văn bản) trên đám mây cá nhân.\n• [Mã AI: 8.C1.1] Sử dụng công cụ số tối ưu hóa dung lượng lưu trữ tài liệu học tập.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Đánh giá cuối kỳ I"
       },
       {
@@ -3451,9 +3454,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Đánh giá sự tiến bộ của bản thân và bạn bè, xác định mục tiêu đột phá cho Học kỳ II.",
         equipment: "Phiếu đánh giá đồng đẳng, bảng khảo sát tự đánh giá",
         location: "Phòng học",
-        nlsCode: "2.4.TC2a",
-        aiCode: "8.A1.2",
-        dc: "• [Mã NLS: 2.4.TC2a] Đóng góp ý kiến phản hồi chân thành cho bạn bè trên nền tảng trao đổi số của lớp.\n• [Mã AI: 8.A1.2] Tự phản tỉnh, kiên quyết khắc phục thói quen ỷ lại công nghệ để tự lực học tập.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Đánh giá cuối kỳ I"
       },
       {
@@ -3464,9 +3467,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Tuyên dương các cá nhân, tập thể có nhiều đóng góp tích cực; phát động phong trào thi đua Học kỳ II.",
         equipment: "Giấy khen, video clip tổng kết hoạt động HK I của khối 8, loa micro",
         location: "Phòng học / Hội trường",
-        nlsCode: "2.2.TC2a",
-        aiCode: "8.A1.1",
-        dc: "• [Mã NLS: 2.2.TC2a] Trình chiếu video clip sơ kết học kỳ I, vinh danh các ý tưởng kinh doanh và hoạt động tiêu biểu.\n• [Mã AI: 8.A1.1] Khơi dậy niềm tự hào và quyết tâm bứt phá trong học kỳ tiếp theo.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Sơ kết Học kỳ I"
       },
       {
@@ -3478,8 +3481,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video tiểu phẩm về xung đột khoảng cách thế hệ giữa cha mẹ và con cái lứa tuổi lớp 8",
         location: "Sân trường / Hội trường",
         nlsCode: "2.5.TC2a",
-        aiCode: "8.A1.1",
-        dc: "• [Mã NLS: 2.5.TC2a] Tìm hiểu nghệ thuật giao tiếp tôn trọng, thấu cảm với cha mẹ qua các bài viết và tọa đàm số.\n• [Mã AI: 8.A1.1] Khẳng định tình cảm yêu thương và sự gắn kết gia đình là giá trị thiêng liêng nhất.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.5.TC2a] Tìm hiểu nghệ thuật giao tiếp tôn trọng, thấu cảm với cha mẹ qua các bài viết và tọa đàm số.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -3491,8 +3494,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Kịch bản sắm vai thuyết phục cha mẹ ủng hộ sở thích cá nhân, tham gia hoạt động ngoại khóa",
         location: "Phòng học",
         nlsCode: "2.1.TC2b",
-        aiCode: "8.D2.1",
-        dc: "• [Mã NLS: 2.1.TC2b] Xây dựng bài trình bày quan điểm có dẫn chứng thuyết phục trên tài liệu số chia sẻ cho gia đình.\n• [Mã AI: 8.D2.1] Tham khảo gợi ý từ AI về cách diễn đạt hòa nhã, tôn trọng khi trao đổi quan điểm với người lớn.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.1.TC2b] Xây dựng bài trình bày quan điểm có dẫn chứng thuyết phục trên tài liệu số chia sẻ cho gia đình.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -3504,8 +3507,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Sổ ghi chép bài học ứng xử gia đình, phiếu cảm nhận của cha mẹ",
         location: "Phòng học",
         nlsCode: "2.2.TC2a",
-        aiCode: "8.A3.3",
-        dc: "• [Mã NLS: 2.2.TC2a] Chia sẻ câu chuyện thấu hiểu cha mẹ qua bài viết cảm nhận số trên diễn đàn lớp.\n• [Mã AI: 8.A3.3] Đánh giá sự trưởng thành trong cách giao tiếp và giải quyết bất đồng gia đình.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.2.TC2a] Chia sẻ câu chuyện thấu hiểu cha mẹ qua bài viết cảm nhận số trên diễn đàn lớp.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -3517,8 +3520,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Hóa đơn tiền điện, nước, internet của gia đình các tháng; video lãng phí năng lượng",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC2a",
-        aiCode: "8.A1.1",
-        dc: "• [Mã NLS: 1.1.TC2a] Tra cứu các hướng dẫn tiết kiệm điện, nước sinh hoạt và tiêu dùng thông minh trên cổng thông tin EVN.\n• [Mã AI: 8.A1.1] Nhận thức tầm quan trọng của việc tiết kiệm tài nguyên bảo vệ kinh tế gia đình và môi trường.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.1.TC2a] Tra cứu các hướng dẫn tiết kiệm điện, nước sinh hoạt và tiêu dùng thông minh trên cổng thông tin EVN.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -3530,8 +3533,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng kiểm tra các thiết bị tiêu tốn điện nước trong nhà, phiếu điều tra thói quen lãng phí",
         location: "Phòng học",
         nlsCode: "1.3.TC2a",
-        aiCode: "8.C1.1",
-        dc: "• [Mã NLS: 1.3.TC2a] Sử dụng bảng tính số theo dõi chỉ số điện nước hàng tháng và tính toán mức giảm chi phí.\n• [Mã AI: 8.C1.1] Tìm hiểu các thiết bị gia dụng thông minh tích hợp AI tự ngắt điện khi không sử dụng.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.3.TC2a] Sử dụng bảng tính số theo dõi chỉ số điện nước hàng tháng và tính toán mức giảm chi phí.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -3543,8 +3546,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Mẫu cam kết hành động xanh tiết kiệm điện nước tại gia đình",
         location: "Phòng học",
         nlsCode: "5.3.TC2a",
-        aiCode: "8.D1.1",
-        dc: "• [Mã NLS: 5.3.TC2a] Lập kế hoạch hành động tiết kiệm 10% chi phí sinh hoạt gia đình trên phần mềm ghi chú số.\n• [Mã AI: 8.D1.1] Khám phá các giải pháp nhà thông minh (Smart Home) tối ưu hóa năng lượng.",
+        aiCode: "",
+        dc: "• [Mã NLS: 5.3.TC2a] Lập kế hoạch hành động tiết kiệm 10% chi phí sinh hoạt gia đình trên phần mềm ghi chú số.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -3556,8 +3559,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video phóng sự học sinh lớp 8 tự lập, chủ động nấu ăn, dọn dẹp nhà cửa",
         location: "Sân trường / Hội trường",
         nlsCode: "2.1.TC2a",
-        aiCode: "8.A1.1",
-        dc: "• [Mã NLS: 2.1.TC2a] Tiếp cận cẩm nang tự lập tuổi thiếu niên qua trang thông tin Đội và phong trào thanh niên.\n• [Mã AI: 8.A1.1] Xây dựng tinh thần trách nhiệm chia sẻ gánh nặng việc nhà với cha mẹ.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.1.TC2a] Tiếp cận cẩm nang tự lập tuổi thiếu niên qua trang thông tin Đội và phong trào thanh niên.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -3569,8 +3572,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Ma trận Eisenhower (Khẩn cấp / Quan trọng) sắp xếp việc nhà và bài vở",
         location: "Phòng học",
         nlsCode: "1.3.TC2b",
-        aiCode: "8.D2.1",
-        dc: "• [Mã NLS: 1.3.TC2b] Áp dụng ma trận Eisenhower số để ưu tiên các công việc gia đình cần làm trước.\n• [Mã AI: 8.D2.1] Sử dụng ứng dụng nhắc việc thông minh để đảm bảo hoàn thành việc nhà đúng hẹn.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.3.TC2b] Áp dụng ma trận Eisenhower số để ưu tiên các công việc gia đình cần làm trước.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -3582,8 +3585,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Nhật ký ảnh công việc nhà, phiếu nhận xét của người thân",
         location: "Phòng học",
         nlsCode: "2.2.TC2a",
-        aiCode: "8.A3.3",
-        dc: "• [Mã NLS: 2.2.TC2a] Đăng tải hình ảnh góc phòng sạch đẹp hoặc mâm cơm tự nấu lên nhóm học tập số.\n• [Mã AI: 8.A3.3] Đánh giá sự tiến bộ về tính tự giác và kỹ năng tổ chức cuộc sống gia đình ngăn nắp.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.2.TC2a] Đăng tải hình ảnh góc phòng sạch đẹp hoặc mâm cơm tự nấu lên nhóm học tập số.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -3595,8 +3598,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Tư liệu về phong trào Đền ơn đáp nghĩa, chăm sóc di tích lịch sử địa phương",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC2b",
-        aiCode: "8.A1.1",
-        dc: "• [Mã NLS: 1.1.TC2b] Khai thác cổng thông tin điện tử địa phương tìm hiểu các địa chỉ đỏ và hoạt động tình nguyện.\n• [Mã AI: 8.A1.1] Bồi dưỡng lòng tri ân các anh hùng liệt sĩ và tinh thần trách nhiệm với quê hương.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.1.TC2b] Khai thác cổng thông tin điện tử địa phương tìm hiểu các địa chỉ đỏ và hoạt động tình nguyện.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -3608,8 +3611,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bản đồ các tổ chức xã hội tại địa phương (Đoàn thanh niên, Hội phụ nữ, Hội chữ thập đỏ)",
         location: "Phòng học",
         nlsCode: "2.3.TC2a",
-        aiCode: "8.C1.1",
-        dc: "• [Mã NLS: 2.3.TC2a] Sử dụng cổng thông tin dịch vụ công và mạng xã hội để kết nối với các tổ chức thiện nguyện.\n• [Mã AI: 8.C1.1] Nhận diện các kênh liên lạc khẩn cấp và đường dây nóng hỗ trợ trẻ em (Tổng đài 111).",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.3.TC2a] Sử dụng cổng thông tin dịch vụ công và mạng xã hội để kết nối với các tổ chức thiện nguyện.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -3621,8 +3624,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Biểu mẫu đăng ký hoạt động tình nguyện hè/chăm sóc nghĩa trang liệt sĩ",
         location: "Phòng học",
         nlsCode: "2.1.TC2a",
-        aiCode: "8.B2.1",
-        dc: "• [Mã NLS: 2.1.TC2a] Đăng ký tham gia hoạt động cộng đồng qua biểu mẫu trực tuyến an toàn của tổ chức Đoàn, Đội.\n• [Mã AI: 8.B2.1] Cảnh giác không chia sẻ thông tin định danh cá nhân trên các đường link thiện nguyện không rõ nguồn gốc.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.1.TC2a] Đăng ký tham gia hoạt động cộng đồng qua biểu mẫu trực tuyến an toàn của tổ chức Đoàn, Đội.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -3634,8 +3637,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Khẩu hiệu phong trào \"Tương thân tương ái\", video hoạt động giúp đỡ người khuyết tật, neo đơn",
         location: "Sân trường / Hội trường",
         nlsCode: "2.3.TC2a",
-        aiCode: "8.A1.1",
-        dc: "• [Mã NLS: 2.3.TC2a] Tiếp cận các chiến dịch thiện nguyện thanh thiếu niên qua các nền tảng mạng xã hội chính thống.\n• [Mã AI: 8.A1.1] Lan tỏa lòng nhân ái và sự đồng cảm với những mảnh đời bất hạnh trong xã hội.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.3.TC2a] Tiếp cận các chiến dịch thiện nguyện thanh thiếu niên qua các nền tảng mạng xã hội chính thống.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -3647,8 +3650,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Mẫu kế hoạch thiện nguyện chi tiết (Mục tiêu - Địa điểm - Kinh phí - Dự phòng rủi ro)",
         location: "Phòng học",
         nlsCode: "3.1.TC2a",
-        aiCode: "8.D1.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Thiết kế tài liệu kế hoạch thiện nguyện số và thư kêu gọi ủng hộ bằng công cụ đồ họa.\n• [Mã AI: 8.D1.1] Sử dụng AI rà soát kế hoạch tài chính và gợi ý các phương án dự phòng khi gặp sự cố.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC2a] Thiết kế tài liệu kế hoạch thiện nguyện số và thư kêu gọi ủng hộ bằng công cụ đồ họa.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -3660,8 +3663,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng thu chi quỹ từ thiện, ảnh tư liệu trao quà",
         location: "Phòng học",
         nlsCode: "1.3.TC2a",
-        aiCode: "8.A3.3",
-        dc: "• [Mã NLS: 1.3.TC2a] Công khai minh bạch thu chi và danh sách hiện vật quyên góp trên bảng tính số của lớp.\n• [Mã AI: 8.A3.3] Thực hiện trách nhiệm giải trình minh bạch trong các hoạt động cộng đồng.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.3.TC2a] Công khai minh bạch thu chi và danh sách hiện vật quyên góp trên bảng tính số của lớp.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -3673,8 +3676,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video phỏng vấn các tình nguyện viên về những trở ngại gặp phải khi đi tình nguyện",
         location: "Sân trường / Hội trường",
         nlsCode: "2.1.TC2b",
-        aiCode: "8.A1.1",
-        dc: "• [Mã NLS: 2.1.TC2b] Tham gia diễn đàn thảo luận trực tuyến chia sẻ kinh nghiệm xử lý khủng hoảng khi làm tình nguyện.\n• [Mã AI: 8.A1.1] Rèn luyện bản lĩnh kiên trì, không nản lòng trước khó khăn thử thách.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.1.TC2b] Tham gia diễn đàn thảo luận trực tuyến chia sẻ kinh nghiệm xử lý khủng hoảng khi làm tình nguyện.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -3686,8 +3689,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Kịch bản xử lý tình huống bị thiếu nguồn lực, gặp trở ngại thời tiết, người tham gia mâu thuẫn",
         location: "Phòng học",
         nlsCode: "2.4.TC2a",
-        aiCode: "8.D2.1",
-        dc: "• [Mã NLS: 2.4.TC2a] Rèn luyện kỹ năng gửi email và nhắn tin trang trọng đề nghị hỗ trợ từ thầy cô và chuyên gia.\n• [Mã AI: 8.D2.1] Sử dụng công cụ số hỗ trợ soạn thảo thư ngỏ chuyên nghiệp và đúng văn phong.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.4.TC2a] Rèn luyện kỹ năng gửi email và nhắn tin trang trọng đề nghị hỗ trợ từ thầy cô và chuyên gia.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -3699,8 +3702,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng ảnh triển lãm hoạt động chăm sóc di tích lịch sử, thăm Mẹ Việt Nam anh hùng",
         location: "Phòng học / Hành lang",
         nlsCode: "3.1.TC2a",
-        aiCode: "8.C1.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Trình chiếu phóng sự ảnh số ghi lại những khoảnh khắc xúc động trong các chuyến đi tình nguyện.\n• [Mã AI: 8.C1.1] Sử dụng phần mềm làm video tự động ghép ảnh và nhạc nền truyền cảm hứng.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC2a] Trình chiếu phóng sự ảnh số ghi lại những khoảnh khắc xúc động trong các chuyến đi tình nguyện.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -3711,9 +3714,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Đánh giá mức độ đạt yêu cầu cần đạt của Chủ đề 5 (Em với gia đình) và Chủ đề 6 (Em với cộng đồng).",
         equipment: "Hồ sơ rèn luyện tiết kiệm gia đình, sản phẩm dự án thiện nguyện cộng đồng, máy chiếu",
         location: "Phòng học",
-        nlsCode: "3.1.TC2a",
-        aiCode: "8.C1.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Báo cáo sản phẩm số tổng kết các hoạt động tiết kiệm gia đình và dự án thiện nguyện.\n• [Mã AI: 8.C1.1] Ứng dụng công nghệ đa phương tiện để trình bày báo cáo trực quan, sinh động.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra giữa kỳ"
       },
       {
@@ -3724,9 +3727,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Đánh giá năng lực giải quyết vấn đề, kỹ năng thuyết phục và tinh thần trách nhiệm xã hội.",
         equipment: "Bảng tiêu chuẩn rubric đánh giá giữa kỳ môn HĐTN 8, phiếu trả lời tình huống",
         location: "Phòng học",
-        nlsCode: "1.2.TC2a",
-        aiCode: "8.A3.3",
-        dc: "• [Mã NLS: 1.2.TC2a] Phân tích tình huống thực tiễn và hoàn thành bài đánh giá trực tuyến.\n• [Mã AI: 8.A3.3] Thực hiện đánh giá trung thực, thể hiện bản lĩnh của học sinh lớp 8.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra giữa kỳ"
       },
       {
@@ -3737,9 +3740,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Đúc rút kinh nghiệm, điều chỉnh kế hoạch hành động chuẩn bị cho các chủ đề môi trường và hướng nghiệp.",
         equipment: "Sổ tay rèn luyện, bảng mục tiêu rèn luyện nửa cuối học kỳ II",
         location: "Phòng học",
-        nlsCode: "1.3.TC2a",
-        aiCode: "8.D1.1",
-        dc: "• [Mã NLS: 1.3.TC2a] Cập nhật kết quả đánh giá giữa kỳ II vào tệp theo dõi cá nhân điện tử.\n• [Mã AI: 8.D1.1] Xác định lộ trình nâng cao năng lực nghiên cứu môi trường và tìm hiểu nghề nghiệp.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra giữa kỳ"
       },
       {
@@ -3751,8 +3754,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video tư liệu danh lam thắng cảnh địa phương, nhạc cụ, máy chiếu",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC2b",
-        aiCode: "8.A1.1",
-        dc: "• [Mã NLS: 1.1.TC2b] Khám phá kho dữ liệu số về các thắng cảnh và khu bảo tồn thiên nhiên tại quê hương.\n• [Mã AI: 8.A1.1] Bồi đắp tình yêu quê hương đất nước qua cảm nhận chân thực về vẻ đẹp thiên nhiên kỳ thú.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.1.TC2b] Khám phá kho dữ liệu số về các thắng cảnh và khu bảo tồn thiên nhiên tại quê hương.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -3764,8 +3767,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Ảnh chụp di tích, phiếu khảo sát cảnh quan, bản đồ du lịch địa phương",
         location: "Phòng học",
         nlsCode: "1.2.TC2a",
-        aiCode: "8.C1.1",
-        dc: "• [Mã NLS: 1.2.TC2a] Sưu tầm, thẩm định nguồn gốc và độ phân giải của các bức ảnh danh lam thắng cảnh trên mạng.\n• [Mã AI: 8.C1.1] Sử dụng công nghệ xử lý ảnh nâng cao chất lượng tư liệu số thu thập được.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.2.TC2a] Sưu tầm, thẩm định nguồn gốc và độ phân giải của các bức ảnh danh lam thắng cảnh trên mạng.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -3777,8 +3780,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Phần mềm đồ họa, giấy vẽ A3, màu nước, máy tính kết nối mạng",
         location: "Phòng học / Phòng Tin học",
         nlsCode: "3.1.TC2a",
-        aiCode: "8.D1.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Thiết kế cẩm nang du lịch số (E-brochure) quảng bá các danh lam thắng cảnh địa phương.\n• [Mã AI: 8.D1.1] Ứng dụng AI tạo gợi ý lộ trình tham quan hấp dẫn và viết lời thuyết minh sinh động.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC2a] Thiết kế cẩm nang du lịch số (E-brochure) quảng bá các danh lam thắng cảnh địa phương.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -3790,8 +3793,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Kế hoạch tổ chức ngày hội môi trường, khẩu hiệu, loa micro",
         location: "Sân trường / Hội trường",
         nlsCode: "2.3.TC2a",
-        aiCode: "8.A1.1",
-        dc: "• [Mã NLS: 2.3.TC2a] Lan tỏa kế hoạch ngày hội xanh qua trang thông tin và fanpage chính thống của trường.\n• [Mã AI: 8.A1.1] Khẳng định vai trò nòng cốt của thanh thiếu niên trong việc bảo tồn cảnh quan quê hương.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.3.TC2a] Lan tỏa kế hoạch ngày hội xanh qua trang thông tin và fanpage chính thống của trường.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -3803,8 +3806,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng phân công nhiệm vụ sự kiện (truyền thông, hậu cần, nội dung, kỹ thuật)",
         location: "Phòng học",
         nlsCode: "2.4.TC2a",
-        aiCode: "8.D2.1",
-        dc: "• [Mã NLS: 2.4.TC2a] Lập kế hoạch sự kiện trên nền tảng số, phân công nhiệm vụ và kiểm soát tiến độ thời gian thực.\n• [Mã AI: 8.D2.1] Sử dụng sơ đồ Gantt tự động để theo dõi các hạng mục công việc chuẩn bị cho sự kiện.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.4.TC2a] Lập kế hoạch sự kiện trên nền tảng số, phân công nhiệm vụ và kiểm soát tiến độ thời gian thực.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -3816,8 +3819,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Gian trưng bày cẩm nang du lịch, mô hình di tích, máy chiếu",
         location: "Phòng học / Sân trường",
         nlsCode: "3.1.TC2a",
-        aiCode: "8.C1.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Trình diễn bài giới thiệu cảnh quan kết hợp video số và thuyết minh song ngữ.\n• [Mã AI: 8.C1.1] Khám phá công nghệ số tạo mã QR tương tác cho khách tham quan tra cứu thông tin di tích.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC2a] Trình diễn bài giới thiệu cảnh quan kết hợp video số và thuyết minh song ngữ.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -3829,8 +3832,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Số liệu thống kê thiệt hại bão lũ, sạt lở đất tại địa phương qua các năm",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC2b",
-        aiCode: "8.A1.1",
-        dc: "• [Mã NLS: 1.1.TC2b] Khai thác các báo cáo phòng chống thiên tai và số liệu thiệt hại trên cổng thông tin Ban chỉ huy PCTT địa phương.\n• [Mã AI: 8.A1.1] Nhận thức tính khốc liệt của thiên tai và sự cần thiết phải chủ động ứng phó giảm nhẹ rủi ro.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.1.TC2b] Khai thác các báo cáo phòng chống thiên tai và số liệu thiệt hại trên cổng thông tin Ban chỉ huy PCTT địa phương.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -3842,8 +3845,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Biểu mẫu nhập liệu số, phiếu thu thập dữ liệu thiên tai",
         location: "Phòng học / Phòng Tin học",
         nlsCode: "1.3.TC2a",
-        aiCode: "8.C1.1",
-        dc: "• [Mã NLS: 1.3.TC2a] Nhập và xử lý dữ liệu thống kê thiên tai (số đợt bão, lũ lụt, thiệt hại tài sản) trên bảng tính Excel.\n• [Mã AI: 8.C1.1] Sử dụng biểu đồ số tự động vẽ xu hướng biến động của các hiện tượng thời tiết cực đoan.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.3.TC2a] Nhập và xử lý dữ liệu thống kê thiên tai (số đợt bão, lũ lụt, thiệt hại tài sản) trên bảng tính Excel.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -3855,8 +3858,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Mẫu báo cáo nghiên cứu khoa học mini, slide thuyết trình nhóm",
         location: "Phòng học",
         nlsCode: "3.1.TC2a",
-        aiCode: "8.D1.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Soạn thảo báo cáo số hoàn chỉnh có trích dẫn nguồn số liệu minh bạch và biểu đồ minh họa.\n• [Mã AI: 8.D1.1] Sử dụng AI hỗ trợ tóm tắt các phát hiện chính và đề xuất giải pháp công trình/phi công trình.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC2a] Soạn thảo báo cáo số hoàn chỉnh có trích dẫn nguồn số liệu minh bạch và biểu đồ minh họa.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -3868,8 +3871,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Khẩu hiệu truyền thông, video hướng dẫn chằng chống nhà cửa, chuẩn bị đồ dự phòng",
         location: "Sân trường / Hội trường",
         nlsCode: "2.3.TC2a",
-        aiCode: "8.A1.1",
-        dc: "• [Mã NLS: 2.3.TC2a] Lan tỏa các ấn phẩm truyền thông số phòng chống thiên tai đến bà con nhân dân địa phương.\n• [Mã AI: 8.A1.1] Thể hiện vai trò xung kích của học sinh trong việc nâng cao ý thức cảnh giác cộng đồng.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.3.TC2a] Lan tỏa các ấn phẩm truyền thông số phòng chống thiên tai đến bà con nhân dân địa phương.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -3881,8 +3884,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Tờ gấp số, video clip hướng dẫn kỹ năng an toàn khi có bão lũ, sạt lở",
         location: "Phòng học",
         nlsCode: "3.1.TC2a",
-        aiCode: "8.D1.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Thiết kế tờ rơi số và video ngắn truyền thông kỹ năng phòng chống lũ quét và sạt lở đất.\n• [Mã AI: 8.D1.1] Dùng công cụ AI chuyển văn bản thành giọng đọc truyền cảm để làm bản tin phát thanh cơ sở.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC2a] Thiết kế tờ rơi số và video ngắn truyền thông kỹ năng phòng chống lũ quét và sạt lở đất.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -3894,8 +3897,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Phiếu khảo sát phản hồi của người dân, báo cáo lượt xem chia sẻ trực tuyến",
         location: "Phòng học",
         nlsCode: "2.2.TC2a",
-        aiCode: "8.B1.1",
-        dc: "• [Mã NLS: 2.2.TC2a] Đo lường số lượt tương tác và phản hồi của người dân về các thông điệp phòng tránh thiên tai.\n• [Mã AI: 8.B1.1] Đảm bảo tính chính xác và không gây hoang mang dư luận khi chia sẻ tin tức thời tiết khẩn cấp.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.2.TC2a] Đo lường số lượt tương tác và phản hồi của người dân về các thông điệp phòng tránh thiên tai.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -3907,8 +3910,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video phóng sự các ngành nghề mới nổi trong thời đại số (lập trình, phân tích dữ liệu, thương mại điện tử, tự động hóa)",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC2b",
-        aiCode: "",
-        dc: "• [Mã NLS: 1.1.TC2b] Tìm kiếm và tra cứu hệ thống danh mục nghề nghiệp chuẩn quốc gia và xu hướng việc làm thời đại chuyển đổi số.",
+        aiCode: "8.C1.1",
+        dc: "• [Mã NLS: 1.1.TC2b] Tìm kiếm và tra cứu hệ thống danh mục nghề nghiệp chuẩn quốc gia và xu hướng việc làm thời đại chuyển đổi số.\n• [Mã AI: 8.C1.1] Khám phá cách các mô hình ngôn ngữ lớn (NLP) phân tích xu hướng thị trường lao động và dữ liệu tuyển dụng việc làm.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -3920,8 +3923,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng phân loại các nhóm nghề theo lĩnh vực (Kỹ thuật - Công nghệ, Kinh tế - Xã hội, Y tế - Giáo dục, Nghệ thuật)",
         location: "Phòng học",
         nlsCode: "1.3.TC2a",
-        aiCode: "",
-        dc: "• [Mã NLS: 1.3.TC2a] Thiết lập cơ sở dữ liệu số phân loại các nghề nghiệp hiện đại theo lĩnh vực, chuyên môn và thị trường lao động.",
+        aiCode: "8.D1.1",
+        dc: "• [Mã NLS: 1.3.TC2a] Thiết lập cơ sở dữ liệu số phân loại các nghề nghiệp hiện đại theo lĩnh vực, chuyên môn và thị trường lao động.\n• [Mã AI: 8.D1.1] Thiết kế quy trình sử dụng công cụ AI hỗ trợ tra cứu, phân loại và lập danh mục các nhóm ngành nghề mới nổi.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -3933,8 +3936,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Sơ đồ cây nghề nghiệp, bài thuyết trình nhóm",
         location: "Phòng học",
         nlsCode: "2.2.TC2a",
-        aiCode: "",
-        dc: "• [Mã NLS: 2.2.TC2a] Trình bày bản đồ nghề nghiệp tương lai bằng bài trình chiếu số, giải thích căn cứ lựa chọn các ngành nghề tiềm năng.",
+        aiCode: "8.A3.3",
+        dc: "• [Mã NLS: 2.2.TC2a] Trình bày bản đồ nghề nghiệp tương lai bằng bài trình chiếu số, giải thích căn cứ lựa chọn các ngành nghề tiềm năng.\n• [Mã AI: 8.A3.3] Thể hiện trách nhiệm giải trình và trích dẫn minh bạch nguồn dữ liệu nghề nghiệp do AI gợi ý trong báo cáo.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -3946,8 +3949,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video tư liệu về tác động của tự động hóa và công nghệ số đến việc làm, máy chiếu",
         location: "Sân trường / Hội trường",
         nlsCode: "2.1.TC2a",
-        aiCode: "",
-        dc: "• [Mã NLS: 2.1.TC2a] Theo dõi và thảo luận trên diễn đàn hướng nghiệp số về các kỹ năng số cần thiết cho người lao động thời đại mới.",
+        aiCode: "8.A1.1",
+        dc: "• [Mã NLS: 2.1.TC2a] Theo dõi và thảo luận trên diễn đàn hướng nghiệp số về các kỹ năng số cần thiết cho người lao động thời đại mới.\n• [Mã AI: 8.A1.1] Phân tích những ngành nghề đòi hỏi sự thấu cảm, cảm xúc con người mà công nghệ AI khó có thể thay thế hoàn toàn.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -3959,8 +3962,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Tranh ảnh, video về thiết bị làm việc của kỹ sư phần mềm, bác sĩ đa khoa, chuyên viên logistics, nhà thiết kế đồ họa",
         location: "Phòng học",
         nlsCode: "1.2.TC2a",
-        aiCode: "",
-        dc: "• [Mã NLS: 1.2.TC2a] Khảo sát và số hóa thông tin về các công cụ công nghệ và thiết bị hiện đại được sử dụng trong các nghề nghiệp phổ biến.",
+        aiCode: "8.C1.1",
+        dc: "• [Mã NLS: 1.2.TC2a] Khảo sát và số hóa thông tin về các công cụ công nghệ và thiết bị hiện đại được sử dụng trong các nghề nghiệp phổ biến.\n• [Mã AI: 8.C1.1] Tìm hiểu ứng dụng thị giác máy tính và robot thông minh trong tự động hóa dây chuyền sản xuất hiện đại.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -3972,8 +3975,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Phiếu phỏng vấn chuyên gia/người lao động trong lĩnh vực hiện đại, điện thoại ghi âm",
         location: "Phòng học",
         nlsCode: "1.2.TC2b",
-        aiCode: "",
-        dc: "• [Mã NLS: 1.2.TC2b] Thu thập và biên tập dữ liệu phỏng vấn người lao động thành podcast hoặc video bài học nghề nghiệp.",
+        aiCode: "8.B2.1",
+        dc: "• [Mã NLS: 1.2.TC2b] Thu thập và biên tập dữ liệu phỏng vấn người lao động thành podcast hoặc video bài học nghề nghiệp.\n• [Mã AI: 8.B2.1] Thực hiện các giải pháp bảo vệ dữ liệu cá nhân, tôn trọng quyền riêng tư khi ghi âm phỏng vấn người làm nghề.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -3985,8 +3988,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video về áp lực cạnh tranh, yêu cầu cập nhật công nghệ liên tục và học tập suốt đời",
         location: "Sân trường / Hội trường",
         nlsCode: "5.4.TC2a",
-        aiCode: "",
-        dc: "• [Mã NLS: 5.4.TC2a] Nhận thức tầm quan trọng của việc tự nâng cao năng lực số liên tục để thích ứng với thị trường lao động thay đổi.",
+        aiCode: "8.A1.2",
+        dc: "• [Mã NLS: 5.4.TC2a] Nhận thức tầm quan trọng của việc tự nâng cao năng lực số liên tục để thích ứng với thị trường lao động thay đổi.\n• [Mã AI: 8.A1.2] Đánh giá nguy cơ suy giảm tư duy phản biện và tính chủ động nếu người lao động quá phụ thuộc vào công cụ AI.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -3998,8 +4001,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Mô hình năng lực thế kỷ 21 (Tư duy phản biện, Sáng tạo, Hợp tác, Giao tiếp)",
         location: "Phòng học",
         nlsCode: "3.1.TC2a",
-        aiCode: "",
-        dc: "• [Mã NLS: 3.1.TC2a] Thiết kế bảng chân dung người lao động thế kỷ 21 trên phần mềm sơ đồ tư duy số.",
+        aiCode: "8.A2.1",
+        dc: "• [Mã NLS: 3.1.TC2a] Thiết kế bảng chân dung người lao động thế kỷ 21 trên phần mềm sơ đồ tư duy số.\n• [Mã AI: 8.A2.1] Nhận thức về các nguy cơ bị theo dõi dữ liệu hành vi tại nơi làm việc và kỹ năng tự bảo vệ trong môi trường số.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -4011,8 +4014,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Báo cáo nghiên cứu nghề nghiệp, slide thuyết trình đa phương tiện",
         location: "Phòng học",
         nlsCode: "3.1.TC2a",
-        aiCode: "",
-        dc: "• [Mã NLS: 3.1.TC2a] Thuyết trình báo cáo nghiên cứu nghề nghiệp hiện đại bằng bài trình chiếu số tương tác.",
+        aiCode: "8.D2.1",
+        dc: "• [Mã NLS: 3.1.TC2a] Thuyết trình báo cáo nghiên cứu nghề nghiệp hiện đại bằng bài trình chiếu số tương tác.\n• [Mã AI: 8.D2.1] Ứng dụng trợ lý ảo AI để hoàn thiện slide trình chiếu tương tác báo cáo toàn diện về nghề nghiệp thế kỷ 21.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -4024,8 +4027,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video chuyên gia tư vấn chọn ngành, chọn trường cho học sinh THCS, máy chiếu",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC2a",
-        aiCode: "",
-        dc: "• [Mã NLS: 1.1.TC2a] Tiếp cận tài liệu hướng nghiệp và xác định mục tiêu khảo sát nhu cầu nghề nghiệp học sinh qua nền tảng số.",
+        aiCode: "8.A1.1",
+        dc: "• [Mã NLS: 1.1.TC2a] Tiếp cận tài liệu hướng nghiệp và xác định mục tiêu khảo sát nhu cầu nghề nghiệp học sinh qua nền tảng số.\n• [Mã AI: 8.A1.1] Nhận thức rằng AI chỉ là công cụ hỗ trợ thông tin, đam mê và hứng thú nghề nghiệp phải xuất phát từ chính con người.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -4037,8 +4040,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Biểu mẫu thiết kế câu hỏi khảo sát sở thích nghề nghiệp (Google Forms / Microsoft Forms)",
         location: "Phòng học / Phòng Tin học",
         nlsCode: "1.1.TC2b",
-        aiCode: "",
-        dc: "• [Mã NLS: 1.1.TC2b] Thiết kế bảng hỏi khảo sát trực tuyến trên Google Forms với cấu trúc câu hỏi phân loại rõ ràng.",
+        aiCode: "8.D1.1",
+        dc: "• [Mã NLS: 1.1.TC2b] Thiết kế bảng hỏi khảo sát trực tuyến trên Google Forms với cấu trúc câu hỏi phân loại rõ ràng.\n• [Mã AI: 8.D1.1] Xây dựng ý tưởng ứng dụng AI hỗ trợ thiết kế bộ câu hỏi trắc nghiệm hứng thú nghề nghiệp khách quan, khoa học.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -4050,8 +4053,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Phần mềm phân tích dữ liệu bảng tính, biểu đồ số",
         location: "Phòng Tin học / Phòng học",
         nlsCode: "1.3.TC2a",
-        aiCode: "",
-        dc: "• [Mã NLS: 1.3.TC2a] Thu thập, làm sạch và xuất biểu đồ hình tròn/hình cột phân tích xu hướng hứng thú nghề nghiệp của học sinh khối 8.",
+        aiCode: "8.B1.1",
+        dc: "• [Mã NLS: 1.3.TC2a] Thu thập, làm sạch và xuất biểu đồ hình tròn/hình cột phân tích xu hướng hứng thú nghề nghiệp của học sinh khối 8.\n• [Mã AI: 8.B1.1] Nhận diện và phòng tránh rủi ro rò rỉ dữ liệu cá nhân của học sinh trong quá trình thu thập và xử lý kết quả khảo sát.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -4063,8 +4066,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng theo dõi kế hoạch rèn luyện thể lực và kỹ năng mềm, nhật ký rèn luyện",
         location: "Sân trường / Phòng học",
         nlsCode: "5.3.TC2a",
-        aiCode: "",
-        dc: "• [Mã NLS: 5.3.TC2a] Lập kế hoạch rèn luyện sức bền thể lực và sự kiên trì trên ứng dụng theo dõi sức khỏe và mục tiêu số.",
+        aiCode: "8.C5.1",
+        dc: "• [Mã NLS: 5.3.TC2a] Lập kế hoạch rèn luyện sức bền thể lực và sự kiên trì trên ứng dụng theo dõi sức khỏe và mục tiêu số.\n• [Mã AI: 8.C5.1] Nhận biết tầm quan trọng của chỉ số cảm xúc (EQ) và ý chí kiên trì – những năng lực đặc trưng của con người mà AI không có.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -4076,8 +4079,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Cẩm nang chương trình THPT mới (các tổ hợp môn lựa chọn: KHTN, KHXH, Công nghệ - Nghệ thuật)",
         location: "Phòng học",
         nlsCode: "1.2.TC2a",
-        aiCode: "",
-        dc: "• [Mã NLS: 1.2.TC2a] Tra cứu đề án tuyển sinh và sơ đồ tổ hợp môn học cấp THPT trên website các trường cấp 3 trên địa bàn.",
+        aiCode: "8.A3.3",
+        dc: "• [Mã NLS: 1.2.TC2a] Tra cứu đề án tuyển sinh và sơ đồ tổ hợp môn học cấp THPT trên website các trường cấp 3 trên địa bàn.\n• [Mã AI: 8.A3.3] Sử dụng tư duy phản biện để thẩm định các gợi ý chọn tổ hợp môn học THPT từ các mô hình AI tư vấn hướng nghiệp.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -4089,8 +4092,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bản kế hoạch học tập hướng nghiệp cá nhân lớp 8 chuẩn bị lên lớp 9",
         location: "Phòng học",
         nlsCode: "3.1.TC2a",
-        aiCode: "",
-        dc: "• [Mã NLS: 3.1.TC2a] Xây dựng bản lộ trình học tập hướng nghiệp số (Career Roadmap) định hướng các môn học trọng tâm cho lớp 9.",
+        aiCode: "8.D2.1",
+        dc: "• [Mã NLS: 3.1.TC2a] Xây dựng bản lộ trình học tập hướng nghiệp số (Career Roadmap) định hướng các môn học trọng tâm cho lớp 9.\n• [Mã AI: 8.D2.1] Ứng dụng trợ lý ảo xây dựng kịch bản lộ trình học tập cá nhân hóa chuẩn bị chuyển cấp vào lớp 10 THPT.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -4101,9 +4104,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Đánh giá toàn diện hồ sơ năng lực học tập trải nghiệm và các sản phẩm hướng nghiệp trong suốt năm học lớp 8.",
         equipment: "Portfolio học tập trải nghiệm số, báo cáo dự án nghề nghiệp, máy chiếu",
         location: "Phòng học",
-        nlsCode: "3.1.TC2a",
-        aiCode: "8.C1.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Trình bày toàn bộ Portfolio trải nghiệm số lớp 8 với đầy đủ minh chứng phát triển năng lực.\n• [Mã AI: 8.C1.1] Tối ưu hóa cấu trúc dữ liệu hồ sơ cá nhân số phục vụ phân luồng sau THCS.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra cuối kỳ"
       },
       {
@@ -4114,9 +4117,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Đánh giá sự trưởng thành về phẩm chất, kỹ năng làm chủ bản thân, năng lực số và định hướng nghề nghiệp.",
         equipment: "Bảng kiểm rubric đánh giá cuối năm lớp 8 môn HĐTN, phiếu tự đánh giá",
         location: "Phòng học",
-        nlsCode: "1.2.TC2a",
-        aiCode: "8.A3.3",
-        dc: "• [Mã NLS: 1.2.TC2a] Thực hiện bài đánh giá năng lực cuối năm trên cổng khảo thí số của nhà trường.\n• [Mã AI: 8.A3.3] Thể hiện tính tự giác, nghiêm túc và trách nhiệm trong việc tự đánh giá sự tiến bộ bản thân.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra cuối kỳ"
       },
       {
@@ -4127,9 +4130,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Tổng kết đánh giá kết quả cả năm học lớp 8; biểu dương các học sinh tiêu biểu và định hướng chuẩn bị bước vào lớp 9 cuối cấp.",
         equipment: "Giấy khen, video phóng sự tổng kết năm học lớp 8, loa micro",
         location: "Phòng học / Hội trường",
-        nlsCode: "2.2.TC2a",
-        aiCode: "8.A1.1",
-        dc: "• [Mã NLS: 2.2.TC2a] Chia sẻ kỷ yếu số lớp 8 và kế hoạch chuẩn bị tâm thế vững vàng bước vào năm học lớp 9 cuối cấp.\n• [Mã AI: 8.A1.1] Khẳng định bản lĩnh và sự tự tin của học sinh lớp 8 trước những chặng đường phát triển mới.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Tổng kết năm học"
       }
     ];
@@ -4148,8 +4151,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Kế hoạch hoạt động Đoàn trường năm học, cờ Đoàn, video phóng sự truyền thống lớp 9 cuối cấp",
         location: "Sân trường / Hội trường",
         nlsCode: "2.3.TC2a",
-        aiCode: "9.A1.1",
-        dc: "• [Mã NLS: 2.3.TC2a] Tham gia các phong trào thanh niên và đăng ký hoạt động Đoàn trên ứng dụng Thanh niên Việt Nam (App VNelD/Đoàn).\n• [Mã AI: 9.A1.1] Khẳng định bản lĩnh tiên phong, tính gương mẫu của người đội viên lớn tuổi chuẩn bị kết nạp Đoàn.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.3.TC2a] Tham gia các phong trào thanh niên và đăng ký hoạt động Đoàn trên ứng dụng Thanh niên Việt Nam (App VNelD/Đoàn).",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -4161,8 +4164,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Phiếu khảo sát mức độ hòa nhập, giấy A0, sơ đồ tư duy văn hóa học đường",
         location: "Phòng học",
         nlsCode: "2.5.TC2a",
-        aiCode: "9.A2.2",
-        dc: "• [Mã NLS: 2.5.TC2a] Thực hành các quy tắc ứng xử văn minh, tôn trọng cá tính và sự đa dạng của bạn bè trong đời sống và trên môi trường số.\n• [Mã AI: 9.A2.2] Nhận diện và đấu tranh chống lại các định kiến, thiên vị thuật toán gây chia rẽ trong cộng đồng học sinh.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.5.TC2a] Thực hành các quy tắc ứng xử văn minh, tôn trọng cá tính và sự đa dạng của bạn bè trong đời sống và trên môi trường số.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -4174,8 +4177,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Tình huống bất đồng quan điểm giữa các nhóm học sinh, thẻ xử lý tình huống",
         location: "Phòng học",
         nlsCode: "2.4.TC2a",
-        aiCode: "9.A3.1",
-        dc: "• [Mã NLS: 2.4.TC2a] Sử dụng không gian làm việc số chia sẻ để lắng nghe các quan điểm đa chiều và cùng tìm giải pháp hòa hợp.\n• [Mã AI: 9.A3.1] Rèn luyện tư duy phản biện nhân văn và tinh thần hợp tác tôn trọng sự khác biệt.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.4.TC2a] Sử dụng không gian làm việc số chia sẻ để lắng nghe các quan điểm đa chiều và cùng tìm giải pháp hòa hợp.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -4187,8 +4190,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video tư liệu về các vụ việc bạo lực học đường và giải pháp can thiệp sớm, máy chiếu",
         location: "Sân trường / Hội trường",
         nlsCode: "4.3.TC2a",
-        aiCode: "9.B2.3",
-        dc: "• [Mã NLS: 4.3.TC2a] Nhận diện các mối nguy hại từ bạo lực mạng, tin đồn thất thiệt và hành vi cô lập trên không gian số.\n• [Mã AI: 9.B2.3] Cảnh giác trước các công cụ tạo nội dung giả mạo (Deepfake, fake chat) nhằm bôi nhọ nhân phẩm bạn bè.",
+        aiCode: "",
+        dc: "• [Mã NLS: 4.3.TC2a] Nhận diện các mối nguy hại từ bạo lực mạng, tin đồn thất thiệt và hành vi cô lập trên không gian số.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -4200,8 +4203,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Mẫu kế hoạch chiến dịch truyền thông \"Lớp học không bạo lực\", bảng phân công",
         location: "Phòng học",
         nlsCode: "5.3.TC2a",
-        aiCode: "9.D1.1",
-        dc: "• [Mã NLS: 5.3.TC2a] Thiết lập kế hoạch chiến dịch phòng chống bắt nạt học đường trên ứng dụng quản lý dự án số.\n• [Mã AI: 9.D1.1] Ứng dụng AI đề xuất các giải pháp truyền thông sáng tạo và cơ chế hỗ trợ ẩn danh cho nạn nhân.",
+        aiCode: "",
+        dc: "• [Mã NLS: 5.3.TC2a] Thiết lập kế hoạch chiến dịch phòng chống bắt nạt học đường trên ứng dụng quản lý dự án số.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -4213,8 +4216,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Hòm thư điện tử tâm sự ẩn danh, phiếu khảo sát đánh giá hiệu quả chiến dịch",
         location: "Phòng học",
         nlsCode: "1.2.TC2a",
-        aiCode: "9.C4.1",
-        dc: "• [Mã NLS: 1.2.TC2a] Khảo sát và phân tích dữ liệu phản hồi ẩn danh của học sinh về mức độ an toàn học đường.\n• [Mã AI: 9.C4.1] Đảm bảo tính bảo mật và sự riêng tư tuyệt đối của dữ liệu khảo sát nhạy cảm.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.2.TC2a] Khảo sát và phân tích dữ liệu phản hồi ẩn danh của học sinh về mức độ an toàn học đường.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -4226,8 +4229,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Kế hoạch công trình măng non khối 9, video phóng sự kỷ niệm trường",
         location: "Sân trường / Hội trường",
         nlsCode: "2.1.TC2a",
-        aiCode: "9.A1.1",
-        dc: "• [Mã NLS: 2.1.TC2a] Tiếp cận và chia sẻ kế hoạch công trình tri ân nhà trường của khối 9 trên trang thông tin trường.\n• [Mã AI: 9.A1.1] Bồi đắp niềm tự hào và tình cảm tri ân sâu sắc với mái trường THCS thân thương.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.1.TC2a] Tiếp cận và chia sẻ kế hoạch công trình tri ân nhà trường của khối 9 trên trang thông tin trường.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -4239,8 +4242,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Dụng cụ lao động, máy tính thiết kế kỷ yếu số / kỷ vật tri ân",
         location: "Phòng học / Khuôn viên trường",
         nlsCode: "3.1.TC2a",
-        aiCode: "9.C2.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Thiết kế kỷ yếu số, video lưu bút hoặc cẩm nang kinh nghiệm học tập tặng học sinh khóa dưới.\n• [Mã AI: 9.C2.1] Ứng dụng công cụ AI hỗ trợ xử lý hình ảnh kỷ niệm và thiết kế trang bìa kỷ yếu ấn tượng.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC2a] Thiết kế kỷ yếu số, video lưu bút hoặc cẩm nang kinh nghiệm học tập tặng học sinh khóa dưới.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -4252,8 +4255,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Kỷ vật tri ân hoàn thiện, slide báo cáo công trình, máy chiếu",
         location: "Phòng học",
         nlsCode: "2.2.TC2a",
-        aiCode: "9.A3.1",
-        dc: "• [Mã NLS: 2.2.TC2a] Trình chiếu sản phẩm kỷ yếu số và báo cáo thành tích rèn luyện của đoàn viên thanh niên lớp 9.\n• [Mã AI: 9.A3.1] Khẳng định tinh thần trách nhiệm của người học sinh cuối cấp trước tập thể trường.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.2.TC2a] Trình chiếu sản phẩm kỷ yếu số và báo cáo thành tích rèn luyện của đoàn viên thanh niên lớp 9.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -4265,8 +4268,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video phóng sự văn hóa giao tiếp học sinh cuối cấp, máy chiếu, micro",
         location: "Sân trường / Hội trường",
         nlsCode: "2.5.TC2a",
-        aiCode: "9.A1.1",
-        dc: "• [Mã NLS: 2.5.TC2a] Phân tích nét văn hóa giao tiếp lịch thiệp, chuẩn mực của người học sinh trưởng thành trong thời đại số.\n• [Mã AI: 9.A1.1] Nhận thức tầm quan trọng của ngôn ngữ có văn hóa trong việc khẳng định nhân cách cá nhân.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.5.TC2a] Phân tích nét văn hóa giao tiếp lịch thiệp, chuẩn mực của người học sinh trưởng thành trong thời đại số.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -4278,8 +4281,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Gương tự soi cá nhân, phiếu trắc nghiệm hành vi giao tiếp (nói tục, ngắt lời, thiếu kiên nhẫn)",
         location: "Phòng học",
         nlsCode: "1.2.TC2a",
-        aiCode: "9.C4.1",
-        dc: "• [Mã NLS: 1.2.TC2a] Phân loại các thói quen giao tiếp trực tiếp và trên mạng xã hội vào bảng phân tích ưu - khuyết điểm số.\n• [Mã AI: 9.C4.1] Đánh giá mức độ ảnh hưởng của ngôn ngữ mạng tiêu cực đến văn phong học thuật.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.2.TC2a] Phân loại các thói quen giao tiếp trực tiếp và trên mạng xã hội vào bảng phân tích ưu - khuyết điểm số.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -4291,8 +4294,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Phiếu đóng góp ý kiến ẩn danh (360 độ từ bạn bè, thầy cô, người thân)",
         location: "Phòng học",
         nlsCode: "1.3.TC2a",
-        aiCode: "9.A3.1",
-        dc: "• [Mã NLS: 1.3.TC2a] Thu thập và tổng hợp phản hồi góp ý qua biểu mẫu số an toàn, bảo đảm tính khách quan.\n• [Mã AI: 9.A3.1] Dũng cảm đối diện với các hạn chế cá nhân và cam kết rèn luyện thay đổi.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.3.TC2a] Thu thập và tổng hợp phản hồi góp ý qua biểu mẫu số an toàn, bảo đảm tính khách quan.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -4304,8 +4307,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video chuyên gia tâm lý về nghệ thuật lắng nghe và giao tiếp kết nối, máy chiếu",
         location: "Sân trường / Hội trường",
         nlsCode: "2.1.TC2b",
-        aiCode: "9.A1.1",
-        dc: "• [Mã NLS: 2.1.TC2b] Tham gia diễn đàn trao đổi trực tuyến về phương pháp hóa giải bất đồng và gắn kết tập thể.\n• [Mã AI: 9.A1.1] Khẳng định sức mạnh của lời nói tử tế và sự thấu cảm trong các mối quan hệ con người.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.1.TC2b] Tham gia diễn đàn trao đổi trực tuyến về phương pháp hóa giải bất đồng và gắn kết tập thể.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -4317,8 +4320,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Thẻ bài tập tình huống giao tiếp với thầy cô giáo bộ môn, bạn bè khi có áp lực thi cử",
         location: "Phòng học",
         nlsCode: "2.4.TC2a",
-        aiCode: "9.B2.3",
-        dc: "• [Mã NLS: 2.4.TC2a] Thực hành thảo luận nhóm giải quyết tình huống giao tiếp học đường trên không gian cộng tác số.\n• [Mã AI: 9.B2.3] Rèn luyện kỹ năng tự bảo vệ và giữ bình tĩnh trước các thông tin kích động trên mạng.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.4.TC2a] Thực hành thảo luận nhóm giải quyết tình huống giao tiếp học đường trên không gian cộng tác số.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -4330,8 +4333,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng theo dõi hành vi tích cực của lớp, phiếu tự đánh giá",
         location: "Phòng học",
         nlsCode: "2.2.TC2a",
-        aiCode: "9.A3.1",
-        dc: "• [Mã NLS: 2.2.TC2a] Trình bày bài học cá nhân về sự chuyển biến trong thái độ và cách nói năng qua bài viết số.\n• [Mã AI: 9.A3.1] Khẳng định sự trưởng thành về năng lực giao tiếp và quản lý cảm xúc của học sinh lớp 9.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.2.TC2a] Trình bày bài học cá nhân về sự chuyển biến trong thái độ và cách nói năng qua bài viết số.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -4343,8 +4346,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video phóng sự về những ngã rẽ và thay đổi lớn sau khi tốt nghiệp THCS, máy chiếu",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC2a",
-        aiCode: "9.A1.1",
-        dc: "• [Mã NLS: 1.1.TC2a] Tìm hiểu về các giai đoạn chuyển tiếp tâm lý lứa tuổi và yêu cầu thích ứng môi trường mới qua tài liệu số.\n• [Mã AI: 9.A1.1] Khẳng định trí tuệ thích ứng linh hoạt (AQ) là năng lực cốt lõi của con người trong thế giới biến đổi nhanh.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.1.TC2a] Tìm hiểu về các giai đoạn chuyển tiếp tâm lý lứa tuổi và yêu cầu thích ứng môi trường mới qua tài liệu số.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -4356,8 +4359,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bài trắc nghiệm chỉ số thích ứng (AQ), phiếu tình huống thay đổi đột ngột",
         location: "Phòng học",
         nlsCode: "1.2.TC2a",
-        aiCode: "9.C4.1",
-        dc: "• [Mã NLS: 1.2.TC2a] Thực hiện bài test trắc nghiệm tâm lý trực tuyến đánh giá mức độ linh hoạt và khả năng ứng phó sự thay đổi.\n• [Mã AI: 9.C4.1] Phân tích dữ liệu phản hồi cá nhân để hiểu rõ điểm nghẽn tâm lý khi đối diện với biến cố.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.2.TC2a] Thực hiện bài test trắc nghiệm tâm lý trực tuyến đánh giá mức độ linh hoạt và khả năng ứng phó sự thay đổi.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -4369,8 +4372,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Sơ đồ phân tích SWOT cá nhân về khả năng thích ứng",
         location: "Phòng học",
         nlsCode: "1.3.TC2a",
-        aiCode: "9.D1.1",
-        dc: "• [Mã NLS: 1.3.TC2a] Thiết lập bảng phân tích điểm mạnh, điểm yếu trong phản xạ thích nghi trên tài liệu số.\n• [Mã AI: 9.D1.1] Nhận đề xuất các chiến lược tâm lý từ công cụ AI để nâng cao khả năng phục hồi tinh thần (resilience).",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.3.TC2a] Thiết lập bảng phân tích điểm mạnh, điểm yếu trong phản xạ thích nghi trên tài liệu số.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -4382,8 +4385,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Các tình huống: chuyển trường, kết quả thi không như ý, gia đình thay đổi chỗ ở, công nghệ học tập mới",
         location: "Phòng học",
         nlsCode: "2.4.TC2a",
-        aiCode: "9.A3.1",
-        dc: "• [Mã NLS: 2.4.TC2a] Hợp tác nhóm trên nền tảng số xây dựng các kịch bản thích nghi tích cực cho từng biến cố đời sống.\n• [Mã AI: 9.A3.1] Rèn luyện thái độ lạc quan, chủ động biến thách thức thành cơ hội phát triển bản thân.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.4.TC2a] Hợp tác nhóm trên nền tảng số xây dựng các kịch bản thích nghi tích cực cho từng biến cố đời sống.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -4395,8 +4398,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Mẫu kế hoạch rèn luyện bản lĩnh sống và kỹ năng thích nghi",
         location: "Phòng học",
         nlsCode: "5.3.TC2a",
-        aiCode: "9.C2.1",
-        dc: "• [Mã NLS: 5.3.TC2a] Thiết kế bản kế hoạch rèn luyện kỹ năng thích ứng trên phần mềm quản lý mục tiêu số.\n• [Mã AI: 9.C2.1] Khai thác các ứng dụng học tập trực tuyến để chủ động học các kỹ năng mới chuẩn bị cho cấp 3.",
+        aiCode: "",
+        dc: "• [Mã NLS: 5.3.TC2a] Thiết kế bản kế hoạch rèn luyện kỹ năng thích ứng trên phần mềm quản lý mục tiêu số.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -4408,8 +4411,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng theo dõi sự tiến bộ, phiếu đóng góp ý kiến",
         location: "Phòng học",
         nlsCode: "2.2.TC2a",
-        aiCode: "9.A3.1",
-        dc: "• [Mã NLS: 2.2.TC2a] Báo cáo những thay đổi tích cực trong tâm thế học tập và sinh hoạt qua hồ sơ rèn luyện điện tử.\n• [Mã AI: 9.A3.1] Thể hiện sự tự tin và sẵn sàng bước vào giai đoạn ôn thi nước rút.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.2.TC2a] Báo cáo những thay đổi tích cực trong tâm thế học tập và sinh hoạt qua hồ sơ rèn luyện điện tử.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -4420,9 +4423,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Đánh giá mức độ đạt chuẩn yêu cầu cần đạt của Chủ đề 1 (Em với nhà trường) và Chủ đề 2 (Khám phá bản thân).",
         equipment: "Hồ sơ rèn luyện cá nhân, sản phẩm kỷ yếu số, chiến dịch phòng chống bạo lực, máy chiếu",
         location: "Phòng học",
-        nlsCode: "3.1.TC2a",
-        aiCode: "9.C2.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Báo cáo sản phẩm số tổng hợp kết quả học tập và rèn luyện kỹ năng nửa đầu Học kỳ I.\n• [Mã AI: 9.C2.1] Ứng dụng công nghệ đồ họa và trình chiếu hiện đại để làm nổi bật minh chứng thực tế.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra giữa kỳ"
       },
       {
@@ -4433,9 +4436,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Đánh giá năng lực tự chủ, văn hóa giao tiếp và khả năng thích ứng linh hoạt của học sinh lớp 9.",
         equipment: "Bảng tiêu chí rubric đánh giá giữa kỳ môn HĐTN 9, đề bài kiểm tra",
         location: "Phòng học",
-        nlsCode: "1.2.TC2a",
-        aiCode: "9.A3.1",
-        dc: "• [Mã NLS: 1.2.TC2a] Thực hiện bài đánh giá trực tuyến có tính phân loại cao trên hệ thống khảo thí số của trường.\n• [Mã AI: 9.A3.1] Nêu cao tinh thần trung thực, trách nhiệm giải trình và không gian lận học tập.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra giữa kỳ"
       },
       {
@@ -4446,9 +4449,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Rút ra bài học kinh nghiệm, điều chỉnh chiến lược học tập và rèn luyện nửa cuối Học kỳ I.",
         equipment: "Sổ tay rèn luyện lớp 9, kế hoạch học tập cá nhân",
         location: "Phòng học",
-        nlsCode: "1.3.TC2a",
-        aiCode: "9.D1.1",
-        dc: "• [Mã NLS: 1.3.TC2a] Lưu trữ và cập nhật kế hoạch rèn luyện cá nhân vào hồ sơ học sinh điện tử.\n• [Mã AI: 9.D1.1] Nhận phân tích từ công cụ số để tối ưu hóa thời gian biểu học tập và giải tỏa áp lực.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra giữa kỳ"
       },
       {
@@ -4460,8 +4463,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video phóng sự về quyết tâm của học sinh lớp 9 trước kỳ thi chuyển cấp, máy chiếu",
         location: "Sân trường / Hội trường",
         nlsCode: "2.1.TC2a",
-        aiCode: "9.A1.1",
-        dc: "• [Mã NLS: 2.1.TC2a] Tham gia diễn đàn học đường trực tuyến về nâng cao tinh thần trách nhiệm của học sinh lớp 9.\n• [Mã AI: 9.A1.1] Nhận thức vai trò làm chủ tương lai của chính bản thân thông qua nỗ lực học tập thực chất.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.1.TC2a] Tham gia diễn đàn học đường trực tuyến về nâng cao tinh thần trách nhiệm của học sinh lớp 9.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -4473,8 +4476,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng theo dõi hạn nộp bài (Deadlines), phiếu quản lý nhiệm vụ",
         location: "Phòng học",
         nlsCode: "1.3.TC2b",
-        aiCode: "9.C2.1",
-        dc: "• [Mã NLS: 1.3.TC2b] Thiết lập lịch nhắc hạn chót (Deadline Calendar) trên ứng dụng số cá nhân.\n• [Mã AI: 9.C2.1] Sử dụng các trợ lý số để phân chia nhiệm vụ học tập lớn thành các bước nhỏ khả thi.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.3.TC2b] Thiết lập lịch nhắc hạn chót (Deadline Calendar) trên ứng dụng số cá nhân.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -4486,8 +4489,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Mẫu kế hoạch ôn thi vào 10 cá nhân, bảng phân công nhiệm vụ tập thể",
         location: "Phòng học",
         nlsCode: "5.3.TC2a",
-        aiCode: "9.D1.1",
-        dc: "• [Mã NLS: 5.3.TC2a] Xây dựng lộ trình ôn thi vào lớp 10 trên bảng tính số có phân chia thời gian chi tiết từng môn.\n• [Mã AI: 9.D1.1] Ứng dụng AI phân tích khối lượng kiến thức cần ôn tập để tối ưu hóa thời gian biểu.",
+        aiCode: "",
+        dc: "• [Mã NLS: 5.3.TC2a] Xây dựng lộ trình ôn thi vào lớp 10 trên bảng tính số có phân chia thời gian chi tiết từng môn.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -4499,8 +4502,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng tiến độ học tập nhóm, phiếu kiểm tra chéo giữa các tổ",
         location: "Phòng học",
         nlsCode: "2.4.TC2a",
-        aiCode: "9.A3.1",
-        dc: "• [Mã NLS: 2.4.TC2a] Báo cáo tiến độ học tập và ôn luyện theo nhóm trên nền tảng quản lý học tập chung.\n• [Mã AI: 9.A3.1] Thể hiện tinh thần đồng đội, tương trợ giúp đỡ nhau cùng tiến bộ trong học tập.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.4.TC2a] Báo cáo tiến độ học tập và ôn luyện theo nhóm trên nền tảng quản lý học tập chung.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -4512,8 +4515,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Tình huống chậm deadline, tài liệu học tập bị lỗi, mâu thuẫn trong nhóm học tập",
         location: "Phòng học",
         nlsCode: "1.2.TC2a",
-        aiCode: "9.A1.1",
-        dc: "• [Mã NLS: 1.2.TC2a] Đánh giá nguyên nhân phát sinh lỗi và tìm kiếm phương án khắc phục kịp thời qua công cụ số.\n• [Mã AI: 9.A1.1] Dũng cảm nhận trách nhiệm về kết quả công việc của mình, không đùn đẩy hay viện cớ.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.2.TC2a] Đánh giá nguyên nhân phát sinh lỗi và tìm kiếm phương án khắc phục kịp thời qua công cụ số.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -4525,8 +4528,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Biểu đồ đánh giá kết quả hoàn thành nhiệm vụ của cá nhân và chi đội",
         location: "Phòng học",
         nlsCode: "1.3.TC2a",
-        aiCode: "9.C4.1",
-        dc: "• [Mã NLS: 1.3.TC2a] Cập nhật số liệu hoàn thành mục tiêu học tập lên bảng theo dõi hiệu suất cá nhân số.\n• [Mã AI: 9.C4.1] Đánh giá mức độ tiến bộ qua các bài kiểm tra khảo sát chất lượng định kỳ.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.3.TC2a] Cập nhật số liệu hoàn thành mục tiêu học tập lên bảng theo dõi hiệu suất cá nhân số.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -4538,8 +4541,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video tư liệu chuyên đề tâm lý mùa thi, áp lực thi cử và kỳ vọng từ gia đình",
         location: "Sân trường / Hội trường",
         nlsCode: "4.3.TC2a",
-        aiCode: "9.A1.1",
-        dc: "• [Mã NLS: 4.3.TC2a] Nhận biết các biểu hiện tâm lý của hội chứng kiệt sức (Burnout), lo âu và trầm cảm học đường qua tài liệu y tế số.\n• [Mã AI: 9.A1.1] Hiểu rõ sự khác biệt giữa áp lực tích cực (tạo động lực) và căng thẳng quá mức gây hại sức khỏe.",
+        aiCode: "",
+        dc: "• [Mã NLS: 4.3.TC2a] Nhận biết các biểu hiện tâm lý của hội chứng kiệt sức (Burnout), lo âu và trầm cảm học đường qua tài liệu y tế số.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -4551,8 +4554,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Thang đo mức độ căng thẳng DASS-21, phiếu phân tích nguồn gốc áp lực",
         location: "Phòng học",
         nlsCode: "1.2.TC2a",
-        aiCode: "9.C4.1",
-        dc: "• [Mã NLS: 1.2.TC2a] Tự trắc nghiệm mức độ stress trực tuyến qua thang đo tâm lý học đường chuẩn hóa.\n• [Mã AI: 9.C4.1] Phân tích các yếu tố gây căng thẳng (khối lượng bài tập, kỳ vọng điểm số, so sánh xã hội).",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.2.TC2a] Tự trắc nghiệm mức độ stress trực tuyến qua thang đo tâm lý học đường chuẩn hóa.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -4564,8 +4567,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Sơ đồ mạng lưới hỗ trợ tâm lý (thầy cô chủ nhiệm, phòng tham vấn học đường, cha mẹ, bạn bè)",
         location: "Phòng học",
         nlsCode: "2.3.TC2a",
-        aiCode: "9.B2.3",
-        dc: "• [Mã NLS: 2.3.TC2a] Tra cứu các đường dây nóng tư vấn tâm lý học sinh và kênh hỗ trợ trực tuyến miễn phí.\n• [Mã AI: 9.B2.3] Cảnh giác trước các hội nhóm tiêu cực trên mạng lan truyền tâm lý bi quan, tự hại.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.3.TC2a] Tra cứu các đường dây nóng tư vấn tâm lý học sinh và kênh hỗ trợ trực tuyến miễn phí.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -4577,8 +4580,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Kỹ thuật chánh niệm (Mindfulness), bài tập giãn cơ, phương pháp quản lý thời gian Time-blocking",
         location: "Phòng học / Phòng đa năng",
         nlsCode: "4.3.TC2a",
-        aiCode: "9.C2.1",
-        dc: "• [Mã NLS: 4.3.TC2a] Sử dụng các ứng dụng số hướng dẫn hít thở sâu, thiền thư giãn và phát nhạc sóng não alpha tập trung.\n• [Mã AI: 9.C2.1] Ứng dụng công nghệ hỗ trợ phân bổ thời gian học tập - giải trí khoa học.",
+        aiCode: "",
+        dc: "• [Mã NLS: 4.3.TC2a] Sử dụng các ứng dụng số hướng dẫn hít thở sâu, thiền thư giãn và phát nhạc sóng não alpha tập trung.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -4590,8 +4593,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Kịch bản xử lý tình huống cha mẹ đặt kỳ vọng trường chuyên lớp chọn, bị điểm kiểm tra thử thấp",
         location: "Phòng học",
         nlsCode: "2.1.TC2b",
-        aiCode: "9.A1.1",
-        dc: "• [Mã NLS: 2.1.TC2b] Soạn thảo thư ngỏ hoặc tâm sự số gửi gắm suy nghĩ, mong muốn chân thành tới cha mẹ.\n• [Mã AI: 9.A1.1] Xây dựng bản lĩnh tự tin, chuyển hóa áp lực thành động lực cố gắng.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.1.TC2b] Soạn thảo thư ngỏ hoặc tâm sự số gửi gắm suy nghĩ, mong muốn chân thành tới cha mẹ.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -4603,8 +4606,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Sổ tay chăm sóc sức khỏe tinh thần mùa thi, phiếu cam kết ngủ đủ giấc, tập thể thao",
         location: "Phòng học",
         nlsCode: "3.1.TC2a",
-        aiCode: "9.D1.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Thiết kế cẩm nang số \"Bí kíp giữ vững tinh thần thép mùa thi\" bằng Canva.\n• [Mã AI: 9.D1.1] Nhận gợi ý từ AI về chế độ sinh hoạt, dinh dưỡng bổ não trong giai đoạn ôn thi nước rút.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC2a] Thiết kế cẩm nang số \"Bí kíp giữ vững tinh thần thép mùa thi\" bằng Canva.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -4616,8 +4619,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video truyền cảm hứng của các thủ khoa kỳ thi vào lớp 10, câu chuyện thành công, máy chiếu",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC2a",
-        aiCode: "9.A1.1",
-        dc: "• [Mã NLS: 1.1.TC2a] Tiếp cận kho bài giảng và video chia sẻ phương pháp học tập đỉnh cao của các thủ khoa trên Internet.\n• [Mã AI: 9.A1.1] Hiểu rõ động lực nội tại (Internal Motivation) xuất phát từ khát vọng cống hiến và vươn lên của con người.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.1.TC2a] Tiếp cận kho bài giảng và video chia sẻ phương pháp học tập đỉnh cao của các thủ khoa trên Internet.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -4629,8 +4632,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng phân tích \"Kẻ đánh cắp động lực\" (sự lười biếng, sợ thất bại, nghiện mạng xã hội, mất phương hướng)",
         location: "Phòng học",
         nlsCode: "1.2.TC2a",
-        aiCode: "9.C4.1",
-        dc: "• [Mã NLS: 1.2.TC2a] Sử dụng công cụ số đo lường thời gian lãng phí trên điện thoại và mạng xã hội mỗi ngày.\n• [Mã AI: 9.C4.1] Phân tích cơ chế gây xao nhãng của các thuật toán đề xuất video ngắn (Shorts/Reels/TikTok).",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.2.TC2a] Sử dụng công cụ số đo lường thời gian lãng phí trên điện thoại và mạng xã hội mỗi ngày.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -4642,8 +4645,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng tầm nhìn (Vision Board), ảnh ngôi trường cấp 3 mơ ước, phiếu mục tiêu SMART",
         location: "Phòng học",
         nlsCode: "3.1.TC2a",
-        aiCode: "9.C2.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Thiết kế bảng tầm nhìn kỹ thuật số (Digital Vision Board) cài làm hình nền máy tính/điện thoại để nhắc nhở mục tiêu.\n• [Mã AI: 9.C2.1] Sử dụng công cụ AI sáng tạo câu châm ngôn học tập mang đậm dấu ấn cá nhân.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC2a] Thiết kế bảng tầm nhìn kỹ thuật số (Digital Vision Board) cài làm hình nền máy tính/điện thoại để nhắc nhở mục tiêu.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -4655,8 +4658,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng theo dõi tiến độ bài tập tuần, hệ thống điểm thưởng cá nhân",
         location: "Phòng học",
         nlsCode: "5.3.TC2a",
-        aiCode: "9.D1.1",
-        dc: "• [Mã NLS: 5.3.TC2a] Thiết lập bảng theo dõi tiến độ học tập số (Study Tracker) tự động tính tỷ lệ hoàn thành mục tiêu.\n• [Mã AI: 9.D1.1] Khám phá cơ chế tự thưởng lành mạnh để duy trì năng lượng học tập tích cực.",
+        aiCode: "",
+        dc: "• [Mã NLS: 5.3.TC2a] Thiết lập bảng theo dõi tiến độ học tập số (Study Tracker) tự động tính tỷ lệ hoàn thành mục tiêu.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -4668,8 +4671,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Sổ ghi chép bài học mỗi ngày, đồng hồ đếm ngược ngày thi vào 10",
         location: "Phòng học",
         nlsCode: "2.4.TC2a",
-        aiCode: "9.A3.1",
-        dc: "• [Mã NLS: 2.4.TC2a] Tham gia nhóm học tập cùng tiến trên mạng (Study With Me) để tạo động lực học tập chéo.\n• [Mã AI: 9.A3.1] Rèn luyện tính kiên định và ý chí kỷ luật bản thân khi tự học.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.4.TC2a] Tham gia nhóm học tập cùng tiến trên mạng (Study With Me) để tạo động lực học tập chéo.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -4681,8 +4684,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng đánh giá mức độ tiến bộ hàng tuần, phiếu tự kiểm điểm",
         location: "Phòng học",
         nlsCode: "1.3.TC2a",
-        aiCode: "9.C4.1",
-        dc: "• [Mã NLS: 1.3.TC2a] Đối chiếu kết quả điểm số thực tế với mục tiêu đề ra trên bảng theo dõi điện tử.\n• [Mã AI: 9.C4.1] Nhận diện nguyên nhân sụt giảm phong độ để kịp thời điều chỉnh phương pháp học.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.3.TC2a] Đối chiếu kết quả điểm số thực tế với mục tiêu đề ra trên bảng theo dõi điện tử.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -4694,8 +4697,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video phóng sự về quản lý tài chính thông minh cho thanh thiếu niên, máy chiếu",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC2a",
-        aiCode: "9.A1.1",
-        dc: "• [Mã NLS: 1.1.TC2a] Tìm hiểu các mô hình quản lý ngân sách hiện đại (quy tắc 50/30/20) qua học liệu số.\n• [Mã AI: 9.A1.1] Khẳng định tầm quan trọng của việc tự chủ tài chính và tính kỷ luật tiền bạc từ khi còn ngồi trên ghế nhà trường.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.1.TC2a] Tìm hiểu các mô hình quản lý ngân sách hiện đại (quy tắc 50/30/20) qua học liệu số.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -4707,8 +4710,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng phân loại ngân sách cá nhân (Thu nhập, Chi phí thiết yếu, Tiết kiệm, Cho tặng cộng đồng)",
         location: "Phòng học",
         nlsCode: "1.3.TC2a",
-        aiCode: "9.C2.1",
-        dc: "• [Mã NLS: 1.3.TC2a] Thiết kế bảng tính ngân sách cá nhân trên Excel với các danh mục thu, chi, tiết kiệm, quỹ cho tặng rõ ràng.\n• [Mã AI: 9.C2.1] Sử dụng các hàm tự động tính toán tỷ lệ phân bổ ngân sách trong bảng tính.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.3.TC2a] Thiết kế bảng tính ngân sách cá nhân trên Excel với các danh mục thu, chi, tiết kiệm, quỹ cho tặng rõ ràng.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -4720,8 +4723,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Thẻ bài tập mua sắm (sách tham khảo, đồ công nghệ mới, trà sữa, quà sinh nhật)",
         location: "Phòng học",
         nlsCode: "1.2.TC2a",
-        aiCode: "9.A2.2",
-        dc: "• [Mã NLS: 1.2.TC2a] Đánh giá tính cần thiết của từng khoản chi dựa trên dữ liệu giá cả thị trường tra cứu trực tuyến.\n• [Mã AI: 9.A2.2] Nhận diện bẫy tâm lý \"mua theo trào lưu\" do các thuật toán đề xuất mua sắm trên mạng xã hội thúc đẩy.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.2.TC2a] Đánh giá tính cần thiết của từng khoản chi dựa trên dữ liệu giá cả thị trường tra cứu trực tuyến.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -4733,8 +4736,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bài tập tình huống ngân sách 1 tháng giả định của học sinh lớp 9",
         location: "Phòng học",
         nlsCode: "3.1.TC2a",
-        aiCode: "9.D1.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Lập kế hoạch tài chính cá nhân hoàn chỉnh trên phần mềm quản lý tài chính số (Money Lover/Spendee).\n• [Mã AI: 9.D1.1] Nhận phân tích từ trợ lý AI về mức độ cân đối ngân sách và gợi ý phương án tiết kiệm.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC2a] Lập kế hoạch tài chính cá nhân hoàn chỉnh trên phần mềm quản lý tài chính số (Money Lover/Spendee).",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -4746,8 +4749,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Nhật ký theo dõi chi tiêu thực tế trong 1 tháng của học sinh",
         location: "Phòng học",
         nlsCode: "1.3.TC2a",
-        aiCode: "9.C4.1",
-        dc: "• [Mã NLS: 1.3.TC2a] Cập nhật các hóa đơn thu chi thực tế vào ứng dụng quản lý tài chính điện tử.\n• [Mã AI: 9.C4.1] Phân tích độ lệch giữa kế hoạch dự kiến và thực tế chi tiêu để điều chỉnh lối sống.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.3.TC2a] Cập nhật các hóa đơn thu chi thực tế vào ứng dụng quản lý tài chính điện tử.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -4759,8 +4762,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Báo cáo tài chính cá nhân, phiếu nhận xét của giáo viên",
         location: "Phòng học",
         nlsCode: "2.2.TC2a",
-        aiCode: "9.A3.1",
-        dc: "• [Mã NLS: 2.2.TC2a] Thuyết trình báo cáo ngân sách cá nhân bằng slide biểu đồ trực quan trước lớp.\n• [Mã AI: 9.A3.1] Khẳng định trách nhiệm tài chính và ý thức chia sẻ khó khăn kinh tế với gia đình.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.2.TC2a] Thuyết trình báo cáo ngân sách cá nhân bằng slide biểu đồ trực quan trước lớp.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -4771,9 +4774,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Đánh giá tổng hợp toàn diện kết quả học tập và rèn luyện các chủ đề 1 đến 4 qua hồ sơ minh chứng trải nghiệm học kỳ I.",
         equipment: "Portfolio học tập trải nghiệm số lớp 9, kế hoạch ngân sách, sản phẩm tri ân trường",
         location: "Phòng học",
-        nlsCode: "3.1.TC2a",
-        aiCode: "9.C2.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Trình bày toàn bộ hồ sơ trải nghiệm số HK I với đầy đủ sản phẩm học tập và minh chứng rèn luyện.\n• [Mã AI: 9.C2.1] Sử dụng các công cụ biên tập đa phương tiện tối ưu hóa chất lượng báo cáo.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra cuối kỳ"
       },
       {
@@ -4784,9 +4787,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Đánh giá năng lực tự chủ, thích ứng linh hoạt, quản lý cảm xúc và trách nhiệm của học sinh cuối cấp.",
         equipment: "Đề kiểm tra đánh giá năng lực tình huống, phiếu trả lời của học sinh",
         location: "Phòng học",
-        nlsCode: "1.2.TC2a",
-        aiCode: "9.A3.1",
-        dc: "• [Mã NLS: 1.2.TC2a] Xử lý các tình huống thực tiễn có tính phân hóa trên nền tảng khảo thí số.\n• [Mã AI: 9.A3.1] Thể hiện năng lực tư duy phản biện độc lập và tính trung thực học thuật tuyệt đối.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra cuối kỳ"
       },
       {
@@ -4797,9 +4800,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Tổng kết đánh giá mức độ đạt chuẩn yêu cầu cần đạt của các chủ đề trong học kỳ I môn HĐTN 9.",
         equipment: "Bảng tổng hợp điểm và xếp loại học kỳ I môn HĐTN, HN 9",
         location: "Phòng học",
-        nlsCode: "1.3.TC2a",
-        aiCode: "9.C4.1",
-        dc: "• [Mã NLS: 1.3.TC2a] Lưu trữ và quản lý kết quả học tập kỳ I trên cơ sở dữ liệu số của nhà trường.\n• [Mã AI: 9.C4.1] Bảo đảm tính chính xác, công bằng và minh bạch trong đánh giá.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra cuối kỳ"
       },
       {
@@ -4810,9 +4813,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Đóng gói, hoàn tất và số hóa toàn bộ hồ sơ minh chứng trải nghiệm học kỳ I chuẩn bị cho học kỳ II.",
         equipment: "Tệp hồ sơ học sinh cuối cấp, thiết bị lưu trữ số",
         location: "Phòng học",
-        nlsCode: "1.3.TC2b",
-        aiCode: "9.C2.1",
-        dc: "• [Mã NLS: 1.3.TC2b] Đồng bộ dữ liệu hồ sơ trải nghiệm HK I lên đám mây lưu trữ học sinh an toàn.\n• [Mã AI: 9.C2.1] Tối ưu hóa cấu trúc cây thư mục tài liệu để tra cứu thuận tiện khi làm hồ sơ thi vào 10.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Đánh giá cuối kỳ I"
       },
       {
@@ -4823,9 +4826,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Đánh giá sự nỗ lực rèn luyện của bản thân và bạn bè, xác lập mục tiêu bứt phá trong học kỳ II.",
         equipment: "Phiếu đánh giá đồng đẳng, bảng khảo sát tự đánh giá",
         location: "Phòng học",
-        nlsCode: "2.4.TC2a",
-        aiCode: "9.A3.1",
-        dc: "• [Mã NLS: 2.4.TC2a] Gửi nhận xét động viên và chia sẻ phương pháp ôn tập cho bạn bè qua ứng dụng tương tác số.\n• [Mã AI: 9.A3.1] Khẳng định tinh thần đoàn kết cùng nhau vượt qua kỳ thi chuyển cấp thành công.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Đánh giá cuối kỳ I"
       },
       {
@@ -4836,9 +4839,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Tuyên dương các cá nhân, tập thể có nhiều tiến bộ; phát động đợt thi đua cao điểm chào mừng học kỳ II.",
         equipment: "Giấy khen, video phóng sự sơ kết học kỳ I của khối 9, loa micro",
         location: "Phòng học / Hội trường",
-        nlsCode: "2.2.TC2a",
-        aiCode: "9.A1.1",
-        dc: "• [Mã NLS: 2.2.TC2a] Trình chiếu video clip sơ kết học kỳ I, tôn vinh các tấm gương học sinh chăm ngoan, tiến bộ.\n• [Mã AI: 9.A1.1] Khơi dậy ý chí quyết tâm và khí thế thi đua sôi nổi cho chặng đường nước rút.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Sơ kết Học kỳ I"
       },
       {
@@ -4850,8 +4853,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video phóng sự về giá trị gia đình trong xã hội hiện đại, máy chiếu, micro",
         location: "Sân trường / Hội trường",
         nlsCode: "2.1.TC2a",
-        aiCode: "9.A1.1",
-        dc: "• [Mã NLS: 2.1.TC2a] Tìm hiểu các nghiên cứu xã hội học số về các yếu tố nền tảng kiến tạo gia đình hạnh phúc.\n• [Mã AI: 9.A1.1] Khẳng định tình yêu thương và sự tôn trọng lẫn nhau là sợi dây gắn kết gia đình bền chặt nhất.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.1.TC2a] Tìm hiểu các nghiên cứu xã hội học số về các yếu tố nền tảng kiến tạo gia đình hạnh phúc.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -4863,8 +4866,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Thẻ tình huống bất đồng ý kiến về chọn trường cấp 3, bất đồng quan điểm giữa các thế hệ",
         location: "Phòng học",
         nlsCode: "2.5.TC2a",
-        aiCode: "9.A2.2",
-        dc: "• [Mã NLS: 2.5.TC2a] Thực hành kỹ năng đối thoại hòa nhã, giải thích nguyện vọng cá nhân trên tinh thần tôn trọng cha mẹ.\n• [Mã AI: 9.A2.2] Nhận diện nguyên nhân của khoảng cách thế hệ và chủ động bắc nhịp cầu thấu hiểu.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.5.TC2a] Thực hành kỹ năng đối thoại hòa nhã, giải thích nguyện vọng cá nhân trên tinh thần tôn trọng cha mẹ.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -4876,8 +4879,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Cây gắn kết gia đình, phiếu cảm nhận của người thân",
         location: "Phòng học",
         nlsCode: "2.2.TC2a",
-        aiCode: "9.A3.1",
-        dc: "• [Mã NLS: 2.2.TC2a] Chia sẻ những câu chuyện thực tế về việc làm ấm lại không khí gia đình qua bài viết số.\n• [Mã AI: 9.A3.1] Khẳng định vai trò của người con lớn trong việc làm cầu nối hòa giải các mâu thuẫn gia đình.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.2.TC2a] Chia sẻ những câu chuyện thực tế về việc làm ấm lại không khí gia đình qua bài viết số.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -4889,8 +4892,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video về phương pháp quản lý gia đình hiện đại, phân công lao động bình đẳng",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC2b",
-        aiCode: "9.A1.1",
-        dc: "• [Mã NLS: 1.1.TC2b] Khám phá các phương pháp tổ chức nhà cửa và phân công lao động gia đình khoa học trên các trang giáo dục gia đình.\n• [Mã AI: 9.A1.1] Nâng cao năng lực tổ chức và tư duy quản lý cuộc sống cá nhân và gia đình.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.1.TC2b] Khám phá các phương pháp tổ chức nhà cửa và phân công lao động gia đình khoa học trên các trang giáo dục gia đình.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -4902,8 +4905,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng danh mục các công việc gia đình thường nhật và định kỳ (chăm sóc người già, sửa chữa đồ đạc, dọn dẹp, mua sắm)",
         location: "Phòng học",
         nlsCode: "1.3.TC2a",
-        aiCode: "9.C2.1",
-        dc: "• [Mã NLS: 1.3.TC2a] Thiết lập bảng phân loại công việc gia đình theo mức độ ưu tiên trên phần mềm bảng tính số.\n• [Mã AI: 9.C2.1] Sử dụng ứng dụng số chia sẻ lịch làm việc chung cho các thành viên trong gia đình.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.3.TC2a] Thiết lập bảng phân loại công việc gia đình theo mức độ ưu tiên trên phần mềm bảng tính số.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -4915,8 +4918,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Thời gian biểu công việc gia đình mẫu, phiếu nhận xét của bố mẹ",
         location: "Phòng học",
         nlsCode: "5.3.TC2a",
-        aiCode: "9.D1.1",
-        dc: "• [Mã NLS: 5.3.TC2a] Tối ưu hóa thời gian biểu làm việc nhà kết hợp với lịch học ôn thi vào 10 trên ứng dụng số.\n• [Mã AI: 9.D1.1] Nhận đề xuất từ trợ lý AI về cách sắp xếp lịch sinh hoạt thông minh, giảm áp lực mệt mỏi.",
+        aiCode: "",
+        dc: "• [Mã NLS: 5.3.TC2a] Tối ưu hóa thời gian biểu làm việc nhà kết hợp với lịch học ôn thi vào 10 trên ứng dụng số.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -4928,8 +4931,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video gương các gia đình làm kinh tế giỏi, mô hình kinh doanh nhỏ thành công",
         location: "Sân trường / Hội trường",
         nlsCode: "2.3.TC2a",
-        aiCode: "9.A1.1",
-        dc: "• [Mã NLS: 2.3.TC2a] Tìm hiểu các mô hình kinh tế gia đình ứng dụng công nghệ số và thương mại điện tử qua Internet.\n• [Mã AI: 9.A1.1] Nhận thức về tầm quan trọng của việc đóng góp trí tuệ và công sức phát triển kinh tế gia đình.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.3.TC2a] Tìm hiểu các mô hình kinh tế gia đình ứng dụng công nghệ số và thương mại điện tử qua Internet.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -4941,8 +4944,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Phiếu khảo sát nguồn lực gia đình (đất đai, vốn, tay nghề, vị trí kinh doanh)",
         location: "Phòng học",
         nlsCode: "1.2.TC2a",
-        aiCode: "9.C2.1",
-        dc: "• [Mã NLS: 1.2.TC2a] Khảo sát thị trường số và nhu cầu khách hàng tại địa phương qua các nền tảng trực tuyến.\n• [Mã AI: 9.C2.1] Sử dụng công cụ số hỗ trợ lập bảng dự toán chi phí và doanh thu cho ý tưởng phát triển kinh tế.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.2.TC2a] Khảo sát thị trường số và nhu cầu khách hàng tại địa phương qua các nền tảng trực tuyến.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -4954,8 +4957,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bản đề xuất giải pháp phát triển kinh tế gia đình, phiếu góp ý của người thân",
         location: "Phòng học",
         nlsCode: "3.1.TC2a",
-        aiCode: "9.D1.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Thiết kế bản đề xuất kinh tế gia đình hoàn chỉnh bằng bài trình chiếu số đa phương tiện.\n• [Mã AI: 9.D1.1] Ứng dụng AI rà soát tính khả thi và đề xuất phương án quảng bá sản phẩm gia đình hiệu quả.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC2a] Thiết kế bản đề xuất kinh tế gia đình hoàn chỉnh bằng bài trình chiếu số đa phương tiện.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -4967,8 +4970,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Tư liệu mạng lưới các tổ chức thanh niên, cơ sở hỗ trợ cộng đồng tại địa phương",
         location: "Sân trường / Hội trường",
         nlsCode: "2.3.TC2a",
-        aiCode: "9.A1.1",
-        dc: "• [Mã NLS: 2.3.TC2a] Khai thác cổng thông tin hành chính công và các mạng lưới hỗ trợ cộng đồng trực tuyến của địa phương.\n• [Mã AI: 9.A1.1] Nhận thức tầm quan trọng của việc xây dựng mạng lưới xã hội lành mạnh để phát triển bản thân.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.3.TC2a] Khai thác cổng thông tin hành chính công và các mạng lưới hỗ trợ cộng đồng trực tuyến của địa phương.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -4980,8 +4983,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Sơ đồ mạng lưới quan hệ cộng đồng cá nhân, danh bạ liên lạc",
         location: "Phòng học",
         nlsCode: "2.1.TC2a",
-        aiCode: "9.B2.3",
-        dc: "• [Mã NLS: 2.1.TC2a] Thiết lập danh bạ số an toàn các tổ chức thanh niên, chuyên gia và cơ quan hỗ trợ cộng đồng.\n• [Mã AI: 9.B2.3] Bảo đảm tính chính danh, văn minh và bảo mật thông tin khi kết nối với các tổ chức xã hội trên mạng.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.1.TC2a] Thiết lập danh bạ số an toàn các tổ chức thanh niên, chuyên gia và cơ quan hỗ trợ cộng đồng.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -4993,8 +4996,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Ảnh tư liệu hoạt động tri ân, giúp đỡ gia đình chính sách, dọn dẹp nghĩa trang liệt sĩ",
         location: "Phòng học",
         nlsCode: "3.1.TC2a",
-        aiCode: "9.C2.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Dựng phóng sự ảnh hoặc video số ngắn về hoạt động đền ơn đáp nghĩa của học sinh lớp 9.\n• [Mã AI: 9.C2.1] Sử dụng công cụ số hỗ trợ biên tập và truyền thông kết quả hoạt động cộng đồng.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC2a] Dựng phóng sự ảnh hoặc video số ngắn về hoạt động đền ơn đáp nghĩa của học sinh lớp 9.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -5006,8 +5009,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Số liệu sơ bộ về thói quen dùng mạng xã hội của học sinh, video thực trạng phát ngôn trên mạng",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC2a",
-        aiCode: "9.A1.1",
-        dc: "• [Mã NLS: 1.1.TC2a] Xác định mục tiêu và phạm vi đề tài nghiên cứu thực trạng sử dụng mạng xã hội của học sinh THCS.\n• [Mã AI: 9.A1.1] Khẳng định trách nhiệm của người học sinh trong việc xây dựng không gian mạng nhân văn, an toàn.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.1.TC2a] Xác định mục tiêu và phạm vi đề tài nghiên cứu thực trạng sử dụng mạng xã hội của học sinh THCS.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -5019,8 +5022,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Biểu mẫu khảo sát Google Forms, máy tính kết nối mạng",
         location: "Phòng Tin học / Phòng học",
         nlsCode: "1.1.TC2b",
-        aiCode: "9.C4.1",
-        dc: "• [Mã NLS: 1.1.TC2b] Thiết kế bảng hỏi khảo sát trực tuyến an toàn, bảo đảm không thu thập dữ liệu định danh riêng tư.\n• [Mã AI: 9.C4.1] Áp dụng các nguyên tắc đạo đức dữ liệu: làm sạch dữ liệu, loại bỏ trùng lặp và phân tích khách quan.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.1.TC2b] Thiết kế bảng hỏi khảo sát trực tuyến an toàn, bảo đảm không thu thập dữ liệu định danh riêng tư.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -5032,8 +5035,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Slide báo cáo đề tài nghiên cứu, biểu đồ phân tích dữ liệu khảo sát",
         location: "Phòng học",
         nlsCode: "3.1.TC2a",
-        aiCode: "9.D1.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Soạn thảo báo cáo nghiên cứu khoa học học sinh hoàn chỉnh với biểu đồ phân tích số liệu rõ ràng.\n• [Mã AI: 9.D1.1] Đề xuất các giải pháp công nghệ và nội quy số giúp học sinh giao tiếp văn minh trên mạng.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC2a] Soạn thảo báo cáo nghiên cứu khoa học học sinh hoàn chỉnh với biểu đồ phân tích số liệu rõ ràng.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -5045,8 +5048,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video các chiến dịch truyền thông học đường tiêu biểu, máy chiếu, micro",
         location: "Sân trường / Hội trường",
         nlsCode: "2.3.TC2a",
-        aiCode: "9.A1.1",
-        dc: "• [Mã NLS: 2.3.TC2a] Khám phá các chiến dịch truyền thông thay đổi hành vi xã hội của thiếu nhi qua kênh số uy tín.\n• [Mã AI: 9.A1.1] Khẳng định sức mạnh lan tỏa của truyền thông chân thực trong việc giải quyết vấn đề học đường.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.3.TC2a] Khám phá các chiến dịch truyền thông thay đổi hành vi xã hội của thiếu nhi qua kênh số uy tín.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -5058,8 +5061,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Mẫu kế hoạch truyền thông (Mục tiêu - Đối tượng - Kênh phân phối - Đánh giá tác động)",
         location: "Phòng học",
         nlsCode: "3.1.TC2a",
-        aiCode: "9.D1.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Thiết kế bộ ấn phẩm truyền thông số (Poster, Podcast, Video ngắn) về an toàn học đường.\n• [Mã AI: 9.D1.1] Sử dụng AI sáng tạo khẩu hiệu và kịch bản truyền thông ngắn gọn, dễ nhớ.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC2a] Thiết kế bộ ấn phẩm truyền thông số (Poster, Podcast, Video ngắn) về an toàn học đường.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -5071,8 +5074,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng đo lường số lượt tiếp cận, phiếu phản hồi của học sinh và phụ huynh",
         location: "Phòng học",
         nlsCode: "2.2.TC2a",
-        aiCode: "9.B2.3",
-        dc: "• [Mã NLS: 2.2.TC2a] Đo lường chỉ số tương tác và phản hồi của người xem đối với chiến dịch truyền thông trên mạng.\n• [Mã AI: 9.B2.3] Đảm bảo nội dung truyền thông tuân thủ Luật An ninh mạng và các quy chuẩn văn hóa học đường.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.2.TC2a] Đo lường chỉ số tương tác và phản hồi của người xem đối với chiến dịch truyền thông trên mạng.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -5083,9 +5086,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Đánh giá mức độ đạt chuẩn yêu cầu cần đạt của Chủ đề 5 (Em với gia đình) và Chủ đề 6 (Em với cộng đồng).",
         equipment: "Hồ sơ đề xuất kinh tế gia đình, báo cáo khảo sát mạng xã hội, máy chiếu",
         location: "Phòng học",
-        nlsCode: "3.1.TC2a",
-        aiCode: "9.C2.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Thuyết trình báo cáo sản phẩm số tổng kết các đề tài nghiên cứu gia đình và cộng đồng.\n• [Mã AI: 9.C2.1] Ứng dụng công nghệ trình chiếu đa phương tiện để thể hiện tính chuyên nghiệp.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra giữa kỳ"
       },
       {
@@ -5096,9 +5099,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Đánh giá năng lực nghiên cứu khoa học, kỹ năng điều tra thực tiễn và trách nhiệm xã hội của học sinh.",
         equipment: "Bảng tiêu chuẩn rubric đánh giá giữa kỳ môn HĐTN 9, phiếu đánh giá cá nhân",
         location: "Phòng học",
-        nlsCode: "1.2.TC2a",
-        aiCode: "9.A3.1",
-        dc: "• [Mã NLS: 1.2.TC2a] Phân tích và xử lý tình huống đánh giá trực tuyến có tích hợp dữ liệu số hóa.\n• [Mã AI: 9.A3.1] Khẳng định năng lực tư duy độc lập và đạo đức nghiên cứu khoa học.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra giữa kỳ"
       },
       {
@@ -5109,9 +5112,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Đúc rút kinh nghiệm, điều chỉnh kế hoạch rèn luyện và tập trung tối đa cho giai đoạn định hướng nghề nghiệp.",
         equipment: "Sổ tay rèn luyện, bảng mục tiêu rèn luyện cá nhân",
         location: "Phòng học",
-        nlsCode: "1.3.TC2a",
-        aiCode: "9.D1.1",
-        dc: "• [Mã NLS: 1.3.TC2a] Cập nhật kết quả đánh giá giữa kỳ II vào hồ sơ học sinh điện tử.\n• [Mã AI: 9.D1.1] Lập kế hoạch trọng tâm cho giai đoạn tìm hiểu tuyển sinh và định hướng tương lai sau THCS.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra giữa kỳ"
       },
       {
@@ -5123,8 +5126,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video phóng sự danh lam thắng cảnh dọc chiều dài đất nước, nhạc cụ, máy chiếu",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC2b",
-        aiCode: "9.A1.1",
-        dc: "• [Mã NLS: 1.1.TC2b] Chiêm ngưỡng các di sản thiên nhiên thế giới tại Việt Nam qua hệ thống bảo tàng và bản đồ số 3D.\n• [Mã AI: 9.A1.1] Bồi đắp tình yêu quê hương, lòng tự hào dân tộc và ý thức bảo vệ giang sơn gấm vóc.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.1.TC2b] Chiêm ngưỡng các di sản thiên nhiên thế giới tại Việt Nam qua hệ thống bảo tàng và bản đồ số 3D.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -5136,8 +5139,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Kho tư liệu số hình ảnh sông núi, hang động, biển đảo Việt Nam chất lượng cao",
         location: "Phòng học / Phòng Tin học",
         nlsCode: "1.2.TC2a",
-        aiCode: "9.C4.1",
-        dc: "• [Mã NLS: 1.2.TC2a] Thu thập, phân loại và kiểm định bản quyền hình ảnh thắng cảnh đất nước từ các nguồn mở uy tín.\n• [Mã AI: 9.C4.1] Tôn trọng bản quyền tác giả và trích dẫn nguồn hình ảnh, video đúng quy chuẩn.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.2.TC2a] Thu thập, phân loại và kiểm định bản quyền hình ảnh thắng cảnh đất nước từ các nguồn mở uy tín.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -5149,8 +5152,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Phần mềm đồ họa, video editor, máy tính kết nối mạng",
         location: "Phòng học / Phòng Tin học",
         nlsCode: "3.1.TC2a",
-        aiCode: "9.D1.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Thiết kế trang web mini, video clip hoặc ấn phẩm số quảng bá vẻ đẹp thiên nhiên Việt Nam bằng tiếng Việt và tiếng Anh.\n• [Mã AI: 9.D1.1] Ứng dụng AI tạo phụ đề tự động và hiệu ứng hình ảnh chuyển động chuyên nghiệp.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC2a] Thiết kế trang web mini, video clip hoặc ấn phẩm số quảng bá vẻ đẹp thiên nhiên Việt Nam bằng tiếng Việt và tiếng Anh.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -5162,8 +5165,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Khẩu hiệu chiến dịch \"Việt Nam - Điểm đến tuyệt vời\", cờ hoa, loa micro",
         location: "Sân trường / Hội trường",
         nlsCode: "2.3.TC2a",
-        aiCode: "9.A1.1",
-        dc: "• [Mã NLS: 2.3.TC2a] Phát động chiến dịch quảng bá du lịch số Việt Nam trên cổng thông tin học sinh và các mạng xã hội.\n• [Mã AI: 9.A1.1] Lan tỏa hình ảnh đất nước Việt Nam an toàn, tươi đẹp và mến khách đến bạn bè quốc tế.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.3.TC2a] Phát động chiến dịch quảng bá du lịch số Việt Nam trên cổng thông tin học sinh và các mạng xã hội.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -5175,8 +5178,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bản kế hoạch chiến dịch truyền thông đa kênh, thông điệp truyền thông",
         location: "Phòng học",
         nlsCode: "3.1.TC2a",
-        aiCode: "9.C2.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Thiết lập kế hoạch truyền thông số có phân tích đối tượng khán giả và lựa chọn thông điệp cốt lõi.\n• [Mã AI: 9.C2.1] Sử dụng AI hỗ trợ dịch thuật thông điệp quảng bá sang nhiều ngôn ngữ quốc tế.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC2a] Thiết lập kế hoạch truyền thông số có phân tích đối tượng khán giả và lựa chọn thông điệp cốt lõi.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -5188,8 +5191,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng theo dõi lượt xem và tương tác của sản phẩm truyền thông",
         location: "Phòng học",
         nlsCode: "2.2.TC2a",
-        aiCode: "9.A3.1",
-        dc: "• [Mã NLS: 2.2.TC2a] Phân tích số liệu tương tác thực tế của video quảng bá để đánh giá sức lan tỏa của thông điệp.\n• [Mã AI: 9.A3.1] Rút ra bài học kinh nghiệm về kỹ năng truyền thông số có trách nhiệm.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.2.TC2a] Phân tích số liệu tương tác thực tế của video quảng bá để đánh giá sức lan tỏa của thông điệp.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -5201,8 +5204,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video tư liệu về thực trạng ô nhiễm đất, nước, không khí tại các đô thị và nông thôn",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC2b",
-        aiCode: "9.A1.1",
-        dc: "• [Mã NLS: 1.1.TC2b] Khai thác dữ liệu quan trắc môi trường quốc gia để tìm hiểu thực trạng ô nhiễm đất, nước, không khí.\n• [Mã AI: 9.A1.1] Nhận thức tính cấp bách của bảo vệ môi trường đối với sự phát triển bền vững của đất nước.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.1.TC2b] Khai thác dữ liệu quan trắc môi trường quốc gia để tìm hiểu thực trạng ô nhiễm đất, nước, không khí.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -5214,8 +5217,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Biểu mẫu khảo sát thực địa, thiết bị đo nồng độ bụi/chụp ảnh ô nhiễm",
         location: "Địa bàn dân cư / Phòng học",
         nlsCode: "1.1.TC2b",
-        aiCode: "9.C4.1",
-        dc: "• [Mã NLS: 1.1.TC2b] Thiết kế biểu mẫu khảo sát trực tuyến và ghi nhận tọa độ GPS các điểm ô nhiễm trên bản đồ số.\n• [Mã AI: 9.C4.1] Áp dụng phương pháp thu thập dữ liệu khoa học, trung thực và loại bỏ các số liệu sai lệch.",
+        aiCode: "",
+        dc: "• [Mã NLS: 1.1.TC2b] Thiết kế biểu mẫu khảo sát trực tuyến và ghi nhận tọa độ GPS các điểm ô nhiễm trên bản đồ số.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -5227,8 +5230,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Slide báo cáo khảo sát môi trường, bảng tổng hợp số liệu",
         location: "Phòng học",
         nlsCode: "3.1.TC2a",
-        aiCode: "9.D1.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Soạn thảo báo cáo nghiên cứu môi trường với biểu đồ phân tích nguyên nhân ô nhiễm chi tiết.\n• [Mã AI: 9.D1.1] Ứng dụng AI hỗ trợ phân tích tương quan dữ liệu và đề xuất các giải pháp công nghệ xanh xử lý rác thải.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC2a] Soạn thảo báo cáo nghiên cứu môi trường với biểu đồ phân tích nguyên nhân ô nhiễm chi tiết.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -5240,8 +5243,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Tài liệu hướng dẫn phân loại rác tại nguồn, thông điệp giảm rác thải nhựa",
         location: "Phòng học",
         nlsCode: "3.1.TC2a",
-        aiCode: "9.C2.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Thiết kế bộ ấn phẩm tuyên truyền số (tờ rơi điện tử, infographic) hướng dẫn phân loại rác sinh hoạt.\n• [Mã AI: 9.C2.1] Tạo video đồ họa chuyển động (motion graphics) ngắn tuyên truyền bảo vệ nguồn nước sạch.",
+        aiCode: "",
+        dc: "• [Mã NLS: 3.1.TC2a] Thiết kế bộ ấn phẩm tuyên truyền số (tờ rơi điện tử, infographic) hướng dẫn phân loại rác sinh hoạt.",
         notes: "Sinh hoạt dưới cờ"
       },
       {
@@ -5253,8 +5256,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Loa truyền thanh, tờ rơi số hóa bằng mã QR, xe đạp diễu hành tuyên truyền",
         location: "Khu dân cư địa phương",
         nlsCode: "2.3.TC2a",
-        aiCode: "9.A1.1",
-        dc: "• [Mã NLS: 2.3.TC2a] Vận động người dân quét mã QR nhận cẩm nang sống xanh và cam kết bảo vệ môi trường.\n• [Mã AI: 9.A1.1] Thể hiện ý thức trách nhiệm công dân trong việc xây dựng nếp sống văn minh đô thị/nông thôn mới.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.3.TC2a] Vận động người dân quét mã QR nhận cẩm nang sống xanh và cam kết bảo vệ môi trường.",
         notes: "Hoạt động giáo dục theo chủ đề"
       },
       {
@@ -5266,8 +5269,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng tổng kết chữ ký cam kết xanh, ảnh hoạt động thực tế",
         location: "Phòng học",
         nlsCode: "2.2.TC2a",
-        aiCode: "9.A3.1",
-        dc: "• [Mã NLS: 2.2.TC2a] Tổng hợp kết quả tiếp cận của đợt tuyên truyền trên trang cộng đồng của trường và địa phương.\n• [Mã AI: 9.A3.1] Cam kết duy trì lối sống xanh, giảm thiểu rác thải nhựa trong sinh hoạt hàng ngày.",
+        aiCode: "",
+        dc: "• [Mã NLS: 2.2.TC2a] Tổng hợp kết quả tiếp cận của đợt tuyên truyền trên trang cộng đồng của trường và địa phương.",
         notes: "Sinh hoạt lớp"
       },
       {
@@ -5279,8 +5282,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video chuyên đề về thị trường lao động và xu hướng nghề nghiệp trong kỷ nguyên số, máy chiếu",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC2b",
-        aiCode: "",
-        dc: "• [Mã NLS: 1.1.TC2b] Khai thác các hệ thống cơ sở dữ liệu hướng nghiệp quốc gia và cổng thông tin việc làm để tra cứu thông tin các ngành nghề mơ ước.",
+        aiCode: "9.C2.1",
+        dc: "• [Mã NLS: 1.1.TC2b] Khai thác các hệ thống cơ sở dữ liệu hướng nghiệp quốc gia và cổng thông tin việc làm để tra cứu thông tin các ngành nghề mơ ước.\n• [Mã AI: 9.C2.1] Ứng dụng công cụ AI phân tích dự báo thị trường nhân lực và nhu cầu tuyển dụng các ngành nghề tương lai.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -5292,8 +5295,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Phiếu phân tích nghề nghiệp, cẩm nang tra cứu mô tả công việc (Job Profile)",
         location: "Phòng học",
         nlsCode: "1.3.TC2a",
-        aiCode: "",
-        dc: "• [Mã NLS: 1.3.TC2a] Xây dựng danh mục số chi tiết về các ngành nghề quan tâm (mô tả công việc, môi trường làm việc, dụng cụ và thiết bị chuyên dụng).",
+        aiCode: "9.D1.1",
+        dc: "• [Mã NLS: 1.3.TC2a] Xây dựng danh mục số chi tiết về các ngành nghề quan tâm (mô tả công việc, môi trường làm việc, dụng cụ và thiết bị chuyên dụng).\n• [Mã AI: 9.D1.1] Khẳng định vai trò dẫn dắt của con người khi sử dụng hệ thống AI để xây dựng danh mục chuẩn hóa nghề nghiệp.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -5305,8 +5308,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Thiết bị ghi âm/ghi hình phỏng vấn người làm nghề, mẫu câu hỏi phỏng vấn",
         location: "Phòng học",
         nlsCode: "1.2.TC2b",
-        aiCode: "",
-        dc: "• [Mã NLS: 1.2.TC2b] Thu thập và số hóa dữ liệu phỏng vấn thực tế chuyên gia/người lao động trong lĩnh vực em yêu thích.",
+        aiCode: "9.C4.1",
+        dc: "• [Mã NLS: 1.2.TC2b] Thu thập và số hóa dữ liệu phỏng vấn thực tế chuyên gia/người lao động trong lĩnh vực em yêu thích.\n• [Mã AI: 9.C4.1] Ứng dụng công nghệ xử lý dữ liệu và AI để tổng hợp, làm sạch và trích xuất thông tin phỏng vấn người làm nghề.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -5318,8 +5321,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Khách mời người lao động tiêu biểu, micro, máy chiếu",
         location: "Sân trường / Hội trường",
         nlsCode: "2.1.TC2a",
-        aiCode: "",
-        dc: "• [Mã NLS: 2.1.TC2a] Tương tác và đặt câu hỏi trực tiếp hoặc qua cổng hỏi đáp trực tuyến tới các khách mời làm nghề.",
+        aiCode: "9.A3.1",
+        dc: "• [Mã NLS: 2.1.TC2a] Tương tác và đặt câu hỏi trực tiếp hoặc qua cổng hỏi đáp trực tuyến tới các khách mời làm nghề.\n• [Mã AI: 9.A3.1] Trao đổi về tầm quan trọng của kỹ năng hợp tác giữa người và AI trong môi trường làm việc hiện đại.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -5331,8 +5334,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng khung năng lực nghề nghiệp (Năng lực chuyên môn, Kỹ năng mềm, Thái độ nghề nghiệp)",
         location: "Phòng học",
         nlsCode: "1.2.TC2a",
-        aiCode: "",
-        dc: "• [Mã NLS: 1.2.TC2a] Phân tích bảng mô tả tiêu chuẩn năng lực và phẩm chất của vị trí việc làm quan tâm trên các trang tuyển dụng uy tín.",
+        aiCode: "9.A2.2",
+        dc: "• [Mã NLS: 1.2.TC2a] Phân tích bảng mô tả tiêu chuẩn năng lực và phẩm chất của vị trí việc làm quan tâm trên các trang tuyển dụng uy tín.\n• [Mã AI: 9.A2.2] Nhận diện và phản biện những định kiến, thiên vị thuật toán có thể xuất hiện trong các mô tả tuyển dụng tự động.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -5344,8 +5347,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng so sánh độ tương thích bản thân - nghề nghiệp, phiếu tự đánh giá",
         location: "Phòng học",
         nlsCode: "1.3.TC2a",
-        aiCode: "",
-        dc: "• [Mã NLS: 1.3.TC2a] Thiết lập bảng đối sánh số giữa năng lực hiện có của bản thân với yêu cầu khắt khe của nghề nghiệp hướng tới.",
+        aiCode: "9.A3.1",
+        dc: "• [Mã NLS: 1.3.TC2a] Thiết lập bảng đối sánh số giữa năng lực hiện có của bản thân với yêu cầu khắt khe của nghề nghiệp hướng tới.\n• [Mã AI: 9.A3.1] Tự đánh giá năng lực thích ứng và khả năng tự học nâng cao trình độ trong môi trường công việc có AI hỗ trợ.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -5357,8 +5360,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Video tư liệu về vệ sinh an toàn lao động trong các ngành nghề, quy định pháp luật an toàn lao động",
         location: "Sân trường / Hội trường",
         nlsCode: "4.1.TC2b",
-        aiCode: "",
-        dc: "• [Mã NLS: 4.1.TC2b] Tìm hiểu các quy chuẩn quốc gia về an toàn vệ sinh lao động và phòng chống cháy nổ qua cơ sở dữ liệu số Bộ LĐ-TB&XH.",
+        aiCode: "9.A1.1",
+        dc: "• [Mã NLS: 4.1.TC2b] Tìm hiểu các quy chuẩn quốc gia về an toàn vệ sinh lao động và phòng chống cháy nổ qua cơ sở dữ liệu số Bộ LĐ-TB&XH.\n• [Mã AI: 9.A1.1] Đánh giá các thách thức an toàn số và rủi ro rò rỉ dữ liệu doanh nghiệp trong vận hành sản xuất tự động.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -5370,8 +5373,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Thẻ phân tích rủi ro nghề nghiệp (chấn thương cơ học, điện giật, hóa chất độc hại, căng thẳng thị giác)",
         location: "Phòng học",
         nlsCode: "4.3.TC2a",
-        aiCode: "",
-        dc: "• [Mã NLS: 4.3.TC2a] Xác định các biện pháp công thái học (Ergonomics) và bảo hộ số bảo vệ mắt, cột sống khi làm việc với máy tính liên tục.",
+        aiCode: "9.B2.3",
+        dc: "• [Mã NLS: 4.3.TC2a] Xác định các biện pháp công thái học (Ergonomics) và bảo hộ số bảo vệ mắt, cột sống khi làm việc với máy tính liên tục.\n• [Mã AI: 9.B2.3] Cảnh giác và phòng chống nguy cơ bị tấn công giả mạo, gian lận công nghệ cao trong môi trường làm việc số.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -5383,8 +5386,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Phần mềm thiết kế số Canva/Photoshop, tài liệu thông tin nghề",
         location: "Phòng học / Phòng Tin học",
         nlsCode: "3.1.TC2a",
-        aiCode: "",
-        dc: "• [Mã NLS: 3.1.TC2a] Thiết kế cẩm nang infographic kỹ thuật số giới thiệu toàn diện về nghề nghiệp quan tâm và các quy tắc an toàn cốt lõi.",
+        aiCode: "9.C2.1",
+        dc: "• [Mã NLS: 3.1.TC2a] Thiết kế cẩm nang infographic kỹ thuật số giới thiệu toàn diện về nghề nghiệp quan tâm và các quy tắc an toàn cốt lõi.\n• [Mã AI: 9.C2.1] Ứng dụng các công cụ AI thiết kế đồ họa tạo cẩm nang số trực quan về nghề nghiệp và văn hóa an toàn lao động.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -5396,8 +5399,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Cẩm nang tuyển sinh sau THCS, video giới thiệu các trường THPT, trung tâm GDNN-GDTX, trường trung cấp nghề",
         location: "Sân trường / Hội trường",
         nlsCode: "1.1.TC2b",
-        aiCode: "",
-        dc: "• [Mã NLS: 1.1.TC2b] Tra cứu hệ thống thông tin tuyển sinh trực tuyến của Sở Giáo dục & Đào tạo và Tổng cục Giáo dục nghề nghiệp.",
+        aiCode: "9.C2.1",
+        dc: "• [Mã NLS: 1.1.TC2b] Tra cứu hệ thống thông tin tuyển sinh trực tuyến của Sở Giáo dục & Đào tạo và Tổng cục Giáo dục nghề nghiệp.\n• [Mã AI: 9.C2.1] Sử dụng trợ lý tìm kiếm thông minh để tra cứu hệ thống cơ sở giáo dục nghề nghiệp và chỉ tiêu tuyển sinh sau THCS.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -5409,8 +5412,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bảng đối sánh các ngã rẽ sau THCS (THPT công lập/tư thục, Trung cấp nghề 9+, GDTX)",
         location: "Phòng học",
         nlsCode: "1.2.TC2a",
-        aiCode: "",
-        dc: "• [Mã NLS: 1.2.TC2a] Thu thập, so sánh chỉ tiêu tuyển sinh, điểm chuẩn các năm và chi phí học tập của các trường trên bảng tính điện tử.",
+        aiCode: "9.C4.1",
+        dc: "• [Mã NLS: 1.2.TC2a] Thu thập, so sánh chỉ tiêu tuyển sinh, điểm chuẩn các năm và chi phí học tập của các trường trên bảng tính điện tử.\n• [Mã AI: 9.C4.1] Áp dụng phương pháp phân tích dữ liệu khách quan để so sánh điểm chuẩn, học phí và cơ hội việc làm giữa các trường.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -5422,8 +5425,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Phiếu tham vấn hướng nghiệp (ý kiến gia đình, đánh giá của giáo viên chủ nhiệm, nguyện vọng học sinh)",
         location: "Phòng học",
         nlsCode: "2.1.TC2b",
-        aiCode: "",
-        dc: "• [Mã NLS: 2.1.TC2b] Sử dụng các công cụ liên lạc số để trao đổi, tham vấn ý kiến chuyên gia tư vấn hướng nghiệp và thầy cô.",
+        aiCode: "9.D1.1",
+        dc: "• [Mã NLS: 2.1.TC2b] Sử dụng các công cụ liên lạc số để trao đổi, tham vấn ý kiến chuyên gia tư vấn hướng nghiệp và thầy cô.\n• [Mã AI: 9.D1.1] Giữ vai trò chủ thể quyết định con đường học tập tương lai dựa trên sự kết hợp giữa tham vấn gia đình và phân tích dữ liệu số.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -5435,8 +5438,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Phiếu kiểm tra sự sẵn sàng nghề nghiệp, bảng kế hoạch tự hoàn thiện",
         location: "Phòng học",
         nlsCode: "5.4.TC2a",
-        aiCode: "",
-        dc: "• [Mã NLS: 5.4.TC2a] Thực hiện bài tự đánh giá năng lực số và mức độ đáp ứng các kỹ năng chuyên biệt của nghề tương lai.",
+        aiCode: "9.A3.1",
+        dc: "• [Mã NLS: 5.4.TC2a] Thực hiện bài tự đánh giá năng lực số và mức độ đáp ứng các kỹ năng chuyên biệt của nghề tương lai.\n• [Mã AI: 9.A3.1] Xác định năng lực số và tư duy linh hoạt là chìa khóa để hội nhập thị trường lao động thời kỳ trí tuệ nhân tạo.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -5448,8 +5451,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Bản kế hoạch hành động 3 năm cấp THPT định hướng nghề nghiệp",
         location: "Phòng học",
         nlsCode: "3.1.TC2a",
-        aiCode: "",
-        dc: "• [Mã NLS: 3.1.TC2a] Lập bản đồ phát triển cá nhân số (Individual Development Plan) xác định rõ mục tiêu điểm số và các chứng chỉ kỹ năng cần đạt.",
+        aiCode: "9.C2.1",
+        dc: "• [Mã NLS: 3.1.TC2a] Lập bản đồ phát triển cá nhân số (Individual Development Plan) xác định rõ mục tiêu điểm số và các chứng chỉ kỹ năng cần đạt.\n• [Mã AI: 9.C2.1] Thiết kế lộ trình phát triển bản thân (IDP) tương tác số với sự trợ giúp của AI trong việc đề xuất các khóa học kỹ năng.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -5461,8 +5464,8 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         equipment: "Đơn đăng ký nguyện vọng dự thi vào lớp 10 / xét tuyển học nghề",
         location: "Phòng học",
         nlsCode: "5.3.TC2a",
-        aiCode: "",
-        dc: "• [Mã NLS: 5.3.TC2a] Hoàn thiện hồ sơ đăng ký nguyện vọng trực tuyến trên cổng tuyển sinh đầu cấp chính thức của Sở GD&ĐT.",
+        aiCode: "9.A1.1",
+        dc: "• [Mã NLS: 5.3.TC2a] Hoàn thiện hồ sơ đăng ký nguyện vọng trực tuyến trên cổng tuyển sinh đầu cấp chính thức của Sở GD&ĐT.\n• [Mã AI: 9.A1.1] Tự tin ra quyết định chọn trường, chọn nghề sau tốt nghiệp THCS và làm chủ con đường học tập suốt đời trong xã hội số.",
         notes: "Chỉ tích hợp NLS"
       },
       {
@@ -5473,9 +5476,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Đánh giá tổng hợp toàn diện hồ sơ năng lực học tập trải nghiệm và hồ sơ hướng nghiệp sau 4 năm học THCS.",
         equipment: "Portfolio tốt nghiệp THCS số, hồ sơ nguyện vọng hướng nghiệp, máy chiếu",
         location: "Phòng học",
-        nlsCode: "3.1.TC2a",
-        aiCode: "9.C2.1",
-        dc: "• [Mã NLS: 3.1.TC2a] Trình bày toàn bộ Portfolio năng lực học sinh THCS số với đầy đủ minh chứng thành tích và định hướng tương lai.\n• [Mã AI: 9.C2.1] Sử dụng công nghệ số định dạng và đóng gói hồ sơ điện tử chuyên nghiệp.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra cuối kỳ"
       },
       {
@@ -5486,9 +5489,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Đánh giá mức độ trưởng thành về phẩm chất, kỹ năng sống, năng lực thích ứng và độ chín muồi trong quyết định chọn nghề.",
         equipment: "Bảng kiểm rubric đánh giá chuẩn đầu ra môn HĐTN cấp THCS, phiếu tự đánh giá",
         location: "Phòng học",
-        nlsCode: "1.2.TC2a",
-        aiCode: "9.A3.1",
-        dc: "• [Mã NLS: 1.2.TC2a] Hoàn thành bài tự đánh giá tốt nghiệp môn học trên hệ thống quản lý học tập điện tử của nhà trường.\n• [Mã AI: 9.A3.1] Khẳng định bản lĩnh tự tin, trung thực và trách nhiệm của học sinh sẵn sàng bước vào cấp học mới.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Kiểm tra cuối kỳ"
       },
       {
@@ -5499,9 +5502,9 @@ export function getHdtnSecondaryCurriculum(grade: string): RawSecondaryLesson[] 
         yccd: "– Tổng kết đánh giá kết quả cả năm học lớp 9; tri ân thầy cô, mái trường THCS và định hướng học tập, làm việc sau THCS.",
         equipment: "Lễ tri ân và trưởng thành học sinh lớp 9, video kỷ niệm 4 năm THCS, hoa tươi, loa micro",
         location: "Sân trường / Hội trường",
-        nlsCode: "2.2.TC2a",
-        aiCode: "9.A1.1",
-        dc: "• [Mã NLS: 2.2.TC2a] Trình chiếu video kỷ yếu 4 năm THCS và chia sẻ thông điệp tri ân thầy cô, cha mẹ trên trang truyền thông trường.\n• [Mã AI: 9.A1.1] Khẳng định niềm tin và sự tự hào của thế hệ học sinh tốt nghiệp THCS, vững vàng bước vào tương lai.",
+        nlsCode: "",
+        aiCode: "",
+        dc: "",
         notes: "Tổng kết năm học"
       }
   ];

@@ -58,9 +58,33 @@ export const Appendix1View: React.FC<Appendix1ViewProps> = ({ planData, onUpdate
 
   // Helper để lấy chuỗi tích hợp NLS & AI chuẩn xác phù hợp với YCCĐ bài học
   const getResolvedDigitalCompetency = (lesson: CurriculumItem, index: number): string => {
-    if (lesson.digitalCompetency && lesson.digitalCompetency.trim().length > 0) {
+    // 1. Nếu là tiết Kiểm tra, Đánh giá -> Tuyệt đối KHÔNG tích hợp NLS và AI
+    const topicUpper = (lesson.topic || '').toUpperCase();
+    const nameLower = (lesson.lessonName || '').toLowerCase();
+    const isAssessment =
+      topicUpper.includes('ĐG') ||
+      topicUpper.includes('KT') ||
+      topicUpper.includes('ĐÁNH GIÁ') ||
+      topicUpper.includes('KIỂM TRA') ||
+      topicUpper.includes('ASSESSMENT') ||
+      topicUpper.includes('TEST') ||
+      nameLower.includes('đánh giá giữa') ||
+      nameLower.includes('đánh giá cuối') ||
+      nameLower.includes('kiểm tra giữa') ||
+      nameLower.includes('kiểm tra cuối') ||
+      nameLower.includes('kiểm tra, đánh giá') ||
+      nameLower.includes('kiểm tra định kỳ');
+
+    if (isAssessment) {
+      return '';
+    }
+
+    // 2. Nếu bài học đã có digitalCompetency được thiết lập (kể cả rỗng)
+    if (lesson.digitalCompetency !== undefined && lesson.digitalCompetency !== null) {
       return lesson.digitalCompetency;
     }
+
+    // 3. Fallback chỉ khi bài học hoàn toàn chưa có trường digitalCompetency
     const lessonCtx = {
       lessonName: lesson.lessonName,
       subject: config.subject,
@@ -69,12 +93,36 @@ export const Appendix1View: React.FC<Appendix1ViewProps> = ({ planData, onUpdate
       topic: lesson.topic,
       yccd: lesson.yccd
     };
-    const nls = getNlsCodeForSubjectLesson(config.grade, config.schoolType, lessonCtx);
-    const ai = getAiCodeForSubjectLesson(config.grade, lessonCtx);
 
-    return isEn
-      ? `• [NLS Code: ${nls.code}] ${nls.requirement}\n• [AI Code: ${ai.code}] ${ai.requirement}`
-      : `• [Mã NLS: ${nls.code}] ${nls.requirement}\n• [Mã AI: ${ai.code}] ${ai.requirement}`;
+    const isHdtn =
+      config.subject.toLowerCase().includes('trải nghiệm') ||
+      config.subject.toLowerCase().includes('hđtn') ||
+      config.subject.toLowerCase().includes('hdtn') ||
+      config.subject.toLowerCase().includes('hướng nghiệp');
+
+    const isHdtn89 =
+      isHdtn &&
+      (topicUpper.includes('CHỦ ĐỀ 8') ||
+        topicUpper.includes('CHỦ ĐỀ 9') ||
+        topicUpper.includes('KHÁM PHÁ THẾ GIỚI NGHỀ NGHIỆP') ||
+        topicUpper.includes('HIỂU BẢN THÂN'));
+
+    const nls = getNlsCodeForSubjectLesson(config.grade, config.schoolType, lessonCtx);
+    const ai = (!isHdtn || isHdtn89)
+      ? getAiCodeForSubjectLesson(config.grade, lessonCtx)
+      : { code: '', requirement: '' };
+
+    if (isEn) {
+      return [
+        nls.code ? `• [NLS Code: ${nls.code}] ${nls.requirement}` : '',
+        ai.code ? `• [AI Code: ${ai.code}] ${ai.requirement}` : ''
+      ].filter(Boolean).join('\n');
+    }
+
+    return [
+      nls.code ? `• [Mã NLS: ${nls.code}] ${nls.requirement}` : '',
+      ai.code ? `• [Mã AI: ${ai.code}] ${ai.requirement}` : ''
+    ].filter(Boolean).join('\n');
   };
 
   const [searchTerm, setSearchTerm] = useState('');
@@ -496,20 +544,26 @@ export const Appendix1View: React.FC<Appendix1ViewProps> = ({ planData, onUpdate
                           {isEditing ? (
                             <textarea
                               rows={4}
-                              value={lesson.digitalCompetency || compText}
+                              value={lesson.digitalCompetency !== undefined ? lesson.digitalCompetency : compText}
                               onChange={(e) => handleUpdateCurriculumItem(lesson.id, 'digitalCompetency', e.target.value)}
                               placeholder="• [Mã NLS: ...] Nội dung NLS...&#10;• [Mã AI: ...] Nội dung AI..."
                               className="w-full p-1.5 rounded border border-emerald-400 bg-white dark:bg-slate-800 text-xs font-mono leading-relaxed"
                             />
                           ) : (
-                            <div className="space-y-1.5">
-                              {compText.split('\n').filter((l) => l.trim().length > 0).map((line, cIdx) => (
-                                <div key={cIdx} className="flex items-start gap-1.5 text-emerald-800 dark:text-emerald-300 leading-snug">
-                                  <span className="text-emerald-500 font-bold shrink-0 mt-0.5">•</span>
-                                  <span>{line.replace(/^[-•*]\s*/, '')}</span>
-                                </div>
-                              ))}
-                            </div>
+                            compText && compText.trim().length > 0 ? (
+                              <div className="space-y-1.5">
+                                {compText.split('\n').filter((l) => l.trim().length > 0).map((line, cIdx) => (
+                                  <div key={cIdx} className="flex items-start gap-1.5 text-emerald-800 dark:text-emerald-300 leading-snug">
+                                    <span className="text-emerald-500 font-bold shrink-0 mt-0.5">•</span>
+                                    <span>{line.replace(/^[-•*]\s*/, '')}</span>
+                                  </div>
+                                ))}
+                              </div>
+                            ) : (
+                              <div className="text-slate-400 dark:text-slate-500 italic text-center text-[11px]">
+                                —
+                              </div>
+                            )
                           )}
                         </td>
 

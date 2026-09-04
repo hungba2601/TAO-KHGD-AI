@@ -375,9 +375,31 @@ function resolveDigitalCompForDocx(
   config: PlanData['config'],
   isEn: boolean
 ): string {
-  if (item.digitalCompetency && item.digitalCompetency.trim().length > 0) {
+  // 1. Nếu là tiết Kiểm tra, Đánh giá -> Tuyệt đối KHÔNG tích hợp NLS và AI
+  const topicUpper = (item.topic || '').toUpperCase();
+  const nameLower = (item.lessonName || '').toLowerCase();
+  const isAssessment =
+    topicUpper.includes('ĐG') ||
+    topicUpper.includes('KT') ||
+    topicUpper.includes('ĐÁNH GIÁ') ||
+    topicUpper.includes('KIỂM TRA') ||
+    topicUpper.includes('ASSESSMENT') ||
+    topicUpper.includes('TEST') ||
+    nameLower.includes('đánh giá giữa') ||
+    nameLower.includes('đánh giá cuối') ||
+    nameLower.includes('kiểm tra giữa') ||
+    nameLower.includes('kiểm tra cuối') ||
+    nameLower.includes('kiểm tra, đánh giá') ||
+    nameLower.includes('kiểm tra định kỳ');
+
+  if (isAssessment) {
+    return '';
+  }
+
+  if (item.digitalCompetency !== undefined && item.digitalCompetency !== null) {
     return item.digitalCompetency;
   }
+
   const lessonCtx = {
     lessonName: item.lessonName,
     subject: config.subject,
@@ -386,12 +408,36 @@ function resolveDigitalCompForDocx(
     topic: item.topic || '',
     yccd: item.yccd || ''
   };
-  const nls = getNlsCodeForSubjectLesson(config.grade, config.schoolType, lessonCtx);
-  const ai = getAiCodeForSubjectLesson(config.grade, lessonCtx);
 
-  return isEn
-    ? `• [NLS Code: ${nls.code}] ${nls.requirement}\n• [AI Code: ${ai.code}] ${ai.requirement}`
-    : `• [Mã NLS: ${nls.code}] ${nls.requirement}\n• [Mã AI: ${ai.code}] ${ai.requirement}`;
+  const isHdtn =
+    config.subject.toLowerCase().includes('trải nghiệm') ||
+    config.subject.toLowerCase().includes('hđtn') ||
+    config.subject.toLowerCase().includes('hdtn') ||
+    config.subject.toLowerCase().includes('hướng nghiệp');
+
+  const isHdtn89 =
+    isHdtn &&
+    (topicUpper.includes('CHỦ ĐỀ 8') ||
+      topicUpper.includes('CHỦ ĐỀ 9') ||
+      topicUpper.includes('KHÁM PHÁ THẾ GIỚI NGHỀ NGHIỆP') ||
+      topicUpper.includes('HIỂU BẢN THÂN'));
+
+  const nls = getNlsCodeForSubjectLesson(config.grade, config.schoolType, lessonCtx);
+  const ai = (!isHdtn || isHdtn89)
+    ? getAiCodeForSubjectLesson(config.grade, lessonCtx)
+    : { code: '', requirement: '' };
+
+  if (isEn) {
+    return [
+      nls.code ? `• [NLS Code: ${nls.code}] ${nls.requirement}` : '',
+      ai.code ? `• [AI Code: ${ai.code}] ${ai.requirement}` : ''
+    ].filter(Boolean).join('\n');
+  }
+
+  return [
+    nls.code ? `• [Mã NLS: ${nls.code}] ${nls.requirement}` : '',
+    ai.code ? `• [Mã AI: ${ai.code}] ${ai.requirement}` : ''
+  ].filter(Boolean).join('\n');
 }
 
 export async function exportAppendix1Docx(plan: PlanData): Promise<void> {
